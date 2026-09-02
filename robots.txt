@@ -1,0 +1,32 @@
+User-agent: *
+Allow: /
+
+User-agent: GoogleBot
+Disallow: /VikramVedhaMovie.html
+Disallow: /Hadiyya.html
+Disallow: /DragonBallSuperEpisode92EnglishDubFull.html
+Disallow: /DragonBallSuperEpisode93EnglishDubFull.html
+Disallow: /DragonBallSuperEpisode94EnglishDubFull.html
+Disallow: /DragonBallSuperEpisode95EnglishDubFull.html
+Disallow: /DragonBallSuperEpisode96EnglishDubFull.html
+Allow: /
+
+User-agent: GoogleBot-Mobile
+Allow: /
+
+User-agent: GoogleBot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: yahoo-mmcrawler
+Allow: /
+
+User-agent: Adsbot-Google
+Allow: /
+
+User-agent: baiduspider
+Allow: /
+
+Sitemap: https://oakshow.in/sitemap.xml

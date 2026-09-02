@@ -1,0 +1,8 @@
+node_modules
+dist
+dist-ssr
+*.local
+.scalix
+.vscode
+.DS_Store
+*.log

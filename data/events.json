@@ -1,0 +1,46 @@
+[
+  {
+    "id": "tesffa-2019",
+    "title": "The 3rd Eye Short Film Festival and Awards (TESFFA) 2019",
+    "category": "Film Festival & Awards Gala",
+    "venue": "Don Bosco Art School",
+    "venueLink": "https://www.3rdeyemovieclub.com/",
+    "dates": "April 27th - 28th, 2019",
+    "year": "2019",
+    "location": "Kochi, Kerala, India",
+    "poster": "pics/Events/TESFFA2019/TESFFA-2019.jpg",
+    "trailerUrl": "https://www.youtube.com/watch?v=_RWMz8yuki_U",
+    "youtubeId": "_RWMz8yuki_U",
+    "summary": "The prestigious annual short film festival celebrating visionary independent directors, student cinema, screenwriting excellence, and documentary filmmaking in South India.",
+    "highlights": [
+      "Screening of over 50 shortlisted international & regional short films",
+      "Masterclass with veteran cinematographers and award-winning editors",
+      "Annual Grand Jury Awards Gala & Cash Prizes",
+      "Interactive Q&A and networking lounge with film industry producers"
+    ],
+    "bookingInfo": "Official attendee passes available via OakShow Events Desk.",
+    "status": "Concluded (Archive Verified)"
+  },
+  {
+    "id": "oakshow-cinema-awards-2020",
+    "title": "OakShow Annual Cinema & Critical Acclaim Awards",
+    "category": "Annual Critic Awards",
+    "venue": "Virtual Gala & Broadcast",
+    "venueLink": "http://oakshow.in",
+    "dates": "December 30, 2020",
+    "year": "2020",
+    "location": "Online / Digital Premiere",
+    "poster": "favicon.png",
+    "trailerUrl": "",
+    "youtubeId": "GODAlxW5Pes",
+    "summary": "Recognizing outstanding achievements across Indian Cinema, Hollywood releases, and emerging web series based on OakShow Shielded Remarks.",
+    "highlights": [
+      "Shielded / Must Watch Film of the Year",
+      "Best Directorial Vision in Regional Cinema",
+      "Breakout Performance in Web Television",
+      "Technical Excellence in Sound & Visual Effects"
+    ],
+    "bookingInfo": "Free public access on OakShow archives.",
+    "status": "Archive Recorded"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Call of Duty: Black Ops 4",
+    "poster": "pics/Games/CallofDutyBlackOps4/Call-of-Duty-Black-Ops-4-Reviews-Ratings-and-Free-Download.jpg",
+    "platform": "PS4,XBOX and PC",
+    "releaseDate": "Oct 12, 2018",
+    "genre": "First-Person Shooter, Battle Royale",
+    "developer": "Treyarch",
+    "publisher": "Activision",
+    "type": "Multiplayer",
+    "promoLink": "https://www.youtube.com/watch?v=ooyjaVdt-jA",
+    "moreLink": "CallofDutyBlackOps4.html"
+  },
+  {
+    "title": "Teen Titans GO Figure!",
+    "poster": "pics/Games/TeenTitansGOFigure/1.jpg",
+    "platform": "Android and iOS",
+    "releaseDate": "July, 2018",
+    "genre": "Action",
+    "developer": "",
+    "publisher": "Cartoon Network",
+    "type": "Single Player",
+    "promoLink": "https://www.youtube.com/watch?v=Abv5ImPNKwY",
+    "moreLink": "TeenTitansGOFigure.html"
+  },
+  {
+    "title": "Dragon Ball Legends",
+    "poster": "pics/Games/DragonBallLegends/Dragon-Ball-Legends-Ratings-Reviews-Download.jpg",
+    "platform": "Android and iOS",
+    "releaseDate": "May 27, 2018",
+    "genre": "Action",
+    "developer": "",
+    "publisher": "Bandai Namco",
+    "type": "One Finger Card Action",
+    "promoLink": "https://www.youtube.com/watch?v=sL1aH6exacA",
+    "moreLink": "DragonBallLegends.html"
+  },
+  {
+    "title": "Alto's Odyssey",
+    "poster": "pics/Games/AltosOdyssey/Alto-s-Odyssey-Reviews-Ratings-and-Free-Download.jpg",
+    "platform": "Android and iOS",
+    "releaseDate": "July, 2018",
+    "genre": "Endless Runner, Snowboarding",
+    "developer": "",
+    "publisher": "Bandai Namco",
+    "type": "Single Player",
+    "promoLink": "https://www.youtube.com/watch?v=PaZsrAi6iJg",
+    "moreLink": "AltosOdyssey.html"
+  }
+]

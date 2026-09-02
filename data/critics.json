@@ -1,0 +1,203 @@
+[
+  {
+    "id": "abhijith-a-g",
+    "slug": "AbhijithAG",
+    "name": "Abhijith A G",
+    "designation": "Certified Film Critic & Columnist",
+    "location": "Kerala, India",
+    "joiningDate": "July 28, 2018",
+    "avatar": "Profiles/CriticProfiles/AbhijithAG/pics/abhijith-a-g-character-icon.png",
+    "coverImage": "Profiles/CriticProfiles/AbhijithAG/pics/1.jpg",
+    "bio": "Environmentalist, cinema aficionado, and avid pop-culture reviewer writing comprehensive reviews across Hollywood and South Indian Cinema.",
+    "hobbies": "Watching Movies and Series, Tech Research, World Cinema",
+    "socials": [
+      {
+        "platform": "Facebook",
+        "url": "https://www.facebook.com/abhijithag1"
+      },
+      {
+        "platform": "Twitter",
+        "url": "https://twitter.com/oak_show"
+      },
+      {
+        "platform": "Instagram",
+        "url": "https://instagram.com/oak_show"
+      }
+    ],
+    "featuredPosters": [
+      "Profiles/CriticProfiles/AbhijithAG/pics/lucifer.jpg",
+      "Profiles/CriticProfiles/AbhijithAG/pics/deadpool-2.jpg"
+    ],
+    "totalReviews": 22,
+    "avgRating": "3.4"
+  },
+  {
+    "id": "jithin-j-prasad",
+    "slug": "JithinJPrasad",
+    "name": "Jithin J Prasad",
+    "designation": "Senior Movie Critic & Feature Writer",
+    "location": "Kerala, India",
+    "joiningDate": "June 15, 2018",
+    "avatar": "Profiles/CriticProfiles/JithinJPrasad/pics/jithin-j-prasad-character-icon.png",
+    "coverImage": "Profiles/CriticProfiles/JithinJPrasad/pics/1.jpg",
+    "bio": "Environmentalist, cinephile, and culture writer striving to bring audiences together with authentic, thoughtful reviews and social themes.",
+    "hobbies": "Watching Movies, Gaming, Singing, Writing",
+    "socials": [
+      {
+        "platform": "Facebook",
+        "url": "https://www.facebook.com/jithinjprasad"
+      },
+      {
+        "platform": "Twitter",
+        "url": "https://twitter.com/jithinjprasad"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://in.linkedin.com/jithinjp"
+      },
+      {
+        "platform": "Instagram",
+        "url": "https://instagram.com/jithin_jp"
+      }
+    ],
+    "featuredPosters": [
+      "Profiles/CriticProfiles/JithinJPrasad/pics/DarkWatersReview/1.jpg",
+      "Profiles/CriticProfiles/JithinJPrasad/pics/DilBecharaReview/1.jpg"
+    ],
+    "totalReviews": 10,
+    "avgRating": "3.9"
+  },
+  {
+    "id": "achuthan-karnnan",
+    "slug": "AchuthanKarnnan",
+    "name": "Achuthan Karnnan",
+    "designation": "OakShow Film Critic & Science Columnist",
+    "location": "Kerala, India",
+    "joiningDate": "July 23, 2018",
+    "avatar": "Profiles/CriticProfiles/AchuthanKarnnan/pics/achuthan-karnnan-character-icon.png",
+    "coverImage": "Profiles/CriticProfiles/AchuthanKarnnan/pics/1.jpg",
+    "bio": "Amateur astronomer, fitness enthusiast, and sci-fi film critic focusing on technical storytelling and space adventures.",
+    "hobbies": "Browsing Tech & Science, Music, Workout, Amateur Astronomy",
+    "socials": [
+      {
+        "platform": "Facebook",
+        "url": "https://www.facebook.com/achuthan.karnnan"
+      },
+      {
+        "platform": "Twitter",
+        "url": "https://twitter.com/achuthanium"
+      },
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/channel/UC25R9MfiAWtluaEz9VEiEPw"
+      },
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/me_achu_in.sta/"
+      },
+      {
+        "platform": "Website",
+        "url": "https://achuthankarnnan.wordpress.com/"
+      }
+    ],
+    "featuredPosters": [
+      "Profiles/CriticProfiles/AchuthanKarnnan/pics/baahubali-2.jpg",
+      "Profiles/CriticProfiles/AchuthanKarnnan/pics/infinity-war.jpg",
+      "Profiles/CriticProfiles/AchuthanKarnnan/pics/sacred-games.jpg"
+    ],
+    "totalReviews": 1,
+    "avgRating": "3.0"
+  },
+  {
+    "id": "manoj-aswin",
+    "slug": "ManojAswin",
+    "name": "Manoj Aswin",
+    "designation": "OakShow Film Critic & Tamil Cinema Specialist",
+    "location": "Tamil Nadu, India",
+    "joiningDate": "July 26, 2018",
+    "avatar": "Profiles/CriticProfiles/ManojAswin/pics/manoj-aswin-character-icon.png",
+    "coverImage": "Profiles/CriticProfiles/ManojAswin/pics/1.jpg",
+    "bio": "Avid follower of South Indian and World Cinema, specializing in action, comedy, and family entertainers.",
+    "hobbies": "Music, Movies, Visual Arts",
+    "socials": [
+      {
+        "platform": "Facebook",
+        "url": "https://www.facebook.com/Manoj.sparks.77"
+      }
+    ],
+    "featuredPosters": [
+      "Profiles/CriticProfiles/ManojAswin/pics/kadaikutty-singam.jpg",
+      "Profiles/CriticProfiles/ManojAswin/pics/tik-tik-tik.jpg"
+    ],
+    "totalReviews": 4,
+    "avgRating": "3.4"
+  },
+  {
+    "id": "vishnu-pc",
+    "slug": "VishnuPc",
+    "name": "Vishnu Pc",
+    "designation": "OakShow Film Critic & Musician",
+    "location": "Kerala, India",
+    "joiningDate": "July 15, 2018",
+    "avatar": "Profiles/CriticProfiles/VishnuPc/pics/vishnu-pc-character-icon.png",
+    "coverImage": "Profiles/CriticProfiles/VishnuPc/pics/1.jpg",
+    "bio": "Musician and movie lover analyzing emotional narrative arcs, background scores, and artistic direction.",
+    "hobbies": "Watching Movies, Guitar, Film Score Analysis",
+    "socials": [
+      {
+        "platform": "Facebook",
+        "url": "https://www.facebook.com/jeyamvishnu"
+      },
+      {
+        "platform": "Twitter",
+        "url": "https://twitter.com/vishnu_pc"
+      }
+    ],
+    "featuredPosters": [
+      "Profiles/CriticProfiles/VishnuPc/pics/vishnu-pc-thani-oruvan.jpg",
+      "Profiles/CriticProfiles/VishnuPc/pics/vishnu-pc-dagal.jpg"
+    ],
+    "totalReviews": 1,
+    "avgRating": "2.8"
+  },
+  {
+    "id": "ms-mr-oakshow",
+    "slug": "MsMrOakShow",
+    "name": "Ms./Mr. OakShow",
+    "designation": "Chief Editorial & Curatorial Critic",
+    "location": "OakShow Editorial, Global",
+    "joiningDate": "May 10, 2016",
+    "avatar": "Profiles/CriticProfiles/MsMrOakShow/pics/dummy-character-icon.png",
+    "coverImage": "Profiles/CriticProfiles/MsMrOakShow/pics/1.jpg",
+    "bio": "The signature editorial voice and critic persona of OakShow, curating classic retrospectives, award season highlights, and timeless cinema.",
+    "hobbies": "Cinema History, Pop Culture Archiving, Soundtracks",
+    "socials": [
+      {
+        "platform": "Facebook",
+        "url": "https://www.facebook.com/OakShowReal/"
+      },
+      {
+        "platform": "Twitter",
+        "url": "https://twitter.com/oak_show"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://in.linkedin.com/company/oakshow"
+      },
+      {
+        "platform": "Instagram",
+        "url": "https://instagram.com/oak_show"
+      },
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/oakshow"
+      }
+    ],
+    "featuredPosters": [
+      "Profiles/CriticProfiles/MsMrOakShow/pics/about-dummy-critic-oakshow-1.jpg",
+      "Profiles/CriticProfiles/MsMrOakShow/pics/about-dummy-critic-oakshow-2.jpg"
+    ],
+    "totalReviews": 1,
+    "avgRating": "4.5"
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "name": "oakshow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/generate-static-pages.js",
+    "preview": "vite preview",
+    "extract": "node scripts/extract_data.cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.0",
+    "cheerio": "^1.2.0",
+    "vite": "^8.2.2"
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.9.4",
+    "fuse.js": "^7.5.0",
+    "lucide-react": "^1.34.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  }
+}

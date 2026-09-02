@@ -1,0 +1,20 @@
+[
+  {
+    "title": "A Higher Loyalty",
+    "cover": "pics/Books/AHigherLoyalty/AHigherLoyalty.jpg",
+    "author": "",
+    "releaseDate": "April 17, 2018",
+    "genre": "Autobiography",
+    "publisher": "",
+    "moreLink": "AHigherLoyalty.html"
+  },
+  {
+    "title": "The Woman in the Window",
+    "cover": "pics/Books/TheWomanintheWindow/TheWomanintheWindow.jpg",
+    "author": "",
+    "releaseDate": "Jan 2, 2018",
+    "genre": "Thriller",
+    "publisher": "",
+    "moreLink": "TheWomanintheWindow.html"
+  }
+]

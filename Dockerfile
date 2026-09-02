@@ -1,0 +1,22 @@
+# Stage 1: Build the Vite + React app
+FROM node:20-alpine AS builder
+WORKDIR /app
+
+# Install dependencies
+COPY package*.json ./
+RUN npm ci
+
+# Copy source files
+COPY . .
+
+# Run production build and static generator
+RUN npm run build
+
+# Stage 2: Serve with lightweight Nginx
+FROM nginx:alpine
+COPY --from=builder /app/dist /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+EXPOSE 8080
+
+CMD ["nginx", "-g", "daemon off;"]

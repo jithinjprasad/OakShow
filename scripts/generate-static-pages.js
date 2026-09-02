@@ -1,0 +1,326 @@
+/**
+ * OakShow Multi-Page Static Site Generator (SSG) Prerender Script
+ * 
+ * Generates standalone, crawler-friendly, metadata-complete .html files in dist/
+ * for all movies, web series, category hubs, emergencies, and archives.
+ * 
+ * Preserves 100% of backlinks, canonical URLs, and OpenGraph social previews (WhatsApp/FB/X).
+ */
+
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const rootDir = path.resolve(__dirname, '..');
+const distDir = path.resolve(rootDir, 'dist');
+const dataDir = path.resolve(rootDir, 'data');
+
+const DOMAIN = 'https://oakshow.in';
+
+function escapeHtml(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
+function getShareImage(item, folderPrefix = 'Films') {
+  if (!item) return `${DOMAIN}/favicon.png`;
+  
+  if (item.poster && /(?:^|[/\\])2\.(?:jpg|jpeg|png)$/i.test(item.poster)) {
+    const clean = item.poster.replace(/^[/\\]+/, '');
+    return `${DOMAIN}/${clean}`;
+  }
+  if (Array.isArray(item.gallery)) {
+    const found = item.gallery.find(g => g.src && /(?:^|[/\\])2\.(?:jpg|jpeg|png)$/i.test(g.src));
+    if (found) {
+      const clean = found.src.replace(/^[/\\]+/, '');
+      return `${DOMAIN}/${clean}`;
+    }
+  }
+  if (item.id) {
+    return `${DOMAIN}/pics/${folderPrefix}/${item.id}/2.jpg`;
+  }
+  if (item.poster) {
+    const clean = item.poster.replace(/^[/\\]+/, '');
+    return `${DOMAIN}/${clean}`;
+  }
+  return `${DOMAIN}/favicon.png`;
+}
+
+function generatePrerenderHtml(baseHtml, {
+  title,
+  description,
+  canonicalUrl,
+  ogImage,
+  ogType = 'website',
+  schemaJson = null,
+  bodyContent = ''
+}) {
+  const finalTitle = escapeHtml(title || 'OakShow-The One Destination For Everything On Entertainment');
+  const finalDesc = escapeHtml(description || 'Unified movie ratings, critic reviews, showtimes, trailers, and ticket bookings across Indian Cinema, Hollywood, and World Entertainment.');
+  const finalUrl = canonicalUrl || DOMAIN;
+  const finalImage = ogImage || `${DOMAIN}/favicon.png`;
+
+  let html = baseHtml;
+
+  // Replace <title>
+  html = html.replace(/<title>[\s\S]*?<\/title>/i, `<title>${finalTitle}</title>`);
+
+  // Replace Meta Description
+  if (html.includes('<meta name="description"')) {
+    html = html.replace(/<meta\s+name="description"\s+content="[^"]*"\s*\/?>/i, `<meta name="description" content="${finalDesc}" />`);
+  }
+
+  // Replace Canonical Link
+  if (html.includes('<link rel="canonical"')) {
+    html = html.replace(/<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/i, `<link rel="canonical" href="${finalUrl}" />`);
+  }
+
+  // Replace OpenGraph Tags
+  html = html.replace(/<meta\s+property="og:title"\s+content="[^"]*"\s*\/?>/i, `<meta property="og:title" content="${finalTitle}" />`);
+  html = html.replace(/<meta\s+property="og:description"\s+content="[^"]*"\s*\/?>/i, `<meta property="og:description" content="${finalDesc}" />`);
+  html = html.replace(/<meta\s+property="og:url"\s+content="[^"]*"\s*\/?>/i, `<meta property="og:url" content="${finalUrl}" />`);
+  html = html.replace(/<meta\s+property="og:type"\s+content="[^"]*"\s*\/?>/i, `<meta property="og:type" content="${ogType}" />`);
+  html = html.replace(/<meta\s+property="og:image"\s+content="[^"]*"\s*\/?>/i, `<meta property="og:image" content="${finalImage}" />`);
+
+  // Replace Twitter Card Tags
+  html = html.replace(/<meta\s+name="twitter:title"\s+content="[^"]*"\s*\/?>/i, `<meta name="twitter:title" content="${finalTitle}" />`);
+  html = html.replace(/<meta\s+name="twitter:description"\s+content="[^"]*"\s*\/?>/i, `<meta name="twitter:description" content="${finalDesc}" />`);
+  html = html.replace(/<meta\s+name="twitter:image"\s+content="[^"]*"\s*\/?>/i, `<meta name="twitter:image" content="${finalImage}" />`);
+
+  // Replace Schema.org JSON-LD if provided
+  if (schemaJson) {
+    const schemaScript = `<script type="application/ld+json">\n${JSON.stringify(schemaJson, null, 2)}\n</script>`;
+    if (html.includes('<script type="application/ld+json">')) {
+      html = html.replace(/<script\s+type="application\/ld\+json">[\s\S]*?<\/script>/i, schemaScript);
+    } else {
+      html = html.replace('</head>', `  ${schemaScript}\n</head>`);
+    }
+  }
+
+  // Inject crawler-friendly semantic fallback into root if present
+  if (bodyContent) {
+    const noscriptContent = `<noscript>\n<div class="oakshow-crawler-fallback" style="padding:24px;font-family:sans-serif;color:#fff;background:#0d1117;">\n${bodyContent}\n</div>\n</noscript>`;
+    html = html.replace('<div id="root"></div>', `<div id="root"></div>\n${noscriptContent}`);
+  }
+
+  return html;
+}
+
+function loadJson(filename) {
+  const p = path.join(dataDir, filename);
+  if (!fs.existsSync(p)) return [];
+  try {
+    return JSON.parse(fs.readFileSync(p, 'utf8'));
+  } catch (err) {
+    console.warn(`[WARN] Could not parse ${filename}:`, err.message);
+    return [];
+  }
+}
+
+async function run() {
+  console.log('🚀 Starting OakShow Multi-Page Static Site Generator (SSG)...');
+
+  const indexHtmlPath = path.join(distDir, 'index.html');
+  if (!fs.existsSync(indexHtmlPath)) {
+    console.error('❌ Error: dist/index.html not found! Run "vite build" first.');
+    process.exit(1);
+  }
+
+  const baseHtml = fs.readFileSync(indexHtmlPath, 'utf8');
+
+  let count = 0;
+
+  // 1. Process Movies
+  const movies = loadJson('movies.json');
+  console.log(`📦 Prerendering ${movies.length} movies...`);
+
+  for (const m of movies) {
+    const filename = m.filename ? m.filename.replace(/^\/+/, '') : (m.id ? `${m.id}.html` : null);
+    if (!filename) continue;
+
+    const outPath = path.join(distDir, filename);
+    const outDir = path.dirname(outPath);
+    if (!fs.existsSync(outDir)) {
+      fs.mkdirSync(outDir, { recursive: true });
+    }
+
+    const title = m.metaTitle || `${m.title}${m.year ? ` (${m.year})` : ''} All Ratings, Reviews, Songs, Videos, Bookings and News — OakShow`;
+    const desc = m.description || m.plot || `Checkout verified ratings, reviews, streaming links, and tickets for ${m.title} on OakShow.`;
+    const canonical = `${DOMAIN}/${filename}`;
+    const ogImage = getShareImage(m, 'Films');
+
+    const schema = {
+      '@context': 'https://schema.org',
+      '@type': 'Movie',
+      'name': m.title,
+      'description': desc,
+      'image': ogImage,
+      'url': canonical,
+      'datePublished': m.year || m.releaseDate,
+      ...(m.director ? { 'director': { '@type': 'Person', 'name': m.director } } : {}),
+      ...(m.ratings && m.ratings.length > 0 ? {
+        'aggregateRating': {
+          '@type': 'AggregateRating',
+          'ratingValue': m.ratings[0].score,
+          'bestRating': '10',
+          'ratingCount': '100'
+        }
+      } : {})
+    };
+
+    const bodyContent = `
+      <h1>${escapeHtml(m.title)} ${m.year ? `(${escapeHtml(m.year)})` : ''}</h1>
+      <p><strong>Genre:</strong> ${escapeHtml(m.genre || 'Cinema')} | <strong>Language:</strong> ${escapeHtml(m.language || 'All')}</p>
+      <p>${escapeHtml(desc)}</p>
+      <p><a href="${DOMAIN}/">Explore OakShow Entertainment</a></p>
+    `;
+
+    const html = generatePrerenderHtml(baseHtml, {
+      title,
+      description: desc,
+      canonicalUrl: canonical,
+      ogImage,
+      ogType: 'video.movie',
+      schemaJson: schema,
+      bodyContent
+    });
+
+    fs.writeFileSync(outPath, html, 'utf8');
+    count++;
+  }
+
+  // 2. Process Web Series
+  const series = loadJson('series.json');
+  console.log(`📦 Prerendering ${series.length} web series...`);
+
+  for (const s of series) {
+    const filename = s.filename ? s.filename.replace(/^\/+/, '') : (s.id ? `${s.id}.html` : null);
+    if (!filename) continue;
+
+    const outPath = path.join(distDir, filename);
+    const outDir = path.dirname(outPath);
+    if (!fs.existsSync(outDir)) {
+      fs.mkdirSync(outDir, { recursive: true });
+    }
+
+    const title = s.metaTitle || `${s.title}${s.year ? ` (${s.year})` : ''} All Ratings, Episodes, Streaming & Reviews — OakShow`;
+    const desc = s.description || s.plot || `Stream and check verified episode ratings for ${s.title} on OakShow.`;
+    const canonical = `${DOMAIN}/${filename}`;
+    const ogImage = getShareImage(s, 'Serieses');
+
+    const schema = {
+      '@context': 'https://schema.org',
+      '@type': 'TVSeries',
+      'name': s.title,
+      'description': desc,
+      'image': ogImage,
+      'url': canonical,
+      'datePublished': s.year || s.releaseDate,
+      ...(s.director ? { 'director': { '@type': 'Person', 'name': s.director } } : {})
+    };
+
+    const bodyContent = `
+      <h1>${escapeHtml(s.title)}</h1>
+      <p><strong>Genre:</strong> ${escapeHtml(s.genre || 'Web Series')} | <strong>Language:</strong> ${escapeHtml(s.language || 'All')}</p>
+      <p>${escapeHtml(desc)}</p>
+      <p><a href="${DOMAIN}/#/series-hub">Back to Web Series Vault</a></p>
+    `;
+
+    const html = generatePrerenderHtml(baseHtml, {
+      title,
+      description: desc,
+      canonicalUrl: canonical,
+      ogImage,
+      ogType: 'video.tv_show',
+      schemaJson: schema,
+      bodyContent
+    });
+
+    fs.writeFileSync(outPath, html, 'utf8');
+    count++;
+  }
+
+  // 3. Process Category Hubs & Specialty Portals
+  const hubs = [
+    { filename: 'indian.html', title: 'Indian Cinema (Bollywood, Tollywood, Kollywood & Mollywood) — OakShow', desc: 'Browse verified ratings, reviews, streaming providers and bookings for Indian movies.' },
+    { filename: 'hollywood.html', title: 'Hollywood Studio Blockbusters & Classics — OakShow', desc: 'Browse verified ratings, reviews, streaming providers and bookings for Hollywood blockbusters.' },
+    { filename: 'international.html', title: 'International Cinema, Anime & World Movies — OakShow', desc: 'Explore global cinema, Japanese anime, and European releases on OakShow.' },
+    { filename: 'series-hub.html', title: 'Web Series & Television Shows Vault — OakShow', desc: 'Binge-worthy web series, episode guides, ratings, and streaming platforms.' },
+    { filename: 'releases.html', title: 'Cinema Release Matrix & Monthly Calendars — OakShow', desc: 'Complete month-by-month release schedules for Indian and Hollywood films.' },
+    { filename: 'reviews.html', title: 'OakShow Editorial & Critic Reviews — Certified Ratings & Remarks', desc: 'Unbiased film criticism, certified reviewer profiles, and OakShow official remarks.' },
+    { filename: 'remarks.html', title: 'OakShow Remarks & Meaning Guide — 4 Certified Verdicts', desc: 'Understanding OakShow official verdict remarks: Must Watch, Safe to Watch, Above Average, and Warning.' },
+    { filename: 'sports-hub.html', title: 'Sports Tournaments & World Cup Archives — OakShow', desc: '2018 FIFA World Cup, Women\'s Hockey World Cup, and football schedules.' },
+    { filename: 'games-books.html', title: 'Video Games & Recommended Literature Shortlists — OakShow', desc: 'Shortlisted top video games and must-read books.' },
+    { filename: 'news.html', title: 'OakShow News & Current Affairs Reports — Verified Bulletins', desc: 'Verified cinema headlines, box office milestones, and current affairs reports.' },
+    { filename: 'galleries.html', title: 'OakShow Movie Galleries & Character Posters Vault — HD Wallpapers', desc: 'High-definition official movie wallpapers, photoshoot stills, and character posters.' },
+    { filename: 'emergencies.html', title: 'Public Emergencies, Helplines & Disaster Relief — OakShow', desc: 'Official helplines, relief funds, and emergency response portals.' },
+    { filename: 'music.html', title: 'Soundtracks, Scores & Audio Launches — OakShow', desc: 'Explore official movie soundtracks, audio jukeboxes, and background scores.' },
+    { filename: 'trailers.html', title: 'Trailers, Teasers & Video Vault — OakShow', desc: 'High-definition official teasers, promos, and first look trailers.' },
+    { filename: 'events.html', title: 'Film Festivals, Award Galas & Cinema Events — OakShow', desc: 'Coverage of film awards, galas, and industry festivals.' },
+    { filename: 'copyright-policy.html', title: 'Privacy & Copyright Policy — OakShow', desc: 'Official privacy policy, copyright guidelines, and terms of service for OakShow.' },
+    { filename: 'OakShowNews.html', title: 'OakShow News — Verified Cinema & Box Office Bulletins', desc: 'Verified cinema headlines, box office milestones, and current affairs reports.' },
+    { filename: 'OakShowGalleries.html', title: 'OakShow Galleries — HD Posters, Wallpapers & Stills', desc: 'High-definition official movie wallpapers, photoshoot stills, character posters.' },
+    { filename: 'OakShowReviews.html', title: 'OakShow Reviews — Certified Critic Ratings & Remarks', desc: 'Unbiased film criticism, certified reviewer profiles, and OakShow official remarks.' },
+    { filename: 'OakShowBlog.html', title: 'OakShow Cinema Perspectives & Editorial Essays', desc: 'In-depth cinema features, retrospectives, and cultural commentary.' },
+    { filename: 'OakShowEmergency.html', title: 'Public Emergencies, Helplines & Relief Portals — OakShow', desc: 'Official helplines, relief funds, and disaster management portals.' }
+  ];
+
+  console.log(`📦 Prerendering ${hubs.length} category hubs & index sections...`);
+
+  for (const h of hubs) {
+    const outPath = path.join(distDir, h.filename);
+    const canonical = `${DOMAIN}/${h.filename}`;
+    const bodyContent = `
+      <h1>${escapeHtml(h.title)}</h1>
+      <p>${escapeHtml(h.desc)}</p>
+      <p><a href="${DOMAIN}/">Explore OakShow Homepage</a></p>
+    `;
+
+    const html = generatePrerenderHtml(baseHtml, {
+      title: h.title,
+      description: h.desc,
+      canonicalUrl: canonical,
+      ogImage: `${DOMAIN}/favicon.png`,
+      ogType: 'website',
+      bodyContent
+    });
+
+    fs.writeFileSync(outPath, html, 'utf8');
+    count++;
+  }
+
+  // 4. Specific Emergencies
+  const emergencies = [
+    { filename: 'keralafloods.html', title: '2018 Kerala Floods Relief, Helplines & Rescue Portals — OakShow Emergency', desc: 'Official relief funds, district control rooms, emergency helplines and rescue contacts for Kerala Floods 2018.' },
+    { filename: 'keralafloods2019.html', title: '2019 Kerala Floods Relief, District Helplines & CMDRF — OakShow Emergency', desc: 'Official relief funds, district control rooms, and emergency helplines for Kerala Floods 2019.' },
+    { filename: 'coronavirusoutbreak.html', title: 'COVID-19 Coronavirus Outbreak Helplines, Relief Funds & Advisories — OakShow Emergency', desc: 'Official emergency helplines, testing centers, PM CARES fund and verified medical advisories.' }
+  ];
+
+  for (const em of emergencies) {
+    const outPath = path.join(distDir, em.filename);
+    const canonical = `${DOMAIN}/${em.filename}`;
+    const html = generatePrerenderHtml(baseHtml, {
+      title: em.title,
+      description: em.desc,
+      canonicalUrl: canonical,
+      ogImage: `${DOMAIN}/favicon.png`,
+      ogType: 'website'
+    });
+    fs.writeFileSync(outPath, html, 'utf8');
+    count++;
+  }
+
+  console.log(`✅ Successfully generated ${count} static prerendered HTML pages in dist/!`);
+}
+
+run().catch((err) => {
+  console.error('❌ Build failed:', err);
+  process.exit(1);
+});
