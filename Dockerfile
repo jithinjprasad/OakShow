@@ -9,8 +9,8 @@ RUN npm ci
 # Copy source files
 COPY . .
 
-# Run production build and static generator
-RUN npm run build
+# Run production build
+RUN npx vite build
 
 # Stage 2: Serve with lightweight Nginx
 FROM nginx:alpine
