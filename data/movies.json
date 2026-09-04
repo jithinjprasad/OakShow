@@ -1,5 +1,318 @@
 [
   {
+    "id": "im-game",
+    "title": "I'm Game",
+    "fileName": "ImGame.html",
+    "cleanUrl": "/ImGame.html",
+    "type": "Movie",
+    "summary": "I'm Game is a high-octane 2026 Indian Malayalam-language fantasy action thriller directed by Nahas Hidhayath (RDX) and produced by Dulquer Salmaan and Jom Varghese under Wayfarer Films. Marking Dulquer Salmaan's landmark 40th film as a lead actor (DQ40), the movie follows Dan John, a fearless high-rolling gambler and businessman whose life plunges into bizarre and mystical chaos after undergoing an unconventional hand transplant, colliding his destiny with sports, crime syndicates, and supernatural vengeance.",
+    "plot": "A fearless gambler who trusts luck more than life gets caught in a series of crazy and unexpected events that turn his world upside down. Dan John, an adventurous high-stakes player, undergoes a mysterious hand transplant following a severe mishap. Soon, his newly acquired hand begins exhibiting a will, muscle memory, and ruthless instincts of its own, dragging him into the high-stakes underworld of match-fixing kingpin David Abraham and cricketer Vicky Das. What follows is a thrilling ride filled with high-voltage stunts, mind games, surprises, romance, and an adrenaline-pumping supernatural showdown. Source:IMDb",
+    "language": "Malayalam",
+    "releaseDate": "September 03, 2026",
+    "year": "2026",
+    "genre": "Fantasy, Action, Thriller, Drama",
+    "duration": "2hr 51mins",
+    "director": "Nahas Hidhayath",
+    "basedOn": "",
+    "boxOffice": {
+      "worldwideGross": "₹7.80 Crore (Day 1)",
+      "domesticGross": "₹5.05 Crore",
+      "openingDay": "₹5.05 Crore",
+      "budget": "₹45 Crore",
+      "verdict": "Theatrical Run Ongoing"
+    },
+    "poster": "pics/Films/ImGame/1.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/ImGame/1.jpg",
+        "alt": "I'm Game Poster"
+      },
+      {
+        "src": "pics/Films/ImGame/2.jpg",
+        "alt": "I'm Game Banner"
+      },
+      {
+        "src": "pics/Films/ImGame/3.jpg",
+        "alt": "I'm Game Action Scene Still"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "6.0/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-an-average-movie.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "6.8/10",
+        "url": "https://www.imdb.com/title/tt34284946/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Times of India",
+        "score": "3/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/malayalam/movie-reviews/im-game/movie-review/133735732.cms",
+        "icon": "pics/RatingSiteLogos/times-of-india.ico"
+      },
+      {
+        "source": "The Indian Express",
+        "score": "2.5/5",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/im-game-movie-review-dulquer-salmaans-fantasy-actioner-is-a-gamble-that-nearly-pays-off-10860784/",
+        "icon": "pics/RatingSiteLogos/indian-express.png"
+      },
+      {
+        "source": "India Today",
+        "score": "2.5/5",
+        "url": "https://www.indiatoday.in/movies/reviews/story/im-game-review-dulquer-salmaan-has-all-the-right-cards-but-the-film-folds-2986152-2026-09-03",
+        "icon": "pics/RatingSiteLogos/india-today.ico"
+      },
+      {
+        "source": "NDTV",
+        "score": "2.5/5",
+        "url": "https://www.ndtv.com/entertainment/im-game-review-dulquer-salmaan-bets-big-but-the-gamble-fails-to-pay-off-2-5-stars-11997545",
+        "icon": "pics/RatingSiteLogos/ndtv.ico"
+      },
+      {
+        "source": "Pinkvilla",
+        "score": "2.5/5",
+        "url": "https://www.pinkvilla.com/entertainment/south/im-game-review-dulquer-salmaans-stylish-action-thriller-fumbles-after-an-impressive-first-half-and-slick-moments-1405243",
+        "icon": "pics/RatingSiteLogos/pinkvilla.png"
+      },
+      {
+        "source": "Rediff",
+        "score": "2/5",
+        "url": "https://www.rediff.com/movies/review/im-game-review-dulquer-salmaan-supernatural-action-thriller-starts-strong-ends-predictably/20260904.htm",
+        "icon": "pics/RatingSiteLogos/rediff.png"
+      },
+      {
+        "source": "News18",
+        "score": "3/5",
+        "url": "https://www.news18.com/movies/malayalam-cinema/im-game-x-review-dulquer-salmaan-show-stealer-in-fantasy-thriller-fans-call-first-half-a-blast-10307612.html",
+        "icon": "pics/RatingSiteLogos/news-18.png"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Dulquer Salmaan",
+        "role": "Dan John",
+        "description": "A high-stakes businessman and recipient of a hand transplant"
+      },
+      {
+        "actor": "Antony Varghese",
+        "role": "Vignesh 'Vicky' Das",
+        "description": "A fiery cricketer in Madras Raging Bulls"
+      },
+      {
+        "actor": "Mysskin",
+        "role": "David Abraham",
+        "description": "Owner of Madras Raging Bulls and gambling kingpin"
+      },
+      {
+        "actor": "Kayadu Lohar",
+        "role": "Isha",
+        "description": "Dan's love interest and physiotherapist"
+      },
+      {
+        "actor": "Samyuktha Viswanathan",
+        "role": "Tharini",
+        "description": "Vicky's love interest"
+      },
+      {
+        "actor": "Kathir",
+        "role": "Jason Antony",
+        "description": "Captain of Madras Raging Bulls"
+      },
+      {
+        "actor": "Vinay Forrt",
+        "role": "Freddy",
+        "description": "Dan's gambling partner and loyal friend"
+      },
+      {
+        "actor": "Jayasudha",
+        "role": "Mercy John",
+        "description": "Dan's mother"
+      },
+      {
+        "actor": "Shyamaprasad",
+        "role": "John",
+        "description": "Dan's father"
+      },
+      {
+        "actor": "Ashvin Mathew",
+        "role": "Dr. Sam Mathew",
+        "description": ""
+      },
+      {
+        "actor": "Prabhakar",
+        "role": "Balraj Bhai",
+        "description": ""
+      },
+      {
+        "actor": "Parth Tiwari",
+        "role": "Shaurya",
+        "description": ""
+      }
+    ],
+    "bookings": [
+      {
+        "provider": "BookMyShow",
+        "url": "https://in.bookmyshow.com/movies/im-game/ET00473215",
+        "icon": "pics/BookngWebSiteLogos/book-my-show.png",
+        "label": "Book Now",
+        "rank": 1
+      },
+      {
+        "provider": "District",
+        "url": "https://www.district.in/movies/i-m-game-movie-tickets-MV203144?srsltid=AfmBOorr-SzaFcovwNs_XacQ5xvDAf_Ki8zf5pPnHefN3oDig7CFCcIk",
+        "icon": "pics/BookngWebSiteLogos/district.png",
+        "label": "Book Now",
+        "rank": 2
+      },
+      {
+        "provider": "TicketNew",
+        "url": "https://ticketnew.com/movies/i-m-game-movie-detail-203144",
+        "icon": "pics/BookngWebSiteLogos/ticket-new.png",
+        "label": "Book Now",
+        "rank": 3
+      },
+      {
+        "provider": "Cinepolis",
+        "url": "https://cinepolisindia.com/movie-details/im-game-HO00002626?cid=16",
+        "icon": "pics/BookngWebSiteLogos/cinepolisindia.png",
+        "label": "Book Now",
+        "rank": 4
+      },
+      {
+        "provider": "Fandango",
+        "url": "https://www.fandango.com/im-game-2026-246771/movie-overview",
+        "icon": "pics/BookngWebSiteLogos/fandango.png",
+        "label": "Book Now",
+        "rank": 5
+      },
+      {
+        "provider": "Cineworld",
+        "url": "https://www.cineworld.co.uk/films/gb-im-game-malayalam/ho00015243",
+        "icon": "pics/BookngWebSiteLogos/cineworld.png",
+        "label": "Book Now",
+        "rank": 6
+      }
+    ],
+    "watchOnline": [],
+    "music": [
+      {
+        "provider": "Spotify",
+        "url": "https://open.spotify.com/playlist/3lBMzCTDadOvAzisolq7ZX",
+        "icon": "pics/MusicWebsiteLogos/spotify.png",
+        "language": "Malayalam",
+        "label": "Listen on Spotify"
+      },
+      {
+        "provider": "Apple Music / iTunes",
+        "url": "https://music.apple.com/us/album/im-game-single/1761526200",
+        "icon": "pics/MusicWebsiteLogos/itunes.png",
+        "language": "Malayalam",
+        "label": "Listen on Apple Music"
+      },
+      {
+        "provider": "JioSaavn",
+        "url": "https://www.jiosaavn.com/album/im-game/HcrnvmcAaZk_",
+        "icon": "pics/MusicWebsiteLogos/saavn.png",
+        "language": "Malayalam",
+        "label": "Listen on JioSaavn"
+      }
+    ],
+    "officialWebsite": null,
+    "socials": [
+      {
+        "platform": "Twitter / X",
+        "url": "https://twitter.com/share?url=https://oakshow.in/ImGame.html",
+        "icon": "images/twitter.png",
+        "language": "",
+        "label": "Connect on Twitter / X"
+      }
+    ],
+    "similar": [
+      {
+        "title": "Bongu",
+        "fileName": "Bongu.html",
+        "poster": "pics/Films/Bongu/1.jpg"
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=2E4ihxaCDL4",
+        "youtubeId": "2E4ihxaCDL4",
+        "title": "I'm Game - Official Theatrical Trailer"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=pIDq50mQvtI",
+        "youtubeId": "pIDq50mQvtI",
+        "title": "I'm Game - Loser Official Video Song"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "I'm Game box office collection day 1: Dulquer Salmaan's Malayalam comeback beats Toxic but falls short of expectations",
+        "url": "https://www.hindustantimes.com/entertainment/others/im-game-box-office-collection-day-1-dulquer-salmaan-malayalam-comeback-beats-toxic-yash-but-falls-short-of-expectations-101788487618310.html",
+        "author": "Hindustan Times",
+        "date": "04 September, 2026",
+        "section": "More Reviews and News(After Release)"
+      },
+      {
+        "headline": "I'm Game Movie Review: Dulquer Salmaan's supernatural gamble is messy, mad and entertaining",
+        "url": "https://timesofindia.indiatimes.com/entertainment/malayalam/movie-reviews/im-game/movie-review/133735732.cms",
+        "author": "Times of India",
+        "date": "03 September, 2026",
+        "section": "More Reviews and News(After Release)"
+      },
+      {
+        "headline": "I'm Game movie review: Dulquer Salmaan's fantasy actioner is a gamble that nearly pays off",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/im-game-movie-review-dulquer-salmaans-fantasy-actioner-is-a-gamble-that-nearly-pays-off-10860784/",
+        "author": "The Indian Express",
+        "date": "03 September, 2026",
+        "section": "More Reviews and News(After Release)"
+      },
+      {
+        "headline": "I'm Game review: Dulquer Salmaan has all the right cards, but the film folds",
+        "url": "https://www.indiatoday.in/movies/reviews/story/im-game-review-dulquer-salmaan-has-all-the-right-cards-but-the-film-folds-2986152-2026-09-03",
+        "author": "India Today",
+        "date": "03 September, 2026",
+        "section": "More Reviews and News(After Release)"
+      },
+      {
+        "headline": "‘I'm Game’ movie review: Dulquer Salmaan starrer loses the plot in veering away from a winner of an idea",
+        "url": "https://www.thehindu.com/entertainment/movies/im-game-movie-review-dulquer-salmaan-starrer-loses-the-plot-in-veering-away-from-a-winner-of-an-idea/article71425675.ece",
+        "author": "The Hindu",
+        "date": "03 September, 2026",
+        "section": "More Reviews and News(After Release)"
+      },
+      {
+        "headline": "I'm Game Review: Dulquer Salmaan bets big, but the gamble fails to pay off (2.5 Stars)",
+        "url": "https://www.ndtv.com/entertainment/im-game-review-dulquer-salmaan-bets-big-but-the-gamble-fails-to-pay-off-2-5-stars-11997545",
+        "author": "NDTV",
+        "date": "04 September, 2026",
+        "section": "More Reviews and News(After Release)"
+      },
+      {
+        "headline": "I’m Game Review: Dulquer Salmaan’s stylish action thriller fumbles after an impressive first half",
+        "url": "https://www.pinkvilla.com/entertainment/south/im-game-review-dulquer-salmaans-stylish-action-thriller-fumbles-after-an-impressive-first-half-and-slick-moments-1405243",
+        "author": "Pinkvilla",
+        "date": "03 September, 2026",
+        "section": "More Reviews and News(After Release)"
+      },
+      {
+        "headline": "I'm Game Review: Dulquer Salmaan's Supernatural Action Thriller Starts Strong, Ends Predictably",
+        "url": "https://www.rediff.com/movies/review/im-game-review-dulquer-salmaan-supernatural-action-thriller-starts-strong-ends-predictably/20260904.htm",
+        "author": "Rediff",
+        "date": "04 September, 2026",
+        "section": "More Reviews and News(After Release)"
+      }
+    ],
+    "filePath": "E:/OakShow/ImGame.html",
+    "filename": "ImGame.html"
+  },
+  {
     "id": "BethlehemKudumbaUnit",
     "slug": "bethlehemkudumbaunit",
     "type": "movie",
