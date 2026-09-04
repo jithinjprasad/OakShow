@@ -1,30 +1,45 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { 
   Calendar, 
-  Filter, 
   Film, 
   Play, 
   Star, 
   Search,
-  ExternalLink, 
-  ChevronRight, 
-  Sparkles, 
-  Globe, 
-  Clapperboard,
-  ArrowUpRight
+  ChevronDown,
+  ArrowUpRight,
+  Filter,
+  Sparkles,
+  Clapperboard
 } from 'lucide-react';
+import MovieCard from './MovieCard';
 
 export default function ReleaseCalendarView({ 
   releases, 
+  movies = [],
   onSelectMovie, 
   onPlayTrailer, 
-  onNavigate 
+  onNavigate,
+  bookmarks = [],
+  onToggleBookmark
 }) {
   const [selectedYear, setSelectedYear] = useState('All');
   const [selectedCategory, setSelectedCategory] = useState('All'); // All, Indian, Hollywood, International
   const [selectedMonth, setSelectedMonth] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
-  const [sortBy, setSortBy] = useState('latest-high'); // latest-high, newest, oldest, rating-high, rating-low, title-asc, title-desc
+  const [sortBy, setSortBy] = useState('latest-high');
+  const [visibleCount, setVisibleCount] = useState(24);
+
+  // Fast movie lookup map by slug, id, title, and filename
+  const movieLookup = useMemo(() => {
+    const map = new Map();
+    if (!movies || !Array.isArray(movies)) return map;
+    movies.forEach(m => {
+      if (m.id) map.set(m.id.toLowerCase(), m);
+      if (m.title) map.set(m.title.toLowerCase().trim(), m);
+      if (m.filename) map.set(m.filename.toLowerCase().replace(/\.html$/, ''), m);
+    });
+    return map;
+  }, [movies]);
 
   // Extract all available years sorted descending
   const years = useMemo(() => {
@@ -39,7 +54,7 @@ export default function ReleaseCalendarView({
     'July', 'August', 'September', 'October', 'November', 'December'
   ];
 
-  // Filter calendars by year, category and month
+  // Filter calendars by year and month
   const filteredCalendars = useMemo(() => {
     if (!releases) return [];
     return releases.filter(r => {
@@ -49,12 +64,18 @@ export default function ReleaseCalendarView({
     });
   }, [releases, selectedYear, selectedMonth]);
 
-  // Flatten, filter, and sort all release items
+  // Reset pagination when any filter changes
+  useEffect(() => {
+    setVisibleCount(24);
+  }, [selectedYear, selectedCategory, selectedMonth, searchQuery, sortBy]);
+
+  // Flatten, filter, enrich, and sort all release items
   const allReleaseItems = useMemo(() => {
     const items = [];
     const seen = new Set();
 
     filteredCalendars.forEach(cal => {
+      if (!cal.items) return;
       cal.items.forEach(item => {
         const itemCat = item.category || cal.category || 'Indian';
         
@@ -65,23 +86,53 @@ export default function ReleaseCalendarView({
 
         // Search Filter
         if (searchQuery.trim()) {
-          const q = searchQuery.toLowerCase();
+          const q = searchQuery.toLowerCase().trim();
           const matchTitle = item.title?.toLowerCase().includes(q);
           const matchLang = item.language?.toLowerCase().includes(q);
           const matchGenre = item.genre?.toLowerCase().includes(q);
           if (!matchTitle && !matchLang && !matchGenre) return;
         }
 
-        const uniqueKey = `${item.title}:${cal.year}:${cal.month}`;
+        const uniqueKey = `${(item.title || '').toLowerCase()}:${cal.year}:${cal.month}`;
         if (!seen.has(uniqueKey)) {
           seen.add(uniqueKey);
+
+          const targetSlug = item.moreLink 
+            ? item.moreLink.replace(/\.html$/i, '').replace(/^.*\//, '') 
+            : (item.id || (item.title || '').replace(/[^a-zA-Z0-9]/g, ''));
+
+          const movieMatch = movieLookup.get(targetSlug.toLowerCase()) || 
+                             movieLookup.get((item.title || '').toLowerCase().trim());
+
+          const ratings = (movieMatch?.ratings && movieMatch.ratings.length > 0) 
+            ? movieMatch.ratings 
+            : (item.ratings || []);
+
+          const oakRating = ratings.find(r => r.source === 'OakShow')?.score;
+          const scoreNum = parseFloat(oakRating || ratings[0]?.score) || 0;
+
+          // Enriched item matching MovieCard standard interface
           items.push({ 
-            ...item, 
-            calendarId: cal.id,
-            calendarTitle: cal.title, 
+            id: movieMatch?.id || targetSlug, 
+            title: item.title, 
+            poster: item.poster || movieMatch?.poster, 
+            alt: item.alt || movieMatch?.alt || item.title,
             category: itemCat, 
-            year: cal.year,
-            month: cal.month 
+            language: item.language || movieMatch?.language || 'English', 
+            genre: item.genre || movieMatch?.genre || '',
+            year: item.year || movieMatch?.year || cal.year,
+            month: cal.month,
+            releaseDate: item.releaseDate || movieMatch?.releaseDate || (cal.month ? `${cal.month} ${cal.year}` : cal.year),
+            ratings: ratings,
+            scoreNum: scoreNum,
+            duration: movieMatch?.duration,
+            booking: movieMatch?.booking,
+            videos: item.trailerLink 
+              ? [{ title: `${item.title} — Official Trailer`, url: item.trailerLink }] 
+              : (movieMatch?.videos || []),
+            filename: item.moreLink || movieMatch?.filename || `${targetSlug}.html`,
+            calendarId: cal.id,
+            calendarTitle: cal.title
           });
         }
       });
@@ -93,9 +144,8 @@ export default function ReleaseCalendarView({
         const yrA = parseInt(a.year, 10) || 0;
         const yrB = parseInt(b.year, 10) || 0;
         if (yrB !== yrA) return yrB - yrA;
-        const scoreA = parseFloat(a.ratings?.[0]?.score) || 0;
-        const scoreB = parseFloat(b.ratings?.[0]?.score) || 0;
-        return scoreB - scoreA;
+        if (b.scoreNum !== a.scoreNum) return b.scoreNum - a.scoreNum;
+        return (a.title || '').localeCompare(b.title || '');
       } else if (sortBy === 'newest') {
         const yrA = parseInt(a.year, 10) || 0;
         const yrB = parseInt(b.year, 10) || 0;
@@ -107,16 +157,12 @@ export default function ReleaseCalendarView({
         if (yrA !== yrB) return yrA - yrB;
         return (a.title || '').localeCompare(b.title || '');
       } else if (sortBy === 'rating-high') {
-        const scoreA = parseFloat(a.ratings?.[0]?.score) || 0;
-        const scoreB = parseFloat(b.ratings?.[0]?.score) || 0;
-        if (scoreB !== scoreA) return scoreB - scoreA;
+        if (b.scoreNum !== a.scoreNum) return b.scoreNum - a.scoreNum;
         const yrA = parseInt(a.year, 10) || 0;
         const yrB = parseInt(b.year, 10) || 0;
         return yrB - yrA;
       } else if (sortBy === 'rating-low') {
-        const scoreA = parseFloat(a.ratings?.[0]?.score) || 0;
-        const scoreB = parseFloat(b.ratings?.[0]?.score) || 0;
-        if (scoreA !== scoreB) return scoreA - scoreB;
+        if (a.scoreNum !== b.scoreNum) return a.scoreNum - b.scoreNum;
         const yrA = parseInt(a.year, 10) || 0;
         const yrB = parseInt(b.year, 10) || 0;
         return yrB - yrA;
@@ -129,132 +175,136 @@ export default function ReleaseCalendarView({
     });
 
     return items;
-  }, [filteredCalendars, selectedCategory, searchQuery, sortBy]);
+  }, [filteredCalendars, selectedCategory, searchQuery, sortBy, movieLookup]);
+
+  const displayedItems = useMemo(() => {
+    return allReleaseItems.slice(0, visibleCount);
+  }, [allReleaseItems, visibleCount]);
+
+  const activeMonthCal = useMemo(() => {
+    if (selectedYear === 'All' || selectedMonth === 'All') return null;
+    return filteredCalendars.find(c => {
+      const matchCat = selectedCategory === 'All' || c.category === selectedCategory;
+      return matchCat;
+    }) || filteredCalendars[0] || null;
+  }, [filteredCalendars, selectedYear, selectedMonth, selectedCategory]);
 
   return (
     <div className="release-calendar-root animate-fade-in">
-      {/* Header Banner */}
-      <div className="calendar-header-banner glass-panel">
+      {/* Header Banner - Matches Indian, Hollywood, and OTT Catalog portals */}
+      <div className="catalog-header-banner glass-panel">
         <div className="badge badge-gold">
           <Calendar size={14} />
-          <span>OFFICIAL THEATRICAL RELEASE MATRIX (2015 – 2022)</span>
+          <span>OFFICIAL THEATRICAL RELEASE MATRIX (2015 – 2026)</span>
         </div>
-        <h2 className="calendar-main-heading">Movie Release Calendars</h2>
-        <p className="calendar-subtext">
-          Browse comprehensive theatrical release schedules across Indian Cinema, Hollywood, and International releases with verified ratings, trailers, and standalone pages.
+        <h2 className="catalog-main-title">Movies Released</h2>
+        <p className="catalog-subtitle">
+          Explore complete premiere schedules, monthly release calendars, verified critic reviews, ratings, and trailers across Indian Cinema, Hollywood, and International releases.
         </p>
 
-        {/* Filter Controls Bar */}
-        <div className="calendar-filters-container">
-          {/* Quick Search */}
-          <div className="calendar-search-row">
-            <div className="cal-search-input-wrap">
-              <Search size={16} className="text-muted" />
-              <input 
-                type="text" 
-                placeholder="Search releases by movie title, language, or genre..."
-                value={searchQuery}
-                onChange={e => setSearchQuery(e.target.value)}
-                className="cal-search-input"
-              />
-              {searchQuery && (
-                <button className="cal-search-clear" onClick={() => setSearchQuery('')}>✕</button>
-              )}
-            </div>
-          </div>
-
-          {/* Industry Category Filter */}
-          <div className="filter-group">
-            <span className="filter-label">Cinema Industry:</span>
-            <div className="filter-pills">
-              {[
-                { id: 'All', label: '🌐 All Cinema' },
-                { id: 'Indian', label: '🇮🇳 Indian Cinema' },
-                { id: 'Hollywood', label: '🎬 Hollywood' },
-                { id: 'International', label: '🌍 International' }
-              ].map(cat => (
-                <button
-                  key={cat.id}
-                  className={`pill-btn ${selectedCategory === cat.id ? 'pill-btn-active' : ''}`}
-                  onClick={() => setSelectedCategory(cat.id)}
-                >
-                  {cat.label}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Year selector pills */}
-          <div className="filter-group">
-            <span className="filter-label">Release Year:</span>
-            <div className="filter-pills">
-              {years.map(yr => (
-                <button
-                  key={yr}
-                  className={`pill-btn ${selectedYear === yr ? 'pill-btn-active' : ''}`}
-                  onClick={() => setSelectedYear(yr)}
-                >
-                  {yr === 'All' ? 'All Years' : yr}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Month selector */}
-          <div className="filter-group">
-            <span className="filter-label">Release Month:</span>
-            <div className="filter-pills-scroll">
-              {months.map(m => (
-                <button
-                  key={m}
-                  className={`pill-btn ${selectedMonth === m ? 'pill-btn-active' : ''}`}
-                  onClick={() => setSelectedMonth(m)}
-                >
-                  {m}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Sort Selector */}
-          <div className="filter-group" style={{ marginTop: '14px', paddingTop: '14px', borderTop: '1px solid rgba(255,255,255,0.08)', display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <span className="filter-label" style={{ marginBottom: 0 }}>Sort Releases:</span>
-            <select 
-              value={sortBy} 
-              onChange={e => setSortBy(e.target.value)}
-              className="critic-sort-dropdown"
-              style={{ padding: '8px 14px', borderRadius: '8px', background: 'rgba(20,20,28,0.85)', color: '#fff', border: '1px solid rgba(255,255,255,0.15)', cursor: 'pointer' }}
+        {/* Quick Industry Filter Chips */}
+        <div className="release-quick-chips">
+          {[
+            { id: 'All', label: '🌐 All Cinema' },
+            { id: 'Indian', label: '🇮🇳 Indian Cinema' },
+            { id: 'Hollywood', label: '🎬 Hollywood' },
+            { id: 'International', label: '🌍 International' }
+          ].map(cat => (
+            <button
+              key={cat.id}
+              className={`release-chip ${selectedCategory === cat.id ? 'release-chip-active' : ''}`}
+              onClick={() => setSelectedCategory(cat.id)}
             >
-              <option value="latest-high">Latest Releases & Highest Rated (Default)</option>
-              <option value="newest">Newest to Oldest (Release Year)</option>
-              <option value="oldest">Oldest to Newest (Earliest Premieres)</option>
-              <option value="rating-high">Highest Rated to Lowest</option>
-              <option value="rating-low">Lowest Rated to Highest</option>
-              <option value="title-asc">Movie Title (A to Z)</option>
-              <option value="title-desc">Movie Title (Z to A)</option>
-            </select>
-          </div>
+              {cat.label}
+            </button>
+          ))}
         </div>
       </div>
 
-      {/* Results Header & Monthly Standalone Hub Links */}
-      <div className="calendar-results-meta">
-        <div className="meta-left">
-          <h3>
-            Showing <span className="text-gold">{allReleaseItems.length}</span> releases {selectedMonth !== 'All' ? `for ${selectedMonth} ` : ''}{selectedYear !== 'All' ? `${selectedYear} ` : ''}{selectedCategory !== 'All' ? `(${selectedCategory})` : ''}
-          </h3>
+      {/* Unified Filters Bar - Matches all other catalog sections for desktop and mobile */}
+      <div className="catalog-filters-bar glass-panel">
+        {/* Search Input */}
+        <div className="filter-item release-search-item">
+          <label>Search Releases</label>
+          <div className="cal-search-input-wrap">
+            <Search size={16} className="text-muted" />
+            <input 
+              type="text" 
+              placeholder="Title, language, or genre..."
+              value={searchQuery}
+              onChange={e => setSearchQuery(e.target.value)}
+              className="cal-search-input"
+            />
+            {searchQuery && (
+              <button className="cal-search-clear" onClick={() => setSearchQuery('')} title="Clear search">✕</button>
+            )}
+          </div>
         </div>
 
-        {selectedYear !== 'All' && selectedMonth !== 'All' && filteredCalendars.length > 0 && (
+        {/* Cinema Industry */}
+        <div className="filter-item">
+          <label>Cinema Industry</label>
+          <select value={selectedCategory} onChange={e => setSelectedCategory(e.target.value)}>
+            <option value="All">All Cinema</option>
+            <option value="Indian">🇮🇳 Indian Cinema</option>
+            <option value="Hollywood">🎬 Hollywood</option>
+            <option value="International">🌍 International</option>
+          </select>
+        </div>
+
+        {/* Release Year */}
+        <div className="filter-item">
+          <label>Release Year</label>
+          <select value={selectedYear} onChange={e => setSelectedYear(e.target.value)}>
+            {years.map(yr => (
+              <option key={yr} value={yr}>
+                {yr === 'All' ? 'All Years' : yr}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {/* Release Month */}
+        <div className="filter-item">
+          <label>Release Month</label>
+          <select value={selectedMonth} onChange={e => setSelectedMonth(e.target.value)}>
+            {months.map(m => (
+              <option key={m} value={m}>
+                {m === 'All' ? 'All Months' : m}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {/* Sort By */}
+        <div className="filter-item">
+          <label>Sort By</label>
+          <select value={sortBy} onChange={e => setSortBy(e.target.value)}>
+            <option value="latest-high">Latest & Highest Rated (Default)</option>
+            <option value="newest">Newest to Oldest (Release Year)</option>
+            <option value="oldest">Oldest to Newest (Earliest Premieres)</option>
+            <option value="rating-high">Highest Rated to Lowest</option>
+            <option value="rating-low">Lowest Rated to Highest</option>
+            <option value="title-asc">Movie Title (A to Z)</option>
+            <option value="title-desc">Movie Title (Z to A)</option>
+          </select>
+        </div>
+      </div>
+
+      {/* Results Header & Monthly Standalone Hub Link */}
+      <div className="calendar-results-meta">
+        <div className="meta-left">
+          <span className="results-count-text">
+            Showing <strong className="text-gold">{allReleaseItems.length}</strong> releases {selectedMonth !== 'All' ? `for ${selectedMonth} ` : ''}{selectedYear !== 'All' ? `${selectedYear} ` : ''}{selectedCategory !== 'All' ? `(${selectedCategory})` : ''}
+          </span>
+        </div>
+
+        {activeMonthCal && onNavigate && (
           <div className="meta-right">
             <button 
               className="btn btn-secondary btn-sm"
-              onClick={() => {
-                const targetCal = filteredCalendars[0];
-                if (targetCal && onNavigate) {
-                  onNavigate(`releases/${targetCal.id}`);
-                }
-              }}
+              onClick={() => onNavigate(`releases/${activeMonthCal.id}`)}
+              title={`Open dedicated ${selectedMonth} ${selectedYear} monthly calendar archive`}
             >
               <span>View Full {selectedMonth} {selectedYear} Hub</span>
               <ArrowUpRight size={14} />
@@ -263,122 +313,46 @@ export default function ReleaseCalendarView({
         )}
       </div>
 
-      {/* Releases Cards Grid */}
+      {/* Releases Movie Cards Grid - Uses unified MovieCard for responsive desktop/mobile layout */}
       {allReleaseItems.length > 0 ? (
-        <div className="grid-movies">
-          {allReleaseItems.map((item, idx) => {
-            const posterSrc = item.poster ? (item.poster.startsWith('/') ? item.poster : `/${item.poster}`) : null;
-            const targetSlug = item.moreLink ? item.moreLink.replace('.html', '').replace(/^.*\//, '') : item.title.replace(/[^a-zA-Z0-9]/g, '');
+        <>
+          <div className="grid-movies">
+            {displayedItems.map((movie) => (
+              <MovieCard
+                key={`${movie.id}-${movie.year}-${movie.month}`}
+                movie={movie}
+                onSelect={(m) => {
+                  if (onSelectMovie) {
+                    onSelectMovie(m);
+                  } else if (onNavigate) {
+                    onNavigate(m.filename ? m.filename.replace(/\.html$/, '') : `movie/${m.id}`);
+                  }
+                }}
+                onPlayTrailer={onPlayTrailer}
+                isBookmarked={bookmarks.some(b => b.id === movie.id)}
+                onToggleBookmark={onToggleBookmark || (() => {})}
+              />
+            ))}
+          </div>
 
-            return (
-              <div key={idx} className="movie-card-root release-calendar-card">
-                <div 
-                  className="poster-container"
-                  onClick={() => {
-                    if (onSelectMovie) {
-                      onSelectMovie({ 
-                        id: targetSlug, 
-                        title: item.title, 
-                        poster: item.poster, 
-                        language: item.language, 
-                        genre: item.genre, 
-                        releaseDate: item.releaseDate,
-                        year: item.year 
-                      });
-                    }
-                  }}
-                >
-                  {posterSrc ? (
-                    <img 
-                      src={posterSrc} 
-                      alt={item.title} 
-                      className="poster-image poster-loaded"
-                      loading="lazy"
-                      onError={(e) => { e.target.src = '/favicon.png'; }}
-                    />
-                  ) : (
-                    <div className="poster-fallback">
-                      <Film size={36} />
-                    </div>
-                  )}
-
-                  {/* Industry Badge */}
-                  <div className="card-top-badges">
-                    <span className={`badge ${item.category === 'Hollywood' ? 'badge-red' : item.category === 'International' ? 'badge-cyan' : 'badge-gold'}`}>
-                      {item.category === 'Hollywood' ? 'Hollywood' : item.category === 'International' ? 'International' : 'Indian'}
-                    </span>
-                  </div>
-
-                  {item.releaseDate && (
-                    <div className="release-date-badge">
-                      <Calendar size={11} />
-                      <span>{item.releaseDate}</span>
-                    </div>
-                  )}
-
-                  <div className="card-hover-overlay">
-                    <span className="card-hover-prompt">View Film Details</span>
-                  </div>
-                </div>
-
-                <div className="card-info">
-                  <div className="card-meta-line">
-                    {item.language && <span className="card-tag">{item.language}</span>}
-                    {item.genre && <span className="card-tag card-genre">{item.genre}</span>}
-                  </div>
-
-                  <h4 
-                    className="card-title" 
-                    title={item.title}
-                    onClick={() => {
-                      if (onSelectMovie) {
-                        onSelectMovie({ id: targetSlug, title: item.title });
-                      }
-                    }}
-                  >
-                    {item.title}
-                  </h4>
-
-                  {/* Action row with trailer and details */}
-                  <div className="release-action-footer">
-                    {item.trailerLink && onPlayTrailer ? (
-                      <button
-                        className="btn-trailer-link-mini"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          onPlayTrailer({
-                            title: `${item.title} — Official Trailer`,
-                            url: item.trailerLink
-                          });
-                        }}
-                      >
-                        <Play size={12} fill="#ffffff" />
-                        <span>Trailer</span>
-                      </button>
-                    ) : null}
-
-                    <button
-                      className="btn-film-link-mini"
-                      onClick={() => {
-                        if (onSelectMovie) {
-                          onSelectMovie({ id: targetSlug, title: item.title });
-                        }
-                      }}
-                    >
-                      <span>Movie Hub</span>
-                      <ChevronRight size={13} />
-                    </button>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+          {/* Load More Pagination - Ensures instantaneous 60fps performance on mobile */}
+          {visibleCount < allReleaseItems.length && (
+            <div className="load-more-wrap" style={{ display: 'flex', justifyContent: 'center', marginTop: '36px' }}>
+              <button 
+                className="btn btn-secondary load-more-btn"
+                onClick={() => setVisibleCount(prev => prev + 24)}
+              >
+                <span>Load More Movies ({allReleaseItems.length - visibleCount} remaining)</span>
+                <ChevronDown size={16} />
+              </button>
+            </div>
+          )}
+        </>
       ) : (
         <div className="calendar-empty glass-panel">
           <Calendar size={48} className="text-gold" />
           <h3>No releases matched the selected filters</h3>
-          <p>Try switching to another year, cinema industry, or reset the month filter.</p>
+          <p>Try switching to another year, cinema industry, or reset your search query.</p>
           <button 
             className="btn btn-primary"
             onClick={() => {
@@ -397,43 +371,48 @@ export default function ReleaseCalendarView({
         .release-calendar-root {
           padding-bottom: 60px;
         }
-        .calendar-header-banner {
-          border-radius: var(--radius-lg);
-          padding: 30px;
-          margin-bottom: 24px;
-        }
-        .calendar-main-heading {
-          font-size: 2.2rem;
-          font-weight: 800;
-          margin: 10px 0 6px;
-        }
-        .calendar-subtext {
-          color: var(--text-muted);
-          font-size: 0.95rem;
-          margin-bottom: 24px;
-          max-width: 850px;
-        }
-        .calendar-filters-container {
+        .release-quick-chips {
           display: flex;
-          flex-direction: column;
-          gap: 16px;
-          background: rgba(0, 0, 0, 0.35);
-          padding: 20px;
-          border-radius: var(--radius-md);
-          border: 1px solid var(--border-subtle);
+          flex-wrap: wrap;
+          gap: 8px;
+          margin-top: 18px;
         }
-        .calendar-search-row {
-          width: 100%;
+        .release-chip {
+          padding: 6px 14px;
+          border-radius: var(--radius-full);
+          font-size: 0.82rem;
+          font-weight: 600;
+          background: rgba(255, 255, 255, 0.05);
+          color: var(--text-muted);
+          border: 1px solid var(--border-subtle);
+          cursor: pointer;
+          transition: all var(--transition-fast);
+          white-space: nowrap;
+        }
+        .release-chip:hover {
+          color: var(--text-heading);
+          background: rgba(255, 255, 255, 0.1);
+          border-color: var(--border-focus);
+        }
+        .release-chip-active {
+          background: linear-gradient(135deg, #0284c7 0%, #05325d 100%) !important;
+          color: #ffffff !important;
+          border-color: var(--logo-sky) !important;
+          font-weight: 700;
+          box-shadow: 0 0 12px rgba(56, 189, 248, 0.35);
+        }
+        .release-search-item {
+          grid-column: span 1;
         }
         .cal-search-input-wrap {
           display: flex;
           align-items: center;
-          gap: 10px;
-          background: rgba(255, 255, 255, 0.06);
+          gap: 8px;
+          background: var(--bg-surface-elevated);
           border: 1px solid var(--border-subtle);
           border-radius: var(--radius-md);
-          padding: 10px 16px;
-          transition: border-color 0.2s ease;
+          padding: 8px 12px;
+          transition: border-color var(--transition-fast);
         }
         .cal-search-input-wrap:focus-within {
           border-color: var(--logo-sky);
@@ -444,65 +423,19 @@ export default function ReleaseCalendarView({
           border: none;
           outline: none;
           color: var(--text-main);
-          font-size: 0.92rem;
+          font-size: 0.88rem;
+          font-family: inherit;
         }
         .cal-search-clear {
           background: transparent;
           border: none;
           color: var(--text-muted);
           cursor: pointer;
-          font-size: 0.9rem;
-        }
-        .filter-group {
-          display: flex;
-          align-items: center;
-          gap: 14px;
-          flex-wrap: wrap;
-        }
-        .filter-label {
           font-size: 0.85rem;
-          font-weight: 700;
-          color: var(--text-muted);
-          min-width: 120px;
+          padding: 2px 6px;
         }
-        .filter-pills {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 8px;
-        }
-        .filter-pills-scroll {
-          display: flex;
-          gap: 8px;
-          overflow-x: auto;
-          scrollbar-width: none;
-          max-width: 100%;
-        }
-        .filter-pills-scroll::-webkit-scrollbar {
-          display: none;
-        }
-        .pill-btn {
-          padding: 6px 14px;
-          border-radius: var(--radius-full);
-          font-size: 0.82rem;
-          font-weight: 600;
-          background: var(--bg-primary);
-          color: var(--text-muted);
-          border: 1px solid var(--border-subtle);
-          transition: all var(--transition-fast);
-          white-space: nowrap;
-          cursor: pointer;
-        }
-        .pill-btn:hover {
-          color: var(--accent-primary);
-          background: var(--bg-surface-elevated);
-          border-color: var(--border-focus);
-        }
-        .pill-btn-active {
-          background: linear-gradient(135deg, #0284c7 0%, #05325d 100%) !important;
-          color: #ffffff !important;
-          border-color: var(--logo-sky) !important;
-          font-weight: 700;
-          box-shadow: 0 0 12px rgba(56, 189, 248, 0.35);
+        .cal-search-clear:hover {
+          color: #ffffff;
         }
         .calendar-results-meta {
           display: flex;
@@ -512,57 +445,12 @@ export default function ReleaseCalendarView({
           flex-wrap: wrap;
           gap: 12px;
         }
-        .calendar-results-meta h3 {
-          font-size: 1.25rem;
-          font-weight: 700;
+        .results-count-text {
+          font-size: 0.95rem;
+          color: var(--text-muted);
+        }
+        .results-count-text strong {
           color: var(--text-heading);
-        }
-        .release-calendar-card {
-          cursor: pointer;
-        }
-        .release-action-footer {
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          margin-top: 10px;
-          padding-top: 8px;
-          border-top: 1px solid var(--border-subtle);
-        }
-        .btn-trailer-link-mini {
-          display: inline-flex;
-          align-items: center;
-          gap: 5px;
-          background: rgba(229, 9, 20, 0.85);
-          color: #ffffff;
-          border: none;
-          padding: 4px 10px;
-          border-radius: var(--radius-sm);
-          font-size: 0.75rem;
-          font-weight: 600;
-          cursor: pointer;
-          transition: background 0.15s ease;
-        }
-        .btn-trailer-link-mini:hover {
-          background: #e50914;
-        }
-        .btn-film-link-mini {
-          display: inline-flex;
-          align-items: center;
-          gap: 4px;
-          background: var(--bg-surface-elevated);
-          color: var(--accent-primary);
-          border: 1px solid var(--border-subtle);
-          padding: 4px 10px;
-          border-radius: var(--radius-sm);
-          font-size: 0.75rem;
-          font-weight: 600;
-          cursor: pointer;
-          margin-left: auto;
-          transition: all 0.15s ease;
-        }
-        .btn-film-link-mini:hover {
-          background: var(--accent-primary);
-          color: #ffffff;
         }
         .calendar-empty {
           padding: 60px 20px;
@@ -572,6 +460,45 @@ export default function ReleaseCalendarView({
           flex-direction: column;
           align-items: center;
           gap: 16px;
+          border-radius: var(--radius-lg);
+        }
+        .calendar-empty h3 {
+          font-size: 1.35rem;
+          color: var(--text-heading);
+          margin: 0;
+        }
+        .calendar-empty p {
+          max-width: 500px;
+          margin: 0;
+          font-size: 0.92rem;
+        }
+
+        @media (max-width: 768px) {
+          .release-quick-chips {
+            overflow-x: auto;
+            flex-wrap: nowrap;
+            padding-bottom: 4px;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+          }
+          .release-quick-chips::-webkit-scrollbar {
+            display: none;
+          }
+          .release-chip {
+            padding: 5px 12px;
+            font-size: 0.78rem;
+            flex-shrink: 0;
+          }
+          .catalog-filters-bar {
+            grid-template-columns: 1fr !important;
+            gap: 12px !important;
+            padding: 14px !important;
+          }
+          .calendar-results-meta {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+          }
         }
       `}</style>
     </div>

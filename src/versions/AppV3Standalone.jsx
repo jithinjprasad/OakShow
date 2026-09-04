@@ -1194,7 +1194,11 @@ export default function App() {
           />
           <ReleaseMonthDetailPage
             releaseItem={targetRelease}
+            movies={moviesData}
             onNavigate={navigate}
+            onPlayTrailer={setActiveVideo}
+            bookmarks={bookmarks}
+            onToggleBookmark={toggleBookmark}
           />
           <Footer onSelectCategory={navigate} />
           <SearchModal
@@ -1750,9 +1754,12 @@ export default function App() {
           <div className="tab-view animate-fade-in container">
             <ReleaseCalendarView
               releases={releasesData}
-              onSelectMovie={(m) => navigate(`movie/${m.id || m.title}`)}
+              movies={moviesData}
+              onSelectMovie={(m) => navigate(m.filename ? m.filename.replace(/\.html$/, '') : `movie/${m.id || m.title}`)}
               onPlayTrailer={setActiveVideo}
               onNavigate={navigate}
+              bookmarks={bookmarks}
+              onToggleBookmark={toggleBookmark}
             />
           </div>
         )}

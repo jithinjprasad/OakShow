@@ -1,21 +1,21 @@
 import React, { useState, useMemo } from 'react';
 import { 
   Calendar, 
-  Share2, 
   ChevronRight, 
   ArrowLeft, 
-  Filter, 
   Film,
-  Globe,
-  Clapperboard,
-  Play,
   Sparkles
 } from 'lucide-react';
+import MovieCard from './MovieCard';
 import ShareBar from './ShareBar';
 
 export default function ReleaseMonthDetailPage({ 
   releaseItem, 
-  onNavigate 
+  movies = [],
+  onNavigate,
+  onPlayTrailer,
+  bookmarks = [],
+  onToggleBookmark
 }) {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [filterLang, setFilterLang] = useState('All');
@@ -23,6 +23,18 @@ export default function ReleaseMonthDetailPage({
   if (!releaseItem) return null;
 
   const items = releaseItem.items || [];
+
+  // Fast movie lookup map
+  const movieLookup = useMemo(() => {
+    const map = new Map();
+    if (!movies || !Array.isArray(movies)) return map;
+    movies.forEach(m => {
+      if (m.id) map.set(m.id.toLowerCase(), m);
+      if (m.title) map.set(m.title.toLowerCase().trim(), m);
+      if (m.filename) map.set(m.filename.toLowerCase().replace(/\.html$/, ''), m);
+    });
+    return map;
+  }, [movies]);
 
   const languages = useMemo(() => {
     const set = new Set();
@@ -36,13 +48,48 @@ export default function ReleaseMonthDetailPage({
     return ['All', ...Array.from(set)];
   }, [items]);
 
+  const enrichedItems = useMemo(() => {
+    return items.map(item => {
+      const targetSlug = item.moreLink 
+        ? item.moreLink.replace(/\.html$/i, '').replace(/^.*\//, '') 
+        : (item.id || (item.title || '').replace(/[^a-zA-Z0-9]/g, ''));
+
+      const movieMatch = movieLookup.get(targetSlug.toLowerCase()) || 
+                         movieLookup.get((item.title || '').toLowerCase().trim());
+
+      const ratings = (movieMatch?.ratings && movieMatch.ratings.length > 0) 
+        ? movieMatch.ratings 
+        : (item.ratings || []);
+
+      return {
+        id: movieMatch?.id || targetSlug,
+        title: item.title,
+        poster: item.poster || movieMatch?.poster,
+        alt: item.alt || movieMatch?.alt || item.title,
+        category: item.category || movieMatch?.category || releaseItem.category || 'Indian',
+        language: item.language || movieMatch?.language || 'English',
+        genre: item.genre || movieMatch?.genre || '',
+        year: item.year || movieMatch?.year || releaseItem.year,
+        month: releaseItem.month,
+        releaseDate: item.releaseDate || movieMatch?.releaseDate || (releaseItem.month ? `${releaseItem.month} ${releaseItem.year}` : releaseItem.year),
+        ratings: ratings,
+        duration: movieMatch?.duration,
+        booking: movieMatch?.booking,
+        videos: item.trailerLink 
+          ? [{ title: `${item.title} — Official Trailer`, url: item.trailerLink }] 
+          : (movieMatch?.videos || []),
+        filename: item.moreLink || movieMatch?.filename || `${targetSlug}.html`
+      };
+    });
+  }, [items, movieLookup, releaseItem]);
+
   const filteredItems = useMemo(() => {
-    return items.filter(it => {
+    return enrichedItems.filter(it => {
       const matchCat = selectedCategory === 'All' || it.category === selectedCategory;
       const matchLang = filterLang === 'All' || (it.language && it.language.toLowerCase().includes(filterLang.toLowerCase()));
       return matchCat && matchLang;
     });
-  }, [items, selectedCategory, filterLang]);
+  }, [enrichedItems, selectedCategory, filterLang]);
 
   return (
     <div className="movie-page-root animate-fade-in">
@@ -66,14 +113,14 @@ export default function ReleaseMonthDetailPage({
         </div>
       </div>
 
-      {/* Header Banner */}
+      {/* Hero Banner */}
       <section className="release-month-banner">
         <div className="container">
           <div className="rmb-content">
-            <div className="badge badge-cyan">{releaseItem.category || 'Cinema Releases'} • {releaseItem.year}</div>
+            <div className="badge badge-gold">{releaseItem.category || 'Cinema Releases'} • {releaseItem.year}</div>
             <h1 className="rmb-title">{releaseItem.title}</h1>
             <p className="rmb-subtitle">
-              Comprehensive release schedule, posters, and review links for <strong>{releaseItem.month} {releaseItem.year}</strong> ({items.length} titles)
+              Comprehensive theatrical premiere schedule, verified ratings, and reviews for <strong>{releaseItem.month} {releaseItem.year}</strong> ({items.length} titles).
             </p>
           </div>
         </div>
@@ -110,54 +157,16 @@ export default function ReleaseMonthDetailPage({
           </div>
 
           <div className="grid-movies">
-            {filteredItems.map((item, idx) => {
-              const posterSrc = item.poster ? (item.poster.startsWith('/') ? item.poster : `/${item.poster}`) : null;
-              const targetSlug = item.moreLink ? item.moreLink.replace('.html', '').replace(/^.*\//, '') : item.title.replace(/[^a-zA-Z0-9]/g, '');
-
-              return (
-                <div 
-                  key={idx} 
-                  className="movie-card-root"
-                  onClick={() => {
-                    if (targetSlug) onNavigate(`movie/${targetSlug}`);
-                  }}
-                >
-                  <div className="poster-container">
-                    {posterSrc ? (
-                      <img src={posterSrc} alt={item.title} className="poster-image poster-loaded" loading="lazy" />
-                    ) : (
-                      <div className="poster-fallback"><Film size={36} /></div>
-                    )}
-                    
-                    {/* Category badge */}
-                    {item.category && (
-                      <div className="card-top-badges">
-                        <span className={`badge ${item.category === 'Hollywood' ? 'badge-red' : item.category === 'International' ? 'badge-cyan' : 'badge-gold'}`}>
-                          {item.category}
-                        </span>
-                      </div>
-                    )}
-
-                    <div className="card-hover-overlay">
-                      <span className="card-hover-prompt">View Film Details</span>
-                    </div>
-                  </div>
-                  <div className="card-info">
-                    <div className="card-meta-line">
-                      {item.language && <span className="card-tag">{item.language}</span>}
-                      {item.genre && <span className="card-tag card-genre">{item.genre}</span>}
-                    </div>
-
-                    <h4 className="card-title" title={item.title}>{item.title}</h4>
-                    {item.releaseDate && (
-                      <span className="card-tag" style={{ marginTop: '4px' }}>
-                        <Calendar size={11} /> {item.releaseDate}
-                      </span>
-                    )}
-                  </div>
-                </div>
-              );
-            })}
+            {filteredItems.map((movie) => (
+              <MovieCard 
+                key={movie.id} 
+                movie={movie}
+                onSelect={(m) => onNavigate(m.filename ? m.filename.replace(/\.html$/, '') : `movie/${m.id}`)}
+                onPlayTrailer={onPlayTrailer}
+                isBookmarked={bookmarks.some(b => b.id === movie.id)}
+                onToggleBookmark={onToggleBookmark || (() => {})}
+              />
+            ))}
           </div>
         </div>
 
