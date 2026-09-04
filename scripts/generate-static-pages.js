@@ -142,7 +142,8 @@ async function run() {
   console.log(`📦 Prerendering ${movies.length} movies...`);
 
   for (const m of movies) {
-    const filename = m.filename ? m.filename.replace(/^\/+/, '') : (m.id ? `${m.id}.html` : null);
+    const fileProp = m.fileName || m.filename;
+    const filename = fileProp ? fileProp.replace(/^\/+/, '') : (m.id ? `${m.id}.html` : null);
     if (!filename) continue;
 
     const outPath = path.join(distDir, filename);
