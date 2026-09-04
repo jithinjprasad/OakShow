@@ -1945,10 +1945,16 @@ export default function MovieDetailPage({
             </div>
             <div className="similar-carousel-grid">
               {similarMovies.map(sim => (
-                <div 
+                <a 
                   key={sim.id} 
+                  href={sim.filename ? (sim.filename.startsWith('/') ? sim.filename : `/${sim.filename}`) : `/${sim.id}.html`}
                   className="similar-card glass-panel"
-                  onClick={() => onNavigate(`movie/${sim.id}`)}
+                  style={{ textDecoration: 'none', color: 'inherit' }}
+                  onClick={(e) => {
+                    if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
+                    e.preventDefault();
+                    onNavigate(`movie/${sim.id}`);
+                  }}
                 >
                   <div className="similar-poster-wrap">
                     {sim.poster ? (
@@ -1963,7 +1969,7 @@ export default function MovieDetailPage({
                   </div>
                   <h4 className="similar-title">{sim.title}</h4>
                   <span className="similar-meta">{sim.year || sim.language}</span>
-                </div>
+                </a>
               ))}
             </div>
           </section>

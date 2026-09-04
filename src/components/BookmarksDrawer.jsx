@@ -29,11 +29,15 @@ export default function BookmarksDrawer({
             <div className="bookmarks-list">
               {bookmarkedMovies.map((movie) => {
                 const posterSrc = movie.poster ? (movie.poster.startsWith('/') ? movie.poster : `/${movie.poster}`) : null;
+                const targetUrl = movie.filename ? (movie.filename.startsWith('/') ? movie.filename : `/${movie.filename}`) : `/${movie.id}.html`;
                 return (
-                  <div 
+                  <a 
                     key={movie.id} 
+                    href={targetUrl}
                     className="bookmark-row"
-                    onClick={() => {
+                    onClick={(e) => {
+                      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
+                      e.preventDefault();
                       onSelectMovie(movie);
                       onClose();
                     }}
@@ -64,7 +68,7 @@ export default function BookmarksDrawer({
                     >
                       <Trash2 size={16} />
                     </button>
-                  </div>
+                  </a>
                 );
               })}
             </div>
@@ -148,6 +152,8 @@ export default function BookmarksDrawer({
           gap: 10px;
         }
         .bookmark-row {
+          text-decoration: none;
+          color: inherit;
           display: flex;
           align-items: center;
           gap: 12px;
@@ -157,6 +163,13 @@ export default function BookmarksDrawer({
           border-radius: var(--radius-md);
           cursor: pointer;
           transition: all var(--transition-fast);
+        }
+        .bookmark-row:visited,
+        .bookmark-row:hover,
+        .bookmark-row:active,
+        .bookmark-row:focus {
+          text-decoration: none;
+          color: inherit;
         }
         .bookmark-row:hover {
           background: var(--bg-surface-elevated);

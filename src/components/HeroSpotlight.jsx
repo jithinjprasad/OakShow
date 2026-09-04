@@ -142,13 +142,19 @@ export default function HeroSpotlight({ movies, onSelectMovie, onPlayTrailer }) 
             </button>
           )}
 
-          <button 
+          <a 
+            href={current.filename ? (current.filename.startsWith('/') ? current.filename : `/${current.filename}`) : `/${current.id}.html`}
             className="btn-secondary hero-btn"
-            onClick={() => onSelectMovie(current)}
+            style={{ textDecoration: 'none', color: 'inherit' }}
+            onClick={(e) => {
+              if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
+              e.preventDefault();
+              onSelectMovie(current);
+            }}
           >
             <Info size={18} />
             <span>Full Details & Ratings</span>
-          </button>
+          </a>
         </div>
 
         {/* Carousel Slider Controls */}

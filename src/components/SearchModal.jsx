@@ -175,11 +175,18 @@ export default function SearchModal({
               {results.map((item, idx) => {
                 const isSelected = idx === selectedIndex;
                 const posterSrc = item.poster ? (item.poster.startsWith('/') ? item.poster : `/${item.poster}`) : null;
+                const itemHref = item.filename 
+                  ? (item.filename.startsWith('/') ? item.filename : `/${item.filename}`) 
+                  : (item.type === 'series' || item.type === 'movie' ? `/${item.id}.html` : '#');
                 return (
-                  <div
+                  <a
                     key={`${item.id}-${idx}`}
+                    href={itemHref}
                     className={`search-result-row ${isSelected ? 'search-result-selected' : ''}`}
-                    onClick={() => {
+                    style={{ textDecoration: 'none', color: 'inherit' }}
+                    onClick={(e) => {
+                      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
+                      e.preventDefault();
                       onSelectItem(item);
                       onClose();
                     }}
@@ -220,7 +227,7 @@ export default function SearchModal({
                     </div>
 
                     <ArrowRight size={18} className="result-arrow-icon" />
-                  </div>
+                  </a>
                 );
               })}
             </div>

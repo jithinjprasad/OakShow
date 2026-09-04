@@ -438,7 +438,6 @@ export function useRouter() {
   useEffect(() => {
     const handlePopState = () => {
       setRoute(parseCurrentRoute());
-      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     };
 
     window.addEventListener('hashchange', handlePopState);
@@ -453,7 +452,6 @@ export function useRouter() {
   const navigate = useCallback((target, replace = false) => {
     navigateTo(target, replace);
     setRoute(parseCurrentRoute());
-    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   }, []);
 
   return { route, navigate };

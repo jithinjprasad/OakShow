@@ -27,7 +27,58 @@ export default function ReleaseCalendarView({
   const [selectedMonth, setSelectedMonth] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
   const [sortBy, setSortBy] = useState('latest-high');
-  const [visibleCount, setVisibleCount] = useState(24);
+  const [visibleCount, setVisibleCount] = useState(() => {
+    try {
+      const raw = sessionStorage.getItem('oakshow_scroll_releases');
+      if (raw) {
+        const s = JSON.parse(raw);
+        if (s.visibleCount) return Math.max(24, s.visibleCount);
+      }
+    } catch (e) {}
+    return 24;
+  });
+
+  // Restore scroll on mount if returning
+  useEffect(() => {
+    try {
+      const raw = sessionStorage.getItem('oakshow_scroll_releases');
+      if (raw) {
+        const s = JSON.parse(raw);
+        if (s.scrollY > 0) {
+          requestAnimationFrame(() => {
+            window.scrollTo({ top: s.scrollY, behavior: 'instant' });
+          });
+          setTimeout(() => {
+            window.scrollTo({ top: s.scrollY, behavior: 'instant' });
+          }, 60);
+        }
+      }
+    } catch (e) {}
+  }, []);
+
+  // Persist scroll position
+  useEffect(() => {
+    let timer = null;
+    const handleScroll = () => {
+      if (timer) clearTimeout(timer);
+      timer = setTimeout(() => {
+        try {
+          const y = window.scrollY || window.pageYOffset || 0;
+          if (y > 0) {
+            sessionStorage.setItem('oakshow_scroll_releases', JSON.stringify({
+              scrollY: y,
+              visibleCount
+            }));
+          }
+        } catch (e) {}
+      }, 100);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      if (timer) clearTimeout(timer);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [visibleCount]);
 
   // Fast movie lookup map by slug, id, title, and filename
   const movieLookup = useMemo(() => {
@@ -322,6 +373,12 @@ export default function ReleaseCalendarView({
                 key={`${movie.id}-${movie.year}-${movie.month}`}
                 movie={movie}
                 onSelect={(m) => {
+                  try {
+                    sessionStorage.setItem('oakshow_scroll_releases', JSON.stringify({
+                      scrollY: window.scrollY || window.pageYOffset || 0,
+                      visibleCount
+                    }));
+                  } catch (e) {}
                   if (onSelectMovie) {
                     onSelectMovie(m);
                   } else if (onNavigate) {

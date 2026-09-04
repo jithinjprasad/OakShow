@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import Navbar from '../components/Navbar';
 import HeroSpotlight from '../components/HeroSpotlight';
 import MovieCard from '../components/MovieCard';
@@ -139,17 +139,116 @@ export default function App() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
-  // Reset pagination when route or filters change
+  const prevRouteTypeRef = useRef(route.type);
+
+  // Test if current route is a listing/catalog page (needs scroll and pagination restoration)
+  const isListingRoute = (r) => {
+    if (!r) return true;
+    if (['movie', 'legacy', 'episode', 'series'].includes(r.type) && (r.id || r.type === 'movie' || r.type === 'legacy' || r.type === 'episode')) {
+      return false;
+    }
+    if (r.id && ['game', 'book', 'sports', 'critic', 'emergency-detail', 'releases'].includes(r.type)) {
+      return false;
+    }
+    return true;
+  };
+
+  const getRouteKey = (r) => {
+    if (!r || !r.type) return 'discover';
+    return r.type;
+  };
+
+  // Helper to save current scroll and pagination before navigating into a detail view
+  const handleNavigateWithSave = (target) => {
+    if (isListingRoute(route)) {
+      const routeKey = getRouteKey(route);
+      try {
+        sessionStorage.setItem(`oakshow_scroll_${routeKey}`, JSON.stringify({
+          scrollY: window.scrollY || window.pageYOffset || 0,
+          visibleCount
+        }));
+      } catch (e) {}
+    }
+    navigate(target);
+  };
+
+  // Restore scroll position and visibleCount when returning to a listing route
+  useEffect(() => {
+    if (isListingRoute(route)) {
+      const routeKey = getRouteKey(route);
+      let saved = null;
+      try {
+        const raw = sessionStorage.getItem(`oakshow_scroll_${routeKey}`);
+        if (raw) saved = JSON.parse(raw);
+      } catch (e) {}
+
+      if (saved && saved.scrollY > 0) {
+        if (saved.visibleCount && saved.visibleCount > 24) {
+          setVisibleCount(saved.visibleCount);
+        }
+        requestAnimationFrame(() => {
+          window.scrollTo({ top: saved.scrollY, behavior: 'instant' });
+        });
+        setTimeout(() => {
+          window.scrollTo({ top: saved.scrollY, behavior: 'instant' });
+        }, 60);
+      } else {
+        setVisibleCount(24);
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+      }
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    }
+  }, [route.type, route.id]);
+
+  // Continuously persist scroll position for listing routes
+  useEffect(() => {
+    if (!isListingRoute(route)) return;
+    const routeKey = getRouteKey(route);
+    let timer = null;
+    const handleScroll = () => {
+      if (timer) clearTimeout(timer);
+      timer = setTimeout(() => {
+        try {
+          const y = window.scrollY || window.pageYOffset || 0;
+          if (y > 0) {
+            sessionStorage.setItem(`oakshow_scroll_${routeKey}`, JSON.stringify({
+              scrollY: y,
+              visibleCount
+            }));
+          }
+        } catch (e) {}
+      }, 100);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      if (timer) clearTimeout(timer);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [route.type, visibleCount]);
+
+  // Reset pagination and scroll when user changes catalog filters
   useEffect(() => {
     setVisibleCount(24);
-  }, [route, selectedGenre, selectedLanguage, selectedYear, selectedPlatform, sortBy]);
+    const routeKey = getRouteKey(route);
+    try {
+      sessionStorage.removeItem(`oakshow_scroll_${routeKey}`);
+    } catch (e) {}
+  }, [selectedGenre, selectedLanguage, selectedYear, selectedPlatform, sortBy]);
 
-  // Reset category filters when navigating between hubs
+  // Reset category filters when switching between distinct hubs
   useEffect(() => {
-    setSelectedGenre('All');
-    setSelectedLanguage('All');
-    setSelectedYear('All');
-    setSelectedPlatform('All');
+    if (prevRouteTypeRef.current !== route.type) {
+      const prevIsList = isListingRoute({ type: prevRouteTypeRef.current });
+      const nextIsList = isListingRoute(route);
+      if (prevIsList && nextIsList && prevRouteTypeRef.current !== route.type) {
+        setSelectedGenre('All');
+        setSelectedLanguage('All');
+        setSelectedYear('All');
+        setSelectedPlatform('All');
+      }
+      prevRouteTypeRef.current = route.type;
+    }
   }, [route.type]);
 
   // Bookmark toggle
@@ -1418,7 +1517,7 @@ export default function App() {
             {/* Spotlight Banner */}
             <HeroSpotlight
               movies={moviesData}
-              onSelectMovie={(m) => navigate(`movie/${m.id}`)}
+              onSelectMovie={(m) => handleNavigateWithSave(m.filename ? m.filename.replace(/\.html$/, '') : `movie/${m.id}`)}
               onPlayTrailer={setActiveVideo}
             />
 
@@ -1482,7 +1581,7 @@ export default function App() {
                     <MovieCard
                       key={movie.id}
                       movie={movie}
-                      onSelect={(m) => navigate(`movie/${m.id}`)}
+                      onSelect={(m) => handleNavigateWithSave(`movie/${m.id}`)}
                       onPlayTrailer={setActiveVideo}
                       isBookmarked={bookmarks.some(b => b.id === movie.id)}
                       onToggleBookmark={toggleBookmark}
@@ -1509,7 +1608,7 @@ export default function App() {
                     <MovieCard
                       key={movie.id}
                       movie={movie}
-                      onSelect={(m) => navigate(`movie/${m.id}`)}
+                      onSelect={(m) => handleNavigateWithSave(`movie/${m.id}`)}
                       onPlayTrailer={setActiveVideo}
                       isBookmarked={bookmarks.some(b => b.id === movie.id)}
                       onToggleBookmark={toggleBookmark}
@@ -1539,7 +1638,7 @@ export default function App() {
                       <MovieCard
                         key={movie.id}
                         movie={movie}
-                        onSelect={(m) => navigate(`movie/${m.id}`)}
+                        onSelect={(m) => handleNavigateWithSave(`movie/${m.id}`)}
                         onPlayTrailer={setActiveVideo}
                         isBookmarked={bookmarks.some(b => b.id === movie.id)}
                         onToggleBookmark={toggleBookmark}
@@ -1569,7 +1668,7 @@ export default function App() {
                       <MovieCard
                         key={movie.id}
                         movie={movie}
-                        onSelect={(m) => navigate(`movie/${m.id}`)}
+                        onSelect={(m) => handleNavigateWithSave(`movie/${m.id}`)}
                         onPlayTrailer={setActiveVideo}
                         isBookmarked={bookmarks.some(b => b.id === movie.id)}
                         onToggleBookmark={toggleBookmark}
@@ -1599,7 +1698,7 @@ export default function App() {
                       <MovieCard
                         key={movie.id}
                         movie={movie}
-                        onSelect={(m) => navigate(`movie/${m.id}`)}
+                        onSelect={(m) => handleNavigateWithSave(`movie/${m.id}`)}
                         onPlayTrailer={setActiveVideo}
                         isBookmarked={bookmarks.some(b => b.id === movie.id)}
                         onToggleBookmark={toggleBookmark}
@@ -1626,7 +1725,7 @@ export default function App() {
                     <MovieCard
                       key={show.id}
                       movie={show}
-                      onSelect={(s) => navigate(`series/${s.id}`)}
+                      onSelect={(s) => handleNavigateWithSave(`series/${s.id}`)}
                       onPlayTrailer={setActiveVideo}
                       isBookmarked={bookmarks.some(b => b.id === show.id)}
                       onToggleBookmark={toggleBookmark}
@@ -1712,7 +1811,7 @@ export default function App() {
                 <MovieCard
                   key={movie.id}
                   movie={movie}
-                  onSelect={(m) => navigate(`movie/${m.id}`)}
+                  onSelect={(m) => handleNavigateWithSave(`movie/${m.id}`)}
                   onPlayTrailer={setActiveVideo}
                   isBookmarked={bookmarks.some(b => b.id === movie.id)}
                   onToggleBookmark={toggleBookmark}
@@ -1739,8 +1838,8 @@ export default function App() {
           <div className="tab-view animate-fade-in container">
             <SeriesHub
               series={seriesData}
-              onSelectSeries={(s) => navigate(s.filename ? s.filename.replace(/\.html$/, '') : `series/${s.id}`)}
-              onNavigate={navigate}
+              onSelectSeries={(s) => handleNavigateWithSave(s.filename ? s.filename.replace(/\.html$/, '') : `series/${s.id}`)}
+              onNavigate={handleNavigateWithSave}
               onPlayTrailer={setActiveVideo}
               bookmarkedIds={bookmarks.map(b => b.id)}
               bookmarks={bookmarks}
@@ -1755,9 +1854,9 @@ export default function App() {
             <ReleaseCalendarView
               releases={releasesData}
               movies={moviesData}
-              onSelectMovie={(m) => navigate(m.filename ? m.filename.replace(/\.html$/, '') : `movie/${m.id || m.title}`)}
+              onSelectMovie={(m) => handleNavigateWithSave(m.filename ? m.filename.replace(/\.html$/, '') : `movie/${m.id || m.title}`)}
               onPlayTrailer={setActiveVideo}
-              onNavigate={navigate}
+              onNavigate={handleNavigateWithSave}
               bookmarks={bookmarks}
               onToggleBookmark={toggleBookmark}
             />

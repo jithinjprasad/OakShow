@@ -19,22 +19,44 @@ export default function MovieCard({
 
   const posterSrc = getProfileImage(movie);
 
+  const targetUrl = movie.filename
+    ? (movie.filename.startsWith('/') ? movie.filename : `/${movie.filename}`)
+    : (movie.id ? `/${movie.id}.html` : '#');
+
+  const handleCardClick = (e) => {
+    // If the user clicked with a modifier key or middle click, allow native browser action (open in new tab/window)
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) {
+      return;
+    }
+    // Normal left-click: stay in the SPA and load immediately in the current window
+    e.preventDefault();
+    if (onSelect) {
+      onSelect(movie);
+    }
+  };
+
   const handleBookmarkClick = (e) => {
+    e.preventDefault();
     e.stopPropagation();
     onToggleBookmark(movie);
   };
 
   const handleTrailerClick = (e) => {
+    e.preventDefault();
     e.stopPropagation();
     if (movie.videos && movie.videos.length > 0) {
       onPlayTrailer(movie.videos[0]);
     } else {
-      onSelect(movie);
+      if (onSelect) onSelect(movie);
     }
   };
 
   return (
-    <div className="movie-card-root" onClick={() => onSelect(movie)}>
+    <a 
+      href={targetUrl} 
+      className="movie-card-root" 
+      onClick={handleCardClick}
+    >
       {/* Poster Container */}
       <div className="poster-container">
         {posterSrc ? (
@@ -130,6 +152,8 @@ export default function MovieCard({
 
       <style>{`
         .movie-card-root {
+          text-decoration: none;
+          color: inherit;
           background: var(--bg-surface);
           border: 1px solid var(--border-subtle);
           border-radius: var(--radius-md);
@@ -139,6 +163,13 @@ export default function MovieCard({
           display: flex;
           flex-direction: column;
           position: relative;
+        }
+        .movie-card-root:visited,
+        .movie-card-root:hover,
+        .movie-card-root:active,
+        .movie-card-root:focus {
+          text-decoration: none;
+          color: inherit;
         }
         .movie-card-root:hover {
           transform: translateY(-6px);
@@ -341,6 +372,6 @@ export default function MovieCard({
           letter-spacing: 0.04em;
         }
       `}</style>
-    </div>
+    </a>
   );
 }

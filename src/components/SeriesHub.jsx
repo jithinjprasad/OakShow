@@ -24,12 +24,63 @@ export default function SeriesHub({
   const [selectedLanguage, setSelectedLanguage] = useState('All');
   const [sortBy, setSortBy] = useState('latest-high');
   const [searchQuery, setSearchQuery] = useState('');
-  const [visibleCount, setVisibleCount] = useState(24);
+  const [visibleCount, setVisibleCount] = useState(() => {
+    try {
+      const raw = sessionStorage.getItem('oakshow_scroll_series-hub');
+      if (raw) {
+        const s = JSON.parse(raw);
+        if (s.visibleCount) return Math.max(24, s.visibleCount);
+      }
+    } catch (e) {}
+    return 24;
+  });
 
-  // Scroll to top on mount
+  // Restore scroll on mount if returning, or scroll to top if first visit
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    let restored = false;
+    try {
+      const raw = sessionStorage.getItem('oakshow_scroll_series-hub');
+      if (raw) {
+        const s = JSON.parse(raw);
+        if (s.scrollY > 0) {
+          restored = true;
+          requestAnimationFrame(() => {
+            window.scrollTo({ top: s.scrollY, behavior: 'instant' });
+          });
+          setTimeout(() => {
+            window.scrollTo({ top: s.scrollY, behavior: 'instant' });
+          }, 60);
+        }
+      }
+    } catch (e) {}
+    if (!restored) {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    }
   }, []);
+
+  // Save scroll position
+  useEffect(() => {
+    let timer = null;
+    const handleScroll = () => {
+      if (timer) clearTimeout(timer);
+      timer = setTimeout(() => {
+        try {
+          const y = window.scrollY || window.pageYOffset || 0;
+          if (y > 0) {
+            sessionStorage.setItem('oakshow_scroll_series-hub', JSON.stringify({
+              scrollY: y,
+              visibleCount
+            }));
+          }
+        } catch (e) {}
+      }, 100);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      if (timer) clearTimeout(timer);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [visibleCount]);
 
   // Compute genres
   const genres = useMemo(() => {
@@ -206,6 +257,12 @@ export default function SeriesHub({
             key={s.id}
             movie={s}
             onSelect={(item) => {
+              try {
+                sessionStorage.setItem('oakshow_scroll_series-hub', JSON.stringify({
+                  scrollY: window.scrollY || window.pageYOffset || 0,
+                  visibleCount
+                }));
+              } catch (e) {}
               if (onSelectSeries) {
                 onSelectSeries(item);
               } else if (onNavigate) {
