@@ -85,9 +85,16 @@ export default function MovieCard({
 
         {/* Hover Quick Action Overlay */}
         <div className="card-hover-overlay">
-          <button className="card-quick-play-btn" onClick={handleTrailerClick}>
+          <button className="card-quick-play-btn" onClick={handleTrailerClick} title="Play Trailer">
             <Play size={20} fill="#ffffff" />
           </button>
+          <div className="card-hover-ratings">
+            {oakRating && <span className="hover-rating-tag oak">OakShow {oakRating}</span>}
+            {imdbRating && <span className="hover-rating-tag imdb">IMDb {imdbRating}</span>}
+            {movie.ratings?.find(r => r.source === 'Rotten Tomatoes')?.score && (
+              <span className="hover-rating-tag rt">🍅 {movie.ratings.find(r => r.source === 'Rotten Tomatoes').score}</span>
+            )}
+          </div>
           <span className="card-hover-prompt">Click for Details</span>
         </div>
       </div>
@@ -111,6 +118,11 @@ export default function MovieCard({
           {movie.genre && (
             <span className="card-tag card-tag-genre">
               {movie.genre.split(',')[0]}
+            </span>
+          )}
+          {movie.watchOnline && Array.isArray(movie.watchOnline) && movie.watchOnline.some(w => w.url && w.url.trim() && w.url !== '#') && (
+            <span className="card-tag card-tag-ott" title={`Streaming on ${movie.watchOnline.map(w => w.platform).filter(Boolean).join(', ')}`}>
+              OTT
             </span>
           )}
         </div>
@@ -245,6 +257,33 @@ export default function MovieCard({
         .card-quick-play-btn:hover {
           transform: scale(1.15);
         }
+        .card-hover-ratings {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 4px;
+          padding: 0 6px;
+        }
+        .hover-rating-tag {
+          font-size: 0.68rem;
+          font-weight: 700;
+          padding: 2px 6px;
+          border-radius: 4px;
+          background: rgba(0, 0, 0, 0.75);
+          backdrop-filter: blur(4px);
+        }
+        .hover-rating-tag.oak {
+          color: #ffb800;
+          border: 1px solid rgba(255, 184, 0, 0.5);
+        }
+        .hover-rating-tag.imdb {
+          color: #f5c518;
+          border: 1px solid rgba(245, 197, 24, 0.5);
+        }
+        .hover-rating-tag.rt {
+          color: #ff6347;
+          border: 1px solid rgba(255, 99, 71, 0.5);
+        }
         .card-hover-prompt {
           font-size: 0.78rem;
           font-weight: 600;
@@ -290,6 +329,16 @@ export default function MovieCard({
         }
         .card-tag-genre {
           color: var(--text-muted);
+        }
+        .card-tag-ott {
+          background: rgba(16, 185, 129, 0.12);
+          color: #10b981;
+          border: 1px solid rgba(16, 185, 129, 0.3);
+          padding: 1px 5px;
+          border-radius: 4px;
+          font-weight: 700;
+          font-size: 0.65rem;
+          letter-spacing: 0.04em;
         }
       `}</style>
     </div>

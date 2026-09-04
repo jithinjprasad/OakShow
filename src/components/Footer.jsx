@@ -1,5 +1,6 @@
 import React from 'react';
 import { Film, Heart, Shield, Archive, Globe, Share2, ExternalLink, Map } from 'lucide-react';
+import { navigateTo } from '../utils/router';
 
 export default function Footer({ onSelectCategory, stats }) {
   return (
@@ -125,12 +126,13 @@ export default function Footer({ onSelectCategory, stats }) {
           <div className="footer-nav-col">
             <h4 className="footer-heading">Cinema & Shows</h4>
             <ul className="footer-links-list">
-              <li><button onClick={() => onSelectCategory ? onSelectCategory('indian') : (window.location.hash = '#/indian')}>Indian Movies</button></li>
-              <li><button onClick={() => onSelectCategory ? onSelectCategory('hollywood') : (window.location.hash = '#/hollywood')}>Hollywood</button></li>
-              <li><button onClick={() => onSelectCategory ? onSelectCategory('international') : (window.location.hash = '#/international')}>International & World Cinema</button></li>
-              <li><button onClick={() => onSelectCategory ? onSelectCategory('series-hub') : (window.location.hash = '#/series-hub')}>Web Series & Television</button></li>
-              <li><button onClick={() => onSelectCategory ? onSelectCategory('releases') : (window.location.hash = '#/releases')}>Release Matrix</button></li>
-              <li><button onClick={() => onSelectCategory ? onSelectCategory('reviews') : (window.location.hash = '#/reviews')}>Critic Reviews & Remarks</button></li>
+              <li><button onClick={() => onSelectCategory ? onSelectCategory('ott') : navigateTo('ott')}>OTT & Online Movies</button></li>
+              <li><button onClick={() => onSelectCategory ? onSelectCategory('indian') : navigateTo('indian')}>Indian Movies</button></li>
+              <li><button onClick={() => onSelectCategory ? onSelectCategory('hollywood') : navigateTo('hollywood')}>Hollywood</button></li>
+              <li><button onClick={() => onSelectCategory ? onSelectCategory('international') : navigateTo('international')}>International & World Cinema</button></li>
+              <li><button onClick={() => onSelectCategory ? onSelectCategory('series-hub') : navigateTo('series-hub')}>Web Series & Television</button></li>
+              <li><button onClick={() => onSelectCategory ? onSelectCategory('releases') : navigateTo('releases')}>Movies Released</button></li>
+              <li><button onClick={() => onSelectCategory ? onSelectCategory('reviews') : navigateTo('reviews')}>Critic Reviews & Remarks</button></li>
             </ul>
           </div>
 
@@ -138,11 +140,11 @@ export default function Footer({ onSelectCategory, stats }) {
           <div className="footer-nav-col">
             <h4 className="footer-heading">Special Hubs & Index</h4>
             <ul className="footer-links-list">
-              <li><button onClick={() => onSelectCategory ? onSelectCategory('news') : (window.location.hash = '#/news')}>OakShow News</button></li>
-              <li><button onClick={() => onSelectCategory ? onSelectCategory('emergencies') : (window.location.hash = '#/emergencies')}>🚨 Emergencies, Helplines & Relief</button></li>
-              <li><button onClick={() => onSelectCategory ? onSelectCategory('remarks') : (window.location.hash = '#/remarks')}>OakShow Remarks & Meanings Guide</button></li>
-              <li><button onClick={() => onSelectCategory ? onSelectCategory('games-books') : (window.location.hash = '#/games-books')}>Video Games & Literature</button></li>
-              <li><button onClick={() => onSelectCategory ? onSelectCategory('blog') : (window.location.hash = '#/blog')}>OakShow Editorial Blogs & Essays</button></li>
+              <li><button onClick={() => onSelectCategory ? onSelectCategory('news') : navigateTo('news')}>OakShow News</button></li>
+              <li><button onClick={() => onSelectCategory ? onSelectCategory('emergencies') : navigateTo('emergencies')}>🚨 Emergencies, Helplines & Relief</button></li>
+              <li><button onClick={() => onSelectCategory ? onSelectCategory('remarks') : navigateTo('remarks')}>OakShow Remarks & Meanings Guide</button></li>
+              <li><button onClick={() => onSelectCategory ? onSelectCategory('games-books') : navigateTo('games-books')}>Video Games & Literature</button></li>
+              <li><button onClick={() => onSelectCategory ? onSelectCategory('blog') : navigateTo('blog')}>OakShow Editorial Blogs & Essays</button></li>
               <li>
                 <a href="/sitemap.xml" target="_blank" rel="noreferrer" className="sitemap-xml-link" title="View Full XML Sitemap Index">
                   <Map size={13} className="inline-icon text-gold" />

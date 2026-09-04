@@ -16,8 +16,35 @@ export function getFolderFromPath(pathStr) {
 }
 
 /**
+ * Derive root media folder for an item across Films, Serieses, Books, and Games
+ */
+export function getFolderForItem(item) {
+  if (!item) return '';
+  if (item.folder) return item.folder.replace(/^[/\\]+/, '').replace(/[/\\]+$/, '');
+  if (item.poster) {
+    const f = getFolderFromPath(item.poster);
+    if (f) return f;
+  }
+  if (item.type === 'series' || item.episodes) {
+    return `pics/Serieses/${item.slug || item.id}`;
+  }
+  if (item.type === 'book' || item.author) {
+    const bId = (item.moreLink || item.id || '').replace(/\.html$/, '');
+    return `pics/Books/${bId}`;
+  }
+  if (item.type === 'game') {
+    const gId = (item.moreLink || item.id || '').replace(/\.html$/, '');
+    return `pics/Games/${gId}`;
+  }
+  if (item.id) {
+    return `pics/Films/${item.id}`;
+  }
+  return '';
+}
+
+/**
  * Get Profile Picture Dimension Image (1.jpg or 1.JPG)
- * Used as the primary profile poster for every movie/show/item
+ * Used as the primary portrait profile poster for every movie/show/item
  */
 export function getProfileImage(item) {
   if (!item) return '/favicon.png';
@@ -35,8 +62,8 @@ export function getProfileImage(item) {
     }
   }
 
-  // 3. Derive 1.jpg from item poster folder (e.g. pics/Films/102NotOut -> pics/Films/102NotOut/1.jpg)
-  const folder = getFolderFromPath(item.poster) || (item.id ? `pics/Films/${item.id}` : '');
+  // 3. Derive 1.jpg from item folder (e.g. pics/Films/DilBechara/1.jpg)
+  const folder = getFolderForItem(item);
   if (folder) {
     return `/${folder}/1.jpg`;
   }
@@ -46,6 +73,43 @@ export function getProfileImage(item) {
   }
 
   return '/favicon.png';
+}
+
+/**
+ * Get Hero Stage Banner Image (2.jpg or 2.JPG)
+ * Used for the cinematic wide hero backdrop banner
+ */
+export function getBannerImage(item) {
+  if (!item) return '';
+
+  // 1. If explicit banner specifies 2.jpg or 2.JPG
+  if (item.banner && /(?:^|[/\\])2\.(?:jpg|jpeg|png)$/i.test(item.banner)) {
+    return item.banner.startsWith('/') ? item.banner : `/${item.banner}`;
+  }
+
+  // 2. Check gallery for 2.jpg / 2.JPG
+  if (Array.isArray(item.gallery)) {
+    const found2 = item.gallery.find(g => g.src && /(?:^|[/\\])2\.(?:jpg|jpeg|png)$/i.test(g.src));
+    if (found2) {
+      return found2.src.startsWith('/') ? found2.src : `/${found2.src}`;
+    }
+  }
+
+  // 3. Derive 2.jpg from item folder (e.g. pics/Films/DilBechara/2.jpg)
+  const folder = getFolderForItem(item);
+  if (folder) {
+    return `/${folder}/2.jpg`;
+  }
+
+  if (item.banner) {
+    return item.banner.startsWith('/') ? item.banner : `/${item.banner}`;
+  }
+
+  if (item.poster) {
+    return item.poster.startsWith('/') ? item.poster : `/${item.poster}`;
+  }
+
+  return '';
 }
 
 /**
@@ -71,7 +135,7 @@ export function getShareImage(item) {
 
   // 3. Derive 2.jpg from item folder
   if (!relativePath) {
-    const folder = getFolderFromPath(item.poster) || (item.id ? `pics/Films/${item.id}` : '');
+    const folder = getFolderForItem(item);
     if (folder) {
       relativePath = `${folder}/2.jpg`;
     } else if (item.poster) {
@@ -145,14 +209,26 @@ export function getSharePayload(item, customUrl = null) {
 export function handlePosterError(e, fallbackPoster = null) {
   const currentSrc = e.target.src || '';
   
-  // If failed on 1.jpg, try 1.JPG
+  // 1. If failed on /1.jpg, try /1.JPG
   if (currentSrc.endsWith('/1.jpg')) {
     e.target.src = currentSrc.replace('/1.jpg', '/1.JPG');
     return;
   }
 
-  // If failed on 1.JPG, try fallback poster
-  if (currentSrc.endsWith('/1.JPG') && fallbackPoster) {
+  // 2. If failed on /1.JPG, try /2.jpg (banner image as poster fallback)
+  if (currentSrc.endsWith('/1.JPG')) {
+    e.target.src = currentSrc.replace('/1.JPG', '/2.jpg');
+    return;
+  }
+
+  // 3. If failed on /2.jpg, try /2.JPG
+  if (currentSrc.endsWith('/2.jpg')) {
+    e.target.src = currentSrc.replace('/2.jpg', '/2.JPG');
+    return;
+  }
+
+  // 4. If failed on /2.JPG and fallbackPoster provided, try fallback
+  if (currentSrc.endsWith('/2.JPG') && fallbackPoster) {
     const cleanFallback = fallbackPoster.startsWith('/') ? fallbackPoster : `/${fallbackPoster}`;
     if (!currentSrc.endsWith(cleanFallback)) {
       e.target.src = cleanFallback;
@@ -160,14 +236,10 @@ export function handlePosterError(e, fallbackPoster = null) {
     }
   }
 
-  // If failed on 2.jpg, try 2.JPG
-  if (currentSrc.endsWith('/2.jpg')) {
-    e.target.src = currentSrc.replace('/2.jpg', '/2.JPG');
-    return;
+  // 5. Ultimate fallback
+  if (!currentSrc.endsWith('/favicon.png')) {
+    e.target.src = '/favicon.png';
   }
-
-  // Ultimate fallback
-  e.target.src = '/favicon.png';
 }
 
 /**

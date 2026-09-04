@@ -1,47 +1,104 @@
 [
   {
-    "id": "CoyotevsAcme",
-    "title": "Coyote vs. Acme",
-    "type": "movie",
+    "id": "Lanterns",
+    "title": "Lanterns (TV series)",
+    "type": "series",
     "category": "Hollywood",
-    "year": "2026",
-    "genre": "Animation, Comedy, Adventure, Family, Courtroom",
+    "genre": "Superhero, Drama, Detective",
     "language": "English",
-    "score": 8,
-    "poster": "pics/Films/CoyotevsAcme/1.jpg"
+    "year": "2026",
+    "poster": "pics/Serieses/Lanterns/2.jpg",
+    "episodesCount": 3
   },
   {
-    "id": "KhalifaTheRuler",
-    "title": "Khalifa: The Ruler",
+    "id": "LanternsS1E01",
+    "title": "Lanterns S01E01: Pilot",
     "type": "movie",
-    "category": "Indian",
+    "category": "Hollywood",
+    "genre": "Superhero, Drama, Detective",
+    "language": "English",
     "year": "2026",
-    "genre": "Action, Crime, Thriller, Drama",
-    "language": "Malayalam",
-    "score": 7,
-    "poster": "pics/Films/KhalifaTheRuler/1.jpg"
+    "poster": "pics/Serieses/Lanterns/S01/1.jpg"
+  },
+  {
+    "id": "LanternsS1E02",
+    "title": "Lanterns S01E02: Trust Fall",
+    "type": "movie",
+    "category": "Hollywood",
+    "genre": "Superhero, Drama, Detective",
+    "language": "English",
+    "year": "2026",
+    "poster": "pics/Serieses/Lanterns/S01/2.jpg"
+  },
+  {
+    "id": "LanternsS1E03",
+    "title": "Lanterns S01E03: OutKast",
+    "type": "movie",
+    "category": "Hollywood",
+    "genre": "Superhero, Drama, Detective",
+    "language": "English",
+    "year": "2026",
+    "poster": "pics/Serieses/Lanterns/S01/3.jpg"
   },
   {
     "id": "BethlehemKudumbaUnit",
     "title": "Bethlehem Kudumba Unit",
     "type": "movie",
     "category": "Indian",
-    "year": "2026",
     "genre": "Romantic Comedy, Drama",
     "language": "Malayalam",
-    "score": 8.5,
-    "poster": "pics/Films/BethlehemKudumbaUnit/1.jpg"
+    "year": "2026",
+    "poster": "pics/Films/BethlehemKudumbaUnit/2.jpg"
   },
   {
-    "id": "DragonBallSuperBroly",
-    "title": "Dragon Ball Super: Broly",
+    "id": "DCTamilMovie",
+    "title": "DC (Devadas & Chandra)",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Action, Crime, Gangster, Drama, Romance",
+    "language": "Tamil",
+    "year": "2026",
+    "poster": "pics/Films/DCTamilMovie/2.jpg"
+  },
+  {
+    "id": "BatmanKnightfallPart1Knightfall",
+    "title": "Batman: Knightfall - Part 1: Knightfall",
     "type": "movie",
     "category": "Hollywood",
-    "year": "2018",
-    "genre": "Anime, Action, Sci-Fi",
-    "rating": "9.8",
-    "poster": "pics/Films/DragonBallSuperBroly/1.jpg",
-    "url": "DragonBallSuperBroly.html"
+    "genre": "Animation, Action, Superhero, Crime",
+    "language": "English",
+    "year": "2026",
+    "poster": "pics/Films/BatmanKnightfallPart1Knightfall/1.jpg"
+  },
+  {
+    "id": "CoyotevsAcme",
+    "title": "Coyote vs. Acme",
+    "type": "movie",
+    "category": "Hollywood",
+    "genre": "Animation, Comedy, Adventure, Family, Courtroom",
+    "language": "English",
+    "year": "2026",
+    "poster": "pics/Films/CoyotevsAcme/2.jpg"
+  },
+  {
+    "id": "KhalifaTheRuler",
+    "title": "Khalifa: The Ruler",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Action, Crime, Thriller, Drama",
+    "language": "Malayalam",
+    "year": "2026",
+    "poster": "pics/Films/KhalifaTheRuler/2.jpg"
+  },
+  {
+    "id": "TheWhisperMan",
+    "title": "The Whisper Man",
+    "type": "movie",
+    "category": "Hollywood",
+    "genre": "Crime, Thriller, Mystery, Drama",
+    "language": "English",
+    "year": "2026",
+    "poster": "pics/Films/TheWhisperMan/2.jpg"
   },
   {
     "id": "AvatarTheWayofWater",
@@ -146,8 +203,8 @@
   {
     "id": "Scam1992",
     "title": "Scam 1992: The Harshad Mehta Story",
-    "type": "series",
-    "category": "Series",
+    "type": "movie",
+    "category": "Indian",
     "genre": "Biopic, Crime,Drama",
     "language": "Hindi",
     "year": "2020",
@@ -374,6 +431,16 @@
     "poster": "pics/Films/Butterfly/2.jpg"
   },
   {
+    "id": "coronavirusoutbreak",
+    "title": "2019–20 Coronavirus Outbreak",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2020",
+    "poster": "pics/Emergency/coronavirusoutbreak/1.jpg"
+  },
+  {
     "id": "pranitha-subhash-hot-stills-hd",
     "title": "Tags",
     "type": "movie",
@@ -442,6 +509,36 @@
     "language": "Tamil",
     "year": "2020",
     "poster": "pics/Films/ParisParis/2.jpg"
+  },
+  {
+    "id": "pranitha-subhash-hot-stills-hd",
+    "title": "Tags",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2020",
+    "poster": "Galleries/pics/pranitha-subhash/1.jpg"
+  },
+  {
+    "id": "december-2019",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2020",
+    "poster": "news/pics/december-2019.jpg"
+  },
+  {
+    "id": "january-2020",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2020",
+    "poster": "news/pics/january-2020.jpg"
   },
   {
     "id": "Sooryavanshi",
@@ -1274,6 +1371,16 @@
     "poster": "pics/Films/Bumblebee/2.jpg"
   },
   {
+    "id": "copyrightPolicy",
+    "title": "Info",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "images/1.jpg"
+  },
+  {
     "id": "Devi2Abhinetry2ReadyReadyVideoSong",
     "title": "Videos",
     "type": "movie",
@@ -1302,6 +1409,16 @@
     "language": "Hindi",
     "year": "2019",
     "poster": "pics/Films/DreamGirl/2.jpg"
+  },
+  {
+    "id": "KeralaFloods2019",
+    "title": "Kerala Floods 2019",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "pics/Emergency/KeralaFloods2019/2.jpg"
   },
   {
     "id": "comali-all-posters-and-wallpapers",
@@ -1702,6 +1819,316 @@
     "language": "Hindi",
     "year": "2019",
     "poster": "pics/Films/PatiPatniAurWoh/2.jpg"
+  },
+  {
+    "id": "30-feel-good-films-to-watch-during-lockdown",
+    "title": "Tags",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Tamil Genre: Comedy,Romance",
+    "year": "2019",
+    "poster": "blog/pics/30-feel-good-films-to-watch-during-lockdown.jpg"
+  },
+  {
+    "id": "comali-all-posters-and-wallpapers",
+    "title": "Tags",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "pics/Films/Comali/posters/1.jpg"
+  },
+  {
+    "id": "april-14-2019-April-20-2019",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/april-14-2019-April-20-2019.jpg"
+  },
+  {
+    "id": "april-21-2019-April-27-2019",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/april-21-2019-April-27-2019.jpg"
+  },
+  {
+    "id": "april-28-2019-may-4-2019",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/april-28-2019-may-4-2019.jpg"
+  },
+  {
+    "id": "april-7-2019-April-13-2019",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/april-7-2019-April-13-2019.jpg"
+  },
+  {
+    "id": "august-12-2019-august-17-2019",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/august-12-2019-august-17-2019.jpg"
+  },
+  {
+    "id": "august-18-2019-august-24-2019",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/august-18-2019-august-24-2019.jpg"
+  },
+  {
+    "id": "august-25-2019-august-31-2019",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/august-25-2019-august-31-2019.jpg"
+  },
+  {
+    "id": "august-4-2019-august-11-2019",
+    "title": "Tags",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/august-4-2019-august-11-2019.jpg"
+  },
+  {
+    "id": "july-14-2019-july-20-2019",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/july-14-2019-july-20-2019.jpg"
+  },
+  {
+    "id": "july-21-2019-july-27-2019",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/july-21-2019-july-27-2019.jpg"
+  },
+  {
+    "id": "july-28-2019-august-3-2019",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/july-28-2019-august-3-2019.jpg"
+  },
+  {
+    "id": "july-7-2019-july-13-2019",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/july-7-2019-july-13-2019.jpg"
+  },
+  {
+    "id": "june-16-2019-june-22-2019",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/june-16-2019-june-22-2019.jpg"
+  },
+  {
+    "id": "june-2-2019-june-8-2019",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/june-2-2019-june-8-2019.jpg"
+  },
+  {
+    "id": "june-23-2019-june-29-2019",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/june-23-2019-june-29-2019.jpg"
+  },
+  {
+    "id": "june-30-2019-july-6-2019",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/june-30-2019-july-6-2019.jpg"
+  },
+  {
+    "id": "june-9-2019-june-15-2019",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/june-9-2019-june-15-2019.jpg"
+  },
+  {
+    "id": "march-24-2019-march-30-2019",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/march-24-2019-march-30-2019.jpg"
+  },
+  {
+    "id": "march-31-2019-April-6-2019",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/march-31-2019-April-6-2019.jpg"
+  },
+  {
+    "id": "may-12-2019-may-18-2019",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/may-12-2019-may-18-2019.jpg"
+  },
+  {
+    "id": "may-19-2019-may-25-2019",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/may-19-2019-may-25-2019.jpg"
+  },
+  {
+    "id": "may-26-2019-june-1-2019",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/may-26-2019-june-1-2019.jpg"
+  },
+  {
+    "id": "may-5-2019-may-11-2019",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/may-5-2019-may-11-2019.jpg"
+  },
+  {
+    "id": "news-from-21-march-2019-23march-2019",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/21-march-2019-23march-2019.jpg"
+  },
+  {
+    "id": "november-17-2019-november-23-2019",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/november-17-2019-november-23-2019.jpg"
+  },
+  {
+    "id": "september-1-2019-september-7-2019",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/september-1-2019-september-7-2019.jpg"
+  },
+  {
+    "id": "september-15-2019-september-21-2019",
+    "title": "Short Detail",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/september-15-2019-september-21-2019.jpg"
+  },
+  {
+    "id": "september-22-2019-september-28-2019",
+    "title": "Tags",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/september-22-2019-september-28-2019.jpg"
+  },
+  {
+    "id": "september-8-2019-september-14-2019",
+    "title": "Tags",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2019",
+    "poster": "news/pics/september-8-2019-september-14-2019.jpg"
   },
   {
     "id": "ssb1",
@@ -3084,6 +3511,16 @@
     "poster": "pics/Films/Dhruva%20Natchathiram/1.jpg"
   },
   {
+    "id": "KeralaFloods",
+    "title": "Kerala Floods",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2018",
+    "poster": "pics/Emergency/KeralaFloods/1.jpg"
+  },
+  {
     "id": "FirstMan",
     "title": "First Man ( film)",
     "type": "movie",
@@ -3202,6 +3639,76 @@
     "language": "Hindi",
     "year": "2018",
     "poster": "pics/Films/October/1.jpg"
+  },
+  {
+    "id": "manjapada-to-file-a-complait-against-fake-allegations",
+    "title": "Tags",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2018",
+    "poster": "Profiles/Reports/MsMrOakShow/pics/manjapadatofileacomplait/1.jpg"
+  },
+  {
+    "id": "manjappada-official-statement-on-CKV-issue",
+    "title": "Tags",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2018",
+    "poster": "Profiles/Reports/MsMrOakShow/pics/manjappadaofficialstatementonCKVissue/1.jpg"
+  },
+  {
+    "id": "manjappada-official-statement-on-CKV-issue_2",
+    "title": "Tags",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2018",
+    "poster": "Profiles/Reports/MsMrOakShow/pics/manjappadaofficialstatementonCKVissue/1.jpg"
+  },
+  {
+    "id": "2-point-0-all-posters-and-wallpapers",
+    "title": "Tags",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2018",
+    "poster": "pics/Films/2.0/posters/1.jpg"
+  },
+  {
+    "id": "captain-marvel-all-posters-and-wallpapers",
+    "title": "Tags",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2018",
+    "poster": "pics/Films/CaptainMarvel/posters/1.jpg"
+  },
+  {
+    "id": "ivanukku-engeyo-macham-irukku-all-posters-and-wallpapers",
+    "title": "Tags",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2018",
+    "poster": "pics/Films/IvanukkuEngeyoMachamIrukku/posters/1.jpg"
+  },
+  {
+    "id": "munna-michael-all-posters-and-wallpapers",
+    "title": "Tags",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "2018",
+    "poster": "pics/Films/MunnaMichael/posters/1.jpg"
   },
   {
     "id": "manjapada-to-file-a-complait-against-fake-allegations",
@@ -10384,6 +10891,16 @@
     "poster": "pics/Bottom/1.jpg"
   },
   {
+    "id": "OakShowEmergency",
+    "title": "Kerala Floods 2019",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "",
+    "poster": "pics/Emergency/coronavirusoutbreak/1.jpg"
+  },
+  {
     "id": "Oxygen",
     "title": "Oxygen",
     "type": "movie",
@@ -10402,6 +10919,16 @@
     "language": "Hindi",
     "year": "",
     "poster": "pics/Films/Pirates%20of%20the%20Caribbean%20Dead%20Men%20Tell%20No%20Tales/Trailer/1.JPG"
+  },
+  {
+    "id": "ReporterProfiles",
+    "title": "Ms./Mr. OakShow",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "",
+    "poster": "Profiles/CriticProfiles/MsMrOakShow/pics//1.jpg"
   },
   {
     "id": "ReporterProfiles",
@@ -10497,7 +11024,7 @@
     "id": "Scam1992S1",
     "title": "Scam 1992: The Harshad Mehta Story",
     "type": "series",
-    "category": "Series",
+    "category": "Indian",
     "genre": "Biopic, Crime,Drama",
     "language": "Hindi",
     "year": "2020",
@@ -11371,6 +11898,366 @@
     "poster": "Profiles/CriticProfiles/VishnuPc/pics/koode/koode-review-by-vishnu-pc-a-feel-good-film-2.jpg"
   },
   {
+    "id": "alita-review-by-abhijith-a-g.html",
+    "title": "Alita: Battle Angel Review by Abhijith A G",
+    "type": "review",
+    "author": "Abhijith A G",
+    "rating": "53/5",
+    "poster": "Profiles/CriticProfiles/AbhijithAG/pics/AlitaBattleAngelReview/1.jpg"
+  },
+  {
+    "id": "american-animals-film-review-by-abhijith-a-g.html",
+    "title": "American Animals Review by Abhijith A G | A Bio-Pic Nareted by The Real People",
+    "type": "review",
+    "author": "Abhijith A G",
+    "rating": "53.5/5",
+    "poster": "Profiles/CriticProfiles/AbhijithAG/pics/AmericanAnimalsReview/american-animals-review-by-abhijith-a-g.jpg"
+  },
+  {
+    "id": "aquaman-review-by-abhijith-a-g.html",
+    "title": "Aquaman Review by Abhijith A G",
+    "type": "review",
+    "author": "Abhijith A G",
+    "rating": "53.5/5",
+    "poster": "Profiles/CriticProfiles/AbhijithAG/pics/AquamanReview/1.jpg"
+  },
+  {
+    "id": "avengers-endgame-review-by-abhijith-a-g.html",
+    "title": "Avengers: Endgame Review by Abhijith A G",
+    "type": "review",
+    "author": "Abhijith A G",
+    "rating": "54/5",
+    "poster": "Profiles/CriticProfiles/AbhijithAG/pics/AvengersEndgameReview/1.jpg"
+  },
+  {
+    "id": "bumblebee-review-by-abhijith-a-g.html",
+    "title": "Bumblebee Review by Abhijith A G",
+    "type": "review",
+    "author": "Abhijith A G",
+    "rating": "53.5/5",
+    "poster": "Profiles/CriticProfiles/AbhijithAG/pics/BumblebeeReview/1.jpg"
+  },
+  {
+    "id": "captain-marvel-review-by-abhijith-a-g.html",
+    "title": "Captain Marvel Review by Abhijith A G",
+    "type": "review",
+    "author": "Abhijith A G",
+    "rating": "53/5",
+    "poster": "Profiles/CriticProfiles/AbhijithAG/pics/CaptainMarvelReview/1.jpg"
+  },
+  {
+    "id": "creed-II-review-by-abhijith-a-g.html",
+    "title": "Creed II Review by Abhijith A G",
+    "type": "review",
+    "author": "Abhijith A G",
+    "rating": "53.5/5",
+    "poster": "Profiles/CriticProfiles/AbhijithAG/pics/CreedIIReview/1.jpg"
+  },
+  {
+    "id": "fantastic-beasts-the-crimes-of-grindelwald-review-by-abhijith-a-g.html",
+    "title": "Fantastic Beasts: The Crimes of Grindelwald Review by Abhijith A G",
+    "type": "review",
+    "author": "Abhijith A G",
+    "rating": "52.5/5",
+    "poster": "Profiles/CriticProfiles/AbhijithAG/pics/FantasticBeastsTheCrimesofGrindelwaldReview/1.jpg"
+  },
+  {
+    "id": "godzilla-king-of-the-monsters-review-by-abhijith-a-g.html",
+    "title": "Godzilla: King of the Monsters Review by Abhijith A G",
+    "type": "review",
+    "author": "Abhijith A G",
+    "rating": "53/5",
+    "poster": "Profiles/CriticProfiles/AbhijithAG/pics/GodzillaKingoftheMonstersReview/1.jpg"
+  },
+  {
+    "id": "john-wick-chapter-3-review-by-abhijith-a-g.html",
+    "title": "John Wick: Chapter 3 – Parabellum Review by Abhijith A G",
+    "type": "review",
+    "author": "Abhijith A G",
+    "rating": "53.5/5",
+    "poster": "Profiles/CriticProfiles/AbhijithAG/pics/JohnWickChapter3ParabellumReview/1.jpg"
+  },
+  {
+    "id": "kayamkulam-kochunni-review-by-abhijith-a-g.html",
+    "title": "Kayamkulam Kochunni Review by Abhijith A G | ചെറിയ പോരായിമകൾ ചിത്രത്തിന് ഉണ്ടെകിലും അതിനെ മാറ്റിനിര്ത്തി മികച്ച ചിത്രീകരണം, വിഷവെൽസ് , ബാക്ഗ്രൗണ്ട് മ്യൂസിക് എന്നിവ കൊണ്ട് മികച്ച തിയേറ്റർ അനുഭവം ചിത്രത്തിന് തരാൻ സാധിച്ചു എന്നത് നിസംശയം പറയാം.",
+    "type": "review",
+    "author": "Abhijith A G",
+    "rating": "53/5",
+    "poster": "Profiles/CriticProfiles/AbhijithAG/pics/KayamkulamKochunniReview/1.jpg"
+  },
+  {
+    "id": "lucifer-review-by-abhijith-a-g.html",
+    "title": "Lucifer Review by Abhijith A G",
+    "type": "review",
+    "author": "Abhijith A G",
+    "rating": "53.5/5",
+    "poster": "Profiles/CriticProfiles/AbhijithAG/pics/LuciferReview/1.jpg"
+  },
+  {
+    "id": "mission-impossible-6-review-by-abhijith-a-g.html",
+    "title": "Mission: Impossible – Fallout Review by Abhijith A G | Watch It From Theaters To Get an Edge of Seat Feeling",
+    "type": "review",
+    "author": "Abhijith A G",
+    "rating": "53.5/5",
+    "poster": "Profiles/CriticProfiles/AbhijithAG/pics/MI6/1.jpg"
+  },
+  {
+    "id": "polar-review-by-abhijith-a-g.html",
+    "title": "Polar Review by Abhijith A G",
+    "type": "review",
+    "author": "Abhijith A G",
+    "rating": "53/5",
+    "poster": "Profiles/CriticProfiles/AbhijithAG/pics/PolarReview/1.jpg"
+  },
+  {
+    "id": "the-meg-2018-review-by-abhijith-a-g.html",
+    "title": "The Meg Review by Abhijith A G | A Good Monster Movie",
+    "type": "review",
+    "author": "Abhijith A G",
+    "rating": "53.4/5",
+    "poster": "Profiles/CriticProfiles/AbhijithAG/pics/TheMegReview/the-meg-review-by-abhijith-a-g.jpg"
+  },
+  {
+    "id": "the-nun-review-by-abhijith-a-g.html",
+    "title": "The Nun Review by Abhijith A G | A Good Mystery Movie Than a Horror Movie",
+    "type": "review",
+    "author": "Abhijith A G",
+    "rating": "53/5",
+    "poster": "Profiles/CriticProfiles/AbhijithAG/pics/TheNunReview/the-nun-review-by-abhijith-a-g.jpg"
+  },
+  {
+    "id": "the-predator-review-by-abhijith-a-g.html",
+    "title": "The Predator Review by Abhijith A G | ടൈംപാസ്സായി തിയേറ്ററിൽ ഒരു തവണ കാണാൻ ഉള്ളത് ഉണ്ട്",
+    "type": "review",
+    "author": "Abhijith A G",
+    "rating": "52.8/5",
+    "poster": "Profiles/CriticProfiles/AbhijithAG/pics/ThePredatorReview/the-predator-review-by-abhijith-a-g.jpg"
+  },
+  {
+    "id": "the-quake-review-by-abhijith-a-g.html",
+    "title": "Skjelvet/The Quake Review by Abhijith A G",
+    "type": "review",
+    "author": "Abhijith A G",
+    "rating": "52.5/5",
+    "poster": "Profiles/CriticProfiles/AbhijithAG/pics/TheQuakeReview/1.jpg"
+  },
+  {
+    "id": "upgrade-2018-film-review-by-abhijith-a-g.html",
+    "title": "Upgrade Review by Abhijith A G | A Must Watch Techno-Thriller Movie",
+    "type": "review",
+    "author": "Abhijith A G",
+    "rating": "54/5",
+    "poster": "Profiles/CriticProfiles/AbhijithAG/pics/UpgradeReview/upgrade-review-by-abhijith-a-g.jpg"
+  },
+  {
+    "id": "uri-review-by-abhijith-a-g.html",
+    "title": "Uri: The Surgical Strike Review by Abhijith A G",
+    "type": "review",
+    "author": "Abhijith A G",
+    "rating": "54/5",
+    "poster": "Profiles/CriticProfiles/AbhijithAG/pics/UriReview/1.jpg"
+  },
+  {
+    "id": "us-review-by-abhijith-a-g.html",
+    "title": "Us (2019 film) Review by Abhijith A G",
+    "type": "review",
+    "author": "Abhijith A G",
+    "rating": "53/5",
+    "poster": "Profiles/CriticProfiles/AbhijithAG/pics/UsReview/1.jpg"
+  },
+  {
+    "id": "venom-review-by-abhijith-a-g.html",
+    "title": "Venom Review by Abhijith A G | R Rated ആയി എടുക്കാമായിരുന്നു സിനിമ എങ്കിൽ കുറച്ചു കുടി നന്നായേനെ",
+    "type": "review",
+    "author": "Abhijith A G",
+    "rating": "52.5/5",
+    "poster": "Profiles/CriticProfiles/AbhijithAG/pics/VenomReview/1.jpg"
+  },
+  {
+    "id": "tik-tik-tik-review.html",
+    "title": "Tik Tik Tik | Review By Achuthan Karnnan | Well, Let's Just List The Good,The Bad and The Ugly",
+    "type": "review",
+    "author": "Achuthan Karnnan",
+    "rating": "53/5",
+    "poster": "Profiles/CriticProfiles/AchuthanKarnnan/pics/TikTikTikReview/tik-tik-tik-review.jpg"
+  },
+  {
+    "id": "",
+    "title": "Vishnu Pc",
+    "type": "review",
+    "author": "",
+    "rating": "N/A",
+    "poster": "VishnuPc/pics/1.jpg"
+  },
+  {
+    "id": "",
+    "title": "Jithin J Prasad",
+    "type": "review",
+    "author": "",
+    "rating": "N/A",
+    "poster": "JithinJPrasad/pics/1.jpg"
+  },
+  {
+    "id": "",
+    "title": "Achuthan Karnnan",
+    "type": "review",
+    "author": "",
+    "rating": "N/A",
+    "poster": "AchuthanKarnnan/pics/1.jpg"
+  },
+  {
+    "id": "",
+    "title": "Manoj Aswin",
+    "type": "review",
+    "author": "",
+    "rating": "N/A",
+    "poster": "ManojAswin/pics/1.jpg"
+  },
+  {
+    "id": "",
+    "title": "Abhijith A G",
+    "type": "review",
+    "author": "",
+    "rating": "N/A",
+    "poster": "AbhijithAG/pics/1.jpg"
+  },
+  {
+    "id": "",
+    "title": "Ms./Mr. OakShow",
+    "type": "review",
+    "author": "",
+    "rating": "N/A",
+    "poster": "MsMrOakShow/pics/1.jpg"
+  },
+  {
+    "id": "billionaire-boys-club-2018-review-by-jithin-j-prasad.html",
+    "title": "Billionaire Boys Club Review by Jithin J Prasad | One Time Watcher",
+    "type": "review",
+    "author": "Jithin J Prasad",
+    "rating": "52.5/5",
+    "poster": "Profiles/CriticProfiles/JithinJPrasad/pics/BillionaireBoysClubReview/billionaire-boys-club-review-by-jithin-j-prasad.jpg"
+  },
+  {
+    "id": "dark-waters-review-by-jithin-j-prasad.html",
+    "title": "Dark Waters Review | A Single Man V/S A Multibillion Dollar Corporate by Jithin J Prasad",
+    "type": "review",
+    "author": "Jithin J Prasad",
+    "rating": "54.25/5",
+    "poster": "Profiles/CriticProfiles/JithinJPrasad/pics/DarkWatersReview/1.jpg"
+  },
+  {
+    "id": "dia-review-by-jithin-j-prasad.html",
+    "title": "Dia: A Must Watch Heartwarming Film That Will Make You Cry",
+    "type": "review",
+    "author": "Jithin J Prasad",
+    "rating": "54.5/5",
+    "poster": "Profiles/CriticProfiles/JithinJPrasad/pics/DiaReview/1.jpg"
+  },
+  {
+    "id": "dil-bechara-review-by-jithin-j-prasad.html",
+    "title": "Dil Bechara Review: You Couldn't Have Asked for Better",
+    "type": "review",
+    "author": "Jithin J Prasad",
+    "rating": "55/5",
+    "poster": "Profiles/CriticProfiles/JithinJPrasad/pics/DilBecharaReview/1.jpg"
+  },
+  {
+    "id": "johny-english-strikes-again-honest-review-by-jithin-j-prasad.html",
+    "title": "Johnny English Strikes Again | Review by Jithin J Prasad If you are bored and looking for some comedy to make your day, go for Johnny English : Strikes Again I can guarantee that Johnny won’t be disappointing you",
+    "type": "review",
+    "author": "Jithin J Prasad",
+    "rating": "53.25/5",
+    "poster": "Profiles/CriticProfiles/JithinJPrasad/pics/JohnnyEnglishStrikesAgainReview/1.jpg"
+  },
+  {
+    "id": "khuda-haafiz-review-by-jithin-j-prasad.html",
+    "title": "Khuda Haafiz Review: You Can Watch it Without a Second Thought",
+    "type": "review",
+    "author": "Jithin J Prasad",
+    "rating": "54/5",
+    "poster": "Profiles/CriticProfiles/JithinJPrasad/pics/KhudaHaafizReview/1.jpg"
+  },
+  {
+    "id": "mission-impossible-6-review-by-jithin-j-prasad.html",
+    "title": "Mission: Impossible – Fallout Review by Jithin J Prasad | One of The very Best Action Movies Ever with Good Plot",
+    "type": "review",
+    "author": "Jithin J Prasad",
+    "rating": "54.5/5",
+    "poster": "Profiles/CriticProfiles/JithinJPrasad/pics/MI6/1.jpg"
+  },
+  {
+    "id": "oceans-8-movie-honest-review-by-jithin-j-prasad.html",
+    "title": "Ocean's 8 | Honest Review by Jithin J Prasad A Good Spin-Off To The Original Ocean's Trilogy",
+    "type": "review",
+    "author": "Jithin J Prasad",
+    "rating": "53.55/5",
+    "poster": "Profiles/CriticProfiles/JithinJPrasad/pics/Oceans8Review/oceans-8-honest-review-by-jithin-j-prasad.jpg"
+  },
+  {
+    "id": "unpregnant-review-by-jithin-j-prasad.html",
+    "title": "Unpregnant Review : Getting an Abortion is Not Always a Bad Thing",
+    "type": "review",
+    "author": "Jithin J Prasad",
+    "rating": "54/5",
+    "poster": "Profiles/CriticProfiles/JithinJPrasad/pics/UnpregnantReview/1.jpg"
+  },
+  {
+    "id": "yaara-review-by-jithin-j-prasad.html",
+    "title": "Yaara Review: Not as Cliche as You Think",
+    "type": "review",
+    "author": "Jithin J Prasad",
+    "rating": "53.5/5",
+    "poster": "Profiles/CriticProfiles/JithinJPrasad/pics/YaaraReview/1.jpg"
+  },
+  {
+    "id": "kadaikutty-singam-review-by-manoj-aswin.html",
+    "title": "Kadaikutty Singam | Review By Manoj Aswin | A Nice Family Entertainer",
+    "type": "review",
+    "author": "Manoj Aswin",
+    "rating": "54/5",
+    "poster": "Profiles/CriticProfiles/ManojAswin/pics/KadaikuttySingamReview/kadaikutty-singam-review-by-manoj-aswin.jpg"
+  },
+  {
+    "id": "parmanu-the-story-of-pokhran-review-by-manoj-aswin.html",
+    "title": "Parmanu: The Story of Pokhran Review By Manoj Aswin | A Movie That Show's the Power Indian Wardogs and Missiles",
+    "type": "review",
+    "author": "Manoj Aswin",
+    "rating": "54/5",
+    "poster": "Profiles/CriticProfiles/ManojAswin/pics/ParmanuTheStoryofPokhranReview/parmanu-the-story-of-pokhran-review-by-manoj-aswin.jpg"
+  },
+  {
+    "id": "semma-botha-aagatha-review-by-manoj-aswin.html",
+    "title": "Semma Botha Aagatha Review By Manoj Aswin | Atharva, Please Don't Do Movies Like This",
+    "type": "review",
+    "author": "Manoj Aswin",
+    "rating": "52/5",
+    "poster": "Profiles/CriticProfiles/ManojAswin/pics/SemmaBothaAagathaReview/semma-botha-aagatha-review-by-manoj-aswin.jpg"
+  },
+  {
+    "id": "tik-tik-tik-review-by-manoj-aswin.html",
+    "title": "Tik Tik Tik | Review By Manoj Aswin | A Good Entertainer with a Successful First Try",
+    "type": "review",
+    "author": "Manoj Aswin",
+    "rating": "53.75/5",
+    "poster": "Profiles/CriticProfiles/ManojAswin/pics/TikTikTikReview/tik-tik-tik-review-by-manoj-aswin.jpg"
+  },
+  {
+    "id": "la-la-land-review-by-ms-mr-oakshow.html",
+    "title": "La La Land Review by Ms./Mr.OakShow",
+    "type": "review",
+    "author": "Ms./Mr.OakShow",
+    "rating": "9/5",
+    "poster": "Profiles/CriticProfiles/MsMrOakShow/pics/lalaland/la-la-land-review.jpg"
+  },
+  {
+    "id": "koode-film-review-by-vishnu-pc-a-feel-good-movie.html",
+    "title": "Koode Review by Vishnu Pc | A Feel Good Film",
+    "type": "review",
+    "author": "Vishnu Pc",
+    "rating": "52.75/5",
+    "poster": "Profiles/CriticProfiles/VishnuPc/pics/koode/koode-review-by-vishnu-pc-a-feel-good-film-2.jpg"
+  },
+  {
     "id": "2018FIFAWorldCup",
     "title": "2018 FIFA World Cup All Ratings,Reviews,Watch Online,Schedules,Time,Score,Place,Status,Songs,Videos,Trailers,Bookings,Updates and News",
     "type": "sports",
@@ -11453,301 +12340,5 @@
     "title": "Check Everything About The Latest Sports and Games",
     "type": "sports",
     "poster": ""
-  },
-  {
-    "id": "coronavirus-outbreak",
-    "slug": "coronavirusoutbreak",
-    "title": "2019–20 Coronavirus Outbreak (COVID-19)",
-    "type": "emergency",
-    "category": "Public Health Epidemic",
-    "subtitle": "Global Health Emergency (WHO PHOIC)",
-    "poster": "pics/Emergency/coronavirusoutbreak/1.jpg",
-    "year": "2019 – 2020 (Ongoing Monitoring)",
-    "keywords": "2019–20 Coronavirus Outbreak (COVID-19) Global / Worldwide emergency helpline disaster The 2019–20 Coronavirus (SARS-CoV-2) outbreak was declared a Public Health Emergency of International Concern by the World Health Organization. OakShow maintains verified healthcare advisories, CDC/WHO prevention guidelines, and authoritative medical updates."
-  },
-  {
-    "id": "kerala-floods-2019",
-    "slug": "keralafloods2019",
-    "title": "Kerala Floods 2019 Disaster Relief & Rescue Operation",
-    "type": "emergency",
-    "category": "Natural Disaster",
-    "subtitle": "Red Alert Severe Weather & Inundation Emergency",
-    "poster": "pics/Emergency/KeralaFloods2019/1.jpg",
-    "year": "August 2019",
-    "keywords": "Kerala Floods 2019 Disaster Relief & Rescue Operation Kerala, India (All 14 Districts) emergency helpline disaster Severe monsoon downpours and landslides in August 2019 triggered catastrophic flooding across Kerala, displacing over 145,000 people. OakShow deployed a centralized emergency rescue portal connecting citizens with disaster control rooms, rescue maps, and relief logistics."
-  },
-  {
-    "id": "kerala-floods-2018",
-    "slug": "keralafloods",
-    "title": "Kerala Floods 2018 Century Mega Disaster & Relief Operation",
-    "type": "emergency",
-    "category": "Natural Disaster",
-    "subtitle": "State Level Red Alert Mega Disaster",
-    "poster": "pics/Emergency/KeralaFloods/1.jpg",
-    "year": "August 2018",
-    "keywords": "Kerala Floods 2018 Century Mega Disaster & Relief Operation Kerala, India emergency helpline disaster The worst flooding in Kerala in nearly a century occurred in August 2018, opening 35 of 54 major dams simultaneously. OakShow launched a 24x7 emergency hub facilitating SOS rescue requests, shelter maps, volunteer mobilization, and direct donations to the Chief Minister Distress Relief Fund."
-  },
-  {
-    "id": "climate-change-crisis",
-    "slug": "sorandtp",
-    "title": "Climate Change Emergency & Global Plantation Campaign",
-    "type": "emergency",
-    "category": "Environmental Emergency",
-    "subtitle": "Global Planetary Ecological Crisis",
-    "poster": "sorandtp/plant-a-tree.jpg",
-    "year": "Initiated June 2018 (Continuous)",
-    "keywords": "Climate Change Emergency & Global Plantation Campaign Global / Worldwide emergency helpline disaster Climate change is an existential crisis escalating at unprecedented rates. OakShow's #SaveOurRaceandThePlanet campaign mobilizes citizens worldwide to plant trees on birthdays and milestones, systematically combating global warming through collective environmental action."
-  },
-  {
-    "id": "TheBoysS1",
-    "title": "The Boys Season 1",
-    "type": "series",
-    "category": "Hollywood",
-    "year": "2019",
-    "language": "English",
-    "score": "9/10",
-    "poster": "pics/Serieses/TheBoys/S01/2.jpg",
-    "filename": "TheBoysS1.html",
-    "description": "Hughie Campbell joins Billy Butcher and The Boys to bring down Vought International and the corrupt superhero team known as The Seven."
-  },
-  {
-    "id": "TheBoysS2",
-    "title": "The Boys Season 2",
-    "type": "series",
-    "category": "Hollywood",
-    "year": "2020",
-    "language": "English",
-    "score": "9/10",
-    "poster": "pics/Serieses/TheBoys/S02/2.jpg",
-    "filename": "TheBoysS2.html",
-    "description": "On the run from the law and hunted by Supes, The Boys struggle to regroup as the sinister new Supe Stormfront shakes up Vought."
-  },
-  {
-    "id": "LittleThingsS1",
-    "title": "Little Things Season 1",
-    "type": "series",
-    "category": "Indian",
-    "year": "2016",
-    "language": "English,Hindi",
-    "score": "8.5/10",
-    "poster": "pics/Serieses/LittleThings/S01/2.jpg",
-    "filename": "LittleThingsS1.html",
-    "description": "Dhruv and Kavya navigate early cohabitation, mundane daily routines, small relationship conflicts, and finding themselves in contemporary Mumbai."
-  },
-  {
-    "id": "LittleThingsS2",
-    "title": "Little Things Season 2",
-    "type": "series",
-    "category": "Indian",
-    "year": "2018",
-    "language": "English,Hindi",
-    "score": "8.5/10",
-    "poster": "pics/Serieses/LittleThings/S02/2.jpg",
-    "filename": "LittleThingsS2.html",
-    "description": "As career ambitions and personal insecurities evolve, Dhruv and Kavya face mature relationship crossroads and emotional maturity tests."
-  },
-  {
-    "id": "LittleThingsS3",
-    "title": "Little Things Season 3",
-    "type": "series",
-    "category": "Indian",
-    "year": "2019",
-    "language": "English,Hindi",
-    "score": "8.5/10",
-    "poster": "pics/Serieses/LittleThings/S03/2.jpg",
-    "filename": "LittleThingsS3.html",
-    "description": "Living in different cities puts Kavya and Dhruv in a long-distance relationship, confronting independence, family bonds, and aging parents."
-  },
-  {
-    "id": "StargirlS1",
-    "title": "Stargirl (TV series) Season 01",
-    "type": "series",
-    "category": "Hollywood",
-    "year": "2020",
-    "language": "English",
-    "score": "8.5/10",
-    "poster": "pics/Serieses/Stargirl/2.jpg",
-    "filename": "StargirlS1.html",
-    "description": "Teenager Courtney Whitmore joins the Justice Society of America. Based on the character from DC Comics."
-  },
-  {
-    "id": "AashramS1",
-    "title": "Aashram Season 1",
-    "type": "series",
-    "category": "Indian",
-    "year": "2020",
-    "language": "Hindi",
-    "score": "8.2/10",
-    "poster": "pics/Serieses/Aashram/2.jpg",
-    "filename": "AashramS1.html",
-    "description": "A duplicitous, aashram based, Indian Godman's good deeds serve activities criminal and unholy."
-  },
-  {
-    "id": "MugilanS1",
-    "title": "Mugilan Season 1",
-    "type": "series",
-    "category": "Indian",
-    "year": "2020",
-    "language": "Tamil",
-    "score": "7.1/10",
-    "poster": "pics/Serieses/Mugilan/2.jpg",
-    "filename": "MugilanS1.html",
-    "description": "The series depicts socio-political events that led to the rise of one of the most dreaded gangsters of Kanchipuram in the 1970s called Mugilan."
-  },
-  {
-    "id": "PatiPatniAurWohSeriesS1",
-    "title": "Pati Patni Aur Woh Season 1",
-    "type": "series",
-    "category": "Indian",
-    "year": "2020",
-    "language": "Hindi",
-    "score": "7.1/10",
-    "poster": "pics/Serieses/PatiPatniAurWoh/2.jpg",
-    "filename": "PatiPatniAurWohSeriesS1.html",
-    "description": "A middle-class man from mathura Finds himself torn Between his dead wife's ghost and sexy second wife."
-  },
-  {
-    "id": "MastramS1",
-    "title": "Mastram Season 1",
-    "type": "series",
-    "category": "Indian",
-    "year": "2020",
-    "language": "Hindi",
-    "score": "7/10",
-    "poster": "pics/Serieses/Mastram/2.jpg",
-    "filename": "MastramS1.html",
-    "description": "Meet Mastram, the quintessential writer of the 80s who spoke the lingo of the Hindi heartland - literally."
-  },
-  {
-    "id": "GameofThronesSeason1",
-    "title": "Game of Thrones | Season 1",
-    "type": "series",
-    "category": "Hollywood",
-    "year": "2017",
-    "language": "English",
-    "score": "9/10",
-    "poster": "pics/Serieses/GameofThrones/2.jpg",
-    "filename": "GameofThronesSeason1.html",
-    "description": "Nine noble families fight for control over the mythical lands of Westeros, while a forgotten race returns after being dormant for thousands of years."
-  },
-  {
-    "id": "GameofThronesSeason2",
-    "title": "Game of Thrones | Season 2",
-    "type": "series",
-    "category": "Hollywood",
-    "year": "2017",
-    "language": "English",
-    "score": "9/10",
-    "poster": "pics/Serieses/GameofThrones/2.jpg",
-    "filename": "GameofThronesSeason2.html",
-    "description": "Nine noble families fight for control over the mythical lands of Westeros, while a forgotten race returns after being dormant for thousands of years."
-  },
-  {
-    "id": "GameofThronesSeason3",
-    "title": "Game of Thrones | Season 3",
-    "type": "series",
-    "category": "Hollywood",
-    "year": "2017",
-    "language": "English",
-    "score": "9/10",
-    "poster": "pics/Serieses/GameofThrones/2.jpg",
-    "filename": "GameofThronesSeason3.html",
-    "description": "Nine noble families fight for control over the mythical lands of Westeros, while a forgotten race returns after being dormant for thousands of years."
-  },
-  {
-    "id": "GameofThronesSeason4",
-    "title": "Game of Thrones | Season 4",
-    "type": "series",
-    "category": "Hollywood",
-    "year": "2017",
-    "language": "English",
-    "score": "9/10",
-    "poster": "pics/Serieses/GameofThrones/2.jpg",
-    "filename": "GameofThronesSeason4.html",
-    "description": "Nine noble families fight for control over the mythical lands of Westeros, while a forgotten race returns after being dormant for thousands of years."
-  },
-  {
-    "id": "GameofThronesSeason5",
-    "title": "Game of Thrones | Season 5",
-    "type": "series",
-    "category": "Hollywood",
-    "year": "2017",
-    "language": "English",
-    "score": "9/10",
-    "poster": "pics/Serieses/GameofThrones/2.jpg",
-    "filename": "GameofThronesSeason5.html",
-    "description": "Nine noble families fight for control over the mythical lands of Westeros, while a forgotten race returns after being dormant for thousands of years."
-  },
-  {
-    "id": "GameofThronesSeason6",
-    "title": "Game of Thrones | Season 6",
-    "type": "series",
-    "category": "Hollywood",
-    "year": "2017",
-    "language": "English",
-    "score": "9/10",
-    "poster": "pics/Serieses/GameofThrones/2.jpg",
-    "filename": "GameofThronesSeason6.html",
-    "description": "Nine noble families fight for control over the mythical lands of Westeros, while a forgotten race returns after being dormant for thousands of years."
-  },
-  {
-    "id": "GameofThronesSeason7",
-    "title": "Game of Thrones | Season 7",
-    "type": "series",
-    "category": "Hollywood",
-    "year": "2017",
-    "language": "English",
-    "score": "9/10",
-    "poster": "pics/Serieses/GameofThrones/2.jpg",
-    "filename": "GameofThronesSeason7.html",
-    "description": "Nine noble families fight for control over the mythical lands of Westeros, while a forgotten race returns after being dormant for thousands of years."
-  },
-  {
-    "id": "GameofThronesSeason8",
-    "title": "Game of Thrones | Season 8",
-    "type": "series",
-    "category": "Hollywood",
-    "year": "2017",
-    "language": "English",
-    "score": "9.5/10",
-    "poster": "pics/Serieses/GameofThrones/2.jpg",
-    "filename": "GameofThronesSeason8.html",
-    "description": "Nine noble families fight for control over the mythical lands of Westeros, while a forgotten race returns after being dormant for thousands of years."
-  },
-  {
-    "id": "TheFlashSeason2",
-    "title": "The Flash (TV series)",
-    "type": "series",
-    "category": "Hollywood",
-    "year": "",
-    "language": "English",
-    "score": "8.5/10",
-    "poster": "pics/Serieses/The%20Flash/1.jpg",
-    "filename": "TheFlashSeason2.html",
-    "description": "A forensic scientist,Barry Allen is struck by lightning ad been in coma for 9 months. When he wakes up, he came realize that he can possess superhuman speed."
-  },
-  {
-    "id": "TheFlashSeason3",
-    "title": "The Flash (TV series)",
-    "type": "series",
-    "category": "Hollywood",
-    "year": "",
-    "language": "English",
-    "score": "8.5/10",
-    "poster": "pics/Serieses/The%20Flash/1.jpg",
-    "filename": "TheFlashSeason3.html",
-    "description": "A forensic scientist,Barry Allen is struck by lightning ad been in coma for 9 months. When he wakes up, he came realize that he can possess superhuman speed."
-  },
-  {
-    "id": "ArrowSeason5",
-    "title": "Arrow (TV series)",
-    "type": "series",
-    "category": "Hollywood",
-    "year": "",
-    "language": "English",
-    "score": "8.3/10",
-    "poster": "pics/Serieses/Arrow/1.jpg",
-    "filename": "ArrowSeason5.html",
-    "description": "The series revolves around Billionaire Oliver Queen, who speds 5 years in a mysterious island who later becomes a hooded vigilante."
   }
 ]

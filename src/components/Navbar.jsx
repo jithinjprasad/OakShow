@@ -5,6 +5,7 @@ import {
   Calendar,
   Star,
   Tv,
+  MonitorPlay,
   Trophy,
   Gamepad2,
   Newspaper,
@@ -122,8 +123,22 @@ export default function Navbar({
   // All Sections (Specialty & Multi-category Portals)
   const allSectionsList = [
     {
+      id: 'indian',
+      label: 'Indian Cinema',
+      icon: Globe,
+      badge: 'Indian Cinema',
+      desc: 'Bollywood, Tollywood, Kollywood & Mollywood movies and ratings'
+    },
+    {
+      id: 'hollywood',
+      label: 'Hollywood',
+      icon: Clapperboard,
+      badge: 'Hollywood',
+      desc: 'Hollywood studio blockbusters, franchises & classics'
+    },
+    {
       id: 'releases',
-      label: 'Release Matrix',
+      label: 'Movies Released',
       icon: Calendar,
       badge: 'Calendar Matrix',
       desc: 'Theatrical releases, premiere dates & monthly calendar matrix (2015–2022+)'
@@ -169,6 +184,13 @@ export default function Navbar({
       icon: Sparkles,
       badge: 'World Cinema',
       desc: 'Foreign cinema, multilingual releases & global classics'
+    },
+    {
+      id: 'ott',
+      label: 'OTT Releases',
+      icon: MonitorPlay,
+      badge: 'Streaming',
+      desc: 'Movies streaming online on Netflix, Prime Video, Sun NXT, Hotstar, SonyLIV & more'
     },
     {
       id: 'blog',
@@ -217,8 +239,8 @@ export default function Navbar({
   // Main Header Nav Items (Clean, uncluttered primary channels)
   const navItems = [
     { id: 'discover', label: 'Discover', icon: Film },
-    { id: 'indian', label: 'Indian Cinema', icon: Globe },
-    { id: 'hollywood', label: 'Hollywood', icon: Clapperboard },
+    { id: 'releases', label: 'Movies Released', icon: Calendar },
+    { id: 'ott', label: 'OTT Releases', icon: MonitorPlay },
     { id: 'series', label: 'Series', icon: Tv },
   ];
 

@@ -1,39 +1,547 @@
 [
   {
+    "id": "Lanterns",
+    "slug": "lanterns",
+    "type": "series",
+    "category": "Hollywood",
+    "score": 9,
+    "filename": "Lanterns.html",
+    "title": "Lanterns",
+    "metaTitle": "Lanterns (TV series) All Ratings, Reviews, Episodes & Watch Online — OakShow",
+    "description": "Green Lanterns Hal Jordan and John Stewart investigate a dark terrestrial murder in the American heartland that leads to an ancient cosmic conspiracy.",
+    "plot": "Green Lanterns are interstellar peacekeepers who wear rings that give them extraordinary powers. The series follows experienced Lantern Hal Jordan and new recruit John Stewart as they investigate a murder in Rushville, Nebraska, which Hal believes is an extraterrestrial incident and leads them to darker mysteries and reckonings.",
+    "language": "English",
+    "releaseDate": "August 16, 2026",
+    "year": "2026",
+    "genre": "Superhero, Drama, Detective",
+    "duration": "55 Minutes",
+    "director": "James Hawes, Stephen Williams",
+    "basedOn": "Green Lantern by DC Comics; Created by Chris Mundy, Damon Lindelof & Tom King",
+    "boxOffice": null,
+    "poster": "pics/Serieses/Lanterns/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Serieses/Lanterns/1.jpg",
+        "alt": "Lanterns Hal Jordan and John Stewart Poster"
+      },
+      {
+        "src": "pics/Serieses/Lanterns/2.jpg",
+        "alt": "Lanterns Official Key Art Poster"
+      },
+      {
+        "src": "pics/Serieses/Lanterns/3.jpg",
+        "alt": "Lanterns High Definition Still"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "9.0/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "8.5/10",
+        "url": "https://www.imdb.com/title/tt26545992/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "91%",
+        "url": "https://www.rottentomatoes.com/tv/lanterns",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "78/100",
+        "url": "https://www.metacritic.com/tv/lanterns/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      },
+      {
+        "source": "Common Sense Media",
+        "score": "4/5",
+        "url": "https://www.commonsensemedia.org/tv-reviews/lanterns",
+        "icon": "pics/RatingSiteLogos/common-sense-media.png"
+      },
+      {
+        "source": "The Guardian",
+        "score": "4/5",
+        "url": "https://www.theguardian.com/tv-and-radio/2026/aug/17/lanterns-review-green-lantern-kyle-chandler-aaron-pierre-dc-comics-universe-superhero",
+        "icon": "pics/RatingSiteLogos/the-guardian.png"
+      },
+      {
+        "source": "Den of Geek",
+        "score": "4.5/5",
+        "url": "https://www.denofgeek.com/tv/lanterns-episode-1-review-hued-detective/",
+        "icon": "pics/RatingSiteLogos/denofgeek.png"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Kyle Chandler",
+        "role": "Hal Jordan / Green Lantern",
+        "description": "A USAF veteran, former test pilot and legendary member of the Green Lantern Corps approaching retirement who mentors new recruit John Stewart."
+      },
+      {
+        "actor": "Aaron Pierre",
+        "role": "John Stewart / Green Lantern",
+        "description": "A former Marine and architect chosen directly by the Guardians of the Universe to wield the Green Lantern power ring."
+      },
+      {
+        "actor": "Kelly Macdonald",
+        "role": "Sheriff Kerry Kane",
+        "description": "A sheriff deeply devoted to her family and close-knit town of Rushville, Nebraska."
+      },
+      {
+        "actor": "Garret Dillahunt",
+        "role": "William Macon",
+        "description": "Kerry's father-in-law, a modern cowboy who hides his self-righteous, conspiracy-minded personality behind a charming façade."
+      },
+      {
+        "actor": "Jason Ritter",
+        "role": "Billy Macon",
+        "description": "Kerry's lawyer husband and William's son."
+      },
+      {
+        "actor": "Poorna Jagannathan",
+        "role": "Zoe",
+        "description": "An associate connected to the investigation."
+      },
+      {
+        "actor": "J. Alphonse Nicholson",
+        "role": "John Stewart Sr.",
+        "description": "John's father who serves in the military."
+      }
+    ],
+    "bookings": [],
+    "watchOnline": [
+      {
+        "provider": "JioCinema / Hotstar",
+        "platform": "JioCinema",
+        "url": "https://www.hotstar.com/in/shows/lanterns/1271680756?utm_source=gwa",
+        "icon": "pics/WatchOnline/hotstar.png",
+        "language": "English",
+        "label": "Stream on JioCinema / Hotstar"
+      },
+      {
+        "provider": "HBO Max",
+        "platform": "HBO Max",
+        "url": "https://www.hbomax.com/show/8c11d041-6b71-4e54-8369-fdb310e063b8",
+        "icon": "pics/WatchOnline/hbo-max.png",
+        "language": "English",
+        "label": "Watch on Max"
+      },
+      {
+        "provider": "Apple TV",
+        "platform": "Apple TV",
+        "url": "https://tv.apple.com/us/show/lanterns/umc.cmc.13oon2dqireb1lhg9h97cudjj",
+        "icon": "pics/WatchOnline/apple-tv.png",
+        "language": "English",
+        "label": "Watch on Apple TV"
+      }
+    ],
+    "music": [
+      {
+        "title": "Lanterns Official Spotify Soundtrack",
+        "platform": "Spotify",
+        "url": "https://open.spotify.com/playlist/0ZKRdQJKUrF593VEWRoqrb",
+        "icon": "pics/MusicWebsiteLogos/spotify.png"
+      }
+    ],
+    "socials": [
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/greenlantern/?hl=en",
+        "handle": "@greenlantern"
+      }
+    ],
+    "videos": [
+      {
+        "title": "Lanterns Official Main Trailer",
+        "type": "Trailer",
+        "url": "https://www.youtube.com/watch?v=EDXHzJDK8wA",
+        "videoId": "EDXHzJDK8wA",
+        "thumbnail": "https://img.youtube.com/vi/EDXHzJDK8wA/hqdefault.jpg"
+      }
+    ],
+    "articles": [
+      {
+        "title": "The Guardian: Green Lantern series is a moody, visually rich superhero detective drama",
+        "url": "https://www.theguardian.com/tv-and-radio/2026/aug/17/lanterns-review-green-lantern-kyle-chandler-aaron-pierre-dc-comics-universe-superhero",
+        "source": "The Guardian"
+      },
+      {
+        "title": "IGN: Lanterns Episode 3 Review & Recap: OutKast",
+        "url": "https://www.ign.com/articles/lanterns-season-1-episode-3-review-recap-outkast",
+        "source": "IGN"
+      },
+      {
+        "title": "Movie News Net: Lanterns Trust Fall Ups The Stakes",
+        "url": "https://www.movienewsnet.com/2026/08/27/lanterns-review-trust-fall-ups-the-stakes/",
+        "source": "Movie News Net"
+      }
+    ],
+    "episodes": [
+      {
+        "id": "LanternsS1E01",
+        "episodeNumber": 1,
+        "seasonNumber": 1,
+        "title": "Pilot",
+        "airDate": "August 16, 2026",
+        "duration": "55 min",
+        "director": "James Hawes",
+        "writtenBy": "Chris Mundy & Damon Lindelof & Tom King",
+        "thumbnail": "pics/Serieses/Lanterns/S01/1.jpg",
+        "plot": "Hal Jordan is chosen as the successor of Green Lantern Abin Sur. In 2016, Hal and John Stewart have a mentor-mentee relationship and travel to Rushville, Nebraska after John receives a cryptic message from Hal's younger consciousness within his power ring. John helps Sheriff Kerry Kane capture a suspect involved in a mass shooting, while Hal investigates an alien conspiracy. During an interrogation, Hal exposes Sanders as an extraterrestrial who detonates his body. In 2026, John returns to Rushville, where Kerry shows him a dead Hal with his power ring missing.",
+        "filename": "LanternsS1E01.html",
+        "score": 9.5,
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "9.5/10",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "8.7/10",
+            "url": "https://www.imdb.com/title/tt26546824/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "94%",
+            "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e01",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+          },
+          {
+            "source": "Metacritic",
+            "score": "82/100",
+            "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-1-pilot/",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          }
+        ]
+      },
+      {
+        "id": "LanternsS1E02",
+        "episodeNumber": 2,
+        "seasonNumber": 1,
+        "title": "Trust Fall",
+        "airDate": "August 23, 2026",
+        "duration": "54 min",
+        "director": "James Hawes",
+        "writtenBy": "Vanessa Baden Kelly & Chris Mundy",
+        "thumbnail": "pics/Serieses/Lanterns/S01/2.jpg",
+        "plot": "With his ring nearly depleted, Hal sends John back to Coast City to retrieve his lantern while he continues investigating the shooting. Hal uncovers alien-detecting technology and attempts to question William Macon, but is wounded by a sniper. After retrieving the power battery, John is abducted by aliens searching for an artificial Manhunter that decimated their civilization, giving John 48 hours to find it. Hal journeys off-world to interrogate Thaal Sinestro about the Manhunters.",
+        "filename": "LanternsS1E02.html",
+        "score": 9,
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "9.0/10",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "8.6/10",
+            "url": "https://www.imdb.com/title/tt32752613/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "92%",
+            "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e02",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+          },
+          {
+            "source": "Metacritic",
+            "score": "79/100",
+            "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-2-trust-fall/",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          }
+        ]
+      },
+      {
+        "id": "LanternsS1E03",
+        "episodeNumber": 3,
+        "seasonNumber": 1,
+        "title": "OutKast",
+        "airDate": "August 30, 2026",
+        "duration": "56 min",
+        "director": "Stephen Williams",
+        "writtenBy": "Vanessa Baden Kelly",
+        "thumbnail": "pics/Serieses/Lanterns/S01/3.jpg",
+        "plot": "In the past, John's father fails a trial to become a Green Lantern. Guardians of the Universe leader Lianna offers recompense by giving John a future opportunity. After serving as a Marine, John is recruited by the Guardians and chosen under Hal's mentorship. Hal welcomes John into the Corps but makes it clear that he will remain in command.",
+        "filename": "LanternsS1E03.html",
+        "score": 8,
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "8.0/10",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "8.2/10",
+            "url": "https://www.imdb.com/title/tt32752612/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "88%",
+            "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e03",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+          },
+          {
+            "source": "Metacritic",
+            "score": "75/100",
+            "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-3-outkast/",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          }
+        ]
+      }
+    ],
+    "seasonsData": [
+      {
+        "seasonNumber": 1,
+        "seasonId": "LanternsS1",
+        "title": "Lanterns Season 01",
+        "year": "2026",
+        "releaseDate": "August 16, 2026",
+        "filename": "LanternsS1.html",
+        "poster": "pics/Serieses/Lanterns/S01/1.jpg",
+        "banner": "pics/Serieses/Lanterns/1.jpg",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "9.0/10",
+            "url": "",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "8.5/10",
+            "url": "https://www.imdb.com/title/tt26546824/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "91%",
+            "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e01",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+          },
+          {
+            "source": "Metacritic",
+            "score": "78/100",
+            "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-1-pilot/",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          }
+        ],
+        "watchOnline": [
+          {
+            "provider": "JioCinema / Hotstar",
+            "platform": "JioCinema",
+            "url": "https://www.hotstar.com/in/shows/lanterns/1271680756?utm_source=gwa",
+            "icon": "pics/WatchOnline/hotstar.png",
+            "language": "English",
+            "label": "Stream on JioCinema / Hotstar"
+          },
+          {
+            "provider": "HBO Max",
+            "platform": "HBO Max",
+            "url": "https://www.hbomax.com/show/8c11d041-6b71-4e54-8369-fdb310e063b8",
+            "icon": "pics/WatchOnline/hbo-max.png",
+            "language": "English",
+            "label": "Watch on Max"
+          },
+          {
+            "provider": "Apple TV",
+            "platform": "Apple TV",
+            "url": "https://tv.apple.com/us/show/lanterns/umc.cmc.13oon2dqireb1lhg9h97cudjj",
+            "icon": "pics/WatchOnline/apple-tv.png",
+            "language": "English",
+            "label": "Watch on Apple TV"
+          }
+        ],
+        "trailer": "https://www.youtube.com/watch?v=EDXHzJDK8wA",
+        "episodes": [
+          {
+            "id": "LanternsS1E01",
+            "episodeNumber": 1,
+            "seasonNumber": 1,
+            "title": "Pilot",
+            "airDate": "August 16, 2026",
+            "duration": "55 min",
+            "director": "James Hawes",
+            "writtenBy": "Chris Mundy & Damon Lindelof & Tom King",
+            "thumbnail": "pics/Serieses/Lanterns/S01/1.jpg",
+            "plot": "Hal Jordan is chosen as the successor of Green Lantern Abin Sur. In 2016, Hal and John Stewart have a mentor-mentee relationship and travel to Rushville, Nebraska after John receives a cryptic message from Hal's younger consciousness within his power ring. John helps Sheriff Kerry Kane capture a suspect involved in a mass shooting, while Hal investigates an alien conspiracy. During an interrogation, Hal exposes Sanders as an extraterrestrial who detonates his body. In 2026, John returns to Rushville, where Kerry shows him a dead Hal with his power ring missing.",
+            "filename": "LanternsS1E01.html",
+            "score": 9.5,
+            "ratings": [
+              {
+                "source": "OakShow",
+                "score": "9.5/10",
+                "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+              },
+              {
+                "source": "IMDb",
+                "score": "8.7/10",
+                "url": "https://www.imdb.com/title/tt26546824/",
+                "icon": "pics/RatingSiteLogos/imdb.png"
+              },
+              {
+                "source": "Rotten Tomatoes",
+                "score": "94%",
+                "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e01",
+                "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+              },
+              {
+                "source": "Metacritic",
+                "score": "82/100",
+                "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-1-pilot/",
+                "icon": "pics/RatingSiteLogos/metacritic.png"
+              }
+            ]
+          },
+          {
+            "id": "LanternsS1E02",
+            "episodeNumber": 2,
+            "seasonNumber": 1,
+            "title": "Trust Fall",
+            "airDate": "August 23, 2026",
+            "duration": "54 min",
+            "director": "James Hawes",
+            "writtenBy": "Vanessa Baden Kelly & Chris Mundy",
+            "thumbnail": "pics/Serieses/Lanterns/S01/2.jpg",
+            "plot": "With his ring nearly depleted, Hal sends John back to Coast City to retrieve his lantern while he continues investigating the shooting. Hal uncovers alien-detecting technology and attempts to question William Macon, but is wounded by a sniper. After retrieving the power battery, John is abducted by aliens searching for an artificial Manhunter that decimated their civilization, giving John 48 hours to find it. Hal journeys off-world to interrogate Thaal Sinestro about the Manhunters.",
+            "filename": "LanternsS1E02.html",
+            "score": 9,
+            "ratings": [
+              {
+                "source": "OakShow",
+                "score": "9.0/10",
+                "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+              },
+              {
+                "source": "IMDb",
+                "score": "8.6/10",
+                "url": "https://www.imdb.com/title/tt32752613/",
+                "icon": "pics/RatingSiteLogos/imdb.png"
+              },
+              {
+                "source": "Rotten Tomatoes",
+                "score": "92%",
+                "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e02",
+                "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+              },
+              {
+                "source": "Metacritic",
+                "score": "79/100",
+                "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-2-trust-fall/",
+                "icon": "pics/RatingSiteLogos/metacritic.png"
+              }
+            ]
+          },
+          {
+            "id": "LanternsS1E03",
+            "episodeNumber": 3,
+            "seasonNumber": 1,
+            "title": "OutKast",
+            "airDate": "August 30, 2026",
+            "duration": "56 min",
+            "director": "Stephen Williams",
+            "writtenBy": "Vanessa Baden Kelly",
+            "thumbnail": "pics/Serieses/Lanterns/S01/3.jpg",
+            "plot": "In the past, John's father fails a trial to become a Green Lantern. Guardians of the Universe leader Lianna offers recompense by giving John a future opportunity. After serving as a Marine, John is recruited by the Guardians and chosen under Hal's mentorship. Hal welcomes John into the Corps but makes it clear that he will remain in command.",
+            "filename": "LanternsS1E03.html",
+            "score": 8,
+            "ratings": [
+              {
+                "source": "OakShow",
+                "score": "8.0/10",
+                "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+              },
+              {
+                "source": "IMDb",
+                "score": "8.2/10",
+                "url": "https://www.imdb.com/title/tt32752612/",
+                "icon": "pics/RatingSiteLogos/imdb.png"
+              },
+              {
+                "source": "Rotten Tomatoes",
+                "score": "88%",
+                "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e03",
+                "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+              },
+              {
+                "source": "Metacritic",
+                "score": "75/100",
+                "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-3-outkast/",
+                "icon": "pics/RatingSiteLogos/metacritic.png"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "Scam1992S1",
-    "slug": "Scam1992S1",
+    "slug": "scam1992s1",
     "type": "series",
     "category": "Indian",
     "score": 9.8,
     "filename": "Scam1992S1.html",
     "title": "Scam 1992: The Harshad Mehta Story",
-    "metaTitle": "Scam 1992: The Harshad Mehta Story (Season 1) — All Ratings, Episodes & Reviews",
-    "description": "Set in 1980s and 90s Bombay, it follows the meteoric rise and catastrophic downfall of Harshad Mehta, a charismatic stockbroker who took the Bombay Stock Exchange to dizzying heights.",
+    "metaTitle": "Scam 1992 Season 1 All Episodes Reviews and Watch Online",
+    "description": "Set in 1980's and 90's Bombay, it follows the life of Harshad Mehta, a stockbroker who took the stock market to dizzying heights and his catastrophic downfall.",
     "plot": "Set in 1980's and 90's Bombay, it follows the life of Harshad Mehta, a stockbroker who took the stock market to dizzying heights and his catastrophic downfall.SourceIMDB",
     "language": "Hindi",
-    "releaseDate": "October 09, 2020",
+    "releaseDate": "November 18,2020 9:53 am",
     "year": "2020",
-    "genre": "Biopic, Crime, Drama",
-    "duration": "50-60 mins",
+    "genre": "Biopic, Crime,Drama",
+    "duration": "1 hrs",
     "director": "Hansal Mehta & Jai Mehta",
     "basedOn": "1992 Indian stock market scam",
-    "poster": "pics/Serieses/Scam1992/1.jpg",
+    "boxOffice": null,
+    "poster": "pics/Serieses/Scam1992/S01/2.jpg",
     "gallery": [
       {
-        "src": "pics/Serieses/Scam1992/S01/2.jpg",
-        "alt": "Scam 1992 Season 1 Key Poster"
+        "src": "pics/Serieses/Scam1992/S01/Scam-1992-Series-Reviews-and-Ratings.jpg",
+        "alt": "#Scam 1992: The Harshad Mehta Story Series Reviews and Ratings"
       },
       {
-        "src": "pics/Serieses/Scam1992/2.jpg",
-        "alt": "Scam 1992 Production Still"
+        "src": "pics/Serieses/Scam1992/S01/Ep01.jpg",
+        "alt": "Scam 1992: The Harshad Mehta Story Episode 01 Risk Se Ishq every reviews and ratings Poster"
       },
       {
-        "src": "pics/Serieses/Scam1992/Scam-1992-Cast-Series-Reviews-and-Ratings.jpg",
-        "alt": "Scam 1992 Ensemble Cast"
+        "src": "pics/Serieses/Scam1992/S01/Ep02.jpg",
+        "alt": "Scam 1992: The Harshad Mehta Story Episode 02 Cobra Killer every reviews and ratings Poster"
       },
       {
-        "src": "pics/Serieses/Scam1992/Scam-1992-Series-Reviews-and-Ratings.jpg",
-        "alt": "Harshad Mehta Bombay Stock Exchange Still"
+        "src": "pics/Serieses/Scam1992/S01/Ep03.jpg",
+        "alt": "Scam 1992: The Harshad Mehta Story Episode 03 Paise Ki Dukaan every reviews and ratings Poster"
+      },
+      {
+        "src": "pics/Serieses/Scam1992/S01/Ep04.jpg",
+        "alt": "Scam 1992: The Harshad Mehta Story Episode 04 Harshad Mehta Is A Liar every reviews and ratings Poster"
+      },
+      {
+        "src": "pics/Serieses/Scam1992/S01/Ep05.jpg",
+        "alt": "Scam 1992: The Harshad Mehta Story Episode 05 Kundli Mein Shani every reviews and ratings Poster"
+      },
+      {
+        "src": "pics/Serieses/Scam1992/S01/Ep06.jpg",
+        "alt": "Scam 1992: The Harshad Mehta Story Episode 06 Stop Press every reviews and ratings Poster"
+      },
+      {
+        "src": "pics/Serieses/Scam1992/S01/Ep07.jpg",
+        "alt": "Scam 1992: The Harshad Mehta Story Episode 07 Dalal Street Ka Dariya every reviews and ratings Poster"
+      },
+      {
+        "src": "pics/Serieses/Scam1992/S01/Ep10.jpg",
+        "alt": "Scam 1992: The Harshad Mehta Story Episode 10 Main History Banana Chahta Hoon every reviews and ratings Poster"
       }
     ],
     "ratings": [
@@ -52,26 +560,14 @@
       {
         "source": "Bollywood Hungama",
         "score": "4.0/5",
-        "url": "https://www.bollywoodhungama.com",
+        "url": "https://www.bollywoodhungama.com/news/features/diwali-ranveer-singhs-fanclub-brings-festive-cheer-2000-kids-7-cities/",
         "icon": "pics/RatingSiteLogos/bollywood-hungama.png"
       },
       {
-        "source": "Mid-Day",
+        "source": "Day",
         "score": "4.0/5",
         "url": "https://www.mid-day.com/articles/scam-1992-the-harshad-mehta-story-review-og-bad-boy-billionaire/23037294",
         "icon": "pics/RatingSiteLogos/mid-day.png"
-      },
-      {
-        "source": "News18",
-        "score": "3.5/5",
-        "url": "https://www.news18.com/news/movies/scam-1992-review-the-harshad-mehta-story-is-a-salute-to-bombays-indomitable-spirit-2951075.html",
-        "icon": "pics/RatingSiteLogos/news-18.png"
-      },
-      {
-        "source": "Times of India",
-        "score": "3.5/5",
-        "url": "https://timesofindia.indiatimes.com/web-series/reviews/hindi/scam-1992-the-harshad-mehta-story/season-1/seasonreview/78586260.cms",
-        "icon": "pics/RatingSiteLogos/times-of-india.ico"
       }
     ],
     "cast": [
@@ -364,191 +860,7 @@
         "section": "More Reveiws and News(After Release)"
       }
     ],
-    "filePath": "E:/OakShow/Scam1992S1.html",
-    "totalEpisodes": "10 Episodes",
-    "seasonsCount": 1,
-    "episodes": [
-      {
-        "id": "scam1992_ep1",
-        "episodeNumber": 1,
-        "title": "Risk Se Ishq",
-        "thumbnail": "pics/Serieses/Scam1992/S01/Ep01.jpg",
-        "japaneseAirDate": "October 09, 2020",
-        "plot": "By the fag end of the 70s era, a middle-class boy from Ghatkopar finds his way into the stock market. He is Harshad Mehta. Aided by his friend Bhushan, Harshad masters the art of jobbing.",
-        "ratings": [
-          {
-            "source": "OakShow",
-            "score": "9.8/10"
-          },
-          {
-            "source": "IMDb",
-            "score": "9.3/10"
-          }
-        ]
-      },
-      {
-        "id": "scam1992_ep2",
-        "episodeNumber": 2,
-        "title": "Cobra Killer",
-        "thumbnail": "pics/Serieses/Scam1992/S01/Ep02.jpg",
-        "japaneseAirDate": "October 09, 2020",
-        "plot": "Harshad ventures into the consultancy business and sets up Growmore Consultancy. Armed with the new economic policies by PM Rajiv Gandhi, Harshad fate sees a growth spurt in business.",
-        "ratings": [
-          {
-            "source": "OakShow",
-            "score": "9.8/10"
-          },
-          {
-            "source": "IMDb",
-            "score": "9.4/10"
-          }
-        ]
-      },
-      {
-        "id": "scam1992_ep3",
-        "episodeNumber": 3,
-        "title": "Paise Ki Dukaan",
-        "thumbnail": "pics/Serieses/Scam1992/S01/Ep03.jpg",
-        "japaneseAirDate": "October 09, 2020",
-        "plot": "Harshad gets lured into the money market following a jibe from Ajay Kedia. Building his own cartel, Harshad starts giving them bankerage with SBI as his client.",
-        "ratings": [
-          {
-            "source": "OakShow",
-            "score": "9.8/10"
-          },
-          {
-            "source": "IMDb",
-            "score": "9.5/10"
-          }
-        ]
-      },
-      {
-        "id": "scam1992_ep4",
-        "episodeNumber": 4,
-        "title": "Harshad Mehta Is A Liar",
-        "thumbnail": "pics/Serieses/Scam1992/S01/Ep04.jpg",
-        "japaneseAirDate": "October 09, 2020",
-        "plot": "Harshad sudden success spurt catches the eyes of financial journalist Sucheta Dalal, who tracks his activities and looks for evidence against him.",
-        "ratings": [
-          {
-            "source": "OakShow",
-            "score": "9.8/10"
-          },
-          {
-            "source": "IMDb",
-            "score": "9.4/10"
-          }
-        ]
-      },
-      {
-        "id": "scam1992_ep5",
-        "episodeNumber": 5,
-        "title": "Kundali Mein Shani",
-        "thumbnail": "pics/Serieses/Scam1992/S01/Ep05.jpg",
-        "japaneseAirDate": "October 09, 2020",
-        "plot": "Finding suspicious fund movements in Harshad SBI account, the RBI Governor directs the bank to track his account under tight surveillance.",
-        "ratings": [
-          {
-            "source": "OakShow",
-            "score": "9.8/10"
-          },
-          {
-            "source": "IMDb",
-            "score": "9.5/10"
-          }
-        ]
-      },
-      {
-        "id": "scam1992_ep6",
-        "episodeNumber": 6,
-        "title": "Stop Press",
-        "thumbnail": "pics/Serieses/Scam1992/S01/Ep06.jpg",
-        "japaneseAirDate": "October 09, 2020",
-        "plot": "Sucheta receives a lead from Bellary regarding 500 crores missing from Harshad books, giving her twenty-four hours to expose the biggest financial scam.",
-        "ratings": [
-          {
-            "source": "OakShow",
-            "score": "9.8/10"
-          },
-          {
-            "source": "IMDb",
-            "score": "9.7/10"
-          }
-        ]
-      },
-      {
-        "id": "scam1992_ep7",
-        "episodeNumber": 7,
-        "title": "Dalal Street Ka Dariya",
-        "thumbnail": "pics/Serieses/Scam1992/S01/Ep07.jpg",
-        "japaneseAirDate": "October 09, 2020",
-        "plot": "RBI investigation widens as multiple banks are found involved in the securities scam, paving the way for a high-profile CBI investigation.",
-        "ratings": [
-          {
-            "source": "OakShow",
-            "score": "9.8/10"
-          },
-          {
-            "source": "IMDb",
-            "score": "9.6/10"
-          }
-        ]
-      },
-      {
-        "id": "scam1992_ep8",
-        "episodeNumber": 8,
-        "title": "Matador",
-        "thumbnail": "pics/Serieses/Scam1992/S01/Ep08.jpg",
-        "japaneseAirDate": "October 09, 2020",
-        "plot": "CBI officer Madhavan begins grilling Manohar Pherwani and key market players as Harshad scrambles to connect with influential figures in Delhi.",
-        "ratings": [
-          {
-            "source": "OakShow",
-            "score": "9.8/10"
-          },
-          {
-            "source": "IMDb",
-            "score": "9.5/10"
-          }
-        ]
-      },
-      {
-        "id": "scam1992_ep9",
-        "episodeNumber": 9,
-        "title": "Ek Crore Ka Suitcase",
-        "thumbnail": "pics/Serieses/Scam1992/S01/Ep09.jpg",
-        "japaneseAirDate": "October 09, 2020",
-        "plot": "Harshad Mehta and his high-profile lawyer Ram Jethmalani conduct a historic press conference that shakes the Indian political establishment to its core.",
-        "ratings": [
-          {
-            "source": "OakShow",
-            "score": "9.8/10"
-          },
-          {
-            "source": "IMDb",
-            "score": "9.7/10"
-          }
-        ]
-      },
-      {
-        "id": "scam1992_ep10",
-        "episodeNumber": 10,
-        "title": "Main History Banana Chahta Hoon",
-        "thumbnail": "pics/Serieses/Scam1992/S01/Ep10.jpg",
-        "japaneseAirDate": "October 09, 2020",
-        "plot": "Harshad faces legal battles and market sanctions in the intense series finale as the legendary stockbroker reflects on his legacy on Dalal Street.",
-        "ratings": [
-          {
-            "source": "OakShow",
-            "score": "9.8/10"
-          },
-          {
-            "source": "IMDb",
-            "score": "9.8/10"
-          }
-        ]
-      }
-    ]
+    "filePath": "E:/OakShow/Scam1992S1.html"
   },
   {
     "id": "TheBoys",
@@ -568,6 +880,7 @@
     "duration": "55-68 minutes",
     "director": "",
     "basedOn": "The Boys by Garth Ennis and Darick Robertson",
+    "boxOffice": null,
     "poster": "pics/Serieses/TheBoys/2.jpg",
     "gallery": [
       {
@@ -696,7 +1009,7 @@
         "label": "Watch Now"
       },
       {
-        "provider": "Apple TV",
+        "provider": "Apple TV / iTunes",
         "url": "https://tv.apple.com/us/show/the-boys/umc.cmc.91mn0jm4nlkzuqoueg22v3b1",
         "icon": "pics/WatchOnline/apple.png",
         "language": "",
@@ -796,17 +1109,12 @@
       {
         "seasonId": "TheBoysS1",
         "title": "The Boys Season 1",
-        "year": "2019",
-        "releaseDate": "July 26, 2019",
-        "duration": "55-68 mins",
-        "totalEpisodes": "8 Episodes",
-        "poster": "pics/Serieses/TheBoys/S01/2.jpg",
-        "filename": "TheBoysS1.html",
-        "plot": "Hughie Campbell joins Billy Butcher and The Boys to bring down Vought International and the corrupt superhero team known as The Seven.",
+        "year": "2020",
         "ratings": [
           {
             "source": "OakShow",
             "score": "9/10",
+            "url": "",
             "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
           },
           {
@@ -828,35 +1136,17 @@
             "icon": "pics/RatingSiteLogos/metacritic.png"
           }
         ],
-        "watchOnline": [
-          {
-            "provider": "Amazon Prime Video",
-            "url": "https://www.primevideo.com/detail/0KRGHGZCHKS920ZQGY5LBRF7MA/ref=atv_dp_season_select_s1",
-            "icon": "pics/WatchOnline/amazon-prime.png",
-            "label": "Watch on Prime Video"
-          },
-          {
-            "provider": "Apple TV",
-            "url": "https://tv.apple.com/us/show/the-boys/umc.cmc.91mn0jm4nlkzuqoueg22v3b1",
-            "icon": "pics/WatchOnline/apple.png",
-            "label": "Watch on Apple TV"
-          }
-        ]
+        "filename": "TheBoysS1.html"
       },
       {
         "seasonId": "TheBoysS2",
         "title": "The Boys Season 2",
         "year": "2020",
-        "releaseDate": "September 04, 2020 – October 09, 2020",
-        "duration": "60 mins",
-        "totalEpisodes": "8 Episodes",
-        "poster": "pics/Serieses/TheBoys/S02/2.jpg",
-        "filename": "TheBoysS2.html",
-        "plot": "On the run from the law and hunted by Supes, The Boys struggle to regroup as the sinister new Supe Stormfront shakes up Vought.",
         "ratings": [
           {
             "source": "OakShow",
             "score": "9/10",
+            "url": "",
             "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
           },
           {
@@ -878,20 +1168,7 @@
             "icon": "pics/RatingSiteLogos/metacritic.png"
           }
         ],
-        "watchOnline": [
-          {
-            "provider": "Amazon Prime Video",
-            "url": "https://www.primevideo.com/detail/0KRGHGZCHKS920ZQGY5LBRF7MA/ref=atv_dp_season_select_s1",
-            "icon": "pics/WatchOnline/amazon-prime.png",
-            "label": "Watch on Prime Video"
-          },
-          {
-            "provider": "Apple TV",
-            "url": "https://tv.apple.com/us/show/the-boys/umc.cmc.91mn0jm4nlkzuqoueg22v3b1",
-            "icon": "pics/WatchOnline/apple.png",
-            "label": "Watch on Apple TV"
-          }
-        ]
+        "filename": "TheBoysS2.html"
       }
     ]
   },
@@ -913,6 +1190,7 @@
     "duration": "15-40 minutes",
     "director": "",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/Flip/2.jpg",
     "gallery": [
       {
@@ -1077,6 +1355,7 @@
     "duration": "15-40 minutes",
     "director": "",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/LittleThings/2.jpg",
     "gallery": [
       {
@@ -1263,17 +1542,12 @@
       {
         "seasonId": "LittleThingsS1",
         "title": "Little Things Season 1",
-        "year": "2016",
-        "releaseDate": "Oct 25, 2016 – Nov 22, 2016",
-        "duration": "15-17 mins",
-        "totalEpisodes": "5 Episodes",
-        "poster": "pics/Serieses/LittleThings/S01/2.jpg",
-        "filename": "LittleThingsS1.html",
-        "plot": "Dhruv and Kavya navigate early cohabitation, mundane daily routines, small relationship conflicts, and finding themselves in contemporary Mumbai.",
+        "year": "2020",
         "ratings": [
           {
             "source": "OakShow",
             "score": "8.5/10",
+            "url": "",
             "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
           },
           {
@@ -1283,41 +1557,17 @@
             "icon": "pics/RatingSiteLogos/imdb.png"
           }
         ],
-        "watchOnline": [
-          {
-            "provider": "YouTube",
-            "url": "https://www.youtube.com/playlist?list=PL4x7Of-X4Xhhdfqf9FkR9r1sPnfy8Bd_n",
-            "icon": "pics/WatchOnline/youtube.png",
-            "label": "Watch Free on YouTube"
-          },
-          {
-            "provider": "Netflix",
-            "url": "https://www.netflix.com/watch/81011159?source=35",
-            "icon": "pics/WatchOnline/netflix.png",
-            "label": "Watch on Netflix"
-          },
-          {
-            "provider": "MX Player",
-            "url": "https://www.mxplayer.in/show/watch-little-things-series-online-f0389c466b7f36133fd7638ea0912deb",
-            "icon": "pics/WatchOnline/mx-player.png",
-            "label": "Watch on MX Player"
-          }
-        ]
+        "filename": "LittleThingsS1.html"
       },
       {
         "seasonId": "LittleThingsS2",
         "title": "Little Things Season 2",
-        "year": "2018",
-        "releaseDate": "Oct 05, 2018",
-        "duration": "22 mins",
-        "totalEpisodes": "8 Episodes",
-        "poster": "pics/Serieses/LittleThings/S02/2.jpg",
-        "filename": "LittleThingsS2.html",
-        "plot": "As career ambitions and personal insecurities evolve, Dhruv and Kavya face mature relationship crossroads and emotional maturity tests.",
+        "year": "2020",
         "ratings": [
           {
             "source": "OakShow",
             "score": "8.5/10",
+            "url": "",
             "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
           },
           {
@@ -1327,29 +1577,17 @@
             "icon": "pics/RatingSiteLogos/imdb.png"
           }
         ],
-        "watchOnline": [
-          {
-            "provider": "Netflix",
-            "url": "https://www.netflix.com/watch/81011159?source=35",
-            "icon": "pics/WatchOnline/netflix.png",
-            "label": "Watch on Netflix"
-          }
-        ]
+        "filename": "LittleThingsS2.html"
       },
       {
         "seasonId": "LittleThingsS3",
         "title": "Little Things Season 3",
-        "year": "2019",
-        "releaseDate": "Nov 09, 2019",
-        "duration": "25-40 mins",
-        "totalEpisodes": "8 Episodes",
-        "poster": "pics/Serieses/LittleThings/S03/2.jpg",
-        "filename": "LittleThingsS3.html",
-        "plot": "Living in different cities puts Kavya and Dhruv in a long-distance relationship, confronting independence, family bonds, and aging parents.",
+        "year": "2020",
         "ratings": [
           {
             "source": "OakShow",
             "score": "8.5/10",
+            "url": "",
             "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
           },
           {
@@ -1359,14 +1597,7 @@
             "icon": "pics/RatingSiteLogos/imdb.png"
           }
         ],
-        "watchOnline": [
-          {
-            "provider": "Netflix",
-            "url": "https://www.netflix.com/watch/81011159?source=35",
-            "icon": "pics/WatchOnline/netflix.png",
-            "label": "Watch on Netflix"
-          }
-        ]
+        "filename": "LittleThingsS3.html"
       }
     ]
   },
@@ -1388,6 +1619,7 @@
     "duration": "30-40 minutes",
     "director": "",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/RejctX/2.jpg",
     "gallery": [
       {
@@ -1684,6 +1916,7 @@
     "duration": "45 Minutes",
     "director": "",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/Stargirl/2.jpg",
     "gallery": [
       {
@@ -1725,7 +1958,7 @@
         "icon": "pics/RatingSiteLogos/metacritic.png"
       },
       {
-        "source": "Common Sense Media",
+        "source": "Stargirl Common Sense Media",
         "score": "4/5",
         "url": "https://www.commonsensemedia.org/tv-reviews/stargirl",
         "icon": "pics/RatingSiteLogos/common-sense-media.png"
@@ -1786,9 +2019,9 @@
     "bookings": [],
     "watchOnline": [
       {
-        "provider": "Apple TV",
+        "provider": "Apple TV / iTunes",
         "url": "https://itunes.apple.com/us/tv-season/stargirl-season-1/id1507019626",
-        "icon": "pics/WatchOnline/apple.png",
+        "icon": "pics/WatchOnline/itunes.png",
         "language": "Officially",
         "label": "Watch Now"
       }
@@ -1918,7 +2151,7 @@
             "icon": "pics/RatingSiteLogos/metacritic.png"
           },
           {
-            "source": "Common Sense Media",
+            "source": "Stargirl Common Sense Media",
             "score": "4/5",
             "url": "https://www.commonsensemedia.org/tv-reviews/stargirl",
             "icon": "pics/RatingSiteLogos/common-sense-media.png"
@@ -1946,6 +2179,7 @@
     "duration": "20-30 minutes",
     "director": "Prakash Jha",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/Aashram/2.jpg",
     "gallery": [
       {
@@ -2356,6 +2590,7 @@
     "duration": "19-20 minutes",
     "director": "",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/Fixerr/2.jpg",
     "gallery": [
       {
@@ -2554,6 +2789,7 @@
     "duration": "41-77 minutes",
     "director": "",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/MoneyHeist/2.jpg",
     "gallery": [
       {
@@ -2589,13 +2825,13 @@
         "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
       },
       {
-        "source": "NME",
+        "source": "La Casa de Papel/Money Heist NME",
         "score": "4/5",
         "url": "https://www.nme.com/blogs/money-heist-review-addictive-thriller-is-the-most-underrated-show-on-netflix-2641863",
         "icon": "pics/RatingSiteLogos/nme.png"
       },
       {
-        "source": "Common Sense Media",
+        "source": "La Casa de Papel/Money Heist Common Aense Media",
         "score": "4/5",
         "url": "https://www.commonsensemedia.org/tv-reviews/money-heist",
         "icon": "pics/RatingSiteLogos/common-sense-media.png"
@@ -2834,6 +3070,7 @@
     "duration": "30-32 minutes",
     "director": "Sanjay Amar",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/PrabhakiDiary/2.jpg",
     "gallery": [
       {
@@ -3011,6 +3248,7 @@
     "duration": "20-30 minutes",
     "director": "Sri Ram Ram",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/Mugilan/2.jpg",
     "gallery": [
       {
@@ -3194,6 +3432,7 @@
     "duration": "30-35 minutes",
     "director": "Nisheeth Neerav and Neelkanth",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/PatiPatniAurWoh/2.jpg",
     "gallery": [
       {
@@ -3389,6 +3628,7 @@
     "duration": "19-20 minutes",
     "director": "",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/Mastram/2.jpg",
     "gallery": [
       {
@@ -3749,6 +3989,7 @@
     "duration": "30-35 minutes",
     "director": "Harris sociology Batla house",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/RaginiMMSReturns/S01/2.jpg",
     "gallery": [
       {
@@ -3970,6 +4211,7 @@
     "duration": "14 Min 30sec",
     "director": "Azaad Bharti",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/MyCousinSister/2.jpg",
     "gallery": [
       {
@@ -4061,6 +4303,7 @@
     "duration": "14 Min 30sec",
     "director": "Azaad Bharti",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/OfficeScandal/2.jpg",
     "gallery": [
       {
@@ -4178,6 +4421,7 @@
     "duration": "17 Min 30sec",
     "director": "N/A",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/PlayingGuest/2.jpg",
     "gallery": [
       {
@@ -4310,6 +4554,7 @@
     "duration": "17 minutes",
     "director": "n/a",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/TheButterflyStroke/2.jpg",
     "gallery": [
       {
@@ -4445,6 +4690,7 @@
     "duration": "30-35 minutes",
     "director": "Harris sociology Batla house",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/RaginiMMSReturns/2.jpg",
     "gallery": [
       {
@@ -4621,6 +4867,7 @@
     "duration": "30-35 minutes",
     "director": "Harris sociology Batla house",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/RaginiMMSReturns/S02/2.jpg",
     "gallery": [
       {
@@ -4862,6 +5109,7 @@
     "duration": "20 Min 30sec",
     "director": "Roopesh Rai Sikand",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/Soulmate/2.jpg",
     "gallery": [
       {
@@ -4989,6 +5237,7 @@
     "duration": "20 Mins",
     "director": "",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/Scam1992/1.jpg",
     "gallery": [],
     "ratings": [
@@ -5125,7 +5374,7 @@
         "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
       },
       {
-        "source": "NME",
+        "source": "La Casa de Papel/Money Heist NME",
         "score": "4/5",
         "url": "https://www.nme.com/blogs/money-heist-review-addictive-thriller-is-the-most-underrated-show-on-netflix-2641863",
         "icon": "pics/RatingSiteLogos/nme.png"
@@ -5185,13 +5434,13 @@
         "icon": "pics/RatingSiteLogos/imdb.png"
       },
       {
-        "source": "TV.com",
+        "source": "Dragon Ball Super TV.com",
         "score": "8.3/10",
         "url": "http://www.tv.com/shows/dragon-ball-super/",
         "icon": "pics/RatingSiteLogos/tv.png"
       },
       {
-        "source": "Common Sense Media",
+        "source": "Dragon Ball Super Common Sense Media",
         "score": "3/5",
         "url": "https://www.commonsensemedia.org/tv-reviews/dragon-ball-super",
         "icon": "pics/RatingSiteLogos/common-sense-media.png"
@@ -5209,7 +5458,7 @@
         "icon": "pics/RatingSiteLogos/indian-express.png"
       },
       {
-        "source": "News18",
+        "source": ") News18",
         "score": "3.5/5",
         "url": "https://www.news18.com/news/movies/made-in-heaven-review-amazon-primes-sensational-yet-engaging-series-2060311.html",
         "icon": "pics/RatingSiteLogos/news-18.png"
@@ -5337,6 +5586,7 @@
     "duration": "20 Mins",
     "director": "",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/DragonBallSuper/2.png",
     "gallery": [
       {
@@ -5358,13 +5608,13 @@
         "icon": "pics/RatingSiteLogos/imdb.png"
       },
       {
-        "source": "TV.com",
+        "source": "Dragon Ball Super TV.com",
         "score": "8.3/10",
         "url": "http://www.tv.com/shows/dragon-ball-super/",
         "icon": "pics/RatingSiteLogos/tv.png"
       },
       {
-        "source": "Common Sense Media",
+        "source": "Dragon Ball Super Common Sense Media",
         "score": "3/5",
         "url": "https://www.commonsensemedia.org/tv-reviews/dragon-ball-super",
         "icon": "pics/RatingSiteLogos/common-sense-media.png"
@@ -7948,6 +8198,7 @@
     "duration": "20min",
     "director": "",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "misc/pics/1.jpg",
     "gallery": [],
     "ratings": [],
@@ -8015,6 +8266,7 @@
     "duration": "N/A",
     "director": "Nitya Mehra, Zoya Akhtar, Prashant Nair, Alankrita Shrivastava",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/MadeinHeaven/2.jpg",
     "gallery": [
       {
@@ -8050,7 +8302,7 @@
         "icon": "pics/RatingSiteLogos/indian-express.png"
       },
       {
-        "source": "News18",
+        "source": ") News18",
         "score": "3.5/5",
         "url": "https://www.news18.com/news/movies/made-in-heaven-review-amazon-primes-sensational-yet-engaging-series-2060311.html",
         "icon": "pics/RatingSiteLogos/news-18.png"
@@ -8274,6 +8526,7 @@
     "duration": "47Minutes",
     "director": "",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/PrabhakiDiary/1.jpg",
     "gallery": [],
     "ratings": [
@@ -8580,6 +8833,7 @@
     "duration": "N/A",
     "director": "Jatin Satish Wagle",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/Poison/2.jpg",
     "gallery": [
       {
@@ -8827,6 +9081,7 @@
     "duration": "20 Min",
     "director": "N/A",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/SochaNaTha/2.jpg",
     "gallery": [
       {
@@ -8934,6 +9189,7 @@
     "duration": "14 Min 30sec",
     "director": "N/A",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/TheYogaExperience/2.jpg",
     "gallery": [
       {
@@ -9051,6 +9307,7 @@
     "duration": "N/A",
     "director": "Deepak Pandey",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/WannaHaveAGoodTimeS2/2.jpg",
     "gallery": [
       {
@@ -9186,6 +9443,7 @@
     "duration": "40min",
     "director": "",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/FuhseFantasy/2.jpg",
     "gallery": [
       {
@@ -9401,6 +9659,7 @@
     "duration": "N/A",
     "director": "",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/FourMoreShotsPlease/2.jpg",
     "gallery": [
       {
@@ -9760,6 +10019,7 @@
     "duration": "57-91 Minutes",
     "director": "",
     "basedOn": "Westworld by Michael Crichton",
+    "boxOffice": null,
     "poster": "pics/Serieses/Westworld/1.jpg",
     "gallery": [
       {
@@ -9801,7 +10061,7 @@
         "icon": ""
       },
       {
-        "source": "Common Sense Media",
+        "source": "Commonsensemedia",
         "score": "4/5",
         "url": "https://www.commonsensemedia.org/tv-reviews/westworld",
         "icon": ""
@@ -9895,6 +10155,7 @@
     "duration": "50Minutes",
     "director": "",
     "basedOn": "Sacred Games by Vikram Chandra",
+    "boxOffice": null,
     "poster": "pics/Serieses/SacredGames/1.jpg",
     "gallery": [
       {
@@ -9958,7 +10219,7 @@
       {
         "provider": "Netflix",
         "url": "https://www.netflix.com/in/title/80115328",
-        "icon": "pics/WatchOnline/netflix.png",
+        "icon": "",
         "language": "",
         "label": "Visit The Official Website For This Series"
       }
@@ -10016,6 +10277,7 @@
     "duration": "42 Minutes",
     "director": "",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/Suits/1.jpg",
     "gallery": [
       {
@@ -10057,7 +10319,7 @@
         "icon": ""
       },
       {
-        "source": "Common Sense Media",
+        "source": "Commonsensemedia",
         "score": "4/5",
         "url": "https://www.commonsensemedia.org/tv-reviews/suits",
         "icon": ""
@@ -10137,6 +10399,7 @@
     "duration": "50–82 Minutes",
     "director": "",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/GameofThrones/2.jpg",
     "gallery": [
       {
@@ -10768,8 +11031,7 @@
             "icon": "pics/RatingSiteLogos/metacritic.png"
           }
         ],
-        "filename": "GameofThronesSeason1.html",
-        "poster": "pics/Serieses/GameofThrones/Seasons/1.jpg"
+        "filename": "GameofThronesSeason1.html"
       },
       {
         "seasonId": "GameofThronesSeason2",
@@ -10801,8 +11063,7 @@
             "icon": "pics/RatingSiteLogos/metacritic.png"
           }
         ],
-        "filename": "GameofThronesSeason2.html",
-        "poster": "pics/Serieses/GameofThrones/Seasons/2.jpg"
+        "filename": "GameofThronesSeason2.html"
       },
       {
         "seasonId": "GameofThronesSeason3",
@@ -10834,8 +11095,7 @@
             "icon": "pics/RatingSiteLogos/metacritic.png"
           }
         ],
-        "filename": "GameofThronesSeason3.html",
-        "poster": "pics/Serieses/GameofThrones/Seasons/3.jpg"
+        "filename": "GameofThronesSeason3.html"
       },
       {
         "seasonId": "GameofThronesSeason4",
@@ -10867,8 +11127,7 @@
             "icon": "pics/RatingSiteLogos/metacritic.png"
           }
         ],
-        "filename": "GameofThronesSeason4.html",
-        "poster": "pics/Serieses/GameofThrones/Seasons/4.jpg"
+        "filename": "GameofThronesSeason4.html"
       },
       {
         "seasonId": "GameofThronesSeason5",
@@ -10900,8 +11159,7 @@
             "icon": "pics/RatingSiteLogos/metacritic.png"
           }
         ],
-        "filename": "GameofThronesSeason5.html",
-        "poster": "pics/Serieses/GameofThrones/Seasons/5.jpg"
+        "filename": "GameofThronesSeason5.html"
       },
       {
         "seasonId": "GameofThronesSeason6",
@@ -10933,8 +11191,7 @@
             "icon": "pics/RatingSiteLogos/metacritic.png"
           }
         ],
-        "filename": "GameofThronesSeason6.html",
-        "poster": "pics/Serieses/GameofThrones/Seasons/6.jpg"
+        "filename": "GameofThronesSeason6.html"
       },
       {
         "seasonId": "GameofThronesSeason7",
@@ -10966,8 +11223,7 @@
             "icon": "pics/RatingSiteLogos/metacritic.png"
           }
         ],
-        "filename": "GameofThronesSeason7.html",
-        "poster": "pics/Serieses/GameofThrones/Seasons/7.jpg"
+        "filename": "GameofThronesSeason7.html"
       },
       {
         "seasonId": "GameofThronesSeason8",
@@ -10999,8 +11255,7 @@
             "icon": "pics/RatingSiteLogos/metacritic.png"
           }
         ],
-        "filename": "GameofThronesSeason8.html",
-        "poster": "pics/Serieses/GameofThrones/Seasons/8.jpg"
+        "filename": "GameofThronesSeason8.html"
       }
     ]
   },
@@ -11022,6 +11277,7 @@
     "duration": "90Minutes",
     "director": "",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Films/Sherlock/1.jpg",
     "gallery": [
       {
@@ -11063,13 +11319,13 @@
         "icon": ""
       },
       {
-        "source": "TV Guide",
+        "source": "Tvguide",
         "score": "8.5/10",
         "url": "http://www.tvguide.co.uk/titlesearch.asp?title=Sherlock",
         "icon": ""
       },
       {
-        "source": "Common Sense Media",
+        "source": "Commonsensemedia",
         "score": "4/5",
         "url": "https://www.commonsensemedia.org/tv-reviews/sherlock",
         "icon": ""
@@ -11162,6 +11418,7 @@
     "duration": "42-45 Minutes",
     "director": "",
     "basedOn": "Dc comics",
+    "boxOffice": null,
     "poster": "pics/Serieses/The%20Flash/1.jpg",
     "gallery": [
       {
@@ -11203,7 +11460,7 @@
         "icon": ""
       },
       {
-        "source": "Common Sense Media",
+        "source": "Commonsensemedia",
         "score": "3/5",
         "url": "https://www.commonsensemedia.org/tv-reviews/the-flash",
         "icon": ""
@@ -11288,7 +11545,7 @@
             "icon": ""
           },
           {
-            "source": "Common Sense Media",
+            "source": "Commonsensemedia",
             "score": "3/5",
             "url": "https://www.commonsensemedia.org/tv-reviews/the-flash",
             "icon": ""
@@ -11326,7 +11583,7 @@
             "icon": ""
           },
           {
-            "source": "Common Sense Media",
+            "source": "Commonsensemedia",
             "score": "3/5",
             "url": "https://www.commonsensemedia.org/tv-reviews/the-flash",
             "icon": ""
@@ -11354,6 +11611,7 @@
     "duration": "40-43 Minutes",
     "director": "",
     "basedOn": "Dc comics",
+    "boxOffice": null,
     "poster": "pics/Serieses/Arrow/1.jpg",
     "gallery": [
       {
@@ -11508,6 +11766,7 @@
     "duration": "43Minutes",
     "director": "",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/Quantico/4.jpg",
     "gallery": [
       {
@@ -11549,7 +11808,7 @@
         "icon": ""
       },
       {
-        "source": "Common Sense Media",
+        "source": "Commonsensemedia",
         "score": "3/5",
         "url": "https://www.commonsensemedia.org/tv-reviews/quantico",
         "icon": ""
@@ -11608,6 +11867,7 @@
     "duration": "47Minutes",
     "director": "Rensil D'Silva & Karan Boolani",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/24 season 2/4.jpg",
     "gallery": [
       {
@@ -11667,6 +11927,7 @@
     "duration": "43Minutes",
     "director": "",
     "basedOn": "",
+    "boxOffice": null,
     "poster": "pics/Serieses/Quantico/4.jpg",
     "gallery": [
       {
@@ -11736,6 +11997,7 @@
     "duration": "45 Minutes",
     "director": "",
     "basedOn": "Characters by Jerry Siegel Joe Shuster",
+    "boxOffice": null,
     "poster": "pics/Serieses/Supergirl/1.jpg",
     "gallery": [
       {
@@ -11783,7 +12045,7 @@
         "icon": ""
       },
       {
-        "source": "Common Sense Media",
+        "source": "Commonsensemedia",
         "score": "4/5",
         "url": "https://www.commonsensemedia.org/tv-reviews/supergirl",
         "icon": ""

@@ -2,16 +2,34 @@
 import { useState, useEffect, useCallback } from 'react';
 
 /**
+ * Standardize and clean any raw path, hash, or URL into a pure slug
+ * Handles:
+ * - /DilBechara, /DilBechara.html
+ * - DilBechara, DilBechara.html
+ * - #/movies/DilBechara.html, #/movie/DilBechara, #/DilBechara, #/DilBechara.html
+ * - /movies/DilBechara.html, /movie/DilBechara.html
+ * - /series/SacredGames.html, /SacredGames.html, /SacredGames
+ */
+export function cleanSlugFromPath(rawSlug) {
+  if (!rawSlug) return '';
+  return rawSlug.trim()
+    .replace(/^#\/?/, '')
+    .replace(/^\/+/, '')
+    .replace(/^(movies|movie|series|episode|sports|game|book|emergency|dbs|blog|news|galleries|profiles\/criticprofiles\/[^\/]+|profiles\/criticprofiles|profiles\/reports\/[^\/]+|profiles\/reports|profiles)\//i, '')
+    .replace(/\.html$/i, '');
+}
+
+/**
  * Resolve any slug or filename (with or without .html, case-insensitive) to route object
  */
 export function resolveSlugToRoute(rawSlug, rawPath = '') {
   if (!rawSlug) return { type: 'discover', id: null, raw: rawPath };
   
-  const clean = rawSlug.trim().replace(/^\/+/, '').replace(/\.html$/i, '');
+  const clean = cleanSlugFromPath(rawSlug);
   const lower = clean.toLowerCase();
 
   // Root or index
-  if (!clean || lower === 'index' || lower === 'legacy_index' || lower === 'discover') {
+  if (!clean || lower === 'index' || lower === 'legacy_index' || lower === 'discover' || lower === 'home') {
     return { type: 'discover', id: null, raw: rawPath };
   }
 
@@ -58,7 +76,7 @@ export function resolveSlugToRoute(rawSlug, rawPath = '') {
   if (lower === 'remarks' || lower === 'remarksatoakshow') {
     return { type: 'remarks', id: null, raw: rawPath };
   }
-  if (lower === 'releases') {
+  if (lower === 'releases' || lower === 'movies-released' || lower === 'moviesreleased') {
     return { type: 'releases', id: null, raw: rawPath };
   }
   if (lower === 'series' || lower === 'series-hub' || lower === 'webseries' || lower === 'tv' || lower === 'oakshowseries' || lower === 'shows') {
@@ -66,6 +84,9 @@ export function resolveSlugToRoute(rawSlug, rawPath = '') {
   }
   if (lower === 'indian' || lower === 'hollywood' || lower === 'international') {
     return { type: lower, id: null, raw: rawPath };
+  }
+  if (lower === 'ott' || lower === 'ott-movies' || lower === 'watch-online' || lower === 'streaming' || lower === 'ottmovies') {
+    return { type: 'ott', id: null, raw: rawPath };
   }
   if (lower === 'watchlist' || lower === 'bookmarks') {
     return { type: 'watchlist', id: null, raw: rawPath };
@@ -111,9 +132,9 @@ export function resolveSlugToRoute(rawSlug, rawPath = '') {
 /**
  * Parse current URL location into route object
  * Supports:
- * - Hash routes: #/movie/:id, #/series/:id, #/news, #/galleries, #/reviews, #/102NotOut, #/102NotOut.html
- * - Direct pathname URLs: /102NotOut, /102NotOut.html, /OakShowNews.html, /OakShowGalleries.html, /news
- * - Query params: ?movie=2point0, ?series=GameofThrones, ?news=..., ?gallery=...
+ * - Direct pathname URLs: /DilBechara, /DilBechara.html, /OakShowNews.html, /news
+ * - Automatic redirect and clean-up of legacy Hash routes: #/movies/DilBechara.html, #/DilBechara -> /DilBechara.html
+ * - Query params: ?movie=..., ?series=..., ?news=..., ?gallery=...
  */
 export function parseCurrentRoute() {
   const hash = window.location.hash || '';
@@ -123,115 +144,132 @@ export function parseCurrentRoute() {
 
   // Check query parameter override first
   if (searchParams.get('movie')) {
-    return { type: 'movie', id: searchParams.get('movie'), raw: hash || pathname };
+    return { type: 'movie', id: searchParams.get('movie'), raw: pathname };
   }
   if (searchParams.get('series')) {
     const sId = searchParams.get('series');
-    return (sId && sId !== 'true' && sId !== 'all') ? { type: 'series', id: sId, raw: hash || pathname } : { type: 'series-hub', id: null, raw: hash || pathname };
+    return (sId && sId !== 'true' && sId !== 'all') ? { type: 'series', id: sId, raw: pathname } : { type: 'series-hub', id: null, raw: pathname };
   }
   if (searchParams.get('game')) {
-    return { type: 'game', id: searchParams.get('game'), raw: hash || pathname };
+    return { type: 'game', id: searchParams.get('game'), raw: pathname };
   }
   if (searchParams.get('book')) {
-    return { type: 'book', id: searchParams.get('book'), raw: hash || pathname };
+    return { type: 'book', id: searchParams.get('book'), raw: pathname };
   }
   if (searchParams.get('sports')) {
-    return { type: 'sports', id: searchParams.get('sports'), raw: hash || pathname };
+    return { type: 'sports', id: searchParams.get('sports'), raw: pathname };
   }
   if (searchParams.get('news')) {
-    return { type: 'news', id: searchParams.get('news'), raw: hash || pathname };
+    return { type: 'news', id: searchParams.get('news'), raw: pathname };
   }
   if (searchParams.get('gallery') || searchParams.get('galleries')) {
-    return { type: 'galleries', id: searchParams.get('gallery') || searchParams.get('galleries'), raw: hash || pathname };
+    return { type: 'galleries', id: searchParams.get('gallery') || searchParams.get('galleries'), raw: pathname };
   }
   if (searchParams.get('review') || searchParams.get('reviews')) {
-    return { type: 'reviews', id: searchParams.get('review') || searchParams.get('reviews'), raw: hash || pathname };
+    return { type: 'reviews', id: searchParams.get('review') || searchParams.get('reviews'), raw: pathname };
   }
 
-  // Check Hash Route (e.g. '#/movie/2point0' or '#/news' or '#/102NotOut.html' or '#/102NotOut')
-  if (hash.startsWith('#/')) {
-    const cleanHash = hash.slice(2); // remove '#/'
-    const parts = cleanHash.split('/').filter(Boolean);
-    const primary = parts[0] || 'discover';
-    const param = parts.slice(1).join('/');
-
-    if (primary === 'movie' && param) {
-      return { type: 'movie', id: param.replace(/\.html$/i, ''), raw: hash };
+  // 1. Check & cleanly redirect any legacy Hash Route (e.g. '#/movies/DilBechara.html' or '#/DilBechara' or '#/news')
+  if (hash.startsWith('#')) {
+    const cleanFromHash = cleanSlugFromPath(hash);
+    if (cleanFromHash) {
+      const resolved = resolveSlugToRoute(cleanFromHash, hash);
+      let cleanUrl = `/${cleanFromHash}.html`;
+      const hubs = ['indian', 'hollywood', 'international', 'ott', 'series-hub', 'releases', 'reviews', 'sports-hub', 'games-books', 'emergencies', 'news', 'blog', 'galleries', 'music', 'trailers', 'events', 'remarks', 'watchlist'];
+      if (resolved.type === 'discover') {
+        cleanUrl = '/';
+      } else if (hubs.includes(cleanFromHash.toLowerCase())) {
+        cleanUrl = `/${cleanFromHash}`;
+      }
+      
+      // Update address bar seamlessly to clean HTML URL without reloading
+      try {
+        window.history.replaceState(null, '', cleanUrl);
+      } catch (e) {
+        // ignore
+      }
+      return resolved;
     }
-    if (primary === 'episode' && param) {
-      return { type: 'episode', id: param.replace(/\.html$/i, ''), raw: hash };
-    }
-    if (primary.toLowerCase().startsWith('dbsepisode')) {
-      return { type: 'episode', id: primary.replace(/\.html$/i, ''), raw: hash };
-    }
-    if (primary === 'series') {
-      return param ? { type: 'series', id: param.replace(/\.html$/i, ''), raw: hash } : { type: 'series-hub', id: null, raw: hash };
-    }
-    if (primary === 'series-hub' || primary === 'tv') {
-      return { type: 'series-hub', id: null, raw: hash };
-    }
-    if (primary === 'game' && param) {
-      return { type: 'game', id: param.replace(/\.html$/i, ''), raw: hash };
-    }
-    if (primary === 'book' && param) {
-      return { type: 'book', id: param.replace(/\.html$/i, ''), raw: hash };
-    }
-    if (primary === 'sports' && param) {
-      return { type: 'sports', id: param.replace(/\.html$/i, ''), raw: hash };
-    }
-    if (primary === 'critic' && param) {
-      return { type: 'critic', id: param.replace(/\.html$/i, ''), raw: hash };
-    }
-    if (primary === 'critics') {
-      return param ? { type: 'critic', id: param.replace(/\.html$/i, ''), raw: hash } : { type: 'reviews', tab: 'critics', id: null, raw: hash };
-    }
-    if (primary === 'releases') {
-      return { type: 'releases', id: param ? param.replace(/\.html$/i, '') : null, raw: hash };
-    }
-    if (primary === 'reviews') {
-      return { type: 'reviews', id: param ? param.replace(/\.html$/i, '') : null, raw: hash };
-    }
-    if (primary === 'news') {
-      return { type: 'news', id: param ? param.replace(/\.html$/i, '') : null, raw: hash };
-    }
-    if (primary === 'blog' || primary === 'blogs') {
-      return { type: 'blog', id: param ? param.replace(/\.html$/i, '') : null, raw: hash };
-    }
-    if (primary === 'gallery' || primary === 'galleries') {
-      return param ? { type: 'gallery', id: param.replace(/\.html$/i, ''), raw: hash } : { type: 'galleries', id: null, raw: hash };
-    }
-    if (primary === 'emergency' || primary === 'emergencies') {
-      return param ? { type: 'emergency-detail', id: param.replace(/\.html$/i, ''), raw: hash } : { type: 'emergencies', id: null, raw: hash };
-    }
-
-    return resolveSlugToRoute(cleanHash, hash);
   }
 
-  // Check direct pathname (e.g., /102NotOut.html, /102NotOut, /OakShowNews.html, /Galleries/...)
+  // 2. Direct pathname (e.g., /DilBechara, /DilBechara.html, /OakShowNews.html, /news, /emergency/KeralaFloods.html)
   const normalizedPath = pathname.replace(/^\/+/, '').trim();
   if (normalizedPath && !normalizedPath.toLowerCase().startsWith('index')) {
-    return resolveSlugToRoute(normalizedPath, pathname);
+    const resolved = resolveSlugToRoute(normalizedPath, pathname);
+    
+    // Automatically redirect indexed legacy subfolder URLs to clean canonical URLs
+    const clean = cleanSlugFromPath(normalizedPath);
+    const hubs = [
+      'indian', 'hollywood', 'international', 'ott', 'series-hub', 'releases', 
+      'reviews', 'sports-hub', 'games-books', 'emergencies', 'news', 
+      'blog', 'galleries', 'music', 'trailers', 'events', 'remarks', 'watchlist'
+    ];
+    let canonicalUrl = hubs.includes(clean.toLowerCase()) ? `/${clean}` : (clean ? `/${clean}.html` : '/');
+    if (pathname !== canonicalUrl && !pathname.endsWith(`/${clean}`) && !pathname.endsWith(`/${clean}.html`)) {
+      try {
+        window.history.replaceState(null, '', canonicalUrl);
+      } catch (e) {
+        // ignore
+      }
+    }
+
+    return resolved;
   }
 
-  // Default fallback to discover home
-  return { type: 'discover', id: null, raw: hash || pathname };
+  // 3. Default fallback to discover home
+  return { type: 'discover', id: null, raw: pathname };
 }
 
 /**
- * Navigate to a specific route
+ * Navigate to a specific route cleanly without hash '#'
+ * Formats destination as /<slug>.html or /<hub>
  */
 export function navigateTo(target, replace = false) {
-  let targetHash = target;
-  if (!target.startsWith('#/')) {
-    targetHash = target.startsWith('/') ? `#${target}` : `#/${target}`;
+  if (!target || target === '/' || target === 'discover' || target === 'home') {
+    if (replace) {
+      window.history.replaceState(null, '', '/');
+    } else {
+      window.history.pushState(null, '', '/');
+    }
+    window.dispatchEvent(new PopStateEvent('popstate'));
+    return;
+  }
+
+  const clean = cleanSlugFromPath(target);
+  const lower = clean.toLowerCase();
+
+  const hubs = [
+    'indian', 'hollywood', 'international', 'ott', 'series-hub', 'releases', 
+    'reviews', 'sports-hub', 'games-books', 'emergencies', 'news', 
+    'blog', 'galleries', 'music', 'trailers', 'events', 'remarks', 'watchlist'
+  ];
+
+  let targetPath = '';
+  if (hubs.includes(lower)) {
+    targetPath = `/${clean}`;
+  } else {
+    // Everything else (movies, series, episodes, items) navigates to /<name>.html
+    targetPath = `/${clean}.html`;
+  }
+
+  // Set preliminary title before pushState so GA4 history change listeners don't grab stale title
+  if (clean && !hubs.includes(lower)) {
+    const preliminary = clean.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/[-_]/g, ' ');
+    document.title = `${preliminary} All Ratings, Reviews and Watch Online — OakShow`;
   }
 
   if (replace) {
-    window.location.replace(targetHash);
+    window.history.replaceState(null, '', targetPath);
   } else {
-    window.location.hash = targetHash;
+    window.history.pushState(null, '', targetPath);
   }
+
+  window.dispatchEvent(new PopStateEvent('popstate'));
 }
+
+// Track last sent pageview to deduplicate React re-renders
+let lastTrackedUrl = '';
+let lastTrackedTitle = '';
 
 /**
  * Update Complete Document Metadata, OpenGraph, Twitter Cards, Canonical Link & JSON-LD Structured Data
@@ -243,6 +281,24 @@ export function updatePageMeta(title, description, image, canonicalUrl = null, t
   const finalTitle = title || defaultTitle;
   const finalDesc = description || defaultDesc;
   document.title = finalTitle;
+
+  // Enforce OakShow logo favicon across all pages and browsers
+  const favTypes = [
+    { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico?v=oakshow3' },
+    { rel: 'icon', type: 'image/png', href: '/favicon.png?v=oakshow3' },
+    { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico?v=oakshow3' },
+    { rel: 'apple-touch-icon', type: 'image/png', href: '/favicon.png?v=oakshow3' }
+  ];
+  favTypes.forEach(({ rel, type, href }) => {
+    let link = document.querySelector(`link[rel="${rel}"][href*="favicon"]`);
+    if (!link) {
+      link = document.createElement('link');
+      link.setAttribute('rel', rel);
+      document.head.appendChild(link);
+    }
+    if (type) link.setAttribute('type', type);
+    link.setAttribute('href', href);
+  });
 
   // Helper to ensure meta tag exists and set attribute
   const setMeta = (attrName, attrValue, content) => {
@@ -264,8 +320,8 @@ export function updatePageMeta(title, description, image, canonicalUrl = null, t
     ? (image.startsWith('http') ? image : `${window.location.origin}${image.startsWith('/') ? '' : '/'}${image}`)
     : `${window.location.origin}/favicon.png`;
 
-  // Full Canonical URL
-  const currentUrl = canonicalUrl || (window.location.href.split('#')[0] + (window.location.hash || ''));
+  // Full Canonical URL (always clean without hash)
+  const currentUrl = canonicalUrl || (window.location.origin + window.location.pathname);
 
   // Open Graph Tags
   setMeta('property', 'og:title', finalTitle);
@@ -322,6 +378,55 @@ export function updatePageMeta(title, description, image, canonicalUrl = null, t
   };
 
   jsonLdScript.textContent = JSON.stringify(structuredData);
+
+  // Google Analytics & Google Tag Manager tracking (deduplicated)
+  const currentPath = window.location.pathname || '/';
+  if (lastTrackedUrl !== currentUrl || lastTrackedTitle !== finalTitle) {
+    lastTrackedUrl = currentUrl;
+    lastTrackedTitle = finalTitle;
+
+    try {
+      if (typeof window.gtag === 'function') {
+        window.gtag('set', {
+          page_title: finalTitle,
+          page_location: currentUrl,
+          page_path: currentPath
+        });
+        window.gtag('config', 'UA-77818206-1', {
+          page_title: finalTitle,
+          page_location: currentUrl,
+          page_path: currentPath
+        });
+        window.gtag('event', 'page_view', {
+          page_title: finalTitle,
+          page_location: currentUrl,
+          page_path: currentPath
+        });
+      }
+
+      if (typeof window.ga === 'function') {
+        window.ga('set', 'page', currentPath);
+        window.ga('set', 'title', finalTitle);
+        window.ga('set', 'location', currentUrl);
+        window.ga('send', 'pageview');
+      }
+
+      if (window.dataLayer && Array.isArray(window.dataLayer)) {
+        window.dataLayer.push({
+          event: 'page_view',
+          page_path: currentPath,
+          page_title: finalTitle,
+          page_location: currentUrl
+        });
+        window.dataLayer.push({
+          event: 'virtual_pageview',
+          page_path: currentPath,
+          page_title: finalTitle,
+          page_location: currentUrl
+        });
+      }
+    } catch (e) {}
+  }
 }
 
 /**

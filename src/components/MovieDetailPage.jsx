@@ -1,4 +1,5 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
+import { createPortal } from 'react-dom';
 import confetti from 'canvas-confetti';
 import { 
   Star, 
@@ -41,7 +42,7 @@ import reviewsData from '../../data/reviews.json';
 import criticsData from '../../data/critics.json';
 import galleriesData from '../../data/galleries.json';
 import { getOakShowRemark, cleanRatingSource } from '../utils/remarks';
-import { getProfileImage, getShareImage, handlePosterError, getItemCanonicalUrl, getBookingProviderInfo, getWatchOnlineProviderInfo, getYoutubeId } from '../utils/mediaUtils';
+import { getProfileImage, getBannerImage, getShareImage, handlePosterError, getItemCanonicalUrl, getBookingProviderInfo, getWatchOnlineProviderInfo, getYoutubeId } from '../utils/mediaUtils';
 
 function parseScorePercentage(scoreStr) {
   if (!scoreStr) return 75;
@@ -127,6 +128,26 @@ export default function MovieDetailPage({
     } else if (movieGallery && movieGallery.images && movieGallery.images.length > 0) {
       list.push(...movieGallery.images);
     }
+
+    // Ensure primary poster is always available at index 0
+    const pSrc = getProfileImage(movie);
+    if (pSrc && pSrc !== '/favicon.png') {
+      const hasPoster = list.some(item => {
+        const s = (item.src || '').toLowerCase();
+        return s === pSrc.toLowerCase() || s.endsWith('/1.jpg') || s.endsWith('/1.jpeg') || s.endsWith('/1.png');
+      });
+      if (!hasPoster) {
+        list.unshift({ src: pSrc, alt: `${movie.title} Official Poster` });
+      }
+    }
+
+    // Fallback if list is empty
+    if (list.length === 0) {
+      const bSrc = getBannerImage(movie);
+      if (bSrc && bSrc !== '/favicon.png') {
+        list.push({ src: bSrc, alt: `${movie.title} Cinematic Banner` });
+      }
+    }
     return list;
   }, [movie, movieGallery]);
 
@@ -163,17 +184,46 @@ export default function MovieDetailPage({
     setActiveLightboxIndex((activeLightboxIndex - 1 + movieStills.length) % movieStills.length);
   };
 
-  // Keyboard navigation for lightbox
+  // Lock body scroll on mobile and desktop when lightbox is active
   useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (activeLightboxIndex === null) return;
-      if (e.key === 'ArrowRight') nextLightbox();
-      else if (e.key === 'ArrowLeft') prevLightbox();
-      else if (e.key === 'Escape') setActiveLightboxIndex(null);
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [activeLightboxIndex, movieStills]);
+    if (activeLightboxIndex !== null) {
+      const orig = document.body.style.overflow;
+      document.body.style.overflow = 'hidden';
+      return () => {
+        document.body.style.overflow = orig;
+      };
+    }
+  }, [activeLightboxIndex]);
+
+  // Mobile Touch Swipe Handling (left = next, right = prev)
+  const touchStartX = useRef(null);
+  const touchEndX = useRef(null);
+
+  const handleTouchStart = (e) => {
+    if (e.targetTouches && e.targetTouches.length > 0) {
+      touchStartX.current = e.targetTouches[0].clientX;
+      touchEndX.current = null;
+    }
+  };
+
+  const handleTouchMove = (e) => {
+    if (e.targetTouches && e.targetTouches.length > 0) {
+      touchEndX.current = e.targetTouches[0].clientX;
+    }
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX.current !== null && touchEndX.current !== null) {
+      const diff = touchStartX.current - touchEndX.current;
+      if (diff > 45) {
+        nextLightbox();
+      } else if (diff < -45) {
+        prevLightbox();
+      }
+    }
+    touchStartX.current = null;
+    touchEndX.current = null;
+  };
 
   // Smoothly scroll to the tabs navigation header when changing tabs
   const handleTabSelect = (tabKey) => {
@@ -241,6 +291,8 @@ export default function MovieDetailPage({
 
   // Profile picture dimension poster (1.jpg / 1.JPG with fallback)
   const posterSrc = getProfileImage(movie);
+  // Cinematic wide hero backdrop banner (2.jpg / 2.JPG with fallback)
+  const bannerSrc = getBannerImage(movie);
   // Social share image (2.jpg / 2.JPG with fallback)
   const shareImageSrc = getShareImage(movie);
 
@@ -382,13 +434,20 @@ export default function MovieDetailPage({
         </div>
       </div>
 
-      {/* Cinematic Hero Backdrop Stage */}
-      <section className="movie-hero-stage" style={{ backgroundImage: `url(${posterSrc || '/favicon.png'})` }}>
+      {/* Cinematic Hero Backdrop Stage (2.jpg / banner) */}
+      <section className="movie-hero-stage" style={{ backgroundImage: `url(${bannerSrc || posterSrc || '/favicon.png'})` }}>
         <div className="movie-hero-overlay" />
         <div className="container">
           <div className="movie-hero-content">
             {/* Poster Card */}
-            <div className="movie-hero-poster-wrap">
+            <div 
+              className="movie-hero-poster-wrap clickable-poster"
+              onClick={() => openLightbox(0)}
+              title="Click to view full-size poster & stills"
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLightbox(0); } }}
+            >
               {posterSrc ? (
                 <img 
                   src={posterSrc} 
@@ -403,11 +462,19 @@ export default function MovieDetailPage({
                 </div>
               )}
 
+              <div className="poster-zoom-hint">
+                <Eye size={15} />
+                <span>View Poster</span>
+              </div>
+
               {/* Quick Trailer Play Button on Poster */}
               {movie.videos && movie.videos.length > 0 && (
                 <button 
                   className="poster-play-trailer-btn"
-                  onClick={() => setActiveVideo(movie.videos[0])}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setActiveVideo(movie.videos[0]);
+                  }}
                   title="Play Official Trailer"
                 >
                   <Play size={22} fill="#ffffff" />
@@ -1957,14 +2024,19 @@ export default function MovieDetailPage({
       )}
 
       {/* Interactive Lightbox for Gallery / 3 Stills */}
-      {activeLightboxIndex !== null && movieStills[activeLightboxIndex] && (
+      {activeLightboxIndex !== null && movieStills[activeLightboxIndex] && typeof document !== 'undefined' && createPortal(
         <div className="lightbox-backdrop animate-fade-in" onClick={() => setActiveLightboxIndex(null)}>
           <div className="lightbox-content" onClick={e => e.stopPropagation()}>
             <button className="lightbox-close-btn" onClick={() => setActiveLightboxIndex(null)} aria-label="Close Lightbox">
               <X size={24} />
             </button>
 
-            <div className="lightbox-main-view">
+            <div 
+              className="lightbox-main-view"
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onTouchEnd={handleTouchEnd}
+            >
               {movieStills.length > 1 && (
                 <button className="lightbox-nav-btn prev-btn" onClick={prevLightbox} aria-label="Previous image">
                   <ChevronLeft size={32} />
@@ -1976,6 +2048,7 @@ export default function MovieDetailPage({
                   src={movieStills[activeLightboxIndex].src.startsWith('/') ? movieStills[activeLightboxIndex].src : `/${movieStills[activeLightboxIndex].src}`} 
                   alt={movieStills[activeLightboxIndex].alt || movie.title} 
                   className="lightbox-full-img" 
+                  onError={(e) => { e.target.src = '/favicon.png'; }}
                 />
               </div>
 
@@ -2005,7 +2078,8 @@ export default function MovieDetailPage({
               </div>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
 
       {/* In-House Review Reader Modal */}

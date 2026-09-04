@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build && node scripts/generate-static-pages.js",
     "preview": "vite preview",
+    "start": "node server.js",
     "extract": "node scripts/extract_data.cjs"
   },
   "keywords": [],

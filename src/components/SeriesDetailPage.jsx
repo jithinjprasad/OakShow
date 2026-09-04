@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
+import { createPortal } from 'react-dom';
 import confetti from 'canvas-confetti';
 import { 
   Tv, 
@@ -38,7 +39,7 @@ import reviewsData from '../../data/reviews.json';
 import criticsData from '../../data/critics.json';
 import galleriesData from '../../data/galleries.json';
 import { getOakShowRemark, cleanRatingSource } from '../utils/remarks';
-import { getProfileImage, getShareImage, handlePosterError, getItemCanonicalUrl, getBookingProviderInfo, getWatchOnlineProviderInfo } from '../utils/mediaUtils';
+import { getProfileImage, getBannerImage, getShareImage, handlePosterError, getItemCanonicalUrl, getBookingProviderInfo, getWatchOnlineProviderInfo } from '../utils/mediaUtils';
 
 function parseScorePercentage(scoreStr) {
   if (!scoreStr) return 75;
@@ -250,6 +251,7 @@ export default function SeriesDetailPage({
   if (!series) return null;
 
   const posterSrc = getProfileImage(series);
+  const bannerSrc = getBannerImage(series);
   const shareImageSrc = getShareImage(series);
 
   const getSeasonPoster = (sd, sIdx) => {
@@ -299,7 +301,12 @@ export default function SeriesDetailPage({
     setSelectedSeason(seasonNum);
     const targetSeason = seasonsData?.[seasonNum - 1];
     if (targetSeason?.filename) {
-      window.location.hash = `#/${targetSeason.filename.replace(/\.html$/, '')}`;
+      if (onNavigate) {
+        onNavigate(targetSeason.filename);
+      } else {
+        window.history.pushState(null, '', `/${targetSeason.filename.replace(/\.html$/, '')}.html`);
+        window.dispatchEvent(new PopStateEvent('popstate'));
+      }
     }
   };
 
@@ -384,13 +391,32 @@ export default function SeriesDetailPage({
         </div>
       </div>
 
-      {/* Cinematic Hero Backdrop Stage */}
-      <section className="movie-hero-stage" style={{ backgroundImage: `url(${posterSrc || '/favicon.png'})` }}>
+      {/* Cinematic Hero Backdrop Stage (2.jpg / banner) */}
+      <section className="movie-hero-stage" style={{ backgroundImage: `url(${bannerSrc || posterSrc || '/favicon.png'})` }}>
         <div className="movie-hero-overlay" />
         <div className="container">
           <div className="movie-hero-content">
             {/* Poster Card */}
-            <div className="movie-hero-poster-wrap">
+            <div 
+              className="movie-hero-poster-wrap clickable-poster"
+              onClick={() => {
+                if (seriesStills.length > 0) {
+                  setActiveLightboxImg(seriesStills[0].src);
+                } else if (posterSrc) {
+                  setActiveLightboxImg(posterSrc);
+                }
+              }}
+              title="Click to view full-size poster & stills"
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => { 
+                if (e.key === 'Enter' || e.key === ' ') { 
+                  e.preventDefault(); 
+                  if (seriesStills.length > 0) setActiveLightboxImg(seriesStills[0].src);
+                  else if (posterSrc) setActiveLightboxImg(posterSrc);
+                } 
+              }}
+            >
               {posterSrc ? (
                 <img 
                   src={posterSrc} 
@@ -405,10 +431,18 @@ export default function SeriesDetailPage({
                 </div>
               )}
 
+              <div className="poster-zoom-hint">
+                <Eye size={15} />
+                <span>View Poster</span>
+              </div>
+
               {series.videos && series.videos.length > 0 && (
                 <button 
                   className="poster-play-trailer-btn"
-                  onClick={() => setActiveVideo(series.videos[0])}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setActiveVideo(series.videos[0]);
+                  }}
                   title="Play Official Promo"
                 >
                   <Play size={22} fill="#ffffff" />
@@ -2290,20 +2324,43 @@ export default function SeriesDetailPage({
       )}
 
       {/* Lightbox Modal */}
-      {activeLightboxImg && (
-        <div className="lightbox-overlay" onClick={() => setActiveLightboxImg(null)}>
-          <div className="lightbox-modal glass-panel" onClick={e => e.stopPropagation()}>
-            <button className="lightbox-close-btn" onClick={() => setActiveLightboxImg(null)} aria-label="Close">
-              <X size={20} />
+      {activeLightboxImg && typeof document !== 'undefined' && createPortal(
+        <div className="lightbox-backdrop animate-fade-in" onClick={() => setActiveLightboxImg(null)}>
+          <div className="lightbox-content" onClick={e => e.stopPropagation()}>
+            <button className="lightbox-close-btn" onClick={() => setActiveLightboxImg(null)} aria-label="Close Lightbox">
+              <X size={22} />
             </button>
-            <div className="lightbox-image-wrap">
-              <img src={activeLightboxImg} alt={activeTitle} className="lightbox-large-img" />
+            <div className="lightbox-main-view">
+              <div className="lightbox-img-wrap">
+                <img 
+                  src={activeLightboxImg.startsWith('/') ? activeLightboxImg : `/${activeLightboxImg}`} 
+                  alt={activeTitle} 
+                  className="lightbox-full-img" 
+                  onError={(e) => { e.target.src = '/favicon.png'; }}
+                />
+              </div>
             </div>
-            <div className="lightbox-footer">
-              <span className="lightbox-caption">{activeTitle} — Official Production Still</span>
+            <div className="lightbox-footer-bar">
+              <div className="lightbox-caption">
+                <h4>{activeTitle}</h4>
+                <span>{activeTitle} — Official Production Still & Poster</span>
+              </div>
+              <div className="lightbox-actions">
+                <a 
+                  href={activeLightboxImg.startsWith('/') ? activeLightboxImg : `/${activeLightboxImg}`} 
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="btn btn-secondary btn-sm"
+                  download
+                >
+                  <Eye size={14} />
+                  <span>View Full Resolution</span>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
 
       {/* In-House Critic Review Modal */}

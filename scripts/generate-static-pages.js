@@ -245,6 +245,48 @@ async function run() {
 
     fs.writeFileSync(outPath, html, 'utf8');
     count++;
+
+    // Prerender season pages if present
+    if (Array.isArray(s.seasonsData)) {
+      for (const sd of s.seasonsData) {
+        if (!sd.filename) continue;
+        const sOutPath = path.join(distDir, sd.filename);
+        const sTitle = `${sd.title || `${s.title} Season ${sd.seasonNumber}`} All Episode Ratings, Reviews and Watch Online — OakShow`;
+        const sDesc = `Stream and check verified ratings for ${sd.title || `${s.title} Season ${sd.seasonNumber}`} on OakShow.`;
+        const sCanonical = `${DOMAIN}/${sd.filename}`;
+        const sHtml = generatePrerenderHtml(baseHtml, {
+          title: sTitle,
+          description: sDesc,
+          canonicalUrl: sCanonical,
+          ogImage: sd.poster ? `${DOMAIN}/${sd.poster}` : ogImage,
+          ogType: 'video.tv_show',
+          bodyContent: `<h1>${escapeHtml(sTitle)}</h1><p>${escapeHtml(sDesc)}</p><p><a href="${DOMAIN}/${filename}">Back to ${escapeHtml(s.title)} Main Page</a></p>`
+        });
+        fs.writeFileSync(sOutPath, sHtml, 'utf8');
+        count++;
+      }
+    }
+
+    // Prerender individual episodes if present
+    if (Array.isArray(s.episodes)) {
+      for (const ep of s.episodes) {
+        if (!ep.filename) continue;
+        const epOutPath = path.join(distDir, ep.filename);
+        const epTitle = `${s.title} Episode ${ep.episodeNumber}: ${ep.title} All Ratings, Reviews & Synopsis — OakShow`;
+        const epDesc = ep.plot || `Checkout episode ${ep.episodeNumber} of ${s.title} on OakShow.`;
+        const epCanonical = `${DOMAIN}/${ep.filename}`;
+        const epHtml = generatePrerenderHtml(baseHtml, {
+          title: epTitle,
+          description: epDesc,
+          canonicalUrl: epCanonical,
+          ogImage: ep.thumbnail ? `${DOMAIN}/${ep.thumbnail}` : ogImage,
+          ogType: 'video.episode',
+          bodyContent: `<h1>${escapeHtml(epTitle)}</h1><p>${escapeHtml(epDesc)}</p><p><a href="${DOMAIN}/${filename}">Back to ${escapeHtml(s.title)} Main Page</a></p>`
+        });
+        fs.writeFileSync(epOutPath, epHtml, 'utf8');
+        count++;
+      }
+    }
   }
 
   // 3. Process Category Hubs & Specialty Portals
@@ -252,6 +294,7 @@ async function run() {
     { filename: 'indian.html', title: 'Indian Cinema (Bollywood, Tollywood, Kollywood & Mollywood) — OakShow', desc: 'Browse verified ratings, reviews, streaming providers and bookings for Indian movies.' },
     { filename: 'hollywood.html', title: 'Hollywood Studio Blockbusters & Classics — OakShow', desc: 'Browse verified ratings, reviews, streaming providers and bookings for Hollywood blockbusters.' },
     { filename: 'international.html', title: 'International Cinema, Anime & World Movies — OakShow', desc: 'Explore global cinema, Japanese anime, and European releases on OakShow.' },
+    { filename: 'ott.html', title: 'Movies on OTT & Online Streaming Platforms — OakShow', desc: 'Browse movies streaming on Netflix, Amazon Prime Video, Sun NXT, Disney+ Hotstar, SonyLIV, ZEE5, Apple TV, and more.' },
     { filename: 'series-hub.html', title: 'Web Series & Television Shows Vault — OakShow', desc: 'Binge-worthy web series, episode guides, ratings, and streaming platforms.' },
     { filename: 'releases.html', title: 'Cinema Release Matrix & Monthly Calendars — OakShow', desc: 'Complete month-by-month release schedules for Indian and Hollywood films.' },
     { filename: 'reviews.html', title: 'OakShow Editorial & Critic Reviews — Certified Ratings & Remarks', desc: 'Unbiased film criticism, certified reviewer profiles, and OakShow official remarks.' },

@@ -4,30 +4,23 @@ import { getOakShowRemark } from '../utils/remarks';
 import { getProfileImage, getShareImage } from '../utils/mediaUtils';
 
 export default function HeroSpotlight({ movies, onSelectMovie, onPlayTrailer }) {
-  // Pick top curated high-rating spotlight movies
+  // Pick latest movies released with their ratings and high quality posters/banners
   const spotlightCandidates = React.useMemo(() => {
     if (!movies || movies.length === 0) return [];
-    const featuredIds = [
-      'AvengersEndgame',
-      'BaahubaliTheConclusion',
-      'Dangal',
-      'KGFChapter1',
-      'Mersal',
-      'Lucifer',
-      'Kaala',
-      'JohnWickChapter2',
-      'BlackPanther',
-      'Master',
-      'Drishyam2',
-      'Vikram'
-    ];
     
-    let picks = movies.filter(m => featuredIds.some(fid => m.id.toLowerCase() === fid.toLowerCase()));
-    if (picks.length < 5) {
-      const highRated = movies.filter(m => m.ratings && m.ratings.length > 2 && m.poster).slice(0, 8);
-      picks = [...new Set([...picks, ...highRated])];
-    }
-    return picks.slice(0, 6);
+    // Sort movies by release year descending, then release date, ensuring ratings exist
+    const sortedLatest = [...movies]
+      .filter(m => m.poster && m.ratings && m.ratings.length > 0)
+      .sort((a, b) => {
+        const yearA = parseInt(a.year || '0', 10);
+        const yearB = parseInt(b.year || '0', 10);
+        if (yearB !== yearA) return yearB - yearA;
+        const dateA = new Date(a.releaseDate || '1970-01-01').getTime() || 0;
+        const dateB = new Date(b.releaseDate || '1970-01-01').getTime() || 0;
+        return dateB - dateA;
+      });
+
+    return sortedLatest.slice(0, 8);
   }, [movies]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -46,6 +39,7 @@ export default function HeroSpotlight({ movies, onSelectMovie, onPlayTrailer }) 
   const oakRating = current.ratings?.find(r => r.source === 'OakShow')?.score;
   const imdbRating = current.ratings?.find(r => r.source === 'IMDb')?.score;
   const rtRating = current.ratings?.find(r => r.source === 'Rotten Tomatoes')?.score;
+  const metaRating = current.ratings?.find(r => r.source === 'Metacritic')?.score;
 
   const backdropSrc = getShareImage(current);
 
@@ -73,7 +67,7 @@ export default function HeroSpotlight({ movies, onSelectMovie, onPlayTrailer }) 
         <div className="hero-badge-row">
           <span className="badge badge-gold">
             <Sparkles size={13} />
-            FEATURED BLOCKBUSTER
+            LATEST RELEASE
           </span>
           {current.language && <span className="badge badge-cyan">{current.language}</span>}
           {current.genre && <span className="badge badge-red">{current.genre}</span>}
@@ -108,6 +102,11 @@ export default function HeroSpotlight({ movies, onSelectMovie, onPlayTrailer }) 
           {rtRating && (
             <div className="rating-pill" style={{ borderColor: '#fa320a', color: '#ff6347' }}>
               <span>🍅 {rtRating}</span>
+            </div>
+          )}
+          {metaRating && (
+            <div className="rating-pill" style={{ borderColor: '#3399cc', color: '#3399cc' }}>
+              <span>Metacritic {metaRating}</span>
             </div>
           )}
           {current.duration && current.duration !== 'N/A' && (

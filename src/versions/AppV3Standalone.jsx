@@ -63,6 +63,7 @@ import {
   ChevronDown,
   ArrowRight,
   Tv,
+  MonitorPlay,
   Gamepad2,
   Trophy,
   ShieldAlert
@@ -78,6 +79,7 @@ export default function App() {
   const [selectedGenre, setSelectedGenre] = useState('All');
   const [selectedLanguage, setSelectedLanguage] = useState('All');
   const [selectedYear, setSelectedYear] = useState('All');
+  const [selectedPlatform, setSelectedPlatform] = useState('All');
   const [sortBy, setSortBy] = useState('latest-high'); // 'latest-high', 'rating', 'newest', 'title'
   const [visibleCount, setVisibleCount] = useState(24);
 
@@ -91,15 +93,16 @@ export default function App() {
     }
   });
 
-  // Theme State: 'light' by default, switchable to 'dark'
+  // Theme State: 'dark' by default for mobile browsers, 'light' for desktop, switchable
   const [theme, setTheme] = useState(() => {
     try {
       const saved = localStorage.getItem('oakshow_theme');
       if (saved === 'dark' || saved === 'light') return saved;
+      const isMobile = typeof window !== 'undefined' && (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || (window.innerWidth && window.innerWidth <= 768));
+      return isMobile ? 'dark' : 'light';
     } catch {
-      // ignore
+      return 'light';
     }
-    return 'light';
   });
 
   useEffect(() => {
@@ -139,7 +142,15 @@ export default function App() {
   // Reset pagination when route or filters change
   useEffect(() => {
     setVisibleCount(24);
-  }, [route, selectedGenre, selectedLanguage, selectedYear, sortBy]);
+  }, [route, selectedGenre, selectedLanguage, selectedYear, selectedPlatform, sortBy]);
+
+  // Reset category filters when navigating between hubs
+  useEffect(() => {
+    setSelectedGenre('All');
+    setSelectedLanguage('All');
+    setSelectedYear('All');
+    setSelectedPlatform('All');
+  }, [route.type]);
 
   // Bookmark toggle
   const toggleBookmark = (item) => {
@@ -162,26 +173,36 @@ export default function App() {
   };
 
   // Extract all distinct genres, languages, and years based on active category
-  const { allGenres, allLanguages, allYears } = useMemo(() => {
+  const { allGenres, allLanguages, allYears, allPlatforms } = useMemo(() => {
     const genreSet = new Set();
     const langSet = new Set();
     const yearSet = new Set();
+    const platformSet = new Set();
 
     let pool = moviesData;
     if (route.type === 'indian') pool = moviesData.filter(m => m.category === 'Indian');
     else if (route.type === 'hollywood') pool = moviesData.filter(m => m.category === 'Hollywood');
     else if (route.type === 'international') pool = moviesData.filter(m => m.category === 'International');
+    else if (route.type === 'ott') pool = moviesData.filter(m => m.watchOnline && Array.isArray(m.watchOnline) && m.watchOnline.some(w => w.url && w.url.trim() && w.url !== '#'));
 
     pool.forEach(m => {
       if (m.genre) m.genre.split(/[\/, ]+/).forEach(g => { if (g.trim() && g.length > 2) genreSet.add(g.trim()); });
       if (m.language) m.language.split(/[\/, ]+/).forEach(l => { if (l.trim() && l.length > 2) langSet.add(l.trim()); });
       if (m.year) yearSet.add(m.year);
+      if (m.watchOnline && Array.isArray(m.watchOnline)) {
+        m.watchOnline.forEach(w => {
+          if (w.platform && w.platform.trim() && w.url && w.url.trim() && w.url !== '#') {
+            platformSet.add(w.platform.trim());
+          }
+        });
+      }
     });
 
     return {
       allGenres: ['All', ...Array.from(genreSet).sort()],
       allLanguages: ['All', ...Array.from(langSet).sort()],
-      allYears: ['All', ...Array.from(yearSet).sort((a, b) => b.localeCompare(a))]
+      allYears: ['All', ...Array.from(yearSet).sort((a, b) => b.localeCompare(a))],
+      allPlatforms: ['All', ...Array.from(platformSet).sort()]
     };
   }, [route.type]);
 
@@ -196,6 +217,13 @@ export default function App() {
       list = list.filter(m => m.category === 'Hollywood');
     } else if (route.type === 'international') {
       list = list.filter(m => m.category === 'International');
+    } else if (route.type === 'ott') {
+      list = list.filter(m => m.watchOnline && Array.isArray(m.watchOnline) && m.watchOnline.some(w => w.url && w.url.trim() && w.url !== '#'));
+    }
+
+    // Platform filter (for OTT releases)
+    if (selectedPlatform !== 'All') {
+      list = list.filter(m => m.watchOnline && Array.isArray(m.watchOnline) && m.watchOnline.some(w => w.platform && w.platform.trim().toLowerCase() === selectedPlatform.toLowerCase() && w.url && w.url.trim() && w.url !== '#'));
     }
 
     // Genre filter
@@ -253,7 +281,61 @@ export default function App() {
     });
 
     return list;
-  }, [route.type, selectedGenre, selectedLanguage, selectedYear, sortBy]);
+  }, [route.type, selectedGenre, selectedLanguage, selectedYear, selectedPlatform, sortBy]);
+
+  // Latest & Highest Rated Blockbusters arranged strictly in release dates from newest 1st
+  const latestBlockbusters = useMemo(() => {
+    const parseDate = (item) => {
+      if (!item) return 0;
+      if (item.releaseDate) {
+        const clean = item.releaseDate.replace(/\(.*?\)/g, '').replace(/,/g, ', ').replace(/\s+/g, ' ').trim();
+        const t = Date.parse(clean);
+        if (!isNaN(t) && t > 0) return t;
+        const m = clean.match(/(\d{4})/);
+        if (m) return new Date(parseInt(m[1], 10), 0, 1).getTime();
+      }
+      if (item.year) {
+        const y = parseInt(item.year, 10);
+        if (!isNaN(y) && y > 0) return new Date(y, 0, 1).getTime();
+      }
+      return 0;
+    };
+
+    return [...moviesData].sort((a, b) => {
+      const timeA = parseDate(a);
+      const timeB = parseDate(b);
+      if (timeB !== timeA) return timeB - timeA;
+      return (a.title || '').localeCompare(b.title || '');
+    });
+  }, []);
+
+  // Movies streaming on verified OTT platforms arranged with newest release dates first
+  const ottMovies = useMemo(() => {
+    const parseDate = (item) => {
+      if (!item) return 0;
+      if (item.releaseDate) {
+        const clean = item.releaseDate.replace(/\(.*?\)/g, '').replace(/,/g, ', ').replace(/\s+/g, ' ').trim();
+        const t = Date.parse(clean);
+        if (!isNaN(t) && t > 0) return t;
+        const m = clean.match(/(\d{4})/);
+        if (m) return new Date(parseInt(m[1], 10), 0, 1).getTime();
+      }
+      if (item.year) {
+        const y = parseInt(item.year, 10);
+        if (!isNaN(y) && y > 0) return new Date(y, 0, 1).getTime();
+      }
+      return 0;
+    };
+
+    return moviesData
+      .filter(m => m.watchOnline && Array.isArray(m.watchOnline) && m.watchOnline.some(w => w.url && w.url.trim() && w.url !== '#'))
+      .sort((a, b) => {
+        const timeA = parseDate(a);
+        const timeB = parseDate(b);
+        if (timeB !== timeA) return timeB - timeA;
+        return (a.title || '').localeCompare(b.title || '');
+      });
+  }, []);
 
   // Handle item select from SearchModal
   const handleSelectItem = (item) => {
@@ -289,7 +371,7 @@ export default function App() {
 
   // Map route.type to activeTab name for navbar highlighting
   const currentNavTab = useMemo(() => {
-    if (['discover', 'indian', 'hollywood', 'international', 'reviews', 'releases', 'sports-hub', 'games-books', 'news', 'blog', 'galleries', 'emergencies', 'music', 'trailers', 'events'].includes(route.type)) {
+    if (['discover', 'indian', 'hollywood', 'international', 'ott', 'reviews', 'releases', 'sports-hub', 'games-books', 'news', 'blog', 'galleries', 'emergencies', 'music', 'trailers', 'events'].includes(route.type)) {
       return route.type;
     }
     if (route.type === 'emergency' || route.type === 'emergency-detail') return 'emergencies';
@@ -1283,6 +1365,8 @@ export default function App() {
     updatePageMeta('Hollywood Studio Blockbusters & Classics — OakShow', 'Browse verified ratings, reviews, streaming providers and bookings for Hollywood blockbusters.');
   } else if (route.type === 'international') {
     updatePageMeta('International Cinema, Anime & World Movies — OakShow', 'Explore global cinema, Japanese anime, and European releases on OakShow.');
+  } else if (route.type === 'ott') {
+    updatePageMeta('Movies on OTT & Online Streaming Platforms — OakShow', 'Browse movies streaming on Netflix, Amazon Prime Video, Sun NXT, Disney+ Hotstar, SonyLIV, ZEE5, Apple TV, and more.');
   } else if (route.type === 'series-hub' || route.type === 'series') {
     updatePageMeta('Web Series & Television Shows Vault — OakShow', 'Binge-worthy web series, episode guides, ratings, and streaming platforms.');
   } else if (route.type === 'releases') {
@@ -1349,13 +1433,17 @@ export default function App() {
                   <Sparkles size={18} className="text-cyan" />
                   <span>International</span>
                 </button>
+                <button className="hub-chip" onClick={() => navigate('ott')}>
+                  <MonitorPlay size={18} className="text-cyan" />
+                  <span>OTT Releases</span>
+                </button>
                 <button className="hub-chip" onClick={() => navigate('series-hub')}>
                   <Tv size={18} className="text-red" />
                   <span>Web Series</span>
                 </button>
                 <button className="hub-chip" onClick={() => navigate('releases')}>
                   <Calendar size={18} className="text-cyan" />
-                  <span>Release Matrix</span>
+                  <span>Movies Released</span>
                 </button>
                 <button className="hub-chip" onClick={() => navigate('reviews')}>
                   <Star size={18} className="text-gold" />
@@ -1386,7 +1474,34 @@ export default function App() {
                 </div>
 
                 <div className="grid-movies">
-                  {moviesData.slice(0, 12).map((movie) => (
+                  {latestBlockbusters.slice(0, 12).map((movie) => (
+                    <MovieCard
+                      key={movie.id}
+                      movie={movie}
+                      onSelect={(m) => navigate(`movie/${m.id}`)}
+                      onPlayTrailer={setActiveVideo}
+                      isBookmarked={bookmarks.some(b => b.id === movie.id)}
+                      onToggleBookmark={toggleBookmark}
+                    />
+                  ))}
+                </div>
+              </section>
+
+              {/* Movies on OTT & Online Streaming */}
+              <section className="feed-section">
+                <div className="section-header">
+                  <div className="section-title-group">
+                    <MonitorPlay size={22} className="text-cyan" />
+                    <h2>Movies Streaming on OTT Platforms</h2>
+                  </div>
+                  <button className="view-all-link" onClick={() => navigate('ott')}>
+                    <span>View All OTT Releases ({ottMovies.length})</span>
+                    <ArrowRight size={14} />
+                  </button>
+                </div>
+
+                <div className="grid-movies">
+                  {ottMovies.slice(0, 12).map((movie) => (
                     <MovieCard
                       key={movie.id}
                       movie={movie}
@@ -1519,27 +1634,40 @@ export default function App() {
           </div>
         )}
 
-        {/* INDIAN / HOLLYWOOD / INTERNATIONAL CATALOG */}
-        {(route.type === 'indian' || route.type === 'hollywood' || route.type === 'international') && (
+        {/* INDIAN / HOLLYWOOD / INTERNATIONAL / OTT CATALOG */}
+        {(route.type === 'indian' || route.type === 'hollywood' || route.type === 'international' || route.type === 'ott') && (
           <div className="tab-view animate-fade-in container">
             <div className="catalog-header-banner glass-panel">
-              <div className={`badge ${route.type === 'hollywood' ? 'badge-red' : route.type === 'international' ? 'badge-cyan' : 'badge-gold'}`}>
-                {route.type === 'indian' ? 'INDIAN CINEMA ARCHIVE' : route.type === 'hollywood' ? 'HOLLYWOOD PORTAL' : 'INTERNATIONAL CINEMA PORTAL'}
+              <div className={`badge ${route.type === 'hollywood' ? 'badge-red' : route.type === 'international' ? 'badge-cyan' : route.type === 'ott' ? 'badge-cyan' : 'badge-gold'}`}>
+                {route.type === 'indian' ? 'INDIAN CINEMA ARCHIVE' : route.type === 'hollywood' ? 'HOLLYWOOD PORTAL' : route.type === 'ott' ? 'OTT & ONLINE STREAMING' : 'INTERNATIONAL CINEMA PORTAL'}
               </div>
               <h2 className="catalog-main-title">
                 {route.type === 'indian' 
                   ? 'Bollywood, Tollywood, Kollywood & Mollywood' 
                   : route.type === 'hollywood' 
                   ? 'Hollywood Studio Blockbusters & Classics'
+                  : route.type === 'ott'
+                  ? 'Movies Streaming on OTT Platforms'
                   : 'World Cinema, Japanese Anime, K-Dramas & European Cinema'}
               </h2>
               <p className="catalog-subtitle">
-                Showing verified ratings, reviews, streaming providers and ticket bookings for {filteredMovies.length} titles.
+                {route.type === 'ott'
+                  ? `Browse verified streaming providers, ratings, and direct watch links for ${filteredMovies.length} movies available on OTT.`
+                  : `Showing verified ratings, reviews, streaming providers and ticket bookings for ${filteredMovies.length} titles.`}
               </p>
             </div>
 
             {/* Filter Bar */}
             <div className="catalog-filters-bar glass-panel">
+              {route.type === 'ott' && allPlatforms.length > 1 && (
+                <div className="filter-item">
+                  <label>Streaming Platform</label>
+                  <select value={selectedPlatform} onChange={e => setSelectedPlatform(e.target.value)}>
+                    {allPlatforms.map(p => <option key={p} value={p}>{p}</option>)}
+                  </select>
+                </div>
+              )}
+
               <div className="filter-item">
                 <label>Genre</label>
                 <select value={selectedGenre} onChange={e => setSelectedGenre(e.target.value)}>

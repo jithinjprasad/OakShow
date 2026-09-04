@@ -3911,29 +3911,426 @@ button {
   display: block;
 }
 
-/* Lightbox Modal */
-.lightbox-backdrop {
+/* ========================================================================= */
+/* UNIVERSAL RESPONSIVE LIGHTBOX MODAL (Desktop & Mobile)                    */
+/* ========================================================================= */
+.lightbox-backdrop,
+.lightbox-overlay {
   position: fixed;
   inset: 0;
-  z-index: 300;
-  background: rgba(0, 0, 0, 0.92);
-  backdrop-filter: blur(16px);
+  z-index: 99999;
+  background: rgba(2, 6, 14, 0.94);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 16px;
   cursor: zoom-out;
+  animation: fadeIn 0.2s ease-out;
 }
-.lightbox-content {
-  max-width: 90vw;
-  max-height: 90vh;
+
+.lightbox-content,
+.lightbox-modal {
+  position: relative;
+  width: 100%;
+  max-width: 1120px;
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  background: rgba(10, 15, 26, 0.98);
+  border: 1px solid rgba(119, 179, 212, 0.25);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9), 0 0 35px rgba(2, 132, 199, 0.25);
+  overflow: hidden;
+  cursor: default;
 }
+
+/* Lightbox Close Button */
+.lightbox-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 20;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background: rgba(3, 8, 19, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.lightbox-close-btn:hover {
+  background: var(--accent-red);
+  border-color: var(--accent-red);
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+/* Main View Area: Image with Prev/Next Navigation */
+.lightbox-main-view {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  min-height: 280px;
+  max-height: calc(92vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #03060c;
+  overflow: hidden;
+}
+
+.lightbox-img-wrap,
+.lightbox-image-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+
+.lightbox-full-img,
+.lightbox-large-img,
 .lightbox-img {
   max-width: 100%;
-  max-height: 90vh;
+  max-height: calc(92vh - 130px);
+  width: auto;
+  height: auto;
   object-fit: contain;
-  border-radius: var(--radius-md);
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.7);
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Nav Buttons: Prev & Next floating inside lightbox */
+.lightbox-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 15;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  background: rgba(3, 8, 19, 0.75);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.lightbox-nav-btn:hover {
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
+  transform: translateY(-50%) scale(1.12);
+  box-shadow: 0 0 20px rgba(2, 132, 199, 0.6);
+}
+.lightbox-nav-btn.prev-btn {
+  left: 16px;
+}
+.lightbox-nav-btn.next-btn {
+  right: 16px;
+}
+
+/* Lightbox Footer Bar */
+.lightbox-footer-bar,
+.lightbox-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 20px;
+  background: rgba(6, 10, 18, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.lightbox-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+.lightbox-caption h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.lightbox-caption span {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.lightbox-actions {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Cinema Stills & HD Posters Showcase 3-Grid */
+.cinema-stills-section {
+  margin: 36px 0;
+}
+.cinema-stills-3grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 14px;
+}
+.cinema-still-card {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  transition: transform var(--transition-normal), border-color var(--transition-normal), box-shadow var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+}
+.cinema-still-card:hover {
+  transform: translateY(-6px) scale(1.015);
+  border-color: var(--accent-gold);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6), 0 0 24px rgba(255, 184, 0, 0.25);
+}
+.cinema-still-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+  background: #050811;
+}
+.cinema-still-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  display: block;
+}
+.cinema-still-card:hover .cinema-still-img {
+  transform: scale(1.07);
+}
+.cinema-still-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(3, 8, 19, 0.1) 0%, rgba(3, 8, 19, 0.75) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+.cinema-still-card:hover .cinema-still-overlay {
+  opacity: 1;
+}
+.still-number-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 184, 0, 0.25);
+  border: 1px solid rgba(255, 184, 0, 0.6);
+  color: #ffb800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.cinema-still-caption {
+  padding: 10px 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Clickable Hero Poster Card */
+.movie-hero-poster-wrap.clickable-poster {
+  cursor: pointer;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+.movie-hero-poster-wrap.clickable-poster:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl), 0 0 40px rgba(56, 189, 248, 0.4);
+}
+.poster-zoom-hint {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  background: rgba(3, 8, 19, 0.82);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-full);
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: all var(--transition-fast);
+  pointer-events: none;
+  z-index: 2;
+}
+.movie-hero-poster-wrap.clickable-poster:hover .poster-zoom-hint {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mobile Responsive Optimizations */
+@media (max-width: 900px) {
+  .cinema-stills-3grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .lightbox-backdrop,
+  .lightbox-overlay {
+    padding: 6px;
+    width: 100vw !important;
+    height: 100vh !important;
+    height: 100dvh !important;
+    touch-action: none;
+  }
+  .lightbox-content,
+  .lightbox-modal {
+    width: 100%;
+    max-width: 100vw;
+    max-height: 95dvh !important;
+    margin: auto;
+    border-radius: var(--radius-lg);
+  }
+  .lightbox-main-view {
+    min-height: 200px !important;
+    max-height: calc(95dvh - 90px) !important;
+    padding: 4px;
+    touch-action: pan-y;
+  }
+  .lightbox-full-img,
+  .lightbox-large-img,
+  .lightbox-img {
+    max-width: 100%;
+    max-height: calc(95dvh - 100px) !important;
+    object-fit: contain;
+  }
+  .lightbox-close-btn {
+    top: 8px;
+    right: 8px;
+    width: 42px;
+    height: 42px;
+    background: rgba(3, 8, 19, 0.92);
+    border: 1.5px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.7);
+    touch-action: manipulation;
+  }
+  .lightbox-nav-btn {
+    width: 42px;
+    height: 42px;
+    background: rgba(3, 8, 19, 0.85);
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    touch-action: manipulation;
+  }
+  .lightbox-nav-btn.prev-btn {
+    left: 6px;
+  }
+  .lightbox-nav-btn.next-btn {
+    right: 6px;
+  }
+  .lightbox-footer-bar,
+  .lightbox-footer {
+    padding: 8px 12px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .lightbox-caption {
+    min-width: 0;
+    flex: 1;
+  }
+  .lightbox-caption h4 {
+    font-size: 0.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .lightbox-caption span {
+    font-size: 0.68rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .lightbox-actions .btn {
+    padding: 6px 10px;
+    font-size: 0.74rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .poster-zoom-hint {
+    top: 6px;
+    right: 6px;
+    padding: 3px 6px;
+    font-size: 0.62rem;
+    gap: 3px;
+    opacity: 0.95;
+    transform: translateY(0);
+    pointer-events: none;
+  }
+  .movie-hero-poster-wrap.clickable-poster {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .movie-hero-poster-img {
+    pointer-events: none;
+  }
+  .cinema-still-card {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .cinema-still-img {
+    pointer-events: none;
+  }
+  .cinema-still-caption {
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 580px) {
+  .cinema-stills-3grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .cinema-still-overlay {
+    opacity: 1;
+    background: linear-gradient(180deg, transparent 40%, rgba(3, 8, 19, 0.85) 100%);
+    justify-content: flex-end;
+    padding-bottom: 12px;
+    pointer-events: none;
+  }
 }
 
 

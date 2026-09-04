@@ -9,7 +9,7 @@ RUN npm ci
 # Copy source files
 COPY . .
 
-# Run production build and static generator
+# Run production build (includes static SSG page generation)
 RUN npm run build
 
 # Stage 2: Serve with lightweight Nginx

@@ -150,18 +150,30 @@ function extractBookingLinks($) {
     } else if (u.includes('bookmyshow.com') || a.includes('book my show') || a.includes('bookmyshow')) {
       provider = 'BookMyShow';
       rank = 2;
+    } else if (u.includes('district') || a.includes('district')) {
+      provider = 'District';
+      rank = 3;
     } else if (u.includes('ticketnew.com') || a.includes('ticket new') || a.includes('ticketnew')) {
       provider = 'TicketNew';
-      rank = 3;
+      rank = 4;
+    } else if (u.includes('pvrcinemas') || a.includes('pvr')) {
+      provider = 'PVR';
+      rank = 5;
+    } else if (u.includes('cinepolis') || a.includes('cinepolis')) {
+      provider = 'Cinepolis';
+      rank = 6;
     } else if (u.includes('fandango.com') || a.includes('fandango')) {
       provider = 'Fandango';
-      rank = 4;
+      rank = 7;
     } else if (u.includes('cineworld.co.uk') || a.includes('cineworld')) {
       provider = 'Cineworld';
-      rank = 5;
+      rank = 8;
     } else if (u.includes('odeon.co.uk') || a.includes('odeon')) {
       provider = 'ODEON';
-      rank = 6;
+      rank = 9;
+    } else if (u.includes('eventbrite') || a.includes('eventbrite')) {
+      provider = 'Eventbrite';
+      rank = 10;
     }
 
     if (provider) {
@@ -608,6 +620,42 @@ function extractAfterReleaseArticles($) {
   });
 }
 
+function extractBoxOffice($) {
+  let bo = null;
+  $('details').each((_, el) => {
+    const summary = cleanText($(el).find('summary').text());
+    if (/Box Office/i.test(summary)) {
+      bo = {};
+      $(el).find('p, li, div').each((_, pEl) => {
+        const text = cleanText($(pEl).text());
+        if (/Worldwide\s*(?:Gross|Total)?\s*:\s*(.*)/i.test(text)) {
+          bo.worldwideGross = text.replace(/Worldwide\s*(?:Gross|Total)?\s*:\s*/i, '').trim();
+        } else if (/India\s*(?:Domestic\s*)?(?:Gross|Total)?\s*:\s*(.*)/i.test(text)) {
+          bo.indiaGross = text.replace(/India\s*(?:Domestic\s*)?(?:Gross|Total)?\s*:\s*/i, '').trim();
+        } else if (/Overseas\s*(?:Gross|Total)?\s*:\s*(.*)/i.test(text)) {
+          bo.overseasGross = text.replace(/Overseas\s*(?:Gross|Total)?\s*:\s*/i, '').trim();
+        } else if (/Opening\s*Day\s*:\s*(.*)/i.test(text)) {
+          bo.openingDay = text.replace(/Opening\s*Day\s*:\s*/i, '').trim();
+        } else if (/Opening\s*Weekend\s*:\s*(.*)/i.test(text)) {
+          bo.openingWeekend = text.replace(/Opening\s*Weekend\s*:\s*/i, '').trim();
+        } else if (/Budget\s*:\s*(.*)/i.test(text)) {
+          bo.budget = text.replace(/Budget\s*:\s*/i, '').trim();
+        } else if (/(?:Commercial\s*)?Verdict\s*:\s*(.*)/i.test(text)) {
+          bo.verdict = text.replace(/(?:Commercial\s*)?Verdict\s*:\s*/i, '').trim();
+        }
+      });
+      if (Object.keys(bo).length === 0) {
+        bo = null;
+      } else {
+        bo.lastUpdated = 'August 2026';
+        bo.source = 'Trade Reports / Sacnilk & Pinkvilla';
+      }
+    }
+  });
+  return bo;
+}
+
+
 function extractEntityTitle($, filename, meta) {
   // 1. Check itemprop="name" (e.g. <h1 itemprop="name">AA19</h1>)
   const itempropName = cleanText($('[itemprop="name"]').first().text());
@@ -814,6 +862,7 @@ function processMovieOrShow($, filename, filePath, meta) {
   const similar = extractSimilarMovies($);
   const videos = extractVideos($);
   const articles = extractAfterReleaseArticles($);
+  const boxOffice = extractBoxOffice($);
 
   const type = detectType(filename, title, genre, meta.title, filePath);
   const category = detectCategory(language, title, genre);
@@ -838,6 +887,7 @@ function processMovieOrShow($, filename, filePath, meta) {
     duration: duration || 'N/A',
     director,
     basedOn,
+    boxOffice,
     poster,
     gallery,
     ratings,
