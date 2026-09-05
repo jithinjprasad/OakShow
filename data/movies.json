@@ -173,13 +173,13 @@
       {
         "platform": "Instagram",
         "url": "https://www.instagram.com/diggerthemovie/",
-        "icon": "images/instagram.png",
+        "icon": "pics/SocialWebsiteLogos/instagram.png",
         "label": "Follow on Instagram"
       },
       {
         "platform": "Twitter / X",
         "url": "https://x.com/diggerthemovie",
-        "icon": "images/twitter.png",
+        "icon": "pics/SocialWebsiteLogos/x.png",
         "label": "Follow on X"
       },
       {
