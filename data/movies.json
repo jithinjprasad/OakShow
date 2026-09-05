@@ -1,5 +1,243 @@
 [
   {
+    "id": "digger",
+    "title": "Digger",
+    "fileName": "Digger.html",
+    "cleanUrl": "/Digger.html",
+    "type": "Movie",
+    "summary": "Digger is a 2026 American satirical disaster black comedy film directed and produced by Alejandro G. Iñárritu. Starring Tom Cruise alongside an ensemble cast including Riz Ahmed, John Goodman, Sandra Hüller, Michael Stuhlbarg, and Jesse Plemons, the film centers on Digger Rockwell, an eccentric oil magnate hailed as the most powerful man alive, whose daring deep-earth Greenland drilling campaign sparks a global ecological crisis, prompting him to launch a manic crusade to prove he can save humanity from the catastrophe he initiated.",
+    "plot": "Digger Rockwell (Tom Cruise), a larger-than-life energy mogul whose corporate reach spans continents, orchestrates an ambitious ultra-deep drilling initiative into the Greenland ice caps. When the colossal drill ruptures a subterranean fault, catastrophic tremors ripple across the Northern Hemisphere, triggering climate disruptions and intense political fallout in Washington. Clashing with the dictatorial President Compson (John Goodman) and his skeptical chief scientific advisor Ganesh (Riz Ahmed), Digger refuses to step down. Instead, flanked by his calculating sister Emma (Sandra Hüller) and rig engineer Kenny (Jesse Plemons), Rockwell wages a high-stakes, media-fueled spectacle across the globe to engineer an outrageous techno-miracle, betting his fortune and human survival on one final gamble. Source: Wikipedia & IMDb",
+    "language": "English",
+    "releaseDate": "October 02, 2026",
+    "year": "2026",
+    "genre": "Black Comedy, Drama, Disaster, Satire",
+    "duration": "2hr 18mins",
+    "director": "Alejandro G. Iñárritu",
+    "basedOn": "Original story by Alejandro G. Iñárritu, Sabina Berman & Jez Butterworth",
+    "writers": [
+      "Alejandro G. Iñárritu",
+      "Alexander Dinelaris Jr.",
+      "Nicolás Giacobone",
+      "Sabina Berman"
+    ],
+    "producers": [
+      "Alejandro G. Iñárritu",
+      "Tom Cruise",
+      "Mary Parent"
+    ],
+    "cinematography": "Emmanuel Lubezki",
+    "productionCompanies": [
+      "Legendary Pictures",
+      "Warner Bros. Pictures"
+    ],
+    "distribution": [
+      "Warner Bros. Pictures"
+    ],
+    "score": 8.5,
+    "boxOffice": {
+      "budget": "$125 - $150 Million",
+      "openingWeekend": "Projected $60 - $80 Million Worldwide",
+      "worldwide": "Releases October 02, 2026",
+      "verdict": "Upcoming Theatrical Release"
+    },
+    "poster": "pics/Films/Digger/1.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/Digger/1.jpg",
+        "alt": "Digger Poster"
+      },
+      {
+        "src": "pics/Films/Digger/2.jpg",
+        "alt": "Digger Banner"
+      },
+      {
+        "src": "pics/Films/Digger/3.jpg",
+        "alt": "Digger Movie Still"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "8.5/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "Anticipated",
+        "url": "https://www.imdb.com/title/tt31450459/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "Anticipated",
+        "url": "https://www.rottentomatoes.com/search?search=digger",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "Anticipated",
+        "url": "https://www.metacritic.com/search/digger/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Tom Cruise",
+        "role": "Digger Rockwell",
+        "description": "A wealthy, eccentric oil tycoon and the most powerful man in the world"
+      },
+      {
+        "actor": "Riz Ahmed",
+        "role": "Ganesh",
+        "description": "A brilliant scientist and senior advisor to the President"
+      },
+      {
+        "actor": "John Goodman",
+        "role": "President Compson",
+        "description": "The authoritarian President of the United States"
+      },
+      {
+        "actor": "Sandra Hüller",
+        "role": "Emma Rockwell",
+        "description": "Digger's pragmatic sister and corporate confidante"
+      },
+      {
+        "actor": "Michael Stuhlbarg",
+        "role": "The Vice President",
+        "description": "The embattled Vice President of the United States"
+      },
+      {
+        "actor": "Jesse Plemons",
+        "role": "Kenny",
+        "description": "Digger's dedicated field manager and rig supervisor"
+      },
+      {
+        "actor": "Emma D'Arcy",
+        "role": "",
+        "description": ""
+      },
+      {
+        "actor": "Sophie Wilde",
+        "role": "",
+        "description": ""
+      },
+      {
+        "actor": "Burn Gorman",
+        "role": "",
+        "description": ""
+      },
+      {
+        "actor": "Robert John Burke",
+        "role": "",
+        "description": ""
+      },
+      {
+        "actor": "Pip Torrens",
+        "role": "",
+        "description": ""
+      }
+    ],
+    "bookings": [
+      {
+        "provider": "BookMyShow",
+        "url": "https://in.bookmyshow.com/movies/calicut/digger/ET00477243",
+        "icon": "pics/BookngWebSiteLogos/book-my-show.png",
+        "label": "Book on BookMyShow",
+        "rank": 1
+      },
+      {
+        "provider": "District",
+        "url": "https://www.district.in/movies/digger-movie-tickets-MV211988?srsltid=AfmBOoq9VWiTDdASUwP_LKsPaanDxA8nPvPsRjwU9_0419yeM1H7Pi6N",
+        "icon": "pics/BookngWebSiteLogos/district.png",
+        "label": "Book on District",
+        "rank": 2
+      },
+      {
+        "provider": "Fandango",
+        "url": "https://www.fandango.com/digger-2026-245150/movie-overview",
+        "icon": "pics/BookngWebSiteLogos/fandango.png",
+        "label": "Book on Fandango",
+        "rank": 3
+      },
+      {
+        "provider": "TicketNew",
+        "url": "https://ticketnew.com/movies/digger-movie-detail-211988",
+        "icon": "pics/BookngWebSiteLogos/ticket-new.png",
+        "label": "Book on TicketNew",
+        "rank": 4
+      }
+    ],
+    "officialWebsite": "https://www.diggermovie.com/",
+    "socials": [
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/diggerthemovie/",
+        "icon": "images/instagram.png",
+        "label": "Follow on Instagram"
+      },
+      {
+        "platform": "Twitter / X",
+        "url": "https://x.com/diggerthemovie",
+        "icon": "images/twitter.png",
+        "label": "Follow on X"
+      },
+      {
+        "platform": "Official Website",
+        "url": "https://www.diggermovie.com/",
+        "icon": "images/web.png",
+        "label": "Visit Official Website"
+      }
+    ],
+    "similar": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=qORTe1wW3Wg",
+        "youtubeId": "qORTe1wW3Wg",
+        "title": "Digger - Official Theatrical Trailer"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=Rd21PhsDHww",
+        "youtubeId": "Rd21PhsDHww",
+        "title": "Digger - Official Teaser"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "Digger Is A Disaster Movie Where The Disaster Is Us, Says Alejandro G. Iñárritu – Exclusive",
+        "url": "https://www.empireonline.com/movies/news/digger-disaster-movie-where-disaster-is-us-alejandro-g-inarritu-exclusive/",
+        "author": "Empire",
+        "date": "2026",
+        "section": "News & Features"
+      },
+      {
+        "headline": "14 new Hollywood movies to watch in autumn 2026: Digger, Avengers: Doomsday and more",
+        "url": "https://www.scmp.com/lifestyle/entertainment/article/3365915/14-new-hollywood-movies-watch-autumn-2026-digger-avengers-doomsday",
+        "author": "South China Morning Post",
+        "date": "2026",
+        "section": "News & Features"
+      },
+      {
+        "headline": "BFI IMAX to celebrate filmmaker Alejandro G. Iñárritu ahead of Digger release",
+        "url": "https://britishcinematographer.co.uk/bfi-imax-to-celebrate-filmmaker-alejandro-g-inarritu-digger/",
+        "author": "British Cinematographer",
+        "date": "2026",
+        "section": "News & Features"
+      },
+      {
+        "headline": "Manila Digger FC 5-1 Kasuka FC | ASEAN Shopee Cup Playoffs Match Highlights",
+        "url": "https://aseanutdfc.com/asean-club-championship/2026/videos/manila-digger-fc-5-1-kasuka-fc-asean-shopee-cup-playoffs-match-highlights",
+        "author": "ASEAN United FC",
+        "date": "2026",
+        "section": "Related News"
+      }
+    ],
+    "filePath": "E:/OakShow/Digger.html",
+    "filename": "Digger.html",
+    "category": "Hollywood",
+    "status": "Upcoming"
+  },
+  {
     "id": "im-game",
     "title": "I'm Game",
     "fileName": "ImGame.html",
