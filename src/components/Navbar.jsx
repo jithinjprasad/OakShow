@@ -24,7 +24,8 @@ import {
   Layers,
   Image,
   Sun,
-  Moon
+  Moon,
+  Clock
 } from 'lucide-react';
 import CopyrightPolicyModal from './CopyrightPolicyModal';
 
@@ -142,6 +143,13 @@ export default function Navbar({
       icon: Calendar,
       badge: 'Calendar Matrix',
       desc: 'Theatrical releases, premiere dates & monthly calendar matrix (2015–2022+)'
+    },
+    {
+      id: 'upcoming',
+      label: 'Upcoming Movies',
+      icon: Clock,
+      badge: 'In Theaters Soon',
+      desc: 'Anticipated theatrical premieres, upcoming blockbusters & release countdowns'
     },
     {
       id: 'reviews',

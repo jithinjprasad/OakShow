@@ -132,6 +132,7 @@ export default function Footer({ onSelectCategory, stats }) {
               <li><button onClick={() => onSelectCategory ? onSelectCategory('international') : navigateTo('international')}>International & World Cinema</button></li>
               <li><button onClick={() => onSelectCategory ? onSelectCategory('series-hub') : navigateTo('series-hub')}>Web Series & Television</button></li>
               <li><button onClick={() => onSelectCategory ? onSelectCategory('releases') : navigateTo('releases')}>Movies Released</button></li>
+              <li><button onClick={() => onSelectCategory ? onSelectCategory('upcoming') : navigateTo('upcoming')}>Upcoming Movies</button></li>
               <li><button onClick={() => onSelectCategory ? onSelectCategory('reviews') : navigateTo('reviews')}>Critic Reviews & Remarks</button></li>
             </ul>
           </div>

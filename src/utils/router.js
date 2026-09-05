@@ -79,6 +79,9 @@ export function resolveSlugToRoute(rawSlug, rawPath = '') {
   if (lower === 'releases' || lower === 'movies-released' || lower === 'moviesreleased') {
     return { type: 'releases', id: null, raw: rawPath };
   }
+  if (lower === 'upcoming' || lower === 'upcoming-movies' || lower === 'upcomingmovies' || lower === 'upcoming2' || lower === 'upcoming3') {
+    return { type: 'upcoming', id: null, raw: rawPath };
+  }
   if (lower === 'series' || lower === 'series-hub' || lower === 'webseries' || lower === 'tv' || lower === 'oakshowseries' || lower === 'shows') {
     return { type: 'series-hub', id: null, raw: rawPath };
   }
@@ -175,7 +178,7 @@ export function parseCurrentRoute() {
     if (cleanFromHash) {
       const resolved = resolveSlugToRoute(cleanFromHash, hash);
       let cleanUrl = `/${cleanFromHash}.html`;
-      const hubs = ['indian', 'hollywood', 'international', 'ott', 'series-hub', 'releases', 'reviews', 'sports-hub', 'games-books', 'emergencies', 'news', 'blog', 'galleries', 'music', 'trailers', 'events', 'remarks', 'watchlist'];
+      const hubs = ['indian', 'hollywood', 'international', 'ott', 'series-hub', 'releases', 'upcoming', 'reviews', 'sports-hub', 'games-books', 'emergencies', 'news', 'blog', 'galleries', 'music', 'trailers', 'events', 'remarks', 'watchlist'];
       if (resolved.type === 'discover') {
         cleanUrl = '/';
       } else if (hubs.includes(cleanFromHash.toLowerCase())) {
@@ -200,7 +203,7 @@ export function parseCurrentRoute() {
     // Automatically redirect indexed legacy subfolder URLs to clean canonical URLs
     const clean = cleanSlugFromPath(normalizedPath);
     const hubs = [
-      'indian', 'hollywood', 'international', 'ott', 'series-hub', 'releases', 
+      'indian', 'hollywood', 'international', 'ott', 'series-hub', 'releases', 'upcoming',
       'reviews', 'sports-hub', 'games-books', 'emergencies', 'news', 
       'blog', 'galleries', 'music', 'trailers', 'events', 'remarks', 'watchlist'
     ];
@@ -239,7 +242,7 @@ export function navigateTo(target, replace = false) {
   const lower = clean.toLowerCase();
 
   const hubs = [
-    'indian', 'hollywood', 'international', 'ott', 'series-hub', 'releases', 
+    'indian', 'hollywood', 'international', 'ott', 'series-hub', 'releases', 'upcoming',
     'reviews', 'sports-hub', 'games-books', 'emergencies', 'news', 
     'blog', 'galleries', 'music', 'trailers', 'events', 'remarks', 'watchlist'
   ];

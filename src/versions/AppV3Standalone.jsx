@@ -12,6 +12,7 @@ import ReleaseMonthDetailPage from '../components/ReleaseMonthDetailPage';
 import VideoPlayerModal from '../components/VideoPlayerModal';
 import SearchModal from '../components/SearchModal';
 import ReleaseCalendarView from '../components/ReleaseCalendarView';
+import UpcomingMoviesView from '../components/UpcomingMoviesView';
 import CriticReviewsHub from '../components/CriticReviewsHub';
 import CriticProfilePage from '../components/CriticProfilePage';
 import SeriesHub from '../components/SeriesHub';
@@ -66,7 +67,8 @@ import {
   MonitorPlay,
   Gamepad2,
   Trophy,
-  ShieldAlert
+  ShieldAlert,
+  Clock
 } from 'lucide-react';
 
 export default function App() {
@@ -470,7 +472,7 @@ export default function App() {
 
   // Map route.type to activeTab name for navbar highlighting
   const currentNavTab = useMemo(() => {
-    if (['discover', 'indian', 'hollywood', 'international', 'ott', 'reviews', 'releases', 'sports-hub', 'games-books', 'news', 'blog', 'galleries', 'emergencies', 'music', 'trailers', 'events'].includes(route.type)) {
+    if (['discover', 'indian', 'hollywood', 'international', 'ott', 'releases', 'upcoming', 'reviews', 'sports-hub', 'games-books', 'news', 'blog', 'galleries', 'emergencies', 'music', 'trailers', 'events'].includes(route.type)) {
       return route.type;
     }
     if (route.type === 'emergency' || route.type === 'emergency-detail') return 'emergencies';
@@ -1474,6 +1476,8 @@ export default function App() {
     updatePageMeta('Web Series & Television Shows Vault — OakShow', 'Binge-worthy web series, episode guides, ratings, and streaming platforms.');
   } else if (route.type === 'releases') {
     updatePageMeta('Cinema Release Matrix & Monthly Calendars (2015–2022+) — OakShow', 'Complete month-by-month release schedules for Indian and Hollywood films.');
+  } else if (route.type === 'upcoming') {
+    updatePageMeta('Upcoming Movies & Anticipated Premiere Countdown — OakShow', 'Explore anticipated theatrical releases, upcoming blockbusters, trailers, and advance ticket booking alerts for Indian cinema and Hollywood.');
   } else if (route.type === 'reviews') {
     updatePageMeta('OakShow Editorial & Critic Reviews — Certified Ratings & Remarks', 'Unbiased film criticism, certified reviewer profiles, and OakShow official remarks.');
   } else if (route.type === 'remarks') {
@@ -1547,6 +1551,10 @@ export default function App() {
                 <button className="hub-chip" onClick={() => navigate('releases')}>
                   <Calendar size={18} className="text-cyan" />
                   <span>Movies Released</span>
+                </button>
+                <button className="hub-chip" onClick={() => navigate('upcoming')}>
+                  <Clock size={18} className="text-gold" />
+                  <span>Upcoming Movies</span>
                 </button>
                 <button className="hub-chip" onClick={() => navigate('reviews')}>
                   <Star size={18} className="text-gold" />
@@ -1861,6 +1869,18 @@ export default function App() {
               onToggleBookmark={toggleBookmark}
             />
           </div>
+        )}
+
+        {/* UPCOMING MOVIES VIEW */}
+        {route.type === 'upcoming' && (
+          <UpcomingMoviesView
+            movies={moviesData}
+            onSelectMovie={(slug) => handleNavigateWithSave(slug)}
+            onPlayTrailer={setActiveVideo}
+            onNavigate={handleNavigateWithSave}
+            bookmarks={bookmarks}
+            onToggleBookmark={toggleBookmark}
+          />
         )}
 
         {/* CRITIC REVIEWS & REMARKS GUIDE */}

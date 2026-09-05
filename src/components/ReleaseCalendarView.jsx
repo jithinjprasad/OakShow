@@ -97,85 +97,168 @@ export default function ReleaseCalendarView({
     return map;
   }, [movies]);
 
-  // Extract all available years sorted descending (memoized)
-  const years = useMemo(() => {
-    if (!releases || !Array.isArray(releases)) return ['All'];
-    const set = new Set();
-    for (let i = 0; i < releases.length; i++) {
-      if (releases[i].year) set.add(releases[i].year);
-    }
-    return ['All', ...Array.from(set).sort((a, b) => b.localeCompare(a))];
-  }, [releases]);
-
   const months = useMemo(() => [
     'All', 'January', 'February', 'March', 'April', 'May', 'June',
     'July', 'August', 'September', 'October', 'November', 'December'
   ], []);
 
-  // PRECOMPUTE & ENRICH ALL RELEASE ITEMS ONCE (Zero lag on filter change)
+  // PRECOMPUTE & ENRICH ALL RELEASE ITEMS ONCE
+  // Incorporates all 1,100 released movies from moviesData (including all 2026 releases) + historical archives
   const masterReleaseItems = useMemo(() => {
-    if (!releases || !Array.isArray(releases)) return [];
     const items = [];
     const seen = new Set();
 
-    for (let c = 0; c < releases.length; c++) {
-      const cal = releases[c];
-      if (!cal.items || !Array.isArray(cal.items)) continue;
-      const calCat = cal.category || 'Indian';
-      const calYear = cal.year || '';
-      const calMonth = cal.month || '';
+    const extractMonth = (dateStr) => {
+      if (!dateStr || typeof dateStr !== 'string') return '';
+      const monthsList = [
+        'January', 'February', 'March', 'April', 'May', 'June',
+        'July', 'August', 'September', 'October', 'November', 'December'
+      ];
+      const lower = dateStr.toLowerCase();
+      for (const m of monthsList) {
+        if (lower.includes(m.toLowerCase()) || lower.includes(m.toLowerCase().slice(0, 3))) {
+          return m;
+        }
+      }
+      return '';
+    };
 
-      for (let i = 0; i < cal.items.length; i++) {
-        const item = cal.items[i];
-        if (!item || !item.title) continue;
+    // 1. Primary Source: All released movies from moviesData (1,100 verified titles)
+    if (movies && Array.isArray(movies)) {
+      for (let i = 0; i < movies.length; i++) {
+        const m = movies[i];
+        if (!m || !m.title) continue;
 
-        const uniqueKey = `${item.title.toLowerCase().trim()}:${calYear}:${calMonth}`;
-        if (seen.has(uniqueKey)) continue;
+        const cleanTitle = m.title.toLowerCase().trim();
+        const calYear = m.year || (m.releaseDate ? m.releaseDate.match(/\b(20\d\d)\b/)?.[1] : '') || '';
+        const calMonth = extractMonth(m.releaseDate);
+        const uniqueKey = `${cleanTitle}:${calYear}`;
+
         seen.add(uniqueKey);
 
-        const targetSlug = item.moreLink 
-          ? item.moreLink.replace(/\.html$/i, '').replace(/^.*\//, '') 
-          : (item.id || item.title.replace(/[^a-zA-Z0-9]/g, ''));
+        const oakRating = m.ratings?.find(r => r.source === 'OakShow')?.score;
+        const scoreNum = typeof m.score === 'number' ? m.score : (parseFloat(oakRating || m.ratings?.[0]?.score) || 0);
+        const yrNum = parseInt(calYear, 10) || 0;
 
-        const movieMatch = movieLookup.get(targetSlug.toLowerCase()) || 
-                           movieLookup.get(item.title.toLowerCase().trim());
-
-        const ratings = (movieMatch?.ratings && movieMatch.ratings.length > 0) 
-          ? movieMatch.ratings 
-          : (item.ratings || []);
-
-        const oakRating = ratings.find(r => r.source === 'OakShow')?.score;
-        const scoreNum = parseFloat(oakRating || ratings[0]?.score) || (typeof movieMatch?.score === 'number' ? movieMatch.score : 0);
-        const yrNum = parseInt(item.year || movieMatch?.year || calYear, 10) || 0;
+        let category = m.category;
+        if (!category) {
+          const lang = (m.language || '').toLowerCase();
+          if (lang.includes('hindi') || lang.includes('tamil') || lang.includes('telugu') || lang.includes('malayalam') || lang.includes('kannada')) {
+            category = 'Indian';
+          } else if (lang.includes('english')) {
+            category = 'Hollywood';
+          } else {
+            category = 'International';
+          }
+        }
 
         items.push({
-          id: movieMatch?.id || targetSlug,
-          title: item.title,
-          poster: movieMatch?.poster || item.poster,
-          alt: item.alt || movieMatch?.alt || item.title,
-          category: item.category || movieMatch?.category || calCat,
-          language: item.language || movieMatch?.language || 'English',
-          genre: item.genre || movieMatch?.genre || '',
-          year: item.year || movieMatch?.year || calYear,
+          id: m.id || cleanTitle.replace(/[^a-zA-Z0-9]/g, ''),
+          title: m.title,
+          poster: m.poster,
+          alt: m.alt || m.title,
+          category: category,
+          language: m.language || 'English',
+          genre: m.genre || '',
+          year: calYear,
           numericYear: yrNum,
           month: calMonth,
-          releaseDate: item.releaseDate || movieMatch?.releaseDate || (calMonth ? `${calMonth} ${calYear}` : calYear),
-          ratings: ratings,
+          releaseDate: m.releaseDate || (calMonth ? `${calMonth} ${calYear}` : calYear),
+          ratings: m.ratings || [],
           scoreNum: scoreNum,
-          duration: movieMatch?.duration,
-          booking: movieMatch?.booking,
-          videos: item.trailerLink 
-            ? [{ title: `${item.title} — Official Trailer`, url: item.trailerLink }] 
-            : (movieMatch?.videos || []),
-          filename: item.moreLink || movieMatch?.filename || movieMatch?.fileName || `${targetSlug}.html`,
-          calendarId: cal.id,
-          calendarTitle: cal.title
+          duration: m.duration,
+          booking: m.booking,
+          videos: m.videos || [],
+          filename: m.filename || m.fileName || (m.id ? `${m.id}.html` : ''),
+          calendarId: null,
+          calendarTitle: null
         });
       }
     }
 
+    // 2. Secondary Source: Any supplementary historical archive calendar items from releases.json
+    if (releases && Array.isArray(releases)) {
+      for (let c = 0; c < releases.length; c++) {
+        const cal = releases[c];
+        if (!cal.items || !Array.isArray(cal.items)) continue;
+        const calCat = cal.category || 'Indian';
+        const calYear = cal.year || '';
+        const calMonth = cal.month || '';
+
+        for (let i = 0; i < cal.items.length; i++) {
+          const item = cal.items[i];
+          if (!item || !item.title) continue;
+
+          const cleanTitle = item.title.toLowerCase().trim();
+          const uniqueKey = `${cleanTitle}:${calYear}`;
+
+          // If already added from moviesData, enrich with calendar details
+          const existing = items.find(it => it.title.toLowerCase().trim() === cleanTitle && (it.year === calYear || !it.year));
+          if (existing) {
+            if (!existing.month && calMonth) existing.month = calMonth;
+            if (!existing.calendarId && cal.id) {
+              existing.calendarId = cal.id;
+              existing.calendarTitle = cal.title;
+            }
+            continue;
+          }
+
+          if (seen.has(uniqueKey)) continue;
+          seen.add(uniqueKey);
+
+          const targetSlug = item.moreLink 
+            ? item.moreLink.replace(/\.html$/i, '').replace(/^.*\//, '') 
+            : (item.id || item.title.replace(/[^a-zA-Z0-9]/g, ''));
+
+          const movieMatch = movieLookup.get(targetSlug.toLowerCase()) || 
+                             movieLookup.get(cleanTitle);
+
+          const ratings = (movieMatch?.ratings && movieMatch.ratings.length > 0) 
+            ? movieMatch.ratings 
+            : (item.ratings || []);
+
+          const oakRating = ratings.find(r => r.source === 'OakShow')?.score;
+          const scoreNum = parseFloat(oakRating || ratings[0]?.score) || (typeof movieMatch?.score === 'number' ? movieMatch.score : 0);
+          const yrNum = parseInt(item.year || movieMatch?.year || calYear, 10) || 0;
+
+          items.push({
+            id: movieMatch?.id || targetSlug,
+            title: item.title,
+            poster: movieMatch?.poster || item.poster,
+            alt: item.alt || movieMatch?.alt || item.title,
+            category: item.category || movieMatch?.category || calCat,
+            language: item.language || movieMatch?.language || 'English',
+            genre: item.genre || movieMatch?.genre || '',
+            year: item.year || movieMatch?.year || calYear,
+            numericYear: yrNum,
+            month: calMonth,
+            releaseDate: item.releaseDate || movieMatch?.releaseDate || (calMonth ? `${calMonth} ${calYear}` : calYear),
+            ratings: ratings,
+            scoreNum: scoreNum,
+            duration: movieMatch?.duration,
+            booking: movieMatch?.booking,
+            videos: item.trailerLink 
+              ? [{ title: `${item.title} — Official Trailer`, url: item.trailerLink }] 
+              : (movieMatch?.videos || []),
+            filename: item.moreLink || movieMatch?.filename || movieMatch?.fileName || `${targetSlug}.html`,
+            calendarId: cal.id,
+            calendarTitle: cal.title
+          });
+        }
+      }
+    }
+
     return items;
-  }, [releases, movieLookup]);
+  }, [movies, releases, movieLookup]);
+
+  // Extract all available years sorted descending (memoized from master items)
+  const years = useMemo(() => {
+    const set = new Set();
+    for (let i = 0; i < masterReleaseItems.length; i++) {
+      if (masterReleaseItems[i].year) set.add(masterReleaseItems[i].year);
+    }
+    return ['All', ...Array.from(set).sort((a, b) => b.localeCompare(a))];
+  }, [masterReleaseItems]);
 
   // Reset pagination when any filter changes
   useEffect(() => {
@@ -288,33 +371,8 @@ export default function ReleaseCalendarView({
         </div>
       </div>
 
-      {/* Unified Filters Bar - Fully optimized for both desktop and mobile */}
-      <div className="catalog-filters-bar glass-panel releases-filters-bar">
-        {/* Search Input */}
-        <div className="filter-item releases-search-col">
-          <label>Search Releases</label>
-          <div className="cal-search-input-wrap">
-            <Search size={16} className="text-muted" />
-            <input 
-              type="text" 
-              placeholder="Title, language, or genre..."
-              value={searchQuery}
-              onChange={e => setSearchQuery(e.target.value)}
-              className="cal-search-input"
-            />
-            {searchQuery && (
-              <button 
-                type="button" 
-                className="cal-search-clear" 
-                onClick={() => setSearchQuery('')} 
-                title="Clear search"
-              >
-                ✕
-              </button>
-            )}
-          </div>
-        </div>
-
+      {/* Unified Filters Bar - Identical styling to Indian / Hollywood / OTT portals */}
+      <div className="catalog-filters-bar glass-panel">
         {/* Cinema Industry */}
         <div className="filter-item">
           <label>Industry</label>
@@ -328,7 +386,7 @@ export default function ReleaseCalendarView({
 
         {/* Release Year */}
         <div className="filter-item">
-          <label>Year</label>
+          <label>Release Year</label>
           <select value={selectedYear} onChange={e => setSelectedYear(e.target.value)}>
             {years.map(yr => (
               <option key={yr} value={yr}>
@@ -340,7 +398,7 @@ export default function ReleaseCalendarView({
 
         {/* Release Month */}
         <div className="filter-item">
-          <label>Month</label>
+          <label>Release Month</label>
           <select value={selectedMonth} onChange={e => setSelectedMonth(e.target.value)}>
             {months.map(m => (
               <option key={m} value={m}>
@@ -362,6 +420,31 @@ export default function ReleaseCalendarView({
             <option value="title-asc">Movie Title (A to Z)</option>
             <option value="title-desc">Movie Title (Z to A)</option>
           </select>
+        </div>
+
+        {/* Search Input */}
+        <div className="filter-item search-filter-item">
+          <label>Search Releases</label>
+          <div className="cal-search-input-wrap">
+            <Search size={16} className="text-muted" />
+            <input 
+              type="text" 
+              placeholder="Title, genre, language..."
+              value={searchQuery}
+              onChange={e => setSearchQuery(e.target.value)}
+              className="cal-search-input"
+            />
+            {searchQuery && (
+              <button 
+                type="button" 
+                className="cal-search-clear" 
+                onClick={() => setSearchQuery('')} 
+                title="Clear search"
+              >
+                ✕
+              </button>
+            )}
+          </div>
         </div>
       </div>
 
@@ -482,15 +565,6 @@ export default function ReleaseCalendarView({
           box-shadow: 0 0 12px rgba(56, 189, 248, 0.35);
         }
 
-        /* Desktop Filter Bar Grid */
-        .releases-filters-bar {
-          display: grid;
-          grid-template-columns: 1.4fr 1fr 0.9fr 0.9fr 1.2fr;
-          gap: 16px;
-          align-items: flex-end;
-          margin-bottom: 24px;
-        }
-
         .cal-search-input-wrap {
           display: flex;
           align-items: center;
@@ -498,7 +572,7 @@ export default function ReleaseCalendarView({
           background: var(--bg-surface-elevated);
           border: 1px solid var(--border-subtle);
           border-radius: var(--radius-md);
-          padding: 8px 12px;
+          padding: 10px 14px;
           height: 42px;
           transition: border-color var(--transition-fast);
         }
@@ -511,7 +585,7 @@ export default function ReleaseCalendarView({
           border: none;
           outline: none;
           color: var(--text-main);
-          font-size: 0.88rem;
+          font-size: 0.9rem;
           font-family: inherit;
         }
         .cal-search-clear {
@@ -580,32 +654,12 @@ export default function ReleaseCalendarView({
             font-size: 0.8rem;
             flex-shrink: 0;
           }
-
-          /* 2-column mobile filter grid instead of 5 stacked full-width rows */
-          .releases-filters-bar {
-            grid-template-columns: 1fr 1fr !important;
-            gap: 10px !important;
-            padding: 12px !important;
-            margin-bottom: 16px !important;
-          }
-          .releases-search-col {
-            grid-column: 1 / -1 !important;
-          }
-          .filter-item select {
-            padding: 8px 10px !important;
-            font-size: 0.82rem !important;
-            height: 38px;
-          }
           .cal-search-input-wrap {
             height: 38px;
-            padding: 6px 10px;
+            padding: 8px 12px;
           }
           .cal-search-input {
-            font-size: 0.82rem;
-          }
-          .filter-item label {
-            font-size: 0.72rem !important;
-            margin-bottom: 2px;
+            font-size: 0.84rem;
           }
           .calendar-results-meta {
             flex-direction: column;

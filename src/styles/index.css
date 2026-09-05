@@ -3475,14 +3475,16 @@ button {
   .tab-view:not(.discover-tab) > .container > .grid-movies,
   .tab-view:not(.discover-tab) > .grid-movies,
   .catalog-view .grid-movies,
-  .catalog-container .grid-movies {
+  .catalog-container .grid-movies,
+  .release-calendar-root .grid-movies {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 10px !important;
     margin-top: 14px !important;
   }
   .tab-view:not(.discover-tab) .movie-card-root,
-  .catalog-view .movie-card-root {
+  .catalog-view .movie-card-root,
+  .release-calendar-root .movie-card-root {
     width: 100% !important;
     border-radius: var(--radius-md) !important;
   }
