@@ -325,7 +325,9 @@ async function run() {
     { filename: 'OakShowGalleries.html', title: 'OakShow Galleries — HD Posters, Wallpapers & Stills', desc: 'High-definition official movie wallpapers, photoshoot stills, character posters.' },
     { filename: 'OakShowReviews.html', title: 'OakShow Reviews — Certified Critic Ratings & Remarks', desc: 'Unbiased film criticism, certified reviewer profiles, and OakShow official remarks.' },
     { filename: 'OakShowBlog.html', title: 'OakShow Cinema Perspectives & Editorial Essays', desc: 'In-depth cinema features, retrospectives, and cultural commentary.' },
-    { filename: 'OakShowEmergency.html', title: 'Public Emergencies, Helplines & Relief Portals — OakShow', desc: 'Official helplines, relief funds, and disaster management portals.' }
+    { filename: 'OakShowEmergency.html', title: 'Public Emergencies, Helplines & Relief Portals — OakShow', desc: 'Official helplines, relief funds, and disaster management portals.' },
+    { filename: 'Careers.html', title: 'Careers at OakShow | Now Become a Critic', desc: 'Be a critic with OakShow. Join the OakForce and publish your movie, series, and video game reviews with full credits.', ogImage: `${DOMAIN}/images/become-a-movie-critic.jpg` },
+    { filename: 'careers.html', title: 'Careers at OakShow | Now Become a Critic', desc: 'Be a critic with OakShow. Join the OakForce and publish your movie, series, and video game reviews with full credits.', ogImage: `${DOMAIN}/images/become-a-movie-critic.jpg` }
   ];
 
   console.log(`📦 Prerendering ${hubs.length} category hubs & index sections...`);
@@ -333,17 +335,40 @@ async function run() {
   for (const h of hubs) {
     const outPath = path.join(distDir, h.filename);
     const canonical = `${DOMAIN}/${h.filename}`;
-    const bodyContent = `
+    let bodyContent = `
       <h1>${escapeHtml(h.title)}</h1>
       <p>${escapeHtml(h.desc)}</p>
       <p><a href="${DOMAIN}/">Explore OakShow Homepage</a></p>
     `;
 
+    if (h.filename.toLowerCase().startsWith('careers')) {
+      bodyContent = `
+        <div class="careers-prerender-container" style="max-width:900px;margin:0 auto;padding:24px;font-family:sans-serif;">
+          <h1>Careers at OakShow | Now Become a Critic</h1>
+          <p>Have you ever dreamed to be a movie/series/game critic? With OakShow, we provide the platform for each and every movie, series, and game buff to explore the world of becoming a critic.</p>
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:20px 0;background:#000;">
+            <iframe src="https://player.vimeo.com/video/318354607" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+          <h3>Submit Your Critic Application</h3>
+          <form action="https://formspree.io/oakshow0@gmail.com" method="post" style="display:flex;flex-direction:column;gap:12px;max-width:500px;">
+            <input type="text" name="Your Name" placeholder="Your Name" required style="padding:10px;" />
+            <input type="email" name="Your Email" placeholder="Your Email" required style="padding:10px;" />
+            <input type="tel" name="Phone Number" placeholder="Phone Number" required style="padding:10px;" />
+            <textarea name="Message" placeholder="Message & Sample Review" required rows="4" style="padding:10px;"></textarea>
+            <input type="submit" value="Submit Application" style="padding:12px;background:#0284c7;color:#fff;border:none;cursor:pointer;font-weight:bold;" />
+          </form>
+          <div style="margin-top:30px;">
+            <p><strong>The OakForce:</strong> "Just For the record, our force is 'Gender Neutral', 'Race Neutral', 'Religious Neutral' and 'Political Neutral', We are the OakForce. PS: Thanks Deadpool 2"</p>
+          </div>
+        </div>
+      `;
+    }
+
     const html = generatePrerenderHtml(baseHtml, {
       title: h.title,
       description: h.desc,
       canonicalUrl: canonical,
-      ogImage: `${DOMAIN}/favicon.png`,
+      ogImage: h.ogImage || `${DOMAIN}/favicon.png`,
       ogType: 'website',
       bodyContent
     });

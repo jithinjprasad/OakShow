@@ -43,6 +43,9 @@ export function resolveSlugToRoute(rawSlug, rawPath = '') {
   if (lower === 'digger') {
     return { type: 'legacy', id: 'Digger', filename: 'Digger.html', raw: rawPath };
   }
+  if (lower === 'careers' || lower === 'career' || lower === 'become-a-critic' || lower === 'critic-jobs') {
+    return { type: 'careers', id: null, raw: rawPath };
+  }
 
   // Core Sections & Hubs
   if (lower === 'oakshownews' || lower === 'news' || lower === 'newsroom') {
@@ -224,6 +227,7 @@ export function parseCurrentRoute() {
     let canonicalUrl = hubs.includes(clean.toLowerCase()) ? `/${clean}` : (clean ? `/${clean}.html` : '/');
     if (clean.toLowerCase() === 'im-game') canonicalUrl = '/ImGame.html';
     if (clean.toLowerCase() === 'gail-daughtry-and-the-celebrity-sex-pass') canonicalUrl = '/GailDaughtryandtheCelebritySexPass.html';
+    if (clean.toLowerCase() === 'careers') canonicalUrl = '/Careers.html';
     if (pathname !== canonicalUrl && !pathname.endsWith(`/${clean}`) && !pathname.endsWith(`/${clean}.html`)) {
       try {
         window.history.replaceState(null, '', canonicalUrl);
@@ -266,6 +270,8 @@ export function navigateTo(target, replace = false) {
   let targetPath = '';
   if (hubs.includes(lower)) {
     targetPath = `/${clean}`;
+  } else if (lower === 'careers') {
+    targetPath = '/Careers.html';
   } else {
     // Everything else (movies, series, episodes, items) navigates to /<name>.html
     targetPath = `/${clean}.html`;

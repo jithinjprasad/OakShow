@@ -1,15 +1,20 @@
 import React from 'react';
-import { X, Bookmark, Film, Trash2, ChevronRight, Play } from 'lucide-react';
+import { X, Bookmark, Film, Trash2, ChevronRight, Play, CheckCircle2, Cloud } from 'lucide-react';
 
 export default function BookmarksDrawer({ 
   isOpen, 
   onClose, 
   bookmarkedMovies, 
+  bookmarks,
   onSelectMovie, 
   onRemoveBookmark,
-  onClearAll 
+  onClearAll,
+  currentUser,
+  onOpenAuth
 }) {
   if (!isOpen) return null;
+
+  const list = Array.isArray(bookmarkedMovies) ? bookmarkedMovies : (Array.isArray(bookmarks) ? bookmarks : []);
 
   return (
     <div className="bookmarks-backdrop animate-fade-in" onClick={onClose}>
@@ -17,12 +22,34 @@ export default function BookmarksDrawer({
         <div className="bookmarks-header">
           <div className="bookmarks-title-group">
             <Bookmark size={20} fill="#ffb800" color="#ffb800" />
-            <h3>Your Watchlist ({bookmarkedMovies.length})</h3>
+            <h3>Your Watchlist ({list.length})</h3>
           </div>
           <button className="bookmarks-close-btn" onClick={onClose}>
             <X size={20} />
           </button>
         </div>
+
+        {/* Cloud Watchlist Status / Sync Banner */}
+        {currentUser ? (
+          <div className="watchlist-cloud-status-banner">
+            <Cloud size={14} className="text-emerald" />
+            <span>Watchlist synced with your account</span>
+          </div>
+        ) : (
+          <div className="watchlist-signin-prompt-banner">
+            <span>Save across devices?</span>
+            <button 
+              type="button" 
+              className="watchlist-signin-link"
+              onClick={() => {
+                onClose();
+                if (onOpenAuth) onOpenAuth('signin');
+              }}
+            >
+              Sign in to sync
+            </button>
+          </div>
+        )}
 
         <div className="bookmarks-body">
           {bookmarkedMovies.length > 0 ? (
@@ -123,6 +150,39 @@ export default function BookmarksDrawer({
           padding: 20px 24px;
           border-bottom: 1px solid var(--border-subtle);
           background: var(--bg-surface-elevated);
+        }
+        .watchlist-cloud-status-banner {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          padding: 8px 24px;
+          background: rgba(5, 150, 105, 0.08);
+          border-bottom: 1px solid rgba(5, 150, 105, 0.2);
+          font-size: 0.76rem;
+          font-weight: 700;
+          color: var(--accent-emerald);
+        }
+        .watchlist-signin-prompt-banner {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 8px 24px;
+          background: rgba(2, 132, 199, 0.08);
+          border-bottom: 1px solid rgba(2, 132, 199, 0.2);
+          font-size: 0.76rem;
+          color: var(--text-muted);
+        }
+        .watchlist-signin-link {
+          background: none;
+          border: none;
+          padding: 0;
+          color: var(--accent-primary);
+          font-weight: 800;
+          cursor: pointer;
+          font-size: 0.76rem;
+        }
+        .watchlist-signin-link:hover {
+          text-decoration: underline;
         }
         .bookmarks-title-group {
           display: flex;

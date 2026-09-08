@@ -28,7 +28,16 @@ import BlogHub from '../components/BlogHub';
 import GalleriesHub from '../components/GalleriesHub';
 import CopyrightPolicyModal from '../components/CopyrightPolicyModal';
 import BookmarksDrawer from '../components/BookmarksDrawer';
+import CareersPage from '../components/CareersPage';
+import AuthModal from '../components/AuthModal';
 import Footer from '../components/Footer';
+
+import { 
+  onAuthChange, 
+  logoutUser, 
+  saveWatchlistToCloud, 
+  fetchWatchlistFromCloud 
+} from '../utils/firebase';
 
 // Data imports
 import moviesData from '../../data/movies.json';
@@ -85,7 +94,7 @@ export default function App() {
   const [sortBy, setSortBy] = useState('latest-high'); // 'latest-high', 'rating', 'newest', 'title'
   const [visibleCount, setVisibleCount] = useState(24);
 
-  // Watchlist Local Storage
+  // Watchlist Local Storage & Cloud Sync
   const [bookmarks, setBookmarks] = useState(() => {
     try {
       const saved = localStorage.getItem('oakshow_watchlist');
@@ -94,6 +103,54 @@ export default function App() {
       return [];
     }
   });
+
+  // User Auth State
+  const [currentUser, setCurrentUser] = useState(null);
+  const [authModalOpen, setAuthModalOpen] = useState(false);
+  const [authModalMode, setAuthModalMode] = useState('signin');
+
+  // Listen to Firebase Auth state changes & sync cloud watchlist
+  useEffect(() => {
+    const unsubscribe = onAuthChange(async (user) => {
+      setCurrentUser(user);
+      if (user) {
+        try {
+          const cloudItems = await fetchWatchlistFromCloud(user.uid);
+          if (cloudItems && cloudItems.length > 0) {
+            setBookmarks(prev => {
+              const map = new Map();
+              cloudItems.forEach(item => map.set(item.id, item));
+              prev.forEach(item => map.set(item.id, item));
+              const merged = Array.from(map.values());
+              saveWatchlistToCloud(user.uid, merged);
+              return merged;
+            });
+          } else {
+            const savedLocal = localStorage.getItem('oakshow_watchlist');
+            if (savedLocal) {
+              const parsed = JSON.parse(savedLocal);
+              if (parsed.length > 0) {
+                saveWatchlistToCloud(user.uid, parsed);
+              }
+            }
+          }
+        } catch (err) {
+          console.warn('Watchlist sync error:', err);
+        }
+      }
+    });
+    return () => unsubscribe();
+  }, []);
+
+  const handleOpenAuth = (mode = 'signin') => {
+    setAuthModalMode(mode);
+    setAuthModalOpen(true);
+  };
+
+  const handleLogout = async () => {
+    await logoutUser();
+    setCurrentUser(null);
+  };
 
   // Theme State: 'dark' by default for mobile browsers, 'light' for desktop, switchable
   const [theme, setTheme] = useState(() => {
@@ -124,10 +181,13 @@ export default function App() {
   useEffect(() => {
     try {
       localStorage.setItem('oakshow_watchlist', JSON.stringify(bookmarks));
+      if (currentUser?.uid) {
+        saveWatchlistToCloud(currentUser.uid, bookmarks);
+      }
     } catch (e) {
       console.error(e);
     }
-  }, [bookmarks]);
+  }, [bookmarks, currentUser]);
 
   // Global Keyboard Shortcuts (Ctrl+K for search)
   useEffect(() => {
@@ -448,6 +508,11 @@ export default function App() {
 
     if (!resolvedId && !item.title) return;
 
+    if (itemType === 'careers' || resolvedId?.toLowerCase() === 'careers') {
+      navigate('careers');
+      return;
+    }
+
     if (itemType === 'emergency' || itemType === 'emergencies') {
       navigate(`emergency/${resolvedId}`);
     } else if (itemType === 'music') {
@@ -509,6 +574,42 @@ export default function App() {
   // ROUTE RENDERING DISPATCHER
   // =========================================================================
 
+  // 0. Standalone CAREERS & BECOME A CRITIC PAGE
+  if (route.type === 'careers' || ((route.type === 'legacy' || route.type === 'movie') && (route.id || '').toLowerCase().replace(/\.html$/, '') === 'careers')) {
+    updatePageMeta(
+      'Careers at OakShow | Now Become a Critic',
+      'Have you ever dreamed to be a movie, series, or game critic? Make that dream a reality with OakShow. Join the OakForce, publish verified reviews, and become a critic on OakShow.',
+      '/images/become-a-movie-critic.jpg',
+      'https://oakshow.in/Careers.html'
+    );
+    return (
+      <div className="app-root">
+        <Navbar
+          activeTab="reviews"
+          setActiveTab={navigate}
+          openSearch={() => setSearchOpen(true)}
+          bookmarkCount={bookmarks.length}
+          onOpenBookmarks={() => setBookmarksDrawerOpen(true)}
+          totalMoviesCount={moviesData.length}
+          currentUser={currentUser}
+          onOpenAuth={handleOpenAuth}
+          onLogout={handleLogout}
+        />
+        <CareersPage
+          onNavigate={navigate}
+          onBack={() => navigate('reviews')}
+        />
+        <Footer onSelectCategory={navigate} />
+        <SearchModal
+          isOpen={searchOpen}
+          onClose={() => setSearchOpen(false)}
+          searchIndex={searchIndexData}
+          onSelectItem={handleSelectItem}
+        />
+      </div>
+    );
+  }
+
   // 1. Standalone MOVIE / LEGACY PAGE
   if (route.type === 'movie' || route.type === 'legacy') {
     const cleanId = (route.id || '').toLowerCase().replace(/\.html$/, '');
@@ -534,6 +635,9 @@ export default function App() {
             bookmarkCount={bookmarks.length}
             onOpenBookmarks={() => setBookmarksDrawerOpen(true)}
             totalMoviesCount={moviesData.length}
+          currentUser={currentUser}
+          onOpenAuth={handleOpenAuth}
+          onLogout={handleLogout}
           />
           <EmergencyDetailPage
             emergency={targetEmergency}
@@ -573,6 +677,9 @@ export default function App() {
             bookmarkCount={bookmarks.length}
             onOpenBookmarks={() => setBookmarksDrawerOpen(true)}
             totalMoviesCount={moviesData.length}
+          currentUser={currentUser}
+          onOpenAuth={handleOpenAuth}
+          onLogout={handleLogout}
           />
           <div className="container tab-view">
             <GalleriesHub
@@ -625,6 +732,9 @@ export default function App() {
             bookmarkCount={bookmarks.length}
             onOpenBookmarks={() => setBookmarksDrawerOpen(true)}
             totalMoviesCount={moviesData.length}
+          currentUser={currentUser}
+          onOpenAuth={handleOpenAuth}
+          onLogout={handleLogout}
           />
           <div className="container tab-view">
             <CriticReviewsHub
@@ -662,6 +772,9 @@ export default function App() {
             bookmarkCount={bookmarks.length}
             onOpenBookmarks={() => setBookmarksDrawerOpen(true)}
             totalMoviesCount={moviesData.length}
+          currentUser={currentUser}
+          onOpenAuth={handleOpenAuth}
+          onLogout={handleLogout}
           />
           <ReleaseMonthDetailPage
             releaseItem={targetRelease}
@@ -698,6 +811,9 @@ export default function App() {
             bookmarkCount={bookmarks.length}
             onOpenBookmarks={() => setBookmarksDrawerOpen(true)}
             totalMoviesCount={moviesData.length}
+          currentUser={currentUser}
+          onOpenAuth={handleOpenAuth}
+          onLogout={handleLogout}
           />
           <SportsDetailPage
             tournament={targetSport}
@@ -734,6 +850,9 @@ export default function App() {
             bookmarkCount={bookmarks.length}
             onOpenBookmarks={() => setBookmarksDrawerOpen(true)}
             totalMoviesCount={moviesData.length}
+          currentUser={currentUser}
+          onOpenAuth={handleOpenAuth}
+          onLogout={handleLogout}
           />
           <GameDetailPage
             game={targetGame}
@@ -770,6 +889,9 @@ export default function App() {
             bookmarkCount={bookmarks.length}
             onOpenBookmarks={() => setBookmarksDrawerOpen(true)}
             totalMoviesCount={moviesData.length}
+          currentUser={currentUser}
+          onOpenAuth={handleOpenAuth}
+          onLogout={handleLogout}
           />
           <BookDetailPage
             book={targetBook}
@@ -823,6 +945,9 @@ export default function App() {
                   bookmarkCount={bookmarks.length}
                   onOpenBookmarks={() => setBookmarksDrawerOpen(true)}
                   totalMoviesCount={moviesData.length}
+          currentUser={currentUser}
+          onOpenAuth={handleOpenAuth}
+          onLogout={handleLogout}
                 />
                 <EpisodeDetailPage
                   episode={targetEp}
@@ -882,6 +1007,9 @@ export default function App() {
             bookmarkCount={bookmarks.length}
             onOpenBookmarks={() => setBookmarksDrawerOpen(true)}
             totalMoviesCount={moviesData.length}
+          currentUser={currentUser}
+          onOpenAuth={handleOpenAuth}
+          onLogout={handleLogout}
           />
           <SeriesDetailPage
             series={targetSeries}
@@ -965,6 +1093,9 @@ export default function App() {
           bookmarkCount={bookmarks.length}
           onOpenBookmarks={() => setBookmarksDrawerOpen(true)}
           totalMoviesCount={moviesData.length}
+          currentUser={currentUser}
+          onOpenAuth={handleOpenAuth}
+          onLogout={handleLogout}
         />
         <MovieDetailPage
           movie={targetMovie}
@@ -988,6 +1119,14 @@ export default function App() {
           onRemoveBookmark={removeBookmark}
           onClearAll={clearAllBookmarks}
           onSelectMovie={(m) => navigate(`movie/${m.id}`)}
+          currentUser={currentUser}
+          onOpenAuth={handleOpenAuth}
+        />
+        <AuthModal
+          isOpen={authModalOpen}
+          onClose={() => setAuthModalOpen(false)}
+          initialMode={authModalMode}
+          onSuccess={(u) => setCurrentUser(u)}
         />
       </div>
     );
@@ -1057,6 +1196,9 @@ export default function App() {
           bookmarkCount={bookmarks.length}
           onOpenBookmarks={() => setBookmarksDrawerOpen(true)}
           totalMoviesCount={moviesData.length}
+          currentUser={currentUser}
+          onOpenAuth={handleOpenAuth}
+          onLogout={handleLogout}
         />
         <SeriesDetailPage
           series={targetSeries}
@@ -1143,6 +1285,9 @@ export default function App() {
           bookmarkCount={bookmarks.length}
           onOpenBookmarks={() => setBookmarksDrawerOpen(true)}
           totalMoviesCount={moviesData.length}
+          currentUser={currentUser}
+          onOpenAuth={handleOpenAuth}
+          onLogout={handleLogout}
         />
         <EpisodeDetailPage
           episode={targetEpisode}
@@ -1182,6 +1327,9 @@ export default function App() {
           bookmarkCount={bookmarks.length}
           onOpenBookmarks={() => setBookmarksDrawerOpen(true)}
           totalMoviesCount={moviesData.length}
+          currentUser={currentUser}
+          onOpenAuth={handleOpenAuth}
+          onLogout={handleLogout}
         />
         <GameDetailPage
           game={targetGame}
@@ -1217,6 +1365,9 @@ export default function App() {
           bookmarkCount={bookmarks.length}
           onOpenBookmarks={() => setBookmarksDrawerOpen(true)}
           totalMoviesCount={moviesData.length}
+          currentUser={currentUser}
+          onOpenAuth={handleOpenAuth}
+          onLogout={handleLogout}
         />
         <BookDetailPage
           book={targetBook}
@@ -1252,6 +1403,9 @@ export default function App() {
           bookmarkCount={bookmarks.length}
           onOpenBookmarks={() => setBookmarksDrawerOpen(true)}
           totalMoviesCount={moviesData.length}
+          currentUser={currentUser}
+          onOpenAuth={handleOpenAuth}
+          onLogout={handleLogout}
         />
         <SportsDetailPage
           tournament={targetTournament}
@@ -1300,6 +1454,9 @@ export default function App() {
             bookmarkCount={bookmarks.length}
             onOpenBookmarks={() => setBookmarksDrawerOpen(true)}
             totalMoviesCount={moviesData.length}
+          currentUser={currentUser}
+          onOpenAuth={handleOpenAuth}
+          onLogout={handleLogout}
           />
           <EpisodeDetailPage
             episode={targetEpisode}
@@ -1343,6 +1500,9 @@ export default function App() {
             bookmarkCount={bookmarks.length}
             onOpenBookmarks={() => setBookmarksDrawerOpen(true)}
             totalMoviesCount={moviesData.length}
+          currentUser={currentUser}
+          onOpenAuth={handleOpenAuth}
+          onLogout={handleLogout}
           />
           <ReleaseMonthDetailPage
             releaseItem={targetRelease}
@@ -1388,6 +1548,9 @@ export default function App() {
           bookmarkCount={bookmarks.length}
           onOpenBookmarks={() => setBookmarksDrawerOpen(true)}
           totalMoviesCount={moviesData.length}
+          currentUser={currentUser}
+          onOpenAuth={handleOpenAuth}
+          onLogout={handleLogout}
         />
         <CriticProfilePage
           critic={targetCritic}
@@ -1409,6 +1572,14 @@ export default function App() {
           onRemoveBookmark={removeBookmark}
           onClearAll={clearAllBookmarks}
           onSelectMovie={(m) => navigate(`movie/${m.id}`)}
+          currentUser={currentUser}
+          onOpenAuth={handleOpenAuth}
+        />
+        <AuthModal
+          isOpen={authModalOpen}
+          onClose={() => setAuthModalOpen(false)}
+          initialMode={authModalMode}
+          onSuccess={(u) => setCurrentUser(u)}
         />
       </div>
     );
@@ -1438,6 +1609,9 @@ export default function App() {
           bookmarkCount={bookmarks.length}
           onOpenBookmarks={() => setBookmarksDrawerOpen(true)}
           totalMoviesCount={moviesData.length}
+          currentUser={currentUser}
+          onOpenAuth={handleOpenAuth}
+          onLogout={handleLogout}
         />
         <EmergencyDetailPage
           emergency={targetEmergency}
@@ -1481,6 +1655,9 @@ export default function App() {
             bookmarkCount={bookmarks.length}
             onOpenBookmarks={() => setBookmarksDrawerOpen(true)}
             totalMoviesCount={moviesData.length}
+          currentUser={currentUser}
+          onOpenAuth={handleOpenAuth}
+          onLogout={handleLogout}
           />
           <div className="container">
             <GalleriesHub
@@ -1504,6 +1681,14 @@ export default function App() {
             onRemoveBookmark={removeBookmark}
             onClearAll={clearAllBookmarks}
             onSelectMovie={(m) => navigate(`movie/${m.id}`)}
+            currentUser={currentUser}
+            onOpenAuth={handleOpenAuth}
+          />
+          <AuthModal
+            isOpen={authModalOpen}
+            onClose={() => setAuthModalOpen(false)}
+            initialMode={authModalMode}
+            onSuccess={(u) => setCurrentUser(u)}
           />
         </div>
       );
@@ -1563,6 +1748,9 @@ export default function App() {
         bookmarkCount={bookmarks.length}
         onOpenBookmarks={() => setBookmarksDrawerOpen(true)}
         totalMoviesCount={moviesData.length}
+        currentUser={currentUser}
+        onOpenAuth={handleOpenAuth}
+        onLogout={handleLogout}
       />
 
       <main className="main-content">
@@ -2064,6 +2252,16 @@ export default function App() {
           setBookmarksDrawerOpen(false);
           navigate(`movie/${m.id}`);
         }}
+        currentUser={currentUser}
+        onOpenAuth={handleOpenAuth}
+      />
+
+      {/* Auth Modal */}
+      <AuthModal
+        isOpen={authModalOpen}
+        onClose={() => setAuthModalOpen(false)}
+        initialMode={authModalMode}
+        onSuccess={(u) => setCurrentUser(u)}
       />
     </div>
   );

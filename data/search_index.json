@@ -1,5 +1,16 @@
 [
   {
+    "id": "GDN",
+    "title": "G.D.N (G.D. Naidu: The Edison of India)",
+    "type": "movie",
+    "category": "Tamil",
+    "year": "2026",
+    "genre": "Biographical, Drama, History, Period",
+    "language": "Tamil",
+    "score": "8.2/10",
+    "poster": "pics/Films/GDN/1.jpeg"
+  },
+  {
     "id": "Digger",
     "title": "Digger",
     "type": "movie",
@@ -3536,12 +3547,12 @@
   },
   {
     "id": "Careers",
-    "title": "Info",
-    "type": "movie",
-    "category": "Indian",
-    "genre": "Entertainment",
-    "language": "Hindi",
-    "year": "2018",
+    "title": "Careers at OakShow — Become a Critic",
+    "type": "careers",
+    "category": "Careers",
+    "genre": "Critic & Jobs",
+    "language": "All",
+    "year": "2026",
     "poster": "images/become-a-movie-critic.jpg"
   },
   {

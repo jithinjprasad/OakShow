@@ -137,24 +137,24 @@ export default function Footer({ onSelectCategory, stats }) {
             </ul>
           </div>
 
-          {/* Special Hubs & Sitemap Column */}
+          {/* Others Column */}
           <div className="footer-nav-col">
-            <h4 className="footer-heading">Special Hubs & Index</h4>
+            <h4 className="footer-heading">Others</h4>
             <ul className="footer-links-list">
-              <li><button onClick={() => onSelectCategory ? onSelectCategory('news') : navigateTo('news')}>OakShow News</button></li>
+              <li><button onClick={() => onSelectCategory ? onSelectCategory('news') : navigateTo('news')}>News</button></li>
               <li><button onClick={() => onSelectCategory ? onSelectCategory('emergencies') : navigateTo('emergencies')}>🚨 Emergencies, Helplines & Relief</button></li>
-              <li><button onClick={() => onSelectCategory ? onSelectCategory('remarks') : navigateTo('remarks')}>OakShow Remarks & Meanings Guide</button></li>
-              <li><button onClick={() => onSelectCategory ? onSelectCategory('games-books') : navigateTo('games-books')}>Video Games & Literature</button></li>
-              <li><button onClick={() => onSelectCategory ? onSelectCategory('blog') : navigateTo('blog')}>OakShow Editorial Blogs & Essays</button></li>
+              <li><button onClick={() => onSelectCategory ? onSelectCategory('remarks') : navigateTo('remarks')}>OakShow Remarks</button></li>
+              <li><button onClick={() => onSelectCategory ? onSelectCategory('games-books') : navigateTo('games-books')}>Video Games</button></li>
+              <li><button onClick={() => onSelectCategory ? onSelectCategory('blog') : navigateTo('blog')}>Blogs</button></li>
               <li>
                 <a href="/sitemap.xml" target="_blank" rel="noreferrer" className="sitemap-xml-link" title="View Full XML Sitemap Index">
                   <Map size={13} className="inline-icon text-gold" />
-                  <span>XML Sitemap (Full Index)</span>
+                  <span>Sitemap</span>
                   <ExternalLink size={11} />
                 </a>
               </li>
-              <li><a href="/legacy_index.html" target="_blank" rel="noreferrer" className="legacy-link"><Archive size={13} /> View Original Legacy Archive</a></li>
-              <li><a href="/PrivacyPolicy.html" target="_blank" rel="noreferrer">Privacy & Copyright Policy</a></li>
+              <li><button onClick={() => onSelectCategory ? onSelectCategory('careers') : navigateTo('careers')}>Careers</button></li>
+              <li><a href="/PrivacyPolicy.html" target="_blank" rel="noreferrer">Privacy and Policy</a></li>
             </ul>
           </div>
         </div>

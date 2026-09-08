@@ -1,5 +1,287 @@
 [
   {
+    "id": "GDN",
+    "title": "G.D.N (G.D. Naidu: The Edison of India)",
+    "fileName": "GDN.html",
+    "cleanUrl": "/GDN.html",
+    "type": "Movie",
+    "summary": "G.D.N is a 2026 Indian Tamil-language biographical drama written and directed by Krishnakumar Ramakumar, starring R. Madhavan in the titular role of legendary inventor and industrialist G.D. Naidu, alongside Priyamani, Dushara Vijayan, Sathyaraj, and Jayaram. Produced by Tricolour Films and Varghese Moolan Pictures with music by Govind Vasantha, the film chronicles the extraordinary life and engineering triumphs of the man hailed as the 'Edison of India.'",
+    "plot": "Set across pre- and post-independent India, the film traces the inspiring true journey of Gopalswamy Doraiswamy Naidu from his humble beginnings as an inquisitive village boy in Coimbatore to becoming one of India's most prolific mechanical inventors and visionary industrialists. Driven by an insatiable curiosity for machinery, Naidu designs India's first indigenous electric motor, innovative transportation fleets, and precision optical instruments, repeatedly defying colonial restrictions and bureaucratic roadblocks. As corporate rivals and skepticism challenge his unconventional genius, Naidu remains committed to technological self-reliance, uplifting workers and revolutionizing public transit. Supported by his wives Chellammal (Priyamani) and Ranganayaki (Dushara Vijayan), his relentless pursuit of scientific progress earns him global acclaim and the enduring moniker of the 'Edison of India.' Source: Wikipedia & IMDb",
+    "language": "Tamil",
+    "releaseDate": "August 07, 2026",
+    "year": "2026",
+    "genre": "Biographical, Drama, History, Period",
+    "duration": "2hr 32mins",
+    "director": "Krishnakumar Ramakumar",
+    "basedOn": "Life of G. D. Naidu (The Edison of India)",
+    "writers": [
+      "Krishnakumar Ramakumar"
+    ],
+    "producers": [
+      "R. Madhavan",
+      "Sarita Madhavan",
+      "Varghese Moolan",
+      "Vijay Moolan"
+    ],
+    "cinematography": "Nirav Shah",
+    "music": "Govind Vasantha",
+    "editor": "A. Sreekar Prasad",
+    "productionCompanies": [
+      "Tricolour Films",
+      "Varghese Moolan Pictures"
+    ],
+    "distribution": [
+      "AGS Entertainment",
+      "Netflix"
+    ],
+    "boxOffice": {
+      "budget": "₹35 Crore",
+      "worldwideGross": "₹6.32 Crore",
+      "domesticGross": "₹5.10 Crore",
+      "verdict": "Commercial Average / Critically Acclaimed Biopic"
+    },
+    "poster": "pics/Films/GDN/1.jpeg",
+    "gallery": [
+      {
+        "src": "pics/Films/GDN/1.jpeg",
+        "alt": "G.D.N Official Poster"
+      },
+      {
+        "src": "pics/Films/GDN/2.jpeg",
+        "alt": "G.D.N Movie Banner"
+      },
+      {
+        "src": "pics/Films/GDN/3.jpeg",
+        "alt": "G.D.N Movie Still"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "8.2/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "7.6/10",
+        "url": "https://www.imdb.com/title/tt35712605/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Letterboxd",
+        "score": "3.4/5",
+        "url": "https://letterboxd.com/film/gdn/",
+        "icon": "pics/RatingSiteLogos/letterboxd.png"
+      },
+      {
+        "source": "Times of India",
+        "score": "3/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movie-reviews/g-d-n/movie-review/132902412.cms",
+        "icon": "pics/RatingSiteLogos/times-of-india.ico"
+      },
+      {
+        "source": "Filmibeat",
+        "score": "4/5",
+        "url": "https://www.filmibeat.com/tamil/news/2026/gdn-first-review-r-madhavan-biographical-drama-gets-4-out-of-5-526789.html",
+        "icon": "pics/RatingSiteLogos/filmibeat.png"
+      },
+      {
+        "source": "NDTV",
+        "score": "2.5/5",
+        "url": "https://www.ndtv.com/entertainment/gdn-review-madhavan-is-the-driving-force-but-screenplay-doesnt-support-him-2-5-stars-11877560",
+        "icon": "pics/RatingSiteLogos/ndtv.ico"
+      },
+      {
+        "source": "Rediff",
+        "score": "2.5/5",
+        "url": "https://www.rediff.com/movies/review/gdn-movie-review-madhavan-lifts-generic-biopic/20260810.htm",
+        "icon": "pics/RatingSiteLogos/rediff.png"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "R. Madhavan",
+        "role": "G. D. Naidu",
+        "description": "Visionary inventor, mechanical engineer, and industrialist known as the Edison of India"
+      },
+      {
+        "actor": "Priyamani",
+        "role": "Chellammal",
+        "description": "G.D. Naidu's supportive first wife"
+      },
+      {
+        "actor": "Dushara Vijayan",
+        "role": "Ranganayaki",
+        "description": "G.D. Naidu's second wife and confidante"
+      },
+      {
+        "actor": "Sathyaraj",
+        "role": "Doraiswamy Naidu",
+        "description": "G.D. Naidu's father and traditional village elder"
+      },
+      {
+        "actor": "Jayaram",
+        "role": "P.S.G. Ganga Naidu",
+        "description": "Prominent industrial peer and friend in Coimbatore"
+      },
+      {
+        "actor": "Vinay Rai",
+        "role": "Sir Arthur Hope",
+        "description": "British official representing colonial industrial interests"
+      },
+      {
+        "actor": "Thambi Ramaiah",
+        "role": "Munusamy",
+        "description": "Devoted workshop mechanic and friend"
+      },
+      {
+        "actor": "Yogi Babu",
+        "role": "Subbu",
+        "description": "Apprentice mechanic at the transport depot"
+      }
+    ],
+    "bookings": [
+      {
+        "provider": "BookMyShow",
+        "url": "https://in.bookmyshow.com/movies/kozhikode/gdn/ET00501855",
+        "icon": "pics/BookngWebSiteLogos/book-my-show.png",
+        "label": "Book on BookMyShow",
+        "rank": 1
+      },
+      {
+        "provider": "District",
+        "url": "https://www.district.in/movies/g-d-n-movie-tickets-MV222898?srsltid=AfmBOooshO67ljErP-iVvjBtnIEA2xEL7L4wHGmhN7U3SbbKu10lqr4F",
+        "icon": "pics/BookngWebSiteLogos/district.png",
+        "label": "Book on District",
+        "rank": 2
+      },
+      {
+        "provider": "Fandango",
+        "url": "https://www.fandango.com/gdn-2026-246617/movie-overview",
+        "icon": "pics/BookngWebSiteLogos/fandango.png",
+        "label": "Book on Fandango",
+        "rank": 3
+      }
+    ],
+    "streaming": [
+      {
+        "provider": "Netflix",
+        "url": "https://www.netflix.com/in/title/82853382",
+        "icon": "pics/WatchOnline/netflix.png",
+        "label": "Watch on Netflix",
+        "price": "Subscription",
+        "releaseDate": "September 04, 2026"
+      }
+    ],
+    "musicLinks": [
+      {
+        "platform": "Spotify",
+        "url": "https://open.spotify.com/album/12R7GvGtsaNDbI8ipaSIh3",
+        "icon": "pics/MusicLogos/spotify.png",
+        "label": "Listen on Spotify"
+      },
+      {
+        "platform": "Apple Music",
+        "url": "https://music.apple.com/in/album/g-d-n-original-motion-picture-soundtrack/6797687452",
+        "icon": "pics/MusicLogos/apple-music.png",
+        "label": "Listen on Apple Music"
+      },
+      {
+        "platform": "JioSaavn",
+        "url": "https://www.jiosaavn.com/album/g.d.n/xcXHr76S56I_",
+        "icon": "pics/MusicLogos/jiosaavn.png",
+        "label": "Listen on JioSaavn"
+      }
+    ],
+    "socials": [
+      {
+        "platform": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/G.D.N",
+        "icon": "images/web.png",
+        "label": "Wikipedia Article"
+      },
+      {
+        "platform": "IMDb",
+        "url": "https://www.imdb.com/title/tt35712605/",
+        "icon": "pics/RatingSiteLogos/imdb.png",
+        "label": "View on IMDb"
+      },
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/in/title/82853382",
+        "icon": "pics/WatchOnline/netflix.png",
+        "label": "Stream on Netflix"
+      }
+    ],
+    "similar": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=dg7eWGpQWM0",
+        "youtubeId": "dg7eWGpQWM0",
+        "title": "G.D.N - Official Theatrical Trailer | R. Madhavan | Govind Vasantha"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=DwoL1Ea2808",
+        "youtubeId": "DwoL1Ea2808",
+        "title": "G.D.N - Official Sneak Peek Promo"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=hXVftIUPvbc",
+        "youtubeId": "hXVftIUPvbc",
+        "title": "G.D.N - Audio Song | Govind Vasantha"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "GDN movie review: Madhavan powers an important story that deserved more room to breathe",
+        "url": "https://www.thehindu.com/entertainment/movies/gdn-movie-review-madhavan-powers-an-important-story-that-deserved-more-room-to-breathe/article71317093.ece",
+        "author": "The Hindu",
+        "date": "August 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "GDN Movie Review: Incredible story, inadequate storytelling",
+        "url": "https://www.newindianexpress.com/entertainment/review/2026/Aug/08/tamilreview2026aug07gdn-movie-review-incredible-story-inadequate-storytelling",
+        "author": "The New Indian Express",
+        "date": "August 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "GDN First Review: R Madhavan Biographical Drama Gets 4 Out Of 5",
+        "url": "https://www.filmibeat.com/tamil/news/2026/gdn-first-review-r-madhavan-biographical-drama-gets-4-out-of-5-526789.html",
+        "author": "Filmibeat",
+        "date": "August 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "GDN OTT release date: When and where to watch R Madhavan's biographical film online",
+        "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movies/news/gdn-ott-release-date-when-and-where-can-we-watch-r-madhavans-biographical-film-online/articleshow/133703706.cms",
+        "author": "Times of India",
+        "date": "September 2026",
+        "section": "OTT News"
+      },
+      {
+        "headline": "New Friday OTT Releases: GDN, Dhamaal 4 & More Streaming on Netflix & Prime",
+        "url": "https://www.wionews.com/photos/new-friday-ott-releases-september-4-2026-gdn-dhamaal-4-jagamae-sangeetham-watch-6-new-movies-and-tv-shows-on-netflix-prime-video-and-more-1788435740478",
+        "author": "WION",
+        "date": "September 2026",
+        "section": "OTT Releases"
+      }
+    ],
+    "filePath": "E:/OakShow/GDN.html",
+    "filename": "GDN.html",
+    "category": "Tamil",
+    "status": "Released",
+    "aliases": [
+      "gdn.html",
+      "gdn",
+      "g.d.n",
+      "gdnaidu",
+      "g.d.naidu"
+    ]
+  },
+  {
     "id": "Digger",
     "title": "Digger",
     "fileName": "Digger.html",
@@ -74561,39 +74843,6 @@
     ],
     "articles": [],
     "filePath": "E:/OakShow/Blockers.html"
-  },
-  {
-    "id": "Careers",
-    "slug": "careers",
-    "type": "movie",
-    "category": "Indian",
-    "score": 7.5,
-    "filename": "Careers.html",
-    "title": "Info",
-    "metaTitle": "Careers at OakShow | Now Become a Critic",
-    "description": "Be a critic with OakShow.",
-    "plot": "",
-    "language": "Hindi",
-    "releaseDate": "June 13, 2018 8:35 pm",
-    "year": "2018",
-    "genre": "Entertainment",
-    "duration": "N/A",
-    "director": "",
-    "basedOn": "",
-    "boxOffice": null,
-    "poster": "images/become-a-movie-critic.jpg",
-    "gallery": [],
-    "ratings": [],
-    "cast": [],
-    "bookings": [],
-    "watchOnline": [],
-    "music": [],
-    "officialWebsite": null,
-    "socials": [],
-    "similar": [],
-    "videos": [],
-    "articles": [],
-    "filePath": "E:/OakShow/Careers.html"
   },
   {
     "id": "DhruvaNatchathiram",

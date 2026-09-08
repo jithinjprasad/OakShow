@@ -731,7 +731,7 @@ const ROOT_HUB_PAGES = new Set([
   'hollywood', 'indian', 'recent', 'popular', 'trending', 'upcoming', 'upcoming2', 'upcoming3',
   'home', 'contact', 'privacypolicy', 'terms', 'disclaimer', 'dmca', 'about', 'aboutus',
   'callofdutyblackops4', 'remarksatoakshow', 'submityourreviews', 'oakshowgalleries', 'legacy_index',
-  'trailers', 'trailers2'
+  'trailers', 'trailers2', 'careers'
 ]);
 
 function isHubOrTrailerPage(cleanId) {

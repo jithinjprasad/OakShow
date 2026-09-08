@@ -25,7 +25,9 @@ import {
   Image,
   Sun,
   Moon,
-  Clock
+  Clock,
+  User,
+  LogOut
 } from 'lucide-react';
 import CopyrightPolicyModal from './CopyrightPolicyModal';
 
@@ -37,12 +39,16 @@ export default function Navbar({
   onOpenBookmarks,
   totalMoviesCount,
   theme: propTheme,
-  onToggleTheme: propToggleTheme
+  onToggleTheme: propToggleTheme,
+  currentUser,
+  onOpenAuth,
+  onLogout
 }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [topDropdownOpen, setTopDropdownOpen] = useState(false);
   const [policyModalOpen, setPolicyModalOpen] = useState(false);
+  const [userDropdownOpen, setUserDropdownOpen] = useState(false);
   const [currentTheme, setCurrentTheme] = useState(() => {
     try {
       return localStorage.getItem('oakshow_theme') || 'light';
@@ -248,7 +254,7 @@ export default function Navbar({
   const navItems = [
     { id: 'discover', label: 'Discover', icon: Film },
     { id: 'releases', label: 'Movies Released', icon: Calendar },
-    { id: 'ott', label: 'OTT Releases', icon: MonitorPlay },
+    { id: 'ott', label: 'OTT', icon: MonitorPlay },
     { id: 'series', label: 'Series', icon: Tv },
   ];
 
@@ -395,6 +401,75 @@ export default function Navbar({
               {bookmarkCount > 0 && <span className="bookmark-badge">{bookmarkCount}</span>}
             </button>
 
+            {/* User Account / Sign In (Desktop) */}
+            <div className="user-nav-control desktop-only-control" style={{ position: 'relative' }}>
+              {currentUser ? (
+                <div className="user-dropdown-anchor">
+                  <button
+                    type="button"
+                    className="user-profile-pill"
+                    onClick={() => setUserDropdownOpen(!userDropdownOpen)}
+                    title={currentUser.displayName || currentUser.email || 'Your Account'}
+                  >
+                    {currentUser.photoURL ? (
+                      <img src={currentUser.photoURL} alt="Avatar" className="user-nav-avatar" />
+                    ) : (
+                      <span className="user-nav-letter">
+                        {(currentUser.displayName || currentUser.email || 'U').charAt(0).toUpperCase()}
+                      </span>
+                    )}
+                    <span className="user-nav-name">
+                      {currentUser.displayName ? currentUser.displayName.split(' ')[0] : 'Account'}
+                    </span>
+                    <ChevronDown size={14} className={`dropdown-arrow ${userDropdownOpen ? 'is-open' : ''}`} />
+                  </button>
+
+                  {userDropdownOpen && (
+                    <div className="user-nav-menu glass-panel animate-fade-in">
+                      <div className="unm-user-info">
+                        <strong className="unm-name">{currentUser.displayName || 'OakShow Member'}</strong>
+                        <span className="unm-email">{currentUser.email}</span>
+                      </div>
+                      <div className="unm-divider" />
+                      <button
+                        type="button"
+                        className="unm-item"
+                        onClick={() => {
+                          setUserDropdownOpen(false);
+                          onOpenBookmarks();
+                        }}
+                      >
+                        <Bookmark size={15} className="text-gold" />
+                        <span>Cloud Watchlist ({bookmarkCount})</span>
+                      </button>
+                      <div className="unm-divider" />
+                      <button
+                        type="button"
+                        className="unm-item unm-logout"
+                        onClick={() => {
+                          setUserDropdownOpen(false);
+                          if (onLogout) onLogout();
+                        }}
+                      >
+                        <LogOut size={15} />
+                        <span>Sign Out</span>
+                      </button>
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <button
+                  type="button"
+                  className="user-signin-btn"
+                  onClick={() => onOpenAuth && onOpenAuth('signin')}
+                  title="Sign In or Register"
+                >
+                  <User size={15} />
+                  <span>Sign In</span>
+                </button>
+              )}
+            </div>
+
             {/* Mobile Menu Trigger (Hamburger 3 Lines) */}
             <button
               className={`mobile-toggle-btn ${mobileMenuOpen ? 'is-active' : ''}`}
@@ -496,6 +571,50 @@ export default function Navbar({
                   );
                 })}
               </div>
+            </div>
+
+            {/* MOBILE USER ACCOUNT BLOCK */}
+            <div className="mobile-user-auth-section">
+              {currentUser ? (
+                <div className="mobile-user-profile-box glass-panel">
+                  <div className="mup-left">
+                    {currentUser.photoURL ? (
+                      <img src={currentUser.photoURL} alt="Avatar" className="mup-avatar" />
+                    ) : (
+                      <div className="mup-letter">
+                        {(currentUser.displayName || currentUser.email || 'U').charAt(0).toUpperCase()}
+                      </div>
+                    )}
+                    <div className="mup-details">
+                      <strong>{currentUser.displayName || 'OakShow Member'}</strong>
+                      <span>{currentUser.email}</span>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    className="btn btn-sm btn-outline-custom mup-signout-btn"
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                      if (onLogout) onLogout();
+                    }}
+                  >
+                    <LogOut size={13} className="me-1" />
+                    <span>Sign Out</span>
+                  </button>
+                </div>
+              ) : (
+                <button
+                  type="button"
+                  className="mobile-auth-cta-btn btn btn-primary"
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    if (onOpenAuth) onOpenAuth('signin');
+                  }}
+                >
+                  <User size={16} />
+                  <span>Sign In / Create Free Account</span>
+                </button>
+              )}
             </div>
 
             {/* FUNCTION 2 & 3: WATCHLIST & THEME TOGGLE */}
@@ -1549,6 +1668,226 @@ export default function Navbar({
         .mdf-policy-btn:hover {
           color: var(--accent-primary);
           border-color: var(--accent-primary);
+        }
+
+        /* User Profile & Auth Nav Controls */
+        .user-signin-btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          padding: 6px 14px;
+          border-radius: var(--radius-full);
+          background: rgba(2, 132, 199, 0.1);
+          border: 1px solid rgba(2, 132, 199, 0.28);
+          color: var(--accent-primary);
+          font-size: 0.82rem;
+          font-weight: 700;
+          cursor: pointer;
+          transition: all var(--transition-fast);
+        }
+
+        .user-signin-btn:hover {
+          background: var(--accent-primary);
+          color: #ffffff;
+          border-color: var(--accent-primary);
+          transform: translateY(-1px);
+        }
+
+        .user-profile-pill {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          padding: 4px 10px 4px 4px;
+          border-radius: var(--radius-full);
+          background: var(--bg-surface-elevated);
+          border: 1px solid var(--border-subtle);
+          color: var(--text-main);
+          font-size: 0.82rem;
+          font-weight: 700;
+          cursor: pointer;
+          transition: all var(--transition-fast);
+        }
+
+        .user-profile-pill:hover {
+          border-color: var(--accent-primary);
+          background: var(--bg-surface);
+        }
+
+        .user-nav-avatar {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        .user-nav-letter {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          background: var(--accent-primary);
+          color: #ffffff;
+          font-size: 0.72rem;
+          font-weight: 800;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .user-nav-menu {
+          position: absolute;
+          top: calc(100% + 10px);
+          right: 0;
+          width: 240px;
+          background: var(--bg-surface);
+          border: 1px solid var(--border-subtle);
+          border-radius: var(--radius-lg);
+          padding: 10px;
+          box-shadow: var(--shadow-lg);
+          z-index: 1000;
+        }
+
+        .unm-user-info {
+          padding: 8px 10px;
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+        }
+
+        .unm-name {
+          font-size: 0.88rem;
+          color: var(--text-heading);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .unm-email {
+          font-size: 0.75rem;
+          color: var(--text-muted);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .unm-divider {
+          height: 1px;
+          background: var(--border-subtle);
+          margin: 6px 0;
+        }
+
+        .unm-item {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 8px 10px;
+          border-radius: var(--radius-md);
+          background: none;
+          border: none;
+          color: var(--text-main);
+          font-size: 0.82rem;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all var(--transition-fast);
+        }
+
+        .unm-item:hover {
+          background: var(--bg-surface-elevated);
+          color: var(--accent-primary);
+        }
+
+        .unm-logout {
+          color: var(--accent-red);
+        }
+
+        .unm-logout:hover {
+          background: rgba(225, 29, 72, 0.08);
+          color: var(--accent-red);
+        }
+
+        /* Mobile Auth Drawer */
+        .mobile-user-auth-section {
+          margin-bottom: 20px;
+        }
+
+        .mobile-auth-cta-btn {
+          width: 100%;
+          padding: 12px 18px;
+          border-radius: var(--radius-md);
+          font-size: 0.92rem;
+          font-weight: 700;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+        }
+
+        .mobile-user-profile-box {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 12px 16px;
+          border-radius: var(--radius-md);
+          background: var(--bg-surface);
+          border: 1px solid var(--border-subtle);
+          gap: 12px;
+        }
+
+        .mup-left {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          overflow: hidden;
+        }
+
+        .mup-avatar {
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          object-fit: cover;
+          flex-shrink: 0;
+        }
+
+        .mup-letter {
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          background: var(--accent-primary);
+          color: #ffffff;
+          font-size: 0.95rem;
+          font-weight: 800;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+        }
+
+        .mup-details {
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+        }
+
+        .mup-details strong {
+          font-size: 0.88rem;
+          color: var(--text-heading);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .mup-details span {
+          font-size: 0.75rem;
+          color: var(--text-muted);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .mup-signout-btn {
+          flex-shrink: 0;
+          font-size: 0.78rem;
+          padding: 6px 10px;
         }
 
         @media (min-width: 1081px) {
