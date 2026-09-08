@@ -33,6 +33,17 @@ export function resolveSlugToRoute(rawSlug, rawPath = '') {
     return { type: 'discover', id: null, raw: rawPath };
   }
 
+  // Merged Hyphenated Slugs to Normal Formatted IDs
+  if (lower === 'im-game' || lower === 'imgame') {
+    return { type: 'legacy', id: 'ImGame', filename: 'ImGame.html', raw: rawPath };
+  }
+  if (lower === 'gail-daughtry-and-the-celebrity-sex-pass' || lower === 'gaildaughtryandthecelebritysexpass') {
+    return { type: 'legacy', id: 'GailDaughtryandtheCelebritySexPass', filename: 'GailDaughtryandtheCelebritySexPass.html', raw: rawPath };
+  }
+  if (lower === 'digger') {
+    return { type: 'legacy', id: 'Digger', filename: 'Digger.html', raw: rawPath };
+  }
+
   // Core Sections & Hubs
   if (lower === 'oakshownews' || lower === 'news' || lower === 'newsroom') {
     return { type: 'news', id: null, raw: rawPath };
@@ -48,6 +59,9 @@ export function resolveSlugToRoute(rawSlug, rawPath = '') {
   }
   if (lower === 'oakshowblog' || lower === 'blog' || lower === 'blogs') {
     return { type: 'blog', id: null, raw: rawPath };
+  }
+  if (lower.includes('feel-good') || lower.includes('lockdown') || lower === '30-feel-good-films-to-watch-during-lockdown') {
+    return { type: 'blog', id: '30-feel-good-films-to-watch-during-lockdown', raw: rawPath };
   }
   if (lower === 'oakshowemergency' || lower === 'emergencies' || lower === 'emergency') {
     return { type: 'emergencies', id: null, raw: rawPath };
@@ -208,6 +222,8 @@ export function parseCurrentRoute() {
       'blog', 'galleries', 'music', 'trailers', 'events', 'remarks', 'watchlist'
     ];
     let canonicalUrl = hubs.includes(clean.toLowerCase()) ? `/${clean}` : (clean ? `/${clean}.html` : '/');
+    if (clean.toLowerCase() === 'im-game') canonicalUrl = '/ImGame.html';
+    if (clean.toLowerCase() === 'gail-daughtry-and-the-celebrity-sex-pass') canonicalUrl = '/GailDaughtryandtheCelebritySexPass.html';
     if (pathname !== canonicalUrl && !pathname.endsWith(`/${clean}`) && !pathname.endsWith(`/${clean}.html`)) {
       try {
         window.history.replaceState(null, '', canonicalUrl);

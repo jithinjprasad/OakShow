@@ -1,6 +1,6 @@
 [
   {
-    "id": "digger",
+    "id": "Digger",
     "title": "Digger",
     "fileName": "Digger.html",
     "cleanUrl": "/Digger.html",
@@ -33,7 +33,6 @@
     "distribution": [
       "Warner Bros. Pictures"
     ],
-    "score": 8.5,
     "boxOffice": {
       "budget": "$125 - $150 Million",
       "openingWeekend": "Projected $60 - $80 Million Worldwide",
@@ -55,32 +54,7 @@
         "alt": "Digger Movie Still"
       }
     ],
-    "ratings": [
-      {
-        "source": "OakShow",
-        "score": "8.5/10",
-        "url": "",
-        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
-      },
-      {
-        "source": "IMDb",
-        "score": "Anticipated",
-        "url": "https://www.imdb.com/title/tt31450459/",
-        "icon": "pics/RatingSiteLogos/imdb.png"
-      },
-      {
-        "source": "Rotten Tomatoes",
-        "score": "Anticipated",
-        "url": "https://www.rottentomatoes.com/search?search=digger",
-        "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
-      },
-      {
-        "source": "Metacritic",
-        "score": "Anticipated",
-        "url": "https://www.metacritic.com/search/digger/",
-        "icon": "pics/RatingSiteLogos/metacritic.png"
-      }
-    ],
+    "ratings": [],
     "cast": [
       {
         "actor": "Tom Cruise",
@@ -235,10 +209,14 @@
     "filePath": "E:/OakShow/Digger.html",
     "filename": "Digger.html",
     "category": "Hollywood",
-    "status": "Upcoming"
+    "status": "Upcoming",
+    "aliases": [
+      "digger.html",
+      "digger"
+    ]
   },
   {
-    "id": "im-game",
+    "id": "ImGame",
     "title": "I'm Game",
     "fileName": "ImGame.html",
     "cleanUrl": "/ImGame.html",
@@ -549,10 +527,14 @@
     ],
     "filePath": "E:/OakShow/ImGame.html",
     "filename": "ImGame.html",
-    "category": "Indian"
+    "category": "Indian",
+    "aliases": [
+      "im-game.html",
+      "im-game"
+    ]
   },
   {
-    "id": "gail-daughtry-and-the-celebrity-sex-pass",
+    "id": "GailDaughtryandtheCelebritySexPass",
     "title": "Gail Daughtry and the Celebrity Sex Pass",
     "fileName": "GailDaughtryandtheCelebritySexPass.html",
     "cleanUrl": "/GailDaughtryandtheCelebritySexPass.html",
@@ -822,7 +804,11 @@
     ],
     "filePath": "E:/OakShow/GailDaughtryandtheCelebritySexPass.html",
     "filename": "GailDaughtryandtheCelebritySexPass.html",
-    "category": "Hollywood"
+    "category": "Hollywood",
+    "aliases": [
+      "gail-daughtry-and-the-celebrity-sex-pass.html",
+      "gail-daughtry-and-the-celebrity-sex-pass"
+    ]
   },
   {
     "id": "BethlehemKudumbaUnit",
@@ -8602,7 +8588,7 @@
       {
         "title": "Rules Don't Apply",
         "link": "RulesDon'tApply.html",
-        "poster": "pics/Films/Rules Don't Apply/1.jpg"
+        "poster": "pics/Films/Rules Dont Apply/1.jpg"
       }
     ],
     "videos": [
@@ -14255,7 +14241,7 @@
       {
         "title": "The Zookeeper's Wife",
         "link": "TheZookeeper'sWife.html",
-        "poster": "pics/Films/The Zookeeper's Wife/1.jpg"
+        "poster": "pics/Films/The Zookeepers Wife/1.jpg"
       }
     ],
     "videos": [
@@ -27953,7 +27939,7 @@
       {
         "title": "Pete's Dragon",
         "link": "PetesDragon.html",
-        "poster": "pics/Films/Pete's Dragon/1.jpg"
+        "poster": "pics/Films/Petes Dragon/1.jpg"
       }
     ],
     "videos": [
@@ -32328,7 +32314,7 @@
         "alt": "Digg"
       },
       {
-        "src": "images/google+.png",
+        "src": "images/google-plus.png",
         "alt": "Google"
       },
       {
@@ -32447,7 +32433,7 @@
         "alt": "Digg"
       },
       {
-        "src": "images/google+.png",
+        "src": "images/google-plus.png",
         "alt": "Google"
       },
       {
@@ -34548,7 +34534,7 @@
         "alt": "Digg"
       },
       {
-        "src": "images/google+.png",
+        "src": "images/google-plus.png",
         "alt": "Google"
       },
       {
@@ -35757,7 +35743,7 @@
         "alt": "Digg"
       },
       {
-        "src": "images/google+.png",
+        "src": "images/google-plus.png",
         "alt": "Google"
       },
       {
@@ -35895,7 +35881,7 @@
         "alt": "Digg"
       },
       {
-        "src": "images/google+.png",
+        "src": "images/google-plus.png",
         "alt": "Google"
       },
       {
@@ -36026,7 +36012,7 @@
         "alt": "Digg"
       },
       {
-        "src": "images/google+.png",
+        "src": "images/google-plus.png",
         "alt": "Google"
       },
       {
@@ -36875,7 +36861,7 @@
       {
         "title": "Miss Peregrine's Home for Peculiar Children",
         "link": "MissPeregrine'sHomeforPeculiarChildren.html",
-        "poster": "pics/Films/Miss Peregrine's Home for Peculiar Children/1.jpg"
+        "poster": "pics/Films/Miss Peregrines Home for Peculiar Children/1.jpg"
       }
     ],
     "videos": [
@@ -41079,7 +41065,7 @@
         "alt": "Digg"
       },
       {
-        "src": "images/google+.png",
+        "src": "images/google-plus.png",
         "alt": "Google"
       },
       {
@@ -41165,7 +41151,7 @@
         "alt": "Digg"
       },
       {
-        "src": "images/google+.png",
+        "src": "images/google-plus.png",
         "alt": "Google"
       },
       {
@@ -74795,7 +74781,7 @@
         "alt": "Digg"
       },
       {
-        "src": "images/google+.png",
+        "src": "images/google-plus.png",
         "alt": "Google"
       },
       {
@@ -79423,15 +79409,15 @@
     "poster": "pics/Films/Oceans8/1.jpg",
     "gallery": [
       {
-        "src": "pics/Films/Oceans8/Ocean's84.jpg",
+        "src": "pics/Films/Oceans8/Oceans84.jpg",
         "alt": "Ocean's 8 Reveiws and Ratings"
       },
       {
-        "src": "pics/Films/Oceans8/Ocean's82.jpg",
+        "src": "pics/Films/Oceans8/Oceans82.jpg",
         "alt": "Ocean's 8 Actress"
       },
       {
-        "src": "pics/Films/Oceans8/Ocean's83.jpg",
+        "src": "pics/Films/Oceans8/Oceans83.jpg",
         "alt": "Ocean's 8 Crew"
       }
     ],
@@ -113238,7 +113224,7 @@
         "alt": "Digg"
       },
       {
-        "src": "images/google+.png",
+        "src": "images/google-plus.png",
         "alt": "Google"
       },
       {
@@ -118340,18 +118326,18 @@
     "director": "",
     "basedOn": "",
     "boxOffice": null,
-    "poster": "pics/Films/mother!/1.jpg",
+    "poster": "pics/Films/mother/1.jpg",
     "gallery": [
       {
-        "src": "pics/Films/mother!/4.jpg",
+        "src": "pics/Films/mother/4.jpg",
         "alt": "mother! Reviews and News"
       },
       {
-        "src": "pics/Films/mother!/2.jpg",
+        "src": "pics/Films/mother/2.jpg",
         "alt": "mother!"
       },
       {
-        "src": "pics/Films/mother!/3.jpg",
+        "src": "pics/Films/mother/3.jpg",
         "alt": "mother! Poster"
       }
     ],
@@ -125076,18 +125062,18 @@
     "director": "",
     "basedOn": "The Zookeeper's Wife by Diane Ackerman",
     "boxOffice": null,
-    "poster": "pics/Films/The%20Zookeeper's%20Wife/1.jpg",
+    "poster": "pics/Films/The Zookeepers Wife/1.jpg",
     "gallery": [
       {
-        "src": "pics/Films/The Zookeeper's Wife/4.jpg",
+        "src": "pics/Films/The Zookeepers Wife/4.jpg",
         "alt": "The Zookeeper's Wife poster 1"
       },
       {
-        "src": "pics/Films/The Zookeeper's Wife/2.jpg",
+        "src": "pics/Films/The Zookeepers Wife/2.jpg",
         "alt": "The Zookeeper's Wife poster 2"
       },
       {
-        "src": "pics/Films/The Zookeeper's Wife/3.jpg",
+        "src": "pics/Films/The Zookeepers Wife/3.jpg",
         "alt": "The Zookeeper's Wife poster 3"
       }
     ],
@@ -140246,18 +140232,18 @@
     "director": "",
     "basedOn": "",
     "boxOffice": null,
-    "poster": "pics/Films/PattiCake$/1.jpg",
+    "poster": "pics/Films/PattiCake/1.jpg",
     "gallery": [
       {
-        "src": "pics/Films/PattiCake$/4.jpg",
+        "src": "pics/Films/PattiCake/4.jpg",
         "alt": "Patti Cake$ Poster 1"
       },
       {
-        "src": "pics/Films/PattiCake$/2.jpg",
+        "src": "pics/Films/PattiCake/2.jpg",
         "alt": "Patti Cake$ Poster 2"
       },
       {
-        "src": "pics/Films/PattiCake$/3.jpg",
+        "src": "pics/Films/PattiCake/3.jpg",
         "alt": "Patti Cake$ Poster 3"
       }
     ],
@@ -150396,18 +150382,18 @@
     "director": "",
     "basedOn": "",
     "boxOffice": null,
-    "poster": "pics/Films/Don't Breathe/4.jpg",
+    "poster": "pics/Films/Dont Breathe/4.jpg",
     "gallery": [
       {
-        "src": "pics/Films/Don't Breathe/4.jpg",
+        "src": "pics/Films/Dont Breathe/4.jpg",
         "alt": ""
       },
       {
-        "src": "pics/Films/Don't Breathe/2.jpg",
+        "src": "pics/Films/Dont Breathe/2.jpg",
         "alt": ""
       },
       {
-        "src": "pics/Films/Don't Breathe/3.jpg",
+        "src": "pics/Films/Dont Breathe/3.jpg",
         "alt": ""
       }
     ],
@@ -152760,18 +152746,18 @@
     "director": "",
     "basedOn": "",
     "boxOffice": null,
-    "poster": "pics/Films/Rules Don't Apply/4.jpg",
+    "poster": "pics/Films/Rules Dont Apply/4.jpg",
     "gallery": [
       {
-        "src": "pics/Films/Rules Don't Apply/4.jpg",
+        "src": "pics/Films/Rules Dont Apply/4.jpg",
         "alt": ""
       },
       {
-        "src": "pics/Films/Rules Don't Apply/2.jpg",
+        "src": "pics/Films/Rules Dont Apply/2.jpg",
         "alt": ""
       },
       {
-        "src": "pics/Films/Rules Don't Apply/3.jpg",
+        "src": "pics/Films/Rules Dont Apply/3.jpg",
         "alt": ""
       }
     ],
@@ -154395,18 +154381,18 @@
     "director": "",
     "basedOn": "Characters by Helen Fielding",
     "boxOffice": null,
-    "poster": "pics/Films/Bridget Jones's Baby/4.jpg",
+    "poster": "pics/Films/Bridget Joness Baby/4.jpg",
     "gallery": [
       {
-        "src": "pics/Films/Bridget Jones's Baby/4.jpg",
+        "src": "pics/Films/Bridget Joness Baby/4.jpg",
         "alt": ""
       },
       {
-        "src": "pics/Films/Bridget Jones's Baby/2.jpg",
+        "src": "pics/Films/Bridget Joness Baby/2.jpg",
         "alt": ""
       },
       {
-        "src": "pics/Films/Bridget Jones's Baby/3.jpg",
+        "src": "pics/Films/Bridget Joness Baby/3.jpg",
         "alt": ""
       }
     ],
@@ -157945,18 +157931,18 @@
     "director": "Liang Xuan,Zhang Chun",
     "basedOn": "",
     "boxOffice": null,
-    "poster": "pics/Films/Big Fish & Begonia/4.jpg",
+    "poster": "pics/Films/Big Fish and Begonia/4.jpg",
     "gallery": [
       {
-        "src": "pics/Films/Big Fish & Begonia/4.jpg",
+        "src": "pics/Films/Big Fish and Begonia/4.jpg",
         "alt": ""
       },
       {
-        "src": "pics/Films/Big Fish & Begonia/2.jpg",
+        "src": "pics/Films/Big Fish and Begonia/2.jpg",
         "alt": ""
       },
       {
-        "src": "pics/Films/Big Fish & Begonia/3.jpg",
+        "src": "pics/Films/Big Fish and Begonia/3.jpg",
         "alt": ""
       }
     ],
@@ -161357,18 +161343,18 @@
     "director": "",
     "basedOn": "",
     "boxOffice": null,
-    "poster": "pics/Films/Maggie's Plan/4.jpg",
+    "poster": "pics/Films/Maggies Plan/4.jpg",
     "gallery": [
       {
-        "src": "pics/Films/Maggie's Plan/4.jpg",
+        "src": "pics/Films/Maggies Plan/4.jpg",
         "alt": ""
       },
       {
-        "src": "pics/Films/Maggie's Plan/2.jpg",
+        "src": "pics/Films/Maggies Plan/2.jpg",
         "alt": ""
       },
       {
-        "src": "pics/Films/Maggie's Plan/3.jpg",
+        "src": "pics/Films/Maggies Plan/3.jpg",
         "alt": ""
       }
     ],
@@ -161792,18 +161778,18 @@
     "director": "",
     "basedOn": "Miss Peregrine's Home for Peculiar Children by Ransom Riggs",
     "boxOffice": null,
-    "poster": "pics/Films/Miss Peregrine's Home for Peculiar Children/4.jpg",
+    "poster": "pics/Films/Miss Peregrines Home for Peculiar Children/4.jpg",
     "gallery": [
       {
-        "src": "pics/Films/Miss Peregrine's Home for Peculiar Children/4.jpg",
+        "src": "pics/Films/Miss Peregrines Home for Peculiar Children/4.jpg",
         "alt": ""
       },
       {
-        "src": "pics/Films/Miss Peregrine's Home for Peculiar Children/2.jpg",
+        "src": "pics/Films/Miss Peregrines Home for Peculiar Children/2.jpg",
         "alt": ""
       },
       {
-        "src": "pics/Films/Miss Peregrine's Home for Peculiar Children/3.jpg",
+        "src": "pics/Films/Miss Peregrines Home for Peculiar Children/3.jpg",
         "alt": ""
       }
     ],
@@ -163089,18 +163075,18 @@
     "director": "",
     "basedOn": "Pete's Dragon by Malcolm Marmorstein",
     "boxOffice": null,
-    "poster": "pics/Films/Pete's Dragon/4.jpg",
+    "poster": "pics/Films/Petes Dragon/4.jpg",
     "gallery": [
       {
-        "src": "pics/Films/Pete's Dragon/4.jpg",
+        "src": "pics/Films/Petes Dragon/4.jpg",
         "alt": ""
       },
       {
-        "src": "pics/Films/Pete's Dragon/2.jpg",
+        "src": "pics/Films/Petes Dragon/2.jpg",
         "alt": ""
       },
       {
-        "src": "pics/Films/Pete's Dragon/3.jpg",
+        "src": "pics/Films/Petes Dragon/3.jpg",
         "alt": ""
       }
     ],
@@ -163509,18 +163495,18 @@
     "director": "",
     "basedOn": "",
     "boxOffice": null,
-    "poster": "pics/Films/San' 75/4.jpg",
+    "poster": "pics/Films/San 75/4.jpg",
     "gallery": [
       {
-        "src": "pics/Films/San' 75/4.jpg",
+        "src": "pics/Films/San 75/4.jpg",
         "alt": ""
       },
       {
-        "src": "pics/Films/San' 75/2.jpg",
+        "src": "pics/Films/San 75/2.jpg",
         "alt": ""
       },
       {
-        "src": "pics/Films/San' 75/3.jpg",
+        "src": "pics/Films/San 75/3.jpg",
         "alt": ""
       }
     ],
@@ -168651,18 +168637,18 @@
     "director": "",
     "basedOn": "Assassin's Creed by Ubisoft",
     "boxOffice": null,
-    "poster": "pics/Films/Assassin's Creed/4.jpg",
+    "poster": "pics/Films/Assassins Creed/4.jpg",
     "gallery": [
       {
-        "src": "pics/Films/Assassin's Creed/4.jpg",
+        "src": "pics/Films/Assassins Creed/4.jpg",
         "alt": ""
       },
       {
-        "src": "pics/Films/Assassin's Creed/2.JPG",
+        "src": "pics/Films/Assassins Creed/2.JPG",
         "alt": ""
       },
       {
-        "src": "pics/Films/Assassin's Creed/3.jpg",
+        "src": "pics/Films/Assassins Creed/3.jpg",
         "alt": ""
       }
     ],
@@ -170730,18 +170716,18 @@
     "director": "",
     "basedOn": "The Journals of Rachel Joy Scott",
     "boxOffice": null,
-    "poster": "pics/Films/I'm Not Ashamed/4.JPG",
+    "poster": "pics/Films/Im Not Ashamed/4.JPG",
     "gallery": [
       {
-        "src": "pics/Films/I'm Not Ashamed/4.JPG",
+        "src": "pics/Films/Im Not Ashamed/4.JPG",
         "alt": ""
       },
       {
-        "src": "pics/Films/I'm Not Ashamed/2.jpg",
+        "src": "pics/Films/Im Not Ashamed/2.jpg",
         "alt": ""
       },
       {
-        "src": "pics/Films/I'm Not Ashamed/3.jpg",
+        "src": "pics/Films/Im Not Ashamed/3.jpg",
         "alt": ""
       }
     ],
@@ -174030,18 +174016,18 @@
     "director": "",
     "basedOn": "Billy Lynn's Long Halftime Walk by Ben Fountain",
     "boxOffice": null,
-    "poster": "pics/Films/Billy Lynn's Long Halftime Walk/4.JPG",
+    "poster": "pics/Films/Billy Lynns Long Halftime Walk/4.JPG",
     "gallery": [
       {
-        "src": "pics/Films/Billy Lynn's Long Halftime Walk/4.JPG",
+        "src": "pics/Films/Billy Lynns Long Halftime Walk/4.JPG",
         "alt": ""
       },
       {
-        "src": "pics/Films/Billy Lynn's Long Halftime Walk/2.jpg",
+        "src": "pics/Films/Billy Lynns Long Halftime Walk/2.jpg",
         "alt": ""
       },
       {
-        "src": "pics/Films/Billy Lynn's Long Halftime Walk/3.jpg",
+        "src": "pics/Films/Billy Lynns Long Halftime Walk/3.jpg",
         "alt": ""
       }
     ],
@@ -177651,7 +177637,7 @@
         "alt": "Digg"
       },
       {
-        "src": "images/google+.png",
+        "src": "images/google-plus.png",
         "alt": "Google"
       },
       {
@@ -177997,7 +177983,7 @@
     "director": "",
     "basedOn": "",
     "boxOffice": null,
-    "poster": "Profiles/CriticProfiles/MsMrOakShow/pics//1.jpg",
+    "poster": "Profiles/CriticProfiles/MsMrOakShow/pics/1.jpg",
     "gallery": [],
     "ratings": [],
     "cast": [],
@@ -178030,7 +178016,7 @@
     "director": "",
     "basedOn": "",
     "boxOffice": null,
-    "poster": "Profiles/CriticProfiles/MsMrOakShow/pics//1.jpg",
+    "poster": "Profiles/CriticProfiles/MsMrOakShow/pics/1.jpg",
     "gallery": [],
     "ratings": [],
     "cast": [],

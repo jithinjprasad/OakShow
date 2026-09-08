@@ -180,6 +180,21 @@
         "title": "Movie News Net: Lanterns Trust Fall Ups The Stakes",
         "url": "https://www.movienewsnet.com/2026/08/27/lanterns-review-trust-fall-ups-the-stakes/",
         "source": "Movie News Net"
+      },
+      {
+        "title": "Forbes: Lanterns Episode 4 Recap & Review — Identity Crisis",
+        "url": "https://www.forbes.com/sites/erikkain/2026/09/06/lanterns-episode-4-recap-review-identity-crisis/",
+        "source": "Forbes"
+      },
+      {
+        "title": "IGN: Lanterns Season 1 Episode 4 Review & Recap — The Weenie",
+        "url": "https://www.ign.com/articles/lanterns-season-1-episode-4-review-recap-the-weenie",
+        "source": "IGN"
+      },
+      {
+        "title": "Den of Geek: Lanterns Episode 4 Review",
+        "url": "https://www.denofgeek.com/tv/lanterns-episode-4-review/",
+        "source": "Den of Geek"
       }
     ],
     "episodes": [
@@ -297,6 +312,57 @@
             "score": "75/100",
             "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-3-outkast/",
             "icon": "pics/RatingSiteLogos/metacritic.png"
+          }
+        ]
+      },
+      {
+        "id": "LanternsS1E04",
+        "episodeNumber": 4,
+        "seasonNumber": 1,
+        "title": "The Weenie",
+        "airDate": "September 06, 2026",
+        "duration": "55 min",
+        "director": "Geeta Vasant Patel",
+        "writtenBy": "Breannah Gibson",
+        "thumbnail": "pics/Serieses/Lanterns/S01/4.jpg",
+        "plot": "Hal questions Sinestro about the Manhunters, while John is asked by the Guardians to move faster with their plan. As the investigation into the Rushville murder deepens, Jordan and Stewart confront darker reckonings and extraterrestrial revelations that challenge their mission.",
+        "filename": "LanternsS1E04.html",
+        "score": 8,
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "8.0/10",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "8.0/10",
+            "url": "https://www.imdb.com/title/tt32752610/?ref_=ttep_ep_4",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "86%",
+            "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e04",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+          },
+          {
+            "source": "Metacritic",
+            "score": "76/100",
+            "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-4-the-weenie/",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          },
+          {
+            "source": "IGN",
+            "score": "8/10",
+            "url": "https://www.ign.com/articles/lanterns-season-1-episode-4-review-recap-the-weenie",
+            "icon": "pics/RatingSiteLogos/ign.png"
+          },
+          {
+            "source": "Den of Geek",
+            "score": "4/5",
+            "url": "https://www.denofgeek.com/tv/lanterns-episode-4-review/",
+            "icon": "pics/RatingSiteLogos/denofgeek.png"
           }
         ]
       }
@@ -479,6 +545,57 @@
                 "score": "75/100",
                 "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-3-outkast/",
                 "icon": "pics/RatingSiteLogos/metacritic.png"
+              }
+            ]
+          },
+          {
+            "id": "LanternsS1E04",
+            "episodeNumber": 4,
+            "seasonNumber": 1,
+            "title": "The Weenie",
+            "airDate": "September 06, 2026",
+            "duration": "55 min",
+            "director": "Geeta Vasant Patel",
+            "writtenBy": "Breannah Gibson",
+            "thumbnail": "pics/Serieses/Lanterns/S01/4.jpg",
+            "plot": "Hal questions Sinestro about the Manhunters, while John is asked by the Guardians to move faster with their plan. As the investigation into the Rushville murder deepens, Jordan and Stewart confront darker reckonings and extraterrestrial revelations that challenge their mission.",
+            "filename": "LanternsS1E04.html",
+            "score": 8,
+            "ratings": [
+              {
+                "source": "OakShow",
+                "score": "8.0/10",
+                "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+              },
+              {
+                "source": "IMDb",
+                "score": "8.0/10",
+                "url": "https://www.imdb.com/title/tt32752610/?ref_=ttep_ep_4",
+                "icon": "pics/RatingSiteLogos/imdb.png"
+              },
+              {
+                "source": "Rotten Tomatoes",
+                "score": "86%",
+                "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e04",
+                "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+              },
+              {
+                "source": "Metacritic",
+                "score": "76/100",
+                "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-4-the-weenie/",
+                "icon": "pics/RatingSiteLogos/metacritic.png"
+              },
+              {
+                "source": "IGN",
+                "score": "8/10",
+                "url": "https://www.ign.com/articles/lanterns-season-1-episode-4-review-recap-the-weenie",
+                "icon": "pics/RatingSiteLogos/ign.png"
+              },
+              {
+                "source": "Den of Geek",
+                "score": "4/5",
+                "url": "https://www.denofgeek.com/tv/lanterns-episode-4-review/",
+                "icon": "pics/RatingSiteLogos/denofgeek.png"
               }
             ]
           }

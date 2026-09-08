@@ -559,47 +559,54 @@ export default function MovieDetailPage({
 
               {/* Dynamic Quick Ratings Summary Bar */}
               <div className="movie-hero-ratings-bar">
-                {allRatings.map((r, idx) => {
-                  const sourceClean = cleanRatingSource(r.source);
-                  const isOak = sourceClean === 'OakShow' || r.source === 'OakShow';
-                  const oakRemark = isOak ? getOakShowRemark(r.score) : null;
-                  
-                  if (isOak) {
+                {allRatings.length > 0 ? (
+                  allRatings.map((r, idx) => {
+                    const sourceClean = cleanRatingSource(r.source);
+                    const isOak = sourceClean === 'OakShow' || r.source === 'OakShow';
+                    const oakRemark = isOak ? getOakShowRemark(r.score) : null;
+                    
+                    if (isOak) {
+                      return (
+                        <div
+                          key={idx}
+                          className="rating-pill-source oakshow-hero-rating-pill"
+                          title={oakRemark ? `OakShow Verdict: ${oakRemark.title} (${r.score}) — ${oakRemark.meaning}` : 'OakShow Rating'}
+                        >
+                          {oakRemark ? (
+                            <img 
+                              src={oakRemark.icon} 
+                              alt={oakRemark.title} 
+                              className="oakshow-cert-icon-inline"
+                              onError={(e) => { e.target.style.display = 'none'; }}
+                            />
+                          ) : null}
+                          <span className="source-tag">{sourceClean}</span>
+                          <span className="source-score">{r.score}</span>
+                          {oakRemark && <span className="source-verdict-tag">{oakRemark.shortLabel}</span>}
+                        </div>
+                      );
+                    }
+
                     return (
-                      <div
+                      <a
                         key={idx}
-                        className="rating-pill-source oakshow-hero-rating-pill"
-                        title={oakRemark ? `OakShow Verdict: ${oakRemark.title} (${r.score}) — ${oakRemark.meaning}` : 'OakShow Rating'}
+                        href={r.url || '#'}
+                        target={r.url && r.url !== '#' ? '_blank' : '_self'}
+                        rel="noopener noreferrer"
+                        className="rating-pill-source clickable-pill"
+                        title={r.url ? `View on ${sourceClean}` : sourceClean}
                       >
-                        {oakRemark ? (
-                          <img 
-                            src={oakRemark.icon} 
-                            alt={oakRemark.title} 
-                            className="oakshow-cert-icon-inline"
-                            onError={(e) => { e.target.style.display = 'none'; }}
-                          />
-                        ) : null}
                         <span className="source-tag">{sourceClean}</span>
                         <span className="source-score">{r.score}</span>
-                        {oakRemark && <span className="source-verdict-tag">{oakRemark.shortLabel}</span>}
-                      </div>
+                      </a>
                     );
-                  }
-
-                  return (
-                    <a
-                      key={idx}
-                      href={r.url || '#'}
-                      target={r.url && r.url !== '#' ? '_blank' : '_self'}
-                      rel="noopener noreferrer"
-                      className="rating-pill-source clickable-pill"
-                      title={r.url ? `View on ${sourceClean}` : sourceClean}
-                    >
-                      <span className="source-tag">{sourceClean}</span>
-                      <span className="source-score">{r.score}</span>
-                    </a>
-                  );
-                })}
+                  })
+                ) : (
+                  <div className="rating-pill-source upcoming-pill" title="Upcoming Release">
+                    <span className="source-tag">Status</span>
+                    <span className="source-score">Upcoming Release</span>
+                  </div>
+                )}
               </div>
 
               {/* Quick Meta Row */}
@@ -963,7 +970,11 @@ export default function MovieDetailPage({
               ) : (
                 <div className="empty-state-card glass-panel">
                   <Star size={36} className="text-gold" />
-                  <p>Ratings and reviews will be updated shortly for this title.</p>
+                  <p>
+                    {movie.status === 'Upcoming' || (movie.releaseDate && new Date(movie.releaseDate) > new Date())
+                      ? 'Ratings and critic reviews will be published upon theatrical release.'
+                      : 'Ratings and reviews will be updated shortly for this title.'}
+                  </p>
                 </div>
               )}
             </div>

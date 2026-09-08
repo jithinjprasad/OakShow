@@ -128,6 +128,7 @@ export default function ReleaseCalendarView({
       for (let i = 0; i < movies.length; i++) {
         const m = movies[i];
         if (!m || !m.title) continue;
+        if (m.status && m.status.toLowerCase() === 'upcoming') continue;
 
         const cleanTitle = m.title.toLowerCase().trim();
         const calYear = m.year || (m.releaseDate ? m.releaseDate.match(/\b(20\d\d)\b/)?.[1] : '') || '';

@@ -57,6 +57,8 @@ export default function SearchModal({
     return new Fuse(searchIndex, {
       keys: [
         { name: 'title', weight: 0.6 },
+        { name: 'keywords', weight: 0.4 },
+        { name: 'id', weight: 0.3 },
         { name: 'genre', weight: 0.2 },
         { name: 'language', weight: 0.2 },
         { name: 'author', weight: 0.2 },
@@ -175,12 +177,15 @@ export default function SearchModal({
               {results.map((item, idx) => {
                 const isSelected = idx === selectedIndex;
                 const posterSrc = item.poster ? (item.poster.startsWith('/') ? item.poster : `/${item.poster}`) : null;
-                const itemHref = item.filename 
-                  ? (item.filename.startsWith('/') ? item.filename : `/${item.filename}`) 
-                  : (item.type === 'series' || item.type === 'movie' ? `/${item.id}.html` : '#');
+                const rawFilename = item.filename || item.fileName || (item.cleanUrl ? item.cleanUrl.replace(/^\/+/, '') : null);
+                const itemTypeLower = (item.type || '').toLowerCase();
+                const itemId = item.id || (rawFilename ? rawFilename.replace(/\.html$/i, '') : null);
+                const itemHref = rawFilename 
+                  ? (rawFilename.startsWith('/') ? rawFilename : `/${rawFilename}`) 
+                  : (itemId ? `/${itemId}.html` : '#');
                 return (
                   <a
-                    key={`${item.id}-${idx}`}
+                    key={`${item.id || itemId || idx}-${idx}`}
                     href={itemHref}
                     className={`search-result-row ${isSelected ? 'search-result-selected' : ''}`}
                     style={{ textDecoration: 'none', color: 'inherit' }}
@@ -212,8 +217,8 @@ export default function SearchModal({
                     <div className="result-meta">
                       <h4 className="result-title" title={item.title}>{item.title}</h4>
                       <div className="result-tags">
-                        <span className={`badge ${item.type === 'movie' ? 'badge-gold' : item.type === 'series' ? 'badge-red' : 'badge-cyan'}`}>
-                          {item.type === 'movie' ? 'Movie' : item.type === 'series' ? 'Series' : item.type === 'game' ? 'Game' : item.type === 'book' ? 'Book' : item.type}
+                        <span className={`badge ${itemTypeLower === 'movie' ? 'badge-gold' : itemTypeLower === 'series' ? 'badge-red' : 'badge-cyan'}`}>
+                          {itemTypeLower === 'movie' ? 'Movie' : itemTypeLower === 'series' ? 'Series' : itemTypeLower === 'game' ? 'Game' : itemTypeLower === 'book' ? 'Book' : (item.type || 'Movie')}
                         </span>
                         {item.category && (
                           <span className={`badge ${item.category === 'Hollywood' ? 'badge-red' : item.category === 'International' ? 'badge-cyan' : 'badge-gold'}`}>

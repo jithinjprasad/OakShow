@@ -195,6 +195,14 @@ async function run() {
 
     fs.writeFileSync(outPath, html, 'utf8');
     count++;
+
+    if (m.aliases && Array.isArray(m.aliases)) {
+      for (const alias of m.aliases) {
+        const aliasFilename = alias.endsWith('.html') ? alias : `${alias}.html`;
+        const aliasOutPath = path.join(distDir, aliasFilename);
+        fs.writeFileSync(aliasOutPath, html, 'utf8');
+      }
+    }
   }
 
   // 2. Process Web Series

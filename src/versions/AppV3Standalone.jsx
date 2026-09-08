@@ -441,32 +441,53 @@ export default function App() {
   // Handle item select from SearchModal
   const handleSelectItem = (item) => {
     setSearchOpen(false);
-    if (item.type === 'emergency' || item.type === 'emergencies') {
-      navigate(`emergency/${item.id}`);
-    } else if (item.type === 'music') {
+    if (!item) return;
+    const itemType = (item.type || '').toLowerCase();
+    const rawFile = item.filename || item.fileName || (item.cleanUrl ? item.cleanUrl.replace(/^\/+/, '') : '');
+    const resolvedId = item.id || (rawFile ? rawFile.replace(/\.html$/i, '') : '') || (item.title ? item.title.replace(/[^a-zA-Z0-9]/g, '') : '');
+
+    if (!resolvedId && !item.title) return;
+
+    if (itemType === 'emergency' || itemType === 'emergencies') {
+      navigate(`emergency/${resolvedId}`);
+    } else if (itemType === 'music') {
       navigate('music');
-    } else if (item.type === 'trailer' || item.type === 'trailers') {
+    } else if (itemType === 'trailer' || itemType === 'trailers') {
       navigate('trailers');
-    } else if (item.type === 'event' || item.type === 'events') {
+    } else if (itemType === 'event' || itemType === 'events') {
       navigate('events');
-    } else if (item.type === 'movie') {
-      const found = moviesData.find(m => m.id?.toLowerCase() === item.id?.toLowerCase() || m.title?.toLowerCase() === item.title?.toLowerCase());
-      const slug = found ? found.id : item.id;
-      navigate(`movie/${slug}`);
-    } else if (item.type === 'episode' || item.id?.toLowerCase().startsWith('dbsepisode')) {
-      navigate(item.filename ? item.filename.replace(/\.html$/, '') : `episode/${item.id}`);
-    } else if (item.type === 'series') {
-      navigate(`series/${item.id}`);
-    } else if (item.type === 'game') {
-      navigate(`game/${item.id}`);
-    } else if (item.type === 'book') {
-      navigate(`book/${item.id}`);
-    } else if (item.type === 'sports') {
-      navigate(`sports/${item.id}`);
-    } else if (item.type === 'review') {
+    } else if (itemType === 'movie') {
+      const found = moviesData.find(m => 
+        (resolvedId && m.id?.toLowerCase() === resolvedId.toLowerCase()) || 
+        (item.title && m.title?.toLowerCase() === item.title.toLowerCase()) ||
+        (m.aliases && resolvedId && m.aliases.some(a => a.toLowerCase().replace(/\.html$/i, '') === resolvedId.toLowerCase()))
+      );
+      const slug = found ? found.id : (resolvedId || rawFile.replace(/\.html$/i, ''));
+      if (slug) {
+        navigate(`movie/${slug}`);
+      }
+    } else if (itemType === 'episode' || (resolvedId && resolvedId.toLowerCase().startsWith('dbsepisode'))) {
+      navigate(rawFile ? rawFile.replace(/\.html$/i, '') : `episode/${resolvedId}`);
+    } else if (itemType === 'series') {
+      navigate(`series/${resolvedId}`);
+    } else if (itemType === 'game') {
+      navigate(`game/${resolvedId}`);
+    } else if (itemType === 'book') {
+      navigate(`book/${resolvedId}`);
+    } else if (itemType === 'sports') {
+      navigate(`sports/${resolvedId}`);
+    } else if (itemType === 'review') {
       navigate('reviews');
     } else {
-      navigate(`movie/${item.id}`);
+      // Fallback: check if it matches a movie or other item
+      const found = moviesData.find(m => 
+        (resolvedId && m.id?.toLowerCase() === resolvedId.toLowerCase()) || 
+        (item.title && m.title?.toLowerCase() === item.title.toLowerCase())
+      );
+      const slug = found ? found.id : resolvedId;
+      if (slug) {
+        navigate(`movie/${slug}`);
+      }
     }
   };
 
@@ -569,6 +590,19 @@ export default function App() {
           />
         </div>
       );
+    }
+
+    // Check if it's an editorial blog article (e.g. 30-feel-good-films-to-watch-during-lockdown)
+    const targetBlog = blogsData.find(b => 
+      b.id?.toLowerCase() === cleanId ||
+      b.link?.toLowerCase().replace('.html', '').endsWith(cleanId)
+    );
+    if (targetBlog && targetBlog.link && targetBlog.link.includes('30-feel-good-films')) {
+      const cleanUrl = `/${targetBlog.link.replace(/^\/+/, '')}`;
+      if (typeof window !== 'undefined' && !window.location.pathname.endsWith(targetBlog.link)) {
+        window.location.href = cleanUrl;
+        return null;
+      }
     }
 
     // Check if it's a specific critic review (e.g. unpregnant-review-by-jithin-j-prasad)
@@ -874,7 +908,8 @@ export default function App() {
       m.id?.toLowerCase() === cleanId || 
       m.slug?.toLowerCase() === cleanId || 
       m.filename?.toLowerCase() === `${cleanId}.html` ||
-      m.title?.toLowerCase().replace(/[^a-z0-9]/g, '') === cleanId.replace(/[^a-z0-9]/g, '')
+      m.title?.toLowerCase().replace(/[^a-z0-9]/g, '') === cleanId.replace(/[^a-z0-9]/g, '') ||
+      (m.aliases && m.aliases.some(a => a.toLowerCase().replace(/\.html$/i, '') === cleanId))
     );
 
     // If still not found, create clean placeholder entry
@@ -1043,28 +1078,44 @@ export default function App() {
     );
   }
 
-  // 2.1 Standalone TV EPISODE PAGE (e.g. Dragon Ball Super episodes: dbsepisode131.html)
+  // 2.1 Standalone TV EPISODE PAGE
   if (route.type === 'episode' && route.id) {
     const cleanId = route.id.toLowerCase().replace(/\.html$/, '');
     
-    // Find parent series
-    const targetSeries = seriesData.find(s => s.id === 'DragonBallSuperTvSeries') || seriesData[0];
-    const allEps = targetSeries?.episodes || [];
-    
-    let targetEpisode = allEps.find(ep => 
-      ep.id?.toLowerCase() === cleanId ||
-      ep.filename?.toLowerCase() === `${cleanId}.html` ||
-      ep.filename?.toLowerCase() === cleanId ||
-      ep.episodeNumber === parseInt(cleanId.replace(/\D/g, ''), 10)
-    );
+    // Find parent series and episode
+    let targetSeries = null;
+    let targetEpisode = null;
 
-    if (!targetEpisode) {
-      targetEpisode = allEps[allEps.length - 1] || allEps[0];
+    for (const s of seriesData) {
+      if (s.episodes && s.episodes.length > 0) {
+        const found = s.episodes.find(ep => 
+          ep.id?.toLowerCase() === cleanId ||
+          ep.filename?.toLowerCase().replace(/\.html$/, '') === cleanId ||
+          `dbsepisode${ep.episodeNumber}` === cleanId
+        );
+        if (found) {
+          targetSeries = s;
+          targetEpisode = found;
+          break;
+        }
+      }
     }
 
+    if (!targetSeries) {
+      targetSeries = seriesData.find(s => s.id === 'DragonBallSuperTvSeries') || seriesData[0];
+      const eps = targetSeries?.episodes || [];
+      targetEpisode = eps.find(ep => 
+        ep.id?.toLowerCase() === cleanId ||
+        ep.filename?.toLowerCase() === `${cleanId}.html` ||
+        ep.filename?.toLowerCase() === cleanId ||
+        ep.episodeNumber === parseInt(cleanId.replace(/\D/g, ''), 10)
+      ) || eps[eps.length - 1] || eps[0];
+    }
+
+    const allEps = targetSeries?.episodes || [];
     const epTitle = targetEpisode?.title || 'Episode';
     const epNum = targetEpisode?.episodeNumber || '';
-    const seriesTitle = targetSeries?.title || 'Dragon Ball Super';
+    const seriesTitle = targetSeries?.title || 'Web Series';
     const pageTitle = `${seriesTitle} Episode ${epNum}: ${epTitle} — All Ratings, Air Dates & Plot — OakShow`;
     const canonical = getItemCanonicalUrl(targetEpisode);
     const shareImg = getShareImage(targetSeries);
@@ -1956,7 +2007,7 @@ export default function App() {
         {/* BLOG HUB */}
         {route.type === 'blog' && (
           <div className="tab-view animate-fade-in container">
-            <BlogHub blogsData={blogsData} onNavigate={navigate} />
+            <BlogHub blogsData={blogsData} onNavigate={navigate} initialBlogId={route.id} />
           </div>
         )}
 

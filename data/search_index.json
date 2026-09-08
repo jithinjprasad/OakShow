@@ -1,36 +1,47 @@
 [
   {
+    "id": "Digger",
     "title": "Digger",
-    "type": "Movie",
+    "type": "movie",
+    "category": "Hollywood",
     "language": "English",
     "genre": "Black Comedy, Drama, Disaster, Satire",
     "year": "2026",
-    "rating": "8.5",
+    "poster": "pics/Films/Digger/1.jpg",
     "fileName": "Digger.html",
+    "filename": "Digger.html",
     "cleanUrl": "/Digger.html",
     "keywords": "Digger Tom Cruise Alejandro G Inarritu Riz Ahmed John Goodman Sandra Huller Jesse Plemons English Disaster Comedy Satire 2026 Digger Rockwell"
   },
   {
     "title": "I'm Game",
-    "type": "Movie",
+    "type": "movie",
     "language": "Malayalam",
     "genre": "Fantasy, Action, Thriller",
     "year": "2026",
     "rating": "6.0",
     "fileName": "ImGame.html",
     "cleanUrl": "/ImGame.html",
-    "keywords": "I'm Game Dulquer Salmaan Dan John Nahas Hidhayath Antony Varghese Vicky Mysskin Kayadu Lohar Jakes Bejoy Malayalam 2026 DQ40"
+    "keywords": "I'm Game Dulquer Salmaan Dan John Nahas Hidhayath Antony Varghese Vicky Mysskin Kayadu Lohar Jakes Bejoy Malayalam 2026 DQ40",
+    "filename": "ImGame.html",
+    "id": "ImGame",
+    "category": "Indian",
+    "poster": "pics/Films/ImGame/1.jpg"
   },
   {
     "title": "Gail Daughtry and the Celebrity Sex Pass",
-    "type": "Movie",
+    "type": "movie",
     "language": "English",
     "genre": "Comedy, Romance, Satire",
     "year": "2026",
     "rating": "8.5",
     "fileName": "GailDaughtryandtheCelebritySexPass.html",
     "cleanUrl": "/GailDaughtryandtheCelebritySexPass.html",
-    "keywords": "Gail Daughtry and the Celebrity Sex Pass Zoey Deutch Jon Hamm John Slattery David Wain Ken Marino English Comedy 2026 Gail Daughtry Celebrity Sex Pass"
+    "keywords": "Gail Daughtry and the Celebrity Sex Pass Zoey Deutch Jon Hamm John Slattery David Wain Ken Marino English Comedy 2026 Gail Daughtry Celebrity Sex Pass",
+    "filename": "GailDaughtryandtheCelebritySexPass.html",
+    "id": "GailDaughtryandtheCelebritySexPass",
+    "category": "Hollywood",
+    "poster": "pics/Films/GailDaughtryandtheCelebritySexPass/1.jpg"
   },
   {
     "id": "Lanterns",
@@ -6211,7 +6222,7 @@
     "genre": "Mystery,Horror,Thriller",
     "language": "English",
     "year": "2017",
-    "poster": "pics/Films/mother!/1.jpg"
+    "poster": "pics/Films/mother/1.jpg"
   },
   {
     "id": "MyCousinRachel",
@@ -6661,7 +6672,7 @@
     "genre": "War Drama",
     "language": "English",
     "year": "2017",
-    "poster": "pics/Films/The%20Zookeeper's%20Wife/1.jpg"
+    "poster": "pics/Films/The Zookeepers Wife/1.jpg"
   },
   {
     "id": "Nibunan",
@@ -7671,7 +7682,7 @@
     "genre": "Rap/Drama",
     "language": "English",
     "year": "2017",
-    "poster": "pics/Films/PattiCake$/1.jpg"
+    "poster": "pics/Films/PattiCake/1.jpg"
   },
   {
     "id": "Baadshaho",
@@ -8361,7 +8372,7 @@
     "genre": "Horror",
     "language": "English",
     "year": "2016",
-    "poster": "pics/Films/Don't Breathe/4.jpg"
+    "poster": "pics/Films/Dont Breathe/4.jpg"
   },
   {
     "id": "HacksawRidge",
@@ -8511,7 +8522,7 @@
     "genre": "Romance",
     "language": "English",
     "year": "2016",
-    "poster": "pics/Films/Rules Don't Apply/4.jpg"
+    "poster": "pics/Films/Rules Dont Apply/4.jpg"
   },
   {
     "id": "Sully",
@@ -8631,7 +8642,7 @@
     "genre": "Romance Comedy",
     "language": "English",
     "year": "2016",
-    "poster": "pics/Films/Bridget Jones's Baby/4.jpg"
+    "poster": "pics/Films/Bridget Joness Baby/4.jpg"
   },
   {
     "id": "DeepwaterHorizon",
@@ -8941,7 +8952,7 @@
     "genre": "Epic Fantasy",
     "language": "Mandarin (Chinese)",
     "year": "2016",
-    "poster": "pics/Films/Big Fish & Begonia/4.jpg"
+    "poster": "pics/Films/Big Fish and Begonia/4.jpg"
   },
   {
     "id": "BountyHunters",
@@ -9361,7 +9372,7 @@
     "genre": "Romantic Comedy",
     "language": "English",
     "year": "2016",
-    "poster": "pics/Films/Maggie's Plan/4.jpg"
+    "poster": "pics/Films/Maggies Plan/4.jpg"
   },
   {
     "id": "MeBeforeYou",
@@ -9411,7 +9422,7 @@
     "genre": "Mystery Thriller",
     "language": "Hindi",
     "year": "2016",
-    "poster": "pics/Films/Miss Peregrine's Home for Peculiar Children/4.jpg"
+    "poster": "pics/Films/Miss Peregrines Home for Peculiar Children/4.jpg"
   },
   {
     "id": "MissSloane",
@@ -9541,7 +9552,7 @@
     "genre": "Fantasy",
     "language": "English",
     "year": "2016",
-    "poster": "pics/Films/Pete's Dragon/4.jpg"
+    "poster": "pics/Films/Petes Dragon/4.jpg"
   },
   {
     "id": "Phobia",
@@ -9591,7 +9602,7 @@
     "genre": "Periodic Thriller",
     "language": "Hindi",
     "year": "2016",
-    "poster": "pics/Films/San' 75/4.jpg"
+    "poster": "pics/Films/San 75/4.jpg"
   },
   {
     "id": "Sarbjit",
@@ -10131,7 +10142,7 @@
     "genre": "Action",
     "language": "English",
     "year": "2016",
-    "poster": "pics/Films/Assassin's Creed/4.jpg"
+    "poster": "pics/Films/Assassins Creed/4.jpg"
   },
   {
     "id": "Befikre",
@@ -10281,7 +10292,7 @@
     "genre": "Drama Bio-Pic",
     "language": "English",
     "year": "2016",
-    "poster": "pics/Films/I'm Not Ashamed/4.JPG"
+    "poster": "pics/Films/Im Not Ashamed/4.JPG"
   },
   {
     "id": "TheMagnificentSeven",
@@ -10541,7 +10552,7 @@
     "genre": "War Drama",
     "language": "English",
     "year": "2016",
-    "poster": "pics/Films/Billy Lynn's Long Halftime Walk/4.JPG"
+    "poster": "pics/Films/Billy Lynns Long Halftime Walk/4.JPG"
   },
   {
     "id": "KaththiSandai",
@@ -10961,7 +10972,7 @@
     "genre": "Entertainment",
     "language": "Hindi",
     "year": "",
-    "poster": "Profiles/CriticProfiles/MsMrOakShow/pics//1.jpg"
+    "poster": "Profiles/CriticProfiles/MsMrOakShow/pics/1.jpg"
   },
   {
     "id": "ReporterProfiles",
@@ -10971,7 +10982,7 @@
     "genre": "Entertainment",
     "language": "Hindi",
     "year": "",
-    "poster": "Profiles/CriticProfiles/MsMrOakShow/pics//1.jpg"
+    "poster": "Profiles/CriticProfiles/MsMrOakShow/pics/1.jpg"
   },
   {
     "id": "RaeesLailaMainLaila",
@@ -11755,7 +11766,7 @@
     "poster": "Profiles/CriticProfiles/AchuthanKarnnan/pics/TikTikTikReview/tik-tik-tik-review.jpg"
   },
   {
-    "id": "",
+    "id": "VishnuPc",
     "title": "Vishnu Pc",
     "type": "review",
     "author": "",
@@ -11763,7 +11774,7 @@
     "poster": "VishnuPc/pics/1.jpg"
   },
   {
-    "id": "",
+    "id": "JithinJPrasad",
     "title": "Jithin J Prasad",
     "type": "review",
     "author": "",
@@ -11771,7 +11782,7 @@
     "poster": "JithinJPrasad/pics/1.jpg"
   },
   {
-    "id": "",
+    "id": "AchuthanKarnnan",
     "title": "Achuthan Karnnan",
     "type": "review",
     "author": "",
@@ -11779,7 +11790,7 @@
     "poster": "AchuthanKarnnan/pics/1.jpg"
   },
   {
-    "id": "",
+    "id": "ManojAswin",
     "title": "Manoj Aswin",
     "type": "review",
     "author": "",
@@ -11787,7 +11798,7 @@
     "poster": "ManojAswin/pics/1.jpg"
   },
   {
-    "id": "",
+    "id": "AbhijithAG",
     "title": "Abhijith A G",
     "type": "review",
     "author": "",
@@ -11795,7 +11806,7 @@
     "poster": "AbhijithAG/pics/1.jpg"
   },
   {
-    "id": "",
+    "id": "MsMrOakShow",
     "title": "Ms./Mr. OakShow",
     "type": "review",
     "author": "",
@@ -12115,7 +12126,7 @@
     "poster": "Profiles/CriticProfiles/AchuthanKarnnan/pics/TikTikTikReview/tik-tik-tik-review.jpg"
   },
   {
-    "id": "",
+    "id": "VishnuPc",
     "title": "Vishnu Pc",
     "type": "review",
     "author": "",
@@ -12123,7 +12134,7 @@
     "poster": "VishnuPc/pics/1.jpg"
   },
   {
-    "id": "",
+    "id": "JithinJPrasad",
     "title": "Jithin J Prasad",
     "type": "review",
     "author": "",
@@ -12131,7 +12142,7 @@
     "poster": "JithinJPrasad/pics/1.jpg"
   },
   {
-    "id": "",
+    "id": "AchuthanKarnnan",
     "title": "Achuthan Karnnan",
     "type": "review",
     "author": "",
@@ -12139,7 +12150,7 @@
     "poster": "AchuthanKarnnan/pics/1.jpg"
   },
   {
-    "id": "",
+    "id": "ManojAswin",
     "title": "Manoj Aswin",
     "type": "review",
     "author": "",
@@ -12147,7 +12158,7 @@
     "poster": "ManojAswin/pics/1.jpg"
   },
   {
-    "id": "",
+    "id": "AbhijithAG",
     "title": "Abhijith A G",
     "type": "review",
     "author": "",
@@ -12155,7 +12166,7 @@
     "poster": "AbhijithAG/pics/1.jpg"
   },
   {
-    "id": "",
+    "id": "MsMrOakShow",
     "title": "Ms./Mr. OakShow",
     "type": "review",
     "author": "",
