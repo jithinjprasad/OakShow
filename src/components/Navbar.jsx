@@ -49,17 +49,7 @@ export default function Navbar({
   const [topDropdownOpen, setTopDropdownOpen] = useState(false);
   const [policyModalOpen, setPolicyModalOpen] = useState(false);
   const [userDropdownOpen, setUserDropdownOpen] = useState(false);
-  const [currentTheme, setCurrentTheme] = useState(() => {
-    try {
-      if (typeof document !== 'undefined') {
-        const docTheme = document.documentElement.getAttribute('data-theme');
-        if (docTheme) return docTheme;
-      }
-      return localStorage.getItem('oakshow_theme') || 'dark';
-    } catch {
-      return 'dark';
-    }
-  });
+  const [currentTheme, setCurrentTheme] = useState('light');
   const dropdownRef = useRef(null);
 
   useEffect(() => {
@@ -388,19 +378,6 @@ export default function Navbar({
               <kbd className="search-kbd">⌘K</kbd>
             </button>
 
-            {/* Theme Toggle Button (Desktop only, moved into Hamburger on mobile) */}
-            <button
-              className="theme-toggle-btn desktop-only-control"
-              onClick={handleToggleTheme}
-              title={currentTheme === 'dark' ? 'Switch to Light Theme' : 'Switch to Dark Theme'}
-              aria-label="Toggle theme"
-            >
-              {currentTheme === 'dark' ? (
-                <Sun size={18} className="theme-icon text-gold" />
-              ) : (
-                <Moon size={18} className="theme-icon text-accent" />
-              )}
-            </button>
 
             {/* Bookmarks Counter (Desktop only, moved into Hamburger on mobile) */}
             <button
@@ -655,22 +632,6 @@ export default function Navbar({
                   <span className="mc-badge-gold">{bookmarkCount}</span>
                 </button>
 
-                {/* Theme Switcher */}
-                <button
-                  className="mobile-control-card"
-                  onClick={handleToggleTheme}
-                >
-                  <div className="mc-left">
-                    <div className="mc-icon-pill mc-icon-theme">
-                      {currentTheme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
-                    </div>
-                    <div className="mc-text-col">
-                      <span className="mc-title">Appearance</span>
-                      <span className="mc-subtitle">{currentTheme === 'dark' ? 'Dark Mode' : 'Light Mode'}</span>
-                    </div>
-                  </div>
-                  <span className="mc-badge-accent">{currentTheme === 'dark' ? 'Light' : 'Dark'}</span>
-                </button>
               </div>
             </div>
 
@@ -754,18 +715,10 @@ export default function Navbar({
           transition: all var(--transition-normal);
           padding-top: env(safe-area-inset-top, 0px);
         }
-        html[data-theme="dark"] .navbar-root {
-          background: rgba(4, 14, 28, 0.98) !important;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
-        }
         .navbar-scrolled {
           background: var(--bg-surface);
           box-shadow: var(--shadow-md);
           border-bottom-color: var(--border-focus);
-        }
-        html[data-theme="dark"] .navbar-scrolled {
-          background: #030813 !important;
-          border-bottom-color: rgba(56, 189, 248, 0.25) !important;
         }
 
         /* Main Navbar layout */
@@ -1188,6 +1141,12 @@ export default function Navbar({
 
         /* Mobile Header Breakpoint (<= 1080px): Shows ONLY Search Icon & Hamburger */
         @media (max-width: 1080px) {
+          .navbar-root {
+            backdrop-filter: none !important;
+            -webkit-backdrop-filter: none !important;
+            margin-bottom: -1px !important;
+          }
+
           .desktop-nav {
             display: none !important;
           }

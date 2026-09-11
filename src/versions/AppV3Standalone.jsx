@@ -152,35 +152,25 @@ export default function App() {
     setCurrentUser(null);
   };
 
-  // Theme State: 'dark' by default for mobile browsers, 'light' for desktop, switchable
-  const [theme, setTheme] = useState(() => {
-    try {
-      const saved = localStorage.getItem('oakshow_theme');
-      if (saved === 'dark' || saved === 'light') return saved;
-      const isMobile = typeof window !== 'undefined' && (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || (window.innerWidth && window.innerWidth <= 768));
-      return isMobile ? 'dark' : 'light';
-    } catch {
-      return 'light';
-    }
-  });
+  // Theme State: 'light' permanently across all desktop and mobile devices
+  const [theme, setTheme] = useState('light');
 
   useEffect(() => {
     try {
-      document.documentElement.setAttribute('data-theme', theme);
-      document.documentElement.style.colorScheme = theme;
-      localStorage.setItem('oakshow_theme', theme);
-      const themeColor = theme === 'light' ? '#ffffff' : '#030813';
+      document.documentElement.setAttribute('data-theme', 'light');
+      document.documentElement.style.colorScheme = 'light';
+      try { localStorage.removeItem('oakshow_theme'); } catch (e) {}
       const metaTheme = document.getElementById('theme-color-meta') || document.querySelector('meta[name="theme-color"]');
       if (metaTheme) {
-        metaTheme.setAttribute('content', themeColor);
+        metaTheme.setAttribute('content', '#ffffff');
       }
     } catch (e) {
       console.error(e);
     }
-  }, [theme]);
+  }, []);
 
   const toggleTheme = () => {
-    setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
+    // Dark theme removed across all versions
   };
 
   useEffect(() => {

@@ -47,7 +47,8 @@ $mediaDirs = @(
     @{ Src = "$srcDir\pics\Films\GDN"; Dest = "$workDir\dist\pics\Films\GDN" },
     @{ Src = "$srcDir\pics\RatingSiteLogos"; Dest = "$workDir\dist\pics\RatingSiteLogos" },
     @{ Src = "$srcDir\pics\SocialWebsiteLogos"; Dest = "$workDir\dist\pics\SocialWebsiteLogos" },
-    @{ Src = "$srcDir\pics\BookngWebSiteLogos"; Dest = "$workDir\dist\pics\BookngWebSiteLogos" }
+    @{ Src = "$srcDir\pics\BookngWebSiteLogos"; Dest = "$workDir\dist\pics\BookngWebSiteLogos" },
+    @{ Src = "$srcDir\pics\WatchOnline"; Dest = "$workDir\dist\pics\WatchOnline" }
 )
 
 foreach ($m in $mediaDirs) {
@@ -86,7 +87,7 @@ Write-Host "Committing and pushing to oakshow-prod..."
 & $git -C $workDir config user.name 'jithinjprasad'
 & $git -C $workDir config user.email 'jithinjprasad@gmail.com'
 & $git -C $workDir add -A
-& $git -C $workDir commit -m "Fix mobile dark theme status bar and viewport white bar glitch" -q
+& $git -C $workDir commit -m "Remove dark theme across desktop and mobile, restore pure light editorial design system" -q
 & $git -C $workDir push "https://$token@github.com/jithinjprasad/oakshow-prod.git" main
 
 if ($LASTEXITCODE -ne 0) {

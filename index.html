@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="theme-color" content="#030813" id="theme-color-meta" />
-  <meta name="color-scheme" content="dark light" />
+  <meta name="theme-color" content="#ffffff" id="theme-color-meta" />
+  <meta name="color-scheme" content="light" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico?v=oakshow3" />
   <link rel="icon" type="image/png" sizes="300x300" href="/favicon.png?v=oakshow3" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=oakshow3" />
@@ -16,17 +16,13 @@
   <script>
     (function() {
       try {
-        var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || (window.innerWidth && window.innerWidth <= 768);
-        var savedTheme = localStorage.getItem('oakshow_theme');
-        var t = savedTheme || (isMobile ? 'dark' : 'light');
-        document.documentElement.setAttribute('data-theme', t);
-        document.documentElement.style.colorScheme = t;
+        try { localStorage.removeItem('oakshow_theme'); } catch(e) {}
+        document.documentElement.setAttribute('data-theme', 'light');
+        document.documentElement.style.colorScheme = 'light';
 
-        // Immediately sync mobile browser theme-color status bar before initial paint
-        var themeColor = (t === 'light') ? '#ffffff' : '#030813';
         var metaTheme = document.getElementById('theme-color-meta') || document.querySelector('meta[name="theme-color"]');
         if (metaTheme) {
-          metaTheme.setAttribute('content', themeColor);
+          metaTheme.setAttribute('content', '#ffffff');
         }
 
         // Synchronously derive and set initial document.title before Analytics loads
@@ -39,6 +35,16 @@
       } catch(e) {}
     })();
   </script>
+  <style>
+    html, body, #root {
+      background-color: #f8fafc;
+      margin: 0;
+      padding: 0;
+    }
+    noscript {
+      display: none !important;
+    }
+  </style>
   
   <title>OakShow-The One Destination For Everything On Entertainment</title>
   <meta name="description" content="Explore unified movie ratings, verified critic reviews, trailers, release calendars, tickets, and deep entertainment insights across Indian Cinema, Hollywood, Series, and World Entertainment." />

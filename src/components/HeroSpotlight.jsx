@@ -193,7 +193,7 @@ export default function HeroSpotlight({ movies, onSelectMovie, onPlayTrailer }) 
         }
         .hero-backdrop {
           position: absolute;
-          inset: 0;
+          inset: -10px;
           background-size: cover;
           background-position: center 25%;
           filter: blur(2px) brightness(0.65);
