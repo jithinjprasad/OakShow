@@ -51,9 +51,13 @@ export default function Navbar({
   const [userDropdownOpen, setUserDropdownOpen] = useState(false);
   const [currentTheme, setCurrentTheme] = useState(() => {
     try {
-      return localStorage.getItem('oakshow_theme') || 'light';
+      if (typeof document !== 'undefined') {
+        const docTheme = document.documentElement.getAttribute('data-theme');
+        if (docTheme) return docTheme;
+      }
+      return localStorage.getItem('oakshow_theme') || 'dark';
     } catch {
-      return 'light';
+      return 'dark';
     }
   });
   const dropdownRef = useRef(null);
@@ -61,6 +65,13 @@ export default function Navbar({
   useEffect(() => {
     if (propTheme) {
       setCurrentTheme(propTheme);
+    } else if (typeof document !== 'undefined') {
+      const observer = new MutationObserver(() => {
+        const t = document.documentElement.getAttribute('data-theme');
+        if (t) setCurrentTheme(t);
+      });
+      observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+      return () => observer.disconnect();
     }
   }, [propTheme]);
 
@@ -484,10 +495,11 @@ export default function Navbar({
       </header>
 
       {/* IMDb-STYLE MOBILE NAVIGATION DRAWER & FULL-SCREEN OVERLAY */}
-      <div
-        className={`mobile-nav-overlay ${mobileMenuOpen ? 'is-open' : ''}`}
-        aria-hidden={!mobileMenuOpen}
-      >
+      {mobileMenuOpen && (
+        <div
+          className={`mobile-nav-overlay ${mobileMenuOpen ? 'is-open' : ''}`}
+          aria-hidden={!mobileMenuOpen}
+        >
         {/* Dimmed backdrop to close on outside click */}
         <div
           className="mobile-nav-backdrop"
@@ -720,6 +732,7 @@ export default function Navbar({
           </div>
         </div>
       </div>
+    )}
 
       {/* Copyright Policy Modal */}
       <CopyrightPolicyModal
@@ -741,10 +754,18 @@ export default function Navbar({
           transition: all var(--transition-normal);
           padding-top: env(safe-area-inset-top, 0px);
         }
+        html[data-theme="dark"] .navbar-root {
+          background: rgba(4, 14, 28, 0.98) !important;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+        }
         .navbar-scrolled {
           background: var(--bg-surface);
           box-shadow: var(--shadow-md);
           border-bottom-color: var(--border-focus);
+        }
+        html[data-theme="dark"] .navbar-scrolled {
+          background: #030813 !important;
+          border-bottom-color: rgba(56, 189, 248, 0.25) !important;
         }
 
         /* Main Navbar layout */
@@ -1200,7 +1221,7 @@ export default function Navbar({
           position: fixed;
           inset: 0;
           z-index: 2000;
-          display: flex;
+          display: none;
           flex-direction: column;
           justify-content: flex-start;
           pointer-events: none;
@@ -1209,6 +1230,7 @@ export default function Navbar({
           transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         }
         .mobile-nav-overlay.is-open {
+          display: flex !important;
           pointer-events: auto;
           opacity: 1;
           visibility: visible;
