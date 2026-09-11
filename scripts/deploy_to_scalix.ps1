@@ -87,7 +87,7 @@ Write-Host "Committing and pushing to oakshow-prod..."
 & $git -C $workDir config user.name 'jithinjprasad'
 & $git -C $workDir config user.email 'jithinjprasad@gmail.com'
 & $git -C $workDir add -A
-& $git -C $workDir commit -m "Remove dark theme across desktop and mobile, restore pure light editorial design system" -q
+& $git -C $workDir commit -m "Introduce dark theme toggle switch on desktop and mobile ALL section" -q
 & $git -C $workDir push "https://$token@github.com/jithinjprasad/oakshow-prod.git" main
 
 if ($LASTEXITCODE -ne 0) {
