@@ -23,8 +23,6 @@ import {
   ChevronDown,
   Layers,
   Image,
-  Sun,
-  Moon,
   Clock,
   User,
   LogOut
@@ -38,8 +36,6 @@ export default function Navbar({
   bookmarkCount,
   onOpenBookmarks,
   totalMoviesCount,
-  theme: propTheme,
-  onToggleTheme: propToggleTheme,
   currentUser,
   onOpenAuth,
   onLogout
@@ -49,54 +45,7 @@ export default function Navbar({
   const [topDropdownOpen, setTopDropdownOpen] = useState(false);
   const [policyModalOpen, setPolicyModalOpen] = useState(false);
   const [userDropdownOpen, setUserDropdownOpen] = useState(false);
-  const [currentTheme, setCurrentTheme] = useState(() => {
-    try {
-      if (typeof document !== 'undefined') {
-        const docTheme = document.documentElement.getAttribute('data-theme');
-        if (docTheme) return docTheme;
-      }
-      return localStorage.getItem('oakshow_theme') || 'light';
-    } catch {
-      return 'light';
-    }
-  });
   const dropdownRef = useRef(null);
-
-  useEffect(() => {
-    if (propTheme) {
-      setCurrentTheme(propTheme);
-    }
-    if (typeof document !== 'undefined') {
-      const docTheme = document.documentElement.getAttribute('data-theme');
-      if (docTheme) setCurrentTheme(docTheme);
-
-      const observer = new MutationObserver(() => {
-        const t = document.documentElement.getAttribute('data-theme');
-        if (t && (t === 'dark' || t === 'light')) setCurrentTheme(t);
-      });
-      observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
-      return () => observer.disconnect();
-    }
-  }, [propTheme]);
-
-  const handleToggleTheme = () => {
-    const nextTheme = currentTheme === 'light' ? 'dark' : 'light';
-    setCurrentTheme(nextTheme);
-    try {
-      localStorage.setItem('oakshow_theme', nextTheme);
-      document.documentElement.setAttribute('data-theme', nextTheme);
-      document.documentElement.style.colorScheme = nextTheme;
-      const metaTheme = document.getElementById('theme-color-meta') || document.querySelector('meta[name="theme-color"]');
-      if (metaTheme) {
-        metaTheme.setAttribute('content', nextTheme === 'dark' ? '#030813' : '#ffffff');
-      }
-    } catch (e) {
-      console.error(e);
-    }
-    if (propToggleTheme) {
-      propToggleTheme();
-    }
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -347,22 +296,7 @@ export default function Navbar({
                         <span className="text-muted">Direct access to all channels</span>
                       </div>
                     </div>
-                    <div className="dm-header-actions" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                      <button
-                        type="button"
-                        className={`modern-theme-switch ${currentTheme === 'dark' ? 'switch-dark' : 'switch-light'}`}
-                        onClick={handleToggleTheme}
-                        role="switch"
-                        aria-checked={currentTheme === 'dark'}
-                        title={currentTheme === 'dark' ? 'Switch to Light Theme' : 'Switch to Dark Theme'}
-                        aria-label="Toggle dark theme"
-                      >
-                        <span className="switch-icon switch-sun"><Sun size={12} /></span>
-                        <span className="switch-icon switch-moon"><Moon size={12} /></span>
-                        <span className="switch-thumb" />
-                      </button>
-                      <span className="dm-count-badge">{allSectionsList.length} Portals</span>
-                    </div>
+                    <span className="dm-count-badge">{allSectionsList.length} Portals</span>
                   </div>
 
                   <div className="dropdown-sections-grid">
@@ -410,22 +344,6 @@ export default function Navbar({
               <kbd className="search-kbd">⌘K</kbd>
             </button>
 
-            {/* Desktop Theme Toggle Switch */}
-            <div className="desktop-theme-switch-wrap desktop-only-control">
-              <button
-                type="button"
-                className={`modern-theme-switch ${currentTheme === 'dark' ? 'switch-dark' : 'switch-light'}`}
-                onClick={handleToggleTheme}
-                role="switch"
-                aria-checked={currentTheme === 'dark'}
-                title={currentTheme === 'dark' ? 'Switch to Light Theme' : 'Switch to Dark Theme'}
-                aria-label="Toggle dark theme"
-              >
-                <span className="switch-icon switch-sun"><Sun size={12} /></span>
-                <span className="switch-icon switch-moon"><Moon size={12} /></span>
-                <span className="switch-thumb" />
-              </button>
-            </div>
 
             {/* Bookmarks Counter (Desktop only, moved into Hamburger on mobile) */}
             <button
@@ -679,37 +597,6 @@ export default function Navbar({
                   </div>
                   <span className="mc-badge-gold">{bookmarkCount}</span>
                 </button>
-
-                {/* Theme Switcher Card */}
-                <div
-                  className="mobile-control-card"
-                  onClick={handleToggleTheme}
-                  role="button"
-                  tabIndex={0}
-                  onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleToggleTheme(); }}
-                >
-                  <div className="mc-left">
-                    <div className={`mc-icon-pill ${currentTheme === 'dark' ? 'mc-icon-theme' : 'mc-icon-gold'}`}>
-                      {currentTheme === 'dark' ? <Moon size={16} /> : <Sun size={16} />}
-                    </div>
-                    <div className="mc-text-col">
-                      <span className="mc-title">Theme</span>
-                      <span className="mc-subtitle">{currentTheme === 'dark' ? 'Dark Mode' : 'Light Mode'}</span>
-                    </div>
-                  </div>
-                  <button
-                    type="button"
-                    className={`modern-theme-switch ${currentTheme === 'dark' ? 'switch-dark' : 'switch-light'}`}
-                    onClick={(e) => { e.stopPropagation(); handleToggleTheme(); }}
-                    role="switch"
-                    aria-checked={currentTheme === 'dark'}
-                    aria-label="Toggle dark theme"
-                  >
-                    <span className="switch-icon switch-sun"><Sun size={12} /></span>
-                    <span className="switch-icon switch-moon"><Moon size={12} /></span>
-                    <span className="switch-thumb" />
-                  </button>
-                </div>
               </div>
             </div>
 
@@ -718,39 +605,6 @@ export default function Navbar({
               <div className="mobile-specialty-header-row">
                 <span className="mobile-section-header">All Sections & Matrix Portals</span>
                 <span className="mobile-count-pill">{allSectionsList.length} Portals</span>
-              </div>
-
-              {/* Theme Toggle Switch inside ALL Section */}
-              <div
-                className="mobile-all-theme-toggle-row"
-                onClick={handleToggleTheme}
-                role="button"
-                tabIndex={0}
-                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleToggleTheme(); }}
-              >
-                <div className="matt-left">
-                  <div className={`matt-icon-box ${currentTheme === 'dark' ? 'is-dark' : 'is-light'}`}>
-                    {currentTheme === 'dark' ? <Moon size={18} /> : <Sun size={18} />}
-                  </div>
-                  <div className="matt-text">
-                    <span className="matt-title">Dark Theme</span>
-                    <span className="matt-subtitle">
-                      {currentTheme === 'dark' ? 'Deep Oceanic Navy (Active)' : 'Clean Studio Light (Active)'}
-                    </span>
-                  </div>
-                </div>
-                <button
-                  type="button"
-                  className={`modern-theme-switch ${currentTheme === 'dark' ? 'switch-dark' : 'switch-light'}`}
-                  onClick={(e) => { e.stopPropagation(); handleToggleTheme(); }}
-                  role="switch"
-                  aria-checked={currentTheme === 'dark'}
-                  aria-label="Toggle dark theme"
-                >
-                  <span className="switch-icon switch-sun"><Sun size={12} /></span>
-                  <span className="switch-icon switch-moon"><Moon size={12} /></span>
-                  <span className="switch-thumb" />
-                </button>
               </div>
 
               <div className="mobile-specialty-grid">
@@ -826,18 +680,10 @@ export default function Navbar({
           transition: all var(--transition-normal);
           padding-top: env(safe-area-inset-top, 0px);
         }
-        html[data-theme="dark"] .navbar-root {
-          background: rgba(4, 14, 28, 0.98) !important;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
-        }
         .navbar-scrolled {
           background: var(--bg-surface);
           box-shadow: var(--shadow-md);
           border-bottom-color: var(--border-focus);
-        }
-        html[data-theme="dark"] .navbar-scrolled {
-          background: #030813 !important;
-          border-bottom-color: rgba(56, 189, 248, 0.25) !important;
         }
 
         /* Main Navbar layout */
@@ -1615,152 +1461,6 @@ export default function Navbar({
           background: rgba(2, 132, 199, 0.18);
           color: var(--accent-primary);
           border: 1px solid rgba(2, 132, 199, 0.35);
-        }
-
-        /* Modern Accessible Theme Toggle Switch */
-        .modern-theme-switch {
-          position: relative;
-          display: inline-flex;
-          align-items: center;
-          justify-content: space-between;
-          width: 50px;
-          height: 28px;
-          padding: 3px 5px;
-          border-radius: 999px;
-          background: var(--bg-surface-elevated, #e2e8f0);
-          border: 1px solid var(--border-subtle, rgba(0, 0, 0, 0.12));
-          cursor: pointer;
-          outline: none;
-          user-select: none;
-          transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06);
-          flex-shrink: 0;
-        }
-
-        .modern-theme-switch:hover {
-          border-color: var(--accent-primary);
-          transform: scale(1.03);
-        }
-
-        .modern-theme-switch:focus-visible {
-          box-shadow: 0 0 0 3px var(--accent-primary-glow, rgba(2, 132, 199, 0.35));
-        }
-
-        .modern-theme-switch.switch-dark {
-          background: #0a1b35;
-          border-color: rgba(56, 189, 248, 0.45);
-          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4), 0 0 10px rgba(2, 132, 199, 0.25);
-        }
-
-        .switch-icon {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          z-index: 1;
-          transition: opacity 0.2s ease, transform 0.2s ease;
-          pointer-events: none;
-        }
-
-        .switch-sun {
-          color: #f59e0b;
-        }
-
-        .switch-moon {
-          color: #38bdf8;
-        }
-
-        .switch-light .switch-moon {
-          opacity: 0.35;
-        }
-
-        .switch-dark .switch-sun {
-          opacity: 0.35;
-        }
-
-        .switch-thumb {
-          position: absolute;
-          top: 3px;
-          left: 3px;
-          width: 20px;
-          height: 20px;
-          border-radius: 50%;
-          background: #ffffff;
-          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
-          transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.2s ease;
-          z-index: 2;
-          pointer-events: none;
-        }
-
-        .switch-dark .switch-thumb {
-          transform: translateX(22px);
-          background: #ffffff;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), 0 0 8px rgba(56, 189, 248, 0.6);
-        }
-
-        .desktop-theme-switch-wrap {
-          display: flex;
-          align-items: center;
-        }
-
-        /* Mobile All Section Theme Toggle Row */
-        .mobile-all-theme-toggle-row {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding: 12px 14px;
-          margin-bottom: 14px;
-          border-radius: var(--radius-md);
-          background: var(--bg-surface-elevated);
-          border: 1px solid var(--border-subtle);
-          cursor: pointer;
-          transition: all var(--transition-fast);
-        }
-        .mobile-all-theme-toggle-row:hover,
-        .mobile-all-theme-toggle-row:active {
-          background: var(--bg-surface);
-          border-color: var(--accent-primary);
-          box-shadow: var(--shadow-sm);
-        }
-        .matt-left {
-          display: flex;
-          align-items: center;
-          gap: 12px;
-        }
-        .matt-icon-box {
-          width: 36px;
-          height: 36px;
-          border-radius: var(--radius-sm);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          transition: all var(--transition-fast);
-          flex-shrink: 0;
-        }
-        .matt-icon-box.is-light {
-          background: rgba(217, 119, 6, 0.14);
-          color: var(--accent-gold);
-          border: 1px solid rgba(217, 119, 6, 0.3);
-        }
-        .matt-icon-box.is-dark {
-          background: rgba(2, 132, 199, 0.2);
-          color: var(--accent-cyan);
-          border: 1px solid rgba(56, 189, 248, 0.35);
-        }
-        .matt-text {
-          display: flex;
-          flex-direction: column;
-          text-align: left;
-        }
-        .matt-title {
-          font-size: 0.9rem;
-          font-weight: 700;
-          color: var(--text-heading);
-          line-height: 1.2;
-        }
-        .matt-subtitle {
-          font-size: 0.72rem;
-          color: var(--text-muted);
-          margin-top: 2px;
         }
 
         /* Section 3: All 13 Specialty Matrix Portals */

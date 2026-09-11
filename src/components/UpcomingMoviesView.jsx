@@ -709,28 +709,20 @@ export default function UpcomingMoviesView({
           position: relative;
           border-radius: var(--radius-lg, 16px);
           overflow: hidden;
-          background: linear-gradient(140deg, #111827 0%, #0b0f19 100%);
-          border: 1px solid rgba(245, 158, 11, 0.35);
-          box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.6), 0 0 28px rgba(245, 158, 11, 0.09);
-          transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        }
-        [data-theme="light"] .upcoming-spotlight-card {
           background: linear-gradient(140deg, #ffffff 0%, #f8fafc 100%);
           border: 1px solid rgba(245, 158, 11, 0.45);
           box-shadow: 0 12px 36px rgba(15, 23, 42, 0.08), 0 0 24px rgba(245, 158, 11, 0.12);
+          transition: border-color 0.3s ease, box-shadow 0.3s ease;
         }
         .upcoming-spotlight-bg {
           position: absolute;
           inset: 0;
           background-size: cover;
           background-position: center 25%;
-          opacity: 0.22;
+          opacity: 0.12;
           filter: blur(1px);
           transform: scale(1.02);
           transition: transform 0.6s ease;
-        }
-        [data-theme="light"] .upcoming-spotlight-bg {
-          opacity: 0.12;
         }
         .upcoming-spotlight-card:hover .upcoming-spotlight-bg {
           transform: scale(1.05);
@@ -738,9 +730,6 @@ export default function UpcomingMoviesView({
         .upcoming-spotlight-overlay {
           position: absolute;
           inset: 0;
-          background: linear-gradient(135deg, rgba(15, 23, 42, 0.96) 0%, rgba(15, 23, 42, 0.88) 55%, rgba(15, 23, 42, 0.72) 100%);
-        }
-        [data-theme="light"] .upcoming-spotlight-overlay {
           background: linear-gradient(135deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.88) 55%, rgba(248, 250, 252, 0.75) 100%);
         }
         .upcoming-spotlight-inner {
@@ -762,14 +751,14 @@ export default function UpcomingMoviesView({
           position: relative;
           border-radius: var(--radius-md, 14px);
           overflow: hidden;
-          box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
-          border: 1px solid rgba(255, 255, 255, 0.14);
+          box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+          border: 1px solid rgba(15, 23, 42, 0.12);
           cursor: pointer;
           transition: transform 0.25s ease, box-shadow 0.25s ease;
         }
         .upcoming-spotlight-poster-wrap:hover {
           transform: translateY(-4px);
-          box-shadow: 0 18px 38px rgba(0, 0, 0, 0.65);
+          box-shadow: 0 18px 38px rgba(0, 0, 0, 0.22);
         }
         .upcoming-spotlight-poster {
           width: 100%;
@@ -780,7 +769,7 @@ export default function UpcomingMoviesView({
         .upcoming-poster-play-overlay {
           position: absolute;
           inset: 0;
-          background: rgba(15, 23, 42, 0.6);
+          background: rgba(15, 23, 42, 0.5);
           backdrop-filter: blur(3px);
           display: flex;
           flex-direction: column;
@@ -848,26 +837,21 @@ export default function UpcomingMoviesView({
           display: inline-flex;
           align-items: center;
           gap: 5px;
-          background: linear-gradient(135deg, rgba(245, 158, 11, 0.25) 0%, rgba(217, 119, 6, 0.25) 100%);
+          background: linear-gradient(135deg, rgba(245, 158, 11, 0.16) 0%, rgba(217, 119, 6, 0.16) 100%);
           border: 1px solid rgba(245, 158, 11, 0.6);
-          color: #fbbf24;
+          color: #b45309;
           padding: 5px 12px;
           border-radius: 6px;
           font-size: 0.74rem;
           font-weight: 800;
           letter-spacing: 0.6px;
           text-transform: uppercase;
-          box-shadow: 0 0 16px rgba(245, 158, 11, 0.2);
-        }
-        [data-theme="light"] .spotlight-prem-badge {
-          background: linear-gradient(135deg, rgba(245, 158, 11, 0.16) 0%, rgba(217, 119, 6, 0.16) 100%);
-          color: #b45309;
-          border-color: rgba(245, 158, 11, 0.6);
+          box-shadow: 0 0 16px rgba(245, 158, 11, 0.12);
         }
         .spotlight-cat-badge {
-          background: rgba(239, 68, 68, 0.2);
-          border: 1px solid rgba(239, 68, 68, 0.5);
-          color: #f87171;
+          background: rgba(239, 68, 68, 0.12);
+          border: 1px solid rgba(239, 68, 68, 0.4);
+          color: #dc2626;
           padding: 4px 10px;
           border-radius: 6px;
           font-size: 0.74rem;
@@ -875,20 +859,15 @@ export default function UpcomingMoviesView({
           text-transform: uppercase;
           letter-spacing: 0.5px;
         }
-        [data-theme="light"] .spotlight-cat-badge {
-          background: rgba(239, 68, 68, 0.12);
-          color: #dc2626;
-          border-color: rgba(239, 68, 68, 0.4);
-        }
         .upcoming-meta-tag {
           font-size: 0.84rem;
           font-weight: 700;
-          color: var(--text-muted, #94a3b8);
+          color: var(--text-muted, #475569);
         }
         .upcoming-spotlight-title {
           font-size: clamp(1.8rem, 3.5vw, 2.6rem);
           font-weight: 900;
-          color: var(--text-heading, #ffffff);
+          color: var(--text-heading, #091e42);
           margin: 0;
           line-height: 1.15;
           letter-spacing: -0.02em;
@@ -903,10 +882,10 @@ export default function UpcomingMoviesView({
           flex-wrap: wrap;
           gap: 16px;
           font-size: 0.88rem;
-          color: var(--text-secondary, #cbd5e1);
+          color: var(--text-secondary, #334155);
         }
         .upcoming-credit-item strong {
-          color: var(--text-muted, #94a3b8);
+          color: var(--text-muted, #475569);
           margin-right: 5px;
           font-weight: 700;
         }
@@ -918,7 +897,7 @@ export default function UpcomingMoviesView({
           font-size: 0.84rem;
         }
         .cast-label {
-          color: var(--text-muted, #94a3b8);
+          color: var(--text-muted, #475569);
           font-weight: 800;
           text-transform: uppercase;
           font-size: 0.72rem;
@@ -930,22 +909,17 @@ export default function UpcomingMoviesView({
           flex-wrap: wrap;
         }
         .cast-pill {
-          background: rgba(255, 255, 255, 0.08);
-          color: var(--text-heading, #f1f5f9);
+          background: rgba(15, 23, 42, 0.05);
+          color: #1e293b;
           padding: 3px 10px;
           border-radius: 6px;
           font-size: 0.78rem;
           font-weight: 600;
-          border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        [data-theme="light"] .cast-pill {
-          background: rgba(15, 23, 42, 0.05);
-          color: #1e293b;
-          border-color: rgba(15, 23, 42, 0.1);
+          border: 1px solid rgba(15, 23, 42, 0.1);
         }
         .upcoming-spotlight-desc {
           font-size: 0.9rem;
-          color: var(--text-muted, #94a3b8);
+          color: var(--text-muted, #475569);
           line-height: 1.6;
           margin: 0;
           display: -webkit-box;
@@ -964,47 +938,38 @@ export default function UpcomingMoviesView({
           display: inline-flex;
           align-items: center;
           gap: 12px;
-          background: linear-gradient(135deg, rgba(245, 158, 11, 0.09) 0%, rgba(255, 255, 255, 0.03) 100%);
-          border: 1px solid rgba(245, 158, 11, 0.38);
+          background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, #ffffff 100%);
+          border: 1px solid rgba(245, 158, 11, 0.45);
           padding: 10px 18px;
           border-radius: var(--radius-md, 12px);
           box-shadow: inset 0 0 14px rgba(245, 158, 11, 0.06);
-        }
-        [data-theme="light"] .upcoming-date-box {
-          background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, #ffffff 100%);
-          border-color: rgba(245, 158, 11, 0.45);
         }
         .date-sub-label {
           display: block;
           font-size: 0.68rem;
           text-transform: uppercase;
-          color: var(--text-muted, #94a3b8);
+          color: var(--text-muted, #475569);
           font-weight: 800;
           letter-spacing: 0.5px;
         }
         .date-value {
           display: block;
           font-size: 0.98rem;
-          color: var(--text-heading, #ffffff);
+          color: var(--text-heading, #091e42);
           font-weight: 800;
         }
         .upcoming-countdown-badge {
           display: inline-flex;
           align-items: center;
           gap: 7px;
-          background: linear-gradient(135deg, rgba(239, 68, 68, 0.24) 0%, rgba(249, 115, 22, 0.24) 100%);
-          color: #fca5a5;
-          border: 1px solid rgba(239, 68, 68, 0.55);
+          background: linear-gradient(135deg, rgba(239, 68, 68, 0.15) 0%, rgba(249, 115, 22, 0.15) 100%);
+          color: #b91c1c;
+          border: 1px solid rgba(239, 68, 68, 0.4);
           padding: 10px 18px;
           border-radius: var(--radius-md, 12px);
           font-weight: 800;
           font-size: 0.9rem;
-          box-shadow: 0 0 18px rgba(239, 68, 68, 0.2);
-        }
-        [data-theme="light"] .upcoming-countdown-badge {
-          background: linear-gradient(135deg, rgba(239, 68, 68, 0.15) 0%, rgba(249, 115, 22, 0.15) 100%);
-          color: #b91c1c;
-          border-color: rgba(239, 68, 68, 0.4);
+          box-shadow: 0 0 18px rgba(239, 68, 68, 0.12);
         }
         .upcoming-spotlight-actions {
           display: flex;
@@ -1040,21 +1005,16 @@ export default function UpcomingMoviesView({
           font-size: 0.92rem;
           font-weight: 700;
           border-radius: var(--radius-md, 10px);
-          background: rgba(255, 255, 255, 0.08);
-          border: 1px solid rgba(255, 255, 255, 0.2);
-          color: var(--text-heading, #f8fafc);
+          background: #ffffff;
+          border: 1px solid rgba(15, 23, 42, 0.18);
+          color: #0f172a;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
           cursor: pointer;
           transition: all 0.2s ease;
         }
-        [data-theme="light"] .upcoming-btn-details {
-          background: #ffffff;
-          border-color: rgba(15, 23, 42, 0.18);
-          color: #0f172a;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-        }
         .upcoming-btn-details:hover {
-          background: rgba(255, 255, 255, 0.16);
-          border-color: rgba(255, 255, 255, 0.35);
+          background: #f8fafc;
+          border-color: rgba(15, 23, 42, 0.3);
           transform: translateY(-2px);
         }
         .upcoming-btn-booking {
@@ -1065,19 +1025,15 @@ export default function UpcomingMoviesView({
           font-size: 0.92rem;
           font-weight: 800;
           border-radius: var(--radius-md, 10px);
-          background: linear-gradient(135deg, rgba(16, 185, 129, 0.24) 0%, rgba(5, 150, 105, 0.24) 100%);
+          background: linear-gradient(135deg, rgba(16, 185, 129, 0.18) 0%, rgba(5, 150, 105, 0.18) 100%);
           border: 1px solid #10b981;
-          color: #34d399 !important;
+          color: #047857 !important;
           text-decoration: none;
           transition: all 0.2s ease;
         }
-        [data-theme="light"] .upcoming-btn-booking {
-          background: linear-gradient(135deg, rgba(16, 185, 129, 0.18) 0%, rgba(5, 150, 105, 0.18) 100%);
-          color: #047857 !important;
-        }
         .upcoming-btn-booking:hover {
           background: #10b981;
-          color: #0b0f19 !important;
+          color: #ffffff !important;
           transform: translateY(-2px);
           box-shadow: 0 4px 20px rgba(16, 185, 129, 0.4);
         }
@@ -1088,26 +1044,21 @@ export default function UpcomingMoviesView({
           align-items: center;
           justify-content: center;
           border-radius: 50%;
-          background: rgba(255, 255, 255, 0.08);
-          border: 1px solid rgba(255, 255, 255, 0.18);
-          color: var(--text-secondary, #cbd5e1);
+          background: #ffffff;
+          border: 1px solid rgba(15, 23, 42, 0.18);
+          color: #64748b;
           cursor: pointer;
           transition: all 0.2s ease;
         }
-        [data-theme="light"] .upcoming-bookmark-btn {
-          background: #ffffff;
-          border-color: rgba(15, 23, 42, 0.18);
-          color: #64748b;
-        }
         .upcoming-bookmark-btn:hover {
-          background: rgba(255, 255, 255, 0.18);
-          color: #ffffff;
+          background: #f1f5f9;
+          color: #0f172a;
           transform: scale(1.06);
         }
         .upcoming-bookmark-btn.bookmarked {
           background: rgba(16, 185, 129, 0.25);
           border-color: #10b981;
-          color: #34d399;
+          color: #047857;
         }
 
         /* 3. Filters Bar */

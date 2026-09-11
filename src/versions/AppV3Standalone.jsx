@@ -152,35 +152,14 @@ export default function App() {
     setCurrentUser(null);
   };
 
-  // Theme State: 'light' by default, switchable to 'dark', stored in localStorage
-  const [theme, setTheme] = useState(() => {
-    try {
-      const saved = localStorage.getItem('oakshow_theme');
-      if (saved === 'dark' || saved === 'light') return saved;
-      return 'light';
-    } catch {
-      return 'light';
-    }
-  });
-
+  // Clean up any stale oakshow_theme from previous sessions
   useEffect(() => {
     try {
-      document.documentElement.setAttribute('data-theme', theme);
-      document.documentElement.style.colorScheme = theme;
-      localStorage.setItem('oakshow_theme', theme);
-      const themeColor = theme === 'light' ? '#ffffff' : '#030813';
-      const metaTheme = document.getElementById('theme-color-meta') || document.querySelector('meta[name="theme-color"]');
-      if (metaTheme) {
-        metaTheme.setAttribute('content', themeColor);
-      }
-    } catch (e) {
-      console.error(e);
-    }
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
-  };
+      localStorage.removeItem('oakshow_theme');
+      document.documentElement.setAttribute('data-theme', 'light');
+      document.documentElement.style.colorScheme = 'light';
+    } catch (e) {}
+  }, []);
 
   useEffect(() => {
     try {
@@ -1755,8 +1734,6 @@ export default function App() {
         currentUser={currentUser}
         onOpenAuth={handleOpenAuth}
         onLogout={handleLogout}
-        theme={theme}
-        onToggleTheme={toggleTheme}
       />
 
       <main className="main-content">
