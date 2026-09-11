@@ -86,7 +86,7 @@ Write-Host "Committing and pushing to oakshow-prod..."
 & $git -C $workDir config user.name 'jithinjprasad'
 & $git -C $workDir config user.email 'jithinjprasad@gmail.com'
 & $git -C $workDir add -A
-& $git -C $workDir commit -m "Restore OakShow to stable September 8th version" -q
+& $git -C $workDir commit -m "Fix mobile dark theme status bar and viewport white bar glitch" -q
 & $git -C $workDir push "https://$token@github.com/jithinjprasad/oakshow-prod.git" main
 
 if ($LASTEXITCODE -ne 0) {

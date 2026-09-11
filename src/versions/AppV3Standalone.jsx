@@ -169,6 +169,11 @@ export default function App() {
       document.documentElement.setAttribute('data-theme', theme);
       document.documentElement.style.colorScheme = theme;
       localStorage.setItem('oakshow_theme', theme);
+      const themeColor = theme === 'light' ? '#ffffff' : '#030813';
+      const metaTheme = document.getElementById('theme-color-meta') || document.querySelector('meta[name="theme-color"]');
+      if (metaTheme) {
+        metaTheme.setAttribute('content', themeColor);
+      }
     } catch (e) {
       console.error(e);
     }

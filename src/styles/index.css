@@ -130,10 +130,13 @@ html[data-theme="dark"] {
 html {
   scroll-behavior: smooth;
   color-scheme: light;
+  background-color: var(--bg-dark);
+  overscroll-behavior-y: none;
 }
 
 html[data-theme="dark"] {
   color-scheme: dark;
+  background-color: #030813 !important;
 }
 
 body {
@@ -143,6 +146,7 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   min-height: 100vh;
+  min-height: 100dvh;
   transition: background-color var(--transition-normal), color var(--transition-normal);
   background-image: 
     radial-gradient(circle at 18% 12%, rgba(2, 132, 199, 0.07) 0%, transparent 45%),
@@ -152,6 +156,7 @@ body {
 }
 
 html[data-theme="dark"] body {
+  background-color: #030813 !important;
   background-image: 
     radial-gradient(circle at 18% 12%, rgba(2, 132, 199, 0.16) 0%, transparent 45%),
     radial-gradient(circle at 82% 28%, rgba(56, 189, 248, 0.10) 0%, transparent 40%),
@@ -372,6 +377,7 @@ button {
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-subtle);
   transition: all var(--transition-normal);
+  padding-top: env(safe-area-inset-top, 0px);
 }
 .navbar-scrolled {
   background: rgba(3, 8, 19, 0.96);

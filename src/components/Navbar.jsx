@@ -739,6 +739,7 @@ export default function Navbar({
           -webkit-backdrop-filter: blur(20px);
           border-bottom: 1px solid var(--border-subtle);
           transition: all var(--transition-normal);
+          padding-top: env(safe-area-inset-top, 0px);
         }
         .navbar-scrolled {
           background: var(--bg-surface);
