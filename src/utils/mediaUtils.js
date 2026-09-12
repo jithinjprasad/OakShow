@@ -207,38 +207,55 @@ export function getSharePayload(item, customUrl = null) {
  * 1.jpg -> 1.JPG -> item.poster -> /favicon.png
  */
 export function handlePosterError(e, fallbackPoster = null) {
-  const currentSrc = e.target.src || '';
-  
-  // 1. If failed on /1.jpg, try /1.JPG
+  const target = e.currentTarget || e.target;
+  if (!target) return;
+
+  const currentSrc = target.src || '';
+
+  // 1. If failed on origin domain and hasn't tried jsDelivr CDN yet, load directly from CDN
+  if (!target.dataset.triedCdn && !currentSrc.includes('cdn.jsdelivr.net')) {
+    target.dataset.triedCdn = 'true';
+    try {
+      const urlObj = new URL(currentSrc, window.location.origin);
+      const cleanPath = urlObj.pathname.replace(/^\/+/, '');
+      if (cleanPath.startsWith('pics/')) {
+        target.src = `https://cdn.jsdelivr.net/gh/jithinjprasad/OakShow@main/public/${cleanPath}`;
+        return;
+      }
+    } catch (err) {}
+  }
+
+  // 2. If failed on /1.jpg, try /1.JPG
   if (currentSrc.endsWith('/1.jpg')) {
-    e.target.src = currentSrc.replace('/1.jpg', '/1.JPG');
+    target.src = currentSrc.replace(/\/1\.jpg$/, '/1.JPG');
     return;
   }
 
-  // 2. If failed on /1.JPG, try /2.jpg (banner image as poster fallback)
+  // 3. If failed on /1.JPG, try /2.jpg (banner image as poster fallback)
   if (currentSrc.endsWith('/1.JPG')) {
-    e.target.src = currentSrc.replace('/1.JPG', '/2.jpg');
+    target.src = currentSrc.replace(/\/1\.JPG$/, '/2.jpg');
     return;
   }
 
-  // 3. If failed on /2.jpg, try /2.JPG
+  // 4. If failed on /2.jpg, try /2.JPG
   if (currentSrc.endsWith('/2.jpg')) {
-    e.target.src = currentSrc.replace('/2.jpg', '/2.JPG');
+    target.src = currentSrc.replace(/\/2\.jpg$/, '/2.JPG');
     return;
   }
 
-  // 4. If failed on /2.JPG and fallbackPoster provided, try fallback
-  if (currentSrc.endsWith('/2.JPG') && fallbackPoster) {
+  // 5. If failed on /2.JPG and fallbackPoster provided, try fallback
+  if (!target.dataset.triedFallback && fallbackPoster) {
+    target.dataset.triedFallback = 'true';
     const cleanFallback = fallbackPoster.startsWith('/') ? fallbackPoster : `/${fallbackPoster}`;
     if (!currentSrc.endsWith(cleanFallback)) {
-      e.target.src = cleanFallback;
+      target.src = cleanFallback;
       return;
     }
   }
 
-  // 5. Ultimate fallback
+  // 6. Ultimate fallback
   if (!currentSrc.endsWith('/favicon.png')) {
-    e.target.src = '/favicon.png';
+    target.src = '/favicon.png';
   }
 }
 
