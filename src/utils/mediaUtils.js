@@ -311,7 +311,8 @@ const WATCH_ONLINE_LOGOS = {
   'cw tv': '/pics/WatchOnline/cw-tv.png',
   'the cw': '/pics/WatchOnline/cw-tv.png',
   'ullu': '/pics/WatchOnline/ullu.png',
-  'kooku': '/pics/WatchOnline/kooku.png'
+  'kooku': '/pics/WatchOnline/kooku.png',
+  'reddit': '/pics/WatchOnline/reddit.png'
 };
 
 /**
@@ -408,6 +409,7 @@ export function getWatchOnlineProviderInfo(item) {
   else if (/kooku/i.test(rawProvider)) cleanProvider = 'Kooku';
   else if (/book\s*my\s*show|bms/i.test(rawProvider)) cleanProvider = 'BookMyShow Stream';
   else if (/crunchyroll/i.test(rawProvider)) cleanProvider = 'Crunchyroll';
+  else if (/reddit/i.test(rawProvider)) cleanProvider = 'Reddit';
 
   let icon = null;
   const key = Object.keys(WATCH_ONLINE_LOGOS).find(k => lower.includes(k));

@@ -152,12 +152,12 @@ export default function App() {
     setCurrentUser(null);
   };
 
-  // Clean up any stale oakshow_theme from previous sessions
+  // Initialize brand theme
   useEffect(() => {
     try {
       localStorage.removeItem('oakshow_theme');
-      document.documentElement.setAttribute('data-theme', 'light');
-      document.documentElement.style.colorScheme = 'light';
+      document.documentElement.setAttribute('data-theme', 'brand');
+      document.documentElement.style.colorScheme = 'dark';
     } catch (e) {}
   }, []);
 

@@ -4356,9 +4356,32 @@
         "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
       }
     ],
-    "cast": [],
+    "cast": [
+      {
+        "actor": "Ayesha Kapoor",
+        "role": "Cast",
+        "description": ""
+      }
+    ],
     "bookings": [],
-    "watchOnline": [],
+    "watchOnline": [
+      {
+        "provider": "Reddit",
+        "platform": "Reddit",
+        "url": "https://www.reddit.com/r/actresslovehd/comments/1i83aq0/my_cousin_sister_web_series_staring_ayesha_kapoor/",
+        "icon": "pics/WatchOnline/reddit.png",
+        "language": "Hindi",
+        "label": "Watch Episode 1 on Reddit"
+      },
+      {
+        "provider": "Reddit",
+        "platform": "Reddit",
+        "url": "https://www.reddit.com/r/actresslovehd/comments/1i83fph/my_cousin_sister_web_series_staring_ayesha_kapoor/",
+        "icon": "pics/WatchOnline/reddit.png",
+        "language": "Hindi",
+        "label": "Watch Episode 2 on Reddit"
+      }
+    ],
     "music": [],
     "officialWebsite": null,
     "socials": [
@@ -9347,7 +9370,16 @@
       }
     ],
     "bookings": [],
-    "watchOnline": [],
+    "watchOnline": [
+      {
+        "provider": "Reddit",
+        "platform": "Reddit",
+        "url": "https://www.reddit.com/r/IndianCelebScenes/comments/lt3c46/jaskiran_kaur_from_the_yoga_experience/",
+        "icon": "pics/WatchOnline/reddit.png",
+        "language": "Hindi",
+        "label": "Watch on Reddit (Jaskiran Kaur)"
+      }
+    ],
     "music": [],
     "officialWebsite": null,
     "socials": [

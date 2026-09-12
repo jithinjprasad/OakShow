@@ -235,10 +235,16 @@ async function run() {
       ...(s.director ? { 'director': { '@type': 'Person', 'name': s.director } } : {})
     };
 
+    let watchOnlineLinks = '';
+    if (Array.isArray(s.watchOnline) && s.watchOnline.length > 0) {
+      watchOnlineLinks = `<p><strong>Watch Online:</strong> ` + s.watchOnline.map(w => `<a href="${escapeHtml(w.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(w.label || w.provider || 'Watch Online')}</a>`).join(' | ') + `</p>`;
+    }
+
     const bodyContent = `
       <h1>${escapeHtml(s.title)}</h1>
       <p><strong>Genre:</strong> ${escapeHtml(s.genre || 'Web Series')} | <strong>Language:</strong> ${escapeHtml(s.language || 'All')}</p>
       <p>${escapeHtml(desc)}</p>
+      ${watchOnlineLinks}
       <p><a href="${DOMAIN}/#/series-hub">Back to Web Series Vault</a></p>
     `;
 

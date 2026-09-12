@@ -86,13 +86,17 @@ if ($totalMB -gt 60) {
 Write-Host "Committing and pushing to oakshow-prod..."
 & $git -C $workDir config user.name 'jithinjprasad'
 & $git -C $workDir config user.email 'jithinjprasad@gmail.com'
-& $git -C $workDir add -A
-& $git -C $workDir commit -m "Permanently remove dark theme codebase and toggles across all devices" -q
-& $git -C $workDir push "https://$token@github.com/jithinjprasad/oakshow-prod.git" main
-
-if ($LASTEXITCODE -ne 0) {
-    Write-Error "Git push to oakshow-prod failed"
-    exit 1
+$statusOutput = & $git -C $workDir status --porcelain
+if ($statusOutput) {
+    & $git -C $workDir add -A
+    & $git -C $workDir commit -m "Deploy OakShow logo brand theme (deep navy, reel slate-steel, ice-blue)" -q
+    & $git -C $workDir push "https://$token@github.com/jithinjprasad/oakshow-prod.git" main
+    if ($LASTEXITCODE -ne 0) {
+        Write-Error "Git push to oakshow-prod failed"
+        exit 1
+    }
+} else {
+    Write-Host "Working tree clean. Code already pushed."
 }
 
 Write-Host "Git push succeeded! Triggering Scalix build..."
