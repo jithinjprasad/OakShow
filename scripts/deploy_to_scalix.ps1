@@ -89,7 +89,7 @@ Write-Host "Committing and pushing to oakshow-prod..."
 $statusOutput = & $git -C $workDir status --porcelain
 if ($statusOutput) {
     & $git -C $workDir add -A
-    & $git -C $workDir commit -m "Deploy OakShow logo brand theme (deep navy, reel slate-steel, ice-blue)" -q
+    & $git -C $workDir commit -m "Deploy OakShow logo brand theme, Reddit watch online providers, and nginx caching updates" -q
     & $git -C $workDir push "https://$token@github.com/jithinjprasad/oakshow-prod.git" main
     if ($LASTEXITCODE -ne 0) {
         Write-Error "Git push to oakshow-prod failed"
