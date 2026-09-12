@@ -514,7 +514,7 @@ button {
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
-  opacity: 0;
+  opacity: 1;
 }
 .poster-loaded {
   opacity: 1;

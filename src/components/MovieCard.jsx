@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Star, Play, Bookmark, Film, Calendar } from 'lucide-react';
 import { getOakShowRemark } from '../utils/remarks';
 import { getProfileImage, handlePosterError } from '../utils/mediaUtils';
@@ -11,6 +11,13 @@ export default function MovieCard({
   onToggleBookmark 
 }) {
   const [imageLoaded, setImageLoaded] = useState(false);
+  const imgRef = useRef(null);
+
+  useEffect(() => {
+    if (imgRef.current && imgRef.current.complete) {
+      setImageLoaded(true);
+    }
+  }, [posterSrc]);
 
   const oakRating = movie.ratings?.find(r => r.source === 'OakShow')?.score;
   const imdbRating = movie.ratings?.find(r => r.source === 'IMDb')?.score;
@@ -61,12 +68,16 @@ export default function MovieCard({
       <div className="poster-container">
         {posterSrc ? (
           <img
+            ref={imgRef}
             src={posterSrc}
             alt={movie.title}
             className={`poster-image ${imageLoaded ? 'poster-loaded' : ''}`}
             loading="lazy"
             onLoad={() => setImageLoaded(true)}
-            onError={(e) => handlePosterError(e, movie.poster)}
+            onError={(e) => {
+              setImageLoaded(true);
+              handlePosterError(e, movie.poster);
+            }}
           />
         ) : (
           <div className="poster-fallback">
@@ -189,7 +200,7 @@ export default function MovieCard({
           width: 100%;
           height: 100%;
           object-fit: cover;
-          opacity: 0;
+          opacity: 1;
           transition: opacity 0.3s ease, transform var(--transition-normal);
         }
         .poster-loaded {

@@ -210,6 +210,8 @@ export function handlePosterError(e, fallbackPoster = null) {
   const target = e.currentTarget || e.target;
   if (!target) return;
 
+  target.style.opacity = '1';
+
   const currentSrc = target.src || '';
 
   // 1. If failed on origin domain and hasn't tried jsDelivr CDN yet, load directly from CDN
