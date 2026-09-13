@@ -10,6 +10,13 @@ export default function MovieCard({
   isBookmarked, 
   onToggleBookmark 
 }) {
+  const oakRating = movie.ratings?.find(r => r.source === 'OakShow')?.score;
+  const imdbRating = movie.ratings?.find(r => r.source === 'IMDb')?.score;
+  const displayRating = oakRating || imdbRating;
+  const oakRemark = oakRating ? getOakShowRemark(oakRating) : null;
+
+  const posterSrc = getProfileImage(movie);
+
   const [imageLoaded, setImageLoaded] = useState(false);
   const imgRef = useRef(null);
 
@@ -18,13 +25,6 @@ export default function MovieCard({
       setImageLoaded(true);
     }
   }, [posterSrc]);
-
-  const oakRating = movie.ratings?.find(r => r.source === 'OakShow')?.score;
-  const imdbRating = movie.ratings?.find(r => r.source === 'IMDb')?.score;
-  const displayRating = oakRating || imdbRating;
-  const oakRemark = oakRating ? getOakShowRemark(oakRating) : null;
-
-  const posterSrc = getProfileImage(movie);
 
   const targetUrl = movie.filename
     ? (movie.filename.startsWith('/') ? movie.filename : `/${movie.filename}`)
