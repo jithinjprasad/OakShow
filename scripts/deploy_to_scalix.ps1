@@ -89,14 +89,13 @@ Write-Host "Committing and pushing to oakshow-prod..."
 $statusOutput = & $git -C $workDir status --porcelain
 if ($statusOutput) {
     & $git -C $workDir add -A
-    & $git -C $workDir commit -m "Deploy OakShow logo brand theme, Reddit watch online providers, and nginx caching updates" -q
-    & $git -C $workDir push "https://$token@github.com/jithinjprasad/oakshow-prod.git" main
-    if ($LASTEXITCODE -ne 0) {
-        Write-Error "Git push to oakshow-prod failed"
-        exit 1
-    }
-} else {
-    Write-Host "Working tree clean. Code already pushed."
+    & $git -C $workDir commit -m "Deploy latest OakShow updates: poster rendering, cache detection, fallbacks, and multi-CDN" -q
+}
+Write-Host "Pushing to oakshow-prod GitHub..."
+& $git -C $workDir push "https://$token@github.com/jithinjprasad/oakshow-prod.git" main
+if ($LASTEXITCODE -ne 0) {
+    Write-Error "Git push to oakshow-prod failed"
+    exit 1
 }
 
 Write-Host "Git push succeeded! Triggering Scalix build..."
@@ -138,9 +137,12 @@ if ($status -ne "succeeded" -and $status -ne "completed") {
 }
 
 Write-Host "Build SUCCEEDED! Updating Scalix compute service..."
-$scalixCli = "C:\Users\Admin\AppData\Local\npm-cache\_npx\3f549465910e61c1\node_modules\scalix-cloud\binaries\scalix-cloud.exe"
-$serviceBody = '{\"image_ref\":\"172.18.0.253:5000/408d193f-88ad-4b4c-bcea-587580f4f877/oakshow:latest\",\"rollout_strategy\":\"instant\"}'
+$updatePayload = @{
+    image_ref = "172.18.0.253:5000/408d193f-88ad-4b4c-bcea-587580f4f877/oakshow:latest"
+    rollout_strategy = "instant"
+} | ConvertTo-Json
 
-& $scalixCli api compute update-service 6c2b26e5-121c-4291-8970-ed91b34c3efb --body $serviceBody --api-url https://api.scalix.world --token $scalixKey --project 408d193f-88ad-4b4c-bcea-587580f4f877
+$updateRes = Invoke-RestMethod -Uri "https://api.scalix.world/v1/run/services/6c2b26e5-121c-4291-8970-ed91b34c3efb" -Method Put -Headers $headers -Body $updatePayload
+Write-Host "Scalix service updated. Revision: $($updateRes.current_revision)"
 
 Write-Host "SUCCESS: Scalix service updated and live on https://oakshow.in!"
