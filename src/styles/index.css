@@ -3422,7 +3422,7 @@ html[data-theme="dark"] .navbar-scrolled {
     max-width: 130px !important;
     scroll-snap-align: start !important;
     border-radius: var(--radius-md) !important;
-    background: rgba(15, 23, 42, 0.75) !important;
+    background: var(--bg-surface) !important;
     border: 1px solid var(--border-subtle) !important;
     transition: transform var(--transition-fast) !important;
   }
@@ -3465,10 +3465,12 @@ html[data-theme="dark"] .navbar-scrolled {
     white-space: nowrap !important;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
+    color: var(--text-heading) !important;
   }
   .feed-section .card-tags-row {
     font-size: 0.68rem !important;
     gap: 4px !important;
+    color: var(--text-muted) !important;
   }
 
   /* 4. Dedicated Catalog Portals (Indian, Hollywood, International, Releases) */

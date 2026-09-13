@@ -145,7 +145,7 @@ export default function HeroSpotlight({ movies, onSelectMovie, onPlayTrailer }) 
           <a 
             href={current.filename ? (current.filename.startsWith('/') ? current.filename : `/${current.filename}`) : `/${current.id}.html`}
             className="btn-secondary hero-btn"
-            style={{ textDecoration: 'none', color: 'inherit' }}
+            style={{ textDecoration: 'none' }}
             onClick={(e) => {
               if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
               e.preventDefault();
@@ -318,6 +318,50 @@ export default function HeroSpotlight({ movies, onSelectMovie, onPlayTrailer }) 
           color: var(--accent-gold);
           border-color: rgba(255, 184, 0, 0.4);
         }
+        /* Light Mode High-Contrast Rules */
+        html[data-theme="light"] .hero-title,
+        [data-theme="light"] .hero-title {
+          color: #091e42 !important;
+          text-shadow: none !important;
+        }
+        html[data-theme="light"] .hero-description,
+        [data-theme="light"] .hero-description {
+          color: #334155 !important;
+          text-shadow: none !important;
+        }
+        html[data-theme="light"] .hero-duration,
+        html[data-theme="light"] .hero-release-date,
+        [data-theme="light"] .hero-duration,
+        [data-theme="light"] .hero-release-date {
+          color: #0f172a !important;
+          background: rgba(15, 23, 42, 0.08) !important;
+          border: 1px solid rgba(15, 23, 42, 0.16) !important;
+        }
+        html[data-theme="light"] .hero-gradient-overlay,
+        [data-theme="light"] .hero-gradient-overlay {
+          background: linear-gradient(
+            to right,
+            rgba(248, 250, 252, 0.96) 0%,
+            rgba(248, 250, 252, 0.88) 55%,
+            rgba(248, 250, 252, 0.55) 100%
+          ),
+          linear-gradient(
+            to top,
+            #f8fafc 0%,
+            transparent 65%
+          ) !important;
+        }
+        html[data-theme="light"] .hero-arrow-btn,
+        [data-theme="light"] .hero-arrow-btn {
+          color: #0f172a !important;
+          background: rgba(15, 23, 42, 0.06) !important;
+          border-color: rgba(15, 23, 42, 0.15) !important;
+        }
+        html[data-theme="light"] .hero-dot,
+        [data-theme="light"] .hero-dot {
+          background: rgba(15, 23, 42, 0.2) !important;
+        }
+
         @media (max-width: 768px) {
           .hero-spotlight-root {
             min-height: 480px;
