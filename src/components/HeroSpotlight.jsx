@@ -95,17 +95,17 @@ export default function HeroSpotlight({ movies, onSelectMovie, onPlayTrailer }) 
             );
           })()}
           {imdbRating && (
-            <div className="rating-pill" style={{ borderColor: '#f5c518', color: '#f5c518' }}>
+            <div className="rating-pill hero-imdb-pill">
               <span>IMDb {imdbRating}</span>
             </div>
           )}
           {rtRating && (
-            <div className="rating-pill" style={{ borderColor: '#fa320a', color: '#ff6347' }}>
+            <div className="rating-pill hero-rt-pill">
               <span>🍅 {rtRating}</span>
             </div>
           )}
           {metaRating && (
-            <div className="rating-pill" style={{ borderColor: '#3399cc', color: '#3399cc' }}>
+            <div className="rating-pill hero-meta-pill">
               <span>Metacritic {metaRating}</span>
             </div>
           )}
@@ -318,7 +318,20 @@ export default function HeroSpotlight({ movies, onSelectMovie, onPlayTrailer }) 
           color: var(--accent-gold);
           border-color: rgba(255, 184, 0, 0.4);
         }
-        /* Light Mode High-Contrast Rules */
+        .hero-imdb-pill {
+          border-color: #f5c518;
+          color: #f5c518;
+        }
+        .hero-rt-pill {
+          border-color: #fa320a;
+          color: #ff6347;
+        }
+        .hero-meta-pill {
+          border-color: #3399cc;
+          color: #3399cc;
+        }
+
+        /* Light Mode High-Contrast Rules: Deep, bold, non-bright text */
         html[data-theme="light"] .hero-title,
         [data-theme="light"] .hero-title {
           color: #091e42 !important;
@@ -326,40 +339,84 @@ export default function HeroSpotlight({ movies, onSelectMovie, onPlayTrailer }) 
         }
         html[data-theme="light"] .hero-description,
         [data-theme="light"] .hero-description {
-          color: #334155 !important;
+          color: #1e293b !important;
+          font-weight: 500 !important;
           text-shadow: none !important;
         }
         html[data-theme="light"] .hero-duration,
         html[data-theme="light"] .hero-release-date,
         [data-theme="light"] .hero-duration,
         [data-theme="light"] .hero-release-date {
-          color: #0f172a !important;
+          color: #091e42 !important;
+          font-weight: 700 !important;
           background: rgba(15, 23, 42, 0.08) !important;
-          border: 1px solid rgba(15, 23, 42, 0.16) !important;
+          border: 1px solid rgba(15, 23, 42, 0.2) !important;
+        }
+        html[data-theme="light"] .hero-imdb-pill,
+        [data-theme="light"] .hero-imdb-pill {
+          background: rgba(217, 119, 6, 0.14) !important;
+          border-color: rgba(180, 83, 9, 0.45) !important;
+          color: #78350f !important;
+          font-weight: 800 !important;
+        }
+        html[data-theme="light"] .hero-rt-pill,
+        [data-theme="light"] .hero-rt-pill {
+          background: rgba(225, 29, 72, 0.14) !important;
+          border-color: rgba(190, 18, 60, 0.45) !important;
+          color: #9f1239 !important;
+          font-weight: 800 !important;
+        }
+        html[data-theme="light"] .hero-meta-pill,
+        [data-theme="light"] .hero-meta-pill {
+          background: rgba(2, 132, 199, 0.14) !important;
+          border-color: rgba(2, 132, 199, 0.45) !important;
+          color: #075985 !important;
+          font-weight: 800 !important;
+        }
+        html[data-theme="light"] .hero-badge-row .badge-gold,
+        [data-theme="light"] .hero-badge-row .badge-gold {
+          background: rgba(217, 119, 6, 0.15) !important;
+          border-color: rgba(217, 119, 6, 0.4) !important;
+          color: #92400e !important;
+          font-weight: 800 !important;
+        }
+        html[data-theme="light"] .hero-badge-row .badge-cyan,
+        [data-theme="light"] .hero-badge-row .badge-cyan {
+          background: rgba(2, 132, 199, 0.15) !important;
+          border-color: rgba(2, 132, 199, 0.4) !important;
+          color: #0369a1 !important;
+          font-weight: 800 !important;
+        }
+        html[data-theme="light"] .hero-badge-row .badge-red,
+        [data-theme="light"] .hero-badge-row .badge-red {
+          background: rgba(225, 29, 72, 0.15) !important;
+          border-color: rgba(225, 29, 72, 0.4) !important;
+          color: #9f1239 !important;
+          font-weight: 800 !important;
         }
         html[data-theme="light"] .hero-gradient-overlay,
         [data-theme="light"] .hero-gradient-overlay {
           background: linear-gradient(
             to right,
-            rgba(248, 250, 252, 0.96) 0%,
-            rgba(248, 250, 252, 0.88) 55%,
-            rgba(248, 250, 252, 0.55) 100%
+            rgba(248, 250, 252, 0.98) 0%,
+            rgba(248, 250, 252, 0.92) 55%,
+            rgba(248, 250, 252, 0.65) 100%
           ),
           linear-gradient(
             to top,
             #f8fafc 0%,
-            transparent 65%
+            transparent 70%
           ) !important;
         }
         html[data-theme="light"] .hero-arrow-btn,
         [data-theme="light"] .hero-arrow-btn {
           color: #0f172a !important;
-          background: rgba(15, 23, 42, 0.06) !important;
-          border-color: rgba(15, 23, 42, 0.15) !important;
+          background: rgba(15, 23, 42, 0.08) !important;
+          border-color: rgba(15, 23, 42, 0.2) !important;
         }
         html[data-theme="light"] .hero-dot,
         [data-theme="light"] .hero-dot {
-          background: rgba(15, 23, 42, 0.2) !important;
+          background: rgba(15, 23, 42, 0.25) !important;
         }
 
         @media (max-width: 768px) {
