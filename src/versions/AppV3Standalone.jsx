@@ -152,14 +152,35 @@ export default function App() {
     setCurrentUser(null);
   };
 
-  // Initialize brand theme
+  // Theme State: 'dark' by default, switchable to 'light'
+  const [theme, setTheme] = useState(() => {
+    try {
+      const saved = localStorage.getItem('oakshow_theme');
+      if (saved === 'dark' || saved === 'light') return saved;
+      return 'dark';
+    } catch {
+      return 'dark';
+    }
+  });
+
   useEffect(() => {
     try {
-      localStorage.removeItem('oakshow_theme');
-      document.documentElement.setAttribute('data-theme', 'brand');
-      document.documentElement.style.colorScheme = 'dark';
-    } catch (e) {}
-  }, []);
+      document.documentElement.setAttribute('data-theme', theme);
+      document.documentElement.style.colorScheme = theme;
+      localStorage.setItem('oakshow_theme', theme);
+      const themeColor = theme === 'light' ? '#ffffff' : '#030813';
+      const metaTheme = document.getElementById('theme-color-meta') || document.querySelector('meta[name="theme-color"]');
+      if (metaTheme) {
+        metaTheme.setAttribute('content', themeColor);
+      }
+    } catch (e) {
+      console.error(e);
+    }
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
+  };
 
   useEffect(() => {
     try {
