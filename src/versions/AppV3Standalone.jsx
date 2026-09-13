@@ -152,14 +152,19 @@ export default function App() {
     setCurrentUser(null);
   };
 
-  // Theme State: 'dark' by default, switchable to 'light'
+  // Theme State: 'light' by default, switchable to 'dark'
   const [theme, setTheme] = useState(() => {
     try {
-      const saved = localStorage.getItem('oakshow_theme');
+      if (!localStorage.getItem('oakshow_theme_v2')) {
+        localStorage.setItem('oakshow_theme_v2', 'light');
+        localStorage.setItem('oakshow_theme', 'light');
+        return 'light';
+      }
+      const saved = localStorage.getItem('oakshow_theme_v2') || localStorage.getItem('oakshow_theme');
       if (saved === 'dark' || saved === 'light') return saved;
-      return 'dark';
+      return 'light';
     } catch {
-      return 'dark';
+      return 'light';
     }
   });
 
@@ -167,8 +172,9 @@ export default function App() {
     try {
       document.documentElement.setAttribute('data-theme', theme);
       document.documentElement.style.colorScheme = theme;
+      localStorage.setItem('oakshow_theme_v2', theme);
       localStorage.setItem('oakshow_theme', theme);
-      const themeColor = theme === 'light' ? '#ffffff' : '#030813';
+      const themeColor = theme === 'dark' ? '#030813' : '#ffffff';
       const metaTheme = document.getElementById('theme-color-meta') || document.querySelector('meta[name="theme-color"]');
       if (metaTheme) {
         metaTheme.setAttribute('content', themeColor);
@@ -179,7 +185,7 @@ export default function App() {
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
+    setTheme(prev => (prev === 'dark' ? 'light' : 'dark'));
   };
 
   useEffect(() => {
@@ -1755,6 +1761,8 @@ export default function App() {
         currentUser={currentUser}
         onOpenAuth={handleOpenAuth}
         onLogout={handleLogout}
+        theme={theme}
+        onToggleTheme={toggleTheme}
       />
 
       <main className="main-content">

@@ -55,9 +55,9 @@ export default function Navbar({
         const docTheme = document.documentElement.getAttribute('data-theme');
         if (docTheme) return docTheme;
       }
-      return localStorage.getItem('oakshow_theme') || 'dark';
+      return localStorage.getItem('oakshow_theme_v2') || localStorage.getItem('oakshow_theme') || 'light';
     } catch {
-      return 'dark';
+      return 'light';
     }
   });
   const dropdownRef = useRef(null);
@@ -79,12 +79,16 @@ export default function Navbar({
     if (propToggleTheme) {
       propToggleTheme();
     } else {
-      const nextTheme = currentTheme === 'light' ? 'dark' : 'light';
+      const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
       setCurrentTheme(nextTheme);
       try {
+        localStorage.setItem('oakshow_theme_v2', nextTheme);
         localStorage.setItem('oakshow_theme', nextTheme);
         document.documentElement.setAttribute('data-theme', nextTheme);
         document.documentElement.style.colorScheme = nextTheme;
+        const themeColor = nextTheme === 'dark' ? '#030813' : '#ffffff';
+        const metaTheme = document.getElementById('theme-color-meta') || document.querySelector('meta[name="theme-color"]');
+        if (metaTheme) metaTheme.setAttribute('content', themeColor);
       } catch (e) {
         console.error(e);
       }
@@ -392,10 +396,10 @@ export default function Navbar({
             <button
               className="theme-toggle-btn desktop-only-control"
               onClick={handleToggleTheme}
-              title={currentTheme === 'dark' ? 'Switch to Light Theme' : 'Switch to Dark Theme'}
+              title={currentTheme === 'light' ? 'Light Mode (Click for Dark Mode)' : 'Dark Mode (Click for Light Mode)'}
               aria-label="Toggle theme"
             >
-              {currentTheme === 'dark' ? (
+              {currentTheme === 'light' ? (
                 <Sun size={18} className="theme-icon text-gold" />
               ) : (
                 <Moon size={18} className="theme-icon text-accent" />
@@ -662,14 +666,14 @@ export default function Navbar({
                 >
                   <div className="mc-left">
                     <div className="mc-icon-pill mc-icon-theme">
-                      {currentTheme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
+                      {currentTheme === 'light' ? <Sun size={16} className="text-gold" /> : <Moon size={16} className="text-accent" />}
                     </div>
                     <div className="mc-text-col">
                       <span className="mc-title">Appearance</span>
-                      <span className="mc-subtitle">{currentTheme === 'dark' ? 'Dark Mode' : 'Light Mode'}</span>
+                      <span className="mc-subtitle">{currentTheme === 'light' ? 'Light Mode' : 'Dark Mode'}</span>
                     </div>
                   </div>
-                  <span className="mc-badge-accent">{currentTheme === 'dark' ? 'Light' : 'Dark'}</span>
+                  <span className="mc-badge-accent">{currentTheme === 'light' ? 'Light' : 'Dark'}</span>
                 </button>
               </div>
             </div>
