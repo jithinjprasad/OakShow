@@ -1,1096 +1,267 @@
 [
   {
-    "id": "GDN",
-    "title": "G.D.N (G.D. Naidu: The Edison of India)",
-    "fileName": "GDN.html",
-    "cleanUrl": "/GDN.html",
-    "type": "Movie",
-    "summary": "G.D.N is a 2026 Indian Tamil-language biographical drama written and directed by Krishnakumar Ramakumar, starring R. Madhavan in the titular role of legendary inventor and industrialist G.D. Naidu, alongside Priyamani, Dushara Vijayan, Sathyaraj, and Jayaram. Produced by Tricolour Films and Varghese Moolan Pictures with music by Govind Vasantha, the film chronicles the extraordinary life and engineering triumphs of the man hailed as the 'Edison of India.'",
-    "plot": "Set across pre- and post-independent India, the film traces the inspiring true journey of Gopalswamy Doraiswamy Naidu from his humble beginnings as an inquisitive village boy in Coimbatore to becoming one of India's most prolific mechanical inventors and visionary industrialists. Driven by an insatiable curiosity for machinery, Naidu designs India's first indigenous electric motor, innovative transportation fleets, and precision optical instruments, repeatedly defying colonial restrictions and bureaucratic roadblocks. As corporate rivals and skepticism challenge his unconventional genius, Naidu remains committed to technological self-reliance, uplifting workers and revolutionizing public transit. Supported by his wives Chellammal (Priyamani) and Ranganayaki (Dushara Vijayan), his relentless pursuit of scientific progress earns him global acclaim and the enduring moniker of the 'Edison of India.' Source: Wikipedia & IMDb",
-    "language": "Tamil",
-    "releaseDate": "August 07, 2026",
-    "year": "2026",
-    "genre": "Biographical, Drama, History, Period",
-    "duration": "2hr 32mins",
-    "director": "Krishnakumar Ramakumar",
-    "basedOn": "Life of G. D. Naidu (The Edison of India)",
-    "writers": [
-      "Krishnakumar Ramakumar"
-    ],
-    "producers": [
-      "R. Madhavan",
-      "Sarita Madhavan",
-      "Varghese Moolan",
-      "Vijay Moolan"
-    ],
-    "cinematography": "Nirav Shah",
-    "music": "Govind Vasantha",
-    "editor": "A. Sreekar Prasad",
-    "productionCompanies": [
-      "Tricolour Films",
-      "Varghese Moolan Pictures"
-    ],
-    "distribution": [
-      "AGS Entertainment",
-      "Netflix"
-    ],
-    "boxOffice": {
-      "budget": "₹35 Crore",
-      "worldwideGross": "₹6.32 Crore",
-      "domesticGross": "₹5.10 Crore",
-      "verdict": "Commercial Average / Critically Acclaimed Biopic"
-    },
-    "poster": "pics/Films/GDN/1.jpeg",
-    "gallery": [
-      {
-        "src": "pics/Films/GDN/1.jpeg",
-        "alt": "G.D.N Official Poster"
-      },
-      {
-        "src": "pics/Films/GDN/2.jpeg",
-        "alt": "G.D.N Movie Banner"
-      },
-      {
-        "src": "pics/Films/GDN/3.jpeg",
-        "alt": "G.D.N Movie Still"
-      }
-    ],
-    "ratings": [
-      {
-        "source": "OakShow",
-        "score": "8.2/10",
-        "url": "",
-        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
-      },
-      {
-        "source": "IMDb",
-        "score": "7.6/10",
-        "url": "https://www.imdb.com/title/tt35712605/",
-        "icon": "pics/RatingSiteLogos/imdb.png"
-      },
-      {
-        "source": "Letterboxd",
-        "score": "3.4/5",
-        "url": "https://letterboxd.com/film/gdn/",
-        "icon": "pics/RatingSiteLogos/letterboxd.png"
-      },
-      {
-        "source": "Times of India",
-        "score": "3/5",
-        "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movie-reviews/g-d-n/movie-review/132902412.cms",
-        "icon": "pics/RatingSiteLogos/times-of-india.ico"
-      },
-      {
-        "source": "Filmibeat",
-        "score": "4/5",
-        "url": "https://www.filmibeat.com/tamil/news/2026/gdn-first-review-r-madhavan-biographical-drama-gets-4-out-of-5-526789.html",
-        "icon": "pics/RatingSiteLogos/filmibeat.png"
-      },
-      {
-        "source": "NDTV",
-        "score": "2.5/5",
-        "url": "https://www.ndtv.com/entertainment/gdn-review-madhavan-is-the-driving-force-but-screenplay-doesnt-support-him-2-5-stars-11877560",
-        "icon": "pics/RatingSiteLogos/ndtv.ico"
-      },
-      {
-        "source": "Rediff",
-        "score": "2.5/5",
-        "url": "https://www.rediff.com/movies/review/gdn-movie-review-madhavan-lifts-generic-biopic/20260810.htm",
-        "icon": "pics/RatingSiteLogos/rediff.png"
-      }
-    ],
-    "cast": [
-      {
-        "actor": "R. Madhavan",
-        "role": "G. D. Naidu",
-        "description": "Visionary inventor, mechanical engineer, and industrialist known as the Edison of India"
-      },
-      {
-        "actor": "Priyamani",
-        "role": "Chellammal",
-        "description": "G.D. Naidu's supportive first wife"
-      },
-      {
-        "actor": "Dushara Vijayan",
-        "role": "Ranganayaki",
-        "description": "G.D. Naidu's second wife and confidante"
-      },
-      {
-        "actor": "Sathyaraj",
-        "role": "Doraiswamy Naidu",
-        "description": "G.D. Naidu's father and traditional village elder"
-      },
-      {
-        "actor": "Jayaram",
-        "role": "P.S.G. Ganga Naidu",
-        "description": "Prominent industrial peer and friend in Coimbatore"
-      },
-      {
-        "actor": "Vinay Rai",
-        "role": "Sir Arthur Hope",
-        "description": "British official representing colonial industrial interests"
-      },
-      {
-        "actor": "Thambi Ramaiah",
-        "role": "Munusamy",
-        "description": "Devoted workshop mechanic and friend"
-      },
-      {
-        "actor": "Yogi Babu",
-        "role": "Subbu",
-        "description": "Apprentice mechanic at the transport depot"
-      }
-    ],
-    "bookings": [
-      {
-        "provider": "BookMyShow",
-        "url": "https://in.bookmyshow.com/movies/kozhikode/gdn/ET00501855",
-        "icon": "pics/BookngWebSiteLogos/book-my-show.png",
-        "label": "Book on BookMyShow",
-        "rank": 1
-      },
-      {
-        "provider": "District",
-        "url": "https://www.district.in/movies/g-d-n-movie-tickets-MV222898?srsltid=AfmBOooshO67ljErP-iVvjBtnIEA2xEL7L4wHGmhN7U3SbbKu10lqr4F",
-        "icon": "pics/BookngWebSiteLogos/district.png",
-        "label": "Book on District",
-        "rank": 2
-      },
-      {
-        "provider": "Fandango",
-        "url": "https://www.fandango.com/gdn-2026-246617/movie-overview",
-        "icon": "pics/BookngWebSiteLogos/fandango.png",
-        "label": "Book on Fandango",
-        "rank": 3
-      }
-    ],
-    "streaming": [
-      {
-        "provider": "Netflix",
-        "url": "https://www.netflix.com/in/title/82853382",
-        "icon": "pics/WatchOnline/netflix.png",
-        "label": "Watch on Netflix",
-        "price": "Subscription",
-        "releaseDate": "September 04, 2026"
-      }
-    ],
-    "musicLinks": [
-      {
-        "platform": "Spotify",
-        "url": "https://open.spotify.com/album/12R7GvGtsaNDbI8ipaSIh3",
-        "icon": "pics/MusicLogos/spotify.png",
-        "label": "Listen on Spotify"
-      },
-      {
-        "platform": "Apple Music",
-        "url": "https://music.apple.com/in/album/g-d-n-original-motion-picture-soundtrack/6797687452",
-        "icon": "pics/MusicLogos/apple-music.png",
-        "label": "Listen on Apple Music"
-      },
-      {
-        "platform": "JioSaavn",
-        "url": "https://www.jiosaavn.com/album/g.d.n/xcXHr76S56I_",
-        "icon": "pics/MusicLogos/jiosaavn.png",
-        "label": "Listen on JioSaavn"
-      }
-    ],
-    "socials": [
-      {
-        "platform": "Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/G.D.N",
-        "icon": "images/web.png",
-        "label": "Wikipedia Article"
-      },
-      {
-        "platform": "IMDb",
-        "url": "https://www.imdb.com/title/tt35712605/",
-        "icon": "pics/RatingSiteLogos/imdb.png",
-        "label": "View on IMDb"
-      },
-      {
-        "platform": "Netflix",
-        "url": "https://www.netflix.com/in/title/82853382",
-        "icon": "pics/WatchOnline/netflix.png",
-        "label": "Stream on Netflix"
-      }
-    ],
-    "similar": [],
-    "videos": [
-      {
-        "url": "https://www.youtube.com/watch?v=dg7eWGpQWM0",
-        "youtubeId": "dg7eWGpQWM0",
-        "title": "G.D.N - Official Theatrical Trailer | R. Madhavan | Govind Vasantha"
-      },
-      {
-        "url": "https://www.youtube.com/watch?v=DwoL1Ea2808",
-        "youtubeId": "DwoL1Ea2808",
-        "title": "G.D.N - Official Sneak Peek Promo"
-      },
-      {
-        "url": "https://www.youtube.com/watch?v=hXVftIUPvbc",
-        "youtubeId": "hXVftIUPvbc",
-        "title": "G.D.N - Audio Song | Govind Vasantha"
-      }
-    ],
-    "articles": [
-      {
-        "headline": "GDN movie review: Madhavan powers an important story that deserved more room to breathe",
-        "url": "https://www.thehindu.com/entertainment/movies/gdn-movie-review-madhavan-powers-an-important-story-that-deserved-more-room-to-breathe/article71317093.ece",
-        "author": "The Hindu",
-        "date": "August 2026",
-        "section": "Reviews"
-      },
-      {
-        "headline": "GDN Movie Review: Incredible story, inadequate storytelling",
-        "url": "https://www.newindianexpress.com/entertainment/review/2026/Aug/08/tamilreview2026aug07gdn-movie-review-incredible-story-inadequate-storytelling",
-        "author": "The New Indian Express",
-        "date": "August 2026",
-        "section": "Reviews"
-      },
-      {
-        "headline": "GDN First Review: R Madhavan Biographical Drama Gets 4 Out Of 5",
-        "url": "https://www.filmibeat.com/tamil/news/2026/gdn-first-review-r-madhavan-biographical-drama-gets-4-out-of-5-526789.html",
-        "author": "Filmibeat",
-        "date": "August 2026",
-        "section": "Reviews"
-      },
-      {
-        "headline": "GDN OTT release date: When and where to watch R Madhavan's biographical film online",
-        "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movies/news/gdn-ott-release-date-when-and-where-can-we-watch-r-madhavans-biographical-film-online/articleshow/133703706.cms",
-        "author": "Times of India",
-        "date": "September 2026",
-        "section": "OTT News"
-      },
-      {
-        "headline": "New Friday OTT Releases: GDN, Dhamaal 4 & More Streaming on Netflix & Prime",
-        "url": "https://www.wionews.com/photos/new-friday-ott-releases-september-4-2026-gdn-dhamaal-4-jagamae-sangeetham-watch-6-new-movies-and-tv-shows-on-netflix-prime-video-and-more-1788435740478",
-        "author": "WION",
-        "date": "September 2026",
-        "section": "OTT Releases"
-      }
-    ],
-    "filePath": "E:/OakShow/GDN.html",
-    "filename": "GDN.html",
-    "category": "Tamil",
-    "status": "Released",
-    "aliases": [
-      "gdn.html",
-      "gdn",
-      "g.d.n",
-      "gdnaidu",
-      "g.d.naidu"
-    ]
-  },
-  {
-    "id": "Digger",
-    "title": "Digger",
-    "fileName": "Digger.html",
-    "cleanUrl": "/Digger.html",
-    "type": "Movie",
-    "summary": "Digger is a 2026 American satirical disaster black comedy film directed and produced by Alejandro G. Iñárritu. Starring Tom Cruise alongside an ensemble cast including Riz Ahmed, John Goodman, Sandra Hüller, Michael Stuhlbarg, and Jesse Plemons, the film centers on Digger Rockwell, an eccentric oil magnate hailed as the most powerful man alive, whose daring deep-earth Greenland drilling campaign sparks a global ecological crisis, prompting him to launch a manic crusade to prove he can save humanity from the catastrophe he initiated.",
-    "plot": "Digger Rockwell (Tom Cruise), a larger-than-life energy mogul whose corporate reach spans continents, orchestrates an ambitious ultra-deep drilling initiative into the Greenland ice caps. When the colossal drill ruptures a subterranean fault, catastrophic tremors ripple across the Northern Hemisphere, triggering climate disruptions and intense political fallout in Washington. Clashing with the dictatorial President Compson (John Goodman) and his skeptical chief scientific advisor Ganesh (Riz Ahmed), Digger refuses to step down. Instead, flanked by his calculating sister Emma (Sandra Hüller) and rig engineer Kenny (Jesse Plemons), Rockwell wages a high-stakes, media-fueled spectacle across the globe to engineer an outrageous techno-miracle, betting his fortune and human survival on one final gamble. Source: Wikipedia & IMDb",
-    "language": "English",
-    "releaseDate": "October 02, 2026",
-    "year": "2026",
-    "genre": "Black Comedy, Drama, Disaster, Satire",
-    "duration": "2hr 18mins",
-    "director": "Alejandro G. Iñárritu",
-    "basedOn": "Original story by Alejandro G. Iñárritu, Sabina Berman & Jez Butterworth",
-    "writers": [
-      "Alejandro G. Iñárritu",
-      "Alexander Dinelaris Jr.",
-      "Nicolás Giacobone",
-      "Sabina Berman"
-    ],
-    "producers": [
-      "Alejandro G. Iñárritu",
-      "Tom Cruise",
-      "Mary Parent"
-    ],
-    "cinematography": "Emmanuel Lubezki",
-    "productionCompanies": [
-      "Legendary Pictures",
-      "Warner Bros. Pictures"
-    ],
-    "distribution": [
-      "Warner Bros. Pictures"
-    ],
-    "boxOffice": {
-      "budget": "$125 - $150 Million",
-      "openingWeekend": "Projected $60 - $80 Million Worldwide",
-      "worldwide": "Releases October 02, 2026",
-      "verdict": "Upcoming Theatrical Release"
-    },
-    "poster": "pics/Films/Digger/1.jpg",
-    "gallery": [
-      {
-        "src": "pics/Films/Digger/1.jpg",
-        "alt": "Digger Poster"
-      },
-      {
-        "src": "pics/Films/Digger/2.jpg",
-        "alt": "Digger Banner"
-      },
-      {
-        "src": "pics/Films/Digger/3.jpg",
-        "alt": "Digger Movie Still"
-      }
-    ],
-    "ratings": [],
-    "cast": [
-      {
-        "actor": "Tom Cruise",
-        "role": "Digger Rockwell",
-        "description": "A wealthy, eccentric oil tycoon and the most powerful man in the world"
-      },
-      {
-        "actor": "Riz Ahmed",
-        "role": "Ganesh",
-        "description": "A brilliant scientist and senior advisor to the President"
-      },
-      {
-        "actor": "John Goodman",
-        "role": "President Compson",
-        "description": "The authoritarian President of the United States"
-      },
-      {
-        "actor": "Sandra Hüller",
-        "role": "Emma Rockwell",
-        "description": "Digger's pragmatic sister and corporate confidante"
-      },
-      {
-        "actor": "Michael Stuhlbarg",
-        "role": "The Vice President",
-        "description": "The embattled Vice President of the United States"
-      },
-      {
-        "actor": "Jesse Plemons",
-        "role": "Kenny",
-        "description": "Digger's dedicated field manager and rig supervisor"
-      },
-      {
-        "actor": "Emma D'Arcy",
-        "role": "",
-        "description": ""
-      },
-      {
-        "actor": "Sophie Wilde",
-        "role": "",
-        "description": ""
-      },
-      {
-        "actor": "Burn Gorman",
-        "role": "",
-        "description": ""
-      },
-      {
-        "actor": "Robert John Burke",
-        "role": "",
-        "description": ""
-      },
-      {
-        "actor": "Pip Torrens",
-        "role": "",
-        "description": ""
-      }
-    ],
-    "bookings": [
-      {
-        "provider": "BookMyShow",
-        "url": "https://in.bookmyshow.com/movies/calicut/digger/ET00477243",
-        "icon": "pics/BookngWebSiteLogos/book-my-show.png",
-        "label": "Book on BookMyShow",
-        "rank": 1
-      },
-      {
-        "provider": "District",
-        "url": "https://www.district.in/movies/digger-movie-tickets-MV211988?srsltid=AfmBOoq9VWiTDdASUwP_LKsPaanDxA8nPvPsRjwU9_0419yeM1H7Pi6N",
-        "icon": "pics/BookngWebSiteLogos/district.png",
-        "label": "Book on District",
-        "rank": 2
-      },
-      {
-        "provider": "Fandango",
-        "url": "https://www.fandango.com/digger-2026-245150/movie-overview",
-        "icon": "pics/BookngWebSiteLogos/fandango.png",
-        "label": "Book on Fandango",
-        "rank": 3
-      },
-      {
-        "provider": "TicketNew",
-        "url": "https://ticketnew.com/movies/digger-movie-detail-211988",
-        "icon": "pics/BookngWebSiteLogos/ticket-new.png",
-        "label": "Book on TicketNew",
-        "rank": 4
-      }
-    ],
-    "officialWebsite": "https://www.diggermovie.com/",
-    "socials": [
-      {
-        "platform": "Instagram",
-        "url": "https://www.instagram.com/diggerthemovie/",
-        "icon": "pics/SocialWebsiteLogos/instagram.png",
-        "label": "Follow on Instagram"
-      },
-      {
-        "platform": "Twitter / X",
-        "url": "https://x.com/diggerthemovie",
-        "icon": "pics/SocialWebsiteLogos/x.png",
-        "label": "Follow on X"
-      },
-      {
-        "platform": "Official Website",
-        "url": "https://www.diggermovie.com/",
-        "icon": "images/web.png",
-        "label": "Visit Official Website"
-      }
-    ],
-    "similar": [],
-    "videos": [
-      {
-        "url": "https://www.youtube.com/watch?v=qORTe1wW3Wg",
-        "youtubeId": "qORTe1wW3Wg",
-        "title": "Digger - Official Theatrical Trailer"
-      },
-      {
-        "url": "https://www.youtube.com/watch?v=Rd21PhsDHww",
-        "youtubeId": "Rd21PhsDHww",
-        "title": "Digger - Official Teaser"
-      }
-    ],
-    "articles": [
-      {
-        "headline": "Digger Is A Disaster Movie Where The Disaster Is Us, Says Alejandro G. Iñárritu – Exclusive",
-        "url": "https://www.empireonline.com/movies/news/digger-disaster-movie-where-disaster-is-us-alejandro-g-inarritu-exclusive/",
-        "author": "Empire",
-        "date": "2026",
-        "section": "News & Features"
-      },
-      {
-        "headline": "14 new Hollywood movies to watch in autumn 2026: Digger, Avengers: Doomsday and more",
-        "url": "https://www.scmp.com/lifestyle/entertainment/article/3365915/14-new-hollywood-movies-watch-autumn-2026-digger-avengers-doomsday",
-        "author": "South China Morning Post",
-        "date": "2026",
-        "section": "News & Features"
-      },
-      {
-        "headline": "BFI IMAX to celebrate filmmaker Alejandro G. Iñárritu ahead of Digger release",
-        "url": "https://britishcinematographer.co.uk/bfi-imax-to-celebrate-filmmaker-alejandro-g-inarritu-digger/",
-        "author": "British Cinematographer",
-        "date": "2026",
-        "section": "News & Features"
-      },
-      {
-        "headline": "Manila Digger FC 5-1 Kasuka FC | ASEAN Shopee Cup Playoffs Match Highlights",
-        "url": "https://aseanutdfc.com/asean-club-championship/2026/videos/manila-digger-fc-5-1-kasuka-fc-asean-shopee-cup-playoffs-match-highlights",
-        "author": "ASEAN United FC",
-        "date": "2026",
-        "section": "Related News"
-      }
-    ],
-    "filePath": "E:/OakShow/Digger.html",
-    "filename": "Digger.html",
+    "id": "LanternsS1E01",
+    "slug": "lanternss1e01",
+    "type": "movie",
     "category": "Hollywood",
-    "status": "Upcoming",
-    "aliases": [
-      "digger.html",
-      "digger"
-    ]
-  },
-  {
-    "id": "ImGame",
-    "title": "I'm Game",
-    "fileName": "ImGame.html",
-    "cleanUrl": "/ImGame.html",
-    "type": "Movie",
-    "summary": "I'm Game is a high-octane 2026 Indian Malayalam-language fantasy action thriller directed by Nahas Hidhayath (RDX) and produced by Dulquer Salmaan and Jom Varghese under Wayfarer Films. Marking Dulquer Salmaan's landmark 40th film as a lead actor (DQ40), the movie follows Dan John, a fearless high-rolling gambler and businessman whose life plunges into bizarre and mystical chaos after undergoing an unconventional hand transplant, colliding his destiny with sports, crime syndicates, and supernatural vengeance.",
-    "plot": "A fearless gambler who trusts luck more than life gets caught in a series of crazy and unexpected events that turn his world upside down. Dan John, an adventurous high-stakes player, undergoes a mysterious hand transplant following a severe mishap. Soon, his newly acquired hand begins exhibiting a will, muscle memory, and ruthless instincts of its own, dragging him into the high-stakes underworld of match-fixing kingpin David Abraham and cricketer Vicky Das. What follows is a thrilling ride filled with high-voltage stunts, mind games, surprises, romance, and an adrenaline-pumping supernatural showdown. Source:IMDb",
-    "language": "Malayalam",
-    "releaseDate": "September 03, 2026",
+    "score": 9.5,
+    "filename": "LanternsS1E01.html",
+    "title": "Lanterns S01E01: Pilot",
+    "metaTitle": "Lanterns S01E01:Pilot All Ratings, Reviews and Watch Online — OakShow",
+    "description": "Hal Jordan is chosen as the successor of Green Lantern Abin Sur. In 2016, Hal and John Stewart have a mentor-mentee relationship and travel to Rushville, Nebraska after John receives a cryptic message from Hal's younger consciousness within his power ring. John helps Sheriff Kerry Kane capture a suspect involved in a mass shooting, while Hal investigates an alien conspiracy. During an interrogation, Hal exposes Sanders as an extraterrestrial who detonates his body. In 2026, John returns to Rushville, where Kerry shows him a dead Hal with his power ring missing.",
+    "plot": "",
+    "language": "English",
+    "releaseDate": "August 16, 2026 9:00 am",
     "year": "2026",
-    "genre": "Fantasy, Action, Thriller, Drama",
-    "duration": "2hr 51mins",
-    "director": "Nahas Hidhayath",
+    "genre": "Superhero, Drama, Detective",
+    "duration": "55 Minutes",
+    "director": "",
     "basedOn": "",
-    "boxOffice": {
-      "worldwideGross": "₹7.80 Crore (Day 1)",
-      "domesticGross": "₹5.05 Crore",
-      "openingDay": "₹5.05 Crore",
-      "budget": "₹45 Crore",
-      "verdict": "Theatrical Run Ongoing"
-    },
-    "poster": "pics/Films/ImGame/1.jpg",
-    "gallery": [
-      {
-        "src": "pics/Films/ImGame/1.jpg",
-        "alt": "I'm Game Poster"
-      },
-      {
-        "src": "pics/Films/ImGame/2.jpg",
-        "alt": "I'm Game Banner"
-      },
-      {
-        "src": "pics/Films/ImGame/3.jpg",
-        "alt": "I'm Game Action Scene Still"
-      }
-    ],
+    "boxOffice": null,
+    "poster": "pics/Serieses/Lanterns/S01/1.jpg",
+    "gallery": [],
     "ratings": [
       {
         "source": "OakShow",
-        "score": "6.0/10",
+        "score": "9.5/10",
         "url": "",
-        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-an-average-movie.png"
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
       },
       {
         "source": "IMDb",
-        "score": "6.8/10",
-        "url": "https://www.imdb.com/title/tt34284946/",
+        "score": "IMDb",
+        "url": "https://www.imdb.com/title/tt26546824/",
         "icon": "pics/RatingSiteLogos/imdb.png"
-      },
-      {
-        "source": "Times of India",
-        "score": "3/5",
-        "url": "https://timesofindia.indiatimes.com/entertainment/malayalam/movie-reviews/im-game/movie-review/133735732.cms",
-        "icon": "pics/RatingSiteLogos/times-of-india.ico"
-      },
-      {
-        "source": "The Indian Express",
-        "score": "2.5/5",
-        "url": "https://indianexpress.com/article/entertainment/movie-review/im-game-movie-review-dulquer-salmaans-fantasy-actioner-is-a-gamble-that-nearly-pays-off-10860784/",
-        "icon": "pics/RatingSiteLogos/indian-express.png"
-      },
-      {
-        "source": "India Today",
-        "score": "2.5/5",
-        "url": "https://www.indiatoday.in/movies/reviews/story/im-game-review-dulquer-salmaan-has-all-the-right-cards-but-the-film-folds-2986152-2026-09-03",
-        "icon": "pics/RatingSiteLogos/india-today.ico"
-      },
-      {
-        "source": "NDTV",
-        "score": "2.5/5",
-        "url": "https://www.ndtv.com/entertainment/im-game-review-dulquer-salmaan-bets-big-but-the-gamble-fails-to-pay-off-2-5-stars-11997545",
-        "icon": "pics/RatingSiteLogos/ndtv.ico"
-      },
-      {
-        "source": "Pinkvilla",
-        "score": "2.5/5",
-        "url": "https://www.pinkvilla.com/entertainment/south/im-game-review-dulquer-salmaans-stylish-action-thriller-fumbles-after-an-impressive-first-half-and-slick-moments-1405243",
-        "icon": "pics/RatingSiteLogos/pinkvilla.png"
-      },
-      {
-        "source": "Rediff",
-        "score": "2/5",
-        "url": "https://www.rediff.com/movies/review/im-game-review-dulquer-salmaan-supernatural-action-thriller-starts-strong-ends-predictably/20260904.htm",
-        "icon": "pics/RatingSiteLogos/rediff.png"
-      },
-      {
-        "source": "News18",
-        "score": "3/5",
-        "url": "https://www.news18.com/movies/malayalam-cinema/im-game-x-review-dulquer-salmaan-show-stealer-in-fantasy-thriller-fans-call-first-half-a-blast-10307612.html",
-        "icon": "pics/RatingSiteLogos/news-18.png"
-      }
-    ],
-    "cast": [
-      {
-        "actor": "Dulquer Salmaan",
-        "role": "Dan John",
-        "description": "A high-stakes businessman and recipient of a hand transplant"
-      },
-      {
-        "actor": "Antony Varghese",
-        "role": "Vignesh 'Vicky' Das",
-        "description": "A fiery cricketer in Madras Raging Bulls"
-      },
-      {
-        "actor": "Mysskin",
-        "role": "David Abraham",
-        "description": "Owner of Madras Raging Bulls and gambling kingpin"
-      },
-      {
-        "actor": "Kayadu Lohar",
-        "role": "Isha",
-        "description": "Dan's love interest and physiotherapist"
-      },
-      {
-        "actor": "Samyuktha Viswanathan",
-        "role": "Tharini",
-        "description": "Vicky's love interest"
-      },
-      {
-        "actor": "Kathir",
-        "role": "Jason Antony",
-        "description": "Captain of Madras Raging Bulls"
-      },
-      {
-        "actor": "Vinay Forrt",
-        "role": "Freddy",
-        "description": "Dan's gambling partner and loyal friend"
-      },
-      {
-        "actor": "Jayasudha",
-        "role": "Mercy John",
-        "description": "Dan's mother"
-      },
-      {
-        "actor": "Shyamaprasad",
-        "role": "John",
-        "description": "Dan's father"
-      },
-      {
-        "actor": "Ashvin Mathew",
-        "role": "Dr. Sam Mathew",
-        "description": ""
-      },
-      {
-        "actor": "Prabhakar",
-        "role": "Balraj Bhai",
-        "description": ""
-      },
-      {
-        "actor": "Parth Tiwari",
-        "role": "Shaurya",
-        "description": ""
-      }
-    ],
-    "bookings": [
-      {
-        "provider": "BookMyShow",
-        "url": "https://in.bookmyshow.com/movies/im-game/ET00473215",
-        "icon": "pics/BookngWebSiteLogos/book-my-show.png",
-        "label": "Book Now",
-        "rank": 1
-      },
-      {
-        "provider": "District",
-        "url": "https://www.district.in/movies/i-m-game-movie-tickets-MV203144?srsltid=AfmBOorr-SzaFcovwNs_XacQ5xvDAf_Ki8zf5pPnHefN3oDig7CFCcIk",
-        "icon": "pics/BookngWebSiteLogos/district.png",
-        "label": "Book Now",
-        "rank": 2
-      },
-      {
-        "provider": "TicketNew",
-        "url": "https://ticketnew.com/movies/i-m-game-movie-detail-203144",
-        "icon": "pics/BookngWebSiteLogos/ticket-new.png",
-        "label": "Book Now",
-        "rank": 3
-      },
-      {
-        "provider": "Cinepolis",
-        "url": "https://cinepolisindia.com/movie-details/im-game-HO00002626?cid=16",
-        "icon": "pics/BookngWebSiteLogos/cinepolisindia.png",
-        "label": "Book Now",
-        "rank": 4
-      },
-      {
-        "provider": "Fandango",
-        "url": "https://www.fandango.com/im-game-2026-246771/movie-overview",
-        "icon": "pics/BookngWebSiteLogos/fandango.png",
-        "label": "Book Now",
-        "rank": 5
-      },
-      {
-        "provider": "Cineworld",
-        "url": "https://www.cineworld.co.uk/films/gb-im-game-malayalam/ho00015243",
-        "icon": "pics/BookngWebSiteLogos/cineworld.png",
-        "label": "Book Now",
-        "rank": 6
-      }
-    ],
-    "watchOnline": [],
-    "music": [
-      {
-        "provider": "Spotify",
-        "url": "https://open.spotify.com/playlist/3lBMzCTDadOvAzisolq7ZX",
-        "icon": "pics/MusicWebsiteLogos/spotify.png",
-        "language": "Malayalam",
-        "label": "Listen on Spotify"
-      },
-      {
-        "provider": "Apple Music / iTunes",
-        "url": "https://music.apple.com/us/album/im-game-single/1761526200",
-        "icon": "pics/MusicWebsiteLogos/itunes.png",
-        "language": "Malayalam",
-        "label": "Listen on Apple Music"
-      },
-      {
-        "provider": "JioSaavn",
-        "url": "https://www.jiosaavn.com/album/im-game/HcrnvmcAaZk_",
-        "icon": "pics/MusicWebsiteLogos/saavn.png",
-        "language": "Malayalam",
-        "label": "Listen on JioSaavn"
-      }
-    ],
-    "officialWebsite": null,
-    "socials": [
-      {
-        "platform": "Twitter / X",
-        "url": "https://twitter.com/share?url=https://oakshow.in/ImGame.html",
-        "icon": "images/twitter.png",
-        "language": "",
-        "label": "Connect on Twitter / X"
-      }
-    ],
-    "similar": [
-      {
-        "title": "Bongu",
-        "fileName": "Bongu.html",
-        "poster": "pics/Films/Bongu/1.jpg"
-      }
-    ],
-    "videos": [
-      {
-        "url": "https://www.youtube.com/watch?v=2E4ihxaCDL4",
-        "youtubeId": "2E4ihxaCDL4",
-        "title": "I'm Game - Official Theatrical Trailer"
-      },
-      {
-        "url": "https://www.youtube.com/watch?v=pIDq50mQvtI",
-        "youtubeId": "pIDq50mQvtI",
-        "title": "I'm Game - Loser Official Video Song"
-      }
-    ],
-    "articles": [
-      {
-        "headline": "I'm Game box office collection day 1: Dulquer Salmaan's Malayalam comeback beats Toxic but falls short of expectations",
-        "url": "https://www.hindustantimes.com/entertainment/others/im-game-box-office-collection-day-1-dulquer-salmaan-malayalam-comeback-beats-toxic-yash-but-falls-short-of-expectations-101788487618310.html",
-        "author": "Hindustan Times",
-        "date": "04 September, 2026",
-        "section": "More Reviews and News(After Release)"
-      },
-      {
-        "headline": "I'm Game Movie Review: Dulquer Salmaan's supernatural gamble is messy, mad and entertaining",
-        "url": "https://timesofindia.indiatimes.com/entertainment/malayalam/movie-reviews/im-game/movie-review/133735732.cms",
-        "author": "Times of India",
-        "date": "03 September, 2026",
-        "section": "More Reviews and News(After Release)"
-      },
-      {
-        "headline": "I'm Game movie review: Dulquer Salmaan's fantasy actioner is a gamble that nearly pays off",
-        "url": "https://indianexpress.com/article/entertainment/movie-review/im-game-movie-review-dulquer-salmaans-fantasy-actioner-is-a-gamble-that-nearly-pays-off-10860784/",
-        "author": "The Indian Express",
-        "date": "03 September, 2026",
-        "section": "More Reviews and News(After Release)"
-      },
-      {
-        "headline": "I'm Game review: Dulquer Salmaan has all the right cards, but the film folds",
-        "url": "https://www.indiatoday.in/movies/reviews/story/im-game-review-dulquer-salmaan-has-all-the-right-cards-but-the-film-folds-2986152-2026-09-03",
-        "author": "India Today",
-        "date": "03 September, 2026",
-        "section": "More Reviews and News(After Release)"
-      },
-      {
-        "headline": "‘I'm Game’ movie review: Dulquer Salmaan starrer loses the plot in veering away from a winner of an idea",
-        "url": "https://www.thehindu.com/entertainment/movies/im-game-movie-review-dulquer-salmaan-starrer-loses-the-plot-in-veering-away-from-a-winner-of-an-idea/article71425675.ece",
-        "author": "The Hindu",
-        "date": "03 September, 2026",
-        "section": "More Reviews and News(After Release)"
-      },
-      {
-        "headline": "I'm Game Review: Dulquer Salmaan bets big, but the gamble fails to pay off (2.5 Stars)",
-        "url": "https://www.ndtv.com/entertainment/im-game-review-dulquer-salmaan-bets-big-but-the-gamble-fails-to-pay-off-2-5-stars-11997545",
-        "author": "NDTV",
-        "date": "04 September, 2026",
-        "section": "More Reviews and News(After Release)"
-      },
-      {
-        "headline": "I’m Game Review: Dulquer Salmaan’s stylish action thriller fumbles after an impressive first half",
-        "url": "https://www.pinkvilla.com/entertainment/south/im-game-review-dulquer-salmaans-stylish-action-thriller-fumbles-after-an-impressive-first-half-and-slick-moments-1405243",
-        "author": "Pinkvilla",
-        "date": "03 September, 2026",
-        "section": "More Reviews and News(After Release)"
-      },
-      {
-        "headline": "I'm Game Review: Dulquer Salmaan's Supernatural Action Thriller Starts Strong, Ends Predictably",
-        "url": "https://www.rediff.com/movies/review/im-game-review-dulquer-salmaan-supernatural-action-thriller-starts-strong-ends-predictably/20260904.htm",
-        "author": "Rediff",
-        "date": "04 September, 2026",
-        "section": "More Reviews and News(After Release)"
-      }
-    ],
-    "filePath": "E:/OakShow/ImGame.html",
-    "filename": "ImGame.html",
-    "category": "Indian",
-    "aliases": [
-      "im-game.html",
-      "im-game"
-    ]
-  },
-  {
-    "id": "GailDaughtryandtheCelebritySexPass",
-    "title": "Gail Daughtry and the Celebrity Sex Pass",
-    "fileName": "GailDaughtryandtheCelebritySexPass.html",
-    "cleanUrl": "/GailDaughtryandtheCelebritySexPass.html",
-    "type": "Movie",
-    "summary": "Gail Daughtry and the Celebrity Sex Pass is a 2026 American screwball comedy film directed by David Wain and written by Wain and Ken Marino. Starring Zoey Deutch alongside Jon Hamm and John Slattery, the film follows small-town Kansas hairdresser Gail Daughtry, who embarks on a madcap journey to Los Angeles with her best friend Otto to cash in on her agreed 'celebrity sex pass' with Jon Hamm after discovering her fiancé slept with Jennifer Aniston.",
-    "plot": "Gail Daughtry, a vibrant hairdresser living in small-town Willowbrook, Kansas, and her fiancé Tom discuss their 'celebrity sex pass' agreement—a pre-nuptial pact allowing each one guilt-free encounter with a celebrity. Gail selects Mad Men star Jon Hamm, while Tom initially selects Tilda Swinton before switching to Jennifer Aniston after attending a book signing. When Gail catches Tom actually sleeping with Aniston, a heartbroken Gail heads to Los Angeles with her outspoken salon colleague Otto under the guise of attending a hairdressing convention. Once in Hollywood, Gail accidentally swaps luggage with Ludovica, an eccentric international criminal mastermind. Convinced by a psychic that fulfilling her celebrity pass is the only way to heal her fractured love life, Gail attempts to infiltrate high-profile parties to track down Jon Hamm while dodging bumbling assassins, finding unexpected self-discovery along the way. Source: Wikipedia & IMDb",
-    "language": "English",
-    "releaseDate": "July 10, 2026",
-    "year": "2026",
-    "genre": "Comedy, Romance, Satire",
-    "duration": "1hr 34mins",
-    "director": "David Wain",
-    "basedOn": "Original screenplay by David Wain & Ken Marino",
-    "boxOffice": {
-      "worldwideGross": "$1.50 Million",
-      "domesticGross": "$1.50 Million",
-      "openingDay": "$285,000",
-      "budget": "$5 Million",
-      "verdict": "Theatrical Run Concluded"
-    },
-    "poster": "pics/Films/GailDaughtryandtheCelebritySexPass/1.jpg",
-    "gallery": [
-      {
-        "src": "pics/Films/GailDaughtryandtheCelebritySexPass/1.jpg",
-        "alt": "Gail Daughtry and the Celebrity Sex Pass Poster"
-      },
-      {
-        "src": "pics/Films/GailDaughtryandtheCelebritySexPass/2.jpg",
-        "alt": "Gail Daughtry and the Celebrity Sex Pass Banner"
-      },
-      {
-        "src": "pics/Films/GailDaughtryandtheCelebritySexPass/3.jpg",
-        "alt": "Gail Daughtry and the Celebrity Sex Pass Movie Still"
-      }
-    ],
-    "ratings": [
-      {
-        "source": "OakShow",
-        "score": "8.5/10",
-        "url": "",
-        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
       },
       {
         "source": "Rotten Tomatoes",
-        "score": "77%",
-        "url": "https://www.rottentomatoes.com/m/gail_daughtry_and_the_celebrity_sex_pass",
+        "score": "RT",
+        "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e01",
         "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
       },
       {
         "source": "Metacritic",
-        "score": "66/100",
-        "url": "https://www.metacritic.com/movie/gail-daughtry-and-the-celebrity-sex-pass/",
+        "score": "Meta",
+        "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-1-pilot/",
         "icon": "pics/RatingSiteLogos/metacritic.png"
+      }
+    ],
+    "cast": [],
+    "bookings": [],
+    "watchOnline": [
+      {
+        "provider": "Disney+ Hotstar",
+        "url": "https://www.hotstar.com/in/shows/lanterns/1271680756?utm_source=gwa",
+        "icon": "pics/WatchOnline/hotstar.png",
+        "language": "",
+        "label": "Watch Episode"
+      }
+    ],
+    "music": [],
+    "officialWebsite": null,
+    "socials": [],
+    "similar": [],
+    "videos": [],
+    "articles": [],
+    "filePath": "E:/OakShow/LanternsS1E01.html"
+  },
+  {
+    "id": "LanternsS1E01",
+    "slug": "lanternss1e01",
+    "type": "movie",
+    "category": "Hollywood",
+    "score": 9.5,
+    "filename": "LanternsS1E01.html",
+    "title": "Lanterns S01E01: Pilot",
+    "metaTitle": "Lanterns S01E01:Pilot All Ratings, Reviews and Watch Online — OakShow",
+    "description": "Hal Jordan is chosen as the successor of Green Lantern Abin Sur. In 2016, Hal and John Stewart have a mentor-mentee relationship and travel to Rushville, Nebraska after John receives a cryptic message from Hal's younger consciousness within his power ring. John helps Sheriff Kerry Kane capture a suspect involved in a mass shooting, while Hal investigates an alien conspiracy. During an interrogation, Hal exposes Sanders as an extraterrestrial who detonates his body. In 2026, John returns to Rushville, where Kerry shows him a dead Hal with his power ring missing.",
+    "plot": "",
+    "language": "English",
+    "releaseDate": "August 16, 2026 9:00 am",
+    "year": "2026",
+    "genre": "Superhero, Drama, Detective",
+    "duration": "55 Minutes",
+    "director": "",
+    "basedOn": "",
+    "boxOffice": null,
+    "poster": "pics/Serieses/Lanterns/S01/1.jpg",
+    "gallery": [],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "9.5/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
       },
       {
         "source": "IMDb",
-        "score": "6.2/10",
-        "url": "https://www.imdb.com/title/tt36834010/?ref_=rlm",
+        "score": "IMDb",
+        "url": "https://www.imdb.com/title/tt26546824/",
         "icon": "pics/RatingSiteLogos/imdb.png"
       },
       {
-        "source": "Den of Geek",
-        "score": "4/5",
-        "url": "https://www.denofgeek.com/movies/gail-daughtry-and-the-celebrity-sex-pass-review-wholesome-hollywood-filth/",
-        "icon": "pics/RatingSiteLogos/denofgeek.ico"
+        "source": "Rotten Tomatoes",
+        "score": "RT",
+        "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e01",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
       },
       {
-        "source": "Roger Ebert",
-        "score": "3/4",
-        "url": "https://www.rogerebert.com/reviews/gail-daughtry-and-the-celebrity-sex-pass-david-wain-film-review-2026",
-        "icon": "pics/RatingSiteLogos/rogerebert.ico"
-      },
-      {
-        "source": "Common Sense Media",
-        "score": "3/5",
-        "url": "https://www.commonsensemedia.org/movie-reviews/gail-daughtry-and-the-celebrity-sex-pass",
-        "icon": "pics/RatingSiteLogos/common-sense-media.png"
-      },
-      {
-        "source": "The Guardian",
-        "score": "3/5",
-        "url": "https://www.theguardian.com/film/2026/jan/27/gail-daughtry-and-the-celebrity-sex-pass-review",
-        "icon": "pics/RatingSiteLogos/the-guardian.png"
-      },
-      {
-        "source": "Rolling Stone",
-        "score": "3.5/5",
-        "url": "https://www.rollingstone.com/tv-movies/tv-movie-reviews/gail-daughtry-and-the-celebrity-sex-pass-review-1235584544/",
-        "icon": "pics/RatingSiteLogos/rollingstone.png"
+        "source": "Metacritic",
+        "score": "Meta",
+        "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-1-pilot/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
       }
     ],
-    "cast": [
-      {
-        "actor": "Zoey Deutch",
-        "role": "Gail Daughtry",
-        "description": "A small-town Kansas hairdresser on a quest to Los Angeles"
-      },
-      {
-        "actor": "Jon Hamm",
-        "role": "Jon Hamm (Himself)",
-        "description": "Suave Hollywood star and Gail's celebrity pass"
-      },
-      {
-        "actor": "John Slattery",
-        "role": "John Slattery (Himself)",
-        "description": "Jon Hamm's longtime friend and confidant"
-      },
-      {
-        "actor": "Sabrina Impacciatore",
-        "role": "Ludovica",
-        "description": "A stylish international criminal plotting chaos"
-      },
-      {
-        "actor": "Miles Gutierrez-Riley",
-        "role": "Otto",
-        "description": "Gail's best friend and hairstylist traveling companion"
-      },
-      {
-        "actor": "Ben Wang",
-        "role": "Caleb",
-        "description": "An enthusiastic young helper"
-      },
-      {
-        "actor": "Ken Marino",
-        "role": "Vincent",
-        "description": "An eccentric Hollywood personality"
-      },
-      {
-        "actor": "Joe Lo Truglio",
-        "role": "Sergio",
-        "description": "Ludovica's bumbling henchman"
-      },
-      {
-        "actor": "Mather Zickel",
-        "role": "Niccolo",
-        "description": "Ludovica's enforcer"
-      },
-      {
-        "actor": "Michael Cassidy",
-        "role": "Tom Soursap McNoodleman",
-        "description": "Gail's unfaithful fiancé"
-      },
-      {
-        "actor": "Fred Melamed",
-        "role": "Frank the Mailman / Narrator",
-        "description": "The deadpan narrator"
-      },
-      {
-        "actor": "Michael Ian Black",
-        "role": "Famous Star Maps Salesman",
-        "description": "Quirky street vendor selling celebrity maps"
-      },
-      {
-        "actor": "Kerri Kenney-Silver",
-        "role": "Charlotte Manetti",
-        "description": "Psychic Journeys LLC co-owner"
-      },
-      {
-        "actor": "Richard Kind",
-        "role": "Stuart Fernie",
-        "description": "Eccentric Los Angeles taxi driver"
-      },
-      {
-        "actor": "Thomas Lennon",
-        "role": "Remy Fontaine",
-        "description": "King of the Whip Curl"
-      },
-      {
-        "actor": "Toby Huss",
-        "role": "Scott",
-        "description": ""
-      }
-    ],
-    "bookings": [
-      {
-        "provider": "Fandango",
-        "url": "https://www.fandango.com/gail-daughtry-and-the-celebrity-sex-pass-2026-245579/movie-overview",
-        "icon": "pics/BookngWebSiteLogos/fandango.png",
-        "label": "Book on Fandango",
-        "rank": 1
-      }
-    ],
+    "cast": [],
+    "bookings": [],
     "watchOnline": [
       {
-        "provider": "Amazon Prime Video",
-        "url": "https://www.primevideo.com/detail/0PH9RO0UBSTMEZEE83EPNO071R?tr=as",
-        "icon": "pics/WatchOnline/amazon-prime.png",
-        "language": "English",
-        "label": "Watch on Prime Video"
-      }
-    ],
-    "music": [
-      {
-        "provider": "Spotify",
-        "url": "https://open.spotify.com/album/5C25YYQlI4GToDCFOmQGWE",
-        "icon": "pics/MusicWebsiteLogos/spotify.png",
-        "language": "English",
-        "label": "Listen on Spotify"
-      },
-      {
-        "provider": "Apple Music / iTunes",
-        "url": "https://music.apple.com/jp/album/gail-daughtry-and-the-celebrity-sex-pass-original/6785029117?l=en-US",
-        "icon": "pics/MusicWebsiteLogos/itunes.png",
-        "language": "English",
-        "label": "Listen on Apple Music"
-      }
-    ],
-    "officialWebsite": null,
-    "socials": [
-      {
-        "platform": "Twitter / X",
-        "url": "https://twitter.com/share?url=https://oakshow.in/GailDaughtryandtheCelebritySexPass.html",
-        "icon": "images/twitter.png",
+        "provider": "Disney+ Hotstar",
+        "url": "https://www.hotstar.com/in/shows/lanterns/1271680756?utm_source=gwa",
+        "icon": "pics/WatchOnline/hotstar.png",
         "language": "",
-        "label": "Connect on Twitter / X"
+        "label": "Watch Episode"
       }
     ],
+    "music": [],
+    "officialWebsite": null,
+    "socials": [],
     "similar": [],
-    "videos": [
-      {
-        "url": "https://www.youtube.com/watch?v=GEbaLieo_Kw",
-        "youtubeId": "GEbaLieo_Kw",
-        "title": "Gail Daughtry and the Celebrity Sex Pass - Official Theatrical Trailer"
-      },
-      {
-        "url": "https://www.youtube.com/watch?v=f0tlCvZpMaM",
-        "youtubeId": "f0tlCvZpMaM",
-        "title": "Gail Daughtry and the Celebrity Sex Pass - International Trailer"
-      }
-    ],
-    "articles": [
-      {
-        "headline": "Gail Daughtry and the Celebrity Sex Pass Review: Good Wholesome Hollywood Filth",
-        "url": "https://www.denofgeek.com/movies/gail-daughtry-and-the-celebrity-sex-pass-review-wholesome-hollywood-filth/",
-        "author": "Den of Geek",
-        "date": "July 07, 2026",
-        "section": "Reviews"
-      },
-      {
-        "headline": "Gail Daughtry and the Celebrity Sex Pass Movie Review",
-        "url": "https://www.rogerebert.com/reviews/gail-daughtry-and-the-celebrity-sex-pass-david-wain-film-review-2026",
-        "author": "Clint Worthington (RogerEbert.com)",
-        "date": "July 08, 2026",
-        "section": "Reviews"
-      },
-      {
-        "headline": "Gail Daughtry and the Celebrity Sex Pass review – silly, scattershot Hollywood comedy",
-        "url": "https://www.theguardian.com/film/2026/jan/27/gail-daughtry-and-the-celebrity-sex-pass-review",
-        "author": "Benjamin Lee (The Guardian)",
-        "date": "January 27, 2026",
-        "section": "Reviews"
-      },
-      {
-        "headline": "What If 'The Wizard of Oz' Involved Having Sex With Jon Hamm?",
-        "url": "https://www.rollingstone.com/tv-movies/tv-movie-reviews/gail-daughtry-and-the-celebrity-sex-pass-review-1235584544/",
-        "author": "Rolling Stone",
-        "date": "July 09, 2026",
-        "section": "News & Features"
-      },
-      {
-        "headline": "Gail Daughtry and the Celebrity Sex Pass - Cast, Overview and Details",
-        "url": "https://www.ign.com/movies/gail-daughtry-and-the-celebrity-sex-pass",
-        "author": "IGN",
-        "date": "July 10, 2026",
-        "section": "News & Features"
-      }
-    ],
-    "filePath": "E:/OakShow/GailDaughtryandtheCelebritySexPass.html",
-    "filename": "GailDaughtryandtheCelebritySexPass.html",
+    "videos": [],
+    "articles": [],
+    "filePath": "E:/OakShow/oakshow-prod-clean/LanternsS1E01.html"
+  },
+  {
+    "id": "LanternsS1E02",
+    "slug": "lanternss1e02",
+    "type": "movie",
     "category": "Hollywood",
-    "aliases": [
-      "gail-daughtry-and-the-celebrity-sex-pass.html",
-      "gail-daughtry-and-the-celebrity-sex-pass"
-    ]
+    "score": 9,
+    "filename": "LanternsS1E02.html",
+    "title": "Lanterns S01E02: Trust Fall",
+    "metaTitle": "Lanterns S01E02:Trust Fall All Ratings, Reviews and Watch Online — OakShow",
+    "description": "With his ring nearly depleted, Hal sends John back to Coast City to retrieve his lantern while he continues investigating the shooting. Hal uncovers alien-detecting technology and attempts to question William Macon, but is wounded by a sniper. After retrieving the power battery, John is abducted by aliens searching for an artificial Manhunter that decimated their civilization, giving John 48 hours to find it. Hal journeys off-world to interrogate Thaal Sinestro about the Manhunters.",
+    "plot": "",
+    "language": "English",
+    "releaseDate": "August 23, 2026 9:00 am",
+    "year": "2026",
+    "genre": "Superhero, Drama, Detective",
+    "duration": "55 Minutes",
+    "director": "",
+    "basedOn": "",
+    "boxOffice": null,
+    "poster": "pics/Serieses/Lanterns/S01/2.jpg",
+    "gallery": [],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "9.0/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "IMDb",
+        "url": "https://www.imdb.com/title/tt32752613/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "RT",
+        "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e02",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "Meta",
+        "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-2-trust-fall/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      }
+    ],
+    "cast": [],
+    "bookings": [],
+    "watchOnline": [
+      {
+        "provider": "Disney+ Hotstar",
+        "url": "https://www.hotstar.com/in/shows/lanterns/1271680756?utm_source=gwa",
+        "icon": "pics/WatchOnline/hotstar.png",
+        "language": "",
+        "label": "Watch Episode"
+      }
+    ],
+    "music": [],
+    "officialWebsite": null,
+    "socials": [],
+    "similar": [],
+    "videos": [],
+    "articles": [],
+    "filePath": "E:/OakShow/LanternsS1E02.html"
+  },
+  {
+    "id": "LanternsS1E02",
+    "slug": "lanternss1e02",
+    "type": "movie",
+    "category": "Hollywood",
+    "score": 9,
+    "filename": "LanternsS1E02.html",
+    "title": "Lanterns S01E02: Trust Fall",
+    "metaTitle": "Lanterns S01E02:Trust Fall All Ratings, Reviews and Watch Online — OakShow",
+    "description": "With his ring nearly depleted, Hal sends John back to Coast City to retrieve his lantern while he continues investigating the shooting. Hal uncovers alien-detecting technology and attempts to question William Macon, but is wounded by a sniper. After retrieving the power battery, John is abducted by aliens searching for an artificial Manhunter that decimated their civilization, giving John 48 hours to find it. Hal journeys off-world to interrogate Thaal Sinestro about the Manhunters.",
+    "plot": "",
+    "language": "English",
+    "releaseDate": "August 23, 2026 9:00 am",
+    "year": "2026",
+    "genre": "Superhero, Drama, Detective",
+    "duration": "55 Minutes",
+    "director": "",
+    "basedOn": "",
+    "boxOffice": null,
+    "poster": "pics/Serieses/Lanterns/S01/2.jpg",
+    "gallery": [],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "9.0/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "IMDb",
+        "url": "https://www.imdb.com/title/tt32752613/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "RT",
+        "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e02",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "Meta",
+        "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-2-trust-fall/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      }
+    ],
+    "cast": [],
+    "bookings": [],
+    "watchOnline": [
+      {
+        "provider": "Disney+ Hotstar",
+        "url": "https://www.hotstar.com/in/shows/lanterns/1271680756?utm_source=gwa",
+        "icon": "pics/WatchOnline/hotstar.png",
+        "language": "",
+        "label": "Watch Episode"
+      }
+    ],
+    "music": [],
+    "officialWebsite": null,
+    "socials": [],
+    "similar": [],
+    "videos": [],
+    "articles": [],
+    "filePath": "E:/OakShow/oakshow-prod-clean/LanternsS1E02.html"
   },
   {
     "id": "BethlehemKudumbaUnit",
@@ -1604,6 +775,1026 @@
     "filePath": "E:/OakShow/DCTamilMovie.html"
   },
   {
+    "id": "gail-daughtry-and-the-celebrity-sex-pass",
+    "slug": "gail-daughtry-and-the-celebrity-sex-pass",
+    "type": "movie",
+    "category": "Hollywood",
+    "score": 8.5,
+    "filename": "gail-daughtry-and-the-celebrity-sex-pass.html",
+    "title": "Gail Daughtry and the Celebrity Sex Pass",
+    "metaTitle": "Gail Daughtry and the Celebrity Sex Pass All Ratings, Reviews, Songs, Videos, Bookings and News",
+    "description": "Explore Gail Daughtry and the Celebrity Sex Pass Hollywood comedy movie ratings, reviews, box office collections, songs, and showtimes. Starring Zoey Deutch, Jon Hamm, John Slattery, directed by David Wain.",
+    "plot": "Gail Daughtry, a vibrant hairdresser living in small-town Willowbrook, Kansas, and her fiancé Tom discuss their 'celebrity sex pass' agreement—a pre-nuptial pact allowing each one guilt-free encounter with a celebrity. Gail selects Mad Men star Jon Hamm, while Tom initially selects Tilda Swinton before switching to Jennifer Aniston after attending a book signing. When Gail catches Tom actually sleeping with Aniston, a heartbroken Gail heads to Los Angeles with her outspoken salon colleague Otto under the guise of attending a hairdressing convention. Once in Hollywood, Gail accidentally swaps luggage with Ludovica, an eccentric international criminal mastermind. Convinced by a psychic that fulfilling her celebrity pass is the only way to heal her fractured love life, Gail attempts to infiltrate high-profile parties to track down Jon Hamm while dodging bumbling assassins, finding unexpected self-discovery along the way. Source:IMDb",
+    "language": "English",
+    "releaseDate": "July 10, 2026",
+    "year": "2026",
+    "genre": "Comedy, Romance, Satire",
+    "duration": "1hr 34mins",
+    "director": "",
+    "basedOn": "",
+    "boxOffice": null,
+    "poster": "pics/Films/GailDaughtryandtheCelebritySexPass/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/GailDaughtryandtheCelebritySexPass/1.jpg",
+        "alt": "Gail Daughtry and the Celebrity Sex Pass Poster"
+      },
+      {
+        "src": "pics/Films/GailDaughtryandtheCelebritySexPass/2.jpg",
+        "alt": "Gail Daughtry and the Celebrity Sex Pass Banner"
+      },
+      {
+        "src": "pics/Films/GailDaughtryandtheCelebritySexPass/3.jpg",
+        "alt": "Gail Daughtry and the Celebrity Sex Pass Movie Still"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "8.5/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "77%",
+        "url": "https://www.rottentomatoes.com/m/gail_daughtry_and_the_celebrity_sex_pass",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "66/100",
+        "url": "https://www.metacritic.com/movie/gail-daughtry-and-the-celebrity-sex-pass/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "6.2/10",
+        "url": "https://www.imdb.com/title/tt36834010/?ref_=rlm",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Den of Geek",
+        "score": "4/5",
+        "url": "https://www.denofgeek.com/movies/gail-daughtry-and-the-celebrity-sex-pass-review-wholesome-hollywood-filth/",
+        "icon": "pics/RatingSiteLogos/denofgeek.ico"
+      },
+      {
+        "source": "Roger Ebert",
+        "score": "3/4",
+        "url": "https://www.rogerebert.com/reviews/gail-daughtry-and-the-celebrity-sex-pass-david-wain-film-review-2026",
+        "icon": "pics/RatingSiteLogos/rogerebert.ico"
+      },
+      {
+        "source": "Common Sense Media",
+        "score": "3/5",
+        "url": "https://www.commonsensemedia.org/movie-reviews/gail-daughtry-and-the-celebrity-sex-pass",
+        "icon": "pics/RatingSiteLogos/common-sense-media.png"
+      },
+      {
+        "source": "The Guardian",
+        "score": "3/5",
+        "url": "https://www.theguardian.com/film/2026/jan/27/gail-daughtry-and-the-celebrity-sex-pass-review",
+        "icon": "pics/RatingSiteLogos/the-guardian.png"
+      },
+      {
+        "source": "Rolling Stone",
+        "score": "3.5/5",
+        "url": "https://www.rollingstone.com/tv-movies/tv-movie-reviews/gail-daughtry-and-the-celebrity-sex-pass-review-1235584544/",
+        "icon": "pics/RatingSiteLogos/rollingstone.png"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Zoey Deutch",
+        "role": "Gail Daughtry (A small-town Kansas hairdresser on a quest to Los Angeles)",
+        "description": ""
+      },
+      {
+        "actor": "Jon Hamm",
+        "role": "Jon Hamm (Himself - Suave Hollywood star and Gail's celebrity pass)",
+        "description": ""
+      },
+      {
+        "actor": "John Slattery",
+        "role": "John Slattery (Himself - Jon Hamm's friend and confidant)",
+        "description": ""
+      },
+      {
+        "actor": "Sabrina Impacciatore",
+        "role": "Ludovica (A stylish international criminal plotting chaos)",
+        "description": ""
+      },
+      {
+        "actor": "Miles Gutierrez-Riley",
+        "role": "Otto (Gail's best friend and hairstylist traveling companion)",
+        "description": ""
+      },
+      {
+        "actor": "Ben Wang",
+        "role": "Caleb (An enthusiastic young helper)",
+        "description": ""
+      },
+      {
+        "actor": "Ken Marino",
+        "role": "Vincent (An eccentric Hollywood personality)",
+        "description": ""
+      },
+      {
+        "actor": "Joe Lo Truglio",
+        "role": "Sergio (Ludovica's bumbling henchman)",
+        "description": ""
+      },
+      {
+        "actor": "Mather Zickel",
+        "role": "Niccolo (Ludovica's enforcer)",
+        "description": ""
+      },
+      {
+        "actor": "Michael Cassidy",
+        "role": "Tom Soursap McNoodleman (Gail's unfaithful fiancé)",
+        "description": ""
+      },
+      {
+        "actor": "Fred Melamed",
+        "role": "Frank the Mailman / Narrator (The deadpan narrator)",
+        "description": ""
+      },
+      {
+        "actor": "Michael Ian Black",
+        "role": "Famous Star Maps Salesman (Quirky street vendor selling celebrity maps)",
+        "description": ""
+      },
+      {
+        "actor": "Kerri Kenney-Silver",
+        "role": "Charlotte Manetti (Psychic Journeys LLC co-owner)",
+        "description": ""
+      },
+      {
+        "actor": "Richard Kind",
+        "role": "Stuart Fernie (Eccentric Los Angeles taxi driver)",
+        "description": ""
+      },
+      {
+        "actor": "Thomas Lennon",
+        "role": "Remy Fontaine (King of the Whip Curl)",
+        "description": ""
+      },
+      {
+        "actor": "Toby Huss",
+        "role": "Scott",
+        "description": ""
+      }
+    ],
+    "bookings": [
+      {
+        "provider": "Fandango",
+        "url": "https://www.fandango.com/gail-daughtry-and-the-celebrity-sex-pass-2026-245579/movie-overview",
+        "icon": "",
+        "label": "Book on Fandango",
+        "rank": 4
+      }
+    ],
+    "watchOnline": [
+      {
+        "provider": "Amazon Prime Video",
+        "url": "https://www.primevideo.com/detail/0PH9RO0UBSTMEZEE83EPNO071R?tr=as",
+        "icon": "",
+        "language": "",
+        "label": "Watch on Prime Video"
+      }
+    ],
+    "music": [
+      {
+        "provider": "Spotify",
+        "url": "https://open.spotify.com/album/5C25YYQlI4GToDCFOmQGWE",
+        "icon": "pics/MusicWebsiteLogos/spotify.png",
+        "language": "",
+        "label": "Listen Now"
+      },
+      {
+        "provider": "Apple Music / iTunes",
+        "url": "https://music.apple.com/jp/album/gail-daughtry-and-the-celebrity-sex-pass-original/6785029117?l=en-US",
+        "icon": "pics/MusicWebsiteLogos/itunes.png",
+        "language": "",
+        "label": "Listen Now"
+      }
+    ],
+    "officialWebsite": null,
+    "socials": [
+      {
+        "platform": "Twitter / X",
+        "url": "https://twitter.com/share?url=https://oakshow.in/GailDaughtryandtheCelebritySexPass.html",
+        "icon": "images/twitter.png",
+        "language": "",
+        "label": "Connect on Twitter / X"
+      }
+    ],
+    "similar": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=GEbaLieo_Kw",
+        "youtubeId": "GEbaLieo_Kw",
+        "title": "Gail Daughtry and the Celebrity Sex Pass"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=f0tlCvZpMaM",
+        "youtubeId": "f0tlCvZpMaM",
+        "title": "Official Trailer / Teaser"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "Gail Daughtry and the Celebrity Sex Pass review – silly, scattershot Hollywood comedy",
+        "url": "https://www.theguardian.com/film/2026/jan/27/gail-daughtry-and-the-celebrity-sex-pass-review",
+        "author": "The Guardian",
+        "date": "January 27, 2026",
+        "section": "More Reviews and News"
+      },
+      {
+        "headline": "What If 'The Wizard of Oz' Involved Having Sex With Jon Hamm?",
+        "url": "https://www.rollingstone.com/tv-movies/tv-movie-reviews/gail-daughtry-and-the-celebrity-sex-pass-review-1235584544/",
+        "author": "Rolling Stone",
+        "date": "July 09, 2026",
+        "section": "More Reviews and News"
+      },
+      {
+        "headline": "Gail Daughtry and the Celebrity Sex Pass - Cast, Overview and Details",
+        "url": "https://www.ign.com/movies/gail-daughtry-and-the-celebrity-sex-pass",
+        "author": "IGN",
+        "date": "July 10, 2026",
+        "section": "More Reviews and News"
+      }
+    ],
+    "filePath": "E:/OakShow/gail-daughtry-and-the-celebrity-sex-pass.html"
+  },
+  {
+    "id": "GailDaughtryandtheCelebritySexPass",
+    "slug": "gaildaughtryandthecelebritysexpass",
+    "type": "movie",
+    "category": "Hollywood",
+    "score": 8.5,
+    "filename": "GailDaughtryandtheCelebritySexPass.html",
+    "title": "Gail Daughtry and the Celebrity Sex Pass",
+    "metaTitle": "Gail Daughtry and the Celebrity Sex Pass All Ratings, Reviews, Songs, Videos, Bookings and News",
+    "description": "Explore Gail Daughtry and the Celebrity Sex Pass Hollywood comedy movie ratings, reviews, box office collections, songs, and showtimes. Starring Zoey Deutch, Jon Hamm, John Slattery, directed by David Wain.",
+    "plot": "Gail Daughtry, a vibrant hairdresser living in small-town Willowbrook, Kansas, and her fiancé Tom discuss their 'celebrity sex pass' agreement—a pre-nuptial pact allowing each one guilt-free encounter with a celebrity. Gail selects Mad Men star Jon Hamm, while Tom initially selects Tilda Swinton before switching to Jennifer Aniston after attending a book signing. When Gail catches Tom actually sleeping with Aniston, a heartbroken Gail heads to Los Angeles with her outspoken salon colleague Otto under the guise of attending a hairdressing convention. Once in Hollywood, Gail accidentally swaps luggage with Ludovica, an eccentric international criminal mastermind. Convinced by a psychic that fulfilling her celebrity pass is the only way to heal her fractured love life, Gail attempts to infiltrate high-profile parties to track down Jon Hamm while dodging bumbling assassins, finding unexpected self-discovery along the way. Source:IMDb",
+    "language": "English",
+    "releaseDate": "July 10, 2026",
+    "year": "2026",
+    "genre": "Comedy, Romance, Satire",
+    "duration": "1hr 34mins",
+    "director": "",
+    "basedOn": "",
+    "boxOffice": null,
+    "poster": "pics/Films/GailDaughtryandtheCelebritySexPass/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/GailDaughtryandtheCelebritySexPass/1.jpg",
+        "alt": "Gail Daughtry and the Celebrity Sex Pass Poster"
+      },
+      {
+        "src": "pics/Films/GailDaughtryandtheCelebritySexPass/2.jpg",
+        "alt": "Gail Daughtry and the Celebrity Sex Pass Banner"
+      },
+      {
+        "src": "pics/Films/GailDaughtryandtheCelebritySexPass/3.jpg",
+        "alt": "Gail Daughtry and the Celebrity Sex Pass Movie Still"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "8.5/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "77%",
+        "url": "https://www.rottentomatoes.com/m/gail_daughtry_and_the_celebrity_sex_pass",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "66/100",
+        "url": "https://www.metacritic.com/movie/gail-daughtry-and-the-celebrity-sex-pass/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "6.2/10",
+        "url": "https://www.imdb.com/title/tt36834010/?ref_=rlm",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Den of Geek",
+        "score": "4/5",
+        "url": "https://www.denofgeek.com/movies/gail-daughtry-and-the-celebrity-sex-pass-review-wholesome-hollywood-filth/",
+        "icon": "pics/RatingSiteLogos/denofgeek.ico"
+      },
+      {
+        "source": "Roger Ebert",
+        "score": "3/4",
+        "url": "https://www.rogerebert.com/reviews/gail-daughtry-and-the-celebrity-sex-pass-david-wain-film-review-2026",
+        "icon": "pics/RatingSiteLogos/rogerebert.ico"
+      },
+      {
+        "source": "Common Sense Media",
+        "score": "3/5",
+        "url": "https://www.commonsensemedia.org/movie-reviews/gail-daughtry-and-the-celebrity-sex-pass",
+        "icon": "pics/RatingSiteLogos/common-sense-media.png"
+      },
+      {
+        "source": "The Guardian",
+        "score": "3/5",
+        "url": "https://www.theguardian.com/film/2026/jan/27/gail-daughtry-and-the-celebrity-sex-pass-review",
+        "icon": "pics/RatingSiteLogos/the-guardian.png"
+      },
+      {
+        "source": "Rolling Stone",
+        "score": "3.5/5",
+        "url": "https://www.rollingstone.com/tv-movies/tv-movie-reviews/gail-daughtry-and-the-celebrity-sex-pass-review-1235584544/",
+        "icon": "pics/RatingSiteLogos/rollingstone.png"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Zoey Deutch",
+        "role": "Gail Daughtry (A small-town Kansas hairdresser on a quest to Los Angeles)",
+        "description": ""
+      },
+      {
+        "actor": "Jon Hamm",
+        "role": "Jon Hamm (Himself - Suave Hollywood star and Gail's celebrity pass)",
+        "description": ""
+      },
+      {
+        "actor": "John Slattery",
+        "role": "John Slattery (Himself - Jon Hamm's friend and confidant)",
+        "description": ""
+      },
+      {
+        "actor": "Sabrina Impacciatore",
+        "role": "Ludovica (A stylish international criminal plotting chaos)",
+        "description": ""
+      },
+      {
+        "actor": "Miles Gutierrez-Riley",
+        "role": "Otto (Gail's best friend and hairstylist traveling companion)",
+        "description": ""
+      },
+      {
+        "actor": "Ben Wang",
+        "role": "Caleb (An enthusiastic young helper)",
+        "description": ""
+      },
+      {
+        "actor": "Ken Marino",
+        "role": "Vincent (An eccentric Hollywood personality)",
+        "description": ""
+      },
+      {
+        "actor": "Joe Lo Truglio",
+        "role": "Sergio (Ludovica's bumbling henchman)",
+        "description": ""
+      },
+      {
+        "actor": "Mather Zickel",
+        "role": "Niccolo (Ludovica's enforcer)",
+        "description": ""
+      },
+      {
+        "actor": "Michael Cassidy",
+        "role": "Tom Soursap McNoodleman (Gail's unfaithful fiancé)",
+        "description": ""
+      },
+      {
+        "actor": "Fred Melamed",
+        "role": "Frank the Mailman / Narrator (The deadpan narrator)",
+        "description": ""
+      },
+      {
+        "actor": "Michael Ian Black",
+        "role": "Famous Star Maps Salesman (Quirky street vendor selling celebrity maps)",
+        "description": ""
+      },
+      {
+        "actor": "Kerri Kenney-Silver",
+        "role": "Charlotte Manetti (Psychic Journeys LLC co-owner)",
+        "description": ""
+      },
+      {
+        "actor": "Richard Kind",
+        "role": "Stuart Fernie (Eccentric Los Angeles taxi driver)",
+        "description": ""
+      },
+      {
+        "actor": "Thomas Lennon",
+        "role": "Remy Fontaine (King of the Whip Curl)",
+        "description": ""
+      },
+      {
+        "actor": "Toby Huss",
+        "role": "Scott",
+        "description": ""
+      }
+    ],
+    "bookings": [
+      {
+        "provider": "Fandango",
+        "url": "https://www.fandango.com/gail-daughtry-and-the-celebrity-sex-pass-2026-245579/movie-overview",
+        "icon": "",
+        "label": "Book on Fandango",
+        "rank": 4
+      }
+    ],
+    "watchOnline": [
+      {
+        "provider": "Amazon Prime Video",
+        "url": "https://www.primevideo.com/detail/0PH9RO0UBSTMEZEE83EPNO071R?tr=as",
+        "icon": "",
+        "language": "",
+        "label": "Watch on Prime Video"
+      }
+    ],
+    "music": [
+      {
+        "provider": "Spotify",
+        "url": "https://open.spotify.com/album/5C25YYQlI4GToDCFOmQGWE",
+        "icon": "pics/MusicWebsiteLogos/spotify.png",
+        "language": "",
+        "label": "Listen Now"
+      },
+      {
+        "provider": "Apple Music / iTunes",
+        "url": "https://music.apple.com/jp/album/gail-daughtry-and-the-celebrity-sex-pass-original/6785029117?l=en-US",
+        "icon": "pics/MusicWebsiteLogos/itunes.png",
+        "language": "",
+        "label": "Listen Now"
+      }
+    ],
+    "officialWebsite": null,
+    "socials": [
+      {
+        "platform": "Twitter / X",
+        "url": "https://twitter.com/share?url=https://oakshow.in/GailDaughtryandtheCelebritySexPass.html",
+        "icon": "images/twitter.png",
+        "language": "",
+        "label": "Connect on Twitter / X"
+      }
+    ],
+    "similar": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=GEbaLieo_Kw",
+        "youtubeId": "GEbaLieo_Kw",
+        "title": "Gail Daughtry and the Celebrity Sex Pass"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=f0tlCvZpMaM",
+        "youtubeId": "f0tlCvZpMaM",
+        "title": "Official Trailer / Teaser"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "Gail Daughtry and the Celebrity Sex Pass review – silly, scattershot Hollywood comedy",
+        "url": "https://www.theguardian.com/film/2026/jan/27/gail-daughtry-and-the-celebrity-sex-pass-review",
+        "author": "The Guardian",
+        "date": "January 27, 2026",
+        "section": "More Reviews and News"
+      },
+      {
+        "headline": "What If 'The Wizard of Oz' Involved Having Sex With Jon Hamm?",
+        "url": "https://www.rollingstone.com/tv-movies/tv-movie-reviews/gail-daughtry-and-the-celebrity-sex-pass-review-1235584544/",
+        "author": "Rolling Stone",
+        "date": "July 09, 2026",
+        "section": "More Reviews and News"
+      },
+      {
+        "headline": "Gail Daughtry and the Celebrity Sex Pass - Cast, Overview and Details",
+        "url": "https://www.ign.com/movies/gail-daughtry-and-the-celebrity-sex-pass",
+        "author": "IGN",
+        "date": "July 10, 2026",
+        "section": "More Reviews and News"
+      }
+    ],
+    "filePath": "E:/OakShow/GailDaughtryandtheCelebritySexPass.html"
+  },
+  {
+    "id": "DCTamilMovie",
+    "slug": "dctamilmovie",
+    "type": "movie",
+    "category": "Indian",
+    "score": 8.5,
+    "filename": "DCTamilMovie.html",
+    "title": "DC (Devadas & Chandra)",
+    "metaTitle": "DC (Devadas & Chandra) All Ratings, Reviews, Songs, Videos, Bookings and News",
+    "description": "Explore DC (Devadas & Chandra) movie ratings, reviews, box office collections, songs, and showtimes. Starring Lokesh Kanagaraj and Wamiqa Gabbi, directed by Arun Matheswaran with music by Anirudh Ravichander.",
+    "plot": "Set against the murky, rain-soaked alleys of the coastal crime syndicate, Devadas is an uncompromising gangster whose descent into moral ruin is accelerated by his fractured romance with Chandra. When ruthless cartel kingpins orchestrate Chandra's betrayal, Devadas embarks on a merciless, gun-blazing revenge spree. As rival syndicates, corrupt law enforcers, and old friends close in, Devadas must confront his past, battling demons within and killers without in an explosive climax. Source:IMDB",
+    "language": "Tamil",
+    "releaseDate": "August 07, 2026",
+    "year": "2026",
+    "genre": "Action, Crime, Gangster, Drama, Romance",
+    "duration": "2hr 38mins",
+    "director": "Arun Matheswaran | Screenplay: Arun Matheswaran | Music: Anirudh Ravichander",
+    "basedOn": "",
+    "boxOffice": {
+      "worldwideGross": "₹106 Crore",
+      "indiaGross": "₹79.50 Crore",
+      "overseasGross": "₹26.50 Crore ($2.8M)",
+      "openingDay": "₹14.20 Crore",
+      "openingWeekend": "₹42.80 Crore",
+      "budget": "Estimated ₹35 Crore",
+      "verdict": "Superhit / Commercial Blockbuster",
+      "lastUpdated": "August 2026",
+      "source": "Trade Reports / Sacnilk & Pinkvilla"
+    },
+    "poster": "pics/Films/DCTamilMovie/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/DCTamilMovie/1.jpg",
+        "alt": "DC Movie Poster"
+      },
+      {
+        "src": "pics/Films/DCTamilMovie/2.jpg",
+        "alt": "DC Official Banner"
+      },
+      {
+        "src": "pics/Films/DCTamilMovie/3.jpg",
+        "alt": "DC Movie Action Scene Still"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "8.5/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "7.9/10",
+        "url": "https://www.imdb.com/title/tt37501035/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "88%",
+        "url": "https://www.rottentomatoes.com/m/dc",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+      },
+      {
+        "source": "Times of India",
+        "score": "3.5/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movie-reviews/dc/movie-review/133046082.cms",
+        "icon": "pics/RatingSiteLogos/timesofindia.ico"
+      },
+      {
+        "source": "Hindustan Times",
+        "score": "3.5/5",
+        "url": "https://www.hindustantimes.com/entertainment/tamil-cinema/dc-movie-review-lokesh-kanagaraj-might-debut-as-a-hero-but-anirudh-ravichander-steals-the-show-101786091591824.html",
+        "icon": "pics/RatingSiteLogos/hindustan-times.png"
+      },
+      {
+        "source": "The Indian Express",
+        "score": "3/5",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/dc-movie-review-lokesh-kanagaraj-starrer-is-a-moody-visually-rich-drama-that-falls-short-10821971/",
+        "icon": "pics/RatingSiteLogos/indian-express.png"
+      },
+      {
+        "source": "India Today",
+        "score": "3.5/5",
+        "url": "https://www.indiatoday.in/movies/reviews/story/dc-review-arun-matheswaran-lokesh-kanagaraj-revenge-thriller-wamiqa-gabbi-2965758-2026-08-07",
+        "icon": "pics/RatingSiteLogos/india-today.ico"
+      },
+      {
+        "source": "NDTV",
+        "score": "3.5/5",
+        "url": "https://www.ndtv.com/entertainment/dc-review-lokesh-kanagaraj-and-anirudh-power-a-stylishly-reimagined-devdas-gangster-drama-3-5-stars-11878507",
+        "icon": "pics/RatingSiteLogos/ndtv.ico"
+      },
+      {
+        "source": "News18",
+        "score": "3.5/5",
+        "url": "https://www.news18.com/movies/tamil-cinema/dc-review-lokesh-kanagaraj-brings-guns-roses-pulp-swagger-but-anirudh-ravichander-takes-the-trophy-home-ws-l-10257927.html",
+        "icon": "pics/RatingSiteLogos/news-18.png"
+      },
+      {
+        "source": "Rediff",
+        "score": "3.5/5",
+        "url": "https://www.rediff.com/movies/review/dc-movie-review-lokesh-kanagaraj-wamiqa-gabbi-shine-in-arun-matheswarans-bloody-devdas-retelling/20260807.htm",
+        "icon": "pics/RatingSiteLogos/rediff.png"
+      },
+      {
+        "source": "Letterboxd",
+        "score": "3.7/5",
+        "url": "https://letterboxd.com/film/dc/",
+        "icon": "pics/RatingSiteLogos/letterboxd.png"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Lokesh Kanagaraj",
+        "role": "Devadas (A tormented gangster consumed by love and vengeance)",
+        "description": ""
+      },
+      {
+        "actor": "Wamiqa Gabbi",
+        "role": "Chandra (The enigmatic woman who shapes Devadas's destiny)",
+        "description": ""
+      },
+      {
+        "actor": "Sanjana Krishnamoorthy",
+        "role": "Parvathi",
+        "description": ""
+      },
+      {
+        "actor": "Arun Matheswaran",
+        "role": "Cast",
+        "description": ""
+      },
+      {
+        "actor": "Anirudh Ravichander",
+        "role": "Cast",
+        "description": ""
+      }
+    ],
+    "bookings": [
+      {
+        "provider": "BookMyShow",
+        "url": "https://in.bookmyshow.com/movies/kozhikode/dc/ET00508106",
+        "icon": "pics/BookngWebSiteLogos/book-my-show.png",
+        "label": "BookMyShow",
+        "rank": 2
+      },
+      {
+        "provider": "District",
+        "url": "https://www.district.in/movies/dc-movie-tickets-in-kozhikode-MV208920?srsltid=AfmBOoq1LUjt_nlQvOY3PbK1qMgRWDZNOVc8lMHbFU5AkOXL4AnMGyEb",
+        "icon": "pics/BookngWebSiteLogos/district.png",
+        "label": "District",
+        "rank": 3
+      },
+      {
+        "provider": "TicketNew",
+        "url": "https://ticketnew.com/movies/dc-movie-detail-208920",
+        "icon": "pics/BookngWebSiteLogos/ticket-new.png",
+        "label": "TicketNew",
+        "rank": 4
+      },
+      {
+        "provider": "PVR",
+        "url": "https://www.pvrcinemas.com/moviesessions/Chennai/DC-TAMIL-WITH-ENGLISH-SUBTITLE/38151",
+        "icon": "pics/BookngWebSiteLogos/pvr.png",
+        "label": "PVR",
+        "rank": 5
+      },
+      {
+        "provider": "Cinepolis",
+        "url": "https://cinepolisindia.com/movie-details/dc-HO00002471?cid=17",
+        "icon": "pics/BookngWebSiteLogos/cinepolisindia.png",
+        "label": "Cinepolis",
+        "rank": 6
+      },
+      {
+        "provider": "Fandango",
+        "url": "https://www.fandango.com/dc-2026-246721/movie-overview",
+        "icon": "pics/BookngWebSiteLogos/fandango.png",
+        "label": "Fandango",
+        "rank": 7
+      },
+      {
+        "provider": "Cineworld",
+        "url": "https://www.cineworld.co.uk/films/dc-tamil/ho00014962",
+        "icon": "pics/BookngWebSiteLogos/cineworld.png",
+        "label": "Cineworld",
+        "rank": 8
+      }
+    ],
+    "watchOnline": [
+      {
+        "provider": "Sun NXT",
+        "url": "https://www.sunnxt.com/tamil-movie-dc-tamil-2026/detail/272456",
+        "icon": "pics/WatchOnline/sun-nxt.png",
+        "language": "",
+        "label": "Watch on Sun NXT"
+      }
+    ],
+    "music": [
+      {
+        "provider": "Spotify",
+        "url": "https://open.spotify.com/album/6dZmnyIxUUyJZvqVPTEDcJ",
+        "icon": "pics/MusicWebsiteLogos/spotify.png",
+        "language": "",
+        "label": "Listen on Spotify"
+      },
+      {
+        "provider": "Apple Music / iTunes",
+        "url": "https://music.apple.com/mr/album/dc-original-motion-picture-soundtrack/6794258483",
+        "icon": "pics/MusicWebsiteLogos/itunes.png",
+        "language": "",
+        "label": "Apple Music"
+      },
+      {
+        "provider": "JioSaavn",
+        "url": "https://www.jiosaavn.com/album/dc-original-motion-picture-soundtrack/QN1hjTNc54o_",
+        "icon": "pics/MusicWebsiteLogos/saavn.png",
+        "language": "",
+        "label": "JioSaavn"
+      }
+    ],
+    "officialWebsite": null,
+    "socials": [
+      {
+        "platform": "Twitter / X",
+        "url": "https://twitter.com/share?url=https://oakshow.in/DCTamilMovie.html",
+        "icon": "images/twitter.png",
+        "language": "",
+        "label": "Connect on Twitter / X"
+      }
+    ],
+    "similar": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=2kntxizQIFI",
+        "youtubeId": "2kntxizQIFI",
+        "title": "DC (Devadas & Chandra)"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "DC: Arun Matheswaran, Lokesh Kanagaraj, Wamiqa Gabbi celebrate blockbuster run",
+        "url": "https://www.indiatoday.in/movies/regional-cinema/story/dc-arun-matheswaran-lokesh-kanagaraj-wamiqa-gabbi-win-big-anirudh-ravichander-2968413-2026-08-12",
+        "author": "India Today",
+        "date": "",
+        "section": "News & Updates"
+      },
+      {
+        "headline": "Lokesh Kanagaraj turns violent in debut film DC teaser",
+        "url": "https://www.mid-day.com/entertainment/regional-indian-cinema-news/article/on-valentines-day-lokesh-kanagaraj-turns-violent-in-debut-film-dc-teaser-wamiqa-gabbi-23616598",
+        "author": "Mid",
+        "date": "Day",
+        "section": "News & Updates"
+      }
+    ],
+    "filePath": "E:/OakShow/oakshow-prod-clean/DCTamilMovie.html"
+  },
+  {
+    "id": "GailDaughtryandtheCelebritySexPass",
+    "slug": "gaildaughtryandthecelebritysexpass",
+    "type": "movie",
+    "category": "Hollywood",
+    "score": 8.5,
+    "filename": "GailDaughtryandtheCelebritySexPass.html",
+    "title": "Gail Daughtry and the Celebrity Sex Pass",
+    "metaTitle": "Gail Daughtry and the Celebrity Sex Pass All Ratings, Reviews, Songs, Videos, Bookings and News",
+    "description": "Explore Gail Daughtry and the Celebrity Sex Pass Hollywood comedy movie ratings, reviews, box office collections, songs, and showtimes. Starring Zoey Deutch, Jon Hamm, John Slattery, directed by David Wain.",
+    "plot": "Gail Daughtry, a vibrant hairdresser living in small-town Willowbrook, Kansas, and her fiancé Tom discuss their 'celebrity sex pass' agreement—a pre-nuptial pact allowing each one guilt-free encounter with a celebrity. Gail selects Mad Men star Jon Hamm, while Tom initially selects Tilda Swinton before switching to Jennifer Aniston after attending a book signing. When Gail catches Tom actually sleeping with Aniston, a heartbroken Gail heads to Los Angeles with her outspoken salon colleague Otto under the guise of attending a hairdressing convention. Once in Hollywood, Gail accidentally swaps luggage with Ludovica, an eccentric international criminal mastermind. Convinced by a psychic that fulfilling her celebrity pass is the only way to heal her fractured love life, Gail attempts to infiltrate high-profile parties to track down Jon Hamm while dodging bumbling assassins, finding unexpected self-discovery along the way. Source:IMDb",
+    "language": "English",
+    "releaseDate": "July 10, 2026",
+    "year": "2026",
+    "genre": "Comedy, Romance, Satire",
+    "duration": "1hr 34mins",
+    "director": "",
+    "basedOn": "",
+    "boxOffice": null,
+    "poster": "pics/Films/GailDaughtryandtheCelebritySexPass/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/GailDaughtryandtheCelebritySexPass/1.jpg",
+        "alt": "Gail Daughtry and the Celebrity Sex Pass Poster"
+      },
+      {
+        "src": "pics/Films/GailDaughtryandtheCelebritySexPass/2.jpg",
+        "alt": "Gail Daughtry and the Celebrity Sex Pass Banner"
+      },
+      {
+        "src": "pics/Films/GailDaughtryandtheCelebritySexPass/3.jpg",
+        "alt": "Gail Daughtry and the Celebrity Sex Pass Movie Still"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "8.5/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "77%",
+        "url": "https://www.rottentomatoes.com/m/gail_daughtry_and_the_celebrity_sex_pass",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "66/100",
+        "url": "https://www.metacritic.com/movie/gail-daughtry-and-the-celebrity-sex-pass/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "6.2/10",
+        "url": "https://www.imdb.com/title/tt36834010/?ref_=rlm",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Den of Geek",
+        "score": "4/5",
+        "url": "https://www.denofgeek.com/movies/gail-daughtry-and-the-celebrity-sex-pass-review-wholesome-hollywood-filth/",
+        "icon": "pics/RatingSiteLogos/denofgeek.ico"
+      },
+      {
+        "source": "Roger Ebert",
+        "score": "3/4",
+        "url": "https://www.rogerebert.com/reviews/gail-daughtry-and-the-celebrity-sex-pass-david-wain-film-review-2026",
+        "icon": "pics/RatingSiteLogos/rogerebert.ico"
+      },
+      {
+        "source": "Common Sense Media",
+        "score": "3/5",
+        "url": "https://www.commonsensemedia.org/movie-reviews/gail-daughtry-and-the-celebrity-sex-pass",
+        "icon": "pics/RatingSiteLogos/common-sense-media.png"
+      },
+      {
+        "source": "The Guardian",
+        "score": "3/5",
+        "url": "https://www.theguardian.com/film/2026/jan/27/gail-daughtry-and-the-celebrity-sex-pass-review",
+        "icon": "pics/RatingSiteLogos/the-guardian.png"
+      },
+      {
+        "source": "Rolling Stone",
+        "score": "3.5/5",
+        "url": "https://www.rollingstone.com/tv-movies/tv-movie-reviews/gail-daughtry-and-the-celebrity-sex-pass-review-1235584544/",
+        "icon": "pics/RatingSiteLogos/rollingstone.png"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Zoey Deutch",
+        "role": "Gail Daughtry (A small-town Kansas hairdresser on a quest to Los Angeles)",
+        "description": ""
+      },
+      {
+        "actor": "Jon Hamm",
+        "role": "Jon Hamm (Himself - Suave Hollywood star and Gail's celebrity pass)",
+        "description": ""
+      },
+      {
+        "actor": "John Slattery",
+        "role": "John Slattery (Himself - Jon Hamm's friend and confidant)",
+        "description": ""
+      },
+      {
+        "actor": "Sabrina Impacciatore",
+        "role": "Ludovica (A stylish international criminal plotting chaos)",
+        "description": ""
+      },
+      {
+        "actor": "Miles Gutierrez-Riley",
+        "role": "Otto (Gail's best friend and hairstylist traveling companion)",
+        "description": ""
+      },
+      {
+        "actor": "Ben Wang",
+        "role": "Caleb (An enthusiastic young helper)",
+        "description": ""
+      },
+      {
+        "actor": "Ken Marino",
+        "role": "Vincent (An eccentric Hollywood personality)",
+        "description": ""
+      },
+      {
+        "actor": "Joe Lo Truglio",
+        "role": "Sergio (Ludovica's bumbling henchman)",
+        "description": ""
+      },
+      {
+        "actor": "Mather Zickel",
+        "role": "Niccolo (Ludovica's enforcer)",
+        "description": ""
+      },
+      {
+        "actor": "Michael Cassidy",
+        "role": "Tom Soursap McNoodleman (Gail's unfaithful fiancé)",
+        "description": ""
+      },
+      {
+        "actor": "Fred Melamed",
+        "role": "Frank the Mailman / Narrator (The deadpan narrator)",
+        "description": ""
+      },
+      {
+        "actor": "Michael Ian Black",
+        "role": "Famous Star Maps Salesman (Quirky street vendor selling celebrity maps)",
+        "description": ""
+      },
+      {
+        "actor": "Kerri Kenney-Silver",
+        "role": "Charlotte Manetti (Psychic Journeys LLC co-owner)",
+        "description": ""
+      },
+      {
+        "actor": "Richard Kind",
+        "role": "Stuart Fernie (Eccentric Los Angeles taxi driver)",
+        "description": ""
+      },
+      {
+        "actor": "Thomas Lennon",
+        "role": "Remy Fontaine (King of the Whip Curl)",
+        "description": ""
+      },
+      {
+        "actor": "Toby Huss",
+        "role": "Scott",
+        "description": ""
+      }
+    ],
+    "bookings": [
+      {
+        "provider": "Fandango",
+        "url": "https://www.fandango.com/gail-daughtry-and-the-celebrity-sex-pass-2026-245579/movie-overview",
+        "icon": "",
+        "label": "Book on Fandango",
+        "rank": 4
+      }
+    ],
+    "watchOnline": [
+      {
+        "provider": "Amazon Prime Video",
+        "url": "https://www.primevideo.com/detail/0PH9RO0UBSTMEZEE83EPNO071R?tr=as",
+        "icon": "",
+        "language": "",
+        "label": "Watch on Prime Video"
+      }
+    ],
+    "music": [
+      {
+        "provider": "Spotify",
+        "url": "https://open.spotify.com/album/5C25YYQlI4GToDCFOmQGWE",
+        "icon": "pics/MusicWebsiteLogos/spotify.png",
+        "language": "",
+        "label": "Listen Now"
+      },
+      {
+        "provider": "Apple Music / iTunes",
+        "url": "https://music.apple.com/jp/album/gail-daughtry-and-the-celebrity-sex-pass-original/6785029117?l=en-US",
+        "icon": "pics/MusicWebsiteLogos/itunes.png",
+        "language": "",
+        "label": "Listen Now"
+      }
+    ],
+    "officialWebsite": null,
+    "socials": [
+      {
+        "platform": "Twitter / X",
+        "url": "https://twitter.com/share?url=https://oakshow.in/GailDaughtryandtheCelebritySexPass.html",
+        "icon": "images/twitter.png",
+        "language": "",
+        "label": "Connect on Twitter / X"
+      }
+    ],
+    "similar": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=GEbaLieo_Kw",
+        "youtubeId": "GEbaLieo_Kw",
+        "title": "Gail Daughtry and the Celebrity Sex Pass"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=f0tlCvZpMaM",
+        "youtubeId": "f0tlCvZpMaM",
+        "title": "Official Trailer / Teaser"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "Gail Daughtry and the Celebrity Sex Pass review – silly, scattershot Hollywood comedy",
+        "url": "https://www.theguardian.com/film/2026/jan/27/gail-daughtry-and-the-celebrity-sex-pass-review",
+        "author": "The Guardian",
+        "date": "January 27, 2026",
+        "section": "More Reviews and News"
+      },
+      {
+        "headline": "What If 'The Wizard of Oz' Involved Having Sex With Jon Hamm?",
+        "url": "https://www.rollingstone.com/tv-movies/tv-movie-reviews/gail-daughtry-and-the-celebrity-sex-pass-review-1235584544/",
+        "author": "Rolling Stone",
+        "date": "July 09, 2026",
+        "section": "More Reviews and News"
+      },
+      {
+        "headline": "Gail Daughtry and the Celebrity Sex Pass - Cast, Overview and Details",
+        "url": "https://www.ign.com/movies/gail-daughtry-and-the-celebrity-sex-pass",
+        "author": "IGN",
+        "date": "July 10, 2026",
+        "section": "More Reviews and News"
+      }
+    ],
+    "filePath": "E:/OakShow/oakshow-prod-clean/GailDaughtryandtheCelebritySexPass.html"
+  },
+  {
     "id": "BatmanKnightfallPart1Knightfall",
     "slug": "batmanknightfallpart1knightfall",
     "type": "movie",
@@ -2027,6 +2218,1115 @@
     "filePath": "E:/OakShow/CoyotevsAcme.html"
   },
   {
+    "id": "LanternsS1E03",
+    "slug": "lanternss1e03",
+    "type": "movie",
+    "category": "Hollywood",
+    "score": 8,
+    "filename": "LanternsS1E03.html",
+    "title": "Lanterns S01E03: OutKast",
+    "metaTitle": "Lanterns S01E03:OutKast All Ratings, Reviews and Watch Online — OakShow",
+    "description": "In the past, John's father fails a trial to become a Green Lantern. Guardians of the Universe leader Lianna offers recompense by giving John a future opportunity. After serving as a Marine, John is recruited by the Guardians and chosen under Hal's mentorship. Hal welcomes John into the Corps but makes it clear that he will remain in command.",
+    "plot": "",
+    "language": "English",
+    "releaseDate": "August 30, 2026 9:00 am",
+    "year": "2026",
+    "genre": "Superhero, Drama, Detective",
+    "duration": "55 Minutes",
+    "director": "",
+    "basedOn": "",
+    "boxOffice": null,
+    "poster": "pics/Serieses/Lanterns/S01/3.jpg",
+    "gallery": [],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "8.0/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "IMDb",
+        "url": "https://www.imdb.com/title/tt32752612/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "RT",
+        "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e03",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "Meta",
+        "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-3-outkast/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      }
+    ],
+    "cast": [],
+    "bookings": [],
+    "watchOnline": [
+      {
+        "provider": "Disney+ Hotstar",
+        "url": "https://www.hotstar.com/in/shows/lanterns/1271680756?utm_source=gwa",
+        "icon": "pics/WatchOnline/hotstar.png",
+        "language": "",
+        "label": "Watch Episode"
+      }
+    ],
+    "music": [],
+    "officialWebsite": null,
+    "socials": [],
+    "similar": [],
+    "videos": [],
+    "articles": [],
+    "filePath": "E:/OakShow/LanternsS1E03.html"
+  },
+  {
+    "id": "LanternsS1E04",
+    "slug": "lanternss1e04",
+    "type": "movie",
+    "category": "Hollywood",
+    "score": 8,
+    "filename": "LanternsS1E04.html",
+    "title": "Lanterns S01E04: The Weenie",
+    "metaTitle": "Lanterns S01E04:The Weenie All Ratings, Reviews and Watch Online — OakShow",
+    "description": "Hal questions Sinestro about the Manhunters, while John is asked by the Guardians to move faster with their plan. As the investigation into the Rushville murder deepens, Jordan and Stewart confront darker reckonings and extraterrestrial revelations that challenge their mission.",
+    "plot": "",
+    "language": "English",
+    "releaseDate": "September 06, 2026 9:00 am",
+    "year": "2026",
+    "genre": "Superhero, Drama, Detective",
+    "duration": "55 Minutes",
+    "director": "",
+    "basedOn": "",
+    "boxOffice": null,
+    "poster": "pics/Serieses/Lanterns/S01/4.jpg",
+    "gallery": [],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "8.0/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "IMDb",
+        "url": "https://www.imdb.com/title/tt32752610/?ref_=ttep_ep_4",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "RT",
+        "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e04",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "Meta",
+        "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-4-the-weenie/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      },
+      {
+        "source": "IGN",
+        "score": "IGN",
+        "url": "https://www.ign.com/articles/lanterns-season-1-episode-4-review-recap-the-weenie",
+        "icon": "pics/RatingSiteLogos/ign.png"
+      },
+      {
+        "source": "Den of Geek",
+        "score": "Den of Geek",
+        "url": "https://www.denofgeek.com/tv/lanterns-episode-4-review/",
+        "icon": "pics/RatingSiteLogos/denofgeek.png"
+      }
+    ],
+    "cast": [],
+    "bookings": [],
+    "watchOnline": [
+      {
+        "provider": "Disney+ Hotstar",
+        "url": "https://www.hotstar.com/in/shows/lanterns/1271680756?utm_source=gwa",
+        "icon": "pics/WatchOnline/hotstar.png",
+        "language": "",
+        "label": "Watch Episode"
+      }
+    ],
+    "music": [],
+    "officialWebsite": null,
+    "socials": [],
+    "similar": [],
+    "videos": [],
+    "articles": [],
+    "filePath": "E:/OakShow/LanternsS1E04.html"
+  },
+  {
+    "id": "BatmanKnightfallPart1Knightfall",
+    "slug": "batmanknightfallpart1knightfall",
+    "type": "movie",
+    "category": "Hollywood",
+    "score": 8,
+    "filename": "BatmanKnightfallPart1Knightfall.html",
+    "title": "Batman: Knightfall - Part 1: Knightfall",
+    "metaTitle": "Batman: Knightfall - Part 1: Knightfall All Ratings, Reviews, Songs, Videos, Bookings and News",
+    "description": "Explore Batman: Knightfall - Part 1: Knightfall ratings, reviews, trailers, soundtrack, and streaming options. Watch Batman face Bane's calculated onslaught in Gotham.",
+    "plot": "Gotham City is plunged into total pandemonium when the brilliant and super-steroid enhanced strategist Bane launches a precision assault on Arkham Asylum, setting free the most dangerous criminals—including Joker, Scarecrow, Two-Face, and the Mad Hatter. Realizing he cannot defeat Batman at peak performance, Bane meticulously bleeds the hero's strength by forcing him into non-stop battles throughout the city. Suffering from severe exhaustion and refusing rest, Batman struggles to maintain control with help from Alfred and the newly recruited Jean-Paul Valley (Azrael). Having deduced Batman's identity through keen observation, Bane ambushes Bruce Wayne inside Wayne Manor and corners him in the Batcave. In an agonizing final confrontation, Bane physically overwhelms the exhausted Dark Knight and snaps his back over his knee, cementing the catastrophic fall of Gotham's protector. Source:IMDB",
+    "language": "English",
+    "releaseDate": "August 25, 2026",
+    "year": "2026",
+    "genre": "Animation, Action, Superhero, Crime",
+    "duration": "1hr 19mins",
+    "director": "Jeff Wamester | Screenplay: Jeremy Adams | Based on DC Comics: Knightfall",
+    "basedOn": "",
+    "boxOffice": null,
+    "poster": "pics/Films/BatmanKnightfallPart1Knightfall/1.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/BatmanKnightfallPart1Knightfall/1.jpg",
+        "alt": "Batman: Knightfall - Part 1: Knightfall Poster"
+      },
+      {
+        "src": "pics/Films/BatmanKnightfallPart1Knightfall/2.jpeg",
+        "alt": "Batman: Knightfall - Part 1: Knightfall Official Banner"
+      },
+      {
+        "src": "pics/Films/BatmanKnightfallPart1Knightfall/3.jpg",
+        "alt": "Batman: Knightfall - Part 1: Knightfall Movie Still"
+      },
+      {
+        "src": "pics/Films/BatmanKnightfallPart1Knightfall/4.jpg",
+        "alt": "Batman: Knightfall - Part 1: Knightfall Action Scene"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "8/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "8.0/10",
+        "url": "https://www.imdb.com/title/tt32333324/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "96%",
+        "url": "https://www.rottentomatoes.com/m/batman_knightfall_part_1_knightfall",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+      },
+      {
+        "source": "IGN",
+        "score": "9/10",
+        "url": "https://www.ign.com/articles/batman-knightfall-part-1-knightfall-review-animated-movie",
+        "icon": "pics/RatingSiteLogos/ign.png"
+      },
+      {
+        "source": "Letterboxd",
+        "score": "3.8/5",
+        "url": "https://letterboxd.com/film/batman-knightfall-part-1-knightfall/",
+        "icon": "pics/RatingSiteLogos/letterboxd.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "TBD",
+        "url": "https://www.metacritic.com/movie/batman-knightfall---part-1-knightfall/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Anson Mount",
+        "role": "Bruce Wayne / Batman",
+        "description": ""
+      },
+      {
+        "actor": "Michael Mando",
+        "role": "Bane",
+        "description": ""
+      },
+      {
+        "actor": "Pablo Schreiber",
+        "role": "Jean-Paul Valley / Azrael",
+        "description": ""
+      },
+      {
+        "actor": "David Kaye",
+        "role": "Alfred Pennyworth",
+        "description": ""
+      },
+      {
+        "actor": "Troy Baker",
+        "role": "The Joker",
+        "description": ""
+      },
+      {
+        "actor": "Kari Wahlgren",
+        "role": "Dr",
+        "description": ""
+      },
+      {
+        "actor": "Jim Pirri",
+        "role": "Commissioner James Gordon",
+        "description": ""
+      },
+      {
+        "actor": "Dwight Schultz",
+        "role": "Dr",
+        "description": ""
+      }
+    ],
+    "bookings": [],
+    "watchOnline": [
+      {
+        "provider": "Amazon Prime Video",
+        "url": "https://www.primevideo.com/detail/0NK4WVGH93LSXBEKI0ONQ45ZCK?tr=nu",
+        "icon": "pics/WatchOnline/amazon-prime.png",
+        "language": "",
+        "label": "Watch on Prime"
+      },
+      {
+        "provider": "Apple TV / iTunes",
+        "url": "https://tv.apple.com/in/movie/batman-knightfall-part-1-knightfall/umc.cmc.g1hjthf6tc6jermx33enkps",
+        "icon": "pics/WatchOnline/apple.png",
+        "language": "",
+        "label": "Watch on Apple TV"
+      }
+    ],
+    "music": [
+      {
+        "provider": "Spotify",
+        "url": "https://open.spotify.com/track/4xIlekEoWs20hX0oElz4iR",
+        "icon": "pics/MusicWebsiteLogos/spotify.png",
+        "language": "",
+        "label": "Listen on Spotify"
+      }
+    ],
+    "officialWebsite": null,
+    "socials": [
+      {
+        "platform": "Twitter / X",
+        "url": "https://twitter.com/share?url=https://oakshow.in/BatmanKnightfallPart1Knightfall.html",
+        "icon": "images/twitter.png",
+        "language": "",
+        "label": "Connect on Twitter / X"
+      }
+    ],
+    "similar": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=90HAqMk7qv0",
+        "youtubeId": "90HAqMk7qv0",
+        "title": "Batman: Knightfall - Part 1: Knightfall"
+      }
+    ],
+    "articles": [],
+    "filePath": "E:/OakShow/oakshow-prod-clean/BatmanKnightfallPart1Knightfall.html"
+  },
+  {
+    "id": "LanternsS1E03",
+    "slug": "lanternss1e03",
+    "type": "movie",
+    "category": "Hollywood",
+    "score": 8,
+    "filename": "LanternsS1E03.html",
+    "title": "Lanterns S01E03: OutKast",
+    "metaTitle": "Lanterns S01E03:OutKast All Ratings, Reviews and Watch Online — OakShow",
+    "description": "In the past, John's father fails a trial to become a Green Lantern. Guardians of the Universe leader Lianna offers recompense by giving John a future opportunity. After serving as a Marine, John is recruited by the Guardians and chosen under Hal's mentorship. Hal welcomes John into the Corps but makes it clear that he will remain in command.",
+    "plot": "",
+    "language": "English",
+    "releaseDate": "August 30, 2026 9:00 am",
+    "year": "2026",
+    "genre": "Superhero, Drama, Detective",
+    "duration": "55 Minutes",
+    "director": "",
+    "basedOn": "",
+    "boxOffice": null,
+    "poster": "pics/Serieses/Lanterns/S01/3.jpg",
+    "gallery": [],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "8.0/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "IMDb",
+        "url": "https://www.imdb.com/title/tt32752612/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "RT",
+        "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e03",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "Meta",
+        "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-3-outkast/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      }
+    ],
+    "cast": [],
+    "bookings": [],
+    "watchOnline": [
+      {
+        "provider": "Disney+ Hotstar",
+        "url": "https://www.hotstar.com/in/shows/lanterns/1271680756?utm_source=gwa",
+        "icon": "pics/WatchOnline/hotstar.png",
+        "language": "",
+        "label": "Watch Episode"
+      }
+    ],
+    "music": [],
+    "officialWebsite": null,
+    "socials": [],
+    "similar": [],
+    "videos": [],
+    "articles": [],
+    "filePath": "E:/OakShow/oakshow-prod-clean/LanternsS1E03.html"
+  },
+  {
+    "id": "LanternsS1E04",
+    "slug": "lanternss1e04",
+    "type": "movie",
+    "category": "Hollywood",
+    "score": 8,
+    "filename": "LanternsS1E04.html",
+    "title": "Lanterns S01E04: The Weenie",
+    "metaTitle": "Lanterns S01E04:The Weenie All Ratings, Reviews and Watch Online — OakShow",
+    "description": "Hal questions Sinestro about the Manhunters, while John is asked by the Guardians to move faster with their plan. As the investigation into the Rushville murder deepens, Jordan and Stewart confront darker reckonings and extraterrestrial revelations that challenge their mission.",
+    "plot": "",
+    "language": "English",
+    "releaseDate": "September 06, 2026 9:00 am",
+    "year": "2026",
+    "genre": "Superhero, Drama, Detective",
+    "duration": "55 Minutes",
+    "director": "",
+    "basedOn": "",
+    "boxOffice": null,
+    "poster": "pics/Serieses/Lanterns/S01/4.jpg",
+    "gallery": [],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "8.0/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "IMDb",
+        "url": "https://www.imdb.com/title/tt32752610/?ref_=ttep_ep_4",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "RT",
+        "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e04",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "Meta",
+        "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-4-the-weenie/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      },
+      {
+        "source": "IGN",
+        "score": "IGN",
+        "url": "https://www.ign.com/articles/lanterns-season-1-episode-4-review-recap-the-weenie",
+        "icon": "pics/RatingSiteLogos/ign.png"
+      },
+      {
+        "source": "Den of Geek",
+        "score": "Den of Geek",
+        "url": "https://www.denofgeek.com/tv/lanterns-episode-4-review/",
+        "icon": "pics/RatingSiteLogos/denofgeek.png"
+      }
+    ],
+    "cast": [],
+    "bookings": [],
+    "watchOnline": [
+      {
+        "provider": "Disney+ Hotstar",
+        "url": "https://www.hotstar.com/in/shows/lanterns/1271680756?utm_source=gwa",
+        "icon": "pics/WatchOnline/hotstar.png",
+        "language": "",
+        "label": "Watch Episode"
+      }
+    ],
+    "music": [],
+    "officialWebsite": null,
+    "socials": [],
+    "similar": [],
+    "videos": [],
+    "articles": [],
+    "filePath": "E:/OakShow/oakshow-prod-clean/LanternsS1E04.html"
+  },
+  {
+    "id": "OneNightOnly",
+    "slug": "onenightonly",
+    "type": "movie",
+    "category": "Hollywood",
+    "score": 8,
+    "filename": "OneNightOnly.html",
+    "title": "One Night Only",
+    "metaTitle": "One Night Only All Ratings, Reviews, Songs, Videos, Bookings and News",
+    "description": "Explore One Night Only Hollywood romantic comedy movie ratings, reviews, box office collections, songs, and showtimes. Starring Monica Barbaro, Callum Turner, directed by Will Gluck.",
+    "plot": "In an alternate future United States, a federal mandate known as the Chastity Accord has outlawed all premarital relations for the past three years—granting only a single 12-hour annual amnesty window known colloquially as \"One Night Only.\" Every citizen's compliance is monitored through biometric wristbands that illuminate green during the designated window, unleashing millions into the city streets in a mad dash for consequence-free hookups. Owen (Callum Turner), a down-to-earth Brooklyn pizza shop owner, plans to spend the amnesty window proposing to his long-time girlfriend, only to be crushed when he discovers she intends to spend the night exploring other options. Meanwhile, Allie (Monica Barbaro), a hopeless romantic exasperated by modern transactional dating, vows to stay indoors and ignore the bedlam. After an accidental mishap forces Allie out into Manhattan, her path collides with Owen's in the middle of a chaotic traffic snarl. Recognizing each other's disillusionment with the citywide frenzy, the two decide to spend the night together tackling a spontaneous list of citywide misadventures—from crashing high-society rooftop galas to dodging draconian curfew patrols. As the 12-hour clock steadily ticks away toward sunrise, Allie and Owen realize that what started as an escapist friendship has blossomed into a rare, authentic romantic bond that neither wants to leave behind when the green lights go out. Source:IMDb",
+    "language": "English",
+    "releaseDate": "August 7, 2026",
+    "year": "2026",
+    "genre": "Comedy, Romance, Sci-Fi",
+    "duration": "1hr 42mins",
+    "director": "",
+    "basedOn": "",
+    "boxOffice": null,
+    "poster": "pics/Films/OneNightOnly/2.jpeg",
+    "gallery": [
+      {
+        "src": "pics/Films/OneNightOnly/1.jpeg",
+        "alt": "One Night Only Poster"
+      },
+      {
+        "src": "pics/Films/OneNightOnly/2.jpeg",
+        "alt": "One Night Only Banner"
+      },
+      {
+        "src": "pics/Films/OneNightOnly/3.jpeg",
+        "alt": "One Night Only Movie Still"
+      },
+      {
+        "src": "pics/Films/OneNightOnly/4.jpeg",
+        "alt": "One Night Only Movie Still"
+      },
+      {
+        "src": "pics/Films/OneNightOnly/5.jpeg",
+        "alt": "One Night Only Movie Still"
+      },
+      {
+        "src": "pics/Films/OneNightOnly/6.jpeg",
+        "alt": "One Night Only Movie Still"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "8/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "54%",
+        "url": "https://www.rottentomatoes.com/m/one_night_only_2026",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-rotten.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "40/100",
+        "url": "https://www.metacritic.com/movie/one-night-only/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "6.3/10",
+        "url": "https://www.imdb.com/title/tt37853455/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Den of Geek",
+        "score": "3.5/5",
+        "url": "https://www.denofgeek.com/movies/one-night-only-review-dystopia-happy-ending/",
+        "icon": "pics/RatingSiteLogos/denofgeek.ico"
+      },
+      {
+        "source": "Times of India",
+        "score": "3/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/english/one-night-only/movie-review/133346003.cms",
+        "icon": "pics/RatingSiteLogos/timesofindia.ico"
+      },
+      {
+        "source": "Hindustan Times",
+        "score": "3/5",
+        "url": "https://www.hindustantimes.com/entertainment/hollywood/one-night-only-review-a-12-hour-sex-pass-turns-nyc-into-chaos-in-this-fun-uneven-rom-com-callum-turner-monica-barbaro-101787299924344.html",
+        "icon": "pics/RatingSiteLogos/hindustan-times.png"
+      },
+      {
+        "source": "Letterboxd",
+        "score": "2.8/5",
+        "url": "https://letterboxd.com/film/one-night-only-2026/",
+        "icon": "pics/RatingSiteLogos/letterboxd.png"
+      },
+      {
+        "source": "Common Sense Media",
+        "score": "3/5",
+        "url": "https://www.commonsensemedia.org/movie-reviews/one-night-only",
+        "icon": "pics/RatingSiteLogos/common-sense-media.png"
+      },
+      {
+        "source": "The Guardian",
+        "score": "2/5",
+        "url": "https://www.theguardian.com/film/2026/aug/05/one-night-only-movie-review",
+        "icon": "pics/RatingSiteLogos/the-guardian.png"
+      },
+      {
+        "source": "The Telegraph",
+        "score": "2/5",
+        "url": "https://www.telegraph.co.uk/films/2026/08/27/one-night-only-callum-turner-monica-barbaro/",
+        "icon": "pics/RatingSiteLogos/telegraph.png"
+      },
+      {
+        "source": "Roger Ebert",
+        "score": "1.5/4",
+        "url": "https://www.rogerebert.com/reviews/one-night-only-monica-barbaro-callum-turner-film-review-2026",
+        "icon": "pics/RatingSiteLogos/rogerebert.ico"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Monica Barbaro",
+        "role": "Allie (A hopeful romantic looking for genuine connection amidst the chaos)",
+        "description": ""
+      },
+      {
+        "actor": "Callum Turner",
+        "role": "Owen (A Brooklyn pizza parlor owner whose proposal plans unravel)",
+        "description": ""
+      },
+      {
+        "actor": "Maya Hawke",
+        "role": "Malika (Allie's spirited, adventurous confidante)",
+        "description": ""
+      },
+      {
+        "actor": "Molly Ringwald",
+        "role": "Linda (Owen's well-meaning mother)",
+        "description": ""
+      },
+      {
+        "actor": "Julia Fox",
+        "role": "Skye (A glamorous, free-spirited downtown socialite)",
+        "description": ""
+      },
+      {
+        "actor": "LeVar Burton",
+        "role": "Himself / The Narrator (Providing philosophical commentary)",
+        "description": ""
+      },
+      {
+        "actor": "King Princess",
+        "role": "Taylor (A charismatic indie musician)",
+        "description": ""
+      },
+      {
+        "actor": "Michelle Hurd",
+        "role": "Commissioner Daniels (Head of the Department of Public Decency)",
+        "description": ""
+      },
+      {
+        "actor": "Ben Marshall",
+        "role": "Liam (Owen's eccentric pizza shop coworker)",
+        "description": ""
+      },
+      {
+        "actor": "Ziwe",
+        "role": "Chloe (A razor-sharp nightlife influencer)",
+        "description": ""
+      }
+    ],
+    "bookings": [
+      {
+        "provider": "BookMyShow",
+        "url": "https://in.bookmyshow.com/movies/kozhikode/one-night-only/ET00501502",
+        "icon": "pics/BookngWebSiteLogos/book-my-show.png",
+        "label": "Book Tickets",
+        "rank": 2
+      },
+      {
+        "provider": "District",
+        "url": "https://www.district.in/movies/one-night-only-movie-tickets-MV223929?srsltid=AfmBOopWfrazq8sPxBAaxnJaLJUdj-hy54a6F603GHKab0ACMgOR4OPy",
+        "icon": "pics/BookngWebSiteLogos/district.png",
+        "label": "Book Tickets",
+        "rank": 3
+      },
+      {
+        "provider": "Cinepolis",
+        "url": "https://cinepolisindia.com/movie-details/one-night-only-HO00002596?cid=9",
+        "icon": "pics/BookngWebSiteLogos/cinepolisindia.png",
+        "label": "Book Tickets",
+        "rank": 6
+      },
+      {
+        "provider": "Fandango",
+        "url": "https://www.fandango.com/one-night-only-2026-245604/movie-overview",
+        "icon": "pics/BookngWebSiteLogos/fandango.png",
+        "label": "Book Tickets",
+        "rank": 7
+      },
+      {
+        "provider": "Cineworld",
+        "url": "https://www.cineworld.co.uk/films/one-night-only/ho00014935",
+        "icon": "pics/BookngWebSiteLogos/cineworld.png",
+        "label": "Book Tickets",
+        "rank": 8
+      },
+      {
+        "provider": "ODEON",
+        "url": "https://www.odeon.co.uk/films/one-night-only/HO00008901/",
+        "icon": "pics/BookngWebSiteLogos/odeon.png",
+        "label": "Book Tickets",
+        "rank": 9
+      },
+      {
+        "provider": "Eventbrite",
+        "url": "https://www.eventbrite.com/o/onenightonly-121339305845",
+        "icon": "pics/BookngWebSiteLogos/eventbrite.png",
+        "label": "Book Tickets",
+        "rank": 10
+      }
+    ],
+    "watchOnline": [
+      {
+        "provider": "Amazon Prime Video",
+        "url": "https://www.primevideo.com/detail/0NIZUI43QA3CCOX713RPDBVKZ0",
+        "icon": "pics/WatchOnline/amazon-prime.png",
+        "language": "",
+        "label": "Watch on Prime"
+      }
+    ],
+    "music": [
+      {
+        "provider": "Spotify",
+        "url": "https://open.spotify.com/playlist/37i9dQZF1DX8lcfHaG6KKl",
+        "icon": "pics/MusicWebsiteLogos/spotify.png",
+        "language": "",
+        "label": "Listen Now"
+      },
+      {
+        "provider": "Apple Music / iTunes",
+        "url": "https://music.apple.com/us/album/one-night-only-music-from-the-motion-picture-single/6792171908",
+        "icon": "pics/MusicWebsiteLogos/itunes.png",
+        "language": "",
+        "label": "Listen Now"
+      }
+    ],
+    "officialWebsite": null,
+    "socials": [
+      {
+        "platform": "Twitter / X",
+        "url": "https://twitter.com/share?url=https://oakshow.in/OneNightOnly.html",
+        "icon": "images/twitter.png",
+        "language": "",
+        "label": "Connect on Twitter / X"
+      }
+    ],
+    "similar": [
+      {
+        "title": "Jexi",
+        "link": "Jexi.html",
+        "poster": "pics/Films/Jexi/Jexi-Movie-Reviews-and-Ratings.jpg"
+      },
+      {
+        "title": "The Big Sick",
+        "link": "TheBigSick.html",
+        "poster": "pics/Films/TheBigSick/1.jpg"
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=AvKoSR3O4NQ",
+        "youtubeId": "AvKoSR3O4NQ",
+        "title": "One Night Only"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=v7lBY4Au1mU",
+        "youtubeId": "v7lBY4Au1mU",
+        "title": "Official Trailer / Teaser"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=JRG244IfrRE",
+        "youtubeId": "JRG244IfrRE",
+        "title": "Official Trailer / Teaser"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "'One Night Only' movie review: Monica Barbaro and Callum Turner lead a charming yet uneven sex comedy",
+        "url": "https://www.thehindu.com/entertainment/movies/one-night-only-movie-review-monica-barbaro-callum-turner-sex-comedy/article71370882.ece",
+        "author": "The Hindu",
+        "date": "August 07, 2026",
+        "section": "More Reviews and News"
+      },
+      {
+        "headline": "'One Night Only' Review: Callum Turner and Monica Barbaro Find Chemistry in Will Gluck's Purge-Like Rom-Com",
+        "url": "https://variety.com/2026/film/news/one-night-only-review-1236828254/",
+        "author": "Variety",
+        "date": "August 05, 2026",
+        "section": "More Reviews and News"
+      },
+      {
+        "headline": "One Night Only Movie Review",
+        "url": "https://www.rogerebert.com/reviews/one-night-only-monica-barbaro-callum-turner-film-review-2026",
+        "author": "Marya E. Gates (RogerEbert.com)",
+        "date": "August 05, 2026",
+        "section": "More Reviews and News"
+      },
+      {
+        "headline": "One Night Only review – sex is legal for 12 hours a year in bizarre romcom",
+        "url": "https://www.theguardian.com/film/2026/aug/05/one-night-only-movie-review",
+        "author": "The Guardian",
+        "date": "August 05, 2026",
+        "section": "More Reviews and News"
+      },
+      {
+        "headline": "One Night Only: Callum Turner and Monica Barbaro's sex-pass romcom belongs in the bin",
+        "url": "https://www.telegraph.co.uk/films/2026/08/27/one-night-only-callum-turner-monica-barbaro/",
+        "author": "Tim Robey (The Telegraph)",
+        "date": "August 27, 2026",
+        "section": "More Reviews and News"
+      }
+    ],
+    "filePath": "E:/OakShow/OneNightOnly.html"
+  },
+  {
+    "id": "Digger",
+    "slug": "digger",
+    "type": "movie",
+    "category": "Hollywood",
+    "score": 7.5,
+    "filename": "Digger.html",
+    "title": "Digger",
+    "metaTitle": "Digger Movie Preview, Release Date, Cast, Trailers, Bookings and News",
+    "description": "Explore Digger Hollywood satirical disaster comedy movie ratings, reviews, box office projections, trailers, bookings, and news. Directed by Alejandro G. Iñárritu, starring Tom Cruise, Riz Ahmed, John Goodman, and Sandra Hüller.",
+    "plot": "Digger Rockwell (Tom Cruise), a larger-than-life energy mogul whose corporate reach spans continents, orchestrates an ambitious ultra-deep drilling initiative into the Greenland ice caps. When the colossal drill ruptures a subterranean fault, catastrophic tremors ripple across the Northern Hemisphere, triggering climate disruptions and intense political fallout in Washington. Clashing with the dictatorial President Compson (John Goodman) and his skeptical chief scientific advisor Ganesh (Riz Ahmed), Digger refuses to step down. Instead, flanked by his calculating sister Emma (Sandra Hüller) and rig engineer Kenny (Jesse Plemons), Rockwell wages a high-stakes, media-fueled spectacle across the globe to engineer an outrageous techno-miracle, betting his fortune and human survival on one final gamble. Source:IMDb",
+    "language": "English",
+    "releaseDate": "October 02, 2026",
+    "year": "2026",
+    "genre": "Black Comedy, Drama, Disaster, Satire",
+    "duration": "2hr 18mins",
+    "director": "",
+    "basedOn": "",
+    "boxOffice": {
+      "budget": "Estimated Production $125 - $150 Million",
+      "lastUpdated": "August 2026",
+      "source": "Trade Reports / Sacnilk & Pinkvilla"
+    },
+    "poster": "pics/Films/Digger/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/Digger/1.jpg",
+        "alt": "Digger Poster"
+      },
+      {
+        "src": "pics/Films/Digger/2.jpg",
+        "alt": "Digger Banner"
+      },
+      {
+        "src": "pics/Films/Digger/3.jpg",
+        "alt": "Digger Movie Still"
+      }
+    ],
+    "ratings": [],
+    "cast": [
+      {
+        "actor": "Tom Cruise",
+        "role": "Digger Rockwell (A wealthy, eccentric oil tycoon and the most powerful man in the world)",
+        "description": ""
+      },
+      {
+        "actor": "Riz Ahmed",
+        "role": "Ganesh (A brilliant scientist and senior advisor to the President)",
+        "description": ""
+      },
+      {
+        "actor": "John Goodman",
+        "role": "President Compson (The authoritarian President of the United States)",
+        "description": ""
+      },
+      {
+        "actor": "Sandra Hüller",
+        "role": "Emma Rockwell (Digger's pragmatic sister and corporate confidante)",
+        "description": ""
+      },
+      {
+        "actor": "Michael Stuhlbarg",
+        "role": "The Vice President",
+        "description": ""
+      },
+      {
+        "actor": "Jesse Plemons",
+        "role": "Kenny (Digger's dedicated field manager and rig supervisor)",
+        "description": ""
+      },
+      {
+        "actor": "Emma D'Arcy",
+        "role": "Cast",
+        "description": ""
+      },
+      {
+        "actor": "Sophie Wilde",
+        "role": "Cast",
+        "description": ""
+      },
+      {
+        "actor": "Burn Gorman",
+        "role": "Cast",
+        "description": ""
+      },
+      {
+        "actor": "Robert John Burke",
+        "role": "Cast",
+        "description": ""
+      },
+      {
+        "actor": "Pip Torrens",
+        "role": "Cast",
+        "description": ""
+      }
+    ],
+    "bookings": [
+      {
+        "provider": "BookMyShow",
+        "url": "https://in.bookmyshow.com/movies/calicut/digger/ET00477243",
+        "icon": "pics/BookngWebSiteLogos/book-my-show.png",
+        "label": "Book on BookMyShow",
+        "rank": 2
+      },
+      {
+        "provider": "TicketNew",
+        "url": "https://ticketnew.com/movies/digger-movie-detail-211988",
+        "icon": "pics/BookngWebSiteLogos/ticket-new.png",
+        "label": "Book on TicketNew",
+        "rank": 3
+      },
+      {
+        "provider": "Fandango",
+        "url": "https://www.fandango.com/digger-2026-245150/movie-overview",
+        "icon": "pics/BookngWebSiteLogos/fandango.png",
+        "label": "Book on Fandango",
+        "rank": 4
+      }
+    ],
+    "watchOnline": [],
+    "music": [],
+    "officialWebsite": {
+      "url": "https://www.diggermovie.com/",
+      "label": "Official Website"
+    },
+    "socials": [
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/diggerthemovie/",
+        "icon": "pics/SocialWebsiteLogos/instagram.png",
+        "language": "",
+        "label": "Instagram"
+      },
+      {
+        "platform": "Twitter / X",
+        "url": "https://twitter.com/share?url=https://oakshow.in/Digger.html",
+        "icon": "images/twitter.png",
+        "language": "",
+        "label": "Connect on Twitter / X"
+      }
+    ],
+    "similar": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=qORTe1wW3Wg",
+        "youtubeId": "qORTe1wW3Wg",
+        "title": "Digger"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=Rd21PhsDHww",
+        "youtubeId": "Rd21PhsDHww",
+        "title": "Official Trailer / Teaser"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "Manila Digger FC 5-1 Kasuka FC | ASEAN Shopee Cup Playoffs Match Highlights",
+        "url": "https://aseanutdfc.com/asean-club-championship/2026/videos/manila-digger-fc-5-1-kasuka-fc-asean-shopee-cup-playoffs-match-highlights",
+        "author": "ASEAN United FC",
+        "date": "2026",
+        "section": "More News & Features"
+      }
+    ],
+    "filePath": "E:/OakShow/Digger.html"
+  },
+  {
+    "id": "Digger",
+    "slug": "digger",
+    "type": "movie",
+    "category": "Hollywood",
+    "score": 7.5,
+    "filename": "Digger.html",
+    "title": "Digger",
+    "metaTitle": "Digger Movie Preview, Release Date, Cast, Trailers, Bookings and News",
+    "description": "Explore Digger Hollywood satirical disaster comedy movie ratings, reviews, box office projections, trailers, bookings, and news. Directed by Alejandro G. Iñárritu, starring Tom Cruise, Riz Ahmed, John Goodman, and Sandra Hüller.",
+    "plot": "Digger Rockwell (Tom Cruise), a larger-than-life energy mogul whose corporate reach spans continents, orchestrates an ambitious ultra-deep drilling initiative into the Greenland ice caps. When the colossal drill ruptures a subterranean fault, catastrophic tremors ripple across the Northern Hemisphere, triggering climate disruptions and intense political fallout in Washington. Clashing with the dictatorial President Compson (John Goodman) and his skeptical chief scientific advisor Ganesh (Riz Ahmed), Digger refuses to step down. Instead, flanked by his calculating sister Emma (Sandra Hüller) and rig engineer Kenny (Jesse Plemons), Rockwell wages a high-stakes, media-fueled spectacle across the globe to engineer an outrageous techno-miracle, betting his fortune and human survival on one final gamble. Source:IMDb",
+    "language": "English",
+    "releaseDate": "October 02, 2026",
+    "year": "2026",
+    "genre": "Black Comedy, Drama, Disaster, Satire",
+    "duration": "2hr 18mins",
+    "director": "",
+    "basedOn": "",
+    "boxOffice": {
+      "budget": "Estimated Production $125 - $150 Million",
+      "lastUpdated": "August 2026",
+      "source": "Trade Reports / Sacnilk & Pinkvilla"
+    },
+    "poster": "pics/Films/Digger/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/Digger/1.jpg",
+        "alt": "Digger Poster"
+      },
+      {
+        "src": "pics/Films/Digger/2.jpg",
+        "alt": "Digger Banner"
+      },
+      {
+        "src": "pics/Films/Digger/3.jpg",
+        "alt": "Digger Movie Still"
+      }
+    ],
+    "ratings": [],
+    "cast": [
+      {
+        "actor": "Tom Cruise",
+        "role": "Digger Rockwell (A wealthy, eccentric oil tycoon and the most powerful man in the world)",
+        "description": ""
+      },
+      {
+        "actor": "Riz Ahmed",
+        "role": "Ganesh (A brilliant scientist and senior advisor to the President)",
+        "description": ""
+      },
+      {
+        "actor": "John Goodman",
+        "role": "President Compson (The authoritarian President of the United States)",
+        "description": ""
+      },
+      {
+        "actor": "Sandra Hüller",
+        "role": "Emma Rockwell (Digger's pragmatic sister and corporate confidante)",
+        "description": ""
+      },
+      {
+        "actor": "Michael Stuhlbarg",
+        "role": "The Vice President",
+        "description": ""
+      },
+      {
+        "actor": "Jesse Plemons",
+        "role": "Kenny (Digger's dedicated field manager and rig supervisor)",
+        "description": ""
+      },
+      {
+        "actor": "Emma D'Arcy",
+        "role": "Cast",
+        "description": ""
+      },
+      {
+        "actor": "Sophie Wilde",
+        "role": "Cast",
+        "description": ""
+      },
+      {
+        "actor": "Burn Gorman",
+        "role": "Cast",
+        "description": ""
+      },
+      {
+        "actor": "Robert John Burke",
+        "role": "Cast",
+        "description": ""
+      },
+      {
+        "actor": "Pip Torrens",
+        "role": "Cast",
+        "description": ""
+      }
+    ],
+    "bookings": [
+      {
+        "provider": "BookMyShow",
+        "url": "https://in.bookmyshow.com/movies/calicut/digger/ET00477243",
+        "icon": "pics/BookngWebSiteLogos/book-my-show.png",
+        "label": "Book on BookMyShow",
+        "rank": 2
+      },
+      {
+        "provider": "TicketNew",
+        "url": "https://ticketnew.com/movies/digger-movie-detail-211988",
+        "icon": "pics/BookngWebSiteLogos/ticket-new.png",
+        "label": "Book on TicketNew",
+        "rank": 3
+      },
+      {
+        "provider": "Fandango",
+        "url": "https://www.fandango.com/digger-2026-245150/movie-overview",
+        "icon": "pics/BookngWebSiteLogos/fandango.png",
+        "label": "Book on Fandango",
+        "rank": 4
+      }
+    ],
+    "watchOnline": [],
+    "music": [],
+    "officialWebsite": {
+      "url": "https://www.diggermovie.com/",
+      "label": "Official Website"
+    },
+    "socials": [
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/diggerthemovie/",
+        "icon": "pics/SocialWebsiteLogos/instagram.png",
+        "language": "",
+        "label": "Instagram"
+      },
+      {
+        "platform": "Twitter / X",
+        "url": "https://twitter.com/share?url=https://oakshow.in/Digger.html",
+        "icon": "images/twitter.png",
+        "language": "",
+        "label": "Connect on Twitter / X"
+      }
+    ],
+    "similar": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=qORTe1wW3Wg",
+        "youtubeId": "qORTe1wW3Wg",
+        "title": "Digger"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=Rd21PhsDHww",
+        "youtubeId": "Rd21PhsDHww",
+        "title": "Official Trailer / Teaser"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "Manila Digger FC 5-1 Kasuka FC | ASEAN Shopee Cup Playoffs Match Highlights",
+        "url": "https://aseanutdfc.com/asean-club-championship/2026/videos/manila-digger-fc-5-1-kasuka-fc-asean-shopee-cup-playoffs-match-highlights",
+        "author": "ASEAN United FC",
+        "date": "2026",
+        "section": "More News & Features"
+      }
+    ],
+    "filePath": "E:/OakShow/oakshow-prod-clean/Digger.html"
+  },
+  {
     "id": "KhalifaTheRuler",
     "slug": "khalifatheruler",
     "type": "movie",
@@ -2280,6 +3580,1035 @@
       }
     ],
     "filePath": "E:/OakShow/KhalifaTheRuler.html"
+  },
+  {
+    "id": "im-game",
+    "slug": "im-game",
+    "type": "movie",
+    "category": "Indian",
+    "score": 6,
+    "filename": "im-game.html",
+    "title": "I'm Game",
+    "metaTitle": "I'm Game All Ratings, Reviews, Songs, Videos, Bookings and News",
+    "description": "Explore I'm Game Malayalam movie ratings, reviews, box office collections, songs, and showtimes. Starring Dulquer Salmaan, Antony Varghese, Mysskin, and Kayadu Lohar, directed by Nahas Hidhayath with music by Jakes Bejoy.",
+    "plot": "A fearless gambler who trusts luck more than life gets caught in a series of crazy and unexpected events that turn his world upside down. Dan John, an adventurous high-stakes player, undergoes a mysterious hand transplant following a severe mishap. Soon, his newly acquired hand begins exhibiting a will, muscle memory, and ruthless instincts of its own, dragging him into the high-stakes underworld of match-fixing kingpin David Abraham and cricketer Vicky Das. What follows is a thrilling ride filled with high-voltage stunts, mind games, surprises, romance, and an adrenaline-pumping supernatural showdown. Source:IMDb",
+    "language": "Malayalam",
+    "releaseDate": "September 03, 2026",
+    "year": "2026",
+    "genre": "Fantasy, Action, Thriller, Drama",
+    "duration": "2hr 51mins",
+    "director": "",
+    "basedOn": "",
+    "boxOffice": {
+      "budget": "Estimated ₹45 Crore",
+      "verdict": "Ongoing Theatrical Run",
+      "lastUpdated": "August 2026",
+      "source": "Trade Reports / Sacnilk & Pinkvilla"
+    },
+    "poster": "pics/Films/ImGame/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/ImGame/1.jpg",
+        "alt": "I'm Game Movie Poster"
+      },
+      {
+        "src": "pics/Films/ImGame/2.jpg",
+        "alt": "I'm Game Official Banner"
+      },
+      {
+        "src": "pics/Films/ImGame/3.jpg",
+        "alt": "I'm Game Movie Action Scene Still"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "6.0/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-an-average-movie.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "6.8/10",
+        "url": "https://www.imdb.com/title/tt34284946/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Times of India",
+        "score": "3/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/malayalam/movie-reviews/im-game/movie-review/133735732.cms",
+        "icon": "pics/RatingSiteLogos/timesofindia.ico"
+      },
+      {
+        "source": "The Indian Express",
+        "score": "2.5/5",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/im-game-movie-review-dulquer-salmaans-fantasy-actioner-is-a-gamble-that-nearly-pays-off-10860784/",
+        "icon": "pics/RatingSiteLogos/indian-express.png"
+      },
+      {
+        "source": "India Today",
+        "score": "2.5/5",
+        "url": "https://www.indiatoday.in/movies/reviews/story/im-game-review-dulquer-salmaan-has-all-the-right-cards-but-the-film-folds-2986152-2026-09-03",
+        "icon": "pics/RatingSiteLogos/india-today.ico"
+      },
+      {
+        "source": "NDTV",
+        "score": "2.5/5",
+        "url": "https://www.ndtv.com/entertainment/im-game-review-dulquer-salmaan-bets-big-but-the-gamble-fails-to-pay-off-2-5-stars-11997545",
+        "icon": "pics/RatingSiteLogos/ndtv.ico"
+      },
+      {
+        "source": "Pinkvilla",
+        "score": "2.5/5",
+        "url": "https://www.pinkvilla.com/entertainment/south/im-game-review-dulquer-salmaans-stylish-action-thriller-fumbles-after-an-impressive-first-half-and-slick-moments-1405243",
+        "icon": "pics/RatingSiteLogos/pinkvilla.png"
+      },
+      {
+        "source": "Rediff",
+        "score": "2/5",
+        "url": "https://www.rediff.com/movies/review/im-game-review-dulquer-salmaan-supernatural-action-thriller-starts-strong-ends-predictably/20260904.htm",
+        "icon": "pics/RatingSiteLogos/rediff.png"
+      },
+      {
+        "source": "News18",
+        "score": "3/5",
+        "url": "https://www.news18.com/movies/malayalam-cinema/im-game-x-review-dulquer-salmaan-show-stealer-in-fantasy-thriller-fans-call-first-half-a-blast-10307612.html",
+        "icon": "pics/RatingSiteLogos/news-18.png"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Dulquer Salmaan",
+        "role": "Dan John (A high-stakes businessman and recipient of a hand transplant)",
+        "description": ""
+      },
+      {
+        "actor": "Antony Varghese",
+        "role": "Vignesh \"Vicky\" Das (A fiery cricketer in Madras Raging Bulls)",
+        "description": ""
+      },
+      {
+        "actor": "Mysskin",
+        "role": "David Abraham (Owner of Madras Raging Bulls and gambling kingpin)",
+        "description": ""
+      },
+      {
+        "actor": "Kayadu Lohar",
+        "role": "Isha (Dan's love interest and physiotherapist)",
+        "description": ""
+      },
+      {
+        "actor": "Samyuktha Viswanathan",
+        "role": "Tharini (Vicky's love interest)",
+        "description": ""
+      },
+      {
+        "actor": "Kathir",
+        "role": "Jason Antony (Captain of Madras Raging Bulls)",
+        "description": ""
+      },
+      {
+        "actor": "Vinay Forrt",
+        "role": "Freddy (Dan's gambling partner and loyal friend)",
+        "description": ""
+      },
+      {
+        "actor": "Jayasudha",
+        "role": "Mercy John (Dan's mother)",
+        "description": ""
+      },
+      {
+        "actor": "Shyamaprasad",
+        "role": "John (Dan's father)",
+        "description": ""
+      },
+      {
+        "actor": "Ashvin Mathew",
+        "role": "Dr",
+        "description": ""
+      },
+      {
+        "actor": "Prabhakar",
+        "role": "Balraj Bhai",
+        "description": ""
+      },
+      {
+        "actor": "Parth Tiwari",
+        "role": "Shaurya",
+        "description": ""
+      },
+      {
+        "actor": "Asif Ali",
+        "role": "Gambler (Cameo Appearance)",
+        "description": ""
+      },
+      {
+        "actor": "Yogi Babu",
+        "role": "Thief (Cameo Appearance)",
+        "description": ""
+      },
+      {
+        "actor": "Zahrah S. Khan",
+        "role": "Dancer in 'Loser' Song",
+        "description": ""
+      }
+    ],
+    "bookings": [
+      {
+        "provider": "BookMyShow",
+        "url": "https://in.bookmyshow.com/movies/im-game/ET00473215",
+        "icon": "pics/BookngWebSiteLogos/book-my-show.png",
+        "label": "BookMyShow",
+        "rank": 2
+      },
+      {
+        "provider": "District",
+        "url": "https://www.district.in/movies/i-m-game-movie-tickets-MV203144?srsltid=AfmBOorr-SzaFcovwNs_XacQ5xvDAf_Ki8zf5pPnHefN3oDig7CFCcIk",
+        "icon": "pics/BookngWebSiteLogos/district.png",
+        "label": "District",
+        "rank": 3
+      },
+      {
+        "provider": "TicketNew",
+        "url": "https://ticketnew.com/movies/i-m-game-movie-detail-203144",
+        "icon": "pics/BookngWebSiteLogos/ticket-new.png",
+        "label": "TicketNew",
+        "rank": 4
+      },
+      {
+        "provider": "Cinepolis",
+        "url": "https://cinepolisindia.com/movie-details/im-game-HO00002626?cid=16",
+        "icon": "pics/BookngWebSiteLogos/cinepolisindia.png",
+        "label": "Cinepolis",
+        "rank": 6
+      },
+      {
+        "provider": "Fandango",
+        "url": "https://www.fandango.com/im-game-2026-246771/movie-overview",
+        "icon": "pics/BookngWebSiteLogos/fandango.png",
+        "label": "Fandango",
+        "rank": 7
+      },
+      {
+        "provider": "Cineworld",
+        "url": "https://www.cineworld.co.uk/films/gb-im-game-malayalam/ho00015243",
+        "icon": "pics/BookngWebSiteLogos/cineworld.png",
+        "label": "Cineworld",
+        "rank": 8
+      }
+    ],
+    "watchOnline": [],
+    "music": [
+      {
+        "provider": "Spotify",
+        "url": "https://open.spotify.com/playlist/3lBMzCTDadOvAzisolq7ZX",
+        "icon": "pics/MusicWebsiteLogos/spotify.png",
+        "language": "",
+        "label": "Spotify"
+      },
+      {
+        "provider": "Apple Music / iTunes",
+        "url": "https://music.apple.com/us/album/im-game-single/1761526200",
+        "icon": "pics/MusicWebsiteLogos/itunes.png",
+        "language": "",
+        "label": "Apple Music"
+      },
+      {
+        "provider": "JioSaavn",
+        "url": "https://www.jiosaavn.com/album/im-game/HcrnvmcAaZk_",
+        "icon": "pics/MusicWebsiteLogos/saavn.png",
+        "language": "",
+        "label": "JioSaavn"
+      }
+    ],
+    "officialWebsite": null,
+    "socials": [
+      {
+        "platform": "Twitter / X",
+        "url": "https://twitter.com/share?url=https://oakshow.in/ImGame.html",
+        "icon": "images/twitter.png",
+        "language": "",
+        "label": "Connect on Twitter / X"
+      }
+    ],
+    "similar": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=2E4ihxaCDL4",
+        "youtubeId": "2E4ihxaCDL4",
+        "title": "I'm Game"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=pIDq50mQvtI",
+        "youtubeId": "pIDq50mQvtI",
+        "title": "Official Trailer / Teaser"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "I'm Game Box Office Collection Day 1: Dulquer Salmaan's Malayalam comeback beats Toxic but falls short of expectations",
+        "url": "https://www.hindustantimes.com/entertainment/others/im-game-box-office-collection-day-1-dulquer-salmaan-malayalam-comeback-beats-toxic-yash-but-falls-short-of-expectations-101788487618310.html",
+        "author": "Hindustan Times",
+        "date": "",
+        "section": "News & Updates"
+      }
+    ],
+    "filePath": "E:/OakShow/im-game.html"
+  },
+  {
+    "id": "ImGame",
+    "slug": "imgame",
+    "type": "movie",
+    "category": "Indian",
+    "score": 6,
+    "filename": "ImGame.html",
+    "title": "I'm Game",
+    "metaTitle": "I'm Game All Ratings, Reviews, Songs, Videos, Bookings and News",
+    "description": "Explore I'm Game Malayalam movie ratings, reviews, box office collections, songs, and showtimes. Starring Dulquer Salmaan, Antony Varghese, Mysskin, and Kayadu Lohar, directed by Nahas Hidhayath with music by Jakes Bejoy.",
+    "plot": "A fearless gambler who trusts luck more than life gets caught in a series of crazy and unexpected events that turn his world upside down. Dan John, an adventurous high-stakes player, undergoes a mysterious hand transplant following a severe mishap. Soon, his newly acquired hand begins exhibiting a will, muscle memory, and ruthless instincts of its own, dragging him into the high-stakes underworld of match-fixing kingpin David Abraham and cricketer Vicky Das. What follows is a thrilling ride filled with high-voltage stunts, mind games, surprises, romance, and an adrenaline-pumping supernatural showdown. Source:IMDb",
+    "language": "Malayalam",
+    "releaseDate": "September 03, 2026",
+    "year": "2026",
+    "genre": "Fantasy, Action, Thriller, Drama",
+    "duration": "2hr 51mins",
+    "director": "",
+    "basedOn": "",
+    "boxOffice": {
+      "budget": "Estimated ₹45 Crore",
+      "verdict": "Ongoing Theatrical Run",
+      "lastUpdated": "August 2026",
+      "source": "Trade Reports / Sacnilk & Pinkvilla"
+    },
+    "poster": "pics/Films/ImGame/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/ImGame/1.jpg",
+        "alt": "I'm Game Movie Poster"
+      },
+      {
+        "src": "pics/Films/ImGame/2.jpg",
+        "alt": "I'm Game Official Banner"
+      },
+      {
+        "src": "pics/Films/ImGame/3.jpg",
+        "alt": "I'm Game Movie Action Scene Still"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "6.0/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-an-average-movie.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "6.8/10",
+        "url": "https://www.imdb.com/title/tt34284946/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Times of India",
+        "score": "3/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/malayalam/movie-reviews/im-game/movie-review/133735732.cms",
+        "icon": "pics/RatingSiteLogos/timesofindia.ico"
+      },
+      {
+        "source": "The Indian Express",
+        "score": "2.5/5",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/im-game-movie-review-dulquer-salmaans-fantasy-actioner-is-a-gamble-that-nearly-pays-off-10860784/",
+        "icon": "pics/RatingSiteLogos/indian-express.png"
+      },
+      {
+        "source": "India Today",
+        "score": "2.5/5",
+        "url": "https://www.indiatoday.in/movies/reviews/story/im-game-review-dulquer-salmaan-has-all-the-right-cards-but-the-film-folds-2986152-2026-09-03",
+        "icon": "pics/RatingSiteLogos/india-today.ico"
+      },
+      {
+        "source": "NDTV",
+        "score": "2.5/5",
+        "url": "https://www.ndtv.com/entertainment/im-game-review-dulquer-salmaan-bets-big-but-the-gamble-fails-to-pay-off-2-5-stars-11997545",
+        "icon": "pics/RatingSiteLogos/ndtv.ico"
+      },
+      {
+        "source": "Pinkvilla",
+        "score": "2.5/5",
+        "url": "https://www.pinkvilla.com/entertainment/south/im-game-review-dulquer-salmaans-stylish-action-thriller-fumbles-after-an-impressive-first-half-and-slick-moments-1405243",
+        "icon": "pics/RatingSiteLogos/pinkvilla.png"
+      },
+      {
+        "source": "Rediff",
+        "score": "2/5",
+        "url": "https://www.rediff.com/movies/review/im-game-review-dulquer-salmaan-supernatural-action-thriller-starts-strong-ends-predictably/20260904.htm",
+        "icon": "pics/RatingSiteLogos/rediff.png"
+      },
+      {
+        "source": "News18",
+        "score": "3/5",
+        "url": "https://www.news18.com/movies/malayalam-cinema/im-game-x-review-dulquer-salmaan-show-stealer-in-fantasy-thriller-fans-call-first-half-a-blast-10307612.html",
+        "icon": "pics/RatingSiteLogos/news-18.png"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Dulquer Salmaan",
+        "role": "Dan John (A high-stakes businessman and recipient of a hand transplant)",
+        "description": ""
+      },
+      {
+        "actor": "Antony Varghese",
+        "role": "Vignesh \"Vicky\" Das (A fiery cricketer in Madras Raging Bulls)",
+        "description": ""
+      },
+      {
+        "actor": "Mysskin",
+        "role": "David Abraham (Owner of Madras Raging Bulls and gambling kingpin)",
+        "description": ""
+      },
+      {
+        "actor": "Kayadu Lohar",
+        "role": "Isha (Dan's love interest and physiotherapist)",
+        "description": ""
+      },
+      {
+        "actor": "Samyuktha Viswanathan",
+        "role": "Tharini (Vicky's love interest)",
+        "description": ""
+      },
+      {
+        "actor": "Kathir",
+        "role": "Jason Antony (Captain of Madras Raging Bulls)",
+        "description": ""
+      },
+      {
+        "actor": "Vinay Forrt",
+        "role": "Freddy (Dan's gambling partner and loyal friend)",
+        "description": ""
+      },
+      {
+        "actor": "Jayasudha",
+        "role": "Mercy John (Dan's mother)",
+        "description": ""
+      },
+      {
+        "actor": "Shyamaprasad",
+        "role": "John (Dan's father)",
+        "description": ""
+      },
+      {
+        "actor": "Ashvin Mathew",
+        "role": "Dr",
+        "description": ""
+      },
+      {
+        "actor": "Prabhakar",
+        "role": "Balraj Bhai",
+        "description": ""
+      },
+      {
+        "actor": "Parth Tiwari",
+        "role": "Shaurya",
+        "description": ""
+      },
+      {
+        "actor": "Asif Ali",
+        "role": "Gambler (Cameo Appearance)",
+        "description": ""
+      },
+      {
+        "actor": "Yogi Babu",
+        "role": "Thief (Cameo Appearance)",
+        "description": ""
+      },
+      {
+        "actor": "Zahrah S. Khan",
+        "role": "Dancer in 'Loser' Song",
+        "description": ""
+      }
+    ],
+    "bookings": [
+      {
+        "provider": "BookMyShow",
+        "url": "https://in.bookmyshow.com/movies/im-game/ET00473215",
+        "icon": "pics/BookngWebSiteLogos/book-my-show.png",
+        "label": "BookMyShow",
+        "rank": 2
+      },
+      {
+        "provider": "District",
+        "url": "https://www.district.in/movies/i-m-game-movie-tickets-MV203144?srsltid=AfmBOorr-SzaFcovwNs_XacQ5xvDAf_Ki8zf5pPnHefN3oDig7CFCcIk",
+        "icon": "pics/BookngWebSiteLogos/district.png",
+        "label": "District",
+        "rank": 3
+      },
+      {
+        "provider": "TicketNew",
+        "url": "https://ticketnew.com/movies/i-m-game-movie-detail-203144",
+        "icon": "pics/BookngWebSiteLogos/ticket-new.png",
+        "label": "TicketNew",
+        "rank": 4
+      },
+      {
+        "provider": "Cinepolis",
+        "url": "https://cinepolisindia.com/movie-details/im-game-HO00002626?cid=16",
+        "icon": "pics/BookngWebSiteLogos/cinepolisindia.png",
+        "label": "Cinepolis",
+        "rank": 6
+      },
+      {
+        "provider": "Fandango",
+        "url": "https://www.fandango.com/im-game-2026-246771/movie-overview",
+        "icon": "pics/BookngWebSiteLogos/fandango.png",
+        "label": "Fandango",
+        "rank": 7
+      },
+      {
+        "provider": "Cineworld",
+        "url": "https://www.cineworld.co.uk/films/gb-im-game-malayalam/ho00015243",
+        "icon": "pics/BookngWebSiteLogos/cineworld.png",
+        "label": "Cineworld",
+        "rank": 8
+      }
+    ],
+    "watchOnline": [],
+    "music": [
+      {
+        "provider": "Spotify",
+        "url": "https://open.spotify.com/playlist/3lBMzCTDadOvAzisolq7ZX",
+        "icon": "pics/MusicWebsiteLogos/spotify.png",
+        "language": "",
+        "label": "Spotify"
+      },
+      {
+        "provider": "Apple Music / iTunes",
+        "url": "https://music.apple.com/us/album/im-game-single/1761526200",
+        "icon": "pics/MusicWebsiteLogos/itunes.png",
+        "language": "",
+        "label": "Apple Music"
+      },
+      {
+        "provider": "JioSaavn",
+        "url": "https://www.jiosaavn.com/album/im-game/HcrnvmcAaZk_",
+        "icon": "pics/MusicWebsiteLogos/saavn.png",
+        "language": "",
+        "label": "JioSaavn"
+      }
+    ],
+    "officialWebsite": null,
+    "socials": [
+      {
+        "platform": "Twitter / X",
+        "url": "https://twitter.com/share?url=https://oakshow.in/ImGame.html",
+        "icon": "images/twitter.png",
+        "language": "",
+        "label": "Connect on Twitter / X"
+      }
+    ],
+    "similar": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=2E4ihxaCDL4",
+        "youtubeId": "2E4ihxaCDL4",
+        "title": "I'm Game"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=pIDq50mQvtI",
+        "youtubeId": "pIDq50mQvtI",
+        "title": "Official Trailer / Teaser"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "I'm Game Box Office Collection Day 1: Dulquer Salmaan's Malayalam comeback beats Toxic but falls short of expectations",
+        "url": "https://www.hindustantimes.com/entertainment/others/im-game-box-office-collection-day-1-dulquer-salmaan-malayalam-comeback-beats-toxic-yash-but-falls-short-of-expectations-101788487618310.html",
+        "author": "Hindustan Times",
+        "date": "",
+        "section": "News & Updates"
+      }
+    ],
+    "filePath": "E:/OakShow/ImGame.html"
+  },
+  {
+    "id": "ImGame",
+    "slug": "imgame",
+    "type": "movie",
+    "category": "Indian",
+    "score": 6,
+    "filename": "ImGame.html",
+    "title": "I'm Game",
+    "metaTitle": "I'm Game All Ratings, Reviews, Songs, Videos, Bookings and News",
+    "description": "Explore I'm Game Malayalam movie ratings, reviews, box office collections, songs, and showtimes. Starring Dulquer Salmaan, Antony Varghese, Mysskin, and Kayadu Lohar, directed by Nahas Hidhayath with music by Jakes Bejoy.",
+    "plot": "A fearless gambler who trusts luck more than life gets caught in a series of crazy and unexpected events that turn his world upside down. Dan John, an adventurous high-stakes player, undergoes a mysterious hand transplant following a severe mishap. Soon, his newly acquired hand begins exhibiting a will, muscle memory, and ruthless instincts of its own, dragging him into the high-stakes underworld of match-fixing kingpin David Abraham and cricketer Vicky Das. What follows is a thrilling ride filled with high-voltage stunts, mind games, surprises, romance, and an adrenaline-pumping supernatural showdown. Source:IMDb",
+    "language": "Malayalam",
+    "releaseDate": "September 03, 2026",
+    "year": "2026",
+    "genre": "Fantasy, Action, Thriller, Drama",
+    "duration": "2hr 51mins",
+    "director": "",
+    "basedOn": "",
+    "boxOffice": {
+      "budget": "Estimated ₹45 Crore",
+      "verdict": "Ongoing Theatrical Run",
+      "lastUpdated": "August 2026",
+      "source": "Trade Reports / Sacnilk & Pinkvilla"
+    },
+    "poster": "pics/Films/ImGame/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/ImGame/1.jpg",
+        "alt": "I'm Game Movie Poster"
+      },
+      {
+        "src": "pics/Films/ImGame/2.jpg",
+        "alt": "I'm Game Official Banner"
+      },
+      {
+        "src": "pics/Films/ImGame/3.jpg",
+        "alt": "I'm Game Movie Action Scene Still"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "6.0/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-an-average-movie.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "6.8/10",
+        "url": "https://www.imdb.com/title/tt34284946/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Times of India",
+        "score": "3/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/malayalam/movie-reviews/im-game/movie-review/133735732.cms",
+        "icon": "pics/RatingSiteLogos/timesofindia.ico"
+      },
+      {
+        "source": "The Indian Express",
+        "score": "2.5/5",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/im-game-movie-review-dulquer-salmaans-fantasy-actioner-is-a-gamble-that-nearly-pays-off-10860784/",
+        "icon": "pics/RatingSiteLogos/indian-express.png"
+      },
+      {
+        "source": "India Today",
+        "score": "2.5/5",
+        "url": "https://www.indiatoday.in/movies/reviews/story/im-game-review-dulquer-salmaan-has-all-the-right-cards-but-the-film-folds-2986152-2026-09-03",
+        "icon": "pics/RatingSiteLogos/india-today.ico"
+      },
+      {
+        "source": "NDTV",
+        "score": "2.5/5",
+        "url": "https://www.ndtv.com/entertainment/im-game-review-dulquer-salmaan-bets-big-but-the-gamble-fails-to-pay-off-2-5-stars-11997545",
+        "icon": "pics/RatingSiteLogos/ndtv.ico"
+      },
+      {
+        "source": "Pinkvilla",
+        "score": "2.5/5",
+        "url": "https://www.pinkvilla.com/entertainment/south/im-game-review-dulquer-salmaans-stylish-action-thriller-fumbles-after-an-impressive-first-half-and-slick-moments-1405243",
+        "icon": "pics/RatingSiteLogos/pinkvilla.png"
+      },
+      {
+        "source": "Rediff",
+        "score": "2/5",
+        "url": "https://www.rediff.com/movies/review/im-game-review-dulquer-salmaan-supernatural-action-thriller-starts-strong-ends-predictably/20260904.htm",
+        "icon": "pics/RatingSiteLogos/rediff.png"
+      },
+      {
+        "source": "News18",
+        "score": "3/5",
+        "url": "https://www.news18.com/movies/malayalam-cinema/im-game-x-review-dulquer-salmaan-show-stealer-in-fantasy-thriller-fans-call-first-half-a-blast-10307612.html",
+        "icon": "pics/RatingSiteLogos/news-18.png"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Dulquer Salmaan",
+        "role": "Dan John (A high-stakes businessman and recipient of a hand transplant)",
+        "description": ""
+      },
+      {
+        "actor": "Antony Varghese",
+        "role": "Vignesh \"Vicky\" Das (A fiery cricketer in Madras Raging Bulls)",
+        "description": ""
+      },
+      {
+        "actor": "Mysskin",
+        "role": "David Abraham (Owner of Madras Raging Bulls and gambling kingpin)",
+        "description": ""
+      },
+      {
+        "actor": "Kayadu Lohar",
+        "role": "Isha (Dan's love interest and physiotherapist)",
+        "description": ""
+      },
+      {
+        "actor": "Samyuktha Viswanathan",
+        "role": "Tharini (Vicky's love interest)",
+        "description": ""
+      },
+      {
+        "actor": "Kathir",
+        "role": "Jason Antony (Captain of Madras Raging Bulls)",
+        "description": ""
+      },
+      {
+        "actor": "Vinay Forrt",
+        "role": "Freddy (Dan's gambling partner and loyal friend)",
+        "description": ""
+      },
+      {
+        "actor": "Jayasudha",
+        "role": "Mercy John (Dan's mother)",
+        "description": ""
+      },
+      {
+        "actor": "Shyamaprasad",
+        "role": "John (Dan's father)",
+        "description": ""
+      },
+      {
+        "actor": "Ashvin Mathew",
+        "role": "Dr",
+        "description": ""
+      },
+      {
+        "actor": "Prabhakar",
+        "role": "Balraj Bhai",
+        "description": ""
+      },
+      {
+        "actor": "Parth Tiwari",
+        "role": "Shaurya",
+        "description": ""
+      },
+      {
+        "actor": "Asif Ali",
+        "role": "Gambler (Cameo Appearance)",
+        "description": ""
+      },
+      {
+        "actor": "Yogi Babu",
+        "role": "Thief (Cameo Appearance)",
+        "description": ""
+      },
+      {
+        "actor": "Zahrah S. Khan",
+        "role": "Dancer in 'Loser' Song",
+        "description": ""
+      }
+    ],
+    "bookings": [
+      {
+        "provider": "BookMyShow",
+        "url": "https://in.bookmyshow.com/movies/im-game/ET00473215",
+        "icon": "pics/BookngWebSiteLogos/book-my-show.png",
+        "label": "BookMyShow",
+        "rank": 2
+      },
+      {
+        "provider": "District",
+        "url": "https://www.district.in/movies/i-m-game-movie-tickets-MV203144?srsltid=AfmBOorr-SzaFcovwNs_XacQ5xvDAf_Ki8zf5pPnHefN3oDig7CFCcIk",
+        "icon": "pics/BookngWebSiteLogos/district.png",
+        "label": "District",
+        "rank": 3
+      },
+      {
+        "provider": "TicketNew",
+        "url": "https://ticketnew.com/movies/i-m-game-movie-detail-203144",
+        "icon": "pics/BookngWebSiteLogos/ticket-new.png",
+        "label": "TicketNew",
+        "rank": 4
+      },
+      {
+        "provider": "Cinepolis",
+        "url": "https://cinepolisindia.com/movie-details/im-game-HO00002626?cid=16",
+        "icon": "pics/BookngWebSiteLogos/cinepolisindia.png",
+        "label": "Cinepolis",
+        "rank": 6
+      },
+      {
+        "provider": "Fandango",
+        "url": "https://www.fandango.com/im-game-2026-246771/movie-overview",
+        "icon": "pics/BookngWebSiteLogos/fandango.png",
+        "label": "Fandango",
+        "rank": 7
+      },
+      {
+        "provider": "Cineworld",
+        "url": "https://www.cineworld.co.uk/films/gb-im-game-malayalam/ho00015243",
+        "icon": "pics/BookngWebSiteLogos/cineworld.png",
+        "label": "Cineworld",
+        "rank": 8
+      }
+    ],
+    "watchOnline": [],
+    "music": [
+      {
+        "provider": "Spotify",
+        "url": "https://open.spotify.com/playlist/3lBMzCTDadOvAzisolq7ZX",
+        "icon": "pics/MusicWebsiteLogos/spotify.png",
+        "language": "",
+        "label": "Spotify"
+      },
+      {
+        "provider": "Apple Music / iTunes",
+        "url": "https://music.apple.com/us/album/im-game-single/1761526200",
+        "icon": "pics/MusicWebsiteLogos/itunes.png",
+        "language": "",
+        "label": "Apple Music"
+      },
+      {
+        "provider": "JioSaavn",
+        "url": "https://www.jiosaavn.com/album/im-game/HcrnvmcAaZk_",
+        "icon": "pics/MusicWebsiteLogos/saavn.png",
+        "language": "",
+        "label": "JioSaavn"
+      }
+    ],
+    "officialWebsite": null,
+    "socials": [
+      {
+        "platform": "Twitter / X",
+        "url": "https://twitter.com/share?url=https://oakshow.in/ImGame.html",
+        "icon": "images/twitter.png",
+        "language": "",
+        "label": "Connect on Twitter / X"
+      }
+    ],
+    "similar": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=2E4ihxaCDL4",
+        "youtubeId": "2E4ihxaCDL4",
+        "title": "I'm Game"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=pIDq50mQvtI",
+        "youtubeId": "pIDq50mQvtI",
+        "title": "Official Trailer / Teaser"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "I'm Game Box Office Collection Day 1: Dulquer Salmaan's Malayalam comeback beats Toxic but falls short of expectations",
+        "url": "https://www.hindustantimes.com/entertainment/others/im-game-box-office-collection-day-1-dulquer-salmaan-malayalam-comeback-beats-toxic-yash-but-falls-short-of-expectations-101788487618310.html",
+        "author": "Hindustan Times",
+        "date": "",
+        "section": "News & Updates"
+      }
+    ],
+    "filePath": "E:/OakShow/oakshow-prod-clean/ImGame.html"
+  },
+  {
+    "id": "TheWhisperMan",
+    "slug": "thewhisperman",
+    "type": "movie",
+    "category": "Hollywood",
+    "score": 6,
+    "filename": "TheWhisperMan.html",
+    "title": "The Whisper Man",
+    "metaTitle": "The Whisper Man All Ratings, Reviews, Songs, Videos, Bookings and News",
+    "description": "Widowed novelist Tom Kennedy and his young son Jake move to Garretton following a child abduction connected to serial killer Frank Carter, aka the Whisper Man. When Jake is abducted, Tom teams with his estranged detective father to solve the nightmare.",
+    "plot": "In 2026, Garretton Detective Amanda Beck discovers the body of a boy while searching for another missing child, Neil Spencer. The crime emulates notorious serial killer Frank Carter, dubbed the Whisper Man, who murdered boys in the 1990s before being captured by Detective Peter Willis. Frank whispered to his victims and left chilling recordings to torment grieving parents. Recently widowed novelist Tom Kennedy moves to Garretton with his traumatized young son Jake. After Jake is lured and abducted by a copycat following the Whisper Man rhyme, Tom turns to his estranged father, Detective Peter Willis. Together with Detective Beck, they unravel a sinister plot involving Frank's dark disciples, hidden basement remains, and long-buried family secrets. Source:IMDB",
+    "language": "English",
+    "releaseDate": "August 28, 2026",
+    "year": "2026",
+    "genre": "Crime, Thriller, Mystery, Drama",
+    "duration": "1hr 55mins",
+    "director": "James Ashcroft | Screenplay: Ben Jacoby, Chase Palmer | Novel: Alex North",
+    "basedOn": "",
+    "boxOffice": null,
+    "poster": "pics/Films/TheWhisperMan/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/TheWhisperMan/1.jpg",
+        "alt": "The Whisper Man Poster"
+      },
+      {
+        "src": "pics/Films/TheWhisperMan/2.jpg",
+        "alt": "The Whisper Man Official Banner"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "6/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "5.7/10",
+        "url": "https://www.imdb.com/title/tt11561116/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "46%",
+        "url": "https://www.rottentomatoes.com/m/the_whisper_man",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-rotten.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "52/100",
+        "url": "https://www.metacritic.com/movie/the-whisper-man/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      },
+      {
+        "source": "Common Sense Media",
+        "score": "3/5",
+        "url": "https://www.commonsensemedia.org/movie-reviews/the-whisper-man",
+        "icon": "pics/RatingSiteLogos/common-sense-media.png"
+      },
+      {
+        "source": "Letterboxd",
+        "score": "2.8/5",
+        "url": "https://letterboxd.com/film/the-whisper-man/",
+        "icon": "pics/RatingSiteLogos/letterboxd.png"
+      },
+      {
+        "source": "The Telegraph",
+        "score": "1/5",
+        "url": "https://www.telegraph.co.uk/films/2026/08/28/whisper-man-one-star-review-de-niro/",
+        "icon": "pics/RatingSiteLogos/telegraph.png"
+      },
+      {
+        "source": "The Guardian",
+        "score": "2/5",
+        "url": "https://www.theguardian.com/film/2026/aug/28/the-whisper-man-robert-de-niro-netflix-movie-review",
+        "icon": "pics/RatingSiteLogos/the-guardian.png"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Robert De Niro",
+        "role": "Detective Peter Willis (Retired lead detective who captured Frank Carter)",
+        "description": ""
+      },
+      {
+        "actor": "Adam Scott",
+        "role": "Tom Kennedy (Recently widowed novelist fighting to save Jake)",
+        "description": ""
+      },
+      {
+        "actor": "Michelle Monaghan",
+        "role": "Detective Amanda Beck (Tenacious lead detective)",
+        "description": ""
+      },
+      {
+        "actor": "Acston Luca Porto",
+        "role": "Jake Kennedy (Tom's young son)",
+        "description": ""
+      },
+      {
+        "actor": "John Carroll Lynch",
+        "role": "Frank Carter (The Whisper Man)",
+        "description": ""
+      },
+      {
+        "actor": "Owen Teague",
+        "role": "Francis Carter Jr",
+        "description": ""
+      },
+      {
+        "actor": "Hamish Linklater",
+        "role": "Norman Collins",
+        "description": ""
+      }
+    ],
+    "bookings": [],
+    "watchOnline": [
+      {
+        "provider": "Netflix",
+        "url": "https://www.netflix.com/watch/81278442?source=35",
+        "icon": "",
+        "language": "",
+        "label": "Watch on Netflix"
+      }
+    ],
+    "music": [
+      {
+        "provider": "Spotify",
+        "url": "https://open.spotify.com/album/325JzBa8ngkvNdvC8Id9qB",
+        "icon": "pics/MusicWebsiteLogos/spotify.png",
+        "language": "",
+        "label": "Listen Now"
+      },
+      {
+        "provider": "Apple Music / iTunes",
+        "url": "https://music.apple.com/us/song/whisper-man/1855061182",
+        "icon": "pics/MusicWebsiteLogos/itunes.png",
+        "language": "",
+        "label": "Listen Now"
+      }
+    ],
+    "officialWebsite": null,
+    "socials": [
+      {
+        "platform": "Twitter / X",
+        "url": "https://twitter.com/share?url=http://oakshow.in/TheWhisperMan.html",
+        "icon": "images/twitter.png",
+        "language": "",
+        "label": "Connect on Twitter / X"
+      }
+    ],
+    "similar": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=ZHRR-1CKYIQ",
+        "youtubeId": "ZHRR-1CKYIQ",
+        "title": "The Whisper Man"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "The Whisper Man review: Robert De Niro is wasted in lifeless Netflix thriller",
+        "url": "https://www.theguardian.com/film/2026/aug/28/the-whisper-man-robert-de-niro-netflix-movie-review",
+        "author": "The Guardian",
+        "date": "28 August, 2026",
+        "section": "More Reviews and News(After Release)"
+      },
+      {
+        "headline": "The Whisper Man Review: Robert De Niro and Adam Scott in a Grim Serial Killer Procedural",
+        "url": "https://variety.com/2026/film/reviews/the-whisper-man-review-robert-de-niro-adam-scott-1236845750/",
+        "author": "Variety",
+        "date": "28 August, 2026",
+        "section": "More Reviews and News(After Release)"
+      },
+      {
+        "headline": "The Whisper Man Review: Netflix's Alex North Adaptation Lacks Chills",
+        "url": "https://www.thewrap.com/creative-content/movies/the-whisper-man-review-netflix-adam-scott/",
+        "author": "TheWrap",
+        "date": "28 August, 2026",
+        "section": "More Reviews and News(After Release)"
+      },
+      {
+        "headline": "What to watch on OTT: Robert De Niro-led thriller The Whisper Man",
+        "url": "https://indianexpress.com/article/entertainment/web-series/what-to-watch-on-ott-robert-de-niro-led-thriller-the-whisper-man-bobby-deols-bandar-10852899/",
+        "author": "The Indian Express",
+        "date": "",
+        "section": "More News(Before Release)"
+      },
+      {
+        "headline": "The Whisper Man storms Netflix top chart despite mixed reviews",
+        "url": "https://www.digitalspy.com/movies/a73580775/the-whisper-man-netflix-top-chart/",
+        "author": "Digital Spy",
+        "date": "",
+        "section": "More News(Before Release)"
+      },
+      {
+        "headline": "The Whisper Man ending explained: Who is the new Whisper Man and what does he want?",
+        "url": "https://timesofindia.indiatimes.com/web-series/news/english/the-whisper-man-ending-explained-who-is-the-new-whisper-man-and-what-does-he-want/articleshow/133603216.cms",
+        "author": "Times of India",
+        "date": "",
+        "section": "More News(Before Release)"
+      }
+    ],
+    "filePath": "E:/OakShow/oakshow-prod-clean/TheWhisperMan.html"
   },
   {
     "id": "TheWhisperMan",
@@ -75030,7 +77359,7 @@
         "alt": "Digg"
       },
       {
-        "src": "images/google-plus.png",
+        "src": "images/google+.png",
         "alt": "Google"
       },
       {
@@ -177165,6 +179494,54 @@
     "filePath": "E:/OakShow/DhruvaPareshanuraSongPromo.html"
   },
   {
+    "id": "dump_local",
+    "slug": "dump_local",
+    "type": "movie",
+    "category": "Indian",
+    "score": 7.5,
+    "filename": "dump_local.html",
+    "title": "Digger",
+    "metaTitle": "OakShow-The One Destination For Everything On Entertainment",
+    "description": "Unified movie ratings, critic reviews, showtimes, trailers and bookings in one place.",
+    "plot": "",
+    "language": "Hindi",
+    "releaseDate": "",
+    "year": "",
+    "genre": "Entertainment",
+    "duration": "N/A",
+    "director": "",
+    "basedOn": "",
+    "boxOffice": null,
+    "poster": "http://localhost:3000/favicon.png",
+    "gallery": [],
+    "ratings": [],
+    "cast": [],
+    "bookings": [],
+    "watchOnline": [],
+    "music": [],
+    "officialWebsite": null,
+    "socials": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/@OakShow",
+        "icon": "",
+        "language": "",
+        "label": "Connect on YouTube"
+      },
+      {
+        "platform": "Facebook",
+        "url": "https://www.facebook.com/OakShowReal/",
+        "icon": "",
+        "language": "",
+        "label": "Connect on Facebook"
+      }
+    ],
+    "similar": [],
+    "videos": [],
+    "articles": [],
+    "filePath": "E:/OakShow/dump_local.html"
+  },
+  {
     "id": "DuvvadaJagannadhamGudiloBadiloMadiloVodilo1M",
     "slug": "duvvadajagannadhamgudilobadilomadilovodilo1m",
     "type": "movie",
@@ -177300,6 +179677,39 @@
     "videos": [],
     "articles": [],
     "filePath": "E:/OakShow/Error.html"
+  },
+  {
+    "id": "GDN",
+    "slug": "gdn",
+    "type": "movie",
+    "category": "Indian",
+    "score": 7.5,
+    "filename": "GDN.html",
+    "title": "G.D.N (G.D. Naidu: The Edison of India)",
+    "metaTitle": "G.D.N (G.D. Naidu: The Edison of India) All Ratings, Reviews, Songs, Videos, Bookings and News — OakShow",
+    "description": "Explore G.D.N Tamil movie ratings, reviews, box office collections, songs, and OTT streaming on Netflix. Starring R. Madhavan, Priyamani, Dushara Vijayan, and Sathyaraj, directed by Krishnakumar Ramakumar with music by Govind Vasantha.",
+    "plot": "",
+    "language": "Hindi",
+    "releaseDate": "",
+    "year": "",
+    "genre": "Entertainment",
+    "duration": "N/A",
+    "director": "",
+    "basedOn": "",
+    "boxOffice": null,
+    "poster": "pics/Films/GDN/2.jpeg",
+    "gallery": [],
+    "ratings": [],
+    "cast": [],
+    "bookings": [],
+    "watchOnline": [],
+    "music": [],
+    "officialWebsite": null,
+    "socials": [],
+    "similar": [],
+    "videos": [],
+    "articles": [],
+    "filePath": "E:/OakShow/GDN.html"
   },
   {
     "id": "HalfGirlfriendLostWithoutYou",
@@ -178036,6 +180446,39 @@
     "filePath": "E:/OakShow/mobile_app.html"
   },
   {
+    "id": "mobile_rendered",
+    "slug": "mobile_rendered",
+    "type": "movie",
+    "category": "Indian",
+    "score": 7.5,
+    "filename": "mobile_rendered.html",
+    "title": "mobile_rendered",
+    "metaTitle": "",
+    "description": "",
+    "plot": "",
+    "language": "Hindi",
+    "releaseDate": "",
+    "year": "",
+    "genre": "Entertainment",
+    "duration": "N/A",
+    "director": "",
+    "basedOn": "",
+    "boxOffice": null,
+    "poster": "",
+    "gallery": [],
+    "ratings": [],
+    "cast": [],
+    "bookings": [],
+    "watchOnline": [],
+    "music": [],
+    "officialWebsite": null,
+    "socials": [],
+    "similar": [],
+    "videos": [],
+    "articles": [],
+    "filePath": "E:/OakShow/mobile_rendered.html"
+  },
+  {
     "id": "Now",
     "slug": "now",
     "type": "movie",
@@ -178067,6 +180510,39 @@
     "videos": [],
     "articles": [],
     "filePath": "E:/OakShow/Now.html"
+  },
+  {
+    "id": "GDN",
+    "slug": "gdn",
+    "type": "movie",
+    "category": "Indian",
+    "score": 7.5,
+    "filename": "GDN.html",
+    "title": "G.D.N (G.D. Naidu: The Edison of India)",
+    "metaTitle": "G.D.N (G.D. Naidu: The Edison of India) All Ratings, Reviews, Songs, Videos, Bookings and News — OakShow",
+    "description": "Explore G.D.N Tamil movie ratings, reviews, box office collections, songs, and OTT streaming on Netflix. Starring R. Madhavan, Priyamani, Dushara Vijayan, and Sathyaraj, directed by Krishnakumar Ramakumar with music by Govind Vasantha.",
+    "plot": "",
+    "language": "Hindi",
+    "releaseDate": "",
+    "year": "",
+    "genre": "Entertainment",
+    "duration": "N/A",
+    "director": "",
+    "basedOn": "",
+    "boxOffice": null,
+    "poster": "pics/Films/GDN/2.jpeg",
+    "gallery": [],
+    "ratings": [],
+    "cast": [],
+    "bookings": [],
+    "watchOnline": [],
+    "music": [],
+    "officialWebsite": null,
+    "socials": [],
+    "similar": [],
+    "videos": [],
+    "articles": [],
+    "filePath": "E:/OakShow/oakshow-prod-clean/GDN.html"
   },
   {
     "id": "OakShowEmergency",
@@ -178232,7 +180708,7 @@
     "director": "",
     "basedOn": "",
     "boxOffice": null,
-    "poster": "Profiles/CriticProfiles/MsMrOakShow/pics/1.jpg",
+    "poster": "Profiles/CriticProfiles/MsMrOakShow/pics//1.jpg",
     "gallery": [],
     "ratings": [],
     "cast": [],
@@ -178265,7 +180741,7 @@
     "director": "",
     "basedOn": "",
     "boxOffice": null,
-    "poster": "Profiles/CriticProfiles/MsMrOakShow/pics/1.jpg",
+    "poster": "Profiles/CriticProfiles/MsMrOakShow/pics//1.jpg",
     "gallery": [],
     "ratings": [],
     "cast": [],

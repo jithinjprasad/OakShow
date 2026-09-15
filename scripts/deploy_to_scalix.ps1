@@ -1,9 +1,8 @@
 $ErrorActionPreference = "Stop"
+$env:GIT_TERMINAL_PROMPT = "0"
 
-$tokenFile = "E:\OakShow API's\oakshowGitToke.txt"
-$token = if (Test-Path $tokenFile) { (Get-Content $tokenFile).Trim() } else { $env:GITHUB_TOKEN }
-$scalixKeyFile = "E:\OakShow API's\scalixApiKey.txt"
-$scalixKey = if (Test-Path $scalixKeyFile) { (Get-Content $scalixKeyFile).Trim() } else { $env:SCALIX_API_KEY }
+$token = if (Test-Path -LiteralPath "E:\OakShow API's\oakshowGitToke.txt") { (Get-Content -LiteralPath "E:\OakShow API's\oakshowGitToke.txt").Trim() } elseif (Test-Path -LiteralPath "E:\oakshowGitToke.txt") { (Get-Content -LiteralPath "E:\oakshowGitToke.txt").Trim() } else { $env:GITHUB_TOKEN }
+$scalixKey = if (Test-Path -LiteralPath "E:\OakShow API's\scalixApiKey.txt") { (Get-Content -LiteralPath "E:\OakShow API's\scalixApiKey.txt").Trim() } elseif (Test-Path -LiteralPath "E:\OakShow API's\oakshowApi.txt") { (Get-Content -LiteralPath "E:\OakShow API's\oakshowApi.txt").Trim() } elseif (Test-Path -LiteralPath "E:\oakshowApi.txt") { (Get-Content -LiteralPath "E:\oakshowApi.txt").Trim() } else { $env:SCALIX_API_KEY }
 $git = 'C:\Users\Admin\AppData\Local\GitHubDesktop\app-3.6.4\resources\app\git\cmd\git.exe'
 $workDir = 'e:\OakShow\oakshow-prod-clean'
 $srcDir = 'e:\OakShow'
@@ -34,7 +33,7 @@ foreach ($h in $htmlFiles) {
 Write-Host "Synced $($htmlFiles.Count) prerendered HTML pages to dist."
 
 # 4. Sync root HTML files in oakshow-prod
-$rootHtmls = @("Digger.html", "GDN.html", "Upcoming.html", "Upcoming2.html", "Upcoming3.html", "ImGame.html", "TheWhisperMan.html", "Careers.html")
+$rootHtmls = @("Digger.html", "GDN.html", "Upcoming.html", "Upcoming2.html", "Upcoming3.html", "ImGame.html", "TheWhisperMan.html", "Careers.html", "OneNightOnly.html")
 foreach ($rf in $rootHtmls) {
     if (Test-Path "$srcDir\$rf") {
         Copy-Item -Path "$srcDir\$rf" -Destination "$workDir\$rf" -Force
@@ -45,6 +44,7 @@ foreach ($rf in $rootHtmls) {
 $mediaDirs = @(
     @{ Src = "$srcDir\pics\Films\Digger"; Dest = "$workDir\dist\pics\Films\Digger" },
     @{ Src = "$srcDir\pics\Films\GDN"; Dest = "$workDir\dist\pics\Films\GDN" },
+    @{ Src = "$srcDir\pics\Films\OneNightOnly"; Dest = "$workDir\dist\pics\Films\OneNightOnly" },
     @{ Src = "$srcDir\pics\RatingSiteLogos"; Dest = "$workDir\dist\pics\RatingSiteLogos" },
     @{ Src = "$srcDir\pics\SocialWebsiteLogos"; Dest = "$workDir\dist\pics\SocialWebsiteLogos" },
     @{ Src = "$srcDir\pics\BookngWebSiteLogos"; Dest = "$workDir\dist\pics\BookngWebSiteLogos" },

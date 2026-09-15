@@ -1,69 +1,13 @@
 [
   {
-    "id": "GDN",
-    "title": "G.D.N (G.D. Naidu: The Edison of India)",
+    "id": "LanternsS1E01",
+    "title": "Lanterns S01E01: Pilot",
     "type": "movie",
-    "category": "Tamil",
-    "year": "2026",
-    "genre": "Biographical, Drama, History, Period",
-    "language": "Tamil",
-    "score": "8.2/10",
-    "poster": "pics/Films/GDN/1.jpeg"
-  },
-  {
-    "id": "Digger",
-    "title": "Digger",
-    "type": "movie",
-    "category": "Hollywood",
-    "language": "English",
-    "genre": "Black Comedy, Drama, Disaster, Satire",
-    "year": "2026",
-    "poster": "pics/Films/Digger/1.jpg",
-    "fileName": "Digger.html",
-    "filename": "Digger.html",
-    "cleanUrl": "/Digger.html",
-    "keywords": "Digger Tom Cruise Alejandro G Inarritu Riz Ahmed John Goodman Sandra Huller Jesse Plemons English Disaster Comedy Satire 2026 Digger Rockwell"
-  },
-  {
-    "title": "I'm Game",
-    "type": "movie",
-    "language": "Malayalam",
-    "genre": "Fantasy, Action, Thriller",
-    "year": "2026",
-    "rating": "6.0",
-    "fileName": "ImGame.html",
-    "cleanUrl": "/ImGame.html",
-    "keywords": "I'm Game Dulquer Salmaan Dan John Nahas Hidhayath Antony Varghese Vicky Mysskin Kayadu Lohar Jakes Bejoy Malayalam 2026 DQ40",
-    "filename": "ImGame.html",
-    "id": "ImGame",
-    "category": "Indian",
-    "poster": "pics/Films/ImGame/1.jpg"
-  },
-  {
-    "title": "Gail Daughtry and the Celebrity Sex Pass",
-    "type": "movie",
-    "language": "English",
-    "genre": "Comedy, Romance, Satire",
-    "year": "2026",
-    "rating": "8.5",
-    "fileName": "GailDaughtryandtheCelebritySexPass.html",
-    "cleanUrl": "/GailDaughtryandtheCelebritySexPass.html",
-    "keywords": "Gail Daughtry and the Celebrity Sex Pass Zoey Deutch Jon Hamm John Slattery David Wain Ken Marino English Comedy 2026 Gail Daughtry Celebrity Sex Pass",
-    "filename": "GailDaughtryandtheCelebritySexPass.html",
-    "id": "GailDaughtryandtheCelebritySexPass",
-    "category": "Hollywood",
-    "poster": "pics/Films/GailDaughtryandtheCelebritySexPass/1.jpg"
-  },
-  {
-    "id": "Lanterns",
-    "title": "Lanterns (TV series)",
-    "type": "series",
     "category": "Hollywood",
     "genre": "Superhero, Drama, Detective",
     "language": "English",
     "year": "2026",
-    "poster": "pics/Serieses/Lanterns/2.jpg",
-    "episodesCount": 3
+    "poster": "pics/Serieses/Lanterns/S01/1.jpg"
   },
   {
     "id": "LanternsS1E01",
@@ -86,14 +30,14 @@
     "poster": "pics/Serieses/Lanterns/S01/2.jpg"
   },
   {
-    "id": "LanternsS1E03",
-    "title": "Lanterns S01E03: OutKast",
+    "id": "LanternsS1E02",
+    "title": "Lanterns S01E02: Trust Fall",
     "type": "movie",
     "category": "Hollywood",
     "genre": "Superhero, Drama, Detective",
     "language": "English",
     "year": "2026",
-    "poster": "pics/Serieses/Lanterns/S01/3.jpg"
+    "poster": "pics/Serieses/Lanterns/S01/2.jpg"
   },
   {
     "id": "BethlehemKudumbaUnit",
@@ -116,6 +60,46 @@
     "poster": "pics/Films/DCTamilMovie/2.jpg"
   },
   {
+    "id": "gail-daughtry-and-the-celebrity-sex-pass",
+    "title": "Gail Daughtry and the Celebrity Sex Pass",
+    "type": "movie",
+    "category": "Hollywood",
+    "genre": "Comedy, Romance, Satire",
+    "language": "English",
+    "year": "2026",
+    "poster": "pics/Films/GailDaughtryandtheCelebritySexPass/2.jpg"
+  },
+  {
+    "id": "GailDaughtryandtheCelebritySexPass",
+    "title": "Gail Daughtry and the Celebrity Sex Pass",
+    "type": "movie",
+    "category": "Hollywood",
+    "genre": "Comedy, Romance, Satire",
+    "language": "English",
+    "year": "2026",
+    "poster": "pics/Films/GailDaughtryandtheCelebritySexPass/2.jpg"
+  },
+  {
+    "id": "DCTamilMovie",
+    "title": "DC (Devadas & Chandra)",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Action, Crime, Gangster, Drama, Romance",
+    "language": "Tamil",
+    "year": "2026",
+    "poster": "pics/Films/DCTamilMovie/2.jpg"
+  },
+  {
+    "id": "GailDaughtryandtheCelebritySexPass",
+    "title": "Gail Daughtry and the Celebrity Sex Pass",
+    "type": "movie",
+    "category": "Hollywood",
+    "genre": "Comedy, Romance, Satire",
+    "language": "English",
+    "year": "2026",
+    "poster": "pics/Films/GailDaughtryandtheCelebritySexPass/2.jpg"
+  },
+  {
     "id": "BatmanKnightfallPart1Knightfall",
     "title": "Batman: Knightfall - Part 1: Knightfall",
     "type": "movie",
@@ -136,6 +120,86 @@
     "poster": "pics/Films/CoyotevsAcme/2.jpg"
   },
   {
+    "id": "LanternsS1E03",
+    "title": "Lanterns S01E03: OutKast",
+    "type": "movie",
+    "category": "Hollywood",
+    "genre": "Superhero, Drama, Detective",
+    "language": "English",
+    "year": "2026",
+    "poster": "pics/Serieses/Lanterns/S01/3.jpg"
+  },
+  {
+    "id": "LanternsS1E04",
+    "title": "Lanterns S01E04: The Weenie",
+    "type": "movie",
+    "category": "Hollywood",
+    "genre": "Superhero, Drama, Detective",
+    "language": "English",
+    "year": "2026",
+    "poster": "pics/Serieses/Lanterns/S01/4.jpg"
+  },
+  {
+    "id": "BatmanKnightfallPart1Knightfall",
+    "title": "Batman: Knightfall - Part 1: Knightfall",
+    "type": "movie",
+    "category": "Hollywood",
+    "genre": "Animation, Action, Superhero, Crime",
+    "language": "English",
+    "year": "2026",
+    "poster": "pics/Films/BatmanKnightfallPart1Knightfall/1.jpg"
+  },
+  {
+    "id": "LanternsS1E03",
+    "title": "Lanterns S01E03: OutKast",
+    "type": "movie",
+    "category": "Hollywood",
+    "genre": "Superhero, Drama, Detective",
+    "language": "English",
+    "year": "2026",
+    "poster": "pics/Serieses/Lanterns/S01/3.jpg"
+  },
+  {
+    "id": "LanternsS1E04",
+    "title": "Lanterns S01E04: The Weenie",
+    "type": "movie",
+    "category": "Hollywood",
+    "genre": "Superhero, Drama, Detective",
+    "language": "English",
+    "year": "2026",
+    "poster": "pics/Serieses/Lanterns/S01/4.jpg"
+  },
+  {
+    "id": "OneNightOnly",
+    "title": "One Night Only",
+    "type": "movie",
+    "category": "Hollywood",
+    "genre": "Comedy, Romance, Sci-Fi",
+    "language": "English",
+    "year": "2026",
+    "poster": "pics/Films/OneNightOnly/2.jpeg"
+  },
+  {
+    "id": "Digger",
+    "title": "Digger",
+    "type": "movie",
+    "category": "Hollywood",
+    "genre": "Black Comedy, Drama, Disaster, Satire",
+    "language": "English",
+    "year": "2026",
+    "poster": "pics/Films/Digger/2.jpg"
+  },
+  {
+    "id": "Digger",
+    "title": "Digger",
+    "type": "movie",
+    "category": "Hollywood",
+    "genre": "Black Comedy, Drama, Disaster, Satire",
+    "language": "English",
+    "year": "2026",
+    "poster": "pics/Films/Digger/2.jpg"
+  },
+  {
     "id": "KhalifaTheRuler",
     "title": "Khalifa: The Ruler",
     "type": "movie",
@@ -144,6 +208,46 @@
     "language": "Malayalam",
     "year": "2026",
     "poster": "pics/Films/KhalifaTheRuler/2.jpg"
+  },
+  {
+    "id": "im-game",
+    "title": "I'm Game",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Fantasy, Action, Thriller, Drama",
+    "language": "Malayalam",
+    "year": "2026",
+    "poster": "pics/Films/ImGame/2.jpg"
+  },
+  {
+    "id": "ImGame",
+    "title": "I'm Game",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Fantasy, Action, Thriller, Drama",
+    "language": "Malayalam",
+    "year": "2026",
+    "poster": "pics/Films/ImGame/2.jpg"
+  },
+  {
+    "id": "ImGame",
+    "title": "I'm Game",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Fantasy, Action, Thriller, Drama",
+    "language": "Malayalam",
+    "year": "2026",
+    "poster": "pics/Films/ImGame/2.jpg"
+  },
+  {
+    "id": "TheWhisperMan",
+    "title": "The Whisper Man",
+    "type": "movie",
+    "category": "Hollywood",
+    "genre": "Crime, Thriller, Mystery, Drama",
+    "language": "English",
+    "year": "2026",
+    "poster": "pics/Films/TheWhisperMan/2.jpg"
   },
   {
     "id": "TheWhisperMan",
@@ -3544,16 +3648,6 @@
     "language": "English",
     "year": "2018",
     "poster": "pics/Films/Blockers/1.jpg"
-  },
-  {
-    "id": "Careers",
-    "title": "Careers at OakShow — Become a Critic",
-    "type": "careers",
-    "category": "Careers",
-    "genre": "Critic & Jobs",
-    "language": "All",
-    "year": "2026",
-    "poster": "images/become-a-movie-critic.jpg"
   },
   {
     "id": "DhruvaNatchathiram",
@@ -10806,6 +10900,16 @@
     "poster": ""
   },
   {
+    "id": "dump_local",
+    "title": "Digger",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "",
+    "poster": "http://localhost:3000/favicon.png"
+  },
+  {
     "id": "DuvvadaJagannadhamGudiloBadiloMadiloVodilo1M",
     "title": "Gudilo Badilo Madilo Vodilo 1M Video Song | DJ Video Songs | Allu Arjun | Pooja Hegde | DSP",
     "type": "movie",
@@ -10834,6 +10938,16 @@
     "language": "Hindi",
     "year": "",
     "poster": ""
+  },
+  {
+    "id": "GDN",
+    "title": "G.D.N (G.D. Naidu: The Edison of India)",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "",
+    "poster": "pics/Films/GDN/2.jpeg"
   },
   {
     "id": "HalfGirlfriendLostWithoutYou",
@@ -10936,6 +11050,16 @@
     "poster": "images/ph1.png"
   },
   {
+    "id": "mobile_rendered",
+    "title": "mobile_rendered",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "",
+    "poster": ""
+  },
+  {
     "id": "Now",
     "title": "Movies That Are Runing In Theaters Rights Now",
     "type": "movie",
@@ -10944,6 +11068,16 @@
     "language": "Hindi",
     "year": "",
     "poster": "pics/Bottom/1.jpg"
+  },
+  {
+    "id": "GDN",
+    "title": "G.D.N (G.D. Naidu: The Edison of India)",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "",
+    "poster": "pics/Films/GDN/2.jpeg"
   },
   {
     "id": "OakShowEmergency",
@@ -10983,7 +11117,7 @@
     "genre": "Entertainment",
     "language": "Hindi",
     "year": "",
-    "poster": "Profiles/CriticProfiles/MsMrOakShow/pics/1.jpg"
+    "poster": "Profiles/CriticProfiles/MsMrOakShow/pics//1.jpg"
   },
   {
     "id": "ReporterProfiles",
@@ -10993,7 +11127,7 @@
     "genre": "Entertainment",
     "language": "Hindi",
     "year": "",
-    "poster": "Profiles/CriticProfiles/MsMrOakShow/pics/1.jpg"
+    "poster": "Profiles/CriticProfiles/MsMrOakShow/pics//1.jpg"
   },
   {
     "id": "RaeesLailaMainLaila",
@@ -11074,6 +11208,28 @@
     "language": "English",
     "year": "",
     "poster": "pics/Films/X-Men Apocalypse/4.jpg"
+  },
+  {
+    "id": "Lanterns",
+    "title": "Lanterns (TV series)",
+    "type": "series",
+    "category": "Hollywood",
+    "genre": "Superhero, Drama, Detective",
+    "language": "English",
+    "year": "2026",
+    "poster": "pics/Serieses/Lanterns/2.jpg",
+    "episodesCount": 0
+  },
+  {
+    "id": "LanternsS1",
+    "title": "Lanterns (TV series) Season 01",
+    "type": "series",
+    "category": "Hollywood",
+    "genre": "Superhero, Drama, Detective",
+    "language": "English",
+    "year": "2026",
+    "poster": "pics/Serieses/Lanterns/S01/1.jpg",
+    "episodesCount": 0
   },
   {
     "id": "Scam1992S1",
@@ -11777,7 +11933,7 @@
     "poster": "Profiles/CriticProfiles/AchuthanKarnnan/pics/TikTikTikReview/tik-tik-tik-review.jpg"
   },
   {
-    "id": "VishnuPc",
+    "id": "",
     "title": "Vishnu Pc",
     "type": "review",
     "author": "",
@@ -11785,7 +11941,7 @@
     "poster": "VishnuPc/pics/1.jpg"
   },
   {
-    "id": "JithinJPrasad",
+    "id": "",
     "title": "Jithin J Prasad",
     "type": "review",
     "author": "",
@@ -11793,7 +11949,7 @@
     "poster": "JithinJPrasad/pics/1.jpg"
   },
   {
-    "id": "AchuthanKarnnan",
+    "id": "",
     "title": "Achuthan Karnnan",
     "type": "review",
     "author": "",
@@ -11801,7 +11957,7 @@
     "poster": "AchuthanKarnnan/pics/1.jpg"
   },
   {
-    "id": "ManojAswin",
+    "id": "",
     "title": "Manoj Aswin",
     "type": "review",
     "author": "",
@@ -11809,7 +11965,7 @@
     "poster": "ManojAswin/pics/1.jpg"
   },
   {
-    "id": "AbhijithAG",
+    "id": "",
     "title": "Abhijith A G",
     "type": "review",
     "author": "",
@@ -11817,7 +11973,7 @@
     "poster": "AbhijithAG/pics/1.jpg"
   },
   {
-    "id": "MsMrOakShow",
+    "id": "",
     "title": "Ms./Mr. OakShow",
     "type": "review",
     "author": "",
@@ -12137,7 +12293,7 @@
     "poster": "Profiles/CriticProfiles/AchuthanKarnnan/pics/TikTikTikReview/tik-tik-tik-review.jpg"
   },
   {
-    "id": "VishnuPc",
+    "id": "",
     "title": "Vishnu Pc",
     "type": "review",
     "author": "",
@@ -12145,7 +12301,7 @@
     "poster": "VishnuPc/pics/1.jpg"
   },
   {
-    "id": "JithinJPrasad",
+    "id": "",
     "title": "Jithin J Prasad",
     "type": "review",
     "author": "",
@@ -12153,7 +12309,7 @@
     "poster": "JithinJPrasad/pics/1.jpg"
   },
   {
-    "id": "AchuthanKarnnan",
+    "id": "",
     "title": "Achuthan Karnnan",
     "type": "review",
     "author": "",
@@ -12161,7 +12317,7 @@
     "poster": "AchuthanKarnnan/pics/1.jpg"
   },
   {
-    "id": "ManojAswin",
+    "id": "",
     "title": "Manoj Aswin",
     "type": "review",
     "author": "",
@@ -12169,7 +12325,7 @@
     "poster": "ManojAswin/pics/1.jpg"
   },
   {
-    "id": "AbhijithAG",
+    "id": "",
     "title": "Abhijith A G",
     "type": "review",
     "author": "",
@@ -12177,7 +12333,7 @@
     "poster": "AbhijithAG/pics/1.jpg"
   },
   {
-    "id": "MsMrOakShow",
+    "id": "",
     "title": "Ms./Mr. OakShow",
     "type": "review",
     "author": "",

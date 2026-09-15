@@ -353,8 +353,8 @@ export default function MovieDetailPage({
   };
 
   const allRatings = movie.ratings || [];
-  const watchOnlineList = movie.watchOnline || [];
-  const musicList = movie.music || [];
+  const watchOnlineList = Array.isArray(movie.watchOnline) ? movie.watchOnline : (Array.isArray(movie.streaming) ? movie.streaming : []);
+  const musicList = Array.isArray(movie.music) ? movie.music : (Array.isArray(movie.musicLinks) ? movie.musicLinks : []);
   const socialsList = movie.socials || [];
   const officialWebsite = movie.officialWebsite || null;
 
@@ -689,7 +689,7 @@ export default function MovieDetailPage({
                     className="btn btn-purple"
                   >
                     <Music size={18} />
-                    <span>Listen Songs ({musicList[0].provider})</span>
+                    <span>Listen Songs ({musicList[0]?.provider || musicList[0]?.platform || 'Soundtrack'})</span>
                   </a>
                 )}
 

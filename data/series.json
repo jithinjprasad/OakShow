@@ -6,37 +6,37 @@
     "category": "Hollywood",
     "score": 9,
     "filename": "Lanterns.html",
-    "title": "Lanterns",
-    "metaTitle": "Lanterns (TV series) All Ratings, Reviews, Episodes & Watch Online — OakShow",
+    "title": "Lanterns (TV series)",
+    "metaTitle": "Lanterns (TV series) All Ratings, Reviews, Songs, Videos and Watch Online",
     "description": "Green Lanterns Hal Jordan and John Stewart investigate a dark terrestrial murder in the American heartland that leads to an ancient cosmic conspiracy.",
-    "plot": "Green Lanterns are interstellar peacekeepers who wear rings that give them extraordinary powers. The series follows experienced Lantern Hal Jordan and new recruit John Stewart as they investigate a murder in Rushville, Nebraska, which Hal believes is an extraterrestrial incident and leads them to darker mysteries and reckonings.",
+    "plot": "",
     "language": "English",
-    "releaseDate": "August 16, 2026",
+    "releaseDate": "August 16, 2026 9:00 am",
     "year": "2026",
     "genre": "Superhero, Drama, Detective",
     "duration": "55 Minutes",
-    "director": "James Hawes, Stephen Williams",
-    "basedOn": "Green Lantern by DC Comics; Created by Chris Mundy, Damon Lindelof & Tom King",
+    "director": "",
+    "basedOn": "Green Lantern by DC Comics",
     "boxOffice": null,
     "poster": "pics/Serieses/Lanterns/2.jpg",
     "gallery": [
       {
         "src": "pics/Serieses/Lanterns/1.jpg",
-        "alt": "Lanterns Hal Jordan and John Stewart Poster"
+        "alt": "Lanterns Hal Jordan and John Stewart"
       },
       {
         "src": "pics/Serieses/Lanterns/2.jpg",
-        "alt": "Lanterns Official Key Art Poster"
+        "alt": "Lanterns Official Poster"
       },
       {
         "src": "pics/Serieses/Lanterns/3.jpg",
-        "alt": "Lanterns High Definition Still"
+        "alt": "Lanterns DC Series Stills"
       }
     ],
     "ratings": [
       {
         "source": "OakShow",
-        "score": "9.0/10",
+        "score": "9/10",
         "url": "",
         "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
       },
@@ -59,7 +59,7 @@
         "icon": "pics/RatingSiteLogos/metacritic.png"
       },
       {
-        "source": "Common Sense Media",
+        "source": "Lanterns Common Sense Media",
         "score": "4/5",
         "url": "https://www.commonsensemedia.org/tv-reviews/lanterns",
         "icon": "pics/RatingSiteLogos/common-sense-media.png"
@@ -71,7 +71,7 @@
         "icon": "pics/RatingSiteLogos/the-guardian.png"
       },
       {
-        "source": "Den of Geek",
+        "source": "Lanterns Den of Geek",
         "score": "4.5/5",
         "url": "https://www.denofgeek.com/tv/lanterns-episode-1-review-hued-detective/",
         "icon": "pics/RatingSiteLogos/denofgeek.png"
@@ -80,528 +80,167 @@
     "cast": [
       {
         "actor": "Kyle Chandler",
-        "role": "Hal Jordan / Green Lantern",
-        "description": "A USAF veteran, former test pilot and legendary member of the Green Lantern Corps approaching retirement who mentors new recruit John Stewart."
+        "role": "Hal Jordan / Green Lantern: A USAF veteran, former test pilot and legendary member of the Green Lantern Corps who is approaching retirement and mentors new recruit John Stewart",
+        "description": ""
       },
       {
         "actor": "Aaron Pierre",
-        "role": "John Stewart / Green Lantern",
-        "description": "A former Marine and architect chosen directly by the Guardians of the Universe to wield the Green Lantern power ring."
+        "role": "John Stewart / Green Lantern: A new Green Lantern recruit whom Hal is training to replace himself",
+        "description": ""
       },
       {
         "actor": "Kelly Macdonald",
-        "role": "Sheriff Kerry Kane",
-        "description": "A sheriff deeply devoted to her family and close-knit town of Rushville, Nebraska."
+        "role": "Sheriff Kerry Kane: A sheriff deeply devoted to her family and close-knit town of Rushville, Nebraska",
+        "description": ""
       },
       {
         "actor": "Garret Dillahunt",
-        "role": "William Macon",
-        "description": "Kerry's father-in-law, a modern cowboy who hides his self-righteous, conspiracy-minded personality behind a charming façade."
+        "role": "William Macon: Kerry's father-in-law, a modern cowboy who hides his self-righteous, conspiracy-minded personality behind a charming façade",
+        "description": ""
       },
       {
         "actor": "Jason Ritter",
-        "role": "Billy Macon",
-        "description": "Kerry's lawyer husband and William's son."
+        "role": "Billy Macon: Kerry's lawyer husband and William's son",
+        "description": ""
       },
       {
         "actor": "Poorna Jagannathan",
-        "role": "Zoe",
-        "description": "An associate connected to the investigation."
+        "role": "Zoe: An associate connected to the investigation",
+        "description": ""
       },
       {
         "actor": "J. Alphonse Nicholson",
-        "role": "John Stewart Sr.",
-        "description": "John's father who serves in the military."
+        "role": "John Stewart Sr",
+        "description": ""
       }
     ],
     "bookings": [],
     "watchOnline": [
       {
-        "provider": "JioCinema / Hotstar",
-        "platform": "JioCinema",
-        "url": "https://www.hotstar.com/in/shows/lanterns/1271680756?utm_source=gwa",
-        "icon": "pics/WatchOnline/hotstar.png",
-        "language": "English",
-        "label": "Stream on JioCinema / Hotstar"
-      },
-      {
-        "provider": "HBO Max",
-        "platform": "HBO Max",
+        "provider": "Lanterns on HBO Max",
         "url": "https://www.hbomax.com/show/8c11d041-6b71-4e54-8369-fdb310e063b8",
         "icon": "pics/WatchOnline/hbo-max.png",
-        "language": "English",
+        "language": "Officially",
         "label": "Watch on Max"
       },
       {
-        "provider": "Apple TV",
-        "platform": "Apple TV",
+        "provider": "Apple TV / iTunes",
         "url": "https://tv.apple.com/us/show/lanterns/umc.cmc.13oon2dqireb1lhg9h97cudjj",
         "icon": "pics/WatchOnline/apple-tv.png",
-        "language": "English",
+        "language": "Officially",
         "label": "Watch on Apple TV"
       }
     ],
     "music": [
       {
-        "title": "Lanterns Official Spotify Soundtrack",
-        "platform": "Spotify",
+        "provider": "Spotify",
         "url": "https://open.spotify.com/playlist/0ZKRdQJKUrF593VEWRoqrb",
-        "icon": "pics/MusicWebsiteLogos/spotify.png"
+        "icon": "pics/MusicWebsiteLogos/spotify.png",
+        "language": "",
+        "label": "Spotify Playlist"
       }
     ],
-    "socials": [
-      {
-        "platform": "Instagram",
-        "url": "https://www.instagram.com/greenlantern/?hl=en",
-        "handle": "@greenlantern"
-      }
-    ],
+    "officialWebsite": null,
+    "socials": [],
+    "similar": [],
     "videos": [
       {
-        "title": "Lanterns Official Main Trailer",
-        "type": "Trailer",
         "url": "https://www.youtube.com/watch?v=EDXHzJDK8wA",
-        "videoId": "EDXHzJDK8wA",
-        "thumbnail": "https://img.youtube.com/vi/EDXHzJDK8wA/hqdefault.jpg"
+        "youtubeId": "EDXHzJDK8wA",
+        "title": "Lanterns (TV series)"
       }
     ],
-    "articles": [
+    "articles": [],
+    "filePath": "E:/OakShow/Lanterns.html"
+  },
+  {
+    "id": "LanternsS1",
+    "slug": "lanternss1",
+    "type": "series",
+    "category": "Hollywood",
+    "score": 9,
+    "filename": "LanternsS1.html",
+    "title": "Lanterns (TV series) Season 01",
+    "metaTitle": "Lanterns Season 1 All Episode Ratings, Reviews and Watch Online — OakShow",
+    "description": "Lanterns Season 1 follows Hal Jordan and John Stewart as they investigate an extraterrestrial incident in Rushville, Nebraska.",
+    "plot": "",
+    "language": "English",
+    "releaseDate": "August 16, 2026 9:00 am",
+    "year": "2026",
+    "genre": "Superhero, Drama, Detective",
+    "duration": "55 Minutes",
+    "director": "",
+    "basedOn": "",
+    "boxOffice": null,
+    "poster": "pics/Serieses/Lanterns/S01/1.jpg",
+    "gallery": [
       {
-        "title": "The Guardian: Green Lantern series is a moody, visually rich superhero detective drama",
-        "url": "https://www.theguardian.com/tv-and-radio/2026/aug/17/lanterns-review-green-lantern-kyle-chandler-aaron-pierre-dc-comics-universe-superhero",
-        "source": "The Guardian"
+        "src": "pics/Serieses/Lanterns/S01/1.jpg",
+        "alt": "Lanterns Season 01 Pilot Poster"
       },
       {
-        "title": "IGN: Lanterns Episode 3 Review & Recap: OutKast",
-        "url": "https://www.ign.com/articles/lanterns-season-1-episode-3-review-recap-outkast",
-        "source": "IGN"
+        "src": "pics/Serieses/Lanterns/S01/2.jpg",
+        "alt": "Lanterns Season 01 Trust Fall Poster"
       },
       {
-        "title": "Movie News Net: Lanterns Trust Fall Ups The Stakes",
-        "url": "https://www.movienewsnet.com/2026/08/27/lanterns-review-trust-fall-ups-the-stakes/",
-        "source": "Movie News Net"
+        "src": "pics/Serieses/Lanterns/S01/3.jpg",
+        "alt": "Lanterns Season 01 OutKast Poster"
       },
       {
-        "title": "Forbes: Lanterns Episode 4 Recap & Review — Identity Crisis",
-        "url": "https://www.forbes.com/sites/erikkain/2026/09/06/lanterns-episode-4-recap-review-identity-crisis/",
-        "source": "Forbes"
-      },
-      {
-        "title": "IGN: Lanterns Season 1 Episode 4 Review & Recap — The Weenie",
-        "url": "https://www.ign.com/articles/lanterns-season-1-episode-4-review-recap-the-weenie",
-        "source": "IGN"
-      },
-      {
-        "title": "Den of Geek: Lanterns Episode 4 Review",
-        "url": "https://www.denofgeek.com/tv/lanterns-episode-4-review/",
-        "source": "Den of Geek"
+        "src": "pics/Serieses/Lanterns/S01/4.jpg",
+        "alt": "Lanterns Season 01 The Weenie Poster"
       }
     ],
-    "episodes": [
+    "ratings": [
       {
-        "id": "LanternsS1E01",
-        "episodeNumber": 1,
-        "seasonNumber": 1,
-        "title": "Pilot",
-        "airDate": "August 16, 2026",
-        "duration": "55 min",
-        "director": "James Hawes",
-        "writtenBy": "Chris Mundy & Damon Lindelof & Tom King",
-        "thumbnail": "pics/Serieses/Lanterns/S01/1.jpg",
-        "plot": "Hal Jordan is chosen as the successor of Green Lantern Abin Sur. In 2016, Hal and John Stewart have a mentor-mentee relationship and travel to Rushville, Nebraska after John receives a cryptic message from Hal's younger consciousness within his power ring. John helps Sheriff Kerry Kane capture a suspect involved in a mass shooting, while Hal investigates an alien conspiracy. During an interrogation, Hal exposes Sanders as an extraterrestrial who detonates his body. In 2026, John returns to Rushville, where Kerry shows him a dead Hal with his power ring missing.",
-        "filename": "LanternsS1E01.html",
-        "score": 9.5,
-        "ratings": [
-          {
-            "source": "OakShow",
-            "score": "9.5/10",
-            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
-          },
-          {
-            "source": "IMDb",
-            "score": "8.7/10",
-            "url": "https://www.imdb.com/title/tt26546824/",
-            "icon": "pics/RatingSiteLogos/imdb.png"
-          },
-          {
-            "source": "Rotten Tomatoes",
-            "score": "94%",
-            "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e01",
-            "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
-          },
-          {
-            "source": "Metacritic",
-            "score": "82/100",
-            "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-1-pilot/",
-            "icon": "pics/RatingSiteLogos/metacritic.png"
-          }
-        ]
+        "source": "OakShow",
+        "score": "9/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
       },
       {
-        "id": "LanternsS1E02",
-        "episodeNumber": 2,
-        "seasonNumber": 1,
-        "title": "Trust Fall",
-        "airDate": "August 23, 2026",
-        "duration": "54 min",
-        "director": "James Hawes",
-        "writtenBy": "Vanessa Baden Kelly & Chris Mundy",
-        "thumbnail": "pics/Serieses/Lanterns/S01/2.jpg",
-        "plot": "With his ring nearly depleted, Hal sends John back to Coast City to retrieve his lantern while he continues investigating the shooting. Hal uncovers alien-detecting technology and attempts to question William Macon, but is wounded by a sniper. After retrieving the power battery, John is abducted by aliens searching for an artificial Manhunter that decimated their civilization, giving John 48 hours to find it. Hal journeys off-world to interrogate Thaal Sinestro about the Manhunters.",
-        "filename": "LanternsS1E02.html",
-        "score": 9,
-        "ratings": [
-          {
-            "source": "OakShow",
-            "score": "9.0/10",
-            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
-          },
-          {
-            "source": "IMDb",
-            "score": "8.6/10",
-            "url": "https://www.imdb.com/title/tt32752613/",
-            "icon": "pics/RatingSiteLogos/imdb.png"
-          },
-          {
-            "source": "Rotten Tomatoes",
-            "score": "92%",
-            "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e02",
-            "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
-          },
-          {
-            "source": "Metacritic",
-            "score": "79/100",
-            "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-2-trust-fall/",
-            "icon": "pics/RatingSiteLogos/metacritic.png"
-          }
-        ]
+        "source": "IMDb",
+        "score": "8.5/10",
+        "url": "https://www.imdb.com/title/tt26546824/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
       },
       {
-        "id": "LanternsS1E03",
-        "episodeNumber": 3,
-        "seasonNumber": 1,
-        "title": "OutKast",
-        "airDate": "August 30, 2026",
-        "duration": "56 min",
-        "director": "Stephen Williams",
-        "writtenBy": "Vanessa Baden Kelly",
-        "thumbnail": "pics/Serieses/Lanterns/S01/3.jpg",
-        "plot": "In the past, John's father fails a trial to become a Green Lantern. Guardians of the Universe leader Lianna offers recompense by giving John a future opportunity. After serving as a Marine, John is recruited by the Guardians and chosen under Hal's mentorship. Hal welcomes John into the Corps but makes it clear that he will remain in command.",
-        "filename": "LanternsS1E03.html",
-        "score": 8,
-        "ratings": [
-          {
-            "source": "OakShow",
-            "score": "8.0/10",
-            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
-          },
-          {
-            "source": "IMDb",
-            "score": "8.2/10",
-            "url": "https://www.imdb.com/title/tt32752612/",
-            "icon": "pics/RatingSiteLogos/imdb.png"
-          },
-          {
-            "source": "Rotten Tomatoes",
-            "score": "88%",
-            "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e03",
-            "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
-          },
-          {
-            "source": "Metacritic",
-            "score": "75/100",
-            "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-3-outkast/",
-            "icon": "pics/RatingSiteLogos/metacritic.png"
-          }
-        ]
+        "source": "Rotten Tomatoes",
+        "score": "91%",
+        "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e01",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
       },
       {
-        "id": "LanternsS1E04",
-        "episodeNumber": 4,
-        "seasonNumber": 1,
-        "title": "The Weenie",
-        "airDate": "September 06, 2026",
-        "duration": "55 min",
-        "director": "Geeta Vasant Patel",
-        "writtenBy": "Breannah Gibson",
-        "thumbnail": "pics/Serieses/Lanterns/S01/4.jpg",
-        "plot": "Hal questions Sinestro about the Manhunters, while John is asked by the Guardians to move faster with their plan. As the investigation into the Rushville murder deepens, Jordan and Stewart confront darker reckonings and extraterrestrial revelations that challenge their mission.",
-        "filename": "LanternsS1E04.html",
-        "score": 8,
-        "ratings": [
-          {
-            "source": "OakShow",
-            "score": "8.0/10",
-            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
-          },
-          {
-            "source": "IMDb",
-            "score": "8.0/10",
-            "url": "https://www.imdb.com/title/tt32752610/?ref_=ttep_ep_4",
-            "icon": "pics/RatingSiteLogos/imdb.png"
-          },
-          {
-            "source": "Rotten Tomatoes",
-            "score": "86%",
-            "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e04",
-            "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
-          },
-          {
-            "source": "Metacritic",
-            "score": "76/100",
-            "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-4-the-weenie/",
-            "icon": "pics/RatingSiteLogos/metacritic.png"
-          },
-          {
-            "source": "IGN",
-            "score": "8/10",
-            "url": "https://www.ign.com/articles/lanterns-season-1-episode-4-review-recap-the-weenie",
-            "icon": "pics/RatingSiteLogos/ign.png"
-          },
-          {
-            "source": "Den of Geek",
-            "score": "4/5",
-            "url": "https://www.denofgeek.com/tv/lanterns-episode-4-review/",
-            "icon": "pics/RatingSiteLogos/denofgeek.png"
-          }
-        ]
+        "source": "Metacritic",
+        "score": "78/100",
+        "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-1-pilot/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
       }
     ],
-    "seasonsData": [
+    "cast": [],
+    "bookings": [],
+    "watchOnline": [
       {
-        "seasonNumber": 1,
-        "seasonId": "LanternsS1",
-        "title": "Lanterns Season 01",
-        "year": "2026",
-        "releaseDate": "August 16, 2026",
-        "filename": "LanternsS1.html",
-        "poster": "pics/Serieses/Lanterns/S01/1.jpg",
-        "banner": "pics/Serieses/Lanterns/1.jpg",
-        "ratings": [
-          {
-            "source": "OakShow",
-            "score": "9.0/10",
-            "url": "",
-            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
-          },
-          {
-            "source": "IMDb",
-            "score": "8.5/10",
-            "url": "https://www.imdb.com/title/tt26546824/",
-            "icon": "pics/RatingSiteLogos/imdb.png"
-          },
-          {
-            "source": "Rotten Tomatoes",
-            "score": "91%",
-            "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e01",
-            "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
-          },
-          {
-            "source": "Metacritic",
-            "score": "78/100",
-            "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-1-pilot/",
-            "icon": "pics/RatingSiteLogos/metacritic.png"
-          }
-        ],
-        "watchOnline": [
-          {
-            "provider": "JioCinema / Hotstar",
-            "platform": "JioCinema",
-            "url": "https://www.hotstar.com/in/shows/lanterns/1271680756?utm_source=gwa",
-            "icon": "pics/WatchOnline/hotstar.png",
-            "language": "English",
-            "label": "Stream on JioCinema / Hotstar"
-          },
-          {
-            "provider": "HBO Max",
-            "platform": "HBO Max",
-            "url": "https://www.hbomax.com/show/8c11d041-6b71-4e54-8369-fdb310e063b8",
-            "icon": "pics/WatchOnline/hbo-max.png",
-            "language": "English",
-            "label": "Watch on Max"
-          },
-          {
-            "provider": "Apple TV",
-            "platform": "Apple TV",
-            "url": "https://tv.apple.com/us/show/lanterns/umc.cmc.13oon2dqireb1lhg9h97cudjj",
-            "icon": "pics/WatchOnline/apple-tv.png",
-            "language": "English",
-            "label": "Watch on Apple TV"
-          }
-        ],
-        "trailer": "https://www.youtube.com/watch?v=EDXHzJDK8wA",
-        "episodes": [
-          {
-            "id": "LanternsS1E01",
-            "episodeNumber": 1,
-            "seasonNumber": 1,
-            "title": "Pilot",
-            "airDate": "August 16, 2026",
-            "duration": "55 min",
-            "director": "James Hawes",
-            "writtenBy": "Chris Mundy & Damon Lindelof & Tom King",
-            "thumbnail": "pics/Serieses/Lanterns/S01/1.jpg",
-            "plot": "Hal Jordan is chosen as the successor of Green Lantern Abin Sur. In 2016, Hal and John Stewart have a mentor-mentee relationship and travel to Rushville, Nebraska after John receives a cryptic message from Hal's younger consciousness within his power ring. John helps Sheriff Kerry Kane capture a suspect involved in a mass shooting, while Hal investigates an alien conspiracy. During an interrogation, Hal exposes Sanders as an extraterrestrial who detonates his body. In 2026, John returns to Rushville, where Kerry shows him a dead Hal with his power ring missing.",
-            "filename": "LanternsS1E01.html",
-            "score": 9.5,
-            "ratings": [
-              {
-                "source": "OakShow",
-                "score": "9.5/10",
-                "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
-              },
-              {
-                "source": "IMDb",
-                "score": "8.7/10",
-                "url": "https://www.imdb.com/title/tt26546824/",
-                "icon": "pics/RatingSiteLogos/imdb.png"
-              },
-              {
-                "source": "Rotten Tomatoes",
-                "score": "94%",
-                "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e01",
-                "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
-              },
-              {
-                "source": "Metacritic",
-                "score": "82/100",
-                "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-1-pilot/",
-                "icon": "pics/RatingSiteLogos/metacritic.png"
-              }
-            ]
-          },
-          {
-            "id": "LanternsS1E02",
-            "episodeNumber": 2,
-            "seasonNumber": 1,
-            "title": "Trust Fall",
-            "airDate": "August 23, 2026",
-            "duration": "54 min",
-            "director": "James Hawes",
-            "writtenBy": "Vanessa Baden Kelly & Chris Mundy",
-            "thumbnail": "pics/Serieses/Lanterns/S01/2.jpg",
-            "plot": "With his ring nearly depleted, Hal sends John back to Coast City to retrieve his lantern while he continues investigating the shooting. Hal uncovers alien-detecting technology and attempts to question William Macon, but is wounded by a sniper. After retrieving the power battery, John is abducted by aliens searching for an artificial Manhunter that decimated their civilization, giving John 48 hours to find it. Hal journeys off-world to interrogate Thaal Sinestro about the Manhunters.",
-            "filename": "LanternsS1E02.html",
-            "score": 9,
-            "ratings": [
-              {
-                "source": "OakShow",
-                "score": "9.0/10",
-                "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
-              },
-              {
-                "source": "IMDb",
-                "score": "8.6/10",
-                "url": "https://www.imdb.com/title/tt32752613/",
-                "icon": "pics/RatingSiteLogos/imdb.png"
-              },
-              {
-                "source": "Rotten Tomatoes",
-                "score": "92%",
-                "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e02",
-                "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
-              },
-              {
-                "source": "Metacritic",
-                "score": "79/100",
-                "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-2-trust-fall/",
-                "icon": "pics/RatingSiteLogos/metacritic.png"
-              }
-            ]
-          },
-          {
-            "id": "LanternsS1E03",
-            "episodeNumber": 3,
-            "seasonNumber": 1,
-            "title": "OutKast",
-            "airDate": "August 30, 2026",
-            "duration": "56 min",
-            "director": "Stephen Williams",
-            "writtenBy": "Vanessa Baden Kelly",
-            "thumbnail": "pics/Serieses/Lanterns/S01/3.jpg",
-            "plot": "In the past, John's father fails a trial to become a Green Lantern. Guardians of the Universe leader Lianna offers recompense by giving John a future opportunity. After serving as a Marine, John is recruited by the Guardians and chosen under Hal's mentorship. Hal welcomes John into the Corps but makes it clear that he will remain in command.",
-            "filename": "LanternsS1E03.html",
-            "score": 8,
-            "ratings": [
-              {
-                "source": "OakShow",
-                "score": "8.0/10",
-                "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
-              },
-              {
-                "source": "IMDb",
-                "score": "8.2/10",
-                "url": "https://www.imdb.com/title/tt32752612/",
-                "icon": "pics/RatingSiteLogos/imdb.png"
-              },
-              {
-                "source": "Rotten Tomatoes",
-                "score": "88%",
-                "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e03",
-                "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
-              },
-              {
-                "source": "Metacritic",
-                "score": "75/100",
-                "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-3-outkast/",
-                "icon": "pics/RatingSiteLogos/metacritic.png"
-              }
-            ]
-          },
-          {
-            "id": "LanternsS1E04",
-            "episodeNumber": 4,
-            "seasonNumber": 1,
-            "title": "The Weenie",
-            "airDate": "September 06, 2026",
-            "duration": "55 min",
-            "director": "Geeta Vasant Patel",
-            "writtenBy": "Breannah Gibson",
-            "thumbnail": "pics/Serieses/Lanterns/S01/4.jpg",
-            "plot": "Hal questions Sinestro about the Manhunters, while John is asked by the Guardians to move faster with their plan. As the investigation into the Rushville murder deepens, Jordan and Stewart confront darker reckonings and extraterrestrial revelations that challenge their mission.",
-            "filename": "LanternsS1E04.html",
-            "score": 8,
-            "ratings": [
-              {
-                "source": "OakShow",
-                "score": "8.0/10",
-                "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
-              },
-              {
-                "source": "IMDb",
-                "score": "8.0/10",
-                "url": "https://www.imdb.com/title/tt32752610/?ref_=ttep_ep_4",
-                "icon": "pics/RatingSiteLogos/imdb.png"
-              },
-              {
-                "source": "Rotten Tomatoes",
-                "score": "86%",
-                "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e04",
-                "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
-              },
-              {
-                "source": "Metacritic",
-                "score": "76/100",
-                "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-4-the-weenie/",
-                "icon": "pics/RatingSiteLogos/metacritic.png"
-              },
-              {
-                "source": "IGN",
-                "score": "8/10",
-                "url": "https://www.ign.com/articles/lanterns-season-1-episode-4-review-recap-the-weenie",
-                "icon": "pics/RatingSiteLogos/ign.png"
-              },
-              {
-                "source": "Den of Geek",
-                "score": "4/5",
-                "url": "https://www.denofgeek.com/tv/lanterns-episode-4-review/",
-                "icon": "pics/RatingSiteLogos/denofgeek.png"
-              }
-            ]
-          }
-        ]
+        "provider": "Disney+ Hotstar",
+        "url": "https://www.hotstar.com/in/shows/lanterns/1271680756?utm_source=gwa",
+        "icon": "pics/WatchOnline/hotstar.png",
+        "language": "",
+        "label": "Watch Now (JioCinema)"
       }
-    ]
+    ],
+    "music": [],
+    "officialWebsite": null,
+    "socials": [],
+    "similar": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=EDXHzJDK8wA",
+        "youtubeId": "EDXHzJDK8wA",
+        "title": "Lanterns (TV series) Season 01"
+      }
+    ],
+    "articles": [],
+    "filePath": "E:/OakShow/LanternsS1.html"
   },
   {
     "id": "Scam1992S1",
@@ -4356,32 +3995,9 @@
         "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
       }
     ],
-    "cast": [
-      {
-        "actor": "Ayesha Kapoor",
-        "role": "Cast",
-        "description": ""
-      }
-    ],
+    "cast": [],
     "bookings": [],
-    "watchOnline": [
-      {
-        "provider": "Reddit",
-        "platform": "Reddit",
-        "url": "https://www.reddit.com/r/actresslovehd/comments/1i83aq0/my_cousin_sister_web_series_staring_ayesha_kapoor/",
-        "icon": "pics/WatchOnline/reddit.png",
-        "language": "Hindi",
-        "label": "Watch Episode 1 on Reddit"
-      },
-      {
-        "provider": "Reddit",
-        "platform": "Reddit",
-        "url": "https://www.reddit.com/r/actresslovehd/comments/1i83fph/my_cousin_sister_web_series_staring_ayesha_kapoor/",
-        "icon": "pics/WatchOnline/reddit.png",
-        "language": "Hindi",
-        "label": "Watch Episode 2 on Reddit"
-      }
-    ],
+    "watchOnline": [],
     "music": [],
     "officialWebsite": null,
     "socials": [
@@ -9370,16 +8986,7 @@
       }
     ],
     "bookings": [],
-    "watchOnline": [
-      {
-        "provider": "Reddit",
-        "platform": "Reddit",
-        "url": "https://www.reddit.com/r/IndianCelebScenes/comments/lt3c46/jaskiran_kaur_from_the_yoga_experience/",
-        "icon": "pics/WatchOnline/reddit.png",
-        "language": "Hindi",
-        "label": "Watch on Reddit (Jaskiran Kaur)"
-      }
-    ],
+    "watchOnline": [],
     "music": [],
     "officialWebsite": null,
     "socials": [
