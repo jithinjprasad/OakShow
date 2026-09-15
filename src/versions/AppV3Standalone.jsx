@@ -184,17 +184,22 @@ export default function App() {
     setCurrentUser(null);
   };
 
-  // Theme State: 'light' by default, switchable to 'dark'
+  // Theme State: defaults to 'dark' on mobile, 'light' on desktop, switchable anytime
   const [theme, setTheme] = useState(() => {
     try {
-      if (!localStorage.getItem('oakshow_theme_v2')) {
-        localStorage.setItem('oakshow_theme_v2', 'light');
-        localStorage.setItem('oakshow_theme', 'light');
-        return 'light';
+      if (typeof document !== 'undefined') {
+        const docTheme = document.documentElement.getAttribute('data-theme');
+        if (docTheme === 'dark' || docTheme === 'light') return docTheme;
       }
-      const saved = localStorage.getItem('oakshow_theme_v2') || localStorage.getItem('oakshow_theme');
+      const isMobile = typeof window !== 'undefined' && (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 768);
+      if (!localStorage.getItem('oakshow_theme_v3')) {
+        const initial = isMobile ? 'dark' : 'light';
+        localStorage.setItem('oakshow_theme_v3', initial);
+        return initial;
+      }
+      const saved = localStorage.getItem('oakshow_theme_v3') || localStorage.getItem('oakshow_theme_v2') || localStorage.getItem('oakshow_theme');
       if (saved === 'dark' || saved === 'light') return saved;
-      return 'light';
+      return isMobile ? 'dark' : 'light';
     } catch {
       return 'light';
     }
@@ -204,6 +209,7 @@ export default function App() {
     try {
       document.documentElement.setAttribute('data-theme', theme);
       document.documentElement.style.colorScheme = theme;
+      localStorage.setItem('oakshow_theme_v3', theme);
       localStorage.setItem('oakshow_theme_v2', theme);
       localStorage.setItem('oakshow_theme', theme);
       const themeColor = theme === 'dark' ? '#030813' : '#ffffff';

@@ -55,7 +55,8 @@ export default function Navbar({
         const docTheme = document.documentElement.getAttribute('data-theme');
         if (docTheme) return docTheme;
       }
-      return localStorage.getItem('oakshow_theme_v2') || localStorage.getItem('oakshow_theme') || 'light';
+      const isMobile = typeof window !== 'undefined' && (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 768);
+      return localStorage.getItem('oakshow_theme_v3') || localStorage.getItem('oakshow_theme_v2') || localStorage.getItem('oakshow_theme') || (isMobile ? 'dark' : 'light');
     } catch {
       return 'light';
     }
@@ -82,6 +83,7 @@ export default function Navbar({
       const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
       setCurrentTheme(nextTheme);
       try {
+        localStorage.setItem('oakshow_theme_v3', nextTheme);
         localStorage.setItem('oakshow_theme_v2', nextTheme);
         localStorage.setItem('oakshow_theme', nextTheme);
         document.documentElement.setAttribute('data-theme', nextTheme);
