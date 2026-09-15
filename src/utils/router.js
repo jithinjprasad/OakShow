@@ -125,8 +125,8 @@ export function resolveSlugToRoute(rawSlug, rawPath = '') {
     return { type: 'gallery', id: clean, filename: `${clean}.html`, raw: rawPath };
   }
 
-  // DBS Episodes
-  if (lower.startsWith('dbsepisode')) {
+  // Series Episodes (DBS, Lanterns, Stargirl, etc.)
+  if (lower.startsWith('dbsepisode') || /[sS]\d+[eE]\d+/i.test(clean) || (lower.includes('episode') && !lower.includes('tvseries') && !lower.includes('series'))) {
     return { type: 'episode', id: clean, raw: rawPath };
   }
 

@@ -40,8 +40,40 @@ import {
 } from '../utils/firebase';
 
 // Data imports
-import moviesData from '../../data/movies.json';
-import seriesData from '../../data/series.json';
+import rawMoviesData from '../../data/movies.json';
+import rawSeriesData from '../../data/series.json';
+
+// Clean, strictly validated movie list guaranteeing NO series, NO episodes, and NO duplicates appear in movie spaces
+const moviesData = (() => {
+  const seen = new Set();
+  const list = [];
+  for (const m of rawMoviesData) {
+    if (!m) continue;
+    const id = (m.id || '').toLowerCase();
+    const type = (m.type || '').toLowerCase();
+    if (type === 'series' || type === 'episode' || m.isEpisode) continue;
+    if (id === 'lanterns' || id.startsWith('lanterns')) continue;
+    if (/[sS]\d+[eE]\d+/.test(id) || /dbsepisode/i.test(id) || /\bepisode\s*\d+/i.test(id)) continue;
+    if (seen.has(id)) continue;
+    seen.add(id);
+    list.push(m);
+  }
+  return list;
+})();
+
+// Deduplicate seriesData so no duplicate series ever appear in series space
+const seriesData = (() => {
+  const seen = new Set();
+  const list = [];
+  for (const s of rawSeriesData) {
+    if (!s) continue;
+    const id = (s.id || '').toLowerCase();
+    if (seen.has(id)) continue;
+    seen.add(id);
+    list.push(s);
+  }
+  return list;
+})();
 import releasesData from '../../data/releases.json';
 import reviewsData from '../../data/reviews.json';
 import criticsData from '../../data/critics.json';
@@ -343,6 +375,8 @@ export default function App() {
     setBookmarks([]);
   };
 
+  const cleanMoviesData = moviesData;
+
   // Extract all distinct genres, languages, and years based on active category
   const { allGenres, allLanguages, allYears, allPlatforms } = useMemo(() => {
     const genreSet = new Set();
@@ -350,11 +384,11 @@ export default function App() {
     const yearSet = new Set();
     const platformSet = new Set();
 
-    let pool = moviesData;
-    if (route.type === 'indian') pool = moviesData.filter(m => m.category === 'Indian');
-    else if (route.type === 'hollywood') pool = moviesData.filter(m => m.category === 'Hollywood');
-    else if (route.type === 'international') pool = moviesData.filter(m => m.category === 'International');
-    else if (route.type === 'ott') pool = moviesData.filter(m => m.watchOnline && Array.isArray(m.watchOnline) && m.watchOnline.some(w => w.url && w.url.trim() && w.url !== '#'));
+    let pool = cleanMoviesData;
+    if (route.type === 'indian') pool = cleanMoviesData.filter(m => m.category === 'Indian');
+    else if (route.type === 'hollywood') pool = cleanMoviesData.filter(m => m.category === 'Hollywood');
+    else if (route.type === 'international') pool = cleanMoviesData.filter(m => m.category === 'International');
+    else if (route.type === 'ott') pool = cleanMoviesData.filter(m => m.watchOnline && Array.isArray(m.watchOnline) && m.watchOnline.some(w => w.url && w.url.trim() && w.url !== '#'));
 
     pool.forEach(m => {
       if (m.genre) m.genre.split(/[\/, ]+/).forEach(g => { if (g.trim() && g.length > 2) genreSet.add(g.trim()); });
@@ -375,11 +409,11 @@ export default function App() {
       allYears: ['All', ...Array.from(yearSet).sort((a, b) => b.localeCompare(a))],
       allPlatforms: ['All', ...Array.from(platformSet).sort()]
     };
-  }, [route.type]);
+  }, [route.type, cleanMoviesData]);
 
   // Main movie catalog filtering
   const filteredMovies = useMemo(() => {
-    let list = [...moviesData];
+    let list = [...cleanMoviesData];
 
     // Industry / Tab Filtering
     if (route.type === 'indian') {
@@ -472,13 +506,13 @@ export default function App() {
       return 0;
     };
 
-    return [...moviesData].sort((a, b) => {
+    return [...cleanMoviesData].sort((a, b) => {
       const timeA = parseDate(a);
       const timeB = parseDate(b);
       if (timeB !== timeA) return timeB - timeA;
       return (a.title || '').localeCompare(b.title || '');
     });
-  }, []);
+  }, [cleanMoviesData]);
 
   // Movies streaming on verified OTT platforms arranged with newest release dates first
   const ottMovies = useMemo(() => {
@@ -498,7 +532,7 @@ export default function App() {
       return 0;
     };
 
-    return moviesData
+    return cleanMoviesData
       .filter(m => m.watchOnline && Array.isArray(m.watchOnline) && m.watchOnline.some(w => w.url && w.url.trim() && w.url !== '#'))
       .sort((a, b) => {
         const timeA = parseDate(a);
@@ -506,7 +540,7 @@ export default function App() {
         if (timeB !== timeA) return timeB - timeA;
         return (a.title || '').localeCompare(b.title || '');
       });
-  }, []);
+  }, [cleanMoviesData]);
 
   // Handle item select from SearchModal
   const handleSelectItem = (item) => {
@@ -1102,14 +1136,14 @@ export default function App() {
           openSearch={() => setSearchOpen(true)}
           bookmarkCount={bookmarks.length}
           onOpenBookmarks={() => setBookmarksDrawerOpen(true)}
-          totalMoviesCount={moviesData.length}
+          totalMoviesCount={cleanMoviesData.length}
           currentUser={currentUser}
           onOpenAuth={handleOpenAuth}
           onLogout={handleLogout}
         />
         <MovieDetailPage
           movie={targetMovie}
-          allMovies={moviesData}
+          allMovies={cleanMoviesData}
           onNavigate={navigate}
           isBookmarked={bookmarks.some(b => b.id === targetMovie.id)}
           onToggleBookmark={toggleBookmark}
@@ -1832,7 +1866,7 @@ export default function App() {
                     <TrendingUp size={22} className="text-red" />
                     <h2>Latest & Highest Rated Blockbusters</h2>
                   </div>
-                  <span className="section-badge">{moviesData.length}+ Available Titles</span>
+                  <span className="section-badge">{cleanMoviesData.length}+ Available Titles</span>
                 </div>
 
                 <div className="grid-movies">
@@ -1890,7 +1924,7 @@ export default function App() {
                 </div>
 
                 <div className="grid-movies">
-                  {moviesData
+                  {cleanMoviesData
                     .filter(m => m.category === 'Indian')
                     .slice(0, 12)
                     .map((movie) => (
@@ -1920,7 +1954,7 @@ export default function App() {
                 </div>
 
                 <div className="grid-movies">
-                  {moviesData
+                  {cleanMoviesData
                     .filter(m => m.category === 'Hollywood')
                     .slice(0, 12)
                     .map((movie) => (
@@ -1950,7 +1984,7 @@ export default function App() {
                 </div>
 
                 <div className="grid-movies">
-                  {moviesData
+                  {cleanMoviesData
                     .filter(m => m.category === 'International')
                     .slice(0, 12)
                     .map((movie) => (

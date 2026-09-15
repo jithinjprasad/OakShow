@@ -724,7 +724,9 @@ const KNOWN_SERIES_SLUGS = new Set([
   'stargirls1', 'wannahaveagoodtime', 'wannahaveagoodtimes2', 'soulmate', 
   'officescandal', 'fuhsefantasy', 'mycousinsister', 'thebutterflystroke', 
   'theyogaexperience', 'flip', 'arrow', 'peakyblinders', 'breakingbad', 'dark',
-  'squidgame', 'narcos', 'loki', 'wandavision', 'strangerthings'
+  'squidgame', 'narcos', 'loki', 'wandavision', 'strangerthings',
+  'lanterns', 'lanternss1', 'lanternss1e01', 'lanternss1e02', 'lanternss1e03', 'lanternss1e04',
+  'stargirls1e01', 'stargirls1e02', 'stargirls1e03'
 ]);
 
 const ROOT_HUB_PAGES = new Set([
@@ -742,6 +744,7 @@ function isHubOrTrailerPage(cleanId) {
 
 function detectType(filename, title, genre, metaTitle, filePath) {
   const cleanId = path.basename(filename, '.html').toLowerCase();
+  if (cleanId === 'lanterns' || cleanId.startsWith('lanterns')) return 'series';
   if (KNOWN_SERIES_SLUGS.has(cleanId)) return 'series';
 
   const text = `${filename} ${title} ${genre} ${metaTitle} ${filePath}`.toLowerCase();
@@ -752,6 +755,7 @@ function detectType(filename, title, genre, metaTitle, filePath) {
       text.includes('tv show') || 
       /\bseason\s*\d+\b/i.test(text) || 
       /\bepisode\s*\d+\b/i.test(text) ||
+      /[sS]\d+[eE]\d+/i.test(filename) ||
       filePath.includes('/dbs/') || 
       filePath.includes('\\dbs\\')) {
     return 'series';
@@ -1191,6 +1195,61 @@ function processEpisodeFile($, filename, filePath, meta) {
   };
 }
 
+function processGeneralEpisodeFile($, filename, filePath, meta) {
+  const sMatch = filename.match(/^([A-Za-z0-9]+?)[sS](\d+)[eE](\d+)\.html$/i);
+  let parentSeriesKey = '';
+  let seasonNumber = 1;
+  let episodeNumber = 1;
+
+  if (sMatch) {
+    parentSeriesKey = sMatch[1].toLowerCase();
+    seasonNumber = parseInt(sMatch[2], 10);
+    episodeNumber = parseInt(sMatch[3], 10);
+  }
+
+  let rawTitle = cleanText($('h4').first().text()) || cleanText($('title').text());
+  let epTitle = rawTitle;
+  if (epTitle.includes(':')) {
+    epTitle = epTitle.substring(epTitle.indexOf(':') + 1).trim();
+  } else if (epTitle.includes('|')) {
+    epTitle = epTitle.split('|')[0].trim();
+  }
+  epTitle = epTitle.replace(/^.*?s\d+e\d+\s*[:-]?\s*/i, '').replace(/—\s*OakShow.*$/i, '').trim() || `Episode ${episodeNumber}`;
+
+  let plot = '';
+  $('details').each((_, el) => {
+    const sum = cleanText($(el).find('summary').text());
+    if (/Plot|Synopsis/i.test(sum)) {
+      plot = cleanText($(el).find('p').text());
+    }
+  });
+  if (!plot) {
+    plot = meta.description || cleanText($('.buy-sin p, .buy-sin-single p').first().text()) || '';
+  }
+
+  const ratings = extractRatings($);
+  const watchOnline = extractWatchOnlineLinks($);
+
+  const thumbRel = meta.ogImage || normalizePath($('.immediate img, .buy-sin-single img').first().attr('src')) || '';
+
+  const airDate = cleanText($('p:contains("Date:"), p:contains("Starting Date:")').text()).replace(/^.*Date\s*:\s*/i, '').trim() || meta.datePublished || '';
+
+  return {
+    id: path.basename(filename, '.html'),
+    parentSeriesKey,
+    seasonNumber,
+    episodeNumber,
+    title: epTitle,
+    fullTitle: rawTitle,
+    airDate,
+    plot,
+    ratings,
+    watchOnline,
+    thumbnail: thumbRel,
+    filename
+  };
+}
+
 // -------------------------------------------------------------
 // MAIN EXTRACTION LOOP
 // -------------------------------------------------------------
@@ -1202,7 +1261,18 @@ async function runExtraction() {
     const entries = fs.readdirSync(dir, { withFileTypes: true });
     for (const ent of entries) {
       const full = path.join(dir, ent.name);
-      if (ent.isDirectory() && !ent.name.startsWith('.') && ent.name !== 'node_modules' && ent.name !== 'dist') {
+      if (
+        ent.isDirectory() && 
+        !ent.name.startsWith('.') && 
+        ent.name !== 'node_modules' && 
+        ent.name !== 'dist' && 
+        ent.name !== 'oakshow-prod-clean' &&
+        ent.name !== 'pics' &&
+        ent.name !== 'Videos' &&
+        ent.name !== 'fonts' &&
+        ent.name !== 'img' &&
+        ent.name !== 'images'
+      ) {
         scanDir(full);
       } else if (ent.isFile() && ent.name.endsWith('.html') && ent.name.toLowerCase() !== 'index.html') {
         allHtmlFiles.push(full);
@@ -1222,6 +1292,7 @@ async function runExtraction() {
   const sports = [];
   const news = [];
   const dbsEpisodes = [];
+  const generalEpisodes = [];
   const standaloneSeasons = [];
 
   for (const filePath of allHtmlFiles) {
@@ -1238,6 +1309,16 @@ async function runExtraction() {
           dbsEpisodes.push(epData);
           continue;
         }
+      }
+
+      // Check General Series Episode Files (e.g. LanternsS1E01.html, StargirlS1E01.html)
+      const isGeneralEp = /^[a-z0-9]+?[sS]\d+[eE]\d+\.html$/i.test(filename) || 
+                          $('meta[property="og:type"]').attr('content') === 'video.episode' ||
+                          (/s\d+e\d+/i.test(filename) && !filename.toLowerCase().includes('movie'));
+      if (isGeneralEp) {
+        const epData = processGeneralEpisodeFile($, filename, filePath, meta);
+        generalEpisodes.push(epData);
+        continue;
       }
 
       // Check Release Calendars
@@ -1381,6 +1462,46 @@ async function runExtraction() {
     series.push(dbsParent);
   }
 
+  // Attach general series episodes (e.g., Lanterns, Stargirl) to their parent series
+  for (const ep of generalEpisodes) {
+    let parentKey = (ep.parentSeriesKey || '').toLowerCase();
+    let parentSeries = series.find(s => s.id.toLowerCase() === parentKey || s.slug?.toLowerCase() === parentKey);
+    if (!parentSeries && parentKey) {
+      parentSeries = series.find(s => s.id.toLowerCase().startsWith(parentKey) || parentKey.startsWith(s.id.toLowerCase()));
+    }
+
+    if (parentSeries) {
+      if (!parentSeries.episodes) parentSeries.episodes = [];
+      if (!parentSeries.episodes.some(e => e.id.toLowerCase() === ep.id.toLowerCase())) {
+        parentSeries.episodes.push(ep);
+      }
+      parentSeries.episodes.sort((a, b) => {
+        const sA = a.seasonNumber || 1;
+        const sB = b.seasonNumber || 1;
+        if (sA !== sB) return sA - sB;
+        return (a.episodeNumber || 1) - (b.episodeNumber || 1);
+      });
+      parentSeries.availableEpisodesCount = parentSeries.episodes.length;
+
+      // Also attach to corresponding season inside seasonsData if present
+      if (parentSeries.seasonsData && Array.isArray(parentSeries.seasonsData)) {
+        const seasonNum = ep.seasonNumber || 1;
+        let sData = parentSeries.seasonsData.find(sd => 
+          sd.seasonNumber === seasonNum || 
+          sd.seasonId?.toLowerCase().includes(`s${seasonNum}`) || 
+          sd.seasonId?.toLowerCase().includes(`season${seasonNum}`)
+        );
+        if (sData) {
+          if (!sData.episodes) sData.episodes = [];
+          if (!sData.episodes.some(e => e.id.toLowerCase() === ep.id.toLowerCase())) {
+            sData.episodes.push(ep);
+          }
+          sData.episodes.sort((a, b) => (a.episodeNumber || 1) - (b.episodeNumber || 1));
+        }
+      }
+    }
+  }
+
   // Deduplicate and consolidate Series so individual season/episode child files do not pollute the main catalog
   const parentAliases = {
     'theboyss1': 'theboys',
@@ -1411,7 +1532,8 @@ async function runExtraction() {
     'patipatniaurwohseriess1': 'patipatniaurwohseries',
     'mugilans1': 'mugilan',
     'stargirls1': 'stargirl',
-    '24season2': '24'
+    '24season2': '24',
+    'lanternss1': 'lanterns'
   };
 
   // Filter series to only retain top-level main series
@@ -1422,7 +1544,7 @@ async function runExtraction() {
     const sid = s.id.toLowerCase();
     
     // Skip if it's an episode file
-    if (sid.startsWith('dbsepisode') || s.title.toLowerCase().includes('|episode')) {
+    if (sid.startsWith('dbsepisode') || s.title.toLowerCase().includes('|episode') || /[sS]\d+[eE]\d+/.test(sid)) {
       continue;
     }
 
@@ -1438,7 +1560,8 @@ async function runExtraction() {
           title: s.title,
           year: s.year,
           ratings: s.ratings,
-          filename: s.filename
+          filename: s.filename,
+          episodes: s.episodes || []
         });
       }
       continue;
@@ -1449,6 +1572,20 @@ async function runExtraction() {
     filteredSeries.push(s);
   }
 
+  // Deduplicate movies by ID
+  const uniqueMovies = [];
+  const seenMovieIds = new Set();
+  for (const m of movies) {
+    const mid = (m.id || '').toLowerCase();
+    if (!mid || seenMovieIds.has(mid)) continue;
+    // Strictly exclude any accidental series or episode from movies array
+    if (m.type === 'series' || m.type === 'episode' || /[sS]\d+[eE]\d+/.test(mid) || mid.startsWith('lanterns')) {
+      continue;
+    }
+    seenMovieIds.add(mid);
+    uniqueMovies.push(m);
+  }
+
   // Sort Movies and Series by Recency (year desc) then Rating Score (score desc)
   const sortFn = (a, b) => {
     const yrA = parseInt(a.year, 10) || 0;
@@ -1457,20 +1594,62 @@ async function runExtraction() {
     return (b.score || 0) - (a.score || 0);
   };
 
-  movies.sort(sortFn);
+  uniqueMovies.sort(sortFn);
   filteredSeries.sort(sortFn);
 
   // Build Search Index
   const searchIndex = [];
-  movies.forEach(m => searchIndex.push({ id: m.id, title: m.title, type: 'movie', category: m.category, genre: m.genre, language: m.language, year: m.year, poster: m.poster }));
+  uniqueMovies.forEach(m => searchIndex.push({ id: m.id, title: m.title, type: 'movie', category: m.category, genre: m.genre, language: m.language, year: m.year, poster: m.poster }));
   filteredSeries.forEach(s => searchIndex.push({ id: s.id, title: s.title, type: 'series', category: s.category, genre: s.genre, language: s.language, year: s.year, poster: s.poster, episodesCount: s.episodes?.length || 0 }));
   games.forEach(g => searchIndex.push({ id: g.moreLink ? g.moreLink.replace('.html', '') : g.title, title: g.title, type: 'game', genre: g.genre, poster: g.poster }));
   books.forEach(b => searchIndex.push({ id: b.moreLink ? b.moreLink.replace('.html', '') : b.title, title: b.title, type: 'book', genre: b.genre, author: b.author, poster: b.cover }));
   reviews.forEach(r => searchIndex.push({ id: r.link, title: r.title, type: 'review', author: r.author, rating: r.rating, poster: r.banner }));
   sports.forEach(sp => searchIndex.push({ id: sp.id, title: sp.title, type: 'sports', poster: sp.meta?.ogImage }));
 
+  // Index individual episodes so people can search for episodes directly
+  dbsEpisodes.forEach(ep => {
+    searchIndex.push({
+      id: ep.id,
+      title: `Dragon Ball Super Ep ${ep.episodeNumber}: ${ep.title}`,
+      type: 'episode',
+      seriesId: 'DragonBallSuperTvSeries',
+      category: 'International',
+      genre: 'Anime, Action',
+      language: 'Japanese, English',
+      poster: ep.thumbnail || 'pics/Serieses/DragonBallSuper/2.png',
+      filename: ep.filename
+    });
+  });
+
+  generalEpisodes.forEach(ep => {
+    const parent = series.find(s => s.id.toLowerCase() === (ep.parentSeriesKey || '').toLowerCase() || (ep.parentSeriesKey && s.id.toLowerCase().startsWith(ep.parentSeriesKey)));
+    const parentTitle = parent ? parent.title : ep.parentSeriesKey;
+    searchIndex.push({
+      id: ep.id,
+      title: `${parentTitle} S${ep.seasonNumber}E${ep.episodeNumber < 10 ? '0' + ep.episodeNumber : ep.episodeNumber}: ${ep.title}`,
+      type: 'episode',
+      seriesId: parent ? parent.id : ep.parentSeriesKey,
+      category: parent ? parent.category : 'Hollywood',
+      genre: parent ? parent.genre : 'Series',
+      language: parent ? parent.language : 'English',
+      year: parent ? parent.year : '',
+      poster: ep.thumbnail || (parent ? parent.poster : ''),
+      filename: ep.filename
+    });
+  });
+
+  // Deduplicate search index items
+  const uniqueSearchIndex = [];
+  const seenSearchKeys = new Set();
+  for (const item of searchIndex) {
+    const key = `${item.type || 'item'}:${(item.id || item.title || '').toLowerCase()}`;
+    if (seenSearchKeys.has(key)) continue;
+    seenSearchKeys.add(key);
+    uniqueSearchIndex.push(item);
+  }
+
   // Save extracted files
-  fs.writeFileSync(path.join(DATA_DIR, 'movies.json'), JSON.stringify(movies, null, 2), 'utf8');
+  fs.writeFileSync(path.join(DATA_DIR, 'movies.json'), JSON.stringify(uniqueMovies, null, 2), 'utf8');
   fs.writeFileSync(path.join(DATA_DIR, 'series.json'), JSON.stringify(filteredSeries, null, 2), 'utf8');
   fs.writeFileSync(path.join(DATA_DIR, 'releases.json'), JSON.stringify(releases, null, 2), 'utf8');
   fs.writeFileSync(path.join(DATA_DIR, 'reviews.json'), JSON.stringify(reviews, null, 2), 'utf8');
@@ -1478,17 +1657,17 @@ async function runExtraction() {
   fs.writeFileSync(path.join(DATA_DIR, 'books.json'), JSON.stringify(books, null, 2), 'utf8');
   fs.writeFileSync(path.join(DATA_DIR, 'sports.json'), JSON.stringify(sports, null, 2), 'utf8');
   fs.writeFileSync(path.join(DATA_DIR, 'news.json'), JSON.stringify(news, null, 2), 'utf8');
-  fs.writeFileSync(path.join(DATA_DIR, 'search_index.json'), JSON.stringify(searchIndex, null, 2), 'utf8');
+  fs.writeFileSync(path.join(DATA_DIR, 'search_index.json'), JSON.stringify(uniqueSearchIndex, null, 2), 'utf8');
 
   console.log(`Extraction completed:`);
-  console.log(`- Movies: ${movies.length}`);
+  console.log(`- Movies: ${uniqueMovies.length}`);
   console.log(`- TV Series: ${filteredSeries.length}`);
   console.log(`- Releases Calendars: ${releases.length}`);
   console.log(`- Critic Reviews: ${reviews.length}`);
   console.log(`- Games: ${games.length}`);
   console.log(`- Books: ${books.length}`);
   console.log(`- Sports: ${sports.length}`);
-  console.log(`- Search Index Items: ${searchIndex.length}`);
+  console.log(`- Search Index Items: ${uniqueSearchIndex.length}`);
 }
 
 runExtraction();

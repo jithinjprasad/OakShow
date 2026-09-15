@@ -151,96 +151,245 @@
       }
     ],
     "articles": [],
-    "filePath": "E:/OakShow/Lanterns.html"
-  },
-  {
-    "id": "LanternsS1",
-    "slug": "lanternss1",
-    "type": "series",
-    "category": "Hollywood",
-    "score": 9,
-    "filename": "LanternsS1.html",
-    "title": "Lanterns (TV series) Season 01",
-    "metaTitle": "Lanterns Season 1 All Episode Ratings, Reviews and Watch Online — OakShow",
-    "description": "Lanterns Season 1 follows Hal Jordan and John Stewart as they investigate an extraterrestrial incident in Rushville, Nebraska.",
-    "plot": "",
-    "language": "English",
-    "releaseDate": "August 16, 2026 9:00 am",
-    "year": "2026",
-    "genre": "Superhero, Drama, Detective",
-    "duration": "55 Minutes",
-    "director": "",
-    "basedOn": "",
-    "boxOffice": null,
-    "poster": "pics/Serieses/Lanterns/S01/1.jpg",
-    "gallery": [
+    "filePath": "E:/OakShow/Lanterns.html",
+    "episodes": [
       {
-        "src": "pics/Serieses/Lanterns/S01/1.jpg",
-        "alt": "Lanterns Season 01 Pilot Poster"
+        "id": "LanternsS1E01",
+        "parentSeriesKey": "lanterns",
+        "seasonNumber": 1,
+        "episodeNumber": 1,
+        "title": "Pilot",
+        "fullTitle": "Lanterns S01E01: Pilot",
+        "airDate": "August 16, 2026",
+        "plot": "Hal Jordan is chosen as the successor of Green Lantern Abin Sur. In 2016, Hal and John Stewart have a mentor-mentee relationship and travel to Rushville, Nebraska after John receives a cryptic message from Hal's younger consciousness within his power ring. John helps Sheriff Kerry Kane capture a suspect involved in a mass shooting, while Hal investigates an alien conspiracy. During an interrogation, Hal exposes Sanders as an extraterrestrial who detonates his body. In 2026, John returns to Rushville, where Kerry shows him a dead Hal with his power ring missing.",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "9.5/10",
+            "url": "",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "IMDb",
+            "url": "https://www.imdb.com/title/tt26546824/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "RT",
+            "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e01",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+          },
+          {
+            "source": "Metacritic",
+            "score": "Meta",
+            "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-1-pilot/",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          }
+        ],
+        "watchOnline": [
+          {
+            "provider": "Disney+ Hotstar",
+            "url": "https://www.hotstar.com/in/shows/lanterns/1271680756?utm_source=gwa",
+            "icon": "pics/WatchOnline/hotstar.png",
+            "language": "",
+            "label": "Watch Episode"
+          }
+        ],
+        "thumbnail": "pics/Serieses/Lanterns/S01/1.jpg",
+        "filename": "LanternsS1E01.html"
       },
       {
-        "src": "pics/Serieses/Lanterns/S01/2.jpg",
-        "alt": "Lanterns Season 01 Trust Fall Poster"
+        "id": "LanternsS1E02",
+        "parentSeriesKey": "lanterns",
+        "seasonNumber": 1,
+        "episodeNumber": 2,
+        "title": "Trust Fall",
+        "fullTitle": "Lanterns S01E02: Trust Fall",
+        "airDate": "August 23, 2026",
+        "plot": "With his ring nearly depleted, Hal sends John back to Coast City to retrieve his lantern while he continues investigating the shooting. Hal uncovers alien-detecting technology and attempts to question William Macon, but is wounded by a sniper. After retrieving the power battery, John is abducted by aliens searching for an artificial Manhunter that decimated their civilization, giving John 48 hours to find it. Hal journeys off-world to interrogate Thaal Sinestro about the Manhunters.",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "9.0/10",
+            "url": "",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "IMDb",
+            "url": "https://www.imdb.com/title/tt32752613/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "RT",
+            "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e02",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+          },
+          {
+            "source": "Metacritic",
+            "score": "Meta",
+            "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-2-trust-fall/",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          }
+        ],
+        "watchOnline": [
+          {
+            "provider": "Disney+ Hotstar",
+            "url": "https://www.hotstar.com/in/shows/lanterns/1271680756?utm_source=gwa",
+            "icon": "pics/WatchOnline/hotstar.png",
+            "language": "",
+            "label": "Watch Episode"
+          }
+        ],
+        "thumbnail": "pics/Serieses/Lanterns/S01/2.jpg",
+        "filename": "LanternsS1E02.html"
       },
       {
-        "src": "pics/Serieses/Lanterns/S01/3.jpg",
-        "alt": "Lanterns Season 01 OutKast Poster"
+        "id": "LanternsS1E03",
+        "parentSeriesKey": "lanterns",
+        "seasonNumber": 1,
+        "episodeNumber": 3,
+        "title": "OutKast",
+        "fullTitle": "Lanterns S01E03: OutKast",
+        "airDate": "August 30, 2026",
+        "plot": "In the past, John's father fails a trial to become a Green Lantern. Guardians of the Universe leader Lianna offers recompense by giving John a future opportunity. After serving as a Marine, John is recruited by the Guardians and chosen under Hal's mentorship. Hal welcomes John into the Corps but makes it clear that he will remain in command.",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "8.0/10",
+            "url": "",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "IMDb",
+            "url": "https://www.imdb.com/title/tt32752612/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "RT",
+            "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e03",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+          },
+          {
+            "source": "Metacritic",
+            "score": "Meta",
+            "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-3-outkast/",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          }
+        ],
+        "watchOnline": [
+          {
+            "provider": "Disney+ Hotstar",
+            "url": "https://www.hotstar.com/in/shows/lanterns/1271680756?utm_source=gwa",
+            "icon": "pics/WatchOnline/hotstar.png",
+            "language": "",
+            "label": "Watch Episode"
+          }
+        ],
+        "thumbnail": "pics/Serieses/Lanterns/S01/3.jpg",
+        "filename": "LanternsS1E03.html"
       },
       {
-        "src": "pics/Serieses/Lanterns/S01/4.jpg",
-        "alt": "Lanterns Season 01 The Weenie Poster"
+        "id": "LanternsS1E04",
+        "parentSeriesKey": "lanterns",
+        "seasonNumber": 1,
+        "episodeNumber": 4,
+        "title": "The Weenie",
+        "fullTitle": "Lanterns S01E04: The Weenie",
+        "airDate": "September 06, 2026",
+        "plot": "Hal questions Sinestro about the Manhunters, while John is asked by the Guardians to move faster with their plan. As the investigation into the Rushville murder deepens, Jordan and Stewart confront darker reckonings and extraterrestrial revelations that challenge their mission.",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "8.0/10",
+            "url": "",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "IMDb",
+            "url": "https://www.imdb.com/title/tt32752610/?ref_=ttep_ep_4",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "RT",
+            "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e04",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+          },
+          {
+            "source": "Metacritic",
+            "score": "Meta",
+            "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-4-the-weenie/",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          },
+          {
+            "source": "IGN",
+            "score": "IGN",
+            "url": "https://www.ign.com/articles/lanterns-season-1-episode-4-review-recap-the-weenie",
+            "icon": "pics/RatingSiteLogos/ign.png"
+          },
+          {
+            "source": "Den of Geek",
+            "score": "Den of Geek",
+            "url": "https://www.denofgeek.com/tv/lanterns-episode-4-review/",
+            "icon": "pics/RatingSiteLogos/denofgeek.png"
+          }
+        ],
+        "watchOnline": [
+          {
+            "provider": "Disney+ Hotstar",
+            "url": "https://www.hotstar.com/in/shows/lanterns/1271680756?utm_source=gwa",
+            "icon": "pics/WatchOnline/hotstar.png",
+            "language": "",
+            "label": "Watch Episode"
+          }
+        ],
+        "thumbnail": "pics/Serieses/Lanterns/S01/4.jpg",
+        "filename": "LanternsS1E04.html"
       }
     ],
-    "ratings": [
+    "availableEpisodesCount": 4,
+    "seasonsData": [
       {
-        "source": "OakShow",
-        "score": "9/10",
-        "url": "",
-        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
-      },
-      {
-        "source": "IMDb",
-        "score": "8.5/10",
-        "url": "https://www.imdb.com/title/tt26546824/",
-        "icon": "pics/RatingSiteLogos/imdb.png"
-      },
-      {
-        "source": "Rotten Tomatoes",
-        "score": "91%",
-        "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e01",
-        "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
-      },
-      {
-        "source": "Metacritic",
-        "score": "78/100",
-        "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-1-pilot/",
-        "icon": "pics/RatingSiteLogos/metacritic.png"
+        "seasonId": "LanternsS1",
+        "title": "Lanterns (TV series) Season 01",
+        "year": "2026",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "9/10",
+            "url": "",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "8.5/10",
+            "url": "https://www.imdb.com/title/tt26546824/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "91%",
+            "url": "https://www.rottentomatoes.com/tv/lanterns/s01/e01",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+          },
+          {
+            "source": "Metacritic",
+            "score": "78/100",
+            "url": "https://www.metacritic.com/tv/lanterns/season-1/episode-1-pilot/",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          }
+        ],
+        "filename": "LanternsS1.html",
+        "episodes": []
       }
-    ],
-    "cast": [],
-    "bookings": [],
-    "watchOnline": [
-      {
-        "provider": "Disney+ Hotstar",
-        "url": "https://www.hotstar.com/in/shows/lanterns/1271680756?utm_source=gwa",
-        "icon": "pics/WatchOnline/hotstar.png",
-        "language": "",
-        "label": "Watch Now (JioCinema)"
-      }
-    ],
-    "music": [],
-    "officialWebsite": null,
-    "socials": [],
-    "similar": [],
-    "videos": [
-      {
-        "url": "https://www.youtube.com/watch?v=EDXHzJDK8wA",
-        "youtubeId": "EDXHzJDK8wA",
-        "title": "Lanterns (TV series) Season 01"
-      }
-    ],
-    "articles": [],
-    "filePath": "E:/OakShow/LanternsS1.html"
+    ]
   },
   {
     "id": "Scam1992S1",
@@ -892,7 +1041,8 @@
             "icon": "pics/RatingSiteLogos/metacritic.png"
           }
         ],
-        "filename": "TheBoysS1.html"
+        "filename": "TheBoysS1.html",
+        "episodes": []
       },
       {
         "seasonId": "TheBoysS2",
@@ -924,7 +1074,8 @@
             "icon": "pics/RatingSiteLogos/metacritic.png"
           }
         ],
-        "filename": "TheBoysS2.html"
+        "filename": "TheBoysS2.html",
+        "episodes": []
       }
     ]
   },
@@ -1313,7 +1464,8 @@
             "icon": "pics/RatingSiteLogos/imdb.png"
           }
         ],
-        "filename": "LittleThingsS1.html"
+        "filename": "LittleThingsS1.html",
+        "episodes": []
       },
       {
         "seasonId": "LittleThingsS2",
@@ -1333,7 +1485,8 @@
             "icon": "pics/RatingSiteLogos/imdb.png"
           }
         ],
-        "filename": "LittleThingsS2.html"
+        "filename": "LittleThingsS2.html",
+        "episodes": []
       },
       {
         "seasonId": "LittleThingsS3",
@@ -1353,7 +1506,8 @@
             "icon": "pics/RatingSiteLogos/imdb.png"
           }
         ],
-        "filename": "LittleThingsS3.html"
+        "filename": "LittleThingsS3.html",
+        "episodes": []
       }
     ]
   },
@@ -1876,6 +2030,150 @@
       }
     ],
     "filePath": "E:/OakShow/Stargirl.html",
+    "episodes": [
+      {
+        "id": "StargirlS1E01",
+        "parentSeriesKey": "stargirl",
+        "seasonNumber": 1,
+        "episodeNumber": 1,
+        "title": "Pilot",
+        "fullTitle": "Stargirl S01E01:Pilot",
+        "airDate": "May 18,2020",
+        "plot": "Ten years earlier, the Justice Society of America's headquarters in Blue Valley is attacked by the Injustice Society, who wipe out their Justice Society counterparts. Pat Dugan, sidekick to the hero Starman, arrives to find his friend dying and helps him escape. Starman tells Pat to keep his Cosmic Staff safe until he can find a worthy successor to rebuild the Justice Society. Meanwhile, a young Courtney Whitmore learns that her father couldn't make it home to watch her while her mother goes to work. Ten years later, Barbara is remarried to Pat as he moves his stepfamily to Blue Valley. While Barbara goes to work for a local company, The American Dream, and Pat opens a garage, Courtney is enrolled at Blue Valley High School. Later that night, Courtney accidentally stumbles upon the box containing the Cosmic Staff in her basement. After it takes her around town, Courtney puts on an improvised mask and goes to the Blue Valley drive-in theater, where she destroys jock Henry King Jr.'s car with an energy blast. Returning home, Courtney is confronted by Pat, who admits his involvement with the Justice Society of America. Henry King Jr. informs his dad Henry King Sr. about the incident, causing Henry Sr. to don his old costume as Brainwave. While training with the Cosmic Staff, Courtney is attacked by Brainwave and is saved by Pat in his own superhero outfit, the S.T.R.I.P.E. armor.SourceWikipedia",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "8.5/10",
+            "url": "",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "8.3/10",
+            "url": "https://www.imdb.com/title/tt9028324/?ref_=ttep_ep1",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "n/a",
+            "url": "https://www.rottentomatoes.com/tv/stargirl/S01/E01/e01",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+          },
+          {
+            "source": "Metacritic",
+            "score": "67/100",
+            "url": "https://www.metacritic.com/tv/dcs-stargirl/season-1",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          }
+        ],
+        "watchOnline": [
+          {
+            "provider": "Apple TV / iTunes",
+            "url": "https://itunes.apple.com/us/tv-season/stargirl-season-1/id1507019626",
+            "icon": "pics/WatchOnline/itunes.png",
+            "language": "Officially",
+            "label": "Watch Now"
+          }
+        ],
+        "thumbnail": "pics/Serieses/Stargirl/S01/E01/2.jpg",
+        "filename": "StargirlS1E01.html"
+      },
+      {
+        "id": "StargirlS1E02",
+        "parentSeriesKey": "stargirl",
+        "seasonNumber": 1,
+        "episodeNumber": 2,
+        "title": "S.T.R.I.P.E.",
+        "fullTitle": "Stargirl S01E02:S.T.R.I.P.E.",
+        "airDate": "May 25,2020",
+        "plot": "Pat tells Courtney that JSA member Hourman survived the attack and had been secretly searching for the Injustice Society across the country. In an effort to help, Pat created the armor. When Rex reached Blue Valley, he and his wife were killed in a car crash. Pat came to Blue Valley two years ago to pick up the trail, only to find Barbara. Pat advises Courtney against seeking out Brainwave and using the Staff, but she ignores him and creates a costume for herself from Starman's old uniform. Meanwhile, Brainwave finds Courtney's damaged school ID card at the site of their battle. While attending the high school's open house, Henry Sr. confronts Courtney and threatens to kill Barbara unless she brings him the Staff. Pat goes to confront Brainwave, but is easily defeated. Now calling herself Stargirl, Courtney fights Brainwave and short-circuits his powers, leaving him in a coma. Courtney asks Pat to work with her and become her sidekick, changing his codename from Stripesy to S.T.R.I.P.E. Meanwhile, Jordan Mahkent meets with associate Steven Sharpe at the Injustice Society's headquarters under The American Dream's office and learns about Starman's successor. SourceWikipedia",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "8/10",
+            "url": "",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "8.1/10",
+            "url": "https://www.imdb.com/title/tt9602858/?ref_=ttep_ep2",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "n/a",
+            "url": "https://www.rottentomatoes.com/tv/stargirl/S01/E01/e01",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+          },
+          {
+            "source": "Metacritic",
+            "score": "67/100",
+            "url": "https://www.metacritic.com/tv/dcs-stargirl/season-1",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          }
+        ],
+        "watchOnline": [
+          {
+            "provider": "Apple TV / iTunes",
+            "url": "https://itunes.apple.com/us/tv-season/stargirl-season-1/id1507019626",
+            "icon": "pics/WatchOnline/itunes.png",
+            "language": "Officially",
+            "label": "Watch Now"
+          }
+        ],
+        "thumbnail": "pics/Serieses/Stargirl/S01/E02/2.jpg",
+        "filename": "StargirlS1E02.html"
+      },
+      {
+        "id": "StargirlS1E03",
+        "parentSeriesKey": "stargirl",
+        "seasonNumber": 1,
+        "episodeNumber": 3,
+        "title": "Icicle",
+        "fullTitle": "Stargirl S01E03:Icicle",
+        "airDate": "Junee 01,2020",
+        "plot": "Eight years ago, Jordan swears to his dying wife that he will ensure their son's safety. Courtney decides that she and Pat need to hunt down the Injustice Society's remaining members, starting with Icicle. Pat, however, insists that being a hero is far more dangerous than she understands. At school, Courtney meets aspiring magician Joey Zarick and art student Cameron Mahkent, Jordan's son. She also tries to stand up for classmate Yolanda Montez, who rebuffs her help. Meanwhile, Jordan visits fellow Injustice Society member, William Zarick, and sets up a trap for Courtney, correctly guessing that she will leap at any opportunity to catch him. A school bus gets caught up in their fight, and though Pat is able to save it from plunging into the water, he and Courtney are unable to save Joey from being struck by a truck. Enraged, William confronts Jordan, who murders him with his powers and has his elderly parents dispose of the body. Guilt-stricken by Joey's death, Pat takes Courtney to the old JSA headquarters and tells her to give up her identity until he says otherwise. Refusing to listen, Courtney steals the deceased JSA members' uniforms so she can find their successors. SourceWikipedia",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "8.1/10",
+            "url": "",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "8.2/10",
+            "url": "https://www.imdb.com/title/tt9602860/?ref_=ttep_ep3",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "n/a",
+            "url": "https://www.rottentomatoes.com/tv/stargirl/S01/E01/e01",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+          },
+          {
+            "source": "Metacritic",
+            "score": "67/100",
+            "url": "https://www.metacritic.com/tv/dcs-stargirl/season-1",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          }
+        ],
+        "watchOnline": [
+          {
+            "provider": "Apple TV / iTunes",
+            "url": "https://itunes.apple.com/us/tv-season/stargirl-season-1/id1507019626",
+            "icon": "pics/WatchOnline/itunes.png",
+            "language": "Officially",
+            "label": "Watch Now"
+          }
+        ],
+        "thumbnail": "pics/Serieses/Stargirl/S01/E03/2.jpg",
+        "filename": "StargirlS1E03.html"
+      }
+    ],
+    "availableEpisodesCount": 3,
     "seasonsData": [
       {
         "seasonId": "StargirlS1",
@@ -1913,7 +2211,8 @@
             "icon": "pics/RatingSiteLogos/common-sense-media.png"
           }
         ],
-        "filename": "StargirlS1.html"
+        "filename": "StargirlS1.html",
+        "episodes": []
       }
     ]
   },
@@ -2324,7 +2623,8 @@
             "icon": "pics/RatingSiteLogos/ndtv.ico"
           }
         ],
-        "filename": "AashramS1.html"
+        "filename": "AashramS1.html",
+        "episodes": []
       }
     ]
   },
@@ -3166,7 +3466,8 @@
             "icon": "pics/RatingSiteLogos/imdb.png"
           }
         ],
-        "filename": "MugilanS1.html"
+        "filename": "MugilanS1.html",
+        "episodes": []
       }
     ]
   },
@@ -3362,7 +3663,8 @@
             "icon": "pics/RatingSiteLogos/imdb.png"
           }
         ],
-        "filename": "PatiPatniAurWohSeriesS1.html"
+        "filename": "PatiPatniAurWohSeriesS1.html",
+        "episodes": []
       }
     ]
   },
@@ -3723,7 +4025,8 @@
             "icon": "pics/RatingSiteLogos/imdb.png"
           }
         ],
-        "filename": "MastramS1.html"
+        "filename": "MastramS1.html",
+        "episodes": []
       }
     ]
   },
@@ -10787,7 +11090,8 @@
             "icon": "pics/RatingSiteLogos/metacritic.png"
           }
         ],
-        "filename": "GameofThronesSeason1.html"
+        "filename": "GameofThronesSeason1.html",
+        "episodes": []
       },
       {
         "seasonId": "GameofThronesSeason2",
@@ -10819,7 +11123,8 @@
             "icon": "pics/RatingSiteLogos/metacritic.png"
           }
         ],
-        "filename": "GameofThronesSeason2.html"
+        "filename": "GameofThronesSeason2.html",
+        "episodes": []
       },
       {
         "seasonId": "GameofThronesSeason3",
@@ -10851,7 +11156,8 @@
             "icon": "pics/RatingSiteLogos/metacritic.png"
           }
         ],
-        "filename": "GameofThronesSeason3.html"
+        "filename": "GameofThronesSeason3.html",
+        "episodes": []
       },
       {
         "seasonId": "GameofThronesSeason4",
@@ -10883,7 +11189,8 @@
             "icon": "pics/RatingSiteLogos/metacritic.png"
           }
         ],
-        "filename": "GameofThronesSeason4.html"
+        "filename": "GameofThronesSeason4.html",
+        "episodes": []
       },
       {
         "seasonId": "GameofThronesSeason5",
@@ -10915,7 +11222,8 @@
             "icon": "pics/RatingSiteLogos/metacritic.png"
           }
         ],
-        "filename": "GameofThronesSeason5.html"
+        "filename": "GameofThronesSeason5.html",
+        "episodes": []
       },
       {
         "seasonId": "GameofThronesSeason6",
@@ -10947,7 +11255,8 @@
             "icon": "pics/RatingSiteLogos/metacritic.png"
           }
         ],
-        "filename": "GameofThronesSeason6.html"
+        "filename": "GameofThronesSeason6.html",
+        "episodes": []
       },
       {
         "seasonId": "GameofThronesSeason7",
@@ -10979,7 +11288,8 @@
             "icon": "pics/RatingSiteLogos/metacritic.png"
           }
         ],
-        "filename": "GameofThronesSeason7.html"
+        "filename": "GameofThronesSeason7.html",
+        "episodes": []
       },
       {
         "seasonId": "GameofThronesSeason8",
@@ -11011,7 +11321,8 @@
             "icon": "pics/RatingSiteLogos/metacritic.png"
           }
         ],
-        "filename": "GameofThronesSeason8.html"
+        "filename": "GameofThronesSeason8.html",
+        "episodes": []
       }
     ]
   },
@@ -11307,7 +11618,8 @@
             "icon": ""
           }
         ],
-        "filename": "TheFlashSeason2.html"
+        "filename": "TheFlashSeason2.html",
+        "episodes": []
       },
       {
         "seasonId": "TheFlashSeason3",
@@ -11345,7 +11657,8 @@
             "icon": ""
           }
         ],
-        "filename": "TheFlashSeason3.html"
+        "filename": "TheFlashSeason3.html",
+        "episodes": []
       }
     ]
   },
@@ -11500,7 +11813,8 @@
             "icon": ""
           }
         ],
-        "filename": "ArrowSeason5.html"
+        "filename": "ArrowSeason5.html",
+        "episodes": []
       }
     ]
   },
