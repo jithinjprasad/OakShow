@@ -80,6 +80,16 @@
     "poster": "pics/Films/Digger/2.jpg"
   },
   {
+    "id": "Mandaadi",
+    "title": "Mandaadi",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Action, Drama, Sport",
+    "language": "Tamil",
+    "year": "2026",
+    "poster": "pics/Films/Mandaadi/2.jpeg"
+  },
+  {
     "id": "KhalifaTheRuler",
     "title": "Khalifa: The Ruler",
     "type": "movie",
@@ -10438,6 +10448,16 @@
     "language": "Hindi",
     "year": "",
     "poster": "pics/Films/Khaidi No. 150/Kajal/1.jpg"
+  },
+  {
+    "id": "mandaadi_wiki",
+    "title": "mandaadi_wiki",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Entertainment",
+    "language": "Hindi",
+    "year": "",
+    "poster": ""
   },
   {
     "id": "Marauders",

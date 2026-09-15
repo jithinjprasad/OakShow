@@ -33,7 +33,7 @@ foreach ($h in $htmlFiles) {
 Write-Host "Synced $($htmlFiles.Count) prerendered HTML pages to dist."
 
 # 4. Sync root HTML files in oakshow-prod
-$rootHtmls = @("Digger.html", "GDN.html", "Upcoming.html", "Upcoming2.html", "Upcoming3.html", "ImGame.html", "TheWhisperMan.html", "Careers.html", "OneNightOnly.html")
+$rootHtmls = @("Digger.html", "GDN.html", "Upcoming.html", "Upcoming2.html", "Upcoming3.html", "ImGame.html", "TheWhisperMan.html", "Careers.html", "OneNightOnly.html", "Mandaadi.html")
 foreach ($rf in $rootHtmls) {
     if (Test-Path "$srcDir\$rf") {
         Copy-Item -Path "$srcDir\$rf" -Destination "$workDir\$rf" -Force
@@ -45,6 +45,7 @@ $mediaDirs = @(
     @{ Src = "$srcDir\pics\Films\Digger"; Dest = "$workDir\dist\pics\Films\Digger" },
     @{ Src = "$srcDir\pics\Films\GDN"; Dest = "$workDir\dist\pics\Films\GDN" },
     @{ Src = "$srcDir\pics\Films\OneNightOnly"; Dest = "$workDir\dist\pics\Films\OneNightOnly" },
+    @{ Src = "$srcDir\pics\Films\Mandaadi"; Dest = "$workDir\dist\pics\Films\Mandaadi" },
     @{ Src = "$srcDir\pics\Serieses\Lanterns"; Dest = "$workDir\dist\pics\Serieses\Lanterns" },
     @{ Src = "$srcDir\pics\RatingSiteLogos"; Dest = "$workDir\dist\pics\RatingSiteLogos" },
     @{ Src = "$srcDir\pics\SocialWebsiteLogos"; Dest = "$workDir\dist\pics\SocialWebsiteLogos" },

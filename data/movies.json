@@ -1933,6 +1933,261 @@
     "filePath": "E:/OakShow/Digger.html"
   },
   {
+    "id": "Mandaadi",
+    "slug": "mandaadi",
+    "type": "movie",
+    "category": "Indian",
+    "score": 7.5,
+    "filename": "Mandaadi.html",
+    "title": "Mandaadi",
+    "metaTitle": "Mandaadi All Ratings, Reviews, Songs, Videos, Bookings and News",
+    "description": "Explore Mandaadi Tamil sports action drama movie ratings, reviews, box office collections, songs, and showtimes. Starring Soori, Suhas, Mahima Nambiar, Sathyaraj, directed by Mathimaran Pugazhendhi.",
+    "plot": "Muthukaali, a legendary traditional sailboat racer belonging to the \"Mugavai Maindhans\" crew in coastal Ramanathapuram, had exiled himself to work as a lifeguard on the shores of Chennai following a devastating tragedy that tore his life and community apart. In Muthukaali's absence, the ruthless and fiercely ambitious Sattapuli—once Muthukaali's trusted companion turned bitter adversary—takes command of the local seas with his formidable \"Tsunami Riders\" team, establishing complete supremacy and fanning fierce hostilities across neighboring fishing settlements. When an emotional plea from his beleaguered home community reaches him, Muthukaali makes his fateful return to the coastline. Confronted by fractured loyalties and a raw, inexperienced crew of local fishermen, Muthukaali must rebuild the underdog squad from scratch, overcome deep psychological trauma, and brave raging ocean squalls to compete in the grand, high-stakes festival boat regatta that will decide the fate and pride of his people. Source:IMDb",
+    "language": "Tamil",
+    "releaseDate": "September 10, 2026",
+    "year": "2026",
+    "genre": "Action, Drama, Sport",
+    "duration": "2hr 34mins",
+    "director": "",
+    "basedOn": "",
+    "boxOffice": null,
+    "poster": "pics/Films/Mandaadi/2.jpeg",
+    "gallery": [
+      {
+        "src": "pics/Films/Mandaadi/1.jpeg",
+        "alt": "Mandaadi Poster"
+      },
+      {
+        "src": "pics/Films/Mandaadi/2.jpeg",
+        "alt": "Mandaadi Banner"
+      },
+      {
+        "src": "pics/Films/Mandaadi/3.jpeg",
+        "alt": "Mandaadi Boat Racing Still"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "7.5/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-good-movie.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "7.2/10",
+        "url": "https://www.imdb.com/title/tt36596965/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Times of India",
+        "score": "3/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movie-reviews/mandaadi/movie-review/134001460.cms",
+        "icon": "pics/RatingSiteLogos/timesofindia.ico"
+      },
+      {
+        "source": "NDTV",
+        "score": "3.5/5",
+        "url": "https://www.ndtv.com/entertainment/mandaadi-review-soori-shines-in-mathimaran-pugazhendhis-engaging-coastal-sports-drama-3-5-stars-12028873",
+        "icon": "pics/RatingSiteLogos/ndtv.ico"
+      },
+      {
+        "source": "Rediff",
+        "score": "3.5/5",
+        "url": "https://www.rediff.com/movies/review/mandaadi-movie-review-soori-delivers-strong-performance-in-engaging-sports-drama/20260913.htm",
+        "icon": "pics/RatingSiteLogos/rediff.png"
+      },
+      {
+        "source": "Times Now",
+        "score": "3/5",
+        "url": "https://www.timesnownews.com/entertainment-news/reviews/mandaadi-movie-review-and-rating-soori-suhas-boat-racing-drama-makes-visual-splash-but-writing-holds-back-its-peak-review-156133146",
+        "icon": "pics/RatingSiteLogos/times-now.ico"
+      },
+      {
+        "source": "The Indian Express",
+        "score": "2.5/5",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/mandaadi-movie-review-soori-suhas-are-extraordinary-on-water-the-film-is-not-on-land-10871944/",
+        "icon": "pics/RatingSiteLogos/indian-express.png"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Soori",
+        "role": "Muthukaali (A legendary boat racer fighting for his community's dignity)",
+        "description": ""
+      },
+      {
+        "actor": "Suhas",
+        "role": "Sattapuli (Leader of the rival Tsunami Riders racing crew, voice dubbed by Vetrimaaran)",
+        "description": ""
+      },
+      {
+        "actor": "Mahima Nambiar",
+        "role": "Angel Rakkamma",
+        "description": ""
+      },
+      {
+        "actor": "Sathyaraj",
+        "role": "Machamuni (Veteran boat racing mentor)",
+        "description": ""
+      },
+      {
+        "actor": "Krish Hassan",
+        "role": "Kittaan",
+        "description": ""
+      },
+      {
+        "actor": "Mithun Jai Sankar",
+        "role": "Maari (Angel's son)",
+        "description": ""
+      },
+      {
+        "actor": "Ravindra Vijay",
+        "role": "Singaram",
+        "description": ""
+      },
+      {
+        "actor": "Bala Saravanan",
+        "role": "Muthukaali's friend",
+        "description": ""
+      },
+      {
+        "actor": "B. Krithika Iyer",
+        "role": "Muthukaali's niece",
+        "description": ""
+      },
+      {
+        "actor": "Ramachandran Durairaj",
+        "role": "Cast",
+        "description": ""
+      },
+      {
+        "actor": "Aadukalam Murugadoss",
+        "role": "Cast",
+        "description": ""
+      }
+    ],
+    "bookings": [
+      {
+        "provider": "BookMyShow",
+        "url": "https://in.bookmyshow.com/movies/kozhikode/mandaadi/ET00442702",
+        "icon": "pics/BookngWebSiteLogos/book-my-show.png",
+        "label": "Book Tickets",
+        "rank": 2
+      },
+      {
+        "provider": "District",
+        "url": "https://www.district.in/movies/mandaadi-movie-tickets-MV196092?srsltid=AfmBOoozB9eGDWlHe3wYiHHYlvrCiT7RjEDcYlfR5thJXq8mqJ-Lf_CY",
+        "icon": "pics/BookngWebSiteLogos/district.png",
+        "label": "Book Tickets",
+        "rank": 3
+      },
+      {
+        "provider": "TicketNew",
+        "url": "https://ticketnew.com/movies/mandaadi-movie-detail-196092",
+        "icon": "pics/BookngWebSiteLogos/ticket-new.png",
+        "label": "Book Tickets",
+        "rank": 4
+      },
+      {
+        "provider": "PVR",
+        "url": "https://www.pvrcinemas.com/m.movie-details/37733/ns",
+        "icon": "pics/BookngWebSiteLogos/pvr.png",
+        "label": "Book Tickets",
+        "rank": 5
+      },
+      {
+        "provider": "Fandango",
+        "url": "https://www.fandango.com/mandaadi-2026-247228/movie-overview",
+        "icon": "pics/BookngWebSiteLogos/fandango.png",
+        "label": "Book Tickets",
+        "rank": 7
+      }
+    ],
+    "watchOnline": [],
+    "music": [],
+    "officialWebsite": null,
+    "socials": [
+      {
+        "platform": "Twitter / X",
+        "url": "https://twitter.com/share?url=https://oakshow.in/Mandaadi.html",
+        "icon": "images/twitter.png",
+        "language": "",
+        "label": "Connect on Twitter / X"
+      }
+    ],
+    "similar": [
+      {
+        "title": "Bigil",
+        "link": "Bigil.html",
+        "poster": "pics/Films/Bigil/1.jpg"
+      },
+      {
+        "title": "Dangal",
+        "link": "Dangal.html",
+        "poster": "pics/Films/Dangal/1.jpg"
+      },
+      {
+        "title": "MS Dhoni The Untold Story",
+        "link": "MSDhoniTheUntoldStory.html",
+        "poster": "pics/Films/M.S. Dhoni The Untold Story/1.jpg"
+      },
+      {
+        "title": "Creed II",
+        "link": "CreedII.html",
+        "poster": "pics/Films/CreedII/1.jpg"
+      },
+      {
+        "title": "Godha",
+        "link": "Godha.html",
+        "poster": "pics/Films/Godha/1.jpg"
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=3FuuZU21S80",
+        "youtubeId": "3FuuZU21S80",
+        "title": "Mandaadi"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=AHYvLk9QR9I",
+        "youtubeId": "AHYvLk9QR9I",
+        "title": "Official Trailer / Teaser"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "Mandaadi movie review: Soori, Suhas are extraordinary on water; the film is not on land",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/mandaadi-movie-review-soori-suhas-are-extraordinary-on-water-the-film-is-not-on-land-10871944/",
+        "author": "The Indian Express",
+        "date": "September 10, 2026",
+        "section": "More Reviews and News"
+      },
+      {
+        "headline": "Mandaadi Movie Review and Rating: Soori, Suhas boat-racing drama makes visual splash",
+        "url": "https://www.timesnownews.com/entertainment-news/reviews/mandaadi-movie-review-and-rating-soori-suhas-boat-racing-drama-makes-visual-splash-but-writing-holds-back-its-peak-review-156133146",
+        "author": "Times Now",
+        "date": "September 10, 2026",
+        "section": "More Reviews and News"
+      },
+      {
+        "headline": "Mandaadi Movie Review: Thrilling coastal regatta sequences anchor a sincere sports drama",
+        "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movie-reviews/mandaadi/movie-review/134001460.cms",
+        "author": "Times of India",
+        "date": "September 10, 2026",
+        "section": "More Reviews and News"
+      },
+      {
+        "headline": "Mandaadi Review: Soori steals the show in Mathimaran Pugazhendhi's gripping coastal sports drama",
+        "url": "https://www.cnbctv18.com/entertainment/mandaadi-review-soori-steals-the-show-in-mathimaran-pugazhendhis-gripping-coastal-sports-drama-19989061.htm",
+        "author": "CNBC",
+        "date": "TV18 - September 11, 2026",
+        "section": "More Reviews and News"
+      }
+    ],
+    "filePath": "E:/OakShow/Mandaadi.html"
+  },
+  {
     "id": "KhalifaTheRuler",
     "slug": "khalifatheruler",
     "type": "movie",
@@ -174580,6 +174835,47 @@
     ],
     "articles": [],
     "filePath": "E:/OakShow/KhaidiNo.150KajalStills.html"
+  },
+  {
+    "id": "mandaadi_wiki",
+    "slug": "mandaadi_wiki",
+    "type": "movie",
+    "category": "Indian",
+    "score": 7.5,
+    "filename": "mandaadi_wiki.html",
+    "title": "mandaadi_wiki",
+    "metaTitle": "",
+    "description": "",
+    "plot": "",
+    "language": "Hindi",
+    "releaseDate": "",
+    "year": "",
+    "genre": "Entertainment",
+    "duration": "N/A",
+    "director": "",
+    "basedOn": "",
+    "boxOffice": null,
+    "poster": "",
+    "gallery": [],
+    "ratings": [],
+    "cast": [],
+    "bookings": [],
+    "watchOnline": [],
+    "music": [
+      {
+        "provider": "Apple Music / iTunes",
+        "url": "https://music.apple.com/in/album/mandaadi-original-motion-picture-soundtrack/6806199838",
+        "icon": "",
+        "language": "",
+        "label": "\"Mandaadi (Original Motion Picture Soundtrack)\""
+      }
+    ],
+    "officialWebsite": null,
+    "socials": [],
+    "similar": [],
+    "videos": [],
+    "articles": [],
+    "filePath": "E:/OakShow/mandaadi_wiki.html"
   },
   {
     "id": "Marauders",
