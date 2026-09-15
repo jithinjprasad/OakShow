@@ -1,5 +1,16 @@
 [
   {
+    "id": "DragonBallSuperBroly",
+    "title": "Dragon Ball Super: Broly",
+    "type": "movie",
+    "category": "Hollywood",
+    "year": "2018",
+    "genre": "Anime, Action, Sci-Fi",
+    "rating": "9.8",
+    "poster": "pics/Films/DragonBallSuperBroly/1.jpg",
+    "url": "DragonBallSuperBroly.html"
+  },
+  {
     "id": "BethlehemKudumbaUnit",
     "title": "Bethlehem Kudumba Unit",
     "type": "movie",

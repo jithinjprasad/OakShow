@@ -31,7 +31,8 @@ import {
   MessageSquare,
   Layers,
   Clock,
-  Radio
+  Radio,
+  Flame
 } from 'lucide-react';
 import ShareBar from './ShareBar';
 import VideoPlayerModal from './VideoPlayerModal';
@@ -40,6 +41,7 @@ import criticsData from '../../data/critics.json';
 import galleriesData from '../../data/galleries.json';
 import { getOakShowRemark, cleanRatingSource } from '../utils/remarks';
 import { getProfileImage, getBannerImage, getShareImage, handlePosterError, getItemCanonicalUrl, getBookingProviderInfo, getWatchOnlineProviderInfo } from '../utils/mediaUtils';
+import { getSimilarRecommendations } from '../utils/recommendations';
 
 function parseScorePercentage(scoreStr) {
   if (!scoreStr) return 75;
@@ -68,6 +70,7 @@ function parseScorePercentage(scoreStr) {
 export default function SeriesDetailPage({ 
   series, 
   allSeries = [], 
+  allMovies = [],
   initialEpisodeId = null,
   initialSeason = null,
   onNavigate, 
@@ -173,6 +176,12 @@ export default function SeriesDetailPage({
     const next = currentIndex < allSeries.length - 1 ? allSeries[currentIndex + 1] : allSeries[0];
     return { prevSeries: prev, nextSeries: next };
   }, [allSeries, series]);
+
+  // Similar series/shows: prioritize explicitly configured, pad with same universe/genre if < 5, sorted by ratings
+  const similarSeries = useMemo(() => {
+    if (!allSeries || !series) return [];
+    return getSimilarRecommendations(series, allSeries, allMovies, 5, 8);
+  }, [allSeries, allMovies, series]);
 
   // Check if OakShow internal critics reviewed this series
   const internalReviews = useMemo(() => {
@@ -1456,6 +1465,51 @@ export default function SeriesDetailPage({
                 </div>
               </div>
             </div>
+
+            {/* Similar Series / Shows Carousel */}
+            {similarSeries.length > 0 && (
+              <section className="section-block similar-section">
+                <div className="section-header-row">
+                  <div className="section-title-wrap">
+                    <Flame size={20} className="text-red" />
+                    <h2>More Like This</h2>
+                  </div>
+                </div>
+                <div className="similar-carousel-grid">
+                  {similarSeries.map(sim => (
+                    <a 
+                      key={sim.id} 
+                      href={sim.filename ? (sim.filename.startsWith('/') ? sim.filename : `/${sim.filename}`) : `/${sim.id}.html`}
+                      className="similar-card glass-panel"
+                      style={{ textDecoration: 'none', color: 'inherit' }}
+                      onClick={(e) => {
+                        if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
+                        e.preventDefault();
+                        if (sim.type === 'series' || sim.isSeries) {
+                          onNavigate(`series/${sim.id}`);
+                        } else {
+                          onNavigate(`movie/${sim.id}`);
+                        }
+                      }}
+                    >
+                      <div className="similar-poster-wrap">
+                        {sim.poster ? (
+                          <img 
+                            src={sim.poster.startsWith('/') ? sim.poster : `/${sim.poster}`} 
+                            alt={sim.title} 
+                            className="similar-poster-img"
+                          />
+                        ) : (
+                          <div className="similar-fallback"><Film size={24} /></div>
+                        )}
+                      </div>
+                      <h4 className="similar-title">{sim.title}</h4>
+                      <span className="similar-meta">{sim.year || sim.language}</span>
+                    </a>
+                  ))}
+                </div>
+              </section>
+            )}
 
             {/* 10. Bottom Share Bar Section */}
             <div id="share-section" className="section-block share-section-wrap">

@@ -1064,6 +1064,7 @@ export default function App() {
           <SeriesDetailPage
             series={targetSeries}
             allSeries={seriesData}
+            allMovies={moviesData}
             initialEpisodeId={route.episodeId}
             initialSeason={targetSeasonNum}
             onNavigate={navigate}
@@ -1253,6 +1254,7 @@ export default function App() {
         <SeriesDetailPage
           series={targetSeries}
           allSeries={seriesData}
+          allMovies={moviesData}
           initialEpisodeId={route.episodeId}
           initialSeason={targetSeasonNum}
           onNavigate={navigate}

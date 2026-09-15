@@ -43,6 +43,7 @@ import criticsData from '../../data/critics.json';
 import galleriesData from '../../data/galleries.json';
 import { getOakShowRemark, cleanRatingSource } from '../utils/remarks';
 import { getProfileImage, getBannerImage, getShareImage, handlePosterError, getItemCanonicalUrl, getBookingProviderInfo, getWatchOnlineProviderInfo, getYoutubeId } from '../utils/mediaUtils';
+import { getSimilarRecommendations, getItemRatingScore } from '../utils/recommendations';
 
 function parseScorePercentage(scoreStr) {
   if (!scoreStr) return 75;
@@ -278,59 +279,10 @@ export default function MovieDetailPage({
     return { prevMovie: prev, nextMovie: next };
   }, [allMovies, movie]);
 
-  // Similar movies: prioritize explicitly configured similar movies from HTML/data
+  // Similar movies: prioritize explicitly configured similar movies, pad with same universe/genre if < 5, sorted by rating
   const similarMovies = useMemo(() => {
     if (!allMovies || !movie) return [];
-
-    // 1. If explicit similar list exists on movie object, map them to full movie entries
-    if (movie.similar && Array.isArray(movie.similar) && movie.similar.length > 0) {
-      const explicitList = [];
-      const seenIds = new Set([movie.id?.toLowerCase()]);
-
-      for (const sim of movie.similar) {
-        const linkClean = (sim.link || '').replace(/^\/+/, '').replace(/\.html$/i, '').toLowerCase();
-        const titleClean = (sim.title || '').replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
-
-        const match = allMovies.find(m => {
-          const mId = (m.id || '').toLowerCase();
-          const mFile = (m.filename || m.fileName || '').replace(/^\/+/, '').replace(/\.html$/i, '').toLowerCase();
-          const mTitle = (m.title || '').replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
-          return (linkClean && (mId === linkClean || mFile === linkClean)) ||
-                 (titleClean && mTitle === titleClean);
-        });
-
-        if (match && !seenIds.has(match.id?.toLowerCase())) {
-          seenIds.add(match.id?.toLowerCase());
-          explicitList.push(match);
-        } else if (!match) {
-          // Keep lightweight fallback representation if not directly in movies array
-          const fallbackId = (sim.link || sim.title || '').replace(/\.html$/i, '').replace(/[^a-zA-Z0-9]/g, '');
-          if (!seenIds.has(fallbackId.toLowerCase())) {
-            seenIds.add(fallbackId.toLowerCase());
-            explicitList.push({
-              id: fallbackId,
-              title: sim.title,
-              filename: sim.link || `${fallbackId}.html`,
-              poster: sim.poster || '/favicon.png',
-              year: '',
-              language: ''
-            });
-          }
-        }
-      }
-
-      if (explicitList.length > 0) {
-        return explicitList.slice(0, 12);
-      }
-    }
-
-    // 2. Otherwise compute dynamically by genre and language
-    return allMovies
-      .filter(m => m.id !== movie.id && (
-        (movie.genre && m.genre && m.genre.toLowerCase().includes(movie.genre.split(',')[0]?.trim().toLowerCase())) ||
-        (movie.language && m.language === movie.language)
-      ))
-      .slice(0, 8);
+    return getSimilarRecommendations(movie, allMovies, [], 5, 8);
   }, [allMovies, movie]);
 
   // Profile picture dimension poster (1.jpg / 1.JPG with fallback)
