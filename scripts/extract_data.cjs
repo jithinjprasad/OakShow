@@ -660,13 +660,17 @@ function extractBoxOffice($) {
           bo.budget = text.replace(/Budget\s*:\s*/i, '').trim();
         } else if (/(?:Commercial\s*)?Verdict\s*:\s*(.*)/i.test(text)) {
           bo.verdict = text.replace(/(?:Commercial\s*)?Verdict\s*:\s*/i, '').trim();
+        } else if (/Last\s*Updated\s*:\s*(.*)/i.test(text)) {
+          bo.lastUpdated = text.replace(/Last\s*Updated\s*:\s*/i, '').trim();
+        } else if (/Source\s*:\s*(.*)/i.test(text)) {
+          bo.source = text.replace(/Source\s*:\s*/i, '').trim();
         }
       });
       if (Object.keys(bo).length === 0) {
         bo = null;
       } else {
-        bo.lastUpdated = 'August 2026';
-        bo.source = 'Trade Reports / Sacnilk & Pinkvilla';
+        bo.lastUpdated = bo.lastUpdated || 'September 2026';
+        bo.source = bo.source || 'Trade Reports / Sacnilk, Pinkvilla & Box Office Mojo';
       }
     }
   });
@@ -1664,6 +1668,35 @@ async function runExtraction() {
     if (seenSearchKeys.has(key)) continue;
     seenSearchKeys.add(key);
     uniqueSearchIndex.push(item);
+  }
+
+  // Preserve Dragon Ball Super: Broly if defined in scripts/addBroly.cjs
+  try {
+    const brolyExists = uniqueMovies.some(m => m.id === 'DragonBallSuperBroly');
+    if (!brolyExists) {
+      const brolyScript = path.join(__dirname, 'addBroly.cjs');
+      if (fs.existsSync(brolyScript)) {
+        const brolyContent = fs.readFileSync(brolyScript, 'utf8');
+        const match = brolyContent.match(/const brolyMovie = (\{[\s\S]*?\n\};)/);
+        if (match) {
+          const brolyMovie = eval(`(${match[1].replace(/;$/, '')})`);
+          uniqueMovies.unshift(brolyMovie);
+          uniqueSearchIndex.unshift({
+            id: brolyMovie.id,
+            title: brolyMovie.title,
+            type: 'movie',
+            category: 'Hollywood',
+            year: brolyMovie.year || '2018',
+            genre: brolyMovie.genre || 'Anime, Action, Sci-Fi',
+            rating: '9.8',
+            poster: brolyMovie.poster,
+            url: brolyMovie.filename
+          });
+        }
+      }
+    }
+  } catch (e) {
+    console.warn('Could not auto-embed Broly:', e.message);
   }
 
   // Save extracted files

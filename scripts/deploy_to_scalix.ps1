@@ -33,7 +33,7 @@ foreach ($h in $htmlFiles) {
 Write-Host "Synced $($htmlFiles.Count) prerendered HTML pages to dist."
 
 # 4. Sync root HTML files in oakshow-prod
-$rootHtmls = @("Digger.html", "GDN.html", "Upcoming.html", "Upcoming2.html", "Upcoming3.html", "ImGame.html", "TheWhisperMan.html", "Careers.html", "OneNightOnly.html", "Mandaadi.html", "Sardar2.html")
+$rootHtmls = @("Digger.html", "GDN.html", "Upcoming.html", "Upcoming2.html", "Upcoming3.html", "ImGame.html", "im-game.html", "TheWhisperMan.html", "Careers.html", "OneNightOnly.html", "Mandaadi.html", "Sardar2.html", "BethlehemKudumbaUnit.html", "DCTamilMovie.html", "KhalifaTheRuler.html", "AvatarTheWayofWater.html")
 foreach ($rf in $rootHtmls) {
     if (Test-Path "$srcDir\$rf") {
         Copy-Item -Path "$srcDir\$rf" -Destination "$workDir\$rf" -Force

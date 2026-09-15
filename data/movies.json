@@ -234,7 +234,17 @@
     "duration": "2hr 35mins",
     "director": "Girish A. D.",
     "basedOn": "",
-    "boxOffice": null,
+    "boxOffice": {
+      "worldwideGross": "₹309.05 Crore",
+      "indiaGross": "₹173.40 Crore",
+      "overseasGross": "₹135.65 Crore ($16.2M)",
+      "openingDay": "₹16.20 Crore",
+      "openingWeekend": "₹52.40 Crore",
+      "budget": "Estimated ₹23 Crore",
+      "verdict": "All-Time Record Blockbuster (Highest-Grossing Malayalam Film of All Time)",
+      "lastUpdated": "September 2026",
+      "source": "Asianet News / Sacnilk & Wikipedia"
+    },
     "poster": "pics/Films/BethlehemKudumbaUnit/2.jpg",
     "gallery": [
       {
@@ -499,9 +509,9 @@
       "overseasGross": "₹26.50 Crore ($2.8M)",
       "openingDay": "₹14.20 Crore",
       "openingWeekend": "₹42.80 Crore",
-      "budget": "Estimated ₹35 Crore",
+      "budget": "Estimated ₹25 Crore",
       "verdict": "Superhit / Commercial Blockbuster",
-      "lastUpdated": "August 2026",
+      "lastUpdated": "September 2026",
       "source": "Trade Reports / Sacnilk & Pinkvilla"
     },
     "poster": "pics/Films/DCTamilMovie/2.jpg",
@@ -2245,8 +2255,8 @@
     "basedOn": "",
     "boxOffice": {
       "budget": "Estimated Production $125 - $150 Million",
-      "lastUpdated": "August 2026",
-      "source": "Trade Reports / Sacnilk & Pinkvilla"
+      "lastUpdated": "September 2026",
+      "source": "Trade Reports / Sacnilk, Pinkvilla & Box Office Mojo"
     },
     "poster": "pics/Films/Digger/2.jpg",
     "gallery": [
@@ -2408,7 +2418,17 @@
     "duration": "2hr 34mins",
     "director": "",
     "basedOn": "",
-    "boxOffice": null,
+    "boxOffice": {
+      "worldwideGross": "₹62.38 Crore",
+      "indiaGross": "₹53.63 Crore",
+      "overseasGross": "₹8.75 Crore ($1.05M)",
+      "openingDay": "₹11.50 Crore",
+      "openingWeekend": "₹43.80 Crore",
+      "budget": "Estimated ₹75 Crore",
+      "verdict": "Hit / Strong Theatrical Run",
+      "lastUpdated": "September 2026",
+      "source": "Sacnilk, Pinkvilla & Trade Reports"
+    },
     "poster": "pics/Films/Mandaadi/2.jpeg",
     "gallery": [
       {
@@ -2668,7 +2688,17 @@
     "duration": "2hr 38mins",
     "director": "Vysakh | Writer: Jinu V. Abraham | Music: Jakes Bejoy",
     "basedOn": "",
-    "boxOffice": null,
+    "boxOffice": {
+      "worldwideGross": "₹44.74 Crore",
+      "indiaGross": "₹24.84 Crore",
+      "overseasGross": "₹19.90 Crore ($2.4M)",
+      "openingDay": "₹6.10 Crore",
+      "openingWeekend": "₹21.50 Crore",
+      "budget": "Estimated ₹30 Crore",
+      "verdict": "Hit / Profitable Venture",
+      "lastUpdated": "September 2026",
+      "source": "Sacnilk, Pinkvilla & Trade Reports"
+    },
     "poster": "pics/Films/KhalifaTheRuler/2.jpg",
     "gallery": [
       {
@@ -2928,7 +2958,17 @@
     "duration": "2hr 59mins",
     "director": "",
     "basedOn": "",
-    "boxOffice": null,
+    "boxOffice": {
+      "worldwideGross": "₹18.50 Crore",
+      "indiaGross": "₹15.80 Crore",
+      "overseasGross": "₹2.70 Crore ($320K)",
+      "openingDay": "₹6.80 Crore",
+      "openingWeekend": "₹15.60 Crore",
+      "budget": "Estimated ₹100 Crore",
+      "verdict": "Below Average / Flop",
+      "lastUpdated": "September 2026",
+      "source": "Sacnilk, Pinkvilla & Trade Reports"
+    },
     "poster": "pics/Films/Sardar2/1.jpg",
     "gallery": [
       {
@@ -3210,10 +3250,15 @@
     "director": "",
     "basedOn": "",
     "boxOffice": {
+      "worldwideGross": "₹47.47 Crore",
+      "indiaGross": "₹29.80 Crore",
+      "overseasGross": "₹17.67 Crore ($2.1M)",
+      "openingDay": "₹7.20 Crore",
+      "openingWeekend": "₹22.40 Crore",
       "budget": "Estimated ₹45 Crore",
-      "verdict": "Ongoing Theatrical Run",
-      "lastUpdated": "August 2026",
-      "source": "Trade Reports / Sacnilk & Pinkvilla"
+      "verdict": "Average / Below Expectations",
+      "lastUpdated": "September 2026",
+      "source": "Sacnilk, Pinkvilla & Trade Reports"
     },
     "poster": "pics/Films/ImGame/2.jpg",
     "gallery": [
@@ -3490,10 +3535,15 @@
     "director": "",
     "basedOn": "",
     "boxOffice": {
+      "worldwideGross": "₹47.47 Crore",
+      "indiaGross": "₹29.80 Crore",
+      "overseasGross": "₹17.67 Crore ($2.1M)",
+      "openingDay": "₹7.20 Crore",
+      "openingWeekend": "₹22.40 Crore",
       "budget": "Estimated ₹45 Crore",
-      "verdict": "Ongoing Theatrical Run",
-      "lastUpdated": "August 2026",
-      "source": "Trade Reports / Sacnilk & Pinkvilla"
+      "verdict": "Average / Below Expectations",
+      "lastUpdated": "September 2026",
+      "source": "Sacnilk, Pinkvilla & Trade Reports"
     },
     "poster": "pics/Films/ImGame/2.jpg",
     "gallery": [
@@ -3982,7 +4032,17 @@
     "duration": "3hr 12mins",
     "director": "James Cameron",
     "basedOn": "Characters by James Cameron",
-    "boxOffice": null,
+    "boxOffice": {
+      "worldwideGross": "$2.320 Billion (₹19,250 Crore)",
+      "indiaGross": "₹475 Crore ($58M)",
+      "overseasGross": "$1.636 Billion",
+      "openingDay": "$134.1 Million (₹40.5 Crore in India)",
+      "openingWeekend": "$441.7 Million Worldwide (₹160 Crore in India)",
+      "budget": "Estimated $350–400 Million (₹2,900 Crore)",
+      "verdict": "All-Time Historic Blockbuster (#3 Highest-Grossing Film in History)",
+      "lastUpdated": "September 2026",
+      "source": "Box Office Mojo, The Numbers & Sacnilk"
+    },
     "poster": "pics/Films/AvatarTheWayofWater/2.jpg",
     "gallery": [
       {
