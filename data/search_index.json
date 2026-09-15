@@ -60,6 +60,16 @@
     "poster": "pics/Films/CoyotevsAcme/2.jpg"
   },
   {
+    "id": "GDN",
+    "title": "G.D.N (G.D. Naidu: The Edison of India)",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Biography, Drama, History",
+    "language": "Tamil",
+    "year": "2026",
+    "poster": "pics/Films/GDN/2.jpeg"
+  },
+  {
     "id": "OneNightOnly",
     "title": "One Night Only",
     "type": "movie",
@@ -10368,16 +10378,6 @@
     "language": "Hindi",
     "year": "",
     "poster": ""
-  },
-  {
-    "id": "GDN",
-    "title": "G.D.N (G.D. Naidu: The Edison of India)",
-    "type": "movie",
-    "category": "Indian",
-    "genre": "Entertainment",
-    "language": "Hindi",
-    "year": "",
-    "poster": "pics/Films/GDN/2.jpeg"
   },
   {
     "id": "HalfGirlfriendLostWithoutYou",

@@ -1442,6 +1442,214 @@
     "filePath": "E:/OakShow/CoyotevsAcme.html"
   },
   {
+    "id": "GDN",
+    "slug": "gdn",
+    "type": "movie",
+    "category": "Indian",
+    "score": 8,
+    "filename": "GDN.html",
+    "title": "G.D.N (G.D. Naidu: The Edison of India)",
+    "metaTitle": "G.D.N (G.D. Naidu: The Edison of India) All Ratings, Reviews, Songs, Videos, Bookings and News",
+    "description": "Explore G.D.N (G.D. Naidu: The Edison of India) Tamil biographical drama movie ratings, reviews, box office collections, songs, and OTT streaming on Netflix. Starring R. Madhavan, Priyamani, Dushara Vijayan, and Sathyaraj, directed by Krishnakumar Ramakumar with music by Govind Vasantha.",
+    "plot": "Spanning from the early 1920s to the 1950s in Coimbatore and across international research centers, the film chronicles the extraordinary life of G.D. Naidu (R. Madhavan), a self-taught engineering genius from rural Tamil Nadu who went on to create India's first indigenous electric motor, mechanical voting machines, revolutionary agricultural hybrids, and advanced razor blades. Despite continuous roadblocks from colonial authorities, corporate skepticism, and institutional tax disputes, Naidu remained committed to democratizing industrial innovation and affordable transport for everyday citizens. His unwavering conviction, scientific acumen, and fierce philanthropic spirit cementing his immortal legacy as 'The Edison of India'.",
+    "language": "Tamil",
+    "releaseDate": "August 7, 2026",
+    "year": "2026",
+    "genre": "Biography, Drama, History",
+    "duration": "2hr 28mins",
+    "director": "",
+    "basedOn": "",
+    "boxOffice": null,
+    "poster": "pics/Films/GDN/2.jpeg",
+    "gallery": [
+      {
+        "src": "pics/Films/GDN/1.jpeg",
+        "alt": "G.D.N Poster"
+      },
+      {
+        "src": "pics/Films/GDN/2.jpeg",
+        "alt": "G.D.N Banner"
+      },
+      {
+        "src": "pics/Films/GDN/3.jpeg",
+        "alt": "G.D.N Movie Still"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "8/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "7.8/10",
+        "url": "https://www.imdb.com/title/tt27448866/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Times of India",
+        "score": "3.5/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movie-reviews/gdn/movie-review/133346900.cms",
+        "icon": "pics/RatingSiteLogos/timesofindia.ico"
+      },
+      {
+        "source": "NDTV",
+        "score": "3.5/5",
+        "url": "https://www.ndtv.com/entertainment/gdn-review-r-madhavan-shines-in-inspiring-biopic-of-gd-naidu-3-5-stars",
+        "icon": "pics/RatingSiteLogos/ndtv.ico"
+      },
+      {
+        "source": "The Hindu",
+        "score": "3.5/5",
+        "url": "https://www.thehindu.com/entertainment/movies/gdn-movie-review-r-madhavan-powers-this-sincere-biopic/article68500200.ece",
+        "icon": "pics/RatingSiteLogos/the-guardian.png"
+      },
+      {
+        "source": "The Indian Express",
+        "score": "3/5",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/gdn-movie-review-r-madhavan-gd-naidu-biopic-9499800/",
+        "icon": "pics/RatingSiteLogos/indian-express.png"
+      },
+      {
+        "source": "Rediff",
+        "score": "3.5/5",
+        "url": "https://www.rediff.com/movies/review/gdn-review-inspiring-biopic-of-an-inventor/20260808.htm",
+        "icon": "pics/RatingSiteLogos/rediff.png"
+      },
+      {
+        "source": "India Today",
+        "score": "3.5/5",
+        "url": "https://www.indiatoday.in/movies/reviews/story/gdn-review-r-madhavan-soars-in-tribute-to-edison-of-india",
+        "icon": "pics/RatingSiteLogos/india-today.ico"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "R. Madhavan",
+        "role": "Gopalswamy Doraiswamy (G",
+        "description": ""
+      },
+      {
+        "actor": "Sathyaraj",
+        "role": "Ramaiah Pillai",
+        "description": ""
+      },
+      {
+        "actor": "Priyamani",
+        "role": "Chellammal (Naidu's wife)",
+        "description": ""
+      },
+      {
+        "actor": "Jayaram",
+        "role": "Ambalapara Krishnan",
+        "description": ""
+      },
+      {
+        "actor": "Vinay Rai",
+        "role": "Bhupendra",
+        "description": ""
+      },
+      {
+        "actor": "Dushara Vijayan",
+        "role": "Ranganayaki",
+        "description": ""
+      },
+      {
+        "actor": "Aditi Balan",
+        "role": "Padmavathi",
+        "description": ""
+      },
+      {
+        "actor": "Karunakaran",
+        "role": "Perunkili",
+        "description": ""
+      }
+    ],
+    "bookings": [
+      {
+        "provider": "BookMyShow",
+        "url": "https://in.bookmyshow.com/movies/gdn/ET00405000",
+        "icon": "pics/BookngWebSiteLogos/book-my-show.png",
+        "label": "Book Tickets",
+        "rank": 2
+      },
+      {
+        "provider": "District",
+        "url": "https://www.district.in/movies/gdn-movie-tickets",
+        "icon": "pics/BookngWebSiteLogos/district.png",
+        "label": "Book Tickets",
+        "rank": 3
+      },
+      {
+        "provider": "TicketNew",
+        "url": "https://ticketnew.com/movies/gdn",
+        "icon": "pics/BookngWebSiteLogos/ticket-new.png",
+        "label": "Book Tickets",
+        "rank": 4
+      }
+    ],
+    "watchOnline": [
+      {
+        "provider": "Netflix",
+        "url": "https://www.netflix.com/title/81729000",
+        "icon": "pics/WatchOnline/netflix.png",
+        "language": "",
+        "label": "Watch on Netflix"
+      }
+    ],
+    "music": [],
+    "officialWebsite": null,
+    "socials": [
+      {
+        "platform": "Twitter / X",
+        "url": "https://twitter.com/share?url=https://oakshow.in/GDN.html",
+        "icon": "images/twitter.png",
+        "language": "",
+        "label": "Connect on Twitter / X"
+      }
+    ],
+    "similar": [
+      {
+        "title": "Vikram Vedha",
+        "link": "VikramVedha.html",
+        "poster": "pics/Films/VikramVedha/1.jpg"
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=hM9Z1gXoYF8",
+        "youtubeId": "hM9Z1gXoYF8",
+        "title": "G.D.N (G.D. Naidu: The Edison of India)"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "G.D.N movie review: Madhavan brings soul and gravitas to an inspiring biographical drama",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/gdn-movie-review-r-madhavan-gd-naidu-biopic-9499800/",
+        "author": "The Indian Express",
+        "date": "August 07, 2026",
+        "section": "More Reviews and News"
+      },
+      {
+        "headline": "G.D.N Review: An Inspiring Biopic of an Exceptional Mind",
+        "url": "https://www.rediff.com/movies/review/gdn-review-inspiring-biopic-of-an-inventor/20260808.htm",
+        "author": "Rediff",
+        "date": "August 08, 2026",
+        "section": "More Reviews and News"
+      },
+      {
+        "headline": "G.D.N Review: R Madhavan soars in heartfelt tribute to the Edison of India",
+        "url": "https://www.indiatoday.in/movies/reviews/story/gdn-review-r-madhavan-soars-in-tribute-to-edison-of-india",
+        "author": "India Today",
+        "date": "August 08, 2026",
+        "section": "More Reviews and News"
+      }
+    ],
+    "filePath": "E:/OakShow/GDN.html"
+  },
+  {
     "id": "OneNightOnly",
     "slug": "onenightonly",
     "type": "movie",
@@ -174437,39 +174645,6 @@
     "videos": [],
     "articles": [],
     "filePath": "E:/OakShow/Error.html"
-  },
-  {
-    "id": "GDN",
-    "slug": "gdn",
-    "type": "movie",
-    "category": "Indian",
-    "score": 7.5,
-    "filename": "GDN.html",
-    "title": "G.D.N (G.D. Naidu: The Edison of India)",
-    "metaTitle": "G.D.N (G.D. Naidu: The Edison of India) All Ratings, Reviews, Songs, Videos, Bookings and News — OakShow",
-    "description": "Explore G.D.N Tamil movie ratings, reviews, box office collections, songs, and OTT streaming on Netflix. Starring R. Madhavan, Priyamani, Dushara Vijayan, and Sathyaraj, directed by Krishnakumar Ramakumar with music by Govind Vasantha.",
-    "plot": "",
-    "language": "Hindi",
-    "releaseDate": "",
-    "year": "",
-    "genre": "Entertainment",
-    "duration": "N/A",
-    "director": "",
-    "basedOn": "",
-    "boxOffice": null,
-    "poster": "pics/Films/GDN/2.jpeg",
-    "gallery": [],
-    "ratings": [],
-    "cast": [],
-    "bookings": [],
-    "watchOnline": [],
-    "music": [],
-    "officialWebsite": null,
-    "socials": [],
-    "similar": [],
-    "videos": [],
-    "articles": [],
-    "filePath": "E:/OakShow/GDN.html"
   },
   {
     "id": "HalfGirlfriendLostWithoutYou",
