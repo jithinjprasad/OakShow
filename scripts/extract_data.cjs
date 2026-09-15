@@ -498,6 +498,24 @@ function extractCast($) {
 
 function extractSimilarMovies($) {
   const similar = [];
+
+  // 1. Top-level standalone similar item (often placed directly outside details)
+  $('.buy-sin-single .middle-side > .grid-item, .single-box .middle-side > .grid-item').each((_, el) => {
+    const $item = $(el);
+    const link = $item.find('a').attr('href');
+    if (!link || !link.endsWith('.html') || link.includes('index.html') || link.includes('submityourreviews')) return;
+    const poster = normalizePath($item.find('img').attr('src'));
+    const title = cleanText($item.find('.fur-name, a').first().text()) || cleanText($item.text());
+    if (title && poster && !poster.includes('RatingSiteLogos') && !poster.includes('WatchOnline') && !poster.includes('BookngWebSiteLogos') && !poster.includes('MusicWebsiteLogos')) {
+      similar.push({
+        title: title.replace(/\s+/g, ' ').trim(),
+        link: normalizePath(link),
+        poster
+      });
+    }
+  });
+
+  // 2. Items inside "More Similar Movie(s)" details
   $('details').each((_, el) => {
     const summary = cleanText($(el).find('summary').text());
     if (/similar/i.test(summary)) {

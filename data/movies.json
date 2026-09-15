@@ -194,7 +194,13 @@
         "label": "Connect on Twitter / X"
       }
     ],
-    "similar": [],
+    "similar": [
+      {
+        "title": "Premalu",
+        "link": "Premalu.html",
+        "poster": "pics/Films/Premalu/1.jpg"
+      }
+    ],
     "videos": [
       {
         "url": "https://www.youtube.com/watch?v=fk0JHh1P9H0",
@@ -484,7 +490,13 @@
         "label": "Connect on Twitter / X"
       }
     ],
-    "similar": [],
+    "similar": [
+      {
+        "title": "Kaithi",
+        "link": "Kaithi.html",
+        "poster": "pics/Films/Kaithi/1.jpg"
+      }
+    ],
     "videos": [
       {
         "url": "https://www.youtube.com/watch?v=2kntxizQIFI",
@@ -1172,7 +1184,13 @@
         "label": "Connect on Twitter / X"
       }
     ],
-    "similar": [],
+    "similar": [
+      {
+        "title": "Zack Snyder's Justice League",
+        "link": "ZackSnydersJusticeLeague.html",
+        "poster": "pics/Films/ZackSnydersJusticeLeague/1.jpg"
+      }
+    ],
     "videos": [
       {
         "url": "https://www.youtube.com/watch?v=90HAqMk7qv0",
@@ -1374,6 +1392,11 @@
       }
     ],
     "similar": [
+      {
+        "title": "Pokemon Detective Pikachu",
+        "link": "PokemonDetectivePikachu.html",
+        "poster": "pics/Films/PokemonDetectivePikachu/1.jpg"
+      },
       {
         "title": "The Lego Batman Movie",
         "link": "TheLegoBatmanMovie.html",
@@ -1611,6 +1634,11 @@
       }
     ],
     "similar": [
+      {
+        "title": "Soorarai Pottru",
+        "link": "SooraraiPottru.html",
+        "poster": "pics/Films/SooraraiPottru/1.jpg"
+      },
       {
         "title": "Vikram Vedha",
         "link": "VikramVedha.html",
@@ -1908,6 +1936,11 @@
       }
     ],
     "similar": [
+      {
+        "title": "Holidate",
+        "link": "Holidate.html",
+        "poster": "pics/Films/Holidate/1.jpg"
+      },
       {
         "title": "Jexi",
         "link": "Jexi.html",
@@ -2326,6 +2359,11 @@
     ],
     "similar": [
       {
+        "title": "Irudhi Suttru",
+        "link": "IrudhiSuttru.html",
+        "poster": "pics/Films/IrudhiSuttru/1.jpg"
+      },
+      {
         "title": "Bigil",
         "link": "Bigil.html",
         "poster": "pics/Films/Bigil/1.jpg"
@@ -2587,6 +2625,11 @@
       }
     ],
     "similar": [
+      {
+        "title": "Lucifer",
+        "link": "Lucifer.html",
+        "poster": "pics/Films/Lucifer/1.jpg"
+      },
       {
         "title": "Ranam",
         "link": "Ranam.html",
@@ -2878,6 +2921,11 @@
       }
     ],
     "similar": [
+      {
+        "title": "Kaithi",
+        "link": "Kaithi.html",
+        "poster": "pics/Films/Kaithi/1.jpg"
+      },
       {
         "title": "Dhruva Natchathiram",
         "link": "DhruvaNatchathiram.html",
@@ -3176,7 +3224,13 @@
         "label": "Connect on Twitter / X"
       }
     ],
-    "similar": [],
+    "similar": [
+      {
+        "title": "Bongu",
+        "link": "Bongu.html",
+        "poster": "pics/Films/Bongu/1.jpg"
+      }
+    ],
     "videos": [
       {
         "url": "https://www.youtube.com/watch?v=2E4ihxaCDL4",
@@ -3450,7 +3504,13 @@
         "label": "Connect on Twitter / X"
       }
     ],
-    "similar": [],
+    "similar": [
+      {
+        "title": "Bongu",
+        "link": "Bongu.html",
+        "poster": "pics/Films/Bongu/1.jpg"
+      }
+    ],
     "videos": [
       {
         "url": "https://www.youtube.com/watch?v=2E4ihxaCDL4",
@@ -3627,7 +3687,13 @@
         "label": "Connect on Twitter / X"
       }
     ],
-    "similar": [],
+    "similar": [
+      {
+        "title": "The Girl with the Dragon Tattoo",
+        "link": "TheGirlwiththeDragonTattoo.html",
+        "poster": "pics/Films/TheGirlwiththeDragonTattoo/1.jpg"
+      }
+    ],
     "videos": [
       {
         "url": "https://www.youtube.com/watch?v=ZHRR-1CKYIQ",
@@ -3920,6 +3986,11 @@
     ],
     "similar": [
       {
+        "title": "Alita: Battle Angel",
+        "link": "AlitaBattleAngel.html",
+        "poster": "pics/Films/AlitaBattleAngel/1.jpg"
+      },
+      {
         "title": "Zack Snyder's Justice League",
         "link": "ZackSnydersJusticeLeague.html",
         "poster": "pics/Films/ZackSnydersJusticeLeague/1.jpg"
@@ -3928,11 +3999,6 @@
         "title": "Avengers: Endgame",
         "link": "AvengersEndgame.html",
         "poster": "pics/Films/AvengersEndgame/1.jpg"
-      },
-      {
-        "title": "Alita: Battle Angel",
-        "link": "AlitaBattleAngel.html",
-        "poster": "pics/Films/AlitaBattleAngel/1.jpg"
       },
       {
         "title": "War for the Planet of the Apes",
@@ -4173,6 +4239,11 @@
     ],
     "similar": [
       {
+        "title": "Fan",
+        "link": "Fan.html",
+        "poster": "pics/Films/Fan/1.jpg"
+      },
+      {
         "title": "Good Newwz",
         "link": "GoodNewwz.html",
         "poster": "pics/Films/GoodNewwz/1.jpg"
@@ -4181,11 +4252,6 @@
         "title": "Dishoom",
         "link": "Dishoom.html",
         "poster": "pics/Films/Dishoom/1.jpg"
-      },
-      {
-        "title": "Fan",
-        "link": "Fan.html",
-        "poster": "pics/Films/Fan/1.jpg"
       }
     ],
     "videos": [
@@ -4481,6 +4547,11 @@
         "poster": "pics/Films/Moonlight/1.jpg"
       },
       {
+        "title": "Snowden",
+        "link": "Snowden.html",
+        "poster": "pics/Films/Snowden/1.jpg"
+      },
+      {
         "title": "Once Upon a Time In Hollywood",
         "link": "OnceUponaTimeInHollywood.html",
         "poster": "pics/Films/OnceUponaTimeInHollywood/1.jpg"
@@ -4489,11 +4560,6 @@
         "title": "La La Land",
         "link": "LaLaLand.html",
         "poster": "pics/Films/La La Land/1.jpg"
-      },
-      {
-        "title": "Snowden",
-        "link": "Snowden.html",
-        "poster": "pics/Films/Snowden/1.jpg"
       }
     ],
     "videos": [
@@ -5016,14 +5082,14 @@
     ],
     "similar": [
       {
-        "title": "Lucifer",
-        "link": "Lucifer.html",
-        "poster": "pics/Films/Lucifer/1.jpg"
-      },
-      {
         "title": "Ezra",
         "link": "Ezra.html",
         "poster": "pics/Films/Ezra/1.jpg"
+      },
+      {
+        "title": "Lucifer",
+        "link": "Lucifer.html",
+        "poster": "pics/Films/Lucifer/1.jpg"
       }
     ],
     "videos": [
@@ -5648,14 +5714,14 @@
     ],
     "similar": [
       {
-        "title": "Athiran",
-        "link": "Athiran.html",
-        "poster": "pics/Films/Athiran/1.jpg"
-      },
-      {
         "title": "Ezra",
         "link": "Ezra.html",
         "poster": "pics/Films/Ezra/1.jpg"
+      },
+      {
+        "title": "Athiran",
+        "link": "Athiran.html",
+        "poster": "pics/Films/Athiran/1.jpg"
       }
     ],
     "videos": [
@@ -5871,6 +5937,11 @@
         "poster": "pics/Films/V/1.jpg"
       },
       {
+        "title": "Thadam",
+        "link": "Thadam.html",
+        "poster": "pics/Films/Thadam/1.jpg"
+      },
+      {
         "title": "Kaithi",
         "link": "Kaithi.html",
         "poster": "pics/Films/Kaithi/1.jpg"
@@ -5879,11 +5950,6 @@
         "title": "War",
         "link": "War.html",
         "poster": "pics/Films/War/1.jpg"
-      },
-      {
-        "title": "Thadam",
-        "link": "Thadam.html",
-        "poster": "pics/Films/Thadam/1.jpg"
       }
     ],
     "videos": [
@@ -6534,6 +6600,11 @@
         "poster": "pics/Serieses/MoneyHeist/1.jpg"
       },
       {
+        "title": "Thani Oruvan",
+        "link": "ThaniOruvan.html",
+        "poster": "pics/Films/Thani Oruvan/1.jpg"
+      },
+      {
         "title": "Sacred Games",
         "link": "SacredGames.html",
         "poster": "pics/Serieses/SacredGames/1.jpg"
@@ -6542,11 +6613,6 @@
         "title": "Harley and the Davidsons",
         "link": "HarleyandtheDavidsons.html",
         "poster": "pics/Serieses/Harley and the Davidsons/1.jpg"
-      },
-      {
-        "title": "Thani Oruvan",
-        "link": "ThaniOruvan.html",
-        "poster": "pics/Films/Thani Oruvan/1.jpg"
       }
     ],
     "videos": [
@@ -6791,6 +6857,11 @@
         "poster": "pics/Films/SetItUp/1.jpg"
       },
       {
+        "title": "Popstar: Never Stop Never Stopping",
+        "link": "PopstarNeverStopNeverStopping.html",
+        "poster": "pics/Films/Popstar Never Stop Never Stopping/1.jpg"
+      },
+      {
         "title": "Literally Right Before Aaron",
         "link": "LiterallyRightBeforeAaron.html",
         "poster": "pics/Films/LiterallyRightBeforeAaron/1.jpg"
@@ -6799,11 +6870,6 @@
         "title": "Table 19",
         "link": "Table19.html",
         "poster": "pics/Films/Table 19/1.jpg"
-      },
-      {
-        "title": "Popstar: Never Stop Never Stopping",
-        "link": "PopstarNeverStopNeverStopping.html",
-        "poster": "pics/Films/Popstar Never Stop Never Stopping/1.jpg"
       }
     ],
     "videos": [
@@ -7517,6 +7583,11 @@
     ],
     "similar": [
       {
+        "title": "M.S. Dhoni: The Untold Story",
+        "link": "MSDhoniTheUntoldStory.html",
+        "poster": "pics/Films/M.S. Dhoni The Untold Story/1.jpg"
+      },
+      {
         "title": "Mookuthi Amman",
         "link": "MookuthiAmman.html",
         "poster": "pics/Films/MookuthiAmman/1.jpg"
@@ -7525,11 +7596,6 @@
         "title": "Gunjan Saxena: The Kargil Girl",
         "link": "GunjanSaxenaTheKargilGirl.html",
         "poster": "pics/Films/GunjanSaxenaTheKargilGirl/1.jpg"
-      },
-      {
-        "title": "M.S. Dhoni: The Untold Story",
-        "link": "MSDhoniTheUntoldStory.html",
-        "poster": "pics/Films/M.S. Dhoni The Untold Story/1.jpg"
       },
       {
         "title": "Sully: Miracle on the Hudson",
@@ -8433,6 +8499,16 @@
     ],
     "similar": [
       {
+        "title": "Atomic Blonde",
+        "link": "AtomicBlonde.html",
+        "poster": "pics/Films/AtomicBlonde/1.jpg"
+      },
+      {
+        "title": "Wonder Woman",
+        "link": "WonderWoman.html",
+        "poster": "pics/Films/Wonder Woman/1.jpg"
+      },
+      {
         "title": "Wonder Woman 1984",
         "link": "WonderWoman1984.html",
         "poster": "pics/Films/WonderWoman1984/1.jpg"
@@ -8451,16 +8527,6 @@
         "title": "The Equalizer 2",
         "link": "TheEqualizer2.html",
         "poster": "pics/Films/TheEqualizer2/1.jpg"
-      },
-      {
-        "title": "Atomic Blonde",
-        "link": "AtomicBlonde.html",
-        "poster": "pics/Films/AtomicBlonde/1.jpg"
-      },
-      {
-        "title": "Wonder Woman",
-        "link": "WonderWoman.html",
-        "poster": "pics/Films/Wonder Woman/1.jpg"
       },
       {
         "title": "John Wick: Chapter 2",
@@ -8932,14 +8998,14 @@
     ],
     "similar": [
       {
-        "title": "Laxmii",
-        "link": "Laxmii.html",
-        "poster": "pics/Films/Laxmii/1.jpg"
-      },
-      {
         "title": "Zombieland: Double Tap",
         "link": "ZombielandDoubleTap.html",
         "poster": "pics/Films/ZombielandDoubleTap/1.jpg"
+      },
+      {
+        "title": "Laxmii",
+        "link": "Laxmii.html",
+        "poster": "pics/Films/Laxmii/1.jpg"
       }
     ],
     "videos": [
@@ -9165,6 +9231,11 @@
     ],
     "similar": [
       {
+        "title": "Geostorm",
+        "link": "Geostorm.html",
+        "poster": "pics/Films/Geostorm/1.jpg"
+      },
+      {
         "title": "Zombieland: Double Tap",
         "link": "ZombielandDoubleTap.html",
         "poster": "pics/Films/ZombielandDoubleTap/1.jpg"
@@ -9178,11 +9249,6 @@
         "title": "Jurassic World: Fallen Kingdom",
         "link": "JurassicWorldFallenKingdom.html",
         "poster": "pics/Films/JurassicWorldFallenKingdom/1.jpg"
-      },
-      {
-        "title": "Geostorm",
-        "link": "Geostorm.html",
-        "poster": "pics/Films/Geostorm/1.jpg"
       },
       {
         "title": "Deepwater Horizon",
@@ -10544,14 +10610,19 @@
     ],
     "similar": [
       {
-        "title": "John Wick 3: Parabellum",
-        "link": "JohnWick3Parabellum.html",
-        "poster": "pics/Films/JohnWick3Parabellum/1.jpg"
-      },
-      {
         "title": "Mission: Impossible – Fallout",
         "link": "MissionImpossible6.html",
         "poster": "pics/Films/MissionImpossibleFallout/1.jpg"
+      },
+      {
+        "title": "Wonder Woman",
+        "link": "WonderWoman.html",
+        "poster": "pics/Films/Wonder Woman/1.jpg"
+      },
+      {
+        "title": "John Wick 3: Parabellum",
+        "link": "JohnWick3Parabellum.html",
+        "poster": "pics/Films/JohnWick3Parabellum/1.jpg"
       },
       {
         "title": "Mile 22",
@@ -10572,11 +10643,6 @@
         "title": "Dunkirk",
         "link": "Dunkirk.html",
         "poster": "pics/Films/Dunkirk/1.jpg"
-      },
-      {
-        "title": "Wonder Woman",
-        "link": "WonderWoman.html",
-        "poster": "pics/Films/Wonder Woman/1.jpg"
       },
       {
         "title": "John Wick: Chapter 2",
@@ -11079,11 +11145,6 @@
     ],
     "similar": [
       {
-        "title": "Mid90s",
-        "link": "Mid90s.html",
-        "poster": "pics/Films/Mid90s/1.jpg"
-      },
-      {
         "title": "Eighth Grade",
         "link": "EighthGrade.html",
         "poster": "pics/Films/EighthGrade/1.jpg"
@@ -11092,6 +11153,11 @@
         "title": "The Edge of Seventeen",
         "link": "TheEdgeofSeventeen.html",
         "poster": "pics/Films/The Edge of Seventeen/1.jpg"
+      },
+      {
+        "title": "Mid90s",
+        "link": "Mid90s.html",
+        "poster": "pics/Films/Mid90s/1.jpg"
       }
     ],
     "videos": [
@@ -12098,14 +12164,14 @@
     ],
     "similar": [
       {
-        "title": "Varane Avashyamund",
-        "link": "VaraneAvashyamund.html",
-        "poster": "pics/Films/VaraneAvashyamund/1.jpg"
-      },
-      {
         "title": "Ormayil Oru Shishiram",
         "link": "OrmayilOruShishiram.html",
         "poster": "pics/Films/OrmayilOruShishiram/1.jpg"
+      },
+      {
+        "title": "Varane Avashyamund",
+        "link": "VaraneAvashyamund.html",
+        "poster": "pics/Films/VaraneAvashyamund/1.jpg"
       }
     ],
     "videos": [
@@ -13157,14 +13223,14 @@
     ],
     "similar": [
       {
-        "title": "Manoharam",
-        "link": "Manoharam.html",
-        "poster": "pics/Films/Manoharam/1.jpg"
-      },
-      {
         "title": "Kumbalangi Nights",
         "link": "KumbalangiNights.html",
         "poster": "pics/Films/KumbalangiNights/1.jpg"
+      },
+      {
+        "title": "Manoharam",
+        "link": "Manoharam.html",
+        "poster": "pics/Films/Manoharam/1.jpg"
       }
     ],
     "videos": [
@@ -14182,14 +14248,14 @@
     ],
     "similar": [
       {
-        "title": "The Mummy",
-        "link": "The Mummy.html",
-        "poster": "pics/Films/The Mummy/1.jpg"
-      },
-      {
         "title": "Wonder Woman",
         "link": "WonderWoman.html",
         "poster": "pics/Films/Wonder Woman/1.jpg"
+      },
+      {
+        "title": "The Mummy",
+        "link": "TheMummy.html",
+        "poster": "pics/Films/The Mummy/1.jpg"
       },
       {
         "title": "Hacksaw Ridge",
@@ -14419,11 +14485,6 @@
     ],
     "similar": [
       {
-        "title": "Wonder Woman 1984",
-        "link": "WonderWoman1984.html",
-        "poster": "pics/Films/WonderWoman1984/1.jpg"
-      },
-      {
         "title": "The Old Guard",
         "link": "TheOldGuard.html",
         "poster": "pics/Films/TheOldGuard/1.jpg"
@@ -14432,6 +14493,11 @@
         "title": "Iru Mugan",
         "link": "IruMugan.html",
         "poster": "pics/Films/Iru Mugan/1.jpg"
+      },
+      {
+        "title": "Wonder Woman 1984",
+        "link": "WonderWoman1984.html",
+        "poster": "pics/Films/WonderWoman1984/1.jpg"
       },
       {
         "title": "Wonder Woman",
@@ -14640,14 +14706,14 @@
     ],
     "similar": [
       {
-        "title": "The Mummy",
-        "link": "The Mummy.html",
-        "poster": "pics/Films/The Mummy/1.jpg"
-      },
-      {
         "title": "Wonder Woman",
         "link": "WonderWoman.html",
         "poster": "pics/Films/Wonder Woman/1.jpg"
+      },
+      {
+        "title": "The Mummy",
+        "link": "TheMummy.html",
+        "poster": "pics/Films/The Mummy/1.jpg"
       },
       {
         "title": "Hacksaw Ridge",
@@ -16063,14 +16129,14 @@
     ],
     "similar": [
       {
-        "title": "96",
-        "link": "96.html",
-        "poster": "pics/Films/96/1.jpg"
-      },
-      {
         "title": "Raees",
         "link": "Raees.html",
         "poster": "pics/Films/Raees/1.jpg"
+      },
+      {
+        "title": "96",
+        "link": "96.html",
+        "poster": "pics/Films/96/1.jpg"
       }
     ],
     "videos": [
@@ -17038,6 +17104,11 @@
     ],
     "similar": [
       {
+        "title": "Disobedience",
+        "link": "Disobedience.html",
+        "poster": "pics/Films/Disobedience/1.jpg"
+      },
+      {
         "title": "365 Days",
         "link": "365Days.html",
         "poster": "pics/Films/365Days/1.jpg"
@@ -17046,11 +17117,6 @@
         "title": "A Star is Born",
         "link": "AStarisBorn.html",
         "poster": "pics/Films/AStarisBorn/1.jpg"
-      },
-      {
-        "title": "Disobedience",
-        "link": "Disobedience.html",
-        "poster": "pics/Films/Disobedience/1.jpg"
       },
       {
         "title": "Allied",
@@ -17817,14 +17883,14 @@
     ],
     "similar": [
       {
-        "title": "Dunkirk",
-        "link": "Dunkirk.html",
-        "poster": "pics/Films/Dunkirk/1.jpg"
-      },
-      {
         "title": "Wonder Woman",
         "link": "WonderWoman.html",
         "poster": "pics/Films/Wonder Woman/1.jpg"
+      },
+      {
+        "title": "Dunkirk",
+        "link": "Dunkirk.html",
+        "poster": "pics/Films/Dunkirk/1.jpg"
       },
       {
         "title": "Hacksaw Ridge",
@@ -18062,14 +18128,14 @@
     ],
     "similar": [
       {
-        "title": "Last Christmas",
-        "link": "LastChristmas.html",
-        "poster": "pics/Films/LastChristmas/1.jpg"
-      },
-      {
         "title": "Set It Up",
         "link": "SetItUp.html",
         "poster": "pics/Films/SetItUp/1.jpg"
+      },
+      {
+        "title": "Last Christmas",
+        "link": "LastChristmas.html",
+        "poster": "pics/Films/LastChristmas/1.jpg"
       },
       {
         "title": "Office Christmas Party",
@@ -18306,6 +18372,16 @@
         "poster": "pics/Films/MookuthiAmman/1.jpg"
       },
       {
+        "title": "Zombieland: Double Tap",
+        "link": "ZombielandDoubleTap.html",
+        "poster": "pics/Films/ZombielandDoubleTap/1.jpg"
+      },
+      {
+        "title": "Kanchana 3",
+        "link": "Kanchana3.html",
+        "poster": "pics/Films/Kanchana3/1.jpg"
+      },
+      {
         "title": "Freaky",
         "link": "Freaky.html",
         "poster": "pics/Films/Freaky/1.jpg"
@@ -18324,11 +18400,6 @@
         "title": "Stree",
         "link": "Stree.html",
         "poster": "pics/Films/Stree/1.jpg"
-      },
-      {
-        "title": "Kanchana 3",
-        "link": "Kanchana3.html",
-        "poster": "pics/Films/Kanchana3/1.jpg"
       },
       {
         "title": "Golmaal Again",
@@ -19256,11 +19327,6 @@
     ],
     "similar": [
       {
-        "title": "Five Feet Apart",
-        "link": "FiveFeetApart.html",
-        "poster": "pics/Films/FiveFeetApart/1.jpg"
-      },
-      {
         "title": "'96",
         "link": "96.html",
         "poster": "pics/Films/96/1.jpg"
@@ -19269,6 +19335,11 @@
         "title": "La La Land",
         "link": "LaLaLand.html",
         "poster": "pics/Films/La La Land/1.jpg"
+      },
+      {
+        "title": "Five Feet Apart",
+        "link": "FiveFeetApart.html",
+        "poster": "pics/Films/FiveFeetApart/1.jpg"
       }
     ],
     "videos": [
@@ -20222,14 +20293,14 @@
     ],
     "similar": [
       {
-        "title": "Venom",
-        "link": "Venom.html",
-        "poster": "pics/Films/Venom/1.jpg"
-      },
-      {
         "title": "Alien: Covenant",
         "link": "AlienCovenant.html",
         "poster": "pics/Films/Alien Covenant/1.jpg"
+      },
+      {
+        "title": "Venom",
+        "link": "Venom.html",
+        "poster": "pics/Films/Venom/1.jpg"
       },
       {
         "title": "Guardians of the Galaxy Vol. 2",
@@ -20564,14 +20635,14 @@
     ],
     "similar": [
       {
-        "title": "Hate Story 4",
-        "link": "HateStory4.html",
-        "poster": "pics/Films/HateStory4/1.jpg"
-      },
-      {
         "title": "Great Grand Masti",
         "link": "GreatGrandMasti.html",
         "poster": "pics/Films/Great Grand Masti/1.jpg"
+      },
+      {
+        "title": "Hate Story 4",
+        "link": "HateStory4.html",
+        "poster": "pics/Films/HateStory4/1.jpg"
       }
     ],
     "videos": [
@@ -20932,14 +21003,14 @@
         "poster": "pics/Films/Laxmii/1.jpg"
       },
       {
-        "title": "Stree",
-        "link": "Stree.html",
-        "poster": "pics/Films/Stree/1.jpg"
-      },
-      {
         "title": "Nanu Ki Jaanu",
         "link": "NanuKiJaanu.html",
         "poster": "pics/Films/NanuKiJaanu/1.jpg"
+      },
+      {
+        "title": "Stree",
+        "link": "Stree.html",
+        "poster": "pics/Films/Stree/1.jpg"
       }
     ],
     "videos": [
@@ -21394,14 +21465,14 @@
         "poster": "pics/Films/Manoharam/1.jpg"
       },
       {
-        "title": "Argentina Fans Kaattoorkadavu",
-        "link": "ArgentinaFansKaattoorkadavu.html",
-        "poster": "pics/Films/ArgentinaFansKaattoorkadavu/1.jpg"
-      },
-      {
         "title": "Vijay Superum Pournamiyum",
         "link": "VijaySuperumPournamiyum.html",
         "poster": "pics/Films/VijaySuperumPournamiyum/1.jpg"
+      },
+      {
+        "title": "Argentina Fans Kaattoorkadavu",
+        "link": "ArgentinaFansKaattoorkadavu.html",
+        "poster": "pics/Films/ArgentinaFansKaattoorkadavu/1.jpg"
       }
     ],
     "videos": [
@@ -22030,14 +22101,14 @@
         "poster": "pics/Films/War/1.jpg"
       },
       {
-        "title": "Baazaar",
-        "link": "Baazaar.html",
-        "poster": "pics/Films/Baazaar/1.jpg"
-      },
-      {
         "title": "Sarkar 3",
         "link": "Sarkar3.html",
         "poster": "pics/Films/Sarkar 3/1.jpg"
+      },
+      {
+        "title": "Baazaar",
+        "link": "Baazaar.html",
+        "poster": "pics/Films/Baazaar/1.jpg"
       }
     ],
     "videos": [
@@ -22285,11 +22356,6 @@
     ],
     "similar": [
       {
-        "title": "Petromax",
-        "link": "Petromax.html",
-        "poster": "pics/Films/Petromax/1.jpg"
-      },
-      {
         "title": "Super Duper",
         "link": "SuperDuper.html",
         "poster": "pics/Films/SuperDuper/1.jpg"
@@ -22300,14 +22366,19 @@
         "poster": "pics/Films/Zombie/1.jpg"
       },
       {
-        "title": "Semma Botha Aagatha",
-        "link": "SemmaBothaAagathaTheMovie.html",
-        "poster": "pics/Films/SemmaBothaAagatha/1.jpg"
-      },
-      {
         "title": "Great Grand Masti",
         "link": "GreatGrandMasti.html",
         "poster": "pics/Films/Great Grand Masti/1.jpg"
+      },
+      {
+        "title": "Petromax",
+        "link": "Petromax.html",
+        "poster": "pics/Films/Petromax/1.jpg"
+      },
+      {
+        "title": "Semma Botha Aagatha",
+        "link": "SemmaBothaAagathaTheMovie.html",
+        "poster": "pics/Films/SemmaBothaAagatha/1.jpg"
       }
     ],
     "videos": [
@@ -23933,24 +24004,24 @@
     ],
     "similar": [
       {
-        "title": "Blade Runner 2049",
-        "link": "BladeRunner2049.html",
-        "poster": "pics/Films/BladeRunner2049/1.jpg"
-      },
-      {
         "title": "A Simple Favor",
         "link": "ASimpleFavor.html",
         "poster": "pics/Films/ASimpleFavor/1.jpg"
       },
       {
-        "title": "Thupparivaalan",
-        "link": "Thupparivaalan.html",
-        "poster": "pics/Films/Thupparivaalan/1.jpg"
-      },
-      {
         "title": "The Nice Guys",
         "link": "TheNiceGuys.html",
         "poster": "pics/Films/The Nice Guys/1.jpg"
+      },
+      {
+        "title": "Blade Runner 2049",
+        "link": "BladeRunner2049.html",
+        "poster": "pics/Films/BladeRunner2049/1.jpg"
+      },
+      {
+        "title": "Thupparivaalan",
+        "link": "Thupparivaalan.html",
+        "poster": "pics/Films/Thupparivaalan/1.jpg"
       }
     ],
     "videos": [
@@ -27741,14 +27812,14 @@
     ],
     "similar": [
       {
-        "title": "Wonder Woman",
-        "link": "WonderWoman.html",
-        "poster": "pics/Films/Wonder Woman/1.jpg"
-      },
-      {
         "title": "Wonder Woman 1984",
         "link": "WonderWoman1984.html",
         "poster": "pics/Films/WonderWoman1984/1.jpg"
+      },
+      {
+        "title": "Wonder Woman",
+        "link": "WonderWoman.html",
+        "poster": "pics/Films/Wonder Woman/1.jpg"
       }
     ],
     "videos": [
@@ -40767,6 +40838,11 @@
     ],
     "similar": [
       {
+        "title": "Sully",
+        "link": "Sully.html",
+        "poster": "pics/Films/Sully/1.jpg"
+      },
+      {
         "title": "Mission: Impossible – Fallout",
         "link": "MissionImpossible6.html",
         "poster": "pics/Films/MissionImpossibleFallout/1.jpg"
@@ -40775,11 +40851,6 @@
         "title": "American Made",
         "link": "AmericanMade.html",
         "poster": "pics/Films/AmericanMade/1.jpg"
-      },
-      {
-        "title": "Sully",
-        "link": "Sully.html",
-        "poster": "pics/Films/Sully/1.jpg"
       }
     ],
     "videos": [
@@ -55761,6 +55832,11 @@
     ],
     "similar": [
       {
+        "title": "Devi",
+        "link": "Devi.html",
+        "poster": "pics/Films/Devi/1.jpg"
+      },
+      {
         "title": "Devi 2",
         "link": "Devi2.html",
         "poster": "pics/Films/Devi2/1.jpg"
@@ -55769,11 +55845,6 @@
         "title": "Nayaki",
         "link": "Nayaki.html",
         "poster": "pics/Films/Nayaki/1.jpg"
-      },
-      {
-        "title": "Devi",
-        "link": "Devi.html",
-        "poster": "pics/Films/Devi/1.jpg"
       }
     ],
     "videos": [
@@ -63125,14 +63196,14 @@
     ],
     "similar": [
       {
-        "title": "Zombieland: Double Tap",
-        "link": "ZombielandDoubleTap.html",
-        "poster": "pics/Films/ZombielandDoubleTap/1.jpg"
-      },
-      {
         "title": "Super Duper",
         "link": "SuperDuper.html",
         "poster": "pics/Films/SuperDuper/1.jpg"
+      },
+      {
+        "title": "Zombieland: Double Tap",
+        "link": "ZombielandDoubleTap.html",
+        "poster": "pics/Films/ZombielandDoubleTap/1.jpg"
       }
     ],
     "videos": [
@@ -86064,14 +86135,14 @@
     ],
     "similar": [
       {
-        "title": "Adithya Varma",
-        "link": "AdithyaVarma.html",
-        "poster": "pics/Films/AdithyaVarma/1.jpg"
-      },
-      {
         "title": "Super Duper",
         "link": "SuperDuper.html",
         "poster": "pics/Films/SuperDuper/1.jpg"
+      },
+      {
+        "title": "Adithya Varma",
+        "link": "AdithyaVarma.html",
+        "poster": "pics/Films/AdithyaVarma/1.jpg"
       }
     ],
     "videos": [
@@ -87902,6 +87973,11 @@
     ],
     "similar": [
       {
+        "title": "Generation Gap",
+        "link": "GenerationGap.html",
+        "poster": "pics/Serieses/GenerationGap/1.jpg"
+      },
+      {
         "title": "Prabha ki Diary",
         "link": "PrabhakiDiary.html",
         "poster": "pics/Serieses/PrabhakiDiary/1.jpg"
@@ -87925,11 +88001,6 @@
         "title": "Four More Shots Please!",
         "link": "FourMoreShotsPlease.html",
         "poster": "pics/Serieses/FourMoreShotsPlease/1.jpg"
-      },
-      {
-        "title": "Generation Gap",
-        "link": "GenerationGap.html",
-        "poster": "pics/Serieses/GenerationGap/1.jpg"
       }
     ],
     "videos": [
