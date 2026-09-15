@@ -100,6 +100,16 @@
     "poster": "pics/Films/KhalifaTheRuler/2.jpg"
   },
   {
+    "id": "Sardar2",
+    "title": "Sardar 2",
+    "type": "movie",
+    "category": "Indian",
+    "genre": "Action, Spy, Thriller",
+    "language": "Tamil",
+    "year": "2026",
+    "poster": "pics/Films/Sardar2/1.jpg"
+  },
+  {
     "id": "im-game",
     "title": "I'm Game",
     "type": "movie",
@@ -10448,16 +10458,6 @@
     "language": "Hindi",
     "year": "",
     "poster": "pics/Films/Khaidi No. 150/Kajal/1.jpg"
-  },
-  {
-    "id": "mandaadi_wiki",
-    "title": "mandaadi_wiki",
-    "type": "movie",
-    "category": "Indian",
-    "genre": "Entertainment",
-    "language": "Hindi",
-    "year": "",
-    "poster": ""
   },
   {
     "id": "Marauders",
