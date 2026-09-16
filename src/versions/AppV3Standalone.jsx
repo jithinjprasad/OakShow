@@ -754,10 +754,10 @@ export default function App() {
       b.id?.toLowerCase() === cleanId ||
       b.link?.toLowerCase().replace('.html', '').endsWith(cleanId)
     );
-    if (targetBlog && targetBlog.link && targetBlog.link.includes('30-feel-good-films')) {
-      const cleanUrl = `/${targetBlog.link.replace(/^\/+/, '')}`;
+    if (targetBlog) {
+      const modernBlogUrl = targetBlog.link.startsWith('/') ? targetBlog.link : `/${targetBlog.link}`;
       if (typeof window !== 'undefined' && !window.location.pathname.endsWith(targetBlog.link)) {
-        window.location.href = cleanUrl;
+        window.location.href = modernBlogUrl;
         return null;
       }
     }
@@ -768,39 +768,20 @@ export default function App() {
       r.file?.toLowerCase().replace('.html', '') === cleanId
     );
     if (targetReview) {
-      updatePageMeta(
-        `${targetReview.title} — OakShow Critic Review by ${targetReview.author}`,
-        targetReview.excerpt,
-        targetReview.banner
-      );
-      return (
-        <div className="app-root">
-          <Navbar
-            activeTab="reviews"
-            setActiveTab={navigate}
-            openSearch={() => setSearchOpen(true)}
-            bookmarkCount={bookmarks.length}
-            onOpenBookmarks={() => setBookmarksDrawerOpen(true)}
-            totalMoviesCount={moviesData.length}
-          currentUser={currentUser}
-          onOpenAuth={handleOpenAuth}
-          onLogout={handleLogout}
-          />
-          <div className="container tab-view">
-            <CriticReviewsHub
-              reviews={reviewsData}
-              onNavigate={navigate}
-            />
-          </div>
-          <Footer onSelectCategory={navigate} />
-          <SearchModal
-            isOpen={searchOpen}
-            onClose={() => setSearchOpen(false)}
-            searchIndex={searchIndexData}
-            onSelectItem={handleSelectItem}
-          />
-        </div>
-      );
+      let reviewUrl = targetReview.url;
+      if (!reviewUrl && targetReview.link) {
+        const a = (targetReview.author || '').toLowerCase();
+        if (a.includes('jithin')) reviewUrl = `/Profiles/CriticProfiles/JithinJPrasad/${targetReview.link}`;
+        else if (a.includes('abhijith')) reviewUrl = `/Profiles/CriticProfiles/AbhijithAG/${targetReview.link}`;
+        else if (a.includes('manoj')) reviewUrl = `/Profiles/CriticProfiles/ManojAswin/${targetReview.link}`;
+        else if (a.includes('vishnu')) reviewUrl = `/Profiles/CriticProfiles/VishnuPc/${targetReview.link}`;
+        else if (a.includes('oakshow')) reviewUrl = `/Profiles/CriticProfiles/MsMrOakShow/${targetReview.link}`;
+        else reviewUrl = targetReview.link;
+      }
+      if (reviewUrl && typeof window !== 'undefined' && !window.location.pathname.endsWith(targetReview.link)) {
+        window.location.href = reviewUrl;
+        return null;
+      }
     }
 
     // Check if it's a release month calendar (e.g. IndianReleases2018August)

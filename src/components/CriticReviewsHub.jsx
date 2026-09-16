@@ -113,18 +113,28 @@ export default function CriticReviewsHub({ reviews, onNavigate, onSelectCritic }
       return rev.url;
     }
     if (rev.link) {
-      if (rev.link.startsWith('http') || rev.link.includes('/')) return rev.link;
+      if (rev.link.startsWith('http')) return rev.link;
+      if (rev.link.startsWith('/')) return rev.link;
       const authorLower = (rev.author || '').toLowerCase();
       if (authorLower.includes('jithin')) {
-        return `Profiles/CriticProfiles/JithinJPrasad/${rev.link}`;
+        return `/Profiles/CriticProfiles/JithinJPrasad/${rev.link}`;
       }
       if (authorLower.includes('abhijith')) {
-        return `Profiles/CriticProfiles/AbhijithAG/${rev.link}`;
+        return `/Profiles/CriticProfiles/AbhijithAG/${rev.link}`;
       }
-      return rev.link;
+      if (authorLower.includes('manoj')) {
+        return `/Profiles/CriticProfiles/ManojAswin/${rev.link}`;
+      }
+      if (authorLower.includes('vishnu')) {
+        return `/Profiles/CriticProfiles/VishnuPc/${rev.link}`;
+      }
+      if (authorLower.includes('oakshow')) {
+        return `/Profiles/CriticProfiles/MsMrOakShow/${rev.link}`;
+      }
+      return `/Profiles/CriticProfiles/JithinJPrasad/${rev.link}`;
     }
-    if (rev.movieId) return `${rev.movieId}.html`;
-    if (rev.targetId) return `${rev.targetId}.html`;
+    if (rev.movieId) return `/${rev.movieId}.html`;
+    if (rev.targetId) return `/${rev.targetId}.html`;
     return '#';
   };
 

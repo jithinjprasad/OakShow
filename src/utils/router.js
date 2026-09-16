@@ -132,7 +132,7 @@ export function resolveSlugToRoute(rawSlug, rawPath = '') {
 
   // Critic Review Pages (e.g., unpregnant-review-by-jithin-j-prasad)
   if (lower.includes('-review-by-')) {
-    return { type: 'reviews', id: clean, raw: rawPath };
+    return { type: 'critic-review', id: clean, filename: `${clean}.html`, raw: rawPath };
   }
 
   // Release Monthly Calendars (e.g., IndianReleases2018August, HollywoodReleases2017April, Releases2016May)

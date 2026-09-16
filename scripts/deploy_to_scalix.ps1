@@ -37,6 +37,7 @@ $rootHtmls = @(
     "Digger.html", "GDN.html", "Upcoming.html", "upcoming.html", "Upcoming2.html", "Upcoming3.html", 
     "OakShowReviews.html", "OakShowRevirews.html", "reviews.html", "reciews.html",
     "OakShowBlogs.html", "OakShowBlog.html", "blogs.html",
+    "30-feel-good-films-to-watch-during-lockdown.html",
     "RamayanaPart1.html", "VishwanathandSons.html", "ViswanathandSons.html",
     "ImGame.html", "im-game.html", "TheWhisperMan.html", "Careers.html", "OneNightOnly.html", 
     "Mandaadi.html", "Sardar2.html", "BethlehemKudumbaUnit.html", "DCTamilMovie.html", 
@@ -45,7 +46,24 @@ $rootHtmls = @(
 foreach ($rf in $rootHtmls) {
     if (Test-Path "$srcDir\$rf") {
         Copy-Item -Path "$srcDir\$rf" -Destination "$workDir\$rf" -Force
+        Copy-Item -Path "$srcDir\$rf" -Destination "$workDir\dist\$rf" -Force
     }
+}
+
+# Sync Profiles into dist so individual critic review pages are served directly
+if (Test-Path "$srcDir\public\Profiles") {
+    $destProf = "$workDir\dist\Profiles"
+    if (-not (Test-Path $destProf)) { New-Item -ItemType Directory -Force -Path $destProf | Out-Null }
+    Copy-Item -Path "$srcDir\public\Profiles\*" -Destination "$destProf\" -Recurse -Force
+    Write-Host "Synced public/Profiles to oakshow-prod dist."
+}
+
+# Sync blog into dist so modern blog pages and assets are served directly
+if (Test-Path "$srcDir\blog") {
+    $destBlog = "$workDir\dist\blog"
+    if (-not (Test-Path $destBlog)) { New-Item -ItemType Directory -Force -Path $destBlog | Out-Null }
+    Copy-Item -Path "$srcDir\blog\*" -Destination "$destBlog\" -Recurse -Force
+    Write-Host "Synced blog to oakshow-prod dist."
 }
 
 # 5. Copy local media folders (Digger, GDN, and Logos) into dist
