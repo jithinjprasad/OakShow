@@ -54,13 +54,13 @@ export function resolveSlugToRoute(rawSlug, rawPath = '') {
   if (lower === 'oakshowgalleries' || lower === 'galleries' || lower === 'gallery') {
     return { type: 'galleries', id: null, raw: rawPath };
   }
-  if (lower === 'oakshowreviews' || lower === 'oakshowreviews2018' || lower === 'oakshowreviews2019' || lower === 'oakshowreviews2020' || lower === 'reviews') {
+  if (lower === 'oakshowreviews' || lower === 'oakshowrevirews' || lower === 'oakshowreviews2018' || lower === 'oakshowreviews2019' || lower === 'oakshowreviews2020' || lower === 'reviews' || lower === 'reciews') {
     return { type: 'reviews', id: null, raw: rawPath };
   }
   if (lower === 'critics' || lower === 'criticprofiles') {
     return { type: 'reviews', tab: 'critics', id: null, raw: rawPath };
   }
-  if (lower === 'oakshowblog' || lower === 'blog' || lower === 'blogs') {
+  if (lower === 'oakshowblogs' || lower === 'oakshowblog' || lower === 'blog' || lower === 'blogs') {
     return { type: 'blog', id: null, raw: rawPath };
   }
   if (lower.includes('feel-good') || lower.includes('lockdown') || lower === '30-feel-good-films-to-watch-during-lockdown') {
@@ -219,16 +219,32 @@ export function parseCurrentRoute() {
     
     // Automatically redirect indexed legacy subfolder URLs to clean canonical URLs
     const clean = cleanSlugFromPath(normalizedPath);
+    const lower = clean.toLowerCase();
     const hubs = [
-      'indian', 'hollywood', 'international', 'ott', 'series-hub', 'releases', 'upcoming',
-      'reviews', 'sports-hub', 'games-books', 'emergencies', 'news', 
-      'blog', 'galleries', 'music', 'trailers', 'events', 'remarks', 'watchlist'
+      'indian', 'hollywood', 'international', 'ott', 'series-hub', 'releases',
+      'sports-hub', 'games-books', 'emergencies', 'news', 
+      'galleries', 'music', 'trailers', 'events', 'remarks', 'watchlist'
     ];
-    let canonicalUrl = hubs.includes(clean.toLowerCase()) ? `/${clean}` : (clean ? `/${clean}.html` : '/');
-    if (clean.toLowerCase() === 'im-game') canonicalUrl = '/ImGame.html';
-    if (clean.toLowerCase() === 'gail-daughtry-and-the-celebrity-sex-pass') canonicalUrl = '/GailDaughtryandtheCelebritySexPass.html';
-    if (clean.toLowerCase() === 'careers') canonicalUrl = '/Careers.html';
-    if (pathname !== canonicalUrl && !pathname.endsWith(`/${clean}`) && !pathname.endsWith(`/${clean}.html`)) {
+    let canonicalUrl = '/';
+    if (lower === 'reviews' || lower === 'oakshowreviews') {
+      canonicalUrl = '/OakShowReviews.html';
+    } else if (lower === 'upcoming' || lower === 'upcoming-movies' || lower === 'upcomingmovies') {
+      canonicalUrl = '/Upcoming.html';
+    } else if (lower === 'blog' || lower === 'oakshowblog' || lower === 'blogs') {
+      canonicalUrl = '/OakShowBlog.html';
+    } else if (lower === 'im-game') {
+      canonicalUrl = '/ImGame.html';
+    } else if (lower === 'gail-daughtry-and-the-celebrity-sex-pass') {
+      canonicalUrl = '/GailDaughtryandtheCelebritySexPass.html';
+    } else if (lower === 'careers') {
+      canonicalUrl = '/Careers.html';
+    } else if (hubs.includes(lower)) {
+      canonicalUrl = `/${clean}`;
+    } else {
+      canonicalUrl = clean ? `/${clean}.html` : '/';
+    }
+
+    if (pathname !== canonicalUrl && !pathname.endsWith(canonicalUrl)) {
       try {
         window.history.replaceState(null, '', canonicalUrl);
       } catch (e) {
@@ -262,16 +278,22 @@ export function navigateTo(target, replace = false) {
   const lower = clean.toLowerCase();
 
   const hubs = [
-    'indian', 'hollywood', 'international', 'ott', 'series-hub', 'releases', 'upcoming',
-    'reviews', 'sports-hub', 'games-books', 'emergencies', 'news', 
-    'blog', 'galleries', 'music', 'trailers', 'events', 'remarks', 'watchlist'
+    'indian', 'hollywood', 'international', 'ott', 'series-hub', 'releases',
+    'sports-hub', 'games-books', 'emergencies', 'news', 
+    'galleries', 'music', 'trailers', 'events', 'remarks', 'watchlist'
   ];
 
   let targetPath = '';
-  if (hubs.includes(lower)) {
-    targetPath = `/${clean}`;
+  if (lower === 'reviews' || lower === 'oakshowreviews') {
+    targetPath = '/OakShowReviews.html';
+  } else if (lower === 'upcoming' || lower === 'upcoming-movies' || lower === 'upcomingmovies') {
+    targetPath = '/Upcoming.html';
+  } else if (lower === 'blog' || lower === 'oakshowblog' || lower === 'blogs') {
+    targetPath = '/OakShowBlog.html';
   } else if (lower === 'careers') {
     targetPath = '/Careers.html';
+  } else if (hubs.includes(lower)) {
+    targetPath = `/${clean}`;
   } else {
     // Everything else (movies, series, episodes, items) navigates to /<name>.html
     targetPath = `/${clean}.html`;

@@ -107,6 +107,37 @@ export default function CriticReviewsHub({ reviews, onNavigate, onSelectCritic }
     }
   };
 
+  const getReviewUrl = (rev) => {
+    if (!rev) return '#';
+    if (rev.url && (rev.url.startsWith('http') || rev.url.endsWith('.html'))) {
+      return rev.url;
+    }
+    if (rev.link) {
+      if (rev.link.startsWith('http') || rev.link.includes('/')) return rev.link;
+      const authorLower = (rev.author || '').toLowerCase();
+      if (authorLower.includes('jithin')) {
+        return `Profiles/CriticProfiles/JithinJPrasad/${rev.link}`;
+      }
+      if (authorLower.includes('abhijith')) {
+        return `Profiles/CriticProfiles/AbhijithAG/${rev.link}`;
+      }
+      return rev.link;
+    }
+    if (rev.movieId) return `${rev.movieId}.html`;
+    if (rev.targetId) return `${rev.targetId}.html`;
+    return '#';
+  };
+
+  const handleReviewClick = (e, rev) => {
+    if (e) e.stopPropagation();
+    const targetUrl = getReviewUrl(rev);
+    if (targetUrl && targetUrl !== '#') {
+      window.location.href = targetUrl;
+    } else if (rev.targetId && onNavigate) {
+      onNavigate(`movie/${rev.targetId}`);
+    }
+  };
+
   return (
     <div className="critic-hub-root animate-fade-in">
       {/* Header Banner */}
@@ -324,8 +355,10 @@ export default function CriticReviewsHub({ reviews, onNavigate, onSelectCritic }
                 const bannerSrc = rev.banner ? (rev.banner.startsWith('/') ? rev.banner : `/${rev.banner}`) : '/favicon.png';
                 const oakRemark = getOakShowRemark(rev.remark || rev.score);
 
+                const targetUrl = getReviewUrl(rev);
+
                 return (
-                  <div key={idx} className="review-card glass-card" onClick={() => setActiveReviewModal(rev)}>
+                  <div key={idx} className="review-card glass-card clickable" onClick={(e) => handleReviewClick(e, rev)}>
                     <div className="review-banner-wrap">
                       <img 
                         src={bannerSrc} 
@@ -355,7 +388,14 @@ export default function CriticReviewsHub({ reviews, onNavigate, onSelectCritic }
                         )}
                       </div>
 
-                      <h3 className="review-card-title">{rev.title}</h3>
+                      <a 
+                        href={targetUrl} 
+                        className="review-card-title-link"
+                        onClick={(e) => handleReviewClick(e, rev)}
+                        style={{ textDecoration: 'none', color: 'inherit' }}
+                      >
+                        <h3 className="review-card-title">{rev.title}</h3>
+                      </a>
                       
                       <div 
                         className="review-author-meta hover-link"
@@ -373,10 +413,15 @@ export default function CriticReviewsHub({ reviews, onNavigate, onSelectCritic }
                       </p>
 
                       <div className="review-card-footer">
-                        <button className="read-review-btn">
+                        <a 
+                          href={targetUrl} 
+                          className="read-review-btn"
+                          onClick={(e) => handleReviewClick(e, rev)}
+                          style={{ textDecoration: 'none' }}
+                        >
                           <BookOpen size={14} />
                           <span>Read Full Review</span>
-                        </button>
+                        </a>
                       </div>
                     </div>
                   </div>

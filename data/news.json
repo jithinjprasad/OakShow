@@ -1,5 +1,115 @@
 [
   {
+    "id": "ramayana-news-7",
+    "movieId": "RamayanaPart1",
+    "movieTitle": "Ramayana: Part 1",
+    "title": "Manoj Muntashir trolled for sharing Adipurush song amid Ramayana Jai Jai Ram craze",
+    "source": "MensXP",
+    "date": "September 15, 2026",
+    "url": "https://www.mensxp.com/entertainment/celebrities/185835-manoj-muntashir-trolled-sharing-adipurush-song-ramayana-jai-jai-ram.html",
+    "category": "Indian Cinema"
+  },
+  {
+    "id": "ramayana-news-6",
+    "movieId": "RamayanaPart1",
+    "movieTitle": "Ramayana: Part 1",
+    "title": "Manoj Muntashir trolled for resharing Adipurush song after Ramayana Jai Jai Ram release",
+    "source": "iDiva",
+    "date": "September 15, 2026",
+    "url": "https://www.idiva.com/entertainment/bollywood/manoj-muntashir-trolled-for-resharing-adipurush-song-after-ramayana-jai-jai-ram-release/18098228",
+    "category": "Indian Cinema"
+  },
+  {
+    "id": "ramayana-news-5",
+    "movieId": "RamayanaPart1",
+    "movieTitle": "Ramayana: Part 1",
+    "title": "Ramayana: Ranbir Kapoor, Sai Pallavi's Ram-Siya poster captures their divine bond",
+    "source": "ETV Bharat",
+    "date": "September 14, 2026",
+    "url": "https://www.etvbharat.com/en/entertainment/ramayana-ranbir-kapoor-sai-pallavis-ram-siya-poster-captures-their-divine-bond-enn26091400399",
+    "category": "Indian Cinema"
+  },
+  {
+    "id": "ramayana-news-4",
+    "movieId": "RamayanaPart1",
+    "movieTitle": "Ramayana: Part 1",
+    "title": "Ramayana song Jai Jai Ram out: Arijit Singh, Shreya Ghoshal, AR Rahman create spiritual magic",
+    "source": "India Today",
+    "date": "September 14, 2026",
+    "url": "https://www.indiatoday.in/amp/movies/bollywood/story/ramayana-jai-jai-ram-song-out-arijit-singh-shreya-ghoshal-ar-rahman-2994063-2026-09-14",
+    "category": "Indian Cinema"
+  },
+  {
+    "id": "ramayana-news-3",
+    "movieId": "RamayanaPart1",
+    "movieTitle": "Ramayana: Part 1",
+    "title": "‘Jai Jai Ram’, first song from Nitesh Tiwari’s ‘Ramayana’ out",
+    "source": "The Hindu",
+    "date": "September 14, 2026",
+    "url": "https://www.thehindu.com/entertainment/movies/jai-jai-ram-first-song-from-nitesh-tiwaris-ramayana-out/article71465604.ece",
+    "category": "Indian Cinema"
+  },
+  {
+    "id": "ramayana-news-2",
+    "movieId": "RamayanaPart1",
+    "movieTitle": "Ramayana: Part 1",
+    "title": "Ramayana first song Jai Jai Ram: AR Rahman, Arijit Singh, Shreya Ghoshal celebrate Shri Ram",
+    "source": "The Indian Express",
+    "date": "September 14, 2026",
+    "url": "https://indianexpress.com/article/entertainment/bollywood/ramayana-first-song-jai-jai-ram-ar-rahman-arijit-singh-shreya-ghoshal-celebrate-shri-ram-10877144/",
+    "category": "Indian Cinema"
+  },
+  {
+    "id": "ramayana-news-1",
+    "movieId": "RamayanaPart1",
+    "movieTitle": "Ramayana: Part 1",
+    "title": "Ramayana motion poster: Ranbir Kapoor and Sai Pallavi's Ram-Siya look revealed on Ganesh Chaturthi",
+    "source": "India Today",
+    "date": "September 14, 2026",
+    "url": "https://www.indiatoday.in/movies/bollywood/story/ramayana-motion-poster-ranbir-kapoor-sai-pallavi-ram-siya-ganesh-chaturthi-2994006-2026-09-14",
+    "category": "Indian Cinema"
+  },
+  {
+    "id": "vns-news-4",
+    "movieId": "VishwanathandSons",
+    "movieTitle": "Vishwanath & Sons",
+    "title": "Vishwanath and Sons Movie Review: Suriya and Mamitha Baiju shine in an uneven family drama",
+    "source": "NDTV",
+    "date": "August 14, 2026",
+    "url": "https://www.ndtv.com/entertainment/vishwanath-and-sons-review-suriya-mamitha-baiju-shine-in-an-uneven-family-drama-3-stars-11908881",
+    "category": "Indian Cinema"
+  },
+  {
+    "id": "vns-news-3",
+    "movieId": "VishwanathandSons",
+    "movieTitle": "Vishwanath & Sons",
+    "title": "Vishwanath and Sons Review: Suriya and Mamitha Baiju deliver a heartwarming family entertainer",
+    "source": "Rediff",
+    "date": "August 15, 2026",
+    "url": "https://www.rediff.com/movies/review/vishwanath-and-sons-review-suriya-mamitha-baiju-deliver-heartwarming-family-entertainer/20260815.htm",
+    "category": "Indian Cinema"
+  },
+  {
+    "id": "vns-news-2",
+    "movieId": "VishwanathandSons",
+    "movieTitle": "Vishwanath & Sons",
+    "title": "Vishwanath & Sons Movie Review: Suriya, Mamitha Baiju film begins with boomer energy, ends with Gen Z sensibility",
+    "source": "Hindustan Times",
+    "date": "August 14, 2026",
+    "url": "https://www.hindustantimes.com/entertainment/tamil-cinema/vishwanath-sons-movie-review-suriya-mamitha-baiju-film-begins-with-boomer-energy-ends-with-gen-z-sensibility-101786693677652.html",
+    "category": "Indian Cinema"
+  },
+  {
+    "id": "vns-news-1",
+    "movieId": "VishwanathandSons",
+    "movieTitle": "Vishwanath & Sons",
+    "title": "Vishwanath & Sons Movie Review: Suriya and Mamitha Baiju lead a wholesome, endearing family entertainer",
+    "source": "The Hindu",
+    "date": "August 14, 2026",
+    "url": "https://www.thehindu.com/entertainment/movies/vishwanath-and-sons-movie-review-suriya-mamitha-baiju-venky-atluri-radhika-sarathkumar-wholesome-entertainer/article71344969.ece",
+    "category": "Indian Cinema"
+  },
+  {
     "id": "OakShowBlog",
     "title": "Blog",
     "meta": {

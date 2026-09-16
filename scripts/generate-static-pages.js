@@ -317,6 +317,7 @@ async function run() {
     { filename: 'Upcoming2.html', title: 'Upcoming Movies & Premiere Countdown — OakShow', desc: 'Discover anticipated theatrical releases, upcoming blockbusters, exclusive trailers, and advance ticket booking alerts.' },
     { filename: 'Upcoming3.html', title: 'Upcoming Movies & Premiere Countdown — OakShow', desc: 'Discover anticipated theatrical releases, upcoming blockbusters, exclusive trailers, and advance ticket booking alerts.' },
     { filename: 'reviews.html', title: 'OakShow Editorial & Critic Reviews — Certified Ratings & Remarks', desc: 'Unbiased film criticism, certified reviewer profiles, and OakShow official remarks.' },
+    { filename: 'reciews.html', title: 'OakShow Editorial & Critic Reviews — Certified Ratings & Remarks', desc: 'Unbiased film criticism, certified reviewer profiles, and OakShow official remarks.' },
     { filename: 'remarks.html', title: 'OakShow Remarks & Meaning Guide — 4 Certified Verdicts', desc: 'Understanding OakShow official verdict remarks: Must Watch, Safe to Watch, Above Average, and Warning.' },
     { filename: 'sports-hub.html', title: 'Sports Tournaments & World Cup Archives — OakShow', desc: '2018 FIFA World Cup, Women\'s Hockey World Cup, and football schedules.' },
     { filename: 'games-books.html', title: 'Video Games & Recommended Literature Shortlists — OakShow', desc: 'Shortlisted top video games and must-read books.' },
@@ -330,7 +331,10 @@ async function run() {
     { filename: 'OakShowNews.html', title: 'OakShow News — Verified Cinema & Box Office Bulletins', desc: 'Verified cinema headlines, box office milestones, and current affairs reports.' },
     { filename: 'OakShowGalleries.html', title: 'OakShow Galleries — HD Posters, Wallpapers & Stills', desc: 'High-definition official movie wallpapers, photoshoot stills, character posters.' },
     { filename: 'OakShowReviews.html', title: 'OakShow Reviews — Certified Critic Ratings & Remarks', desc: 'Unbiased film criticism, certified reviewer profiles, and OakShow official remarks.' },
+    { filename: 'OakShowRevirews.html', title: 'OakShow Reviews — Certified Critic Ratings & Remarks', desc: 'Unbiased film criticism, certified reviewer profiles, and OakShow official remarks.' },
     { filename: 'OakShowBlog.html', title: 'OakShow Cinema Perspectives & Editorial Essays', desc: 'In-depth cinema features, retrospectives, and cultural commentary.' },
+    { filename: 'OakShowBlogs.html', title: 'OakShow Cinema Perspectives & Editorial Essays', desc: 'In-depth cinema features, retrospectives, and cultural commentary.' },
+    { filename: 'blogs.html', title: 'OakShow Cinema Perspectives & Editorial Essays', desc: 'In-depth cinema features, retrospectives, and cultural commentary.' },
     { filename: 'OakShowEmergency.html', title: 'Public Emergencies, Helplines & Relief Portals — OakShow', desc: 'Official helplines, relief funds, and disaster management portals.' },
     { filename: 'Careers.html', title: 'Careers at OakShow | Now Become a Critic', desc: 'Be a critic with OakShow. Join the OakForce and publish your movie, series, and video game reviews with full credits.', ogImage: `${DOMAIN}/images/become-a-movie-critic.jpg` },
     { filename: 'careers.html', title: 'Careers at OakShow | Now Become a Critic', desc: 'Be a critic with OakShow. Join the OakForce and publish your movie, series, and video game reviews with full credits.', ogImage: `${DOMAIN}/images/become-a-movie-critic.jpg` }

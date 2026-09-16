@@ -1,5 +1,28 @@
 [
   {
+    "id": "RamayanaPart1",
+    "title": "Ramayana: Part 1",
+    "type": "movie",
+    "category": "Indian",
+    "year": "2026",
+    "genre": "Epic, Mythological, Action, Fantasy, Adventure",
+    "language": "Hindi",
+    "score": null,
+    "poster": "pics/Films/RamayanaPart1/1.jpg",
+    "status": "upcoming"
+  },
+  {
+    "id": "VishwanathandSons",
+    "title": "Vishwanath & Sons",
+    "type": "movie",
+    "category": "Indian",
+    "year": "2026",
+    "genre": "Romantic Comedy, Family Drama",
+    "language": "Tamil",
+    "score": 9,
+    "poster": "pics/Films/VishwanathandSons/1.jpg"
+  },
+  {
     "id": "DragonBallSuperBroly",
     "title": "Dragon Ball Super: Broly",
     "type": "movie",
@@ -98,7 +121,9 @@
     "genre": "Black Comedy, Drama, Disaster, Satire",
     "language": "English",
     "year": "2026",
-    "poster": "pics/Films/Digger/2.jpg"
+    "poster": "pics/Films/Digger/2.jpg",
+    "score": null,
+    "status": "upcoming"
   },
   {
     "id": "Mandaadi",

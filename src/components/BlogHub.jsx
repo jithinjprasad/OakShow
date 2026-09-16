@@ -91,21 +91,33 @@ export default function BlogHub({ blogsData = [], onNavigate, initialBlogId = nu
       <div className="blogs-grid">
         {filteredBlogs.map((blog) => {
           const imgSrc = blog.image ? (blog.image.startsWith('/') ? blog.image : `/${blog.image}`) : '/favicon.png';
+          const targetUrl = blog.link || blog.url || '#';
+
+          const handleBlogClick = (e) => {
+            if (targetUrl && targetUrl !== '#') {
+              if (e) e.stopPropagation();
+              window.location.href = targetUrl;
+            } else {
+              setSelectedBlog(blog);
+            }
+          };
 
           return (
             <article 
               key={blog.id} 
               className="blog-card glass-card clickable"
-              onClick={() => setSelectedBlog(blog)}
+              onClick={handleBlogClick}
             >
               <div className="blog-cover-wrap">
-                <img 
-                  src={imgSrc} 
-                  alt={blog.title} 
-                  className="blog-cover-img"
-                  loading="lazy"
-                  onError={(e) => { e.target.src = '/favicon.png'; }}
-                />
+                <a href={targetUrl} onClick={handleBlogClick} style={{ display: 'block' }}>
+                  <img 
+                    src={imgSrc} 
+                    alt={blog.title} 
+                    className="blog-cover-img"
+                    loading="lazy"
+                    onError={(e) => { e.target.src = '/favicon.png'; }}
+                  />
+                </a>
                 <div className="blog-cover-gradient" />
                 {blog.category && <span className="blog-category-badge">{blog.category}</span>}
               </div>
@@ -116,14 +128,25 @@ export default function BlogHub({ blogsData = [], onNavigate, initialBlogId = nu
                   <span className="blog-date"><Calendar size={13} className="inline-icon" /> {blog.date}</span>
                 </div>
 
-                <h3 className="blog-card-title">{blog.title}</h3>
+                <a 
+                  href={targetUrl} 
+                  onClick={handleBlogClick}
+                  style={{ textDecoration: 'none', color: 'inherit' }}
+                >
+                  <h3 className="blog-card-title">{blog.title}</h3>
+                </a>
                 <p className="blog-excerpt">{blog.excerpt}</p>
 
                 <div className="blog-card-footer">
-                  <span className="blog-read-btn">
+                  <a 
+                    href={targetUrl} 
+                    className="blog-read-btn"
+                    onClick={handleBlogClick}
+                    style={{ textDecoration: 'none' }}
+                  >
                     <span>Read Full Essay</span>
                     <ArrowRight size={14} />
-                  </span>
+                  </a>
                 </div>
               </div>
             </article>

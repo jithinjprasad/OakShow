@@ -84,8 +84,15 @@ export default function UpcomingMoviesView({
     return movies.filter((m) => {
       if (!m || !m.title) return false;
 
-      // Exclude if already has ratings, reviews, or certified score (already released)
-      const hasRatings = (Array.isArray(m.ratings) && m.ratings.length > 0) || (typeof m.score === 'number' && m.score > 0);
+      // Always include Ramayana: Part 1 and Digger while upcoming until release
+      if (m.id === 'RamayanaPart1' || m.id === 'Digger') {
+        const releaseTime = parseDate(m);
+        if (releaseTime > 0 && releaseTime <= now) return false;
+        return true;
+      }
+
+      // Exclude if already has verified ratings (already released)
+      const hasRatings = Array.isArray(m.ratings) && m.ratings.length > 0;
       if (hasRatings) return false;
 
       const statusLower = (m.status || '').toLowerCase().trim();
