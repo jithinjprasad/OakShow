@@ -33,7 +33,15 @@ foreach ($h in $htmlFiles) {
 Write-Host "Synced $($htmlFiles.Count) prerendered HTML pages to dist."
 
 # 4. Sync root HTML files in oakshow-prod
-$rootHtmls = @("Digger.html", "GDN.html", "Upcoming.html", "Upcoming2.html", "Upcoming3.html", "ImGame.html", "im-game.html", "TheWhisperMan.html", "Careers.html", "OneNightOnly.html", "Mandaadi.html", "Sardar2.html", "BethlehemKudumbaUnit.html", "DCTamilMovie.html", "KhalifaTheRuler.html", "AvatarTheWayofWater.html")
+$rootHtmls = @(
+    "Digger.html", "GDN.html", "Upcoming.html", "upcoming.html", "Upcoming2.html", "Upcoming3.html", 
+    "OakShowReviews.html", "OakShowRevirews.html", "reviews.html", "reciews.html",
+    "OakShowBlogs.html", "OakShowBlog.html", "blogs.html",
+    "RamayanaPart1.html", "VishwanathandSons.html", "ViswanathandSons.html",
+    "ImGame.html", "im-game.html", "TheWhisperMan.html", "Careers.html", "OneNightOnly.html", 
+    "Mandaadi.html", "Sardar2.html", "BethlehemKudumbaUnit.html", "DCTamilMovie.html", 
+    "KhalifaTheRuler.html", "AvatarTheWayofWater.html"
+)
 foreach ($rf in $rootHtmls) {
     if (Test-Path "$srcDir\$rf") {
         Copy-Item -Path "$srcDir\$rf" -Destination "$workDir\$rf" -Force
@@ -44,6 +52,9 @@ foreach ($rf in $rootHtmls) {
 $mediaDirs = @(
     @{ Src = "$srcDir\pics\Films\Digger"; Dest = "$workDir\dist\pics\Films\Digger" },
     @{ Src = "$srcDir\pics\Films\GDN"; Dest = "$workDir\dist\pics\Films\GDN" },
+    @{ Src = "$srcDir\pics\Films\RamayanaPart1"; Dest = "$workDir\dist\pics\Films\RamayanaPart1" },
+    @{ Src = "$srcDir\pics\Films\VishwanathandSons"; Dest = "$workDir\dist\pics\Films\VishwanathandSons" },
+    @{ Src = "$srcDir\pics\Films\ViswanathandSons"; Dest = "$workDir\dist\pics\Films\ViswanathandSons" },
     @{ Src = "$srcDir\pics\Films\OneNightOnly"; Dest = "$workDir\dist\pics\Films\OneNightOnly" },
     @{ Src = "$srcDir\pics\Films\Mandaadi"; Dest = "$workDir\dist\pics\Films\Mandaadi" },
     @{ Src = "$srcDir\pics\Films\Sardar2"; Dest = "$workDir\dist\pics\Films\Sardar2" },
