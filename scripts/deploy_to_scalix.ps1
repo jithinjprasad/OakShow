@@ -24,6 +24,19 @@ if (Test-Path "$srcDir\public\favicon.ico") { Copy-Item -Path "$srcDir\public\fa
 if (Test-Path "$srcDir\public\favicon.png") { Copy-Item -Path "$srcDir\public\favicon.png" -Destination "$workDir\dist\favicon.png" -Force }
 if (Test-Path "$srcDir\public\robots.txt") { Copy-Item -Path "$srcDir\public\robots.txt" -Destination "$workDir\dist\robots.txt" -Force }
 if (Test-Path "$srcDir\public\sitemap.xml") { Copy-Item -Path "$srcDir\public\sitemap.xml" -Destination "$workDir\dist\sitemap.xml" -Force }
+if (Test-Path "$srcDir\dist\header.txt") { Copy-Item -Path "$srcDir\dist\header.txt" -Destination "$workDir\dist\header.txt" -Force }
+if (Test-Path "$srcDir\dist\footer.txt") { Copy-Item -Path "$srcDir\dist\footer.txt" -Destination "$workDir\dist\footer.txt" -Force }
+if (Test-Path "$srcDir\dist\now.txt") { Copy-Item -Path "$srcDir\dist\now.txt" -Destination "$workDir\dist\now.txt" -Force }
+if (Test-Path "$srcDir\dist\css") {
+    $destCss = "$workDir\dist\css"
+    if (-not (Test-Path $destCss)) { New-Item -ItemType Directory -Force -Path $destCss | Out-Null }
+    Copy-Item -Path "$srcDir\dist\css\*" -Destination "$destCss\" -Recurse -Force
+}
+if (Test-Path "$srcDir\dist\js") {
+    $destJs = "$workDir\dist\js"
+    if (-not (Test-Path $destJs)) { New-Item -ItemType Directory -Force -Path $destJs | Out-Null }
+    Copy-Item -Path "$srcDir\dist\js\*" -Destination "$destJs\" -Recurse -Force
+}
 
 # 3. Sync all prerendered static HTML files into dist/
 $htmlFiles = Get-ChildItem -Path "$srcDir\dist" -Filter "*.html" -File
@@ -50,12 +63,22 @@ foreach ($rf in $rootHtmls) {
     }
 }
 
-# Sync Profiles into dist so individual critic review pages are served directly
+# Sync Profiles HTML and text files into dist so individual critic review pages are served directly
+# (Media/images are served via jsDelivr CDN fallback to keep build context well under Scalix 64MB limit)
 if (Test-Path "$srcDir\public\Profiles") {
     $destProf = "$workDir\dist\Profiles"
-    if (-not (Test-Path $destProf)) { New-Item -ItemType Directory -Force -Path $destProf | Out-Null }
-    Copy-Item -Path "$srcDir\public\Profiles\*" -Destination "$destProf\" -Recurse -Force
-    Write-Host "Synced public/Profiles to oakshow-prod dist."
+    if (Test-Path $destProf) { Remove-Item -Recurse -Force $destProf }
+    New-Item -ItemType Directory -Force -Path $destProf | Out-Null
+    
+    $profFiles = Get-ChildItem -Path "$srcDir\public\Profiles" -Recurse -File | Where-Object { $_.Extension -in @(".html", ".htm", ".txt", ".json") }
+    foreach ($pf in $profFiles) {
+        $relPath = $pf.FullName.Substring(("$srcDir\public\Profiles").Length)
+        $targetFile = "$destProf$relPath"
+        $targetDir = Split-Path -Parent $targetFile
+        if (-not (Test-Path $targetDir)) { New-Item -ItemType Directory -Force -Path $targetDir | Out-Null }
+        Copy-Item -Path $pf.FullName -Destination $targetFile -Force
+    }
+    Write-Host "Synced Profiles HTML/text files ($($profFiles.Count) files) to oakshow-prod dist."
 }
 
 # Sync blog into dist so modern blog pages and assets are served directly
