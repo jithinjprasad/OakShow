@@ -1,5 +1,265 @@
 [
   {
+    "id": "HollywoodReleases2026September",
+    "title": "Hollywood Movies Released On September 2026",
+    "year": "2026",
+    "month": "September",
+    "category": "Hollywood",
+    "filename": "HollywoodReleases2026September.html",
+    "totalItems": 3,
+    "items": [
+      {
+        "title": "Runner",
+        "poster": "pics/Films/Runner/1.jpg",
+        "alt": "Runner",
+        "language": "English",
+        "category": "Hollywood",
+        "releaseDate": "September 11, 2026",
+        "genre": "Action, Comedy",
+        "moreLink": "Runner.html",
+        "trailerLink": "https://www.youtube.com/watch?v=m8JUmBgHejI",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "7/10",
+            "url": "",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-safe-to-watch.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "TBD",
+            "url": "https://www.imdb.com/title/tt31349844/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "TBD",
+            "url": "https://www.rottentomatoes.com/m/runner_2026",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-fresh.png"
+          },
+          {
+            "source": "Metacritic",
+            "score": "TBD",
+            "url": "https://www.metacritic.com/movie/runner-2026/",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          },
+          {
+            "source": "Common Sense Media",
+            "score": "TBD",
+            "url": "https://www.commonsensemedia.org/movie-reviews/runner-0",
+            "icon": "pics/RatingSiteLogos/common-sense-media.png"
+          },
+          {
+            "source": "IGN",
+            "score": "TBD",
+            "url": "https://www.ign.com/articles/runner-movie-review-alan-ritchson-owen-wilson",
+            "icon": "pics/RatingSiteLogos/ign.png"
+          },
+          {
+            "source": "RogerEbert",
+            "score": "TBD",
+            "url": "https://www.rogerebert.com/reviews/runner-alan-ritchson-owen-wilson-angel-studios-movie-review-2026",
+            "icon": "pics/RatingSiteLogos/rogerebert.png"
+          },
+          {
+            "source": "Telegraph",
+            "score": "TBD",
+            "url": "https://www.telegraph.co.uk/films/2026/09/10/runner-two-star-review/",
+            "icon": "pics/RatingSiteLogos/telegraph.png"
+          },
+          {
+            "source": "The Guardian",
+            "score": "TBD",
+            "url": "https://www.theguardian.com/film/2026/sep/08/runner-review-alan-ritchson-owen-wilson",
+            "icon": "pics/RatingSiteLogos/the-guardian.png"
+          }
+        ]
+      },
+      {
+        "title": "The Runner",
+        "poster": "pics/Films/TheRunner/1.jpg",
+        "alt": "The Runner",
+        "language": "English",
+        "category": "Hollywood",
+        "releaseDate": "September 2, 2026",
+        "genre": "Action, Thriller",
+        "moreLink": "TheRunner.html",
+        "trailerLink": "https://www.youtube.com/watch?v=zz4rsZLcauY",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "5/10",
+            "url": "",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-an-average.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "TBD",
+            "url": "https://www.imdb.com/title/tt34564059/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "TBD",
+            "url": "https://www.rottentomatoes.com/m/the_runner_2026",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-fresh.png"
+          },
+          {
+            "source": "Metacritic",
+            "score": "TBD",
+            "url": "https://www.metacritic.com/movie/the-runner-2026/",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          },
+          {
+            "source": "Common Sense Media",
+            "score": "TBD",
+            "url": "https://www.commonsensemedia.org/movie-reviews/the-runner-2026",
+            "icon": "pics/RatingSiteLogos/common-sense-media.png"
+          },
+          {
+            "source": "Digital Spy",
+            "score": "TBD",
+            "url": "https://www.digitalspy.com/movies/a73593892/gal-gadot-the-runner-reviews-prime-video/",
+            "icon": "pics/RatingSiteLogos/digital-spy.png"
+          },
+          {
+            "source": "IGN",
+            "score": "TBD",
+            "url": "https://www.ign.com/articles/the-runner-review-gal-gadot",
+            "icon": "pics/RatingSiteLogos/ign.png"
+          }
+        ]
+      },
+      {
+        "title": "Resident Evil",
+        "poster": "pics/Films/ResidentEvil2026/1.jpg",
+        "alt": "Resident Evil",
+        "language": "English",
+        "category": "Hollywood",
+        "releaseDate": "September 18, 2026",
+        "genre": "Horror, Action, Thriller",
+        "moreLink": "ResidentEvil2026.html",
+        "trailerLink": "https://www.youtube.com/watch?v=mNd1gb19A-c",
+        "ratings": [
+          {
+            "source": "IMDb",
+            "score": "8.2/10",
+            "url": "https://www.imdb.com/title/tt35538033/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "8/10",
+            "url": "https://www.rottentomatoes.com/m/resident_evil_2026",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-fresh.png"
+          },
+          {
+            "source": "Metacritic",
+            "score": "8/10",
+            "url": "https://www.metacritic.com/movie/resident-evil-2026/",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          },
+          {
+            "source": "Common Sense Media",
+            "score": "8/10",
+            "url": "https://www.commonsensemedia.org/movie-reviews/resident-evil-0",
+            "icon": "pics/RatingSiteLogos/common-sense-media.png"
+          },
+          {
+            "source": "Den of Geek",
+            "score": "8/10",
+            "url": "https://www.denofgeek.com/movies/resident-evil-review-decent-raccoon-city/",
+            "icon": "pics/RatingSiteLogos/den-of-geek.png"
+          },
+          {
+            "source": "Digital Spy",
+            "score": "8/10",
+            "url": "https://www.digitalspy.com/movies/a73722380/resident-evil-review-2026/",
+            "icon": "pics/RatingSiteLogos/digital-spy.png"
+          },
+          {
+            "source": "Hindustan Times",
+            "score": "8/10",
+            "url": "https://www.hindustantimes.com/entertainment/hollywood/resident-evil-review-pitch-perfect-austin-abrams-carries-zach-cregger-audacious-reboot-that-hits-all-the-right-notes-101789632933700.html",
+            "icon": "pics/RatingSiteLogos/hindustan-times.png"
+          },
+          {
+            "source": "IGN",
+            "score": "8/10",
+            "url": "https://www.ign.com/movies/resident-evil-2026",
+            "icon": "pics/RatingSiteLogos/ign.png"
+          },
+          {
+            "source": "The Independent",
+            "score": "8/10",
+            "url": "https://www.independent.co.uk/arts-entertainment/films/reviews/resident-evil-review-zach-cregger-b3051893.html",
+            "icon": "pics/RatingSiteLogos/the-independent.png"
+          },
+          {
+            "source": "Independent.ie",
+            "score": "8/10",
+            "url": "https://www.independent.ie/entertainment/movies/movie-reviews/resident-evil-review-horror-reboot-turns-up-the-dial-to-give-fans-their-fright-of-the-year/a/161285404.html",
+            "icon": "pics/RatingSiteLogos/independent-ie.png"
+          },
+          {
+            "source": "The Indian Express",
+            "score": "8/10",
+            "url": "https://indianexpress.com/article/entertainment/movie-review/resident-evil-movie-review-this-joyride-lives-up-unapologetically-to-its-legacy-10883228/",
+            "icon": "pics/RatingSiteLogos/indian-express.png"
+          },
+          {
+            "source": "India Today",
+            "score": "8/10",
+            "url": "https://www.indiatoday.in/movies/reviews/story/resident-evil-review-zach-creggers-pulp-horror-delivers-spectacle-over-substance-2997519-2026-09-18",
+            "icon": "pics/RatingSiteLogos/india-today.ico"
+          },
+          {
+            "source": "Mid-Day",
+            "score": "8/10",
+            "url": "https://www.mid-day.com/entertainment/hollywood-news/article/resident-evil-movie-review-fk-survival-learn-to-deal-with-monsters-austin-abrams-zach-cregger-23650460",
+            "icon": "pics/RatingSiteLogos/mid-day.png"
+          },
+          {
+            "source": "Rediff",
+            "score": "8/10",
+            "url": "https://www.rediff.com/movies/review/resident-evil-movie-review-zach-cregger-delivers-a-scary-bloody-and-surprisingly-funny-horror-ride/20260917.htm",
+            "icon": "pics/RatingSiteLogos/rediff.png"
+          },
+          {
+            "source": "RogerEbert",
+            "score": "8/10",
+            "url": "https://www.rogerebert.com/reviews/resident-evil-zach-cregger-movie-review-2026",
+            "icon": "pics/RatingSiteLogos/rogerebert.png"
+          },
+          {
+            "source": "Rolling Stone",
+            "score": "8/10",
+            "url": "https://www.rollingstone.com/tv-movies/tv-movie-reviews/resident-evil-review-zach-cregger-1235623037/",
+            "icon": "pics/RatingSiteLogos/rolling-stone.png"
+          },
+          {
+            "source": "Telegraph",
+            "score": "8/10",
+            "url": "https://www.telegraph.co.uk/films/2026/09/18/resident-evil-film-review/",
+            "icon": "pics/RatingSiteLogos/telegraph.png"
+          },
+          {
+            "source": "The Guardian",
+            "score": "8/10",
+            "url": "https://www.theguardian.com/film/2026/sep/16/resident-evil-reboot-movie-review",
+            "icon": "pics/RatingSiteLogos/the-guardian.png"
+          },
+          {
+            "source": "Times of India",
+            "score": "8/10",
+            "url": "https://timesofindia.indiatimes.com/entertainment/english/movie-reviews/resident-evil/movie-review/134312484.cms",
+            "icon": "pics/RatingSiteLogos/times-of-india.ico"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "HollywoodReleases2016April",
     "title": "Hollywood Movies Released On April 2016",
     "year": "2016",

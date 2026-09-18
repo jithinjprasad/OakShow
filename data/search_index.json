@@ -1,5 +1,41 @@
 [
   {
+    "id": "ResidentEvil2026",
+    "title": "Resident Evil",
+    "type": "movie",
+    "category": "Hollywood",
+    "year": "2026",
+    "genre": "Horror, Action, Thriller",
+    "language": "English",
+    "score": null,
+    "poster": "pics/Films/ResidentEvil2026/1.jpg",
+    "status": "released"
+  },
+  {
+    "id": "TheRunner",
+    "title": "The Runner",
+    "type": "movie",
+    "category": "Hollywood",
+    "year": "2026",
+    "genre": "Action, Thriller",
+    "language": "English",
+    "score": 5,
+    "poster": "pics/Films/TheRunner/1.jpg",
+    "status": "released"
+  },
+  {
+    "id": "Runner",
+    "title": "Runner",
+    "type": "movie",
+    "category": "Hollywood",
+    "year": "2026",
+    "genre": "Action, Comedy",
+    "language": "English",
+    "score": 7,
+    "poster": "pics/Films/Runner/1.jpg",
+    "status": "released"
+  },
+  {
     "id": "RamayanaPart1",
     "title": "Ramayana: Part 1",
     "type": "movie",
