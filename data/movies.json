@@ -1,5 +1,692 @@
 [
   {
+    "id": "ResidentEvil2026",
+    "slug": "residentevil2026",
+    "type": "movie",
+    "category": "Hollywood",
+    "score": null,
+    "filename": "ResidentEvil2026.html",
+    "aliases": [],
+    "title": "Resident Evil",
+    "metaTitle": "Resident Evil (2026) All Ratings, Reviews, Songs, Videos, Bookings and News",
+    "description": "Resident Evil is a 2026 survival horror film that is the second reboot and eighth film overall in the Resident Evil film series, based on Capcoms Resident Evil video game franchise. It is directed by Zach Cregger and written by Cregger and Shay Hatten. The film follows Bryan (Austin Abrams), a medical courier who must fight through a viral outbreak of infected monsters in Raccoon City during a delivery.",
+    "plot": "Set during events paralleling the game Resident Evil 2 (1998), albeit in a modern era—follows Bryan, a medical courier who must fight through a viral outbreak of infected monsters in Raccoon City during a delivery. The film grossed .8 million in the box office and received positive reviews from critics, becoming the highest-rated film based on a video game on Rotten Tomatoes and Metacritic.",
+    "language": "English",
+    "releaseDate": "September 18, 2026",
+    "year": "2026",
+    "genre": "Horror, Action, Thriller",
+    "duration": "TBA",
+    "director": "Zach Cregger",
+    "basedOn": "Resident Evil video game series",
+    "boxOffice": {
+      "budget": " Million",
+      "gross": ".8 Million"
+    },
+    "poster": "pics/Films/ResidentEvil2026/1.jpg",
+    "banner": "pics/Films/ResidentEvil2026/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/ResidentEvil2026/1.jpg",
+        "alt": "Resident Evil 2026 Official Poster"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "IMDb",
+        "score": "8.2/10",
+        "url": "https://www.imdb.com/title/tt35538033/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "8/10",
+        "url": "https://www.rottentomatoes.com/m/resident_evil_2026",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-fresh.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "8/10",
+        "url": "https://www.metacritic.com/movie/resident-evil-2026/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      },
+      {
+        "source": "Common Sense Media",
+        "score": "8/10",
+        "url": "https://www.commonsensemedia.org/movie-reviews/resident-evil-0",
+        "icon": "pics/RatingSiteLogos/common-sense-media.png"
+      },
+      {
+        "source": "Den of Geek",
+        "score": "8/10",
+        "url": "https://www.denofgeek.com/movies/resident-evil-review-decent-raccoon-city/",
+        "icon": "pics/RatingSiteLogos/den-of-geek.png"
+      },
+      {
+        "source": "Digital Spy",
+        "score": "8/10",
+        "url": "https://www.digitalspy.com/movies/a73722380/resident-evil-review-2026/",
+        "icon": "pics/RatingSiteLogos/digital-spy.png"
+      },
+      {
+        "source": "Hindustan Times",
+        "score": "8/10",
+        "url": "https://www.hindustantimes.com/entertainment/hollywood/resident-evil-review-pitch-perfect-austin-abrams-carries-zach-cregger-audacious-reboot-that-hits-all-the-right-notes-101789632933700.html",
+        "icon": "pics/RatingSiteLogos/hindustan-times.png"
+      },
+      {
+        "source": "IGN",
+        "score": "8/10",
+        "url": "https://www.ign.com/movies/resident-evil-2026",
+        "icon": "pics/RatingSiteLogos/ign.png"
+      },
+      {
+        "source": "The Independent",
+        "score": "8/10",
+        "url": "https://www.independent.co.uk/arts-entertainment/films/reviews/resident-evil-review-zach-cregger-b3051893.html",
+        "icon": "pics/RatingSiteLogos/the-independent.png"
+      },
+      {
+        "source": "Independent.ie",
+        "score": "8/10",
+        "url": "https://www.independent.ie/entertainment/movies/movie-reviews/resident-evil-review-horror-reboot-turns-up-the-dial-to-give-fans-their-fright-of-the-year/a/161285404.html",
+        "icon": "pics/RatingSiteLogos/independent-ie.png"
+      },
+      {
+        "source": "The Indian Express",
+        "score": "8/10",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/resident-evil-movie-review-this-joyride-lives-up-unapologetically-to-its-legacy-10883228/",
+        "icon": "pics/RatingSiteLogos/indian-express.png"
+      },
+      {
+        "source": "India Today",
+        "score": "8/10",
+        "url": "https://www.indiatoday.in/movies/reviews/story/resident-evil-review-zach-creggers-pulp-horror-delivers-spectacle-over-substance-2997519-2026-09-18",
+        "icon": "pics/RatingSiteLogos/india-today.ico"
+      },
+      {
+        "source": "Mid-Day",
+        "score": "8/10",
+        "url": "https://www.mid-day.com/entertainment/hollywood-news/article/resident-evil-movie-review-fk-survival-learn-to-deal-with-monsters-austin-abrams-zach-cregger-23650460",
+        "icon": "pics/RatingSiteLogos/mid-day.png"
+      },
+      {
+        "source": "Rediff",
+        "score": "8/10",
+        "url": "https://www.rediff.com/movies/review/resident-evil-movie-review-zach-cregger-delivers-a-scary-bloody-and-surprisingly-funny-horror-ride/20260917.htm",
+        "icon": "pics/RatingSiteLogos/rediff.png"
+      },
+      {
+        "source": "RogerEbert",
+        "score": "8/10",
+        "url": "https://www.rogerebert.com/reviews/resident-evil-zach-cregger-movie-review-2026",
+        "icon": "pics/RatingSiteLogos/rogerebert.png"
+      },
+      {
+        "source": "Rolling Stone",
+        "score": "8/10",
+        "url": "https://www.rollingstone.com/tv-movies/tv-movie-reviews/resident-evil-review-zach-cregger-1235623037/",
+        "icon": "pics/RatingSiteLogos/rolling-stone.png"
+      },
+      {
+        "source": "Telegraph",
+        "score": "8/10",
+        "url": "https://www.telegraph.co.uk/films/2026/09/18/resident-evil-film-review/",
+        "icon": "pics/RatingSiteLogos/telegraph.png"
+      },
+      {
+        "source": "The Guardian",
+        "score": "8/10",
+        "url": "https://www.theguardian.com/film/2026/sep/16/resident-evil-reboot-movie-review",
+        "icon": "pics/RatingSiteLogos/the-guardian.png"
+      },
+      {
+        "source": "Times of India",
+        "score": "8/10",
+        "url": "https://timesofindia.indiatimes.com/entertainment/english/movie-reviews/resident-evil/movie-review/134312484.cms",
+        "icon": "pics/RatingSiteLogos/times-of-india.ico"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Austin Abrams",
+        "role": "Bryan",
+        "description": "Medical Courier"
+      },
+      {
+        "actor": "Zach Cherry",
+        "role": "Survivor",
+        "description": "Supporting"
+      },
+      {
+        "actor": "Kali Reis",
+        "role": "Soldier",
+        "description": "Supporting"
+      },
+      {
+        "actor": "Paul Walter Hauser",
+        "role": "Scientist",
+        "description": "Supporting"
+      },
+      {
+        "actor": "Johnno Wilson",
+        "role": "Survivor",
+        "description": "Supporting"
+      }
+    ],
+    "bookings": [],
+    "watchOnline": [],
+    "music": [],
+    "officialWebsite": null,
+    "socials": [],
+    "similar": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=mNd1gb19A-c",
+        "youtubeId": "mNd1gb19A-c",
+        "title": "Main Trailer",
+        "type": "Trailer"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=SJPu1spHqfk",
+        "youtubeId": "SJPu1spHqfk",
+        "title": "Teaser",
+        "type": "Teaser"
+      }
+    ],
+    "trailers": [
+      {
+        "title": "Main Trailer",
+        "url": "https://www.youtube.com/watch?v=mNd1gb19A-c",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/mNd1gb19A-c",
+        "youtubeId": "mNd1gb19A-c",
+        "type": "Trailer"
+      },
+      {
+        "title": "Teaser",
+        "url": "https://www.youtube.com/watch?v=SJPu1spHqfk",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/SJPu1spHqfk",
+        "youtubeId": "SJPu1spHqfk",
+        "type": "Teaser"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "Resident Evil Review (Den of Geek)",
+        "url": "https://www.denofgeek.com/movies/resident-evil-review-decent-raccoon-city/",
+        "author": "Den of Geek",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Resident Evil Review (Digital Spy)",
+        "url": "https://www.digitalspy.com/movies/a73722380/resident-evil-review-2026/",
+        "author": "Digital Spy",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Resident Evil First Reactions (Variety)",
+        "url": "https://variety.com/2026/film/news/resident-evil-first-reactions-zach-cregger-reboot-scary-1236862900/",
+        "author": "Variety",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Resident Evil Review (Hindustan Times)",
+        "url": "https://www.hindustantimes.com/entertainment/hollywood/resident-evil-review-pitch-perfect-austin-abrams-carries-zach-cregger-audacious-reboot-that-hits-all-the-right-notes-101789632933700.html",
+        "author": "Hindustan Times",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Resident Evil Review (IGN)",
+        "url": "https://www.ign.com/movies/resident-evil-2026",
+        "author": "IGN",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Resident Evil Review (The Independent)",
+        "url": "https://www.independent.co.uk/arts-entertainment/films/reviews/resident-evil-review-zach-cregger-b3051893.html",
+        "author": "The Independent",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Resident Evil Review (Independent.ie)",
+        "url": "https://www.independent.ie/entertainment/movies/movie-reviews/resident-evil-review-horror-reboot-turns-up-the-dial-to-give-fans-their-fright-of-the-year/a/161285404.html",
+        "author": "Independent.ie",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Resident Evil Review (The Indian Express)",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/resident-evil-movie-review-this-joyride-lives-up-unapologetically-to-its-legacy-10883228/",
+        "author": "The Indian Express",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Resident Evil Review (India Today)",
+        "url": "https://www.indiatoday.in/movies/reviews/story/resident-evil-review-zach-creggers-pulp-horror-delivers-spectacle-over-substance-2997519-2026-09-18",
+        "author": "India Today",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Resident Evil Review (Mid-Day)",
+        "url": "https://www.mid-day.com/entertainment/hollywood-news/article/resident-evil-movie-review-fk-survival-learn-to-deal-with-monsters-austin-abrams-zach-cregger-23650460",
+        "author": "Mid-Day",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Resident Evil Review (RogerEbert)",
+        "url": "https://www.rogerebert.com/reviews/resident-evil-zach-cregger-movie-review-2026",
+        "author": "RogerEbert",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Resident Evil Review (Rolling Stone)",
+        "url": "https://www.rollingstone.com/tv-movies/tv-movie-reviews/resident-evil-review-zach-cregger-1235623037/",
+        "author": "Rolling Stone",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Resident Evil Review (Telegraph)",
+        "url": "https://www.telegraph.co.uk/films/2026/09/18/resident-evil-film-review/",
+        "author": "Telegraph",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Resident Evil Review (The Guardian)",
+        "url": "https://www.theguardian.com/film/2026/sep/16/resident-evil-reboot-movie-review",
+        "author": "The Guardian",
+        "date": "September 2026",
+        "section": "Reviews"
+      }
+    ],
+    "filePath": "E:/OakShow/ResidentEvil2026.html",
+    "status": "released",
+    "genres": [
+      "Horror",
+      "Survival",
+      "Action"
+    ]
+  },
+  {
+    "id": "TheRunner",
+    "slug": "therunner",
+    "type": "movie",
+    "category": "Hollywood",
+    "score": 5,
+    "filename": "TheRunner.html",
+    "aliases": [],
+    "title": "The Runner",
+    "metaTitle": "The Runner (2026) All Ratings, Reviews, Songs, Videos, Bookings and News",
+    "description": "The Runner is a 2026 British action-thriller film directed by Kevin Macdonald and starring Gal Gadot. Follow Maia Marten as she races through London to save her kidnapped son.",
+    "plot": "The film follows Maia Marten (Gal Gadot), a high-powered London lawyer whose life is upended during a morning run when she receives a phone call informing her that her diabetic son, Noah, has been kidnapped. To save him, she is forced to follow a series of ruthless commands from an anonymous caller while racing through the streets of London.",
+    "language": "English",
+    "releaseDate": "September 2, 2026",
+    "year": "2026",
+    "genre": "Action, Thriller",
+    "duration": "TBA",
+    "director": "Kevin Macdonald",
+    "basedOn": "",
+    "boxOffice": {
+      "worldwideGross": "N/A (Streaming Release)",
+      "indiaGross": "",
+      "overseasGross": "",
+      "openingDay": "",
+      "openingWeekend": "",
+      "budget": "",
+      "verdict": "",
+      "lastUpdated": "September 2026",
+      "source": "Amazon Prime Video"
+    },
+    "poster": "pics/Films/TheRunner/1.jpg",
+    "banner": "pics/Films/TheRunner/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/TheRunner/1.jpg",
+        "alt": "The Runner Official Poster"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "5/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-an-average.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "TBD",
+        "url": "https://www.imdb.com/title/tt34564059/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "TBD",
+        "url": "https://www.rottentomatoes.com/m/the_runner_2026",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-fresh.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "TBD",
+        "url": "https://www.metacritic.com/movie/the-runner-2026/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      },
+      {
+        "source": "Common Sense Media",
+        "score": "TBD",
+        "url": "https://www.commonsensemedia.org/movie-reviews/the-runner-2026",
+        "icon": "pics/RatingSiteLogos/common-sense-media.png"
+      },
+      {
+        "source": "Digital Spy",
+        "score": "TBD",
+        "url": "https://www.digitalspy.com/movies/a73593892/gal-gadot-the-runner-reviews-prime-video/",
+        "icon": "pics/RatingSiteLogos/digital-spy.png"
+      },
+      {
+        "source": "IGN",
+        "score": "TBD",
+        "url": "https://www.ign.com/articles/the-runner-review-gal-gadot",
+        "icon": "pics/RatingSiteLogos/ign.png"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Gal Gadot",
+        "role": "Maia Marten",
+        "description": "A high-powered London lawyer"
+      },
+      {
+        "actor": "Damian Lewis",
+        "role": "The Caller",
+        "description": "An anonymous caller"
+      },
+      {
+        "actor": "Alfred Enoch",
+        "role": "Ted",
+        "description": ""
+      },
+      {
+        "actor": "Rory Wilmot",
+        "role": "Noah",
+        "description": "Maia's diabetic son"
+      }
+    ],
+    "bookings": [],
+    "watchOnline": [
+      {
+        "provider": "Amazon Prime Video",
+        "platform": "Amazon Prime Video",
+        "url": "https://www.primevideo.com/detail/0MHL3PDMP9F9YY88VUUWRW1A4W",
+        "icon": "pics/WatchOnline/amazon-prime.png",
+        "label": "Watch on Prime Video"
+      }
+    ],
+    "music": [],
+    "officialWebsite": null,
+    "socials": [],
+    "similar": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=zz4rsZLcauY",
+        "youtubeId": "zz4rsZLcauY",
+        "title": "Main Trailer",
+        "type": "Trailer"
+      }
+    ],
+    "trailers": [
+      {
+        "title": "Main Trailer",
+        "url": "https://www.youtube.com/watch?v=zz4rsZLcauY",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/zz4rsZLcauY",
+        "youtubeId": "zz4rsZLcauY",
+        "type": "Trailer"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "The Runner Review (Digital Spy)",
+        "url": "https://www.digitalspy.com/movies/a73593892/gal-gadot-the-runner-reviews-prime-video/",
+        "author": "Digital Spy",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "The Runner Review (IGN)",
+        "url": "https://www.ign.com/articles/the-runner-review-gal-gadot",
+        "author": "IGN",
+        "date": "September 2026",
+        "section": "Reviews"
+      }
+    ],
+    "filePath": "E:/OakShow/TheRunner.html",
+    "status": "released"
+  },
+  {
+    "id": "Runner",
+    "slug": "runner",
+    "type": "movie",
+    "category": "Hollywood",
+    "score": 7,
+    "filename": "Runner.html",
+    "aliases": [],
+    "title": "Runner",
+    "metaTitle": "Runner (2026) All Ratings, Reviews, Songs, Videos, Bookings and News",
+    "description": "Runner is a 2026 American action-comedy film directed by Scott Waugh, starring Alan Ritchson and Owen Wilson. Check out verified ratings, critic reviews, and booking links.",
+    "plot": "Runner is an action-comedy film starring Alan Ritchson as Hank Malone, a former soldier, and Owen Wilson as his partner, Ben. They navigate high-stakes scenarios with comedic flair.",
+    "language": "English",
+    "releaseDate": "September 11, 2026",
+    "year": "2026",
+    "genre": "Action, Comedy",
+    "duration": "TBA",
+    "director": "Scott Waugh",
+    "basedOn": "",
+    "boxOffice": {
+      "worldwideGross": "$9.5 Million",
+      "indiaGross": "",
+      "overseasGross": "",
+      "openingDay": "",
+      "openingWeekend": "",
+      "budget": "",
+      "verdict": "",
+      "lastUpdated": "September 2026",
+      "source": "Box Office Reports"
+    },
+    "poster": "pics/Films/Runner/1.jpg",
+    "banner": "pics/Films/Runner/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/Runner/1.jpg",
+        "alt": "Runner Official Poster"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "7/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-safe-to-watch.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "TBD",
+        "url": "https://www.imdb.com/title/tt31349844/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "TBD",
+        "url": "https://www.rottentomatoes.com/m/runner_2026",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-fresh.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "TBD",
+        "url": "https://www.metacritic.com/movie/runner-2026/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      },
+      {
+        "source": "Common Sense Media",
+        "score": "TBD",
+        "url": "https://www.commonsensemedia.org/movie-reviews/runner-0",
+        "icon": "pics/RatingSiteLogos/common-sense-media.png"
+      },
+      {
+        "source": "IGN",
+        "score": "TBD",
+        "url": "https://www.ign.com/articles/runner-movie-review-alan-ritchson-owen-wilson",
+        "icon": "pics/RatingSiteLogos/ign.png"
+      },
+      {
+        "source": "RogerEbert",
+        "score": "TBD",
+        "url": "https://www.rogerebert.com/reviews/runner-alan-ritchson-owen-wilson-angel-studios-movie-review-2026",
+        "icon": "pics/RatingSiteLogos/rogerebert.png"
+      },
+      {
+        "source": "Telegraph",
+        "score": "TBD",
+        "url": "https://www.telegraph.co.uk/films/2026/09/10/runner-two-star-review/",
+        "icon": "pics/RatingSiteLogos/telegraph.png"
+      },
+      {
+        "source": "The Guardian",
+        "score": "TBD",
+        "url": "https://www.theguardian.com/film/2026/sep/08/runner-review-alan-ritchson-owen-wilson",
+        "icon": "pics/RatingSiteLogos/the-guardian.png"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Alan Ritchson",
+        "role": "Hank Malone",
+        "description": "Former soldier"
+      },
+      {
+        "actor": "Owen Wilson",
+        "role": "Ben",
+        "description": "Hank's partner"
+      },
+      {
+        "actor": "Rodrigo Santoro",
+        "role": "",
+        "description": ""
+      },
+      {
+        "actor": "Leila George",
+        "role": "",
+        "description": ""
+      }
+    ],
+    "bookings": [
+      {
+        "provider": "BookMyShow",
+        "url": "https://in.bookmyshow.com/movies/runner/ET00508081",
+        "icon": "pics/BookngWebSiteLogos/book-my-show.png",
+        "label": "Book on BookMyShow",
+        "rank": 1
+      },
+      {
+        "provider": "District",
+        "url": "https://www.district.in/movies/runner-movie-tickets-in-nawapara-MV223180?srsltid=AU7gw4UNxgEJLBl8qR_SS_MAbCAqQRjAhmrwFV7l6PtYb9I-MvJyqWv8",
+        "icon": "pics/BookngWebSiteLogos/district.png",
+        "label": "Book on District",
+        "rank": 2
+      },
+      {
+        "provider": "Fandango",
+        "url": "https://www.fandango.com/runner-2026-246493/movie-overview",
+        "icon": "pics/BookngWebSiteLogos/fandango.png",
+        "label": "Book on Fandango",
+        "rank": 3
+      },
+      {
+        "provider": "TicketNew",
+        "url": "https://ticketnew.com/movies/runner-movie-detail-223180",
+        "icon": "pics/BookngWebSiteLogos/ticket-new.png",
+        "label": "Book on TicketNew",
+        "rank": 4
+      },
+      {
+        "provider": "Odeon",
+        "url": "https://www.odeon.co.uk/films/runner/HO00009348/",
+        "icon": "pics/BookngWebSiteLogos/odeon.png",
+        "label": "Book on Odeon",
+        "rank": 5
+      },
+      {
+        "provider": "Cineworld",
+        "url": "https://www.cineworld.co.uk/films/runner/ho00015163",
+        "icon": "pics/BookngWebSiteLogos/cineworld.png",
+        "label": "Book on Cineworld",
+        "rank": 6
+      }
+    ],
+    "watchOnline": [],
+    "music": [],
+    "officialWebsite": null,
+    "socials": [],
+    "similar": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=m8JUmBgHejI",
+        "youtubeId": "m8JUmBgHejI",
+        "title": "Main Trailer",
+        "type": "Trailer"
+      }
+    ],
+    "trailers": [
+      {
+        "title": "Main Trailer",
+        "url": "https://www.youtube.com/watch?v=m8JUmBgHejI",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/m8JUmBgHejI",
+        "youtubeId": "m8JUmBgHejI",
+        "type": "Trailer"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "Runner Review (Variety)",
+        "url": "https://variety.com/2026/film/features/alan-ritchson-runner-stunts-stuntman-director-1236858175/",
+        "author": "Variety",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Runner Review (Telegraph)",
+        "url": "https://www.telegraph.co.uk/films/2026/09/10/runner-two-star-review/",
+        "author": "Telegraph",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Runner Review (The Guardian)",
+        "url": "https://www.theguardian.com/film/2026/sep/08/runner-review-alan-ritchson-owen-wilson",
+        "author": "The Guardian",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Runner Review (RogerEbert)",
+        "url": "https://www.rogerebert.com/reviews/runner-alan-ritchson-owen-wilson-angel-studios-movie-review-2026",
+        "author": "RogerEbert",
+        "date": "September 2026",
+        "section": "Reviews"
+      }
+    ],
+    "filePath": "E:/OakShow/Runner.html",
+    "status": "released"
+  },
+  {
     "id": "RamayanaPart1",
     "slug": "ramayanapart1",
     "type": "movie",
