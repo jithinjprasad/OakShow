@@ -408,6 +408,120 @@ async function run() {
     count++;
   }
 
+  // 5. Process Critic Reviews
+  const reviews = loadJson('reviews.json');
+  console.log(`📦 Prerendering ${reviews.length} critic reviews...`);
+
+  for (const rev of reviews) {
+    if (!rev.id && !rev.link) continue;
+    const filename = rev.link ? rev.link.replace(/^\/+/, '') : `${rev.id}.html`;
+    const cleanFilename = filename.endsWith('.html') ? filename : `${filename}.html`;
+
+    const outPath = path.join(distDir, cleanFilename);
+    const outDir = path.dirname(outPath);
+    if (!fs.existsSync(outDir)) {
+      fs.mkdirSync(outDir, { recursive: true });
+    }
+
+    const title = `${rev.title || 'OakShow Critic Review'} — Certified Rating & Remarks`;
+    const desc = rev.excerpt || rev.fullReview?.slice(0, 160) || `Check verified movie review by ${rev.author} on OakShow.`;
+    const canonical = `${DOMAIN}/${cleanFilename}`;
+    const ogImage = rev.banner ? `${DOMAIN}/${rev.banner.replace(/^\/+/, '')}` : `${DOMAIN}/favicon.png`;
+
+    const schema = {
+      '@context': 'https://schema.org',
+      '@type': 'Review',
+      'name': rev.title,
+      'description': desc,
+      'image': ogImage,
+      'url': canonical,
+      'author': {
+        '@type': 'Person',
+        'name': rev.author || 'OakShow Critic'
+      },
+      'reviewRating': {
+        '@type': 'Rating',
+        'ratingValue': rev.score || 4,
+        'bestRating': '5'
+      }
+    };
+
+    const bodyContent = `
+      <h1>${escapeHtml(rev.title)}</h1>
+      <p><strong>Reviewer:</strong> ${escapeHtml(rev.author)} | <strong>Verdict:</strong> ${escapeHtml(rev.remark || 'Certified Review')}</p>
+      <p>${escapeHtml(desc)}</p>
+      <p><a href="${DOMAIN}/OakShowReviews.html">Back to All OakShow Reviews</a></p>
+    `;
+
+    const html = generatePrerenderHtml(baseHtml, {
+      title,
+      description: desc,
+      canonicalUrl: canonical,
+      ogImage,
+      ogType: 'article',
+      schemaJson: schema,
+      bodyContent
+    });
+
+    fs.writeFileSync(outPath, html, 'utf8');
+    count++;
+
+    // Also prerender legacy paths in dist/Profiles/CriticProfiles/... so direct visits or crawler hits get the new version
+    if (rev.author) {
+      const a = rev.author.toLowerCase();
+      let authorFolder = 'JithinJPrasad';
+      if (a.includes('abhijith')) authorFolder = 'AbhijithAG';
+      else if (a.includes('manoj')) authorFolder = 'ManojAswin';
+      else if (a.includes('vishnu')) authorFolder = 'VishnuPc';
+      else if (a.includes('oakshow')) authorFolder = 'MsMrOakShow';
+      else if (a.includes('achuthan')) authorFolder = 'AchuthanKarnnan';
+
+      const legacyRelPath = path.join('Profiles', 'CriticProfiles', authorFolder, cleanFilename);
+      const legacyOutPath = path.join(distDir, legacyRelPath);
+      const legacyOutDir = path.dirname(legacyOutPath);
+      if (!fs.existsSync(legacyOutDir)) {
+        fs.mkdirSync(legacyOutDir, { recursive: true });
+      }
+      fs.writeFileSync(legacyOutPath, html, 'utf8');
+      count++;
+    }
+  }
+
+  // 6. Prerender Critic Profiles
+  const criticsList = [
+    { id: 'abhijithag', folder: 'AbhijithAG', name: 'Abhijith A G' },
+    { id: 'jithinjprasad', folder: 'JithinJPrasad', name: 'Jithin J Prasad' },
+    { id: 'achuthankarnnan', folder: 'AchuthanKarnnan', name: 'Achuthan Karnnan' },
+    { id: 'manojaswin', folder: 'ManojAswin', name: 'Manoj Aswin' },
+    { id: 'vishnupc', folder: 'VishnuPc', name: 'Vishnu P.C' },
+    { id: 'msmroakshow', folder: 'MsMrOakShow', name: 'OakShow (Ms. & Mr. OakShow)' }
+  ];
+
+  for (const c of criticsList) {
+    const profilePath = path.join(distDir, 'Profiles', 'CriticProfiles', c.folder, 'index.html');
+    const profileDir = path.dirname(profilePath);
+    if (!fs.existsSync(profileDir)) {
+      fs.mkdirSync(profileDir, { recursive: true });
+    }
+
+    const title = `${c.name} — OakShow Critic Profile`;
+    const desc = `Read all certified movie and series reviews by ${c.name} on OakShow.`;
+    const canonical = `${DOMAIN}/Profiles/CriticProfiles/${c.folder}/index.html`;
+    const ogImage = `${DOMAIN}/favicon.png`;
+
+    const html = generatePrerenderHtml(baseHtml, {
+      title,
+      description: desc,
+      canonicalUrl: canonical,
+      ogImage,
+      ogType: 'profile',
+      bodyContent: `<h1>${escapeHtml(c.name)}</h1><p>${escapeHtml(desc)}</p><p><a href="${DOMAIN}/OakShowReviews.html">Back to All Reviews</a></p>`
+    });
+
+    fs.writeFileSync(profilePath, html, 'utf8');
+    count++;
+  }
+
   console.log(`✅ Successfully generated ${count} static prerendered HTML pages in dist/!`);
 }
 

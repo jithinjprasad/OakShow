@@ -1,382 +1,166 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en" data-theme="light" style="color-scheme: light;">
 <head>
-<link rel="icon" type="image/png" href="favicon.png"  >
-<title>Arrival All Ratings,Reviews and News</title>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
-<!-- Custom Theme files -->
-<!--menu-->
-<script src="js/scripts.js"></script>
-<link href="css/styles.css" rel="stylesheet">
-<!--//menu-->
-<!--theme-style-->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
-<!--//theme-style-->
-<!--navBar-->
-<script src="js/navBar.js"></script>
-<link href="css/navBar.css" rel="stylesheet">
-<!--//navBar-->
-<!--effects-->
-<script src="js/effects3.js"></script>
-<!--//effects-->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Arrival All Ratings Reviews and News,Arrival All Ratings and Reviews" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#ffffff" id="theme-color-meta" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico?v=oakshow3" />
+  <link rel="icon" type="image/png" sizes="300x300" href="/favicon.png?v=oakshow3" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=oakshow3" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png?v=oakshow3" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=oakshow3" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png?v=oakshow3" />
+  <script>
+    (function() {
+      try {
+        var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || (window.innerWidth && window.innerWidth <= 768);
+        var savedTheme = localStorage.getItem('oakshow_theme_v3') || localStorage.getItem('oakshow_theme_v2') || localStorage.getItem('oakshow_theme');
+        if (!localStorage.getItem('oakshow_theme_v3')) {
+          savedTheme = isMobile ? 'dark' : 'light';
+          localStorage.setItem('oakshow_theme_v3', savedTheme);
+        }
+        var t = (savedTheme === 'dark') ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', t);
+        document.documentElement.style.colorScheme = t;
 
+        // Immediately sync mobile browser theme-color status bar before initial paint
+        var themeColor = (t === 'dark') ? '#030813' : '#ffffff';
+        var metaTheme = document.getElementById('theme-color-meta') || document.querySelector('meta[name="theme-color"]');
+        if (metaTheme) {
+          metaTheme.setAttribute('content', themeColor);
+        }
 
+        // Synchronously derive and set initial document.title before Analytics loads
+        var path = window.location.pathname || '';
+        var rawSlug = path.replace(/^\/+|\.html$/gi, '').replace(/^(movies|series|films)\//i, '');
+        if (rawSlug && rawSlug !== 'index' && rawSlug !== 'home' && rawSlug !== 'discover') {
+          var readable = rawSlug.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/[-_]/g, ' ');
+          document.title = readable + ' All Ratings, Reviews and Watch Online — OakShow';
+        }
+      } catch(e) {}
+    })();
+  </script>
+  <style>
+    noscript {
+      display: none !important;
+    }
+    /* Hide Firebase Auth background iframe and prevent it from rendering a white bar or top scroll offset on mobile dark theme */
+    iframe[src*="firebaseapp.com"],
+    iframe[src*="/__/auth/"],
+    iframe[id^="I0_"],
+    iframe[name^="I0"],
+    iframe[ng-non-bindable] {
+      position: fixed !important;
+      top: -9999px !important;
+      left: -9999px !important;
+      width: 0 !important;
+      height: 0 !important;
+      border: 0 !important;
+      outline: none !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+      visibility: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      clip-path: inset(50%) !important;
+      background: transparent !important;
+      color-scheme: dark !important;
+      z-index: -99999 !important;
+    }
+  </style>
+  
+  <title>Arrival All Ratings,Reviews and News</title>
+  <meta name="description" content="Checkout verified ratings, reviews, streaming links, and tickets for Arrival on OakShow." />
+  <meta name="keywords" content="OakShow, movie reviews, ratings, cinema, Hollywood, Bollywood, Tollywood, Mollywood, Kollywood, upcoming movies, release calendar, critic reviews, showtimes, BookMyShow" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://oakshow.in/Arrival.html" />
+  
+  <!-- OpenGraph Metadata -->
+  <meta property="og:site_name" content="OakShow" />
+  <meta property="og:title" content="Arrival All Ratings,Reviews and News" />
+  <meta property="og:description" content="Checkout verified ratings, reviews, streaming links, and tickets for Arrival on OakShow." />
+  <meta property="og:type" content="video.movie" />
+  <meta property="og:url" content="https://oakshow.in/Arrival.html" />
+  <meta property="og:image" content="https://oakshow.in/pics/Films/Arrival/2.jpg" />
 
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@OakShow" />
+  <meta name="twitter:creator" content="@OakShow" />
+  <meta name="twitter:title" content="Arrival All Ratings,Reviews and News" />
+  <meta name="twitter:description" content="Checkout verified ratings, reviews, streaming links, and tickets for Arrival on OakShow." />
+  <meta name="twitter:image" content="https://oakshow.in/pics/Films/Arrival/2.jpg" />
 
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+  <!-- Schema.org JSON-LD Organization Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Movie",
+  "name": "Arrival",
+  "description": "Checkout verified ratings, reviews, streaming links, and tickets for Arrival on OakShow.",
+  "image": "https://oakshow.in/pics/Films/Arrival/2.jpg",
+  "url": "https://oakshow.in/Arrival.html",
+  "datePublished": "2016",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "9/10",
+    "bestRating": "10",
+    "ratingCount": "100"
+  }
+}
+</script>
 
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-K686R3P');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google Analytics (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77818206-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-77818206-1', {
+      send_page_view: false
+    });
+  </script>
+  <!-- Legacy Google Analytics ga() support -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-77818206-1', 'auto');
+  </script>
+  <script type="module" crossorigin src="/assets/index-DAHWZmpK.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DrFqUK7t.css">
 </head>
 <body>
-<!--header-->	
-	<script language="javascript" type="text/javascript" src="header.txt"></script>	
-			<!---pop-up-box---->
-				 <script>
-						$(document).ready(function() {
-						$('.popup-with-zoom-anim').magnificPopup({
-							type: 'inline',
-							fixedContentPos: false,
-							fixedBgPos: true,
-							overflowY: 'auto',
-							closeBtnInside: true,
-							preloader: false,
-							midClick: true,
-							removalDelay: 300,
-							mainClass: 'my-mfp-zoom-in'
-						});
-																						
-						});
-				</script>
-					
-	
-		</div>
-		<div class="clearfix"> </div>
-		</div>	
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K686R3P"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="root"></div>
+<noscript>
+<div class="oakshow-crawler-fallback" style="padding:24px;font-family:sans-serif;color:#fff;background:#0d1117;">
+
+      <h1>Arrival (2016)</h1>
+      <p><strong>Genre:</strong> Sci-Fi Drama | <strong>Language:</strong> English</p>
+      <p>Checkout verified ratings, reviews, streaming links, and tickets for Arrival on OakShow.</p>
+      <p><a href="https://oakshow.in/">Explore OakShow Entertainment</a></p>
+    
 </div>
-<!--//-->	
-
-<!--//header-->
-
-<div class="container">
-	
-	<div class="buy-single-single">
-	
-			<div class="col-md-9 single-box">
-				
-       <div class=" buying-top">	
-			<div class="flexslider">
-  <ul class="slides">
-    <li data-thumb="pics/Films/Arrival/4.JPG">
-      <img src="pics/Films/Arrival/4.JPG" />
-    </li>
-    <li data-thumb="pics/Films/Arrival/2.jpg">
-      <img src="pics/Films/Arrival/2.jpg" />
-    </li>
-    <li data-thumb="pics/Films/Arrival/3.jpg">
-      <img src="pics/Films/Arrival/3.jpg" />
-    </li>
-    <li data-thumb="pics/Films/Arrival/4.JPG">
-      <img src="pics/Films/Arrival/4.JPG" />
-    </li>
-  </ul>
-</div>
-<!-- FlexSlider -->
-  <script defer src="js/jquery.flexslider.js"></script>
-<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-
-<script>
-// Can also be used with $(document).ready()
-$(window).load(function() {
-  $('.flexslider').flexslider({
-    animation: "slide",
-    controlNav: "thumbnails"
-  });
-});
-</script>
-</div>
-<div class="buy-sin-single">
-			<div class="col-sm-5 middle-side immediate">
-					     <h4>Arrival</h4>
-					     <p><span class="bath">Language&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;English </p>
-<p><span class="bath">Release Date&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;Sep 1 2016 (Venice) </p>
-
-<p><span class="bath">Release Date&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;Nov 11 2016 (United States) </p>
-
-						<p><span class="bath3">Genre&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;Sci-Fi  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; Drama </span></p>
-
-
-						<b><u>All Ratings</u></b>
-
-						<p><span class="bath3"><a href="http://oakshow.in/Arrival">OakShow&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;9/10 </a> </span></p>
-
-						
-
-					     <p><span class="bath"><a href="http://www.imdb.com/title/tt2543164/">Imdb Rating&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;8.6/10</a> </p>
-
-
-						<p>  <span class="bath1"><a href="https://www.rottentomatoes.com/m/arrival_2016/">RottenTomatoes&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;96%</a> </span></p>
-
-
-						<p><span class="bath2"><a href="http://www.metacritic.com/movie/arrival">Metacritic Rating&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;82% </a></span> </p>
-
-							<p><span class="bath2"><a href="https://www.commonsensemedia.org/movie-reviews/arrival">CommonSenseMedia:&nbsp;&nbsp;5/5</a> </span> </p>
-
-							
-
-						<p><span class="bath2"><a href="http://news.nationalpost.com/arts/movies/arrival-will-make-you-feel-like-youre-seeing-colour-for-the-first-time-while-expanding-your-perception-of-family">Nationalpost&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;4/4</a> </span> </p>	
-
-							<p><span class="bath2"><a href="http://www.denofgeek.com/uk/movies/arrival/43887/arrival-review">DenOfGeek&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;5/5 </a></span> </p>	
-
-						<p><span class="bath2"><a href="http://www.rollingstone.com/movies/reviews/peter-travers-arrival-movie-review-w449056">Rolling Stone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;3.5/4</a> </span> </p>	
-
-
-						<p><span class="bath2"><a href="http://www.ign.com/articles/2016/09/26/arrival-review">IGN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;8.5/10</a></span> </p>	
-
-
-
-						<p>  <span class="bath1"><a href="http://movies.prettyfamous.com/l/8552504/Arrival-2016">Prettyfamous&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;3/4</a> </span></p>
-
-						
-						<p>  <span class="bath1"><a href="http://www.rogerebert.com/reviews/arrival-2016">RogerEbert.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;3/4</a> </span></p>
-
-						<p>  <span class="bath1"><a hreff="http://wegotthiscovered.com/movies/arrival-review/">WeGotThisCovered:&nbsp;&nbsp;3.5/5</a> </span></p>
-
-
-
-						
-						<p>  <span class="bath1"><a href="http://www.nydailynews.com/entertainment/movies/arrival-just-miss-alien-invasion-movie-article-1.2864668">NY Daily News&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;3.5/5</a> </span></p>
-
-
-						
-						<p><span class="bath2"><a href="http://www.spoilertv.com/2016/11/movies-arrival-review.html">Spoiler TV&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;6/10</a> </span> </p>
-
-
-						
-
-						
-
-						
-
-
-
-						<p><span class="bath2"><b><u>Grab Your Tickets Now</u></b></span> </p>
-						<p><span class="bath3">Via PayTm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;<class="   right-side">
-							 <a href="https://paytm.com/movies" class="hvr-sweep-to-right more" >Book Now</a>     
-					 </span></p>	
-						<p><span class="bath3">Via BookMyShow</a>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;<class="   right-side">
-							 <a href="https://in.bookmyshow.com/movies/arrival/ET00045012" class="hvr-sweep-to-right more" >Book Now</a>     
-					 </span></p>
-
-						
-
-						<p><span class="bath3">Via Fandango</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;<class="   right-side">
-							 <a href="http://www.fandango.com/arrival_194802/movieoverview" class="hvr-sweep-to-right more" >Book Now</a>     
-					 </span></p>	
-
-					<p><span class="bath3">Via ComingSoon</a>&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;<class="   right-side">
-							 <a href="http://www.comingsoon.net/movies/reviews/769299-fantastic-fest-2016-arrival-review" class="hvr-sweep-to-right more" >Book Now</a>     
-					 </span></p>
-
-									    	
-						
-					     	
-						<div class="   right-side">
-							 <a href="index.html" class="hvr-sweep-to-right more" >Home</a>     
-					 </div>
-					</div>
-					 <div class="col-sm-7 buy-sin">
-					 	<h4>Description</h4>
-					 	<p><b>Cast:</b> 	
-Amy Adams,
-Jeremy Renner,
-Forest Whitaker,
-Michael Stuhlbarg,
-Tzi Ma,
-Mark O'Brien</p>
-<p><b>Director:</b> Denis Villeneuve</p>
-<p><b>Based On:</b> "Story of Your Life"
-by Ted Chiang</p>
-<p><b><u>Synopsis</u></b></p>
-<p>When multiple mysterious spacecraft touch down across the globe, an elite team is put together to investigate, including linguist Louise Banks (Amy Adams), mathematician Ian Donnelly (Jeremy Renner), and US Army Colonel Weber (Forest Whitaker). Mankind teeters on the verge of global war as everyone scrambles for answers—and to find them, Banks, Donnelly, and Weber will take a chance that could threaten their lives, and, quite possibly, humanity.Source: Wikipedia</p>
-
-
-<br><br>
-
-<p><b><u>Reviews & News(After Release)</u></b></p>
-
-
-<p><a href="http://www.vox.com/culture/2016/11/11/13587262/arrival-movie-review-amy-adams-denis-villeneuve">Arrival is a stunning science fiction movie with deep implications for today</a> By:Vox</p>
-
-<p><a href="http://www.theatlantic.com/entertainment/archive/2016/11/amy-adams-arrival-review/507017/?curator=MediaREDEF">Review: 'Arrival,' Starring Amy Adams, Is One of the Best of the Year - The Atlantic</a> By:Redef‎</p>
-
-<p><a href="http://www.sciencemag.org/news/2016/11/linguists-new-sci-fi-film-arrival-cant-come-soon-enough">For linguists, Arrival can't come soon enough</a> By:Science Magazine</p>
-
-
-
-<p><b><u>News(Before Release)</u></b></p>
-
-
-<p><a href="http://www.wsj.com/articles/a-new-story-in-sci-fi-writer-ted-chiangs-life-hollywood-1478015805">A New Story in Sci-Fi Writer Ted Chiang's Life: Hollywood</a> By:Wall Street Journal‎</p>
-
-<p><a href="http://www.boiseweekly.com/boise/arrival-close-encounter-of-the-best-kind/Content?oid=3922681">Arrival: Close Encounter of the Best Kind | Film</a> By:Boise Weekly‎‎</p>
-
-<p><a href="http://www.ew.com/article/2016/10/31/amy-adams-arrival-aliens">Amy Adams Explains Why 'Arrival' Isn't a Typical Alien-Invasion Movie</a> By:Entertainment Weekly‎‎</p>
-
-
-
-					 </div>
-					 <div class="clearfix"> </div>
-					</div>
-					 
-					
-		</div>
-	
-
-			
-		
-		
-			
-	  </div>
-<div class="col-md-3">
-			<div class="single-box-right right-immediate">
-		     	<h4>Trailers And Others Videos</h4>
-				<div class="single-box-img">
-					<div class="box-img">
-						<a href="Arrival.html"><iframe width="180" height="100"
-src="https://www.youtube.com/embed/tFMo3UJ4B4g"></iframe></a>
-<p>Trailer</p>
-					</div>
-					
-					
-					
-					<div class="clearfix"> </div>
-				</div>
-
-				<div class="single-box-img">
-					<div class="box-img">
-						<a href="Arrival.html"><iframe width="180" height="100"
-src="https://www.youtube.com/embed/WH9F4WkvhRk"></iframe></a>
-<p>Trailer 2</p>
-					</div>
-					
-					
-					
-					<div class="clearfix"> </div>
-				</div>
-
-				<div class="single-box-img">
-					<div class="box-img">
-						<a href="Arrival.html"><iframe width="180" height="100"
-src="https://www.youtube.com/embed/h0Cr0Qzf9p8"></iframe></a>
-<p>Common Ground</p>
-					</div>
-					
-					
-					
-					<div class="clearfix"> </div>
-				</div>
-
-				<div class="single-box-img">
-					<div class="box-img">
-						<a href="Arrival.html"><iframe width="180" height="100"
-src="https://www.youtube.com/embed/Ffzv6pC5P3I"></iframe></a>
-<p>"Kangaroo" Clip</p>
-					</div>
-					
-					
-					
-					<div class="clearfix"> </div>
-				</div>
-
-				
-				
-				
-			<div class="   right-side">
-							 <a target="_blank" href="Arrival.html" class="hvr-sweep-to-right more" >Switch To Mobile View</a>     
-					 </div>	
-				
-		 </div>
-			
-	  </div>
-		
-	
-	<br>
-
-	<div id="share-buttons">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<!-- Facebook -->
-    		<a href="http://www.facebook.com/sharer.php?u=http://OakShow.in/Arrival.html" target="_blank">
-        <img src="images/fb.png" height="40px" width="40px" alt="Facebook" />
-    		</a>
-	<!-- Twitter -->
-    <a href="https://twitter.com/share?url=http://OakShow.in/Arrival.html" target="_blank">
-        <img src="images/twitter.png" height="40px" width="40px" alt="Twitter" />
-    </a>	
-	<!-- Pinterest -->
-    <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
-        <img src="images/pinterest.png" height="40px" width="40px" alt="Pinterest" />
-    </a>
-	
-	<!-- Digg -->
-    <a href="http://www.digg.com/submit?url=http://OakShow.in/Arrival.html" target="_blank">
-        <img src="images/diggit.png" height="40px" width="40px" alt="Digg" />
-    </a>
-	<!-- Google+ -->
-    <a href="https://plus.google.com/share?url=http://OakShow.in/Arrival.html" target="_blank">
-        <img src="images/google-plus.png" height="40px" width="40px" alt="Google" />
-    </a>
-	<!-- Buffer -->
-    <a href="https://bufferapp.com/add?url=http://OakShow.in/Arrival.html"&amp;text=Simple Share Buttons" target="_blank">
-        <img src="images/buffer.png" height="40px" width="40px" alt="Buffer" />
-    </a>
-	<!-- LinkedIn -->
-    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://OakShow.in/Arrival.html" target="_blank">
-        <img src="images/linkedin.png" height="40px" width="40px" alt="LinkedIn" />
-    </a>
-	<!-- Print -->
-    <a href="javascript:;" onclick="window.print()">
-        <img src="images/print.png" height="40px" width="40px"  alt="Print" />
-    </a>
-	<!-- Tumblr-->
-    <a href="http://www.tumblr.com/share/link?url=http://OakShow.in/Arrival.html"&amp;title=Simple Share Buttons" target="_blank">
-        <img src="images/tumblr.png" height="40px" width="40px" alt="Tumblr" />
-    </a>
-</div>
-
-<!---->
-<!--now-->
-<div class="container">
-	<div class="future">
-		<h3 >Latest Release</h3>
-		
-						
-						<script language="javascript" type="text/javascript" src="now.txt"></script>
-
-		
-				
-		
-	</div>
-	
-</div>
-	<script type="text/javascript" src="js/jquery.flexisel.js"></script>
-	<script type="text/javascript" src="js/now.js"></script>
-<!--//now-->
-<!--footer-->
-<script language="javascript" type="text/javascript" src="footer.txt"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-77818206-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-<!--//footer-->
+</noscript>
 </body>
 </html>

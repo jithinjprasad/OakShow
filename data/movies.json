@@ -6396,7 +6396,7 @@
     "slug": "godzillavskong",
     "type": "movie",
     "category": "Hollywood",
-    "score": 8,
+    "score": 7,
     "filename": "GodzillavsKong.html",
     "title": "Godzilla vs. Kong",
     "metaTitle": "Godzilla vs. Kong All Ratings,Reviews,Tickets,Watch Online",
@@ -6409,7 +6409,7 @@
     "duration": "1hr 53mins",
     "director": "Patty Jenkins",
     "basedOn": "",
-    "boxOffice": null,
+    "boxOffice": "$470.1 million",
     "poster": "pics/Films/GodzillavsKong/2.jpg",
     "gallery": [
       {
@@ -6503,7 +6503,20 @@
         "rank": 8
       }
     ],
-    "watchOnline": [],
+    "watchOnline": [
+      {
+        "platform": "JioHotstar",
+        "url": "https://www.hotstar.com/in/movies/godzilla-vs-kong/1271608349?utm_source=gwa"
+      },
+      {
+        "platform": "Amazon Prime",
+        "url": "https://www.primevideo.com/dp/amzn1.dv.gti.044d47c4-3312-4123-8919-1128926bf173?autoplay=0&ref_=atv_cf_strg_wb"
+      },
+      {
+        "platform": "Apple TV",
+        "url": "https://tv.apple.com/in/movie/godzilla-vs-kong/umc.cmc.23u7rnwo67x294rg25ucgkafj"
+      }
+    ],
     "music": [],
     "officialWebsite": {
       "url": "https://www.godzillavskong.com/",
@@ -6579,14 +6592,36 @@
         "section": "News(Before Release)"
       }
     ],
-    "filePath": "E:/OakShow/GodzillavsKong.html"
+    "filePath": "E:/OakShow/GodzillavsKong.html",
+    "wikipedia": "https://en.wikipedia.org/wiki/Godzilla_vs._Kong",
+    "imdb": "https://www.imdb.com/title/tt5034838/",
+    "rottenTomatoes": "https://www.rottentomatoes.com/m/godzilla_vs_kong",
+    "metacritic": "https://www.metacritic.com/movie/godzilla-vs-kong/",
+    "reviews": [
+      {
+        "source": "Common Sense Media",
+        "url": "https://www.commonsensemedia.org/movie-reviews/godzilla-vs-kong"
+      },
+      {
+        "source": "IGN",
+        "url": "https://www.ign.com/movies/godzilla-vs-kong"
+      },
+      {
+        "source": "Times of India",
+        "url": "https://timesofindia.indiatimes.com/entertainment/english/movie-reviews/godzilla-vs-kong/movie-review/81630353.cms"
+      },
+      {
+        "source": "India Today",
+        "url": "https://www.indiatoday.in/movies/hollywood/story/godzilla-vs-kong-to-release-in-india-on-march-24-2-days-before-original-release-date-1778428-2021-03-12"
+      }
+    ]
   },
   {
     "id": "Kala",
     "slug": "kala",
     "type": "movie",
     "category": "Indian",
-    "score": 7.5,
+    "score": 7,
     "filename": "Kala.html",
     "title": "Kala",
     "metaTitle": "Kala Malayalam Movie All Ratings,Reviews and Book Tickets",
@@ -6615,7 +6650,12 @@
         "alt": "Kala Movie Reviews and Ratings"
       }
     ],
-    "ratings": [],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "7/10"
+      }
+    ],
     "cast": [
       {
         "actor": "Tovino Thomas",
@@ -6666,7 +6706,20 @@
         "rank": 4
       }
     ],
-    "watchOnline": [],
+    "watchOnline": [
+      {
+        "platform": "Amazon Prime",
+        "url": "https://www.primevideo.com/dp/amzn1.dv.gti.59eccc4c-c07c-4b4c-9077-bce37897b05c?autoplay=0&ref_=atv_cf_strg_wb"
+      },
+      {
+        "platform": "Aha",
+        "url": "https://www.aha.video/movie/kala"
+      },
+      {
+        "platform": "Zee5",
+        "url": "https://www.zee5.com/movies/details/kala/0-0-1z5277777?utm_source=google_web&utm_medium=watchaction&utm_campaign=google_watch&utm_content=kala"
+      }
+    ],
     "music": [],
     "officialWebsite": null,
     "socials": [
@@ -6720,7 +6773,10 @@
         "section": "More News(Before Release)"
       }
     ],
-    "filePath": "E:/OakShow/Kala.html"
+    "filePath": "E:/OakShow/Kala.html",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kala_(2021_film)",
+    "imdb": "https://www.imdb.com/title/tt12687276/",
+    "rottenTomatoes": "https://www.rottentomatoes.com/m/kala"
   },
   {
     "id": "Red",
@@ -12469,7 +12525,7 @@
     "description": "A girl from a traditional family sets out on a solo honeymoon after her marriage gets cancelled.",
     "plot": "",
     "language": "Kannada",
-    "releaseDate": "2020",
+    "releaseDate": "Postponed Indefinitely",
     "year": "2020",
     "genre": "Comedy,Drama",
     "duration": "N/A",
@@ -12491,7 +12547,6 @@
         "alt": "Butterfly (2019 film) Movie Reviews and Ratings"
       }
     ],
-    "ratings": [],
     "cast": [],
     "bookings": [
       {
@@ -12634,7 +12689,8 @@
         "section": "News(Before Release)"
       }
     ],
-    "filePath": "E:/OakShow/Butterfly.html"
+    "filePath": "E:/OakShow/Butterfly.html",
+    "status": "upcoming"
   },
   {
     "id": "coronavirusoutbreak",
@@ -13392,7 +13448,7 @@
     "description": "A girl from a traditional family sets out on a solo honeymoon after her marriage gets cancelled.",
     "plot": "",
     "language": "Tamil",
-    "releaseDate": "2020",
+    "releaseDate": "Postponed Indefinitely",
     "year": "2020",
     "genre": "Comedy,Drama",
     "duration": "N/A",
@@ -13414,7 +13470,6 @@
         "alt": "Paris Paris Movie Reviews and Ratings"
       }
     ],
-    "ratings": [],
     "cast": [],
     "bookings": [
       {
@@ -13576,14 +13631,15 @@
         "section": "News(Before Release)"
       }
     ],
-    "filePath": "E:/OakShow/ParisParis.html"
+    "filePath": "E:/OakShow/ParisParis.html",
+    "status": "upcoming"
   },
   {
     "id": "Sooryavanshi",
     "slug": "sooryavanshi",
     "type": "movie",
     "category": "Indian",
-    "score": 7.5,
+    "score": 7,
     "filename": "Sooryavanshi.html",
     "title": "Sooryavanshi",
     "metaTitle": "Sooryavanshi All Ratings,Reviews,Songs,Videos,Bookings and News",
@@ -13596,7 +13652,7 @@
     "duration": "N/A",
     "director": "Akhil Paul-Anas Khan",
     "basedOn": "",
-    "boxOffice": null,
+    "boxOffice": "₹294.91 crore",
     "poster": "pics/Films/Sooryavanshi/2.jpg",
     "gallery": [
       {
@@ -13612,7 +13668,12 @@
         "alt": "Sooryavanshi Movie Reviews and Ratings"
       }
     ],
-    "ratings": [],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "7/10"
+      }
+    ],
     "cast": [
       {
         "actor": "Akshay Kumar",
@@ -13720,7 +13781,12 @@
         "rank": 7
       }
     ],
-    "watchOnline": [],
+    "watchOnline": [
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/watch/81144150?source=35"
+      }
+    ],
     "music": [],
     "officialWebsite": null,
     "socials": [
@@ -13781,7 +13847,24 @@
         "section": "More News (After Release)"
       }
     ],
-    "filePath": "E:/OakShow/Sooryavanshi.html"
+    "filePath": "E:/OakShow/Sooryavanshi.html",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sooryavanshi",
+    "imdb": "https://www.imdb.com/title/tt9531772/",
+    "rottenTomatoes": "https://www.rottentomatoes.com/m/sooryavanshi",
+    "reviews": [
+      {
+        "source": "India Today",
+        "url": "https://www.indiatoday.in/movies/bollywood/story/sooryavanshi-movie-review-akshay-kumar-will-do-anything-to-save-aryan-1873423-2021-11-05"
+      },
+      {
+        "source": "Times of India",
+        "url": "https://timesofindia.indiatimes.com/entertainment/hindi/movie-details/sooryavanshi/movieshow/67432905.cms"
+      },
+      {
+        "source": "NDTV",
+        "url": "https://www.ndtv.com/entertainment/sooryavanshi-review-is-akshay-kumars-film-what-the-doctor-ordered-for-post-pandemic-bollywood-almost-2-5-stars-out-of-5-2600077"
+      }
+    ]
   },
   {
     "id": "SrideviBungalow",
@@ -13795,7 +13878,7 @@
     "description": "Entire movie is shot in London..The wink girl who become world popular Priya Prakash Varrier is doing the tittle role",
     "plot": "Entire movie is shot in London..The wink girl who become world popular Priya Prakash Varrier is doing the tittle role.",
     "language": "Hindi",
-    "releaseDate": "2020",
+    "releaseDate": "Postponed Indefinitely",
     "year": "2020",
     "genre": "Thriller",
     "duration": "N/A",
@@ -13817,7 +13900,6 @@
         "alt": "Sridevi Bungalow Movie Reviews and Ratings"
       }
     ],
-    "ratings": [],
     "cast": [
       {
         "actor": "Priya Prakash Varrier",
@@ -13866,7 +13948,8 @@
         "section": "News(Before Release)"
       }
     ],
-    "filePath": "E:/OakShow/SrideviBungalow.html"
+    "filePath": "E:/OakShow/SrideviBungalow.html",
+    "status": "upcoming"
   },
   {
     "id": "ThatIsMahalakshmi",
@@ -13880,7 +13963,7 @@
     "description": "A girl from a traditional family sets out on a solo honeymoon after her marriage gets cancelled.",
     "plot": "",
     "language": "Telugu",
-    "releaseDate": "2020",
+    "releaseDate": "Postponed Indefinitely",
     "year": "2020",
     "genre": "Comedy,Drama",
     "duration": "N/A",
@@ -13902,7 +13985,6 @@
         "alt": "That Is Mahalakshmi Movie Reviews and Ratings"
       }
     ],
-    "ratings": [],
     "cast": [],
     "bookings": [
       {
@@ -14052,7 +14134,8 @@
         "section": "News(Before Release)"
       }
     ],
-    "filePath": "E:/OakShow/ThatIsMahalakshmi.html"
+    "filePath": "E:/OakShow/ThatIsMahalakshmi.html",
+    "status": "upcoming"
   },
   {
     "id": "KilometersandKilometers",
@@ -27933,7 +28016,7 @@
     "duration": "2hr 51min",
     "director": "",
     "basedOn": "",
-    "boxOffice": null,
+    "boxOffice": "₹219-250 crore",
     "poster": "pics/Films/Petta/2.jpg",
     "gallery": [
       {
@@ -28026,32 +28109,8 @@
     ],
     "watchOnline": [
       {
-        "provider": "Netflix",
-        "url": "https://www.netflix.com/watch/81091423?source=35",
-        "icon": "pics/WatchOnline/netflix.png",
-        "language": "",
-        "label": "Watch Now"
-      },
-      {
-        "provider": "Sun NXT",
-        "url": "https://www.sunnxt.com/tamil-movie/detail/80120/petta/",
-        "icon": "pics/WatchOnline/sun-nxt.png",
-        "language": "",
-        "label": "Watch Now(Tamil)"
-      },
-      {
-        "provider": "Sun NXT",
-        "url": "https://www.sunnxt.com/telugu-movie/detail/80119/petta/",
-        "icon": "pics/WatchOnline/sun-nxt.png",
-        "language": "",
-        "label": "Watch Now(Telugu)"
-      },
-      {
-        "provider": "Petta (film) Voot",
-        "url": "https://www.voot.com/movie/petta/806692?utm_source=google_web&utm_medium=watchaction",
-        "icon": "pics/WatchOnline/voot.png",
-        "language": "",
-        "label": "Watch Now"
+        "platform": "JioHotstar",
+        "url": "https://www.hotstar.com/in/movies/petta/1971011087?utm_source=gwa"
       }
     ],
     "music": [
@@ -28276,7 +28335,8 @@
         "section": "News(Before Release)"
       }
     ],
-    "filePath": "E:/OakShow/Petta.html"
+    "filePath": "E:/OakShow/Petta.html",
+    "wikipedia": "https://en.wikipedia.org/wiki/Petta_(film)"
   },
   {
     "id": "Shazam",
@@ -37792,7 +37852,7 @@
     "slug": "kiss",
     "type": "movie",
     "category": "Indian",
-    "score": 7.5,
+    "score": 5,
     "filename": "Kiss.html",
     "title": "Kiss (2019 film)",
     "metaTitle": "Kiss (2019 film) All Ratings,Reviews,Songs,Videos,Bookings and News",
@@ -37825,7 +37885,12 @@
         "alt": "#Kiss reveiws and ratings,#Sreeleela hot #Bikini"
       }
     ],
-    "ratings": [],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "5/10"
+      }
+    ],
     "cast": [
       {
         "actor": "Sreeleela",
@@ -37861,7 +37926,20 @@
         "rank": 4
       }
     ],
-    "watchOnline": [],
+    "watchOnline": [
+      {
+        "platform": "Amazon Prime",
+        "url": "https://www.primevideo.com/detail/0TRVN4GPNSYGETXGGVV2JMMPOY"
+      },
+      {
+        "platform": "Aha",
+        "url": "https://www.aha.video/movie/i-love-you-idiot"
+      },
+      {
+        "platform": "MX Player",
+        "url": "https://www.mxplayer.in/movie/watch-kiss-movie-online-f501dcb432eb7322f2493e28e5b6dd61?watch=true&utm_source=google_web&utm_medium=watchaction"
+      }
+    ],
     "music": [
       {
         "provider": "JioSaavn",
@@ -37921,7 +37999,9 @@
         "section": "News(Before Release)"
       }
     ],
-    "filePath": "E:/OakShow/Kiss.html"
+    "filePath": "E:/OakShow/Kiss.html",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kiss_(2019_film)",
+    "imdb": "https://www.imdb.com/title/tt8810990/"
   },
   {
     "id": "Luca",
@@ -41249,7 +41329,7 @@
     "description": "A girl from a traditional family sets out on a solo honeymoon after her marriage gets cancelled.",
     "plot": "",
     "language": "Malayalam",
-    "releaseDate": "Feb ,2019",
+    "releaseDate": "Postponed Indefinitely",
     "year": "2019",
     "genre": "Comedy,Drama",
     "duration": "N/A",
@@ -41271,7 +41351,6 @@
         "alt": "Zam Zam Movie Reviews and Ratings"
       }
     ],
-    "ratings": [],
     "cast": [],
     "bookings": [
       {
@@ -41419,7 +41498,8 @@
         "section": "News(Before Release)"
       }
     ],
-    "filePath": "E:/OakShow/ZamZam.html"
+    "filePath": "E:/OakShow/ZamZam.html",
+    "status": "upcoming"
   },
   {
     "id": "Evaru",
@@ -68670,7 +68750,7 @@
     "duration": "2 hrs 29 mins",
     "director": "S. Shankar",
     "basedOn": "",
-    "boxOffice": null,
+    "boxOffice": "₹699.89 crore",
     "poster": "pics/Films/2.0/2.jpg",
     "gallery": [
       {
@@ -68805,7 +68885,12 @@
         "rank": 9
       }
     ],
-    "watchOnline": [],
+    "watchOnline": [
+      {
+        "platform": "Amazon Prime",
+        "url": "https://www.primevideo.com/dp/amzn1.dv.gti.9eb43f1b-cb2c-49c2-ea77-f019232d0273?autoplay=0&ref_=atv_cf_strg_wb"
+      }
+    ],
     "music": [
       {
         "provider": "Apple Music / iTunes",
@@ -69277,7 +69362,8 @@
         "section": "News(Before Release)"
       }
     ],
-    "filePath": "E:/OakShow/2point0.html"
+    "filePath": "E:/OakShow/2point0.html",
+    "wikipedia": "https://en.wikipedia.org/wiki/2.0_(film)"
   },
   {
     "id": "AbrahaminteSanthathikal",
@@ -71933,7 +72019,16 @@
         "rank": 7
       }
     ],
-    "watchOnline": [],
+    "watchOnline": [
+      {
+        "platform": "Amazon Prime",
+        "url": "https://www.primevideo.com/dp/amzn1.dv.gti.28b210be-76d6-6f48-cf64-02ef05aff9f0?autoplay=0&ref_=atv_cf_strg_wb"
+      },
+      {
+        "platform": "JioHotstar",
+        "url": "https://www.hotstar.com/in/movies/kaala/1000217977?utm_source=gwa"
+      }
+    ],
     "music": [
       {
         "provider": "Gaana",
@@ -73946,7 +74041,7 @@
     "description": "A New-York based spy network loses its head.",
     "plot": "",
     "language": "Tamil",
-    "releaseDate": "Dec, 2018",
+    "releaseDate": "Postponed Indefinitely",
     "year": "2018",
     "genre": "Spy",
     "duration": "N/A",
@@ -73968,7 +74063,6 @@
         "alt": "Dhruva Natchathiram Poster 3"
       }
     ],
-    "ratings": [],
     "cast": [],
     "bookings": [
       {
@@ -74024,7 +74118,8 @@
       }
     ],
     "articles": [],
-    "filePath": "E:/OakShow/DhruvaNatchathiram.html"
+    "filePath": "E:/OakShow/DhruvaNatchathiram.html",
+    "status": "upcoming"
   },
   {
     "id": "KeralaFloods",
@@ -111368,9 +111463,9 @@
     "slug": "amityvilletheawakening",
     "type": "movie",
     "category": "Hollywood",
-    "score": 7.5,
+    "score": 4,
     "filename": "AmityvilleTheAwakening.html",
-    "title": "Amityville : The Awakening",
+    "title": "Amityville: The Awakening",
     "metaTitle": "Amityville : The Awakening All Ratings,Reviews,Booking and News",
     "description": "",
     "plot": "",
@@ -111397,7 +111492,12 @@
         "alt": ""
       }
     ],
-    "ratings": [],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "4/10"
+      }
+    ],
     "cast": [],
     "bookings": [
       {
@@ -111422,7 +111522,24 @@
         "rank": 4
       }
     ],
-    "watchOnline": [],
+    "watchOnline": [
+      {
+        "platform": "Amazon Prime",
+        "url": "https://www.primevideo.com/dp/amzn1.dv.gti.0067a7c0-c9dd-4e18-a300-3d526c577037?autoplay=0&ref_=atv_cf_strg_wb"
+      },
+      {
+        "platform": "JioHotstar",
+        "url": "https://www.hotstar.com/in/movies/amityville-the-awakening/1271442520?utm_source=gwa"
+      },
+      {
+        "platform": "Apple TV",
+        "url": "https://tv.apple.com/in/movie/amityville-the-awakening/umc.cmc.2j4qtlrsckptasgyi8hsxelgx"
+      },
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/70215429"
+      }
+    ],
     "music": [],
     "officialWebsite": null,
     "socials": [
@@ -111443,7 +111560,11 @@
       }
     ],
     "articles": [],
-    "filePath": "E:/OakShow/AmityvilleTheAwakening.html"
+    "filePath": "E:/OakShow/AmityvilleTheAwakening.html",
+    "wikipedia": "https://en.wikipedia.org/wiki/Amityville:_The_Awakening",
+    "imdb": "https://www.imdb.com/title/tt1935897/",
+    "rottenTomatoes": "https://www.rottentomatoes.com/m/amityville_the_awakening",
+    "metacritic": "https://www.metacritic.com/movie/amityville-the-awakening/"
   },
   {
     "id": "Bogan",
@@ -112985,7 +113106,7 @@
     "slug": "nenjammarappathillai",
     "type": "movie",
     "category": "Indian",
-    "score": 7.5,
+    "score": 6,
     "filename": "NenjamMarappathillai.html",
     "title": "Nenjam Marappathillai",
     "metaTitle": "Nenjam Marappathillai All Ratings,Reviews,Release Date,Songs,Videos,Trailers,Bookings and News",
@@ -112993,7 +113114,7 @@
     "plot": "",
     "language": "Tamil",
     "releaseDate": "August 2017",
-    "year": "2017",
+    "year": "2021",
     "genre": "Romance Horror",
     "duration": "N/A",
     "director": "",
@@ -113014,7 +113135,12 @@
         "alt": "Nenjam Marappathillai Poster 3"
       }
     ],
-    "ratings": [],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "6/10"
+      }
+    ],
     "cast": [],
     "bookings": [
       {
@@ -113039,7 +113165,20 @@
         "rank": 3
       }
     ],
-    "watchOnline": [],
+    "watchOnline": [
+      {
+        "platform": "Amazon Prime",
+        "url": "https://www.primevideo.com/detail/0J83S073CGNTOUQ4CHBKAHSKDA"
+      },
+      {
+        "platform": "Zee5",
+        "url": "https://www.zee5.com/movies/details/nenjam-marappathillai/0-0-404724?utm_source=google_web&utm_medium=watchaction&utm_campaign=google_watch&utm_content=nenjam-marappathillai"
+      },
+      {
+        "platform": "Apple TV",
+        "url": "https://tv.apple.com/in/movie/nenjam-marappathillai/umc.cmc.6w8mvjlxbthim7t1gxwhncuax"
+      }
+    ],
     "music": [],
     "officialWebsite": null,
     "socials": [
@@ -113060,7 +113199,19 @@
       }
     ],
     "articles": [],
-    "filePath": "E:/OakShow/NenjamMarappathillai.html"
+    "filePath": "E:/OakShow/NenjamMarappathillai.html",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nenjam_Marappathillai_(2021_film)",
+    "imdb": "https://www.imdb.com/title/tt5985720/",
+    "reviews": [
+      {
+        "source": "Times of India",
+        "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movie-reviews/nenjam-marappathillai/movie-review/81342436.cms"
+      },
+      {
+        "source": "India Today",
+        "url": "https://www.indiatoday.in/movies/regional-cinema/story/nenjam-marappathillai-first-reviews-are-out-selvaraghavan-film-gets-mixed-response-1775819-2021-03-05"
+      }
+    ]
   },
   {
     "id": "PaPaandi",
@@ -156484,13 +156635,13 @@
     "filePath": "E:/OakShow/BadMoms.html"
   },
   {
-    "id": "Bastards",
-    "slug": "bastards",
+    "id": "FatherFigures",
+    "slug": "father-figures",
     "type": "movie",
     "category": "Hollywood",
-    "score": 7.5,
-    "filename": "Bastards.html",
-    "title": "Bastards/Who's Your Daddy?",
+    "score": 5,
+    "filename": "FatherFigures.html",
+    "title": "Father Figures",
     "metaTitle": "Bastards All Ratings,Reviews and News",
     "description": "",
     "plot": "",
@@ -156501,7 +156652,7 @@
     "duration": "N/A",
     "director": "",
     "basedOn": "",
-    "boxOffice": null,
+    "boxOffice": "$25.6 million",
     "poster": "pics/Films/Bastards/4.jpg",
     "gallery": [
       {
@@ -156517,7 +156668,12 @@
         "alt": ""
       }
     ],
-    "ratings": [],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "5/10"
+      }
+    ],
     "cast": [],
     "bookings": [
       {
@@ -156542,9 +156698,22 @@
         "rank": 4
       }
     ],
-    "watchOnline": [],
+    "watchOnline": [
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/watch/80108180?source=35"
+      },
+      {
+        "platform": "Amazon Prime",
+        "url": "https://www.primevideo.com/dp/amzn1.dv.gti.bcba67d2-13bf-b808-36c6-72c4fd3341ef?autoplay=0&ref_=atv_cf_strg_wb"
+      },
+      {
+        "platform": "Apple TV",
+        "url": "https://tv.apple.com/us/movie/father-figures/umc.cmc.48dwuz9spfrcom2jl4ba0nico"
+      }
+    ],
     "music": [],
-    "officialWebsite": null,
+    "officialWebsite": "https://www.warnerbros.com/movies/father-figures",
     "socials": [
       {
         "platform": "Twitter / X",
@@ -156563,7 +156732,17 @@
       }
     ],
     "articles": [],
-    "filePath": "E:/OakShow/Bastards.html"
+    "filePath": "E:/OakShow/FatherFigures.html",
+    "wikipedia": "https://en.wikipedia.org/wiki/Father_Figures",
+    "imdb": "https://www.imdb.com/title/tt1966359/",
+    "rottenTomatoes": "https://www.rottentomatoes.com/m/father_figures_2017",
+    "metacritic": "https://www.metacritic.com/movie/father-figures/",
+    "reviews": [
+      {
+        "source": "Common Sense Media",
+        "url": "https://www.commonsensemedia.org/movie-reviews/father-figures"
+      }
+    ]
   },
   {
     "id": "BigFish&Begonia",
@@ -176543,7 +176722,7 @@
     "slug": "oxygen",
     "type": "movie",
     "category": "Indian",
-    "score": 7.5,
+    "score": 5.5,
     "filename": "Oxygen.html",
     "title": "Oxygen",
     "metaTitle": "Oxygen All Ratings,Reviews and News",
@@ -176572,10 +176751,24 @@
         "alt": ""
       }
     ],
-    "ratings": [],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "5.5/10"
+      }
+    ],
     "cast": [],
     "bookings": [],
-    "watchOnline": [],
+    "watchOnline": [
+      {
+        "platform": "SunNxt",
+        "url": "https://www.sunnxt.com/telugu-movie-oxygen-2017/detail/72209"
+      },
+      {
+        "platform": "JioHotstar",
+        "url": "https://www.hotstar.com/in/movies/asuravettai/1260039470?utm_source=gwa"
+      }
+    ],
     "music": [],
     "officialWebsite": null,
     "socials": [
@@ -176596,7 +176789,9 @@
       }
     ],
     "articles": [],
-    "filePath": "E:/OakShow/Oxygen.html"
+    "filePath": "E:/OakShow/Oxygen.html",
+    "wikipedia": "https://en.wikipedia.org/wiki/Oxygen_(2017_film)",
+    "imdb": "https://www.imdb.com/title/tt6735678/"
   },
   {
     "id": "PiratesoftheCaribbeanDeadMenTellNoTalesExtendedLook1",

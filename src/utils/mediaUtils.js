@@ -396,7 +396,7 @@ export function getBookingProviderInfo(booking) {
  */
 export function getWatchOnlineProviderInfo(item) {
   if (!item) return { provider: 'OTT Streaming', icon: null };
-  const rawProvider = (item.provider || '').trim();
+  const rawProvider = (item.provider || item.platform || '').trim();
   const lower = rawProvider.toLowerCase();
 
   let cleanProvider = rawProvider;

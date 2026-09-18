@@ -14,7 +14,9 @@ import SearchModal from '../components/SearchModal';
 import ReleaseCalendarView from '../components/ReleaseCalendarView';
 import UpcomingMoviesView from '../components/UpcomingMoviesView';
 import CriticReviewsHub from '../components/CriticReviewsHub';
+import RemarksGuidePage from '../components/RemarksGuidePage';
 import CriticProfilePage from '../components/CriticProfilePage';
+import CriticReviewDetailPage from '../components/CriticReviewDetailPage';
 import SeriesHub from '../components/SeriesHub';
 import SportsHub from '../components/SportsHub';
 import GamesAndBooksHub from '../components/GamesAndBooksHub';
@@ -512,7 +514,13 @@ export default function App() {
       return 0;
     };
 
-    return [...cleanMoviesData].sort((a, b) => {
+    return [...cleanMoviesData].filter(m => {
+      const statusLower = (m.status || '').toLowerCase().trim();
+      if (statusLower === 'upcoming' || statusLower.includes('postponed')) return false;
+      const releaseTime = parseDate(m);
+      if (releaseTime > 0 && releaseTime > Date.now()) return false;
+      return true; // Assume released if it doesn't meet upcoming criteria
+    }).sort((a, b) => {
       const timeA = parseDate(a);
       const timeB = parseDate(b);
       if (timeB !== timeA) return timeB - timeA;
@@ -546,6 +554,43 @@ export default function App() {
         if (timeB !== timeA) return timeB - timeA;
         return (a.title || '').localeCompare(b.title || '');
       });
+  }, [cleanMoviesData]);
+
+  // Upcoming releases for the home screen
+  const upcomingMoviesForHome = useMemo(() => {
+    const now = Date.now();
+    const parseDate = (item) => {
+      if (!item) return 0;
+      if (item.releaseDate) {
+        const clean = item.releaseDate.replace(/\(.*?\)/g, '').replace(/,/g, ', ').replace(/\s+/g, ' ').trim();
+        const t = Date.parse(clean);
+        if (!isNaN(t) && t > 0) return t;
+        const m = clean.match(/(\d{4})/);
+        if (m) return new Date(parseInt(m[1], 10), 0, 1).getTime();
+      }
+      if (item.year) {
+        const y = parseInt(item.year, 10);
+        if (!isNaN(y) && y > 0) return new Date(y, 0, 1).getTime();
+      }
+      return 0;
+    };
+    return cleanMoviesData.filter(m => {
+      if (m.id === 'RamayanaPart1' || m.id === 'Digger') return true;
+      const hasRatings = Array.isArray(m.ratings) && m.ratings.length > 0;
+      if (hasRatings) return false;
+      const statusLower = (m.status || '').toLowerCase().trim();
+      if (statusLower === 'released') return false;
+      const releaseTime = parseDate(m);
+      return statusLower === 'upcoming' || (releaseTime > 0 && releaseTime > now);
+    }).sort((a, b) => {
+      const isPostponedA = (a.releaseDate && a.releaseDate.toLowerCase().includes('postponed')) ? 1 : 0;
+      const isPostponedB = (b.releaseDate && b.releaseDate.toLowerCase().includes('postponed')) ? 1 : 0;
+      if (isPostponedA !== isPostponedB) return isPostponedA - isPostponedB;
+      const timeA = parseDate(a) || Infinity;
+      const timeB = parseDate(b) || Infinity;
+      if (timeA === Infinity && timeB === Infinity) return 0;
+      return timeA - timeB; // soonest first
+    });
   }, [cleanMoviesData]);
 
   // Handle item select from SearchModal
@@ -765,23 +810,62 @@ export default function App() {
     // Check if it's a specific critic review (e.g. unpregnant-review-by-jithin-j-prasad)
     const targetReview = reviewsData.find(r => 
       r.id?.toLowerCase() === cleanId ||
-      r.file?.toLowerCase().replace('.html', '') === cleanId
+      r.file?.toLowerCase().replace('.html', '') === cleanId ||
+      r.link?.toLowerCase().replace('.html', '') === cleanId ||
+      (cleanId.endsWith('-review') && r.id?.toLowerCase().includes(cleanId)) ||
+      (r.link && cleanId.includes(r.link.toLowerCase().replace('.html', '')))
     );
     if (targetReview) {
-      let reviewUrl = targetReview.url;
-      if (!reviewUrl && targetReview.link) {
-        const a = (targetReview.author || '').toLowerCase();
-        if (a.includes('jithin')) reviewUrl = `/Profiles/CriticProfiles/JithinJPrasad/${targetReview.link}`;
-        else if (a.includes('abhijith')) reviewUrl = `/Profiles/CriticProfiles/AbhijithAG/${targetReview.link}`;
-        else if (a.includes('manoj')) reviewUrl = `/Profiles/CriticProfiles/ManojAswin/${targetReview.link}`;
-        else if (a.includes('vishnu')) reviewUrl = `/Profiles/CriticProfiles/VishnuPc/${targetReview.link}`;
-        else if (a.includes('oakshow')) reviewUrl = `/Profiles/CriticProfiles/MsMrOakShow/${targetReview.link}`;
-        else reviewUrl = targetReview.link;
-      }
-      if (reviewUrl && typeof window !== 'undefined' && !window.location.pathname.endsWith(targetReview.link)) {
-        window.location.href = reviewUrl;
-        return null;
-      }
+      updatePageMeta(
+        `${targetReview.title} — OakShow Critic Review`,
+        targetReview.excerpt || targetReview.plot || 'Read verified film critic reviews on OakShow.',
+        targetReview.banner
+      );
+      return (
+        <div className="app-root">
+          <Navbar
+            activeTab="reviews"
+            setActiveTab={navigate}
+            openSearch={() => setSearchOpen(true)}
+            bookmarkCount={bookmarks.length}
+            onOpenBookmarks={() => setBookmarksDrawerOpen(true)}
+            totalMoviesCount={moviesData.length}
+            currentUser={currentUser}
+            onOpenAuth={handleOpenAuth}
+            onLogout={handleLogout}
+          />
+          <CriticReviewDetailPage
+            review={targetReview}
+            allReviews={reviewsData}
+            onNavigate={navigate}
+            bookmarks={bookmarks}
+            onToggleBookmark={toggleBookmark}
+          />
+          <Footer onSelectCategory={navigate} />
+          <SearchModal
+            isOpen={searchOpen}
+            onClose={() => setSearchOpen(false)}
+            searchIndex={searchIndexData}
+            onSelectItem={handleSelectItem}
+          />
+          <BookmarksDrawer
+            isOpen={bookmarksDrawerOpen}
+            onClose={() => setBookmarksDrawerOpen(false)}
+            bookmarks={bookmarks}
+            onRemoveBookmark={removeBookmark}
+            onClearAll={clearAllBookmarks}
+            onSelectMovie={(m) => navigate(`movie/${m.id}`)}
+            currentUser={currentUser}
+            onOpenAuth={handleOpenAuth}
+          />
+          <AuthModal
+            isOpen={authModalOpen}
+            onClose={() => setAuthModalOpen(false)}
+            initialMode={authModalMode}
+            onSuccess={(u) => setCurrentUser(u)}
+          />
+        </div>
+      );
     }
 
     // Check if it's a release month calendar (e.g. IndianReleases2018August)
@@ -1618,6 +1702,70 @@ export default function App() {
     );
   }
 
+  // 7.5. Standalone CRITIC REVIEW DETAIL PAGE
+  if ((route.type === 'critic-review' || route.type === 'review-detail') && route.id) {
+    const cleanId = route.id.toLowerCase().replace('.html', '').replace(/^\/+/, '');
+    const targetReview = reviewsData.find(r => 
+      r.id?.toLowerCase() === cleanId ||
+      r.link?.toLowerCase().replace('.html', '') === cleanId ||
+      r.file?.toLowerCase().replace('.html', '') === cleanId ||
+      (cleanId.endsWith('-review') && r.id?.toLowerCase().includes(cleanId)) ||
+      (r.link && cleanId.includes(r.link.toLowerCase().replace('.html', '')))
+    ) || reviewsData[0];
+
+    updatePageMeta(
+      targetReview ? `${targetReview.title} — OakShow Critic Review` : 'OakShow Film Critic Review',
+      targetReview?.excerpt || targetReview?.plot || 'Read verified film critic reviews on OakShow.',
+      targetReview?.banner
+    );
+
+    return (
+      <div className="app-root">
+        <Navbar
+          activeTab="reviews"
+          setActiveTab={navigate}
+          openSearch={() => setSearchOpen(true)}
+          bookmarkCount={bookmarks.length}
+          onOpenBookmarks={() => setBookmarksDrawerOpen(true)}
+          totalMoviesCount={moviesData.length}
+          currentUser={currentUser}
+          onOpenAuth={handleOpenAuth}
+          onLogout={handleLogout}
+        />
+        <CriticReviewDetailPage
+          review={targetReview}
+          allReviews={reviewsData}
+          onNavigate={navigate}
+          bookmarks={bookmarks}
+          onToggleBookmark={toggleBookmark}
+        />
+        <Footer onSelectCategory={navigate} />
+        <SearchModal
+          isOpen={searchOpen}
+          onClose={() => setSearchOpen(false)}
+          searchIndex={searchIndexData}
+          onSelectItem={handleSelectItem}
+        />
+        <BookmarksDrawer
+          isOpen={bookmarksDrawerOpen}
+          onClose={() => setBookmarksDrawerOpen(false)}
+          bookmarks={bookmarks}
+          onRemoveBookmark={removeBookmark}
+          onClearAll={clearAllBookmarks}
+          onSelectMovie={(m) => navigate(`movie/${m.id}`)}
+          currentUser={currentUser}
+          onOpenAuth={handleOpenAuth}
+        />
+        <AuthModal
+          isOpen={authModalOpen}
+          onClose={() => setAuthModalOpen(false)}
+          initialMode={authModalMode}
+          onSuccess={(u) => setCurrentUser(u)}
+        />
+      </div>
+    );
+  }
+
   // 8. Standalone EMERGENCY DETAIL PAGE
   if ((route.type === 'emergency-detail' || route.type === 'emergency') && route.id) {
     const cleanId = route.id.toLowerCase().replace(/[^a-z0-9]/g, '');
@@ -1864,6 +2012,33 @@ export default function App() {
                       key={movie.id}
                       movie={movie}
                       onSelect={(m) => handleNavigateWithSave(`movie/${m.id}`)}
+                      onPlayTrailer={setActiveVideo}
+                      isBookmarked={bookmarks.some(b => b.id === movie.id)}
+                      onToggleBookmark={toggleBookmark}
+                    />
+                  ))}
+                </div>
+              </section>
+
+              {/* Upcoming Releases Section */}
+              <section className="feed-section">
+                <div className="section-header">
+                  <div className="section-title-group">
+                    <Clock size={22} className="text-gold" />
+                    <h2>Upcoming Releases & Premieres</h2>
+                  </div>
+                  <button className="view-all-link" onClick={() => navigate('upcoming')}>
+                    <span>View All Upcoming ({upcomingMoviesForHome.length})</span>
+                    <ArrowRight size={14} />
+                  </button>
+                </div>
+
+                <div className="grid-movies">
+                  {upcomingMoviesForHome.slice(0, 12).map((movie) => (
+                    <MovieCard
+                      key={movie.id}
+                      movie={movie}
+                      onSelect={(m) => handleNavigateWithSave(m.filename ? m.filename.replace(/\.html$/, '') : `movie/${m.id}`)}
                       onPlayTrailer={setActiveVideo}
                       isBookmarked={bookmarks.some(b => b.id === movie.id)}
                       onToggleBookmark={toggleBookmark}
@@ -2157,11 +2332,20 @@ export default function App() {
           />
         )}
 
-        {/* CRITIC REVIEWS & REMARKS GUIDE */}
-        {(route.type === 'reviews' || route.type === 'remarks') && (
+        {/* CRITIC REVIEWS */}
+        {route.type === 'reviews' && (
           <div className="tab-view animate-fade-in container">
             <CriticReviewsHub
               reviews={reviewsData}
+              onNavigate={navigate}
+            />
+          </div>
+        )}
+
+        {/* REMARKS GUIDE PAGE */}
+        {route.type === 'remarks' && (
+          <div className="tab-view animate-fade-in container">
+            <RemarksGuidePage
               onNavigate={navigate}
             />
           </div>

@@ -813,7 +813,7 @@ export default function MovieDetailPage({
 
                 <div className="in-house-reviews-grid">
                   {internalReviews.map((rev, idx) => {
-                    const oakRemark = getOakShowRemark(rev.remark || rev.score);
+                    const oakRemark = getOakShowRemark(rev.score != null ? rev.score : rev.remark);
                     const avatar = rev.criticAvatar ? (rev.criticAvatar.startsWith('/') ? rev.criticAvatar : `/${rev.criticAvatar}`) : '/favicon.png';
                     const pct = (rev.score / 5) * 100;
 

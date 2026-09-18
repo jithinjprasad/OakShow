@@ -15,7 +15,7 @@ export function cleanSlugFromPath(rawSlug) {
   return rawSlug.trim()
     .replace(/^#\/?/, '')
     .replace(/^\/+/, '')
-    .replace(/^(movies|movie|series|episode|sports|game|book|emergency|dbs|blog|news|galleries|profiles\/criticprofiles\/[^\/]+|profiles\/criticprofiles|profiles\/reports\/[^\/]+|profiles\/reports|profiles)\//i, '')
+    .replace(/^(movies|movie|series|episode|sports|game|book|emergency|dbs|blog|news|galleries|review|reviews|profiles\/criticprofiles|profiles\/reports\/[^\/]+|profiles\/reports|profiles)\//i, '')
     .replace(/\.html$/i, '');
 }
 
@@ -25,6 +25,18 @@ export function cleanSlugFromPath(rawSlug) {
 export function resolveSlugToRoute(rawSlug, rawPath = '') {
   if (!rawSlug) return { type: 'discover', id: null, raw: rawPath };
   
+  // Explicit legacy critic profile check
+  const rawLower = rawSlug.toLowerCase();
+  if (rawLower.includes('profiles/criticprofiles/')) {
+    const parts = rawSlug.split('/');
+    const criticIdIndex = parts.findIndex(p => p.toLowerCase() === 'criticprofiles') + 1;
+    if (criticIdIndex > 0 && criticIdIndex < parts.length) {
+      let criticId = parts[criticIdIndex].toLowerCase();
+      if (criticId.endsWith('.html')) criticId = criticId.replace(/\.html$/i, '');
+      return { type: 'critic', id: criticId, raw: rawPath };
+    }
+  }
+
   const clean = cleanSlugFromPath(rawSlug);
   const lower = clean.toLowerCase();
 
@@ -130,8 +142,18 @@ export function resolveSlugToRoute(rawSlug, rawPath = '') {
     return { type: 'episode', id: clean, raw: rawPath };
   }
 
-  // Critic Review Pages (e.g., unpregnant-review-by-jithin-j-prasad)
-  if (lower.includes('-review-by-')) {
+  // Critic Profiles
+  const knownCritics = ['abhijithag', 'jithinjprasad', 'achuthankarnnan', 'manojaswin', 'vishnupc', 'msmroakshow', 'abhijith-a-g', 'jithin-j-prasad', 'achuthan-karnnan', 'manoj-aswin', 'vishnu-pc', 'ms-mr-oakshow'];
+  
+  if (lower.startsWith('critic/') || lower.startsWith('criticprofile/')) {
+    return { type: 'critic', id: clean.split('/')[1], raw: rawPath };
+  }
+  if (knownCritics.includes(lower)) {
+    return { type: 'critic', id: clean, raw: rawPath };
+  }
+
+  // Critic Review Pages (e.g., unpregnant-review-by-jithin-j-prasad, tik-tik-tik-review)
+  if (lower.includes('-review-by-') || lower.endsWith('-review') || lower.includes('-review-')) {
     return { type: 'critic-review', id: clean, filename: `${clean}.html`, raw: rawPath };
   }
 

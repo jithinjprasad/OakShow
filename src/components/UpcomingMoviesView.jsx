@@ -110,6 +110,8 @@ export default function UpcomingMoviesView({
   // Featured spotlight movie (most anticipated / soonest upcoming release)
   const spotlightMovie = useMemo(() => {
     if (!allUpcomingMovies || allUpcomingMovies.length === 0) return null;
+    const digger = allUpcomingMovies.find(m => m.id === 'Digger' || (m.title && m.title.toLowerCase() === 'digger'));
+    if (digger) return digger;
     return [...allUpcomingMovies].sort((a, b) => {
       const tA = parseDate(a) || Infinity;
       const tB = parseDate(b) || Infinity;
@@ -189,20 +191,28 @@ export default function UpcomingMoviesView({
 
     // Sorting
     return [...list].sort((a, b) => {
+      const isPostponedA = (a.releaseDate && a.releaseDate.toLowerCase().includes('postponed')) ? 1 : 0;
+      const isPostponedB = (b.releaseDate && b.releaseDate.toLowerCase().includes('postponed')) ? 1 : 0;
+
       if (sortBy === 'date-asc') {
+        if (isPostponedA !== isPostponedB) return isPostponedA - isPostponedB;
         const timeA = parseDate(a) || Infinity;
         const timeB = parseDate(b) || Infinity;
+        if (timeA === Infinity && timeB === Infinity) return 0;
         return timeA - timeB;
       }
       if (sortBy === 'date-desc') {
+        if (isPostponedA !== isPostponedB) return isPostponedA - isPostponedB; // Still keep postponed at bottom
         const timeA = parseDate(a) || 0;
         const timeB = parseDate(b) || 0;
         return timeB - timeA;
       }
       if (sortBy === 'title-asc') {
+        if (isPostponedA !== isPostponedB) return isPostponedA - isPostponedB;
         return (a.title || '').localeCompare(b.title || '');
       }
       if (sortBy === 'title-desc') {
+        if (isPostponedA !== isPostponedB) return isPostponedA - isPostponedB;
         return (b.title || '').localeCompare(a.title || '');
       }
       return 0;
