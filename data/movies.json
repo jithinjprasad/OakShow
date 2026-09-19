@@ -1,26 +1,618 @@
 [
   {
+    "id": "LustStories3",
+    "slug": "luststories3",
+    "type": "movie",
+    "category": "Indian",
+    "score": 5,
+    "filename": "LustStories3.html",
+    "aliases": [
+      "Lust Stories 3",
+      "Lust Stories Part 3",
+      "Lust Stories 3 Netflix"
+    ],
+    "title": "Lust Stories 3",
+    "metaTitle": "Lust Stories 3 (2026) All Ratings, Reviews, Songs, Videos, Bookings and News",
+    "description": "Lust Stories 3 is a 2026 Indian Hindi-language anthology film consisting of four short film segments directed by Vikramaditya Motwane, Kiran Rao, Shakun Batra, and Vishal Bhardwaj. Produced by RSVP Movies and Flying Unicorn Entertainment, the ensemble cast explores modern relationships, intimacy, and desire.",
+    "plot": "The third installment in the critically acclaimed anthology series explores contemporary perspectives on love, intimacy, and societal taboos across four distinct narratives directed by visionary filmmakers Vikramaditya Motwane, Kiran Rao, Shakun Batra, and Vishal Bhardwaj. The film premiered globally on Netflix on September 18, 2026.",
+    "language": "Hindi",
+    "releaseDate": "September 18, 2026",
+    "year": "2026",
+    "genre": "Drama, Romance",
+    "duration": "2hr 15mins",
+    "director": "Vikramaditya Motwane, Kiran Rao, Shakun Batra, Vishal Bhardwaj",
+    "basedOn": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lust_Stories_3",
+    "imdb": "https://www.imdb.com/title/tt39667834/",
+    "boxOffice": {
+      "budget": "Estimated ₹35 Crore",
+      "worldwideGross": "Direct-to-Streaming (Netflix Global Premiere)",
+      "openingDay": "N/A (Streaming Release)",
+      "openingWeekend": "N/A (Streaming Release)",
+      "indiaGross": "N/A",
+      "overseasGross": "N/A",
+      "verdict": "Direct-to-Streaming Digital Premiere",
+      "source": "Netflix, RSVP Movies & Variety",
+      "lastUpdated": "September 19, 2026"
+    },
+    "poster": "pics/Films/LustStories3/1.jpg",
+    "banner": "pics/Films/LustStories3/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/LustStories3/1.jpg",
+        "alt": "Lust Stories 3 Official Poster"
+      },
+      {
+        "src": "pics/Films/LustStories3/2.jpg",
+        "alt": "Lust Stories 3 Official Banner"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "5/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-an-average.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "5.2/10",
+        "url": "https://www.imdb.com/title/tt39667834/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "India Today",
+        "score": "4.1/5",
+        "url": "https://www.indiatoday.in/entertainment/ott/story/lust-stories-3-review-four-bedrooms-four-desires-but-only-one-story-really-seduces-2997509-2026-09-18",
+        "icon": "pics/RatingSiteLogos/india-today.ico"
+      },
+      {
+        "source": "DNA India",
+        "score": "4/5",
+        "url": "https://www.dnaindia.com/entertainment/report-lust-stories-3-review-from-forbidden-fantasies-to-emotional-complications-four-stories-keep-you-hooked-3220765",
+        "icon": "pics/RatingSiteLogos/dnaindia.png"
+      },
+      {
+        "source": "Rediff",
+        "score": "3.5/5",
+        "url": "https://www.rediff.com/movies/review/lust-stories-3-review-funny-fizzy-frivolous/20260918.htm",
+        "icon": "pics/RatingSiteLogos/rediff.png"
+      },
+      {
+        "source": "Economic Times",
+        "score": "3/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/hindi/movie-reviews/lust-stories-3/ottmoviereview/134313187.cms",
+        "icon": "pics/RatingSiteLogos/economic-times.ico"
+      },
+      {
+        "source": "Bollywood Hungama",
+        "score": "3/5",
+        "url": "https://www.bollywoodhungama.com/movie/lust-stories-3/critic-review/lust-stories-3-movie-review/lust-stories-3-makes-for-a-reasonably-entertaining-watch/",
+        "icon": "pics/RatingSiteLogos/bollywood-hungama.png"
+      },
+      {
+        "source": "Indian Express",
+        "score": "3/5",
+        "url": "https://indianexpress.com/article/entertainment/web-series/lust-stories-3-review-konkona-sen-sharma-radhika-apte-liven-up-an-uneven-but-enjoyable-anthology-10883398/",
+        "icon": "pics/RatingSiteLogos/indian-express.png"
+      },
+      {
+        "source": "NDTV",
+        "score": "3/5",
+        "url": "https://www.ndtv.com/entertainment/lust-stories-3-review-desire-at-an-all-time-high-in-a-womans-world-3-stars-12063207",
+        "icon": "pics/RatingSiteLogos/ndtv.ico"
+      },
+      {
+        "source": "News18",
+        "score": "3/5",
+        "url": "https://www.news18.com/movies/bollywood/lust-stories-3-review-what-women-want-is-only-the-beginning-in-this-binge-worthy-anthology-of-desire-and-agency-10337561.html",
+        "icon": "pics/RatingSiteLogos/news-18.png"
+      },
+      {
+        "source": "Times of India",
+        "score": "3/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/hindi/movie-reviews/lust-stories-3/ottmoviereview/134313187.cms",
+        "icon": "pics/RatingSiteLogos/times-of-india.ico"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Radhika Apte",
+        "role": "Lead",
+        "description": "Motwane Segment"
+      },
+      {
+        "actor": "Konkona Sen Sharma",
+        "role": "Lead",
+        "description": "Bhardwaj Segment"
+      },
+      {
+        "actor": "Vijay Varma",
+        "role": "Lead",
+        "description": "Rao Segment"
+      },
+      {
+        "actor": "Ali Fazal",
+        "role": "Lead",
+        "description": "Batra Segment"
+      },
+      {
+        "actor": "Radhika Madan",
+        "role": "Lead",
+        "description": "Batra Segment"
+      },
+      {
+        "actor": "Aditi Rao Hydari",
+        "role": "Lead",
+        "description": "Bhardwaj Segment"
+      },
+      {
+        "actor": "Siddharth",
+        "role": "Lead",
+        "description": "Bhardwaj Segment"
+      },
+      {
+        "actor": "Abhishek Banerjee",
+        "role": "Supporting",
+        "description": "Motwane Segment"
+      },
+      {
+        "actor": "Gurfateh Pirzada",
+        "role": "Supporting",
+        "description": "Rao Segment"
+      },
+      {
+        "actor": "Sana Thampi",
+        "role": "Supporting",
+        "description": "Rao Segment"
+      }
+    ],
+    "bookings": [],
+    "watchOnline": [
+      {
+        "provider": "Netflix",
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/81734814",
+        "icon": "pics/WatchOnline/netflix.png",
+        "label": "Watch on Netflix"
+      }
+    ],
+    "music": [
+      {
+        "provider": "Spotify",
+        "url": "https://open.spotify.com/track/39bbIastYmH17y5FGfjB1d",
+        "icon": "pics/MusicWebsiteLogos/spotify.png",
+        "label": "Listen on Spotify"
+      },
+      {
+        "provider": "Apple Music",
+        "url": "https://music.apple.com/in/album/aaye-miyan-khat-pat-from-lust-stories-3-single/6809409725",
+        "icon": "pics/MusicWebsiteLogos/itunes.png",
+        "label": "Listen on Apple Music"
+      },
+      {
+        "provider": "JioSaavn",
+        "url": "https://www.jiosaavn.com/album/aaye-miyan-khat-pat-from-lust-stories-3/Zq-RveHPpFg_",
+        "icon": "pics/MusicWebsiteLogos/saavn.png",
+        "label": "Listen on JioSaavn"
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=PhNJ34l5NFo",
+        "youtubeId": "PhNJ34l5NFo",
+        "title": "Main Trailer",
+        "type": "Trailer"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=R0KXrAqVrE0",
+        "youtubeId": "R0KXrAqVrE0",
+        "title": "Teaser",
+        "type": "Teaser"
+      }
+    ],
+    "trailers": [
+      {
+        "title": "Main Trailer",
+        "url": "https://www.youtube.com/watch?v=PhNJ34l5NFo",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/PhNJ34l5NFo",
+        "youtubeId": "PhNJ34l5NFo",
+        "type": "Trailer"
+      },
+      {
+        "title": "Teaser",
+        "url": "https://www.youtube.com/watch?v=R0KXrAqVrE0",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/R0KXrAqVrE0",
+        "youtubeId": "R0KXrAqVrE0",
+        "type": "Teaser"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "Lust Stories 3 Review: From Forbidden Fantasies to Emotional Complications",
+        "url": "https://www.dnaindia.com/entertainment/report-lust-stories-3-review-from-forbidden-fantasies-to-emotional-complications-four-stories-keep-you-hooked-3220765",
+        "author": "DNA India",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Lust Stories 3 Review: Four Directors, Four Takes on Desire and Modern Intimacy",
+        "url": "https://www.outlookindia.com/art-entertainment/movie-review/lust-stories-3-review-four-directors-four-takes-on-desire-marriage-and-modern-intimacy",
+        "author": "Outlook India",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Lust Stories 3 Movie Review: Star-Studded Netflix Anthology Returns",
+        "url": "https://www.thehindu.com/entertainment/movies/lust-stories-3-movie-review-netflix-konkona-sen-sharma-radhika-apte-ali-fazal-siddharth-aditi-rao-hydari/article71479583.ece",
+        "author": "The Hindu",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Lust Stories 3 Review: Konkona Sen Sharma and Radhika Apte Liven Up Anthology",
+        "url": "https://indianexpress.com/article/entertainment/web-series/lust-stories-3-review-konkona-sen-sharma-radhika-apte-liven-up-an-uneven-but-enjoyable-anthology-10883398/",
+        "author": "The Indian Express",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Lust Stories 3 Review: Four Bedrooms, Four Desires on Netflix",
+        "url": "https://www.indiatoday.in/entertainment/ott/story/lust-stories-3-review-four-bedrooms-four-desires-but-only-one-story-really-seduces-2997509-2026-09-18",
+        "author": "India Today",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Lust Stories 3 Review: Desire at an All-Time High in a Woman's World",
+        "url": "https://www.ndtv.com/entertainment/lust-stories-3-review-desire-at-an-all-time-high-in-a-womans-world-3-stars-12063207",
+        "author": "NDTV",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Lust Stories 3 Review: What Women Want in This Binge-Worthy Anthology",
+        "url": "https://www.news18.com/movies/bollywood/lust-stories-3-review-what-women-want-is-only-the-beginning-in-this-binge-worthy-anthology-of-desire-and-agency-10337561.html",
+        "author": "News18",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Lust Stories 3 Review: Mild Mischief and Generous Comedy",
+        "url": "https://scroll.in/reel/1095717/lust-stories-3-review-mild-mischief-and-generous-comedy",
+        "author": "Scroll.in",
+        "date": "September 2026",
+        "section": "Reviews"
+      }
+    ],
+    "similar": [
+      {
+        "title": "Lust Stories",
+        "link": "LustStories.html",
+        "poster": "pics/Films/LustStories/1.jpg"
+      },
+      {
+        "title": "Parched",
+        "link": "Parched.html",
+        "poster": "pics/Films/Parched/4.jpg"
+      }
+    ],
+    "filePath": "E:/OakShow/LustStories3.html",
+    "status": "released",
+    "genres": [
+      "Drama",
+      "Romance"
+    ]
+  },
+  {
+    "id": "Irumudi",
+    "slug": "irumudi",
+    "type": "movie",
+    "category": "Indian",
+    "score": 7.5,
+    "filename": "Irumudi.html",
+    "aliases": [
+      "Irumudi Telugu Movie",
+      "Irumudi 2026",
+      "Ravi Teja Irumudi"
+    ],
+    "title": "Irumudi",
+    "metaTitle": "Irumudi (2026) All Ratings, Reviews, Songs, Videos, Bookings and News",
+    "description": "Irumudi is a 2026 Telugu-language vigilante psychological action thriller film written and directed by Shiva Nirvana, starring Ravi Teja, Priya Bhavani Shankar, Sai Kumar, and Baby Nakshathra.",
+    "plot": "Trinadh Rama Kasu (Ravi Teja), a plantain farmer observing a 41-day Ayyappa Deeksha, embarks on a relentless vigilante pursuit after the tragic death of his beloved daughter Manikanta, uncovering a dark nexus in the village. The film emerged as an all-time blockbuster, grossing ₹240 crore worldwide against a ₹40 crore budget.",
+    "language": "Telugu",
+    "releaseDate": "August 21, 2026",
+    "year": "2026",
+    "genre": "Action, Thriller, Drama",
+    "duration": "2hr 32mins",
+    "director": "Shiva Nirvana",
+    "basedOn": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Irumudi",
+    "imdb": "https://www.imdb.com/title/tt39108319/",
+    "boxOffice": {
+      "budget": "₹40 Crore",
+      "worldwideGross": "₹240 Crore",
+      "indiaGross": "₹205 Crore",
+      "overseasGross": "₹35 Crore",
+      "openingDay": "₹28 Crore",
+      "openingWeekend": "₹75 Crore",
+      "verdict": "All-Time Historic Blockbuster",
+      "source": "Pinkvilla, Sacnilk & Trade Reports",
+      "lastUpdated": "September 19, 2026"
+    },
+    "poster": "pics/Films/Irumudi/1.jpg",
+    "banner": "pics/Films/Irumudi/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/Irumudi/1.jpg",
+        "alt": "Irumudi Official Poster"
+      },
+      {
+        "src": "pics/Films/Irumudi/2.jpg",
+        "alt": "Irumudi Official Banner"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "7.5/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "7.2/10",
+        "url": "https://www.imdb.com/title/tt39108319/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Letterboxd",
+        "score": "3.2/5",
+        "url": "https://letterboxd.com/film/irumudi/",
+        "icon": "pics/RatingSiteLogos/letterboxd.png"
+      },
+      {
+        "source": "India Today",
+        "score": "3/5",
+        "url": "https://www.indiatoday.in/movies/reviews/story/irumudi-review-the-film-takes-its-time-but-ravi-teja-finds-his-way-back-2976437-2026-08-21",
+        "icon": "pics/RatingSiteLogos/india-today.ico"
+      },
+      {
+        "source": "Times of India",
+        "score": "3/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/telugu/movie-reviews/irumudi-movie-review/movie-review/133403481.cms",
+        "icon": "pics/RatingSiteLogos/times-of-india.ico"
+      },
+      {
+        "source": "Times Now",
+        "score": "3/5",
+        "url": "https://www.timesnownews.com/entertainment-news/reviews/irumudi-movie-review-ravi-teja-nakshathras-socio-drama-is-relevant-emotional-but-predictable-review-155935765",
+        "icon": "pics/RatingSiteLogos/times-now.ico"
+      },
+      {
+        "source": "Indian Express",
+        "score": "2/5",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/irumudi-movie-review-ravi-teja-tries-his-best-but-the-film-cannot-keep-up-with-him-10843001/",
+        "icon": "pics/RatingSiteLogos/indian-express.png"
+      },
+      {
+        "source": "Deccan Chronicle",
+        "score": "3/5",
+        "url": "https://www.deccanchronicle.com/entertainment/irumudi-review-ravi-teja-shines-in-this-dark-thriller-yet-it-has-shortcomings-1981037",
+        "icon": "pics/RatingSiteLogos/deccan-chronicle.ico"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Ravi Teja",
+        "role": "Trinadh Rama Kasu",
+        "description": "Plantain farmer & devotee"
+      },
+      {
+        "actor": "Priya Bhavani Shankar",
+        "role": "Kaveri",
+        "description": "Trinadh's wife"
+      },
+      {
+        "actor": "Baby Nakshathra",
+        "role": "Manikanta \"Maniamma\"",
+        "description": "Trinadh's daughter"
+      },
+      {
+        "actor": "Sai Kumar",
+        "role": "Guruswamy Goparaju",
+        "description": "Trinadh's mentor"
+      }
+    ],
+    "bookings": [
+      {
+        "provider": "BookMyShow",
+        "url": "https://in.bookmyshow.com/movies/kozhikode/irumudi/ET00487933",
+        "icon": "pics/BookngWebSiteLogos/book-my-show.png",
+        "label": "Book on BookMyShow",
+        "rank": 1
+      },
+      {
+        "provider": "District",
+        "url": "https://www.district.in/movies/irumudi-movie-tickets-MV214275?srsltid=AU7gw4VbYS7yff4jrcKfsbWS5EsYNvMn_uQKE0MgGhyFmGA5-5mGf-ZU",
+        "icon": "pics/BookngWebSiteLogos/district.png",
+        "label": "Book on District",
+        "rank": 2
+      },
+      {
+        "provider": "Fandango",
+        "url": "https://www.fandango.com/irumudi-2026-246361/movie-overview",
+        "icon": "pics/BookngWebSiteLogos/fandango.png",
+        "label": "Book on Fandango",
+        "rank": 3
+      },
+      {
+        "provider": "TicketNew",
+        "url": "https://ticketnew.com/movies/irumudi-movie-detail-214275",
+        "icon": "pics/BookngWebSiteLogos/ticket-new.png",
+        "label": "Book on TicketNew",
+        "rank": 4
+      },
+      {
+        "provider": "PVR Cinemas",
+        "url": "https://www.pvrcinemas.com/m.movie-details/37923/UP",
+        "icon": "pics/BookngWebSiteLogos/pvr.png",
+        "label": "Book on PVR",
+        "rank": 5
+      },
+      {
+        "provider": "Cinepolis India",
+        "url": "https://cinepolisindia.com/movie-details/irumudi-HO00002553?cid=14",
+        "icon": "pics/BookngWebSiteLogos/cinepolisindia.png",
+        "label": "Book on Cinepolis",
+        "rank": 6
+      },
+      {
+        "provider": "Cineworld",
+        "url": "https://www.cineworld.co.uk/films/irumudi-telugu/ho00014980",
+        "icon": "pics/BookngWebSiteLogos/cineworld.png",
+        "label": "Book on Cineworld",
+        "rank": 7
+      }
+    ],
+    "watchOnline": [
+      {
+        "provider": "Netflix",
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/watch/83001420?source=35",
+        "icon": "pics/WatchOnline/netflix.png",
+        "label": "Watch on Netflix"
+      }
+    ],
+    "music": [
+      {
+        "provider": "Spotify",
+        "url": "https://open.spotify.com/playlist/5EK0U0VRGvC9YAGtWy4Prh",
+        "icon": "pics/MusicWebsiteLogos/spotify.png",
+        "label": "Listen on Spotify"
+      },
+      {
+        "provider": "Apple Music",
+        "url": "http://music.apple.com/in/album/irumudi-original-motion-picture-soundtrack-telugu/6803802219",
+        "icon": "pics/MusicWebsiteLogos/itunes.png",
+        "label": "Listen on Apple Music"
+      },
+      {
+        "provider": "JioSaavn",
+        "url": "https://www.jiosaavn.com/album/irumudi/fJsnMfU5lMc_",
+        "icon": "pics/MusicWebsiteLogos/saavn.png",
+        "label": "Listen on JioSaavn"
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=CSXhb2zhfLc",
+        "youtubeId": "CSXhb2zhfLc",
+        "title": "Main Trailer (Telugu)",
+        "type": "Trailer"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=6YyskqYpOvQ",
+        "youtubeId": "6YyskqYpOvQ",
+        "title": "Main Trailer (Hindi)",
+        "type": "Trailer"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=7w7LUaLpM4E",
+        "youtubeId": "7w7LUaLpM4E",
+        "title": "Song 1",
+        "type": "Song"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=q4pqorfTF2s",
+        "youtubeId": "q4pqorfTF2s",
+        "title": "Song 2",
+        "type": "Song"
+      }
+    ],
+    "trailers": [
+      {
+        "title": "Main Trailer (Telugu)",
+        "url": "https://www.youtube.com/watch?v=CSXhb2zhfLc",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/CSXhb2zhfLc",
+        "youtubeId": "CSXhb2zhfLc",
+        "type": "Trailer"
+      },
+      {
+        "title": "Main Trailer (Hindi)",
+        "url": "https://www.youtube.com/watch?v=6YyskqYpOvQ",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/6YyskqYpOvQ",
+        "youtubeId": "6YyskqYpOvQ",
+        "type": "Trailer"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "Irumudi Review: Ravi Teja Shines in This Dark Thriller",
+        "url": "https://www.deccanchronicle.com/entertainment/irumudi-review-ravi-teja-shines-in-this-dark-thriller-yet-it-has-shortcomings-1981037",
+        "author": "Deccan Chronicle",
+        "date": "August 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Irumudi Movie Review: Ravi Teja Bags a Hit With Father-Daughter Drama",
+        "url": "https://www.moneycontrol.com/entertainment/irumudi-movie-review-ravi-teja-finally-bags-a-hit-here-s-why-this-father-and-daughter-drama-is-worth-watching-article-14012026.html",
+        "author": "Moneycontrol",
+        "date": "August 2026",
+        "section": "News"
+      },
+      {
+        "headline": "Irumudi Success Has Given Me Freedom to Experiment: Shiva Nirvana",
+        "url": "https://www.ndtv.com/entertainment/irumudi-success-has-given-me-the-freedom-to-experiment-shiva-nirvana-11966683",
+        "author": "NDTV",
+        "date": "August 2026",
+        "section": "News"
+      },
+      {
+        "headline": "Irumudi Box Office Collections: Ravi Teja Starrer Grosses ₹205 Crore in 21 Days",
+        "url": "https://www.pinkvilla.com/entertainment/box-office/irumudi-box-office-collections-ravi-teja-starrer-adds-rs-30-crore-in-week-3-grosses-rs-205-crore-in-21-days-1405384",
+        "author": "Pinkvilla",
+        "date": "September 2026",
+        "section": "Box Office"
+      }
+    ],
+    "filePath": "E:/OakShow/Irumudi.html",
+    "status": "released",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Drama"
+    ]
+  },
+  {
     "id": "ResidentEvil2026",
     "slug": "residentevil2026",
     "type": "movie",
     "category": "Hollywood",
-    "score": null,
+    "score": 8.5,
     "filename": "ResidentEvil2026.html",
     "aliases": [],
     "title": "Resident Evil",
     "metaTitle": "Resident Evil (2026) All Ratings, Reviews, Songs, Videos, Bookings and News",
-    "description": "Resident Evil is a 2026 survival horror film that is the second reboot and eighth film overall in the Resident Evil film series, based on Capcoms Resident Evil video game franchise. It is directed by Zach Cregger and written by Cregger and Shay Hatten. The film follows Bryan (Austin Abrams), a medical courier who must fight through a viral outbreak of infected monsters in Raccoon City during a delivery.",
-    "plot": "Set during events paralleling the game Resident Evil 2 (1998), albeit in a modern era—follows Bryan, a medical courier who must fight through a viral outbreak of infected monsters in Raccoon City during a delivery. The film grossed .8 million in the box office and received positive reviews from critics, becoming the highest-rated film based on a video game on Rotten Tomatoes and Metacritic.",
+    "description": "Resident Evil is a 2026 survival horror film directed by Zach Cregger and written by Cregger and Shay Hatten. The film follows Bryan (Austin Abrams), a medical courier who must fight through a viral outbreak of infected monsters in Raccoon City during a delivery.",
+    "plot": "Set during events paralleling the game Resident Evil 2 (1998), albeit in a modern era—follows Bryan, a medical courier who must fight through a viral outbreak of infected monsters in Raccoon City during a delivery. The film grossed $26 million in its opening weekend box office (with an $8.8 million Thursday preview) and received universal acclaim from critics, becoming the highest-rated film based on a video game on Rotten Tomatoes (95%) and Metacritic (81/100).",
     "language": "English",
     "releaseDate": "September 18, 2026",
     "year": "2026",
     "genre": "Horror, Action, Thriller",
-    "duration": "TBA",
+    "duration": "1hr 55mins",
     "director": "Zach Cregger",
     "basedOn": "Resident Evil video game series",
     "boxOffice": {
-      "budget": " Million",
-      "gross": ".8 Million"
+      "budget": "$75 Million",
+      "worldwideGross": "$26 Million",
+      "openingDay": "$18.3 Million (incl. $8.8M previews)",
+      "openingWeekend": "$26 Million (Projected $40–50 Million)",
+      "indiaGross": "$1.2 Million",
+      "overseasGross": "$7.7 Million",
+      "verdict": "Super Hit / Strong Opening",
+      "source": "Box Office Mojo & Deadline",
+      "lastUpdated": "September 19, 2026"
     },
     "poster": "pics/Films/ResidentEvil2026/1.jpg",
     "banner": "pics/Films/ResidentEvil2026/2.jpg",
@@ -32,6 +624,12 @@
     ],
     "ratings": [
       {
+        "source": "OakShow",
+        "score": "8.5/10",
+        "url": "",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+      },
+      {
         "source": "IMDb",
         "score": "8.2/10",
         "url": "https://www.imdb.com/title/tt35538033/",
@@ -39,37 +637,37 @@
       },
       {
         "source": "Rotten Tomatoes",
-        "score": "8/10",
+        "score": "95%",
         "url": "https://www.rottentomatoes.com/m/resident_evil_2026",
         "icon": "pics/RatingSiteLogos/rotten-tomatoes-fresh.png"
       },
       {
         "source": "Metacritic",
-        "score": "8/10",
+        "score": "81/100",
         "url": "https://www.metacritic.com/movie/resident-evil-2026/",
         "icon": "pics/RatingSiteLogos/metacritic.png"
       },
       {
         "source": "Common Sense Media",
-        "score": "8/10",
+        "score": "4/5",
         "url": "https://www.commonsensemedia.org/movie-reviews/resident-evil-0",
         "icon": "pics/RatingSiteLogos/common-sense-media.png"
       },
       {
         "source": "Den of Geek",
-        "score": "8/10",
+        "score": "3/5",
         "url": "https://www.denofgeek.com/movies/resident-evil-review-decent-raccoon-city/",
         "icon": "pics/RatingSiteLogos/den-of-geek.png"
       },
       {
         "source": "Digital Spy",
-        "score": "8/10",
+        "score": "4/5",
         "url": "https://www.digitalspy.com/movies/a73722380/resident-evil-review-2026/",
         "icon": "pics/RatingSiteLogos/digital-spy.png"
       },
       {
         "source": "Hindustan Times",
-        "score": "8/10",
+        "score": "4/5",
         "url": "https://www.hindustantimes.com/entertainment/hollywood/resident-evil-review-pitch-perfect-austin-abrams-carries-zach-cregger-audacious-reboot-that-hits-all-the-right-notes-101789632933700.html",
         "icon": "pics/RatingSiteLogos/hindustan-times.png"
       },
@@ -81,67 +679,67 @@
       },
       {
         "source": "The Independent",
-        "score": "8/10",
+        "score": "4/5",
         "url": "https://www.independent.co.uk/arts-entertainment/films/reviews/resident-evil-review-zach-cregger-b3051893.html",
         "icon": "pics/RatingSiteLogos/the-independent.png"
       },
       {
         "source": "Independent.ie",
-        "score": "8/10",
+        "score": "4/5",
         "url": "https://www.independent.ie/entertainment/movies/movie-reviews/resident-evil-review-horror-reboot-turns-up-the-dial-to-give-fans-their-fright-of-the-year/a/161285404.html",
         "icon": "pics/RatingSiteLogos/independent-ie.png"
       },
       {
         "source": "The Indian Express",
-        "score": "8/10",
+        "score": "3/5",
         "url": "https://indianexpress.com/article/entertainment/movie-review/resident-evil-movie-review-this-joyride-lives-up-unapologetically-to-its-legacy-10883228/",
         "icon": "pics/RatingSiteLogos/indian-express.png"
       },
       {
         "source": "India Today",
-        "score": "8/10",
+        "score": "2.5/5",
         "url": "https://www.indiatoday.in/movies/reviews/story/resident-evil-review-zach-creggers-pulp-horror-delivers-spectacle-over-substance-2997519-2026-09-18",
         "icon": "pics/RatingSiteLogos/india-today.ico"
       },
       {
         "source": "Mid-Day",
-        "score": "8/10",
+        "score": "4/5",
         "url": "https://www.mid-day.com/entertainment/hollywood-news/article/resident-evil-movie-review-fk-survival-learn-to-deal-with-monsters-austin-abrams-zach-cregger-23650460",
         "icon": "pics/RatingSiteLogos/mid-day.png"
       },
       {
         "source": "Rediff",
-        "score": "8/10",
+        "score": "3.5/5",
         "url": "https://www.rediff.com/movies/review/resident-evil-movie-review-zach-cregger-delivers-a-scary-bloody-and-surprisingly-funny-horror-ride/20260917.htm",
         "icon": "pics/RatingSiteLogos/rediff.png"
       },
       {
         "source": "RogerEbert",
-        "score": "8/10",
+        "score": "3.5/4",
         "url": "https://www.rogerebert.com/reviews/resident-evil-zach-cregger-movie-review-2026",
         "icon": "pics/RatingSiteLogos/rogerebert.png"
       },
       {
         "source": "Rolling Stone",
-        "score": "8/10",
+        "score": "4.5/5",
         "url": "https://www.rollingstone.com/tv-movies/tv-movie-reviews/resident-evil-review-zach-cregger-1235623037/",
         "icon": "pics/RatingSiteLogos/rolling-stone.png"
       },
       {
         "source": "Telegraph",
-        "score": "8/10",
+        "score": "4/5",
         "url": "https://www.telegraph.co.uk/films/2026/09/18/resident-evil-film-review/",
         "icon": "pics/RatingSiteLogos/telegraph.png"
       },
       {
         "source": "The Guardian",
-        "score": "8/10",
+        "score": "4/5",
         "url": "https://www.theguardian.com/film/2026/sep/16/resident-evil-reboot-movie-review",
         "icon": "pics/RatingSiteLogos/the-guardian.png"
       },
       {
         "source": "Times of India",
-        "score": "8/10",
+        "score": "4.0/5",
         "url": "https://timesofindia.indiatimes.com/entertainment/english/movie-reviews/resident-evil/movie-review/134312484.cms",
         "icon": "pics/RatingSiteLogos/times-of-india.ico"
       }
@@ -211,100 +809,114 @@
     ],
     "articles": [
       {
-        "headline": "Resident Evil Review (Den of Geek)",
+        "headline": "Resident Evil Review: A Decent Return to Raccoon City",
         "url": "https://www.denofgeek.com/movies/resident-evil-review-decent-raccoon-city/",
         "author": "Den of Geek",
         "date": "September 2026",
         "section": "Reviews"
       },
       {
-        "headline": "Resident Evil Review (Digital Spy)",
+        "headline": "Resident Evil Review: Gory, Gritty Video Game Reboot",
         "url": "https://www.digitalspy.com/movies/a73722380/resident-evil-review-2026/",
         "author": "Digital Spy",
         "date": "September 2026",
         "section": "Reviews"
       },
       {
-        "headline": "Resident Evil First Reactions (Variety)",
+        "headline": "Resident Evil First Reactions: Zach Cregger Reboot Praised as Truly Scary",
         "url": "https://variety.com/2026/film/news/resident-evil-first-reactions-zach-cregger-reboot-scary-1236862900/",
         "author": "Variety",
         "date": "September 2026",
         "section": "Reviews"
       },
       {
-        "headline": "Resident Evil Review (Hindustan Times)",
+        "headline": "Resident Evil Review: Pitch-Perfect Austin Abrams Carries Zach Cregger Audacious Reboot That Hits All the Right Notes",
         "url": "https://www.hindustantimes.com/entertainment/hollywood/resident-evil-review-pitch-perfect-austin-abrams-carries-zach-cregger-audacious-reboot-that-hits-all-the-right-notes-101789632933700.html",
         "author": "Hindustan Times",
         "date": "September 2026",
         "section": "Reviews"
       },
       {
-        "headline": "Resident Evil Review (IGN)",
+        "headline": "Resident Evil (2026) Movie Review",
         "url": "https://www.ign.com/movies/resident-evil-2026",
         "author": "IGN",
         "date": "September 2026",
         "section": "Reviews"
       },
       {
-        "headline": "Resident Evil Review (The Independent)",
+        "headline": "Resident Evil Review: Zach Cregger Delivers a Brilliantly Funny and Terrifying Ride",
         "url": "https://www.independent.co.uk/arts-entertainment/films/reviews/resident-evil-review-zach-cregger-b3051893.html",
         "author": "The Independent",
         "date": "September 2026",
         "section": "Reviews"
       },
       {
-        "headline": "Resident Evil Review (Independent.ie)",
+        "headline": "Resident Evil Review: Horror Reboot Turns Up the Dial to Give Fans Their Fright of the Year",
         "url": "https://www.independent.ie/entertainment/movies/movie-reviews/resident-evil-review-horror-reboot-turns-up-the-dial-to-give-fans-their-fright-of-the-year/a/161285404.html",
         "author": "Independent.ie",
         "date": "September 2026",
         "section": "Reviews"
       },
       {
-        "headline": "Resident Evil Review (The Indian Express)",
+        "headline": "Resident Evil Movie Review: This Joyride Lives Up Unapologetically to Its Legacy",
         "url": "https://indianexpress.com/article/entertainment/movie-review/resident-evil-movie-review-this-joyride-lives-up-unapologetically-to-its-legacy-10883228/",
         "author": "The Indian Express",
         "date": "September 2026",
         "section": "Reviews"
       },
       {
-        "headline": "Resident Evil Review (India Today)",
+        "headline": "Resident Evil Review: Zach Cregger's Pulp Horror Delivers Spectacle Over Substance",
         "url": "https://www.indiatoday.in/movies/reviews/story/resident-evil-review-zach-creggers-pulp-horror-delivers-spectacle-over-substance-2997519-2026-09-18",
         "author": "India Today",
         "date": "September 2026",
         "section": "Reviews"
       },
       {
-        "headline": "Resident Evil Review (Mid-Day)",
+        "headline": "Resident Evil Movie Review: F**k Survival, Learn to Deal with Monsters",
         "url": "https://www.mid-day.com/entertainment/hollywood-news/article/resident-evil-movie-review-fk-survival-learn-to-deal-with-monsters-austin-abrams-zach-cregger-23650460",
         "author": "Mid-Day",
         "date": "September 2026",
         "section": "Reviews"
       },
       {
-        "headline": "Resident Evil Review (RogerEbert)",
+        "headline": "Resident Evil Movie Review: Zach Cregger Delivers a Scary, Bloody and Surprisingly Funny Horror Ride",
+        "url": "https://www.rediff.com/movies/review/resident-evil-movie-review-zach-cregger-delivers-a-scary-bloody-and-surprisingly-funny-horror-ride/20260917.htm",
+        "author": "Rediff",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Resident Evil Movie Review by Brian Tallerico",
         "url": "https://www.rogerebert.com/reviews/resident-evil-zach-cregger-movie-review-2026",
         "author": "RogerEbert",
         "date": "September 2026",
         "section": "Reviews"
       },
       {
-        "headline": "Resident Evil Review (Rolling Stone)",
+        "headline": "Resident Evil Review: Zach Cregger's Smart, Splattery Game Adaptation",
         "url": "https://www.rollingstone.com/tv-movies/tv-movie-reviews/resident-evil-review-zach-cregger-1235623037/",
         "author": "Rolling Stone",
         "date": "September 2026",
         "section": "Reviews"
       },
       {
-        "headline": "Resident Evil Review (Telegraph)",
+        "headline": "Resident Evil Film Review: Zach Cregger Gives Franchise the Horror Movie It Always Needed",
         "url": "https://www.telegraph.co.uk/films/2026/09/18/resident-evil-film-review/",
-        "author": "Telegraph",
+        "author": "The Telegraph",
         "date": "September 2026",
         "section": "Reviews"
       },
       {
-        "headline": "Resident Evil Review (The Guardian)",
+        "headline": "Resident Evil Reboot Movie Review: A Wild Rollercoaster Ride",
         "url": "https://www.theguardian.com/film/2026/sep/16/resident-evil-reboot-movie-review",
         "author": "The Guardian",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Resident Evil Movie Review: A Bloody, Chaotic Reboot That Knows How to Have Fun",
+        "url": "https://timesofindia.indiatimes.com/entertainment/english/movie-reviews/resident-evil/movie-review/134312484.cms",
+        "author": "Times of India",
         "date": "September 2026",
         "section": "Reviews"
       }
@@ -315,7 +927,9 @@
       "Horror",
       "Survival",
       "Action"
-    ]
+    ],
+    "wikipedia": "https://en.wikipedia.org/wiki/Resident_Evil_(2026_film)",
+    "imdb": "https://www.imdb.com/title/tt35538033/"
   },
   {
     "id": "TheRunner",
@@ -327,25 +941,25 @@
     "aliases": [],
     "title": "The Runner",
     "metaTitle": "The Runner (2026) All Ratings, Reviews, Songs, Videos, Bookings and News",
-    "description": "The Runner is a 2026 British action-thriller film directed by Kevin Macdonald and starring Gal Gadot. Follow Maia Marten as she races through London to save her kidnapped son.",
-    "plot": "The film follows Maia Marten (Gal Gadot), a high-powered London lawyer whose life is upended during a morning run when she receives a phone call informing her that her diabetic son, Noah, has been kidnapped. To save him, she is forced to follow a series of ruthless commands from an anonymous caller while racing through the streets of London.",
+    "description": "The Runner is a 2026 British action thriller film directed by Kevin Macdonald from a screenplay by Mark Gibson, starring Gal Gadot, Damian Lewis, and Alfred Enoch. Prosecuting attorney Maia Martin is cryptically commanded by an unknown caller to race through London to prevent a star witness from testifying, in order to save her abducted son.",
+    "plot": "Maia Martin (Gal Gadot), an attorney with the Crown Prosecution Service, goes for a run through London before a high-profile trial. She receives a call from an anonymous blackmailer (Damian Lewis) who has abducted her young son and forces her to race against time through the city while carrying out dangerous commands. The film premiered globally as an Amazon Prime Video original on September 2, 2026.",
     "language": "English",
     "releaseDate": "September 2, 2026",
     "year": "2026",
     "genre": "Action, Thriller",
-    "duration": "TBA",
+    "duration": "1hr 45mins",
     "director": "Kevin Macdonald",
     "basedOn": "",
     "boxOffice": {
-      "worldwideGross": "N/A (Streaming Release)",
-      "indiaGross": "",
-      "overseasGross": "",
-      "openingDay": "",
-      "openingWeekend": "",
-      "budget": "",
-      "verdict": "",
-      "lastUpdated": "September 2026",
-      "source": "Amazon Prime Video"
+      "budget": "$50 Million",
+      "worldwideGross": "Direct-to-Streaming (Prime Video Exclusive)",
+      "openingDay": "N/A (Streaming Premiere)",
+      "openingWeekend": "N/A (Streaming Premiere)",
+      "indiaGross": "N/A",
+      "overseasGross": "N/A",
+      "verdict": "Direct-to-Streaming Release",
+      "source": "Amazon MGM Studios & Variety",
+      "lastUpdated": "September 19, 2026"
     },
     "poster": "pics/Films/TheRunner/1.jpg",
     "banner": "pics/Films/TheRunner/2.jpg",
@@ -364,37 +978,37 @@
       },
       {
         "source": "IMDb",
-        "score": "TBD",
+        "score": "4.1/10",
         "url": "https://www.imdb.com/title/tt34564059/",
         "icon": "pics/RatingSiteLogos/imdb.png"
       },
       {
         "source": "Rotten Tomatoes",
-        "score": "TBD",
+        "score": "10%",
         "url": "https://www.rottentomatoes.com/m/the_runner_2026",
         "icon": "pics/RatingSiteLogos/rotten-tomatoes-fresh.png"
       },
       {
         "source": "Metacritic",
-        "score": "TBD",
+        "score": "28/100",
         "url": "https://www.metacritic.com/movie/the-runner-2026/",
         "icon": "pics/RatingSiteLogos/metacritic.png"
       },
       {
         "source": "Common Sense Media",
-        "score": "TBD",
+        "score": "2/5",
         "url": "https://www.commonsensemedia.org/movie-reviews/the-runner-2026",
         "icon": "pics/RatingSiteLogos/common-sense-media.png"
       },
       {
         "source": "Digital Spy",
-        "score": "TBD",
+        "score": "2/5",
         "url": "https://www.digitalspy.com/movies/a73593892/gal-gadot-the-runner-reviews-prime-video/",
         "icon": "pics/RatingSiteLogos/digital-spy.png"
       },
       {
         "source": "IGN",
-        "score": "TBD",
+        "score": "5/10",
         "url": "https://www.ign.com/articles/the-runner-review-gal-gadot",
         "icon": "pics/RatingSiteLogos/ign.png"
       }
@@ -402,23 +1016,18 @@
     "cast": [
       {
         "actor": "Gal Gadot",
-        "role": "Maia Marten",
-        "description": "A high-powered London lawyer"
+        "role": "Maia Martin",
+        "description": "Prosecuting Attorney"
       },
       {
         "actor": "Damian Lewis",
         "role": "The Caller",
-        "description": "An anonymous caller"
+        "description": "Anonymous Caller"
       },
       {
         "actor": "Alfred Enoch",
         "role": "Ted",
         "description": ""
-      },
-      {
-        "actor": "Rory Wilmot",
-        "role": "Noah",
-        "description": "Maia's diabetic son"
       }
     ],
     "bookings": [],
@@ -454,22 +1063,35 @@
     ],
     "articles": [
       {
-        "headline": "The Runner Review (Digital Spy)",
+        "headline": "Gal Gadot's The Runner Reviews on Prime Video",
         "url": "https://www.digitalspy.com/movies/a73593892/gal-gadot-the-runner-reviews-prime-video/",
         "author": "Digital Spy",
         "date": "September 2026",
         "section": "Reviews"
       },
       {
-        "headline": "The Runner Review (IGN)",
+        "headline": "The Runner Review: Gal Gadot Races Against the Clock",
         "url": "https://www.ign.com/articles/the-runner-review-gal-gadot",
         "author": "IGN",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "The Runner Movie Review and Parents Guide",
+        "url": "https://www.commonsensemedia.org/movie-reviews/the-runner-2026",
+        "author": "Common Sense Media",
         "date": "September 2026",
         "section": "Reviews"
       }
     ],
     "filePath": "E:/OakShow/TheRunner.html",
-    "status": "released"
+    "status": "released",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "wikipedia": "https://en.wikipedia.org/wiki/The_Runner_(2026_film)",
+    "imdb": "https://www.imdb.com/title/tt34564059/"
   },
   {
     "id": "Runner",
@@ -481,25 +1103,25 @@
     "aliases": [],
     "title": "Runner",
     "metaTitle": "Runner (2026) All Ratings, Reviews, Songs, Videos, Bookings and News",
-    "description": "Runner is a 2026 American action-comedy film directed by Scott Waugh, starring Alan Ritchson and Owen Wilson. Check out verified ratings, critic reviews, and booking links.",
-    "plot": "Runner is an action-comedy film starring Alan Ritchson as Hank Malone, a former soldier, and Owen Wilson as his partner, Ben. They navigate high-stakes scenarios with comedic flair.",
+    "description": "Runner is a 2026 American action-comedy film directed by Scott Waugh and written by Miles Hubley and Tommy O'Haver. Starring Alan Ritchson, Owen Wilson, Leila George, and Rodrigo Santoro, the film follows an operative racing through Europe on a high-stakes delivery.",
+    "plot": "Hank Malone (Alan Ritchson), an elite courier and ex-special forces operative, is given three hours to transport an organ for a high-profile transplant across Europe, teaming up with a quirky handler (Owen Wilson) while being pursued by deadly syndicates. The film grossed $10 million against its $40 million budget in its theatrical run.",
     "language": "English",
     "releaseDate": "September 11, 2026",
     "year": "2026",
     "genre": "Action, Comedy",
-    "duration": "TBA",
+    "duration": "1hr 40mins",
     "director": "Scott Waugh",
     "basedOn": "",
     "boxOffice": {
-      "worldwideGross": "$9.5 Million",
-      "indiaGross": "",
-      "overseasGross": "",
-      "openingDay": "",
-      "openingWeekend": "",
-      "budget": "",
-      "verdict": "",
-      "lastUpdated": "September 2026",
-      "source": "Box Office Reports"
+      "budget": "$40 Million",
+      "worldwideGross": "$10 Million",
+      "openingDay": "$2.4 Million",
+      "openingWeekend": "$6.5 Million",
+      "indiaGross": "$0.4 Million",
+      "overseasGross": "$3.5 Million",
+      "verdict": "Average / Moderate Performer",
+      "source": "Box Office Mojo & The Numbers",
+      "lastUpdated": "September 19, 2026"
     },
     "poster": "pics/Films/Runner/1.jpg",
     "banner": "pics/Films/Runner/2.jpg",
@@ -518,49 +1140,49 @@
       },
       {
         "source": "IMDb",
-        "score": "TBD",
+        "score": "6.5/10",
         "url": "https://www.imdb.com/title/tt31349844/",
         "icon": "pics/RatingSiteLogos/imdb.png"
       },
       {
         "source": "Rotten Tomatoes",
-        "score": "TBD",
+        "score": "76%",
         "url": "https://www.rottentomatoes.com/m/runner_2026",
         "icon": "pics/RatingSiteLogos/rotten-tomatoes-fresh.png"
       },
       {
         "source": "Metacritic",
-        "score": "TBD",
+        "score": "55/100",
         "url": "https://www.metacritic.com/movie/runner-2026/",
         "icon": "pics/RatingSiteLogos/metacritic.png"
       },
       {
         "source": "Common Sense Media",
-        "score": "TBD",
+        "score": "2/5",
         "url": "https://www.commonsensemedia.org/movie-reviews/runner-0",
         "icon": "pics/RatingSiteLogos/common-sense-media.png"
       },
       {
         "source": "IGN",
-        "score": "TBD",
+        "score": "6/10",
         "url": "https://www.ign.com/articles/runner-movie-review-alan-ritchson-owen-wilson",
         "icon": "pics/RatingSiteLogos/ign.png"
       },
       {
         "source": "RogerEbert",
-        "score": "TBD",
+        "score": "3/4",
         "url": "https://www.rogerebert.com/reviews/runner-alan-ritchson-owen-wilson-angel-studios-movie-review-2026",
         "icon": "pics/RatingSiteLogos/rogerebert.png"
       },
       {
         "source": "Telegraph",
-        "score": "TBD",
+        "score": "2/5",
         "url": "https://www.telegraph.co.uk/films/2026/09/10/runner-two-star-review/",
         "icon": "pics/RatingSiteLogos/telegraph.png"
       },
       {
         "source": "The Guardian",
-        "score": "TBD",
+        "score": "3/5",
         "url": "https://www.theguardian.com/film/2026/sep/08/runner-review-alan-ritchson-owen-wilson",
         "icon": "pics/RatingSiteLogos/the-guardian.png"
       }
@@ -655,36 +1277,52 @@
     ],
     "articles": [
       {
-        "headline": "Runner Review (Variety)",
+        "headline": "Alan Ritchson and Scott Waugh on Runner Stunts and Practical Action",
         "url": "https://variety.com/2026/film/features/alan-ritchson-runner-stunts-stuntman-director-1236858175/",
         "author": "Variety",
         "date": "September 2026",
-        "section": "Reviews"
+        "section": "Features"
       },
       {
-        "headline": "Runner Review (Telegraph)",
+        "headline": "Runner Review: Alan Ritchson Action Comedy is Formulaic Fun",
         "url": "https://www.telegraph.co.uk/films/2026/09/10/runner-two-star-review/",
-        "author": "Telegraph",
+        "author": "The Telegraph",
         "date": "September 2026",
         "section": "Reviews"
       },
       {
-        "headline": "Runner Review (The Guardian)",
+        "headline": "Runner Review: Alan Ritchson and Owen Wilson Thriller is Serviceable B-Movie Camp",
         "url": "https://www.theguardian.com/film/2026/sep/08/runner-review-alan-ritchson-owen-wilson",
         "author": "The Guardian",
         "date": "September 2026",
         "section": "Reviews"
       },
       {
-        "headline": "Runner Review (RogerEbert)",
+        "headline": "Runner Movie Review by Peter Sobczynski",
         "url": "https://www.rogerebert.com/reviews/runner-alan-ritchson-owen-wilson-angel-studios-movie-review-2026",
         "author": "RogerEbert",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Runner Movie Review: Alan Ritchson and Owen Wilson Team Up",
+        "url": "https://www.ign.com/articles/runner-movie-review-alan-ritchson-owen-wilson",
+        "author": "IGN",
+        "date": "September 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "Runner Movie Review and Parents Guide",
+        "url": "https://www.commonsensemedia.org/movie-reviews/runner-0",
+        "author": "Common Sense Media",
         "date": "September 2026",
         "section": "Reviews"
       }
     ],
     "filePath": "E:/OakShow/Runner.html",
-    "status": "released"
+    "status": "released",
+    "wikipedia": "https://en.wikipedia.org/wiki/Runner_(2026_American_film)",
+    "imdb": "https://www.imdb.com/title/tt31349844/"
   },
   {
     "id": "RamayanaPart1",

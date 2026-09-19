@@ -164,7 +164,7 @@ async function run() {
       'description': desc,
       'image': ogImage,
       'url': canonical,
-      'datePublished': m.year || m.releaseDate,
+      'datePublished': m.releaseDate || m.year,
       ...(m.director ? { 'director': { '@type': 'Person', 'name': m.director } } : {}),
       ...(m.ratings && m.ratings.length > 0 ? {
         'aggregateRating': {
@@ -178,7 +178,7 @@ async function run() {
 
     const bodyContent = `
       <h1>${escapeHtml(m.title)} ${m.year ? `(${escapeHtml(m.year)})` : ''}</h1>
-      <p><strong>Genre:</strong> ${escapeHtml(m.genre || 'Cinema')} | <strong>Language:</strong> ${escapeHtml(m.language || 'All')}</p>
+      <p>${m.director ? `<strong>Director:</strong> ${escapeHtml(m.director)} | ` : ''}${m.releaseDate ? `<strong>Release Date:</strong> ${escapeHtml(m.releaseDate)} | ` : ''}<strong>Genre:</strong> ${escapeHtml(m.genre || 'Cinema')} | <strong>Language:</strong> ${escapeHtml(m.language || 'All')}</p>
       <p>${escapeHtml(desc)}</p>
       <p><a href="${DOMAIN}/">Explore OakShow Entertainment</a></p>
     `;

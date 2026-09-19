@@ -1,9 +1,9 @@
 $ErrorActionPreference = "Stop"
 $env:GIT_TERMINAL_PROMPT = "0"
 
-$token = if (Test-Path -LiteralPath "E:\OakShow API's\oakshowGitToke.txt") { (Get-Content -LiteralPath "E:\OakShow API's\oakshowGitToke.txt").Trim() } elseif (Test-Path -LiteralPath "E:\oakshowGitToke.txt") { (Get-Content -LiteralPath "E:\oakshowGitToke.txt").Trim() } else { $env:GITHUB_TOKEN }
-$scalixKey = if (Test-Path -LiteralPath "E:\OakShow API's\scalixApiKey.txt") { (Get-Content -LiteralPath "E:\OakShow API's\scalixApiKey.txt").Trim() } elseif (Test-Path -LiteralPath "E:\OakShow API's\oakshowApi.txt") { (Get-Content -LiteralPath "E:\OakShow API's\oakshowApi.txt").Trim() } elseif (Test-Path -LiteralPath "E:\oakshowApi.txt") { (Get-Content -LiteralPath "E:\oakshowApi.txt").Trim() } else { $env:SCALIX_API_KEY }
-$git = 'C:\Users\Admin\AppData\Local\GitHubDesktop\app-3.6.4\resources\app\git\cmd\git.exe'
+$token = if (Test-Path -LiteralPath "E:\OakShowOther\OakShow API's\oakshowGitToke.txt") { (Get-Content -LiteralPath "E:\OakShowOther\OakShow API's\oakshowGitToke.txt").Trim() } elseif (Test-Path -LiteralPath "E:\OakShow API's\oakshowGitToke.txt") { (Get-Content -LiteralPath "E:\OakShow API's\oakshowGitToke.txt").Trim() } elseif (Test-Path -LiteralPath "E:\oakshowGitToke.txt") { (Get-Content -LiteralPath "E:\oakshowGitToke.txt").Trim() } else { $env:GITHUB_TOKEN }
+$scalixKey = if (Test-Path -LiteralPath "E:\scalixApiKey.txt") { (Get-Content -LiteralPath "E:\scalixApiKey.txt").Trim() } elseif (Test-Path -LiteralPath "E:\OakShowOther\OakShow API's\scalixApiKey.txt") { (Get-Content -LiteralPath "E:\OakShowOther\OakShow API's\scalixApiKey.txt").Trim() } elseif (Test-Path -LiteralPath "E:\OakShow API's\scalixApiKey.txt") { (Get-Content -LiteralPath "E:\OakShow API's\scalixApiKey.txt").Trim() } elseif (Test-Path -LiteralPath "E:\OakShow API's\oakshowApi.txt") { (Get-Content -LiteralPath "E:\OakShow API's\oakshowApi.txt").Trim() } elseif (Test-Path -LiteralPath "E:\oakshowApi.txt") { (Get-Content -LiteralPath "E:\oakshowApi.txt").Trim() } else { $env:SCALIX_API_KEY }
+$git = if (Test-Path 'C:\Program Files\Git\cmd\git.exe') { 'C:\Program Files\Git\cmd\git.exe' } elseif (Test-Path 'C:\Users\Admin\AppData\Local\GitHubDesktop\app-3.6.4\resources\app\git\cmd\git.exe') { 'C:\Users\Admin\AppData\Local\GitHubDesktop\app-3.6.4\resources\app\git\cmd\git.exe' } else { 'git' }
 $workDir = 'e:\OakShow\oakshow-prod-clean'
 $srcDir = 'e:\OakShow'
 
@@ -54,7 +54,8 @@ $rootHtmls = @(
     "RamayanaPart1.html", "VishwanathandSons.html", "ViswanathandSons.html",
     "ImGame.html", "im-game.html", "TheWhisperMan.html", "Careers.html", "OneNightOnly.html", 
     "Mandaadi.html", "Sardar2.html", "BethlehemKudumbaUnit.html", "DCTamilMovie.html", 
-    "KhalifaTheRuler.html", "AvatarTheWayofWater.html"
+    "KhalifaTheRuler.html", "AvatarTheWayofWater.html",
+    "ResidentEvil2026.html", "Runner.html", "TheRunner.html", "Irumudi.html", "LustStories3.html"
 )
 foreach ($rf in $rootHtmls) {
     if (Test-Path "$srcDir\$rf") {
@@ -89,7 +90,7 @@ if (Test-Path "$srcDir\blog") {
     Write-Host "Synced blog to oakshow-prod dist."
 }
 
-# 5. Copy local media folders (Digger, GDN, and Logos) into dist
+# 5. Copy local media folders into dist
 $mediaDirs = @(
     @{ Src = "$srcDir\pics\Films\Digger"; Dest = "$workDir\dist\pics\Films\Digger" },
     @{ Src = "$srcDir\pics\Films\GDN"; Dest = "$workDir\dist\pics\Films\GDN" },
@@ -99,6 +100,12 @@ $mediaDirs = @(
     @{ Src = "$srcDir\pics\Films\OneNightOnly"; Dest = "$workDir\dist\pics\Films\OneNightOnly" },
     @{ Src = "$srcDir\pics\Films\Mandaadi"; Dest = "$workDir\dist\pics\Films\Mandaadi" },
     @{ Src = "$srcDir\pics\Films\Sardar2"; Dest = "$workDir\dist\pics\Films\Sardar2" },
+    @{ Src = "$srcDir\pics\Films\ResidentEvil2026"; Dest = "$workDir\dist\pics\Films\ResidentEvil2026" },
+    @{ Src = "$srcDir\pics\Films\Runner"; Dest = "$workDir\dist\pics\Films\Runner" },
+    @{ Src = "$srcDir\pics\Films\The Runner"; Dest = "$workDir\dist\pics\Films\The Runner" },
+    @{ Src = "$srcDir\pics\Films\TheRunner"; Dest = "$workDir\dist\pics\Films\TheRunner" },
+    @{ Src = "$srcDir\pics\Films\Irumudi"; Dest = "$workDir\dist\pics\Films\Irumudi" },
+    @{ Src = "$srcDir\pics\Films\LustStories3"; Dest = "$workDir\dist\pics\Films\LustStories3" },
     @{ Src = "$srcDir\pics\Serieses\Lanterns"; Dest = "$workDir\dist\pics\Serieses\Lanterns" },
     @{ Src = "$srcDir\pics\RatingSiteLogos"; Dest = "$workDir\dist\pics\RatingSiteLogos" },
     @{ Src = "$srcDir\pics\SocialWebsiteLogos"; Dest = "$workDir\dist\pics\SocialWebsiteLogos" },
