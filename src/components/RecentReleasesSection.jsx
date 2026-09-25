@@ -24,7 +24,7 @@ function parseItemReleaseDate(item) {
 
 // Format date into clean, human-readable display string
 function formatDisplayDate(item) {
-  if (item.releaseDate) {
+  if (item.releaseDate && item.releaseDate.trim()) {
     const cleaned = item.releaseDate.replace(/\s+\d{1,2}:\d{2}\s*(am|pm)?/i, '').replace(/\(.*?\)/g, '').trim();
     const d = new Date(cleaned);
     if (!isNaN(d.getTime())) {
@@ -32,7 +32,11 @@ function formatDisplayDate(item) {
     }
     return cleaned;
   }
-  return item.year ? `Year ${item.year}` : 'Released';
+  if (item.year && item.year.trim()) return `Year ${item.year}`;
+  if (item.id === 'Supergirl') return '2015 – 2021';
+  if (item.id === 'TheFlash') return '2014 – 2023';
+  if (item.id === 'HarleyandtheDavidsons') return '2016 Miniseries';
+  return 'Released';
 }
 
 export default function RecentReleasesSection({
@@ -71,8 +75,8 @@ export default function RecentReleasesSection({
       if (timestamp <= 0 || timestamp > now) continue;
 
       const hasOtt = m.watchOnline && Array.isArray(m.watchOnline) && m.watchOnline.some(w => w.url && w.url.trim() && w.url !== '#');
-      // Must be a theatrical release (has box office or no direct OTT exclusivity)
-      if (hasOtt && !m.boxOffice) continue;
+      // Theatrical releases (no direct OTT streaming link)
+      if (hasOtt) continue;
 
       seen.add(normKey);
       list.push({
@@ -124,11 +128,64 @@ export default function RecentReleasesSection({
     return list.sort((a, b) => b.releaseTimestamp - a.releaseTimestamp).slice(0, 10);
   }, [moviesPool, currentNormalized]);
 
-  // 3. Last 10 released TV shows / web series
-  const tv10 = useMemo(() => {
+  // 3. User's exact selection for TV shows: Last 5 released series + Supergirl, Flash, Harley and the Davidsons only
+  const tvSeriesList = useMemo(() => {
     const now = Date.now();
-    const seen = new Set();
-    const list = [];
+    const specificNormKeys = ['supergirl', 'theflash', 'harleyandthedavidsons'];
+
+    // 1) Find the 3 requested flagship series
+    const requestedItems = [];
+    const findItem = (idKey) => {
+      let found = seriesPool.find(s => s?.id?.toLowerCase() === idKey || s?.slug?.toLowerCase() === idKey);
+      if (!found) {
+        found = moviesPool.find(m => m?.id?.toLowerCase() === idKey || m?.slug?.toLowerCase() === idKey);
+      }
+      return found;
+    };
+
+    const sSupergirl = findItem('supergirl');
+    if (sSupergirl) {
+      const norm = (sSupergirl.id || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+      if (!currentNormalized || (norm !== currentNormalized && !currentNormalized.includes(norm))) {
+        requestedItems.push({
+          ...sSupergirl,
+          mediaType: 'series',
+          categoryTag: 'tv',
+          releaseTimestamp: parseItemReleaseDate(sSupergirl) || 1
+        });
+      }
+    }
+
+    const sFlash = findItem('theflash');
+    if (sFlash) {
+      const norm = (sFlash.id || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+      if (!currentNormalized || (norm !== currentNormalized && !currentNormalized.includes(norm))) {
+        requestedItems.push({
+          ...sFlash,
+          mediaType: 'series',
+          categoryTag: 'tv',
+          releaseTimestamp: parseItemReleaseDate(sFlash) || 1
+        });
+      }
+    }
+
+    const sHarley = findItem('harleyandthedavidsons');
+    if (sHarley) {
+      const norm = (sHarley.id || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+      if (!currentNormalized || (norm !== currentNormalized && !currentNormalized.includes(norm))) {
+        requestedItems.push({
+          ...sHarley,
+          mediaType: 'series',
+          categoryTag: 'tv',
+          releaseTimestamp: parseItemReleaseDate(sHarley) || 1
+        });
+      }
+    }
+
+    // 2) Get the last 5 released series (excluding current item and the 3 specific ones)
+    const otherSeries = [];
+    const seen = new Set([...specificNormKeys]);
+    if (currentNormalized) seen.add(currentNormalized);
 
     for (const s of seriesPool) {
       if (!s || !s.title) continue;
@@ -136,14 +193,13 @@ export default function RecentReleasesSection({
       if (status === 'upcoming' || status.includes('postponed')) continue;
 
       const normKey = (s.id || s.slug || s.title).toLowerCase().replace(/[^a-z0-9]/g, '');
-      if (currentNormalized && (normKey === currentNormalized || currentNormalized.includes(normKey))) continue;
       if (seen.has(normKey)) continue;
 
       const timestamp = parseItemReleaseDate(s);
       if (timestamp <= 0 || timestamp > now) continue;
 
       seen.add(normKey);
-      list.push({
+      otherSeries.push({
         ...s,
         mediaType: 'series',
         categoryTag: 'tv',
@@ -151,22 +207,34 @@ export default function RecentReleasesSection({
       });
     }
 
-    return list.sort((a, b) => b.releaseTimestamp - a.releaseTimestamp).slice(0, 10);
-  }, [seriesPool, currentNormalized]);
+    otherSeries.sort((a, b) => b.releaseTimestamp - a.releaseTimestamp);
+    const top5Other = otherSeries.slice(0, 5);
 
-  // Combined all 30 (10 in Theatres + 10 in OTT + 10 TV Shows)
-  const all30 = useMemo(() => {
-    const combined = [...theatrical10, ...ott10, ...tv10];
-    return combined.sort((a, b) => b.releaseTimestamp - a.releaseTimestamp);
-  }, [theatrical10, ott10, tv10]);
+    // List: top 5 latest series + Supergirl, Flash, Harley and the Davidsons only
+    return [...top5Other, ...requestedItems];
+  }, [seriesPool, moviesPool, currentNormalized]);
+
+  // Combined all (10 in Theatres + 10 in OTT + user's TV series selection)
+  const allCombined = useMemo(() => {
+    const seen = new Set();
+    const list = [];
+    [...theatrical10, ...ott10, ...tvSeriesList].forEach(it => {
+      const key = `${it.mediaType}-${it.id}`;
+      if (!seen.has(key)) {
+        seen.add(key);
+        list.push(it);
+      }
+    });
+    return list.sort((a, b) => b.releaseTimestamp - a.releaseTimestamp);
+  }, [theatrical10, ott10, tvSeriesList]);
 
   // Active items based on selected tab
   const itemsToDisplay = useMemo(() => {
     if (activeFilter === 'theatres') return theatrical10;
     if (activeFilter === 'ott') return ott10;
-    if (activeFilter === 'tv') return tv10;
-    return all30;
-  }, [activeFilter, theatrical10, ott10, tv10, all30]);
+    if (activeFilter === 'tv') return tvSeriesList;
+    return allCombined;
+  }, [activeFilter, theatrical10, ott10, tvSeriesList, allCombined]);
 
   const handleScroll = (direction) => {
     if (scrollRef.current) {
@@ -187,7 +255,7 @@ export default function RecentReleasesSection({
     }
   };
 
-  if (theatrical10.length === 0 && ott10.length === 0 && tv10.length === 0) return null;
+  if (theatrical10.length === 0 && ott10.length === 0 && tvSeriesList.length === 0) return null;
 
   return (
     <section className="recent-releases-section section-block">
@@ -199,14 +267,14 @@ export default function RecentReleasesSection({
             <span className="rr-subtitle">
               {activeFilter === 'theatres' && 'Last 10 blockbusters released in theatres'}
               {activeFilter === 'ott' && 'Last 10 movies released on OTT streaming platforms'}
-              {activeFilter === 'tv' && 'Last 10 web series & TV shows released'}
-              {activeFilter === 'all' && 'Last 10 in theatres, 10 on OTT, and 10 released TV shows'}
+              {activeFilter === 'tv' && 'Last 5 released series + Supergirl, The Flash & Harley and the Davidsons'}
+              {activeFilter === 'all' && 'Last 10 in theatres, 10 on OTT, and featured TV shows'}
             </span>
           </div>
         </div>
 
         <div className="rr-header-actions">
-          {/* Exactly 10 In Theatres, 10 in OTT, 10 in TV Shows filter tabs */}
+          {/* Category Tabs: In Theatres (10), On OTT (10), TV Shows (8), All */}
           <div className="rr-filter-tabs">
             <button
               type="button"
@@ -230,14 +298,14 @@ export default function RecentReleasesSection({
               onClick={() => setActiveFilter('tv')}
             >
               <Tv size={13} />
-              TV Shows ({tv10.length})
+              TV Shows ({tvSeriesList.length})
             </button>
             <button
               type="button"
               className={`rr-tab-btn ${activeFilter === 'all' ? 'active' : ''}`}
               onClick={() => setActiveFilter('all')}
             >
-              All ({all30.length})
+              All ({allCombined.length})
             </button>
           </div>
 
@@ -290,7 +358,7 @@ export default function RecentReleasesSection({
 
           return (
             <a
-              key={`${item.mediaType}-${item.id}`}
+              key={`${item.categoryTag || item.mediaType}-${item.id}`}
               href={targetUrl}
               className="rr-card glass-panel"
               onClick={(e) => handleCardClick(e, item)}
