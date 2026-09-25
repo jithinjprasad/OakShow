@@ -2442,6 +2442,149 @@ html[data-theme="dark"] .navbar-scrolled {
 }
 
 @media (max-width: 768px) {
+  /* Rotten Tomatoes Mobile Header Pattern: Left Hamburger, Centered Logo, Right Search & Profile */
+  .navbar-root {
+    height: 56px !important;
+  }
+  .navbar-container {
+    height: 56px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    position: relative !important;
+    padding: 0 12px !important;
+    gap: 0 !important;
+  }
+  .mobile-only-control {
+    display: flex !important;
+  }
+  .mobile-header-hamburger-btn {
+    display: flex !important;
+    order: 1;
+    z-index: 2;
+    width: 38px;
+    height: 38px;
+    border-radius: var(--radius-md);
+    background: var(--bg-surface-elevated);
+    border: 1px solid var(--border-subtle);
+    color: var(--text-heading);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar-container > .brand-group {
+    order: 2;
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    margin: 0 !important;
+    gap: 8px !important;
+    z-index: 1;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .navbar-container > .brand-group .brand-icon-wrap {
+    width: 32px !important;
+    height: 32px !important;
+  }
+  .navbar-container > .brand-group .brand-favicon-logo {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .navbar-container > .brand-group .brand-name {
+    font-size: 1.18rem !important;
+  }
+  .navbar-container > .brand-group .brand-tagline {
+    display: none !important;
+  }
+
+  /* Ensure Drawer Header & Footer logos are completely unaffected */
+  .mobile-nav-sheet-header .brand-group,
+  footer .brand-group,
+  .footer-root .brand-group {
+    position: static !important;
+    transform: none !important;
+    left: auto !important;
+    top: auto !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    z-index: auto !important;
+  }
+  .mobile-nav-sheet-header .brand-icon-wrap {
+    width: 36px !important;
+    height: 36px !important;
+  }
+  .mobile-nav-sheet-header .brand-favicon-logo {
+    width: 22px !important;
+    height: 22px !important;
+  }
+  .mobile-nav-sheet-header .brand-name {
+    font-size: 1.25rem !important;
+  }
+  .mobile-nav-sheet-header .brand-tagline {
+    display: block !important;
+    font-size: 0.65rem !important;
+  }
+
+  /* Hide underlying navbar items when mobile drawer is open */
+  .navbar-root.drawer-is-open .navbar-container {
+    opacity: 0 !important;
+    pointer-events: none !important;
+    visibility: hidden !important;
+  }
+  .desktop-nav {
+    display: none !important;
+  }
+  .desktop-only-control {
+    display: none !important;
+  }
+  .nav-dropdown-wrapper {
+    display: none !important;
+  }
+  .nav-actions {
+    order: 3;
+    display: flex !important;
+    align-items: center;
+    gap: 8px !important;
+    margin-left: auto;
+    z-index: 2;
+  }
+  .search-placeholder,
+  .search-kbd {
+    display: none !important;
+  }
+  .search-trigger-btn {
+    width: 38px !important;
+    height: 38px !important;
+    padding: 0 !important;
+    justify-content: center !important;
+    border-radius: var(--radius-md) !important;
+  }
+  .user-nav-control {
+    display: flex !important;
+  }
+  .user-signin-btn {
+    width: 38px !important;
+    height: 38px !important;
+    padding: 0 !important;
+    justify-content: center !important;
+    border-radius: var(--radius-md) !important;
+  }
+  .user-profile-pill {
+    padding: 2px !important;
+    border-radius: var(--radius-md) !important;
+    border: 1px solid var(--border-subtle) !important;
+  }
+  .user-nav-avatar,
+  .user-nav-letter {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
   /* Topbar breadcrumb on mobile */
   .movie-page-topbar {
     padding: 8px 0;
@@ -11499,3 +11642,111 @@ html[data-theme="dark"] .navbar-scrolled {
     grid-template-columns: 1fr !important;
   }
 }
+
+/* ==========================================================================
+   OakShow Mobile Pull-To-Refresh Widget
+   Fluid, native-app tactile indicator (IMDb, BookMyShow, Rotten Tomatoes style)
+   ========================================================================== */
+
+.oak-ptr-container {
+  position: fixed;
+  top: 12px;
+  top: calc(env(safe-area-inset-top, 0px) + 12px);
+  left: 50%;
+  transform: translate3d(-50%, -75px, 0);
+  z-index: 9999999;
+  pointer-events: none;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.oak-ptr-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 16px 8px 10px;
+  border-radius: 9999px;
+  background: rgba(3, 8, 19, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  box-shadow: 
+    0 12px 32px rgba(0, 0, 0, 0.65), 
+    0 0 24px rgba(56, 189, 248, 0.22);
+  color: #f8fafc;
+  font-family: var(--font-body, system-ui, -apple-system, sans-serif);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.015em;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+[data-theme="light"] .oak-ptr-badge {
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(14, 165, 233, 0.35);
+  box-shadow: 
+    0 10px 28px rgba(0, 0, 0, 0.14), 
+    0 0 20px rgba(14, 165, 233, 0.2);
+  color: #0f172a;
+}
+
+.oak-ptr-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  flex-shrink: 0;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.2s ease, color 0.2s ease;
+}
+
+[data-theme="light"] .oak-ptr-icon-wrap {
+  background: rgba(14, 165, 233, 0.12);
+  color: #0284c7;
+}
+
+.oak-ptr-arrow-icon {
+  transition: transform 0.15s ease-out;
+  transform-origin: center;
+}
+
+.oak-ptr-arrow-icon.flipped {
+  color: #38bdf8;
+}
+
+.oak-ptr-container.is-threshold .oak-ptr-badge {
+  border-color: rgba(56, 189, 248, 0.6);
+  box-shadow: 
+    0 12px 36px rgba(0, 0, 0, 0.75), 
+    0 0 30px rgba(56, 189, 248, 0.35);
+}
+
+.oak-ptr-container.is-threshold .oak-ptr-icon-wrap {
+  background: rgba(56, 189, 248, 0.25);
+  transform: scale(1.08);
+}
+
+.oak-ptr-spinner-icon {
+  animation: oak-ptr-spin 0.75s linear infinite;
+  color: #38bdf8;
+}
+
+@keyframes oak-ptr-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.oak-ptr-label {
+  white-space: nowrap;
+  line-height: 1;
+}
+

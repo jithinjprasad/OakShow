@@ -574,15 +574,31 @@ export default function App() {
       }
       return 0;
     };
+
+    const priorityUpcomingIds = ['Jailer2', 'ForgottenIsland', 'RamayanaPart1', 'Digger'];
+
     return cleanMoviesData.filter(m => {
-      if (m.id === 'RamayanaPart1' || m.id === 'Digger') return true;
-      const hasRatings = Array.isArray(m.ratings) && m.ratings.length > 0;
-      if (hasRatings) return false;
+      if (priorityUpcomingIds.includes(m.id)) return true;
       const statusLower = (m.status || '').toLowerCase().trim();
       if (statusLower === 'released') return false;
+      if (statusLower === 'upcoming') return true;
+      const hasRatings = Array.isArray(m.ratings) && m.ratings.length > 0;
+      if (hasRatings) return false;
       const releaseTime = parseDate(m);
-      return statusLower === 'upcoming' || (releaseTime > 0 && releaseTime > now);
+      return (releaseTime > 0 && releaseTime > now);
     }).sort((a, b) => {
+      const getPriority = (item) => {
+        if (!item || !item.id) return 999;
+        if (item.id === 'Jailer2') return 1;
+        if (item.id === 'ForgottenIsland') return 2;
+        if (item.id === 'RamayanaPart1') return 3;
+        if (item.id === 'Digger') return 4;
+        return 999;
+      };
+      const pA = getPriority(a);
+      const pB = getPriority(b);
+      if (pA !== pB) return pA - pB;
+
       const isPostponedA = (a.releaseDate && a.releaseDate.toLowerCase().includes('postponed')) ? 1 : 0;
       const isPostponedB = (b.releaseDate && b.releaseDate.toLowerCase().includes('postponed')) ? 1 : 0;
       if (isPostponedA !== isPostponedB) return isPostponedA - isPostponedB;
@@ -1644,11 +1660,38 @@ export default function App() {
   // 7. Standalone CRITIC PROFILE PAGE
   if (route.type === 'critic' && route.id) {
     const cleanId = route.id.toLowerCase();
-    const targetCritic = criticsData.find(c => 
+    let targetCritic = criticsData.find(c => 
       c.id.toLowerCase() === cleanId || 
-      c.slug.toLowerCase() === cleanId ||
-      c.name.toLowerCase().replace(/[^a-z0-9]/g, '') === cleanId.replace(/[^a-z0-9]/g, '')
-    ) || criticsData[0];
+      c.slug?.toLowerCase() === cleanId ||
+      c.name?.toLowerCase().replace(/[^a-z0-9]/g, '') === cleanId.replace(/[^a-z0-9]/g, '')
+    );
+
+    if (!targetCritic) {
+      const matchingRev = reviewsData.find(r => 
+        (r.criticId && r.criticId.toLowerCase() === cleanId) || 
+        (r.author && r.author.toLowerCase().replace(/[^a-z0-9]/g, '') === cleanId.replace(/[^a-z0-9]/g, ''))
+      );
+      if (matchingRev) {
+        targetCritic = {
+          id: matchingRev.criticId || cleanId,
+          slug: matchingRev.criticId || cleanId,
+          name: matchingRev.criticName || matchingRev.author,
+          designation: `${matchingRev.outlet || matchingRev.author} Verified Critic`,
+          location: 'National & Global Cinema Editorial',
+          joiningDate: 'August 2023',
+          avatar: matchingRev.criticAvatar || '/favicon.png',
+          coverImage: matchingRev.banner || 'pics/Films/Jailer/2.jpeg',
+          bio: `Verified film critic and editorial coverage by ${matchingRev.author}. Published across OakShow Certified Reviews.`,
+          hobbies: 'Film Criticism, Indian Cinema, Mass Entertainers',
+          socials: matchingRev.url ? [{ platform: 'Website', url: matchingRev.url }] : [],
+          featuredPosters: [matchingRev.banner || 'pics/Films/Jailer/1.jpeg'],
+          totalReviews: reviewsData.filter(r => r.criticId === matchingRev.criticId || r.author === matchingRev.author).length,
+          avgRating: matchingRev.score ? String(matchingRev.score) : '3.5'
+        };
+      } else {
+        targetCritic = criticsData[0];
+      }
+    }
 
     updatePageMeta(
       `${targetCritic.name} — OakShow Certified Critic Profile`, 

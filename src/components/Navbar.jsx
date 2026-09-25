@@ -289,9 +289,19 @@ export default function Navbar({
 
   return (
     <>
-      <header className={`navbar-root ${scrolled ? 'navbar-scrolled' : ''}`}>
+      <header className={`navbar-root ${scrolled ? 'navbar-scrolled' : ''} ${mobileMenuOpen ? 'drawer-is-open' : ''}`}>
         <div className="container navbar-container">
-          {/* Brand */}
+          {/* Mobile Only: Far-Left Hamburger Icon Trigger (Rotten Tomatoes mobile pattern) */}
+          <button
+            className="mobile-header-hamburger-btn mobile-only-control"
+            onClick={() => setMobileMenuOpen(true)}
+            aria-label="Open navigation menu"
+            title="Navigation Menu"
+          >
+            <Menu size={22} />
+          </button>
+
+          {/* Brand (Centered on Mobile, Left on Desktop) */}
           <div className="brand-group" onClick={() => { setActiveTab('discover'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
             <div className="brand-icon-wrap">
               <img src="/favicon.png" alt="OakShow Logo" className="brand-favicon-logo" />
@@ -418,8 +428,8 @@ export default function Navbar({
               {bookmarkCount > 0 && <span className="bookmark-badge">{bookmarkCount}</span>}
             </button>
 
-            {/* User Account / Sign In (Desktop) */}
-            <div className="user-nav-control desktop-only-control" style={{ position: 'relative' }}>
+            {/* User Account / Sign In (Active on Both Desktop & Mobile) */}
+            <div className="user-nav-control" style={{ position: 'relative' }}>
               {currentUser ? (
                 <div className="user-dropdown-anchor">
                   <button
@@ -427,6 +437,7 @@ export default function Navbar({
                     className="user-profile-pill"
                     onClick={() => setUserDropdownOpen(!userDropdownOpen)}
                     title={currentUser.displayName || currentUser.email || 'Your Account'}
+                    aria-label="User Account"
                   >
                     {currentUser.photoURL ? (
                       <img src={currentUser.photoURL} alt="Avatar" className="user-nav-avatar" />
@@ -435,10 +446,10 @@ export default function Navbar({
                         {(currentUser.displayName || currentUser.email || 'U').charAt(0).toUpperCase()}
                       </span>
                     )}
-                    <span className="user-nav-name">
+                    <span className="user-nav-name desktop-only-control">
                       {currentUser.displayName ? currentUser.displayName.split(' ')[0] : 'Account'}
                     </span>
-                    <ChevronDown size={14} className={`dropdown-arrow ${userDropdownOpen ? 'is-open' : ''}`} />
+                    <ChevronDown size={14} className={`dropdown-arrow desktop-only-control ${userDropdownOpen ? 'is-open' : ''}`} />
                   </button>
 
                   {userDropdownOpen && (
@@ -480,22 +491,13 @@ export default function Navbar({
                   className="user-signin-btn"
                   onClick={() => onOpenAuth && onOpenAuth('signin')}
                   title="Sign In or Register"
+                  aria-label="Sign In"
                 >
-                  <User size={15} />
-                  <span>Sign In</span>
+                  <User size={16} />
+                  <span className="desktop-only-control">Sign In</span>
                 </button>
               )}
             </div>
-
-            {/* Mobile Menu Trigger (Hamburger 3 Lines) */}
-            <button
-              className={`mobile-toggle-btn ${mobileMenuOpen ? 'is-active' : ''}`}
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label="Toggle menu"
-              title="All Sections & Navigation"
-            >
-              {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
-            </button>
           </div>
         </div>
       </header>
@@ -1172,28 +1174,116 @@ export default function Navbar({
           justify-content: center;
           box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
         }
-        .mobile-toggle-btn {
+        .mobile-only-control {
+          display: none !important;
+        }
+
+        /* Rotten Tomatoes Mobile Header Hamburger Button (Left-aligned) */
+        .mobile-header-hamburger-btn {
           display: none;
-          width: 40px;
-          height: 40px;
+          width: 38px;
+          height: 38px;
           border-radius: var(--radius-md);
           background: var(--bg-surface-elevated);
           border: 1px solid var(--border-subtle);
-          color: var(--text-main);
+          color: var(--text-heading);
           cursor: pointer;
           align-items: center;
           justify-content: center;
           transition: all var(--transition-fast);
+          padding: 0;
+          flex-shrink: 0;
         }
-        .mobile-toggle-btn:hover,
-        .mobile-toggle-btn.is-active {
+        .mobile-header-hamburger-btn:hover,
+        .mobile-header-hamburger-btn:active {
           background: var(--bg-surface);
           border-color: var(--accent-primary);
           color: var(--accent-primary);
         }
 
-        /* Mobile Header Breakpoint (<= 1080px): Shows ONLY Search Icon & Hamburger */
+        .mobile-toggle-btn {
+          display: none;
+        }
+
+        /* Mobile Header Breakpoint (Rotten Tomatoes layout <= 1080px): Left Hamburger, Centered Logo, Right Search & Profile */
         @media (max-width: 1080px) {
+          .navbar-root {
+            height: 56px;
+          }
+          .navbar-container {
+            height: 56px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            position: relative !important;
+            padding: 0 12px !important;
+            gap: 0 !important;
+          }
+          .mobile-only-control {
+            display: flex !important;
+          }
+          .mobile-header-hamburger-btn {
+            display: flex !important;
+            order: 1;
+            z-index: 2;
+          }
+          .navbar-container > .brand-group {
+            order: 2;
+            position: absolute !important;
+            left: 50% !important;
+            top: 50% !important;
+            transform: translate(-50%, -50%) !important;
+            margin: 0 !important;
+            gap: 8px !important;
+            z-index: 1;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+          }
+          .navbar-container > .brand-group .brand-icon-wrap {
+            width: 32px !important;
+            height: 32px !important;
+          }
+          .navbar-container > .brand-group .brand-favicon-logo {
+            width: 20px !important;
+            height: 20px !important;
+          }
+          .navbar-container > .brand-group .brand-name {
+            font-size: 1.18rem !important;
+          }
+          .navbar-container > .brand-group .brand-tagline {
+            display: none !important;
+          }
+
+          /* Ensure Drawer Header & Footer logos are completely unaffected */
+          .mobile-nav-sheet-header .brand-group,
+          footer .brand-group,
+          .footer-root .brand-group {
+            position: static !important;
+            transform: none !important;
+            left: auto !important;
+            top: auto !important;
+            margin: 0 !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: flex-start !important;
+            z-index: auto !important;
+          }
+          .mobile-nav-sheet-header .brand-icon-wrap {
+            width: 36px !important;
+            height: 36px !important;
+          }
+          .mobile-nav-sheet-header .brand-favicon-logo {
+            width: 22px !important;
+            height: 22px !important;
+          }
+          .mobile-nav-sheet-header .brand-name {
+            font-size: 1.25rem !important;
+          }
+          .mobile-nav-sheet-header .brand-tagline {
+            display: block !important;
+            font-size: 0.65rem !important;
+          }
           .desktop-nav {
             display: none !important;
           }
@@ -1203,19 +1293,56 @@ export default function Navbar({
           .nav-dropdown-wrapper {
             display: none !important;
           }
+          .nav-actions {
+            order: 3;
+            display: flex !important;
+            align-items: center;
+            gap: 8px !important;
+            margin-left: auto;
+            z-index: 2;
+          }
           .search-placeholder,
           .search-kbd {
             display: none !important;
           }
           .search-trigger-btn {
-            width: 40px !important;
-            height: 40px !important;
+            width: 38px !important;
+            height: 38px !important;
             padding: 0 !important;
             justify-content: center !important;
             border-radius: var(--radius-md) !important;
           }
-          .mobile-toggle-btn {
+          .user-nav-control {
             display: flex !important;
+          }
+          .user-signin-btn {
+            width: 38px !important;
+            height: 38px !important;
+            padding: 0 !important;
+            justify-content: center !important;
+            border-radius: var(--radius-md) !important;
+          }
+          .user-profile-pill {
+            padding: 2px !important;
+            border-radius: var(--radius-md) !important;
+            border: 1px solid var(--border-subtle) !important;
+          }
+          .user-nav-avatar,
+          .user-nav-letter {
+            width: 32px !important;
+            height: 32px !important;
+          }
+          .user-nav-menu {
+            position: absolute;
+            top: calc(100% + 8px);
+            right: 0;
+            min-width: 210px;
+          }
+          /* Hide underlying navbar items when mobile drawer is expanded to prevent bleed-through */
+          .navbar-root.drawer-is-open .navbar-container {
+            opacity: 0;
+            pointer-events: none;
+            visibility: hidden;
           }
         }
 
@@ -1226,7 +1353,7 @@ export default function Navbar({
         .mobile-nav-overlay {
           position: fixed;
           inset: 0;
-          z-index: 2000;
+          z-index: 99999 !important;
           display: none;
           flex-direction: column;
           justify-content: flex-start;

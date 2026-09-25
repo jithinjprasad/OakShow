@@ -81,35 +81,39 @@ export default function UpcomingMoviesView({
     if (!movies || !Array.isArray(movies)) return [];
     const now = Date.now();
 
+    const priorityUpcomingIds = ['Jailer2', 'ForgottenIsland', 'RamayanaPart1', 'Digger'];
+
     return movies.filter((m) => {
       if (!m || !m.title) return false;
 
-      // Always include Ramayana: Part 1 and Digger while upcoming until release
-      if (m.id === 'RamayanaPart1' || m.id === 'Digger') {
-        const releaseTime = parseDate(m);
-        if (releaseTime > 0 && releaseTime <= now) return false;
+      // Always include requested priority upcoming movies
+      if (priorityUpcomingIds.includes(m.id)) {
         return true;
       }
+
+      const statusLower = (m.status || '').toLowerCase().trim();
+      if (statusLower === 'released') return false;
+      if (statusLower === 'upcoming') return true;
 
       // Exclude if already has verified ratings (already released)
       const hasRatings = Array.isArray(m.ratings) && m.ratings.length > 0;
       if (hasRatings) return false;
 
-      const statusLower = (m.status || '').toLowerCase().trim();
-      if (statusLower === 'released') return false;
-
-      const isUpcomingStatus = statusLower === 'upcoming';
       const releaseTime = parseDate(m);
       const isFutureRelease = releaseTime > 0 && releaseTime > now;
 
       // Only include if explicitly marked upcoming OR has a verified future release date
-      return isUpcomingStatus || isFutureRelease;
+      return isFutureRelease;
     });
   }, [movies]);
 
   // Featured spotlight movie (most anticipated / soonest upcoming release)
   const spotlightMovie = useMemo(() => {
     if (!allUpcomingMovies || allUpcomingMovies.length === 0) return null;
+    const jailer2 = allUpcomingMovies.find(m => m.id === 'Jailer2');
+    if (jailer2) return jailer2;
+    const forgotten = allUpcomingMovies.find(m => m.id === 'ForgottenIsland');
+    if (forgotten) return forgotten;
     const digger = allUpcomingMovies.find(m => m.id === 'Digger' || (m.title && m.title.toLowerCase() === 'digger'));
     if (digger) return digger;
     return [...allUpcomingMovies].sort((a, b) => {
@@ -194,7 +198,19 @@ export default function UpcomingMoviesView({
       const isPostponedA = (a.releaseDate && a.releaseDate.toLowerCase().includes('postponed')) ? 1 : 0;
       const isPostponedB = (b.releaseDate && b.releaseDate.toLowerCase().includes('postponed')) ? 1 : 0;
 
+      const getPriority = (item) => {
+        if (!item || !item.id) return 999;
+        if (item.id === 'Jailer2') return 1;
+        if (item.id === 'ForgottenIsland') return 2;
+        if (item.id === 'RamayanaPart1') return 3;
+        if (item.id === 'Digger') return 4;
+        return 999;
+      };
+
       if (sortBy === 'date-asc') {
+        const pA = getPriority(a);
+        const pB = getPriority(b);
+        if (pA !== pB) return pA - pB;
         if (isPostponedA !== isPostponedB) return isPostponedA - isPostponedB;
         const timeA = parseDate(a) || Infinity;
         const timeB = parseDate(b) || Infinity;

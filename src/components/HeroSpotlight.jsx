@@ -8,9 +8,14 @@ export default function HeroSpotlight({ movies, onSelectMovie, onPlayTrailer }) 
   const spotlightCandidates = React.useMemo(() => {
     if (!movies || movies.length === 0) return [];
     
+    const priorityUpcomingIds = ['Jailer2', 'ForgottenIsland'];
+    const priorityMovies = priorityUpcomingIds
+      .map(id => movies.find(m => m.id === id))
+      .filter(Boolean);
+
     // Sort movies by release year descending, then release date, ensuring ratings exist
     const sortedLatest = [...movies]
-      .filter(m => m.poster && m.ratings && m.ratings.length > 0)
+      .filter(m => m.poster && m.ratings && m.ratings.length > 0 && !priorityUpcomingIds.includes(m.id))
       .sort((a, b) => {
         const yearA = parseInt(a.year || '0', 10);
         const yearB = parseInt(b.year || '0', 10);
@@ -20,7 +25,7 @@ export default function HeroSpotlight({ movies, onSelectMovie, onPlayTrailer }) 
         return dateB - dateA;
       });
 
-    return sortedLatest.slice(0, 8);
+    return [...priorityMovies, ...sortedLatest].slice(0, 10);
   }, [movies]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -67,7 +72,7 @@ export default function HeroSpotlight({ movies, onSelectMovie, onPlayTrailer }) 
         <div className="hero-badge-row">
           <span className="badge badge-gold">
             <Sparkles size={13} />
-            LATEST RELEASE
+            {current.status === 'upcoming' ? 'UPCOMING PREMIERE' : 'LATEST RELEASE'}
           </span>
           {current.language && <span className="badge badge-cyan">{current.language}</span>}
           {current.genre && <span className="badge badge-red">{current.genre}</span>}

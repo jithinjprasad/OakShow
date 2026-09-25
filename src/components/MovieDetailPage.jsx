@@ -102,10 +102,38 @@ export default function MovieDetailPage({
     return (reviewsData || []).filter(r => {
       const rMovieId = (r.movieId || '').toLowerCase().replace(/[^a-z0-9]/g, '');
       const rMovie = (r.movie || '').toLowerCase().replace(/[^a-z0-9]/g, '');
-      return (rMovieId && (rMovieId === cleanId || cleanId.includes(rMovieId) || rMovieId.includes(cleanId))) ||
-             (rMovie && (rMovie === cleanTitle || cleanTitle.includes(rMovie) || rMovie.includes(cleanTitle)));
+      const tId = (r.targetId || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+      const mSlug = (r.movieSlug || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+      const tTitle = (r.targetTitle || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+
+      return (rMovieId && rMovieId === cleanId) ||
+             (tId && tId === cleanId) ||
+             (mSlug && mSlug === cleanId) ||
+             (rMovie && (rMovie === cleanTitle || cleanTitle.startsWith(rMovie))) ||
+             (tTitle && (tTitle === cleanTitle || cleanTitle.startsWith(tTitle)));
     });
   }, [movie]);
+
+  // Separate into OakShow Certified Staff Critics and National/International Press Publications
+  const { oakshowStaffReviews, pressCriticReviews } = useMemo(() => {
+    const staff = [];
+    const press = [];
+
+    (internalReviews || []).forEach(rev => {
+      const isStaff = rev.isStaffCritic === true || (criticsData || []).some(c => 
+        c.id === rev.criticId || 
+        c.name?.toLowerCase() === (rev.author || rev.criticName || '').toLowerCase()
+      );
+
+      if (isStaff) {
+        staff.push(rev);
+      } else {
+        press.push(rev);
+      }
+    });
+
+    return { oakshowStaffReviews: staff, pressCriticReviews: press };
+  }, [internalReviews]);
 
   // Find if this movie has an official photo gallery / wallpapers
   const movieGallery = useMemo(() => {
@@ -352,7 +380,9 @@ export default function MovieDetailPage({
   const watchOnlineList = Array.isArray(movie.watchOnline) ? movie.watchOnline : (Array.isArray(movie.streaming) ? movie.streaming : []);
   const musicList = Array.isArray(movie.music) ? movie.music : (Array.isArray(movie.musicLinks) ? movie.musicLinks : []);
   const socialsList = movie.socials || [];
-  const officialWebsite = movie.officialWebsite || null;
+  const officialWebsite = movie.officialWebsite
+    ? (typeof movie.officialWebsite === 'string' ? { url: movie.officialWebsite, label: 'Official Movie Site' } : movie.officialWebsite)
+    : null;
 
   // Include District, PVR, Cinepolis, Cineworld, BookMyShow, Paytm, etc. strictly when hyperlinks are present
   const allowedBookings = useMemo(() => {
@@ -389,6 +419,210 @@ export default function MovieDetailPage({
     list.sort((a, b) => a.rank - b.rank);
     return list;
   }, [movie?.bookings]);
+
+  // Render OakShow In-House Critic Reviews section
+  const renderInHouseReviewsSection = () => {
+    if (!internalReviews || internalReviews.length === 0) return null;
+
+    return (
+      <div className="section-block in-house-critic-section">
+        {/* 1. Official OakShow Certified Staff Critics */}
+        {oakshowStaffReviews.length > 0 && (
+          <div className="in-house-staff-block">
+            <div className="section-header-row">
+              <div className="section-title-wrap">
+                <Award size={22} className="text-gold" />
+                <h2>OakShow In-House Critic Review ({oakshowStaffReviews.length} Official {oakshowStaffReviews.length > 1 ? 'Reviews' : 'Review'})</h2>
+              </div>
+              <span className="section-badge badge-gold">OakShow Certified Editorial</span>
+            </div>
+
+            <div className="in-house-reviews-grid">
+              {oakshowStaffReviews.map((rev, idx) => {
+                const oakRemark = getOakShowRemark(rev.score != null ? rev.score : rev.remark);
+                const matchedCritic = (criticsData || []).find(c => 
+                  c.id === rev.criticId || 
+                  c.name?.toLowerCase() === (rev.author || rev.criticName || '').toLowerCase()
+                );
+                const avatar = rev.criticAvatar 
+                  ? (rev.criticAvatar.startsWith('/') ? rev.criticAvatar : `/${rev.criticAvatar}`)
+                  : (matchedCritic?.avatar ? (matchedCritic.avatar.startsWith('/') ? matchedCritic.avatar : `/${matchedCritic.avatar}`) : '/favicon.png');
+                const numScore = typeof rev.score === 'number' 
+                  ? rev.score 
+                  : parseFloat(String(rev.score || rev.rating || '3.5').split('/')[0]) || 3.5;
+                const maxScore = String(rev.rating || rev.score || '').includes('/4') ? 4 : 5;
+                const pct = Math.min(100, Math.max(0, (numScore / maxScore) * 100));
+                const designation = matchedCritic?.designation || 'OakShow Certified Critic';
+
+                return (
+                  <div key={idx} className={`in-house-review-card glass-card ${oakRemark.badgeClass}`}>
+                    <div className="ihr-top-bar">
+                      <div 
+                        className="ihr-critic-info hover-link"
+                        onClick={() => onNavigate(`critic/${rev.criticId || matchedCritic?.id || rev.author}`)}
+                        title="View Critic Profile"
+                      >
+                        <img 
+                          src={avatar} 
+                          alt={rev.author} 
+                          className="ihr-critic-avatar"
+                          onError={(e) => { e.target.src = '/favicon.png'; }}
+                        />
+                        <div className="ihr-critic-text">
+                          <span className="ihr-critic-name">{rev.author}</span>
+                          <span className="ihr-critic-sub">{designation}</span>
+                        </div>
+                      </div>
+
+                      <div className="ihr-meta-right">
+                        <div className={`verdict-badge ${oakRemark.badgeClass}`} title={oakRemark.meaning}>
+                          <img src={oakRemark.icon} alt={oakRemark.title} className="verdict-badge-icon" />
+                          <span>{oakRemark.title}</span>
+                        </div>
+                        {rev.date && (
+                          <span className="ihr-date">
+                            <Calendar size={12} />
+                            {rev.date}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+
+                    <div className="ihr-rating-row">
+                      <div className="ihr-rating-pill">
+                        <img src={oakRemark.icon} alt={oakRemark.title} className="oakshow-cert-icon-inline" />
+                        <span className="ihr-score">{rev.rating || `${rev.score}/5`}</span>
+                      </div>
+                      <div className="ihr-meter-wrap">
+                        <div className="ihr-meter-fill" style={{ width: `${pct}%` }} />
+                      </div>
+                      <span className="ihr-verdict-label">{oakRemark.shortLabel}</span>
+                    </div>
+
+                    <h3 className="ihr-headline" onClick={() => setActiveInternalReviewModal(rev)}>
+                      "{rev.title}"
+                    </h3>
+
+                    <p className="ihr-excerpt">
+                      {rev.excerpt || (rev.fullReview ? rev.fullReview.slice(0, 160) + '...' : '')}
+                    </p>
+
+                    <div className="ihr-actions">
+                      <button className="btn btn-gold ihr-read-btn" onClick={() => setActiveInternalReviewModal(rev)}>
+                        <BookOpen size={14} />
+                        <span>Read Full In-House Review</span>
+                      </button>
+                      <button 
+                        className="btn btn-secondary ihr-profile-btn"
+                        onClick={() => onNavigate(`critic/${rev.criticId || matchedCritic?.id || rev.author}`)}
+                      >
+                        <Users size={14} />
+                        <span>Critic Profile</span>
+                      </button>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
+        {/* 2. Verified National & International Press Columns */}
+        {pressCriticReviews.length > 0 && (
+          <div className="in-house-press-block" style={{ marginTop: oakshowStaffReviews.length > 0 ? '36px' : '0' }}>
+            <div className="section-header-row">
+              <div className="section-title-wrap">
+                <Newspaper size={22} className="text-cyan" />
+                <h2>National & International Press Critic Columns ({pressCriticReviews.length} Publications)</h2>
+              </div>
+              <span className="section-badge badge-dark">Verified Press Outlets</span>
+            </div>
+
+            <div className="in-house-reviews-grid">
+              {pressCriticReviews.map((rev, idx) => {
+                const oakRemark = getOakShowRemark(rev.score != null ? rev.score : rev.remark);
+                const avatar = rev.criticAvatar ? (rev.criticAvatar.startsWith('/') ? rev.criticAvatar : `/${rev.criticAvatar}`) : '/favicon.png';
+                const numScore = typeof rev.score === 'number' 
+                  ? rev.score 
+                  : parseFloat(String(rev.score || rev.rating || '3.5').split('/')[0]) || 3.5;
+                const maxScore = String(rev.rating || rev.score || '').includes('/4') ? 4 : 5;
+                const pct = Math.min(100, Math.max(0, (numScore / maxScore) * 100));
+
+                return (
+                  <div key={idx} className={`in-house-review-card press-review-card glass-card ${oakRemark.badgeClass}`}>
+                    <div className="ihr-top-bar">
+                      <div className="ihr-critic-info">
+                        <img 
+                          src={avatar} 
+                          alt={rev.author} 
+                          className="ihr-critic-avatar press-avatar"
+                          onError={(e) => { e.target.src = '/favicon.png'; }}
+                        />
+                        <div className="ihr-critic-text">
+                          <span className="ihr-critic-name">{rev.author}</span>
+                          <span className="ihr-critic-sub">{rev.outlet || 'Verified Press Review'}</span>
+                        </div>
+                      </div>
+
+                      <div className="ihr-meta-right">
+                        <div className={`verdict-badge ${oakRemark.badgeClass}`} title={oakRemark.meaning}>
+                          <img src={oakRemark.icon} alt={oakRemark.title} className="verdict-badge-icon" />
+                          <span>{oakRemark.title}</span>
+                        </div>
+                        {rev.date && (
+                          <span className="ihr-date">
+                            <Calendar size={12} />
+                            {rev.date}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+
+                    <div className="ihr-rating-row">
+                      <div className="ihr-rating-pill">
+                        <img src={oakRemark.icon} alt={oakRemark.title} className="oakshow-cert-icon-inline" />
+                        <span className="ihr-score">{rev.rating || `${rev.score}/5`}</span>
+                      </div>
+                      <div className="ihr-meter-wrap">
+                        <div className="ihr-meter-fill" style={{ width: `${pct}%` }} />
+                      </div>
+                      <span className="ihr-verdict-label">{oakRemark.shortLabel}</span>
+                    </div>
+
+                    <h3 className="ihr-headline" onClick={() => setActiveInternalReviewModal(rev)}>
+                      "{rev.title}"
+                    </h3>
+
+                    <p className="ihr-excerpt">
+                      {rev.excerpt || (rev.fullReview ? rev.fullReview.slice(0, 160) + '...' : '')}
+                    </p>
+
+                    <div className="ihr-actions">
+                      <button className="btn btn-gold ihr-read-btn" onClick={() => setActiveInternalReviewModal(rev)}>
+                        <BookOpen size={14} />
+                        <span>Read Press Review</span>
+                      </button>
+                      {rev.url && rev.url !== '#' && (
+                        <a 
+                          href={rev.url} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="btn btn-secondary ihr-profile-btn"
+                        >
+                          <ExternalLink size={14} />
+                          <span>Original Article</span>
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  };
 
   return (
     <div className="movie-page-root animate-fade-in">
@@ -509,11 +743,11 @@ export default function MovieDetailPage({
 
                 <button 
                   type="button"
-                  className={`mh-nav-pill ${activeTab === 'articles' || activeTab === 'community' ? 'active' : ''}`}
-                  onClick={() => handleTabSelect(movie.articles && movie.articles.length > 0 ? 'articles' : 'community')}
+                  className={`mh-nav-pill ${activeTab === 'in-house-reviews' || activeTab === 'articles' || activeTab === 'community' ? 'active' : ''}`}
+                  onClick={() => handleTabSelect(oakshowStaffReviews.length > 0 ? 'in-house-reviews' : (internalReviews.length > 0 ? 'in-house-reviews' : (movie.articles && movie.articles.length > 0 ? 'articles' : 'community')))}
                 >
                   <Award size={12} className="mh-nav-icon text-accent" />
-                  <span>Reviews</span>
+                  <span>In-House Reviews {oakshowStaffReviews.length > 0 ? `(${oakshowStaffReviews.length})` : (internalReviews.length > 0 ? `(${internalReviews.length})` : '')}</span>
                 </button>
 
                 <button 
@@ -730,6 +964,15 @@ export default function MovieDetailPage({
             <span>All Ratings & Overview ({allRatings.length})</span>
           </button>
 
+          {internalReviews.length > 0 && (
+            <button 
+              className={`movie-tab-btn ${activeTab === 'in-house-reviews' ? 'active' : ''}`}
+              onClick={() => handleTabSelect('in-house-reviews')}
+            >
+              <span>OakShow In-House Critic Reviews {oakshowStaffReviews.length > 0 ? `(${oakshowStaffReviews.length})` : `(${internalReviews.length})`}</span>
+            </button>
+          )}
+
           {movie.articles && movie.articles.length > 0 && (
             <button 
               className={`movie-tab-btn ${activeTab === 'articles' ? 'active' : ''}`}
@@ -801,93 +1044,7 @@ export default function MovieDetailPage({
         {activeTab === 'overview' && (
           <div className="tab-pane animate-fade-in">
             {/* OAKSHOW IN-HOUSE CRITIC REVIEWS COLUMN (Displayed ONLY if internal reviews exist) */}
-            {internalReviews.length > 0 && (
-              <div className="section-block in-house-critic-section">
-                <div className="section-header-row">
-                  <div className="section-title-wrap">
-                    <Award size={22} className="text-gold" />
-                    <h2>OakShow In-House Critic Review ({internalReviews.length} Official {internalReviews.length > 1 ? 'Reviews' : 'Review'})</h2>
-                  </div>
-                  <span className="section-badge badge-gold">OakShow Certified Editorial</span>
-                </div>
-
-                <div className="in-house-reviews-grid">
-                  {internalReviews.map((rev, idx) => {
-                    const oakRemark = getOakShowRemark(rev.score != null ? rev.score : rev.remark);
-                    const avatar = rev.criticAvatar ? (rev.criticAvatar.startsWith('/') ? rev.criticAvatar : `/${rev.criticAvatar}`) : '/favicon.png';
-                    const pct = (rev.score / 5) * 100;
-
-                    return (
-                      <div key={idx} className={`in-house-review-card glass-card ${oakRemark.badgeClass}`}>
-                        <div className="ihr-top-bar">
-                          <div 
-                            className="ihr-critic-info hover-link"
-                            onClick={() => onNavigate(`critic/${rev.criticId || rev.author}`)}
-                          >
-                            <img 
-                              src={avatar} 
-                              alt={rev.author} 
-                              className="ihr-critic-avatar"
-                              onError={(e) => { e.target.src = '/favicon.png'; }}
-                            />
-                            <div className="ihr-critic-text">
-                              <span className="ihr-critic-name">{rev.author}</span>
-                              <span className="ihr-critic-sub">OakShow Certified Critic</span>
-                            </div>
-                          </div>
-
-                          <div className="ihr-meta-right">
-                            <div className={`verdict-badge ${oakRemark.badgeClass}`} title={oakRemark.meaning}>
-                              <img src={oakRemark.icon} alt={oakRemark.title} className="verdict-badge-icon" />
-                              <span>{oakRemark.title}</span>
-                            </div>
-                            {rev.date && (
-                              <span className="ihr-date">
-                                <Calendar size={12} />
-                                {rev.date}
-                              </span>
-                            )}
-                          </div>
-                        </div>
-
-                        <div className="ihr-rating-row">
-                          <div className="ihr-rating-pill">
-                            <img src={oakRemark.icon} alt={oakRemark.title} className="oakshow-cert-icon-inline" />
-                            <span className="ihr-score">{rev.rating || `${rev.score}/5`}</span>
-                          </div>
-                          <div className="ihr-meter-wrap">
-                            <div className="ihr-meter-fill" style={{ width: `${pct}%` }} />
-                          </div>
-                          <span className="ihr-verdict-label">{oakRemark.shortLabel}</span>
-                        </div>
-
-                        <h3 className="ihr-headline" onClick={() => setActiveInternalReviewModal(rev)}>
-                          "{rev.title}"
-                        </h3>
-
-                        <p className="ihr-excerpt">
-                          {rev.excerpt}
-                        </p>
-
-                        <div className="ihr-actions">
-                          <button className="btn btn-gold ihr-read-btn" onClick={() => setActiveInternalReviewModal(rev)}>
-                            <BookOpen size={14} />
-                            <span>Read Full In-House Review</span>
-                          </button>
-                          <button 
-                            className="btn btn-secondary ihr-profile-btn"
-                            onClick={() => onNavigate(`critic/${rev.criticId || rev.author}`)}
-                          >
-                            <Users size={14} />
-                            <span>Critic Profile</span>
-                          </button>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
+            {renderInHouseReviewsSection()}
 
             {/* All Verified Ratings Cards Grid */}
             <div className="section-block">
@@ -976,74 +1133,80 @@ export default function MovieDetailPage({
             </div>
 
             {/* Box Office Performance & Financial Breakdown */}
-            {movie.boxOffice && (
-              <div className="section-block boxoffice-section">
-                <div className="section-header-row">
-                  <div className="section-title-wrap">
-                    <TrendingUp size={20} className="text-emerald" />
-                    <h2>Box Office Collections & Financial Verdict</h2>
-                  </div>
-                  {movie.boxOffice.verdict && (
-                    <span className="badge badge-emerald">🏆 {movie.boxOffice.verdict}</span>
-                  )}
-                </div>
+            {movie.boxOffice && (() => {
+              const bo = typeof movie.boxOffice === 'object' 
+                ? movie.boxOffice 
+                : { worldwideGross: movie.boxOffice, budget: movie.budget, verdict: 'Commercial Success' };
 
-                <div className="boxoffice-card glass-panel">
-                  <div className="bo-main-highlight">
-                    <div className="bo-main-stat">
-                      <span className="bo-stat-label">Worldwide Box Office Gross</span>
-                      <span className="bo-stat-val text-emerald">{movie.boxOffice.worldwideGross || '—'}</span>
+              return (
+                <div className="section-block boxoffice-section">
+                  <div className="section-header-row">
+                    <div className="section-title-wrap">
+                      <TrendingUp size={20} className="text-emerald" />
+                      <h2>Box Office Collections & Financial Verdict</h2>
                     </div>
-                    {movie.boxOffice.verdict && (
-                      <div className="bo-verdict-tag">
-                        <span>Commercial Status:</span>
-                        <strong>{movie.boxOffice.verdict}</strong>
-                      </div>
+                    {bo.verdict && (
+                      <span className="badge badge-emerald">🏆 {bo.verdict}</span>
                     )}
                   </div>
 
-                  <div className="bo-metrics-grid">
-                    {movie.boxOffice.openingDay && (
-                      <div className="bo-metric-box">
-                        <span className="bo-m-label">Opening Day</span>
-                        <span className="bo-m-val">{movie.boxOffice.openingDay}</span>
+                  <div className="boxoffice-card glass-panel">
+                    <div className="bo-main-highlight">
+                      <div className="bo-main-stat">
+                        <span className="bo-stat-label">Worldwide Box Office Gross</span>
+                        <span className="bo-stat-val text-emerald">{bo.worldwideGross || bo.gross || '—'}</span>
                       </div>
-                    )}
-                    {movie.boxOffice.openingWeekend && (
-                      <div className="bo-metric-box">
-                        <span className="bo-m-label">Opening Weekend</span>
-                        <span className="bo-m-val">{movie.boxOffice.openingWeekend}</span>
-                      </div>
-                    )}
-                    {movie.boxOffice.indiaGross && (
-                      <div className="bo-metric-box">
-                        <span className="bo-m-label">India Gross</span>
-                        <span className="bo-m-val">{movie.boxOffice.indiaGross}</span>
-                      </div>
-                    )}
-                    {movie.boxOffice.overseasGross && (
-                      <div className="bo-metric-box">
-                        <span className="bo-m-label">Overseas Total</span>
-                        <span className="bo-m-val">{movie.boxOffice.overseasGross}</span>
-                      </div>
-                    )}
-                    {movie.boxOffice.budget && (
-                      <div className="bo-metric-box">
-                        <span className="bo-m-label">Estimated Budget</span>
-                        <span className="bo-m-val">{movie.boxOffice.budget}</span>
-                      </div>
-                    )}
-                  </div>
-
-                  {(movie.boxOffice.lastUpdated || movie.boxOffice.source) && (
-                    <div className="bo-footer-meta">
-                      {movie.boxOffice.lastUpdated && <span>Updated: {movie.boxOffice.lastUpdated}</span>}
-                      {movie.boxOffice.source && <span> • Source: {movie.boxOffice.source}</span>}
+                      {bo.verdict && (
+                        <div className="bo-verdict-tag">
+                          <span>Commercial Status:</span>
+                          <strong>{bo.verdict}</strong>
+                        </div>
+                      )}
                     </div>
-                  )}
+
+                    <div className="bo-metrics-grid">
+                      {bo.openingDay && (
+                        <div className="bo-metric-box">
+                          <span className="bo-m-label">Opening Day</span>
+                          <span className="bo-m-val">{bo.openingDay}</span>
+                        </div>
+                      )}
+                      {bo.openingWeekend && (
+                        <div className="bo-metric-box">
+                          <span className="bo-m-label">Opening Weekend</span>
+                          <span className="bo-m-val">{bo.openingWeekend}</span>
+                        </div>
+                      )}
+                      {bo.indiaGross && (
+                        <div className="bo-metric-box">
+                          <span className="bo-m-label">India Gross</span>
+                          <span className="bo-m-val">{bo.indiaGross}</span>
+                        </div>
+                      )}
+                      {bo.overseasGross && (
+                        <div className="bo-metric-box">
+                          <span className="bo-m-label">Overseas Total</span>
+                          <span className="bo-m-val">{bo.overseasGross}</span>
+                        </div>
+                      )}
+                      {(bo.budget || movie.budget) && (
+                        <div className="bo-metric-box">
+                          <span className="bo-m-label">Estimated Budget</span>
+                          <span className="bo-m-val">{bo.budget || movie.budget}</span>
+                        </div>
+                      )}
+                    </div>
+
+                    {(bo.lastUpdated || bo.source) && (
+                      <div className="bo-footer-meta">
+                        {bo.lastUpdated && <span>Updated: {bo.lastUpdated}</span>}
+                        {bo.source && <span> • Source: {bo.source}</span>}
+                      </div>
+                    )}
+                  </div>
                 </div>
-              </div>
-            )}
+              );
+            })()}
 
             {/* SQUEEZED 3 LARGER DIMENSION CINEMA STILLS & POSTERS SHOWCASE */}
             {movieStills.length > 0 && (
@@ -1419,9 +1582,17 @@ export default function MovieDetailPage({
           </div>
         )}
 
+        {/* Dedicated Tab: OAKSHOW IN-HOUSE CRITIC REVIEWS */}
+        {activeTab === 'in-house-reviews' && (
+          <div className="tab-pane animate-fade-in">
+            {renderInHouseReviewsSection()}
+          </div>
+        )}
+
         {/* Tab: REVIEWS & NEWS REPORTS */}
         {activeTab === 'articles' && (
           <div className="tab-pane animate-fade-in">
+            {renderInHouseReviewsSection()}
             <div className="section-block">
               <div className="section-header-row">
                 <div className="section-title-wrap">
@@ -2139,8 +2310,10 @@ export default function MovieDetailPage({
               <h2 className="reader-title">{activeInternalReviewModal.title}</h2>
 
               <div className="reader-article-content">
-                {activeInternalReviewModal.fullReview.split('\n\n').map((p, idx) => (
-                  <p key={idx}>{p}</p>
+                {(activeInternalReviewModal.fullReview || activeInternalReviewModal.excerpt || 'Review details coming soon.')
+                  .split('\n\n')
+                  .map((p, idx) => (
+                    <p key={idx}>{p}</p>
                 ))}
               </div>
             </div>

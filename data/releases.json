@@ -1,12 +1,86 @@
 [
   {
+    "id": "IndianReleases2026September",
+    "title": "Indian Movies Released On September 2026",
+    "year": "2026",
+    "month": "September",
+    "category": "Indian",
+    "filename": "IndianReleases2026September.html",
+    "totalItems": 2,
+    "items": [
+      {
+        "title": "The Paradise",
+        "poster": "pics/Films/TheParadise/1.jpg",
+        "alt": "The Paradise",
+        "language": "Telugu",
+        "category": "Indian",
+        "releaseDate": "September 24, 2026",
+        "genre": "Action, Drama, Period",
+        "moreLink": "TheParadise.html",
+        "trailerLink": "https://www.youtube.com/watch?v=Y3xewv1ZnHc",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "5.0/10",
+            "url": "TheParadise.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-this-one-is-above-average.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "6.3/10",
+            "url": "https://www.imdb.com/title/tt38573542/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "36%",
+            "url": "https://www.rottentomatoes.com/m/the_paradise_2026",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-rotten.png"
+          }
+        ]
+      },
+      {
+        "title": "Dhoomakethu",
+        "poster": "pics/Films/Dhoomakethu/1.jpeg",
+        "alt": "Dhoomakethu",
+        "language": "Malayalam",
+        "category": "Indian",
+        "releaseDate": "September 25, 2026",
+        "genre": "Comedy, Thriller, Fantasy, Sci-Fi",
+        "status": "released",
+        "moreLink": "Dhoomakethu.html",
+        "trailerLink": "https://www.youtube.com/watch?v=cMAZtuZx01A",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "6/10",
+            "url": "Dhoomakethu.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+          },
+          {
+            "source": "The Indian Express",
+            "score": "2.5/5",
+            "url": "https://indianexpress.com/article/entertainment/movie-review/dhoomakethu-movie-review-sajin-gopu-nikhila-vimal-quirky-time-loop-comedy-stuck-own-loop-10893039/",
+            "icon": "pics/RatingSiteLogos/indian-express.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "TBD",
+            "url": "https://www.imdb.com/title/tt38990864/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "HollywoodReleases2026September",
     "title": "Hollywood Movies Released On September 2026",
     "year": "2026",
     "month": "September",
     "category": "Hollywood",
     "filename": "HollywoodReleases2026September.html",
-    "totalItems": 3,
+    "totalItems": 4,
     "items": [
       {
         "title": "Runner",
@@ -254,6 +328,49 @@
             "score": "8/10",
             "url": "https://timesofindia.indiatimes.com/entertainment/english/movie-reviews/resident-evil/movie-review/134312484.cms",
             "icon": "pics/RatingSiteLogos/times-of-india.ico"
+          }
+        ]
+      },
+      {
+        "title": "Forgotten Island",
+        "poster": "pics/Films/ForgottenIsland/1.jpg",
+        "alt": "Forgotten Island",
+        "language": "English",
+        "category": "Hollywood",
+        "releaseDate": "September 25, 2026",
+        "genre": "Animation, Adventure, Comedy, Fantasy",
+        "moreLink": "ForgottenIsland.html",
+        "trailerLink": "https://www.youtube.com/watch?v=a8RHqN93qfo",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "After Release",
+            "url": "",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "TBD",
+            "url": "https://www.imdb.com/title/tt36583977/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "IGN",
+            "score": "9/10",
+            "url": "https://www.ign.com/articles/forgotten-island-review",
+            "icon": "pics/RatingSiteLogos/ign.png"
+          },
+          {
+            "source": "Common Sense Media",
+            "score": "4/5",
+            "url": "https://www.commonsensemedia.org/movie-reviews/forgotten-island",
+            "icon": "pics/RatingSiteLogos/common-sense-media.png"
+          },
+          {
+            "source": "Letterboxd",
+            "score": "3.8/5",
+            "url": "https://letterboxd.com/film/forgotten-island-2026/",
+            "icon": "pics/RatingSiteLogos/letterboxd.png"
           }
         ]
       }

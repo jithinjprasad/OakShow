@@ -125,7 +125,14 @@ function loadJson(filename) {
 }
 
 async function run() {
-  console.log('🚀 Starting OakShow Multi-Page Static Site Generator (SSG)...');
+  const targetArg = process.argv.find(arg => arg.startsWith('--target=') || arg.startsWith('--movie=') || arg.startsWith('--only='));
+  const target = targetArg ? targetArg.split('=')[1].trim().toLowerCase().replace(/\.html$/, '') : null;
+
+  if (target) {
+    console.log(`🎯 TARGETED SSG MODE: Prerendering ONLY files matching "${target}". All other movie, series, and hub pages will NOT be touched.`);
+  } else {
+    console.log('🚀 Starting OakShow Multi-Page Static Site Generator (SSG)...');
+  }
 
   const indexHtmlPath = path.join(distDir, 'index.html');
   if (!fs.existsSync(indexHtmlPath)) {
@@ -138,13 +145,24 @@ async function run() {
   let count = 0;
 
   // 1. Process Movies
-  const movies = loadJson('movies.json');
-  console.log(`📦 Prerendering ${movies.length} movies...`);
+  const allMovies = loadJson('movies.json');
+  const movies = target
+    ? allMovies.filter(m => {
+        const fileProp = (m.fileName || m.filename || '').toLowerCase().replace(/\.html$/, '');
+        const idProp = (m.id || '').toLowerCase();
+        const titleProp = (m.title || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+        const cleanTarget = target.replace(/[^a-z0-9]/g, '');
+        return idProp === target || fileProp === target || titleProp === cleanTarget;
+      })
+    : allMovies;
 
-  for (const m of movies) {
-    const fileProp = m.fileName || m.filename;
-    const filename = fileProp ? fileProp.replace(/^\/+/, '') : (m.id ? `${m.id}.html` : null);
-    if (!filename) continue;
+  if (movies.length > 0) {
+    console.log(`📦 Prerendering ${movies.length} movie(s)...`);
+
+    for (const m of movies) {
+      const fileProp = m.fileName || m.filename;
+      const filename = fileProp ? fileProp.replace(/^\/+/, '') : (m.id ? `${m.id}.html` : null);
+      if (!filename) continue;
 
     const outPath = path.join(distDir, filename);
     const outDir = path.dirname(outPath);
@@ -204,17 +222,27 @@ async function run() {
       }
     }
   }
+  }
 
   // 2. Process Web Series
-  const series = loadJson('series.json');
-  console.log(`📦 Prerendering ${series.length} web series...`);
+  const allSeries = loadJson('series.json');
+  const series = target
+    ? allSeries.filter(s => {
+        const fileProp = (s.filename || '').toLowerCase().replace(/\.html$/, '');
+        const idProp = (s.id || '').toLowerCase();
+        return idProp === target || fileProp === target;
+      })
+    : allSeries;
 
-  for (const s of series) {
-    const filename = s.filename ? s.filename.replace(/^\/+/, '') : (s.id ? `${s.id}.html` : null);
-    if (!filename) continue;
+  if (series.length > 0) {
+    console.log(`📦 Prerendering ${series.length} web series...`);
 
-    const outPath = path.join(distDir, filename);
-    const outDir = path.dirname(outPath);
+    for (const s of series) {
+      const filename = s.filename ? s.filename.replace(/^\/+/, '') : (s.id ? `${s.id}.html` : null);
+      if (!filename) continue;
+
+      const outPath = path.join(distDir, filename);
+      const outDir = path.dirname(outPath);
     if (!fs.existsSync(outDir)) {
       fs.mkdirSync(outDir, { recursive: true });
     }
@@ -303,9 +331,10 @@ async function run() {
       }
     }
   }
+  }
 
   // 3. Process Category Hubs & Specialty Portals
-  const hubs = [
+  const allHubs = [
     { filename: 'indian.html', title: 'Indian Cinema (Bollywood, Tollywood, Kollywood & Mollywood) — OakShow', desc: 'Browse verified ratings, reviews, streaming providers and bookings for Indian movies.' },
     { filename: 'hollywood.html', title: 'Hollywood Studio Blockbusters & Classics — OakShow', desc: 'Browse verified ratings, reviews, streaming providers and bookings for Hollywood blockbusters.' },
     { filename: 'international.html', title: 'International Cinema, Anime & World Movies — OakShow', desc: 'Explore global cinema, Japanese anime, and European releases on OakShow.' },
@@ -340,155 +369,180 @@ async function run() {
     { filename: 'careers.html', title: 'Careers at OakShow | Now Become a Critic', desc: 'Be a critic with OakShow. Join the OakForce and publish your movie, series, and video game reviews with full credits.', ogImage: `${DOMAIN}/images/become-a-movie-critic.jpg` }
   ];
 
-  console.log(`📦 Prerendering ${hubs.length} category hubs & index sections...`);
+  const hubs = target
+    ? allHubs.filter(h => h.filename.toLowerCase().replace(/\.html$/, '') === target)
+    : allHubs;
 
-  for (const h of hubs) {
-    const outPath = path.join(distDir, h.filename);
-    const canonical = `${DOMAIN}/${h.filename}`;
-    let bodyContent = `
-      <h1>${escapeHtml(h.title)}</h1>
-      <p>${escapeHtml(h.desc)}</p>
-      <p><a href="${DOMAIN}/">Explore OakShow Homepage</a></p>
-    `;
+  if (hubs.length > 0) {
+    console.log(`📦 Prerendering ${hubs.length} category hub(s)...`);
 
-    if (h.filename.toLowerCase().startsWith('careers')) {
-      bodyContent = `
-        <div class="careers-prerender-container" style="max-width:900px;margin:0 auto;padding:24px;font-family:sans-serif;">
-          <h1>Careers at OakShow | Now Become a Critic</h1>
-          <p>Have you ever dreamed to be a movie/series/game critic? With OakShow, we provide the platform for each and every movie, series, and game buff to explore the world of becoming a critic.</p>
-          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:20px 0;background:#000;">
-            <iframe src="https://player.vimeo.com/video/318354607" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="autoplay; fullscreen" allowfullscreen></iframe>
-          </div>
-          <h3>Submit Your Critic Application</h3>
-          <form action="https://formspree.io/oakshow0@gmail.com" method="post" style="display:flex;flex-direction:column;gap:12px;max-width:500px;">
-            <input type="text" name="Your Name" placeholder="Your Name" required style="padding:10px;" />
-            <input type="email" name="Your Email" placeholder="Your Email" required style="padding:10px;" />
-            <input type="tel" name="Phone Number" placeholder="Phone Number" required style="padding:10px;" />
-            <textarea name="Message" placeholder="Message & Sample Review" required rows="4" style="padding:10px;"></textarea>
-            <input type="submit" value="Submit Application" style="padding:12px;background:#0284c7;color:#fff;border:none;cursor:pointer;font-weight:bold;" />
-          </form>
-          <div style="margin-top:30px;">
-            <p><strong>The OakForce:</strong> "Just For the record, our force is 'Gender Neutral', 'Race Neutral', 'Religious Neutral' and 'Political Neutral', We are the OakForce. PS: Thanks Deadpool 2"</p>
-          </div>
-        </div>
+    for (const h of hubs) {
+      const outPath = path.join(distDir, h.filename);
+      const canonical = `${DOMAIN}/${h.filename}`;
+      let bodyContent = `
+        <h1>${escapeHtml(h.title)}</h1>
+        <p>${escapeHtml(h.desc)}</p>
+        <p><a href="${DOMAIN}/">Explore OakShow Homepage</a></p>
       `;
+
+      if (h.filename.toLowerCase().startsWith('careers')) {
+        bodyContent = `
+          <div class="careers-prerender-container" style="max-width:900px;margin:0 auto;padding:24px;font-family:sans-serif;">
+            <h1>Careers at OakShow | Now Become a Critic</h1>
+            <p>Have you ever dreamed to be a movie/series/game critic? With OakShow, we provide the platform for each and every movie, series, and game buff to explore the world of becoming a critic.</p>
+            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:20px 0;background:#000;">
+              <iframe src="https://player.vimeo.com/video/318354607" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+            <h3>Submit Your Critic Application</h3>
+            <form action="https://formspree.io/oakshow0@gmail.com" method="post" style="display:flex;flex-direction:column;gap:12px;max-width:500px;">
+              <input type="text" name="Your Name" placeholder="Your Name" required style="padding:10px;" />
+              <input type="email" name="Your Email" placeholder="Your Email" required style="padding:10px;" />
+              <input type="tel" name="Phone Number" placeholder="Phone Number" required style="padding:10px;" />
+              <textarea name="Message" placeholder="Message & Sample Review" required rows="4" style="padding:10px;"></textarea>
+              <input type="submit" value="Submit Application" style="padding:12px;background:#0284c7;color:#fff;border:none;cursor:pointer;font-weight:bold;" />
+            </form>
+            <div style="margin-top:30px;">
+              <p><strong>The OakForce:</strong> "Just For the record, our force is 'Gender Neutral', 'Race Neutral', 'Religious Neutral' and 'Political Neutral', We are the OakForce. PS: Thanks Deadpool 2"</p>
+            </div>
+          </div>
+        `;
+      }
+
+      const html = generatePrerenderHtml(baseHtml, {
+        title: h.title,
+        description: h.desc,
+        canonicalUrl: canonical,
+        ogImage: h.ogImage || `${DOMAIN}/favicon.png`,
+        ogType: 'website',
+        bodyContent
+      });
+
+      fs.writeFileSync(outPath, html, 'utf8');
+      count++;
     }
-
-    const html = generatePrerenderHtml(baseHtml, {
-      title: h.title,
-      description: h.desc,
-      canonicalUrl: canonical,
-      ogImage: h.ogImage || `${DOMAIN}/favicon.png`,
-      ogType: 'website',
-      bodyContent
-    });
-
-    fs.writeFileSync(outPath, html, 'utf8');
-    count++;
   }
 
   // 4. Specific Emergencies
-  const emergencies = [
+  const allEmergencies = [
     { filename: 'keralafloods.html', title: '2018 Kerala Floods Relief, Helplines & Rescue Portals — OakShow Emergency', desc: 'Official relief funds, district control rooms, emergency helplines and rescue contacts for Kerala Floods 2018.' },
     { filename: 'keralafloods2019.html', title: '2019 Kerala Floods Relief, District Helplines & CMDRF — OakShow Emergency', desc: 'Official relief funds, district control rooms, and emergency helplines for Kerala Floods 2019.' },
     { filename: 'coronavirusoutbreak.html', title: 'COVID-19 Coronavirus Outbreak Helplines, Relief Funds & Advisories — OakShow Emergency', desc: 'Official emergency helplines, testing centers, PM CARES fund and verified medical advisories.' }
   ];
 
-  for (const em of emergencies) {
-    const outPath = path.join(distDir, em.filename);
-    const canonical = `${DOMAIN}/${em.filename}`;
-    const html = generatePrerenderHtml(baseHtml, {
-      title: em.title,
-      description: em.desc,
-      canonicalUrl: canonical,
-      ogImage: `${DOMAIN}/favicon.png`,
-      ogType: 'website'
-    });
-    fs.writeFileSync(outPath, html, 'utf8');
-    count++;
-  }
+  const emergencies = target
+    ? allEmergencies.filter(em => em.filename.toLowerCase().replace(/\.html$/, '') === target)
+    : allEmergencies;
 
-  // 5. Process Critic Reviews
-  const reviews = loadJson('reviews.json');
-  console.log(`📦 Prerendering ${reviews.length} critic reviews...`);
-
-  for (const rev of reviews) {
-    if (!rev.id && !rev.link) continue;
-    const filename = rev.link ? rev.link.replace(/^\/+/, '') : `${rev.id}.html`;
-    const cleanFilename = filename.endsWith('.html') ? filename : `${filename}.html`;
-
-    const outPath = path.join(distDir, cleanFilename);
-    const outDir = path.dirname(outPath);
-    if (!fs.existsSync(outDir)) {
-      fs.mkdirSync(outDir, { recursive: true });
-    }
-
-    const title = `${rev.title || 'OakShow Critic Review'} — Certified Rating & Remarks`;
-    const desc = rev.excerpt || rev.fullReview?.slice(0, 160) || `Check verified movie review by ${rev.author} on OakShow.`;
-    const canonical = `${DOMAIN}/${cleanFilename}`;
-    const ogImage = rev.banner ? `${DOMAIN}/${rev.banner.replace(/^\/+/, '')}` : `${DOMAIN}/favicon.png`;
-
-    const schema = {
-      '@context': 'https://schema.org',
-      '@type': 'Review',
-      'name': rev.title,
-      'description': desc,
-      'image': ogImage,
-      'url': canonical,
-      'author': {
-        '@type': 'Person',
-        'name': rev.author || 'OakShow Critic'
-      },
-      'reviewRating': {
-        '@type': 'Rating',
-        'ratingValue': rev.score || 4,
-        'bestRating': '5'
-      }
-    };
-
-    const bodyContent = `
-      <h1>${escapeHtml(rev.title)}</h1>
-      <p><strong>Reviewer:</strong> ${escapeHtml(rev.author)} | <strong>Verdict:</strong> ${escapeHtml(rev.remark || 'Certified Review')}</p>
-      <p>${escapeHtml(desc)}</p>
-      <p><a href="${DOMAIN}/OakShowReviews.html">Back to All OakShow Reviews</a></p>
-    `;
-
-    const html = generatePrerenderHtml(baseHtml, {
-      title,
-      description: desc,
-      canonicalUrl: canonical,
-      ogImage,
-      ogType: 'article',
-      schemaJson: schema,
-      bodyContent
-    });
-
-    fs.writeFileSync(outPath, html, 'utf8');
-    count++;
-
-    // Also prerender legacy paths in dist/Profiles/CriticProfiles/... so direct visits or crawler hits get the new version
-    if (rev.author) {
-      const a = rev.author.toLowerCase();
-      let authorFolder = 'JithinJPrasad';
-      if (a.includes('abhijith')) authorFolder = 'AbhijithAG';
-      else if (a.includes('manoj')) authorFolder = 'ManojAswin';
-      else if (a.includes('vishnu')) authorFolder = 'VishnuPc';
-      else if (a.includes('oakshow')) authorFolder = 'MsMrOakShow';
-      else if (a.includes('achuthan')) authorFolder = 'AchuthanKarnnan';
-
-      const legacyRelPath = path.join('Profiles', 'CriticProfiles', authorFolder, cleanFilename);
-      const legacyOutPath = path.join(distDir, legacyRelPath);
-      const legacyOutDir = path.dirname(legacyOutPath);
-      if (!fs.existsSync(legacyOutDir)) {
-        fs.mkdirSync(legacyOutDir, { recursive: true });
-      }
-      fs.writeFileSync(legacyOutPath, html, 'utf8');
+  if (emergencies.length > 0) {
+    for (const em of emergencies) {
+      const outPath = path.join(distDir, em.filename);
+      const canonical = `${DOMAIN}/${em.filename}`;
+      const html = generatePrerenderHtml(baseHtml, {
+        title: em.title,
+        description: em.desc,
+        canonicalUrl: canonical,
+        ogImage: `${DOMAIN}/favicon.png`,
+        ogType: 'website'
+      });
+      fs.writeFileSync(outPath, html, 'utf8');
       count++;
     }
   }
 
+  // 5. Process Critic Reviews
+  const allReviews = loadJson('reviews.json');
+  const reviews = target
+    ? allReviews.filter(rev => {
+        const targetClean = target.replace(/[^a-z0-9]/g, '');
+        const movieIdMatch = rev.movieId && rev.movieId.toLowerCase().replace(/[^a-z0-9]/g, '') === targetClean;
+        const linkMatch = rev.link && rev.link.toLowerCase().replace(/[^a-z0-9]/g, '').includes(targetClean);
+        const titleMatch = rev.title && rev.title.toLowerCase().replace(/[^a-z0-9]/g, '').includes(targetClean);
+        const idMatch = rev.id && rev.id.toLowerCase().replace(/[^a-z0-9]/g, '').includes(targetClean);
+        return movieIdMatch || linkMatch || titleMatch || idMatch;
+      })
+    : allReviews;
+
+  if (reviews.length > 0) {
+    console.log(`📦 Prerendering ${reviews.length} critic review(s)...`);
+
+    for (const rev of reviews) {
+      if (!rev.id && !rev.link) continue;
+      const filename = rev.link ? rev.link.replace(/^\/+/, '') : `${rev.id}.html`;
+      const cleanFilename = filename.endsWith('.html') ? filename : `${filename}.html`;
+
+      const outPath = path.join(distDir, cleanFilename);
+      const outDir = path.dirname(outPath);
+      if (!fs.existsSync(outDir)) {
+        fs.mkdirSync(outDir, { recursive: true });
+      }
+
+      const title = `${rev.title || 'OakShow Critic Review'} — Certified Rating & Remarks`;
+      const desc = rev.excerpt || rev.fullReview?.slice(0, 160) || `Check verified movie review by ${rev.author} on OakShow.`;
+      const canonical = `${DOMAIN}/${cleanFilename}`;
+      const ogImage = rev.banner ? `${DOMAIN}/${rev.banner.replace(/^\/+/, '')}` : `${DOMAIN}/favicon.png`;
+
+      const schema = {
+        '@context': 'https://schema.org',
+        '@type': 'Review',
+        'name': rev.title,
+        'description': desc,
+        'image': ogImage,
+        'url': canonical,
+        'author': {
+          '@type': 'Person',
+          'name': rev.author || 'OakShow Critic'
+        },
+        'reviewRating': {
+          '@type': 'Rating',
+          'ratingValue': rev.score || 4,
+          'bestRating': '5'
+        }
+      };
+
+      const bodyContent = `
+        <h1>${escapeHtml(rev.title)}</h1>
+        <p><strong>Reviewer:</strong> ${escapeHtml(rev.author)} | <strong>Verdict:</strong> ${escapeHtml(rev.remark || 'Certified Review')}</p>
+        <p>${escapeHtml(desc)}</p>
+        <p><a href="${DOMAIN}/OakShowReviews.html">Back to All OakShow Reviews</a></p>
+      `;
+
+      const html = generatePrerenderHtml(baseHtml, {
+        title,
+        description: desc,
+        canonicalUrl: canonical,
+        ogImage,
+        ogType: 'article',
+        schemaJson: schema,
+        bodyContent
+      });
+
+      fs.writeFileSync(outPath, html, 'utf8');
+      count++;
+
+      // Also prerender legacy paths in dist/Profiles/CriticProfiles/... so direct visits or crawler hits get the new version
+      if (rev.author) {
+        const a = rev.author.toLowerCase();
+        let authorFolder = 'JithinJPrasad';
+        if (a.includes('abhijith')) authorFolder = 'AbhijithAG';
+        else if (a.includes('manoj')) authorFolder = 'ManojAswin';
+        else if (a.includes('vishnu')) authorFolder = 'VishnuPc';
+        else if (a.includes('oakshow')) authorFolder = 'MsMrOakShow';
+        else if (a.includes('achuthan')) authorFolder = 'AchuthanKarnnan';
+
+        const legacyRelPath = path.join('Profiles', 'CriticProfiles', authorFolder, cleanFilename);
+        const legacyOutPath = path.join(distDir, legacyRelPath);
+        const legacyOutDir = path.dirname(legacyOutPath);
+        if (!fs.existsSync(legacyOutDir)) {
+          fs.mkdirSync(legacyOutDir, { recursive: true });
+        }
+        fs.writeFileSync(legacyOutPath, html, 'utf8');
+        count++;
+      }
+    }
+  }
+
   // 6. Prerender Critic Profiles
-  const criticsList = [
+  const allCritics = [
     { id: 'abhijithag', folder: 'AbhijithAG', name: 'Abhijith A G' },
     { id: 'jithinjprasad', folder: 'JithinJPrasad', name: 'Jithin J Prasad' },
     { id: 'achuthankarnnan', folder: 'AchuthanKarnnan', name: 'Achuthan Karnnan' },
@@ -497,29 +551,35 @@ async function run() {
     { id: 'msmroakshow', folder: 'MsMrOakShow', name: 'OakShow (Ms. & Mr. OakShow)' }
   ];
 
-  for (const c of criticsList) {
-    const profilePath = path.join(distDir, 'Profiles', 'CriticProfiles', c.folder, 'index.html');
-    const profileDir = path.dirname(profilePath);
-    if (!fs.existsSync(profileDir)) {
-      fs.mkdirSync(profileDir, { recursive: true });
+  const criticsList = target
+    ? allCritics.filter(c => c.id.toLowerCase() === target || c.folder.toLowerCase() === target)
+    : allCritics;
+
+  if (criticsList.length > 0) {
+    for (const c of criticsList) {
+      const profilePath = path.join(distDir, 'Profiles', 'CriticProfiles', c.folder, 'index.html');
+      const profileDir = path.dirname(profilePath);
+      if (!fs.existsSync(profileDir)) {
+        fs.mkdirSync(profileDir, { recursive: true });
+      }
+
+      const title = `${c.name} — OakShow Critic Profile`;
+      const desc = `Read all certified movie and series reviews by ${c.name} on OakShow.`;
+      const canonical = `${DOMAIN}/Profiles/CriticProfiles/${c.folder}/index.html`;
+      const ogImage = `${DOMAIN}/favicon.png`;
+
+      const html = generatePrerenderHtml(baseHtml, {
+        title,
+        description: desc,
+        canonicalUrl: canonical,
+        ogImage,
+        ogType: 'profile',
+        bodyContent: `<h1>${escapeHtml(c.name)}</h1><p>${escapeHtml(desc)}</p><p><a href="${DOMAIN}/OakShowReviews.html">Back to All Reviews</a></p>`
+      });
+
+      fs.writeFileSync(profilePath, html, 'utf8');
+      count++;
     }
-
-    const title = `${c.name} — OakShow Critic Profile`;
-    const desc = `Read all certified movie and series reviews by ${c.name} on OakShow.`;
-    const canonical = `${DOMAIN}/Profiles/CriticProfiles/${c.folder}/index.html`;
-    const ogImage = `${DOMAIN}/favicon.png`;
-
-    const html = generatePrerenderHtml(baseHtml, {
-      title,
-      description: desc,
-      canonicalUrl: canonical,
-      ogImage,
-      ogType: 'profile',
-      bodyContent: `<h1>${escapeHtml(c.name)}</h1><p>${escapeHtml(desc)}</p><p><a href="${DOMAIN}/OakShowReviews.html">Back to All Reviews</a></p>`
-    });
-
-    fs.writeFileSync(profilePath, html, 'utf8');
-    count++;
   }
 
   console.log(`✅ Successfully generated ${count} static prerendered HTML pages in dist/!`);
