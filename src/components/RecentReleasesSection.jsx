@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useRef } from 'react';
-import { Film, Tv, Sparkles, ChevronLeft, ChevronRight, ArrowRight, Calendar, Star } from 'lucide-react';
+import { Film, Tv, Sparkles, ChevronLeft, ChevronRight, ArrowRight, Calendar, Star, Ticket, MonitorPlay } from 'lucide-react';
 import { getProfileImage, handlePosterError } from '../utils/mediaUtils';
 import { getOakShowRemark } from '../utils/remarks';
 import rawMoviesData from '../../data/movies.json';
@@ -42,7 +42,8 @@ export default function RecentReleasesSection({
   allSeries = [],
   onNavigate
 }) {
-  const [activeFilter, setActiveFilter] = useState('all'); // 'all', 'movies', 'series'
+  // Default to 'theatres' on movies, 'tv' on series
+  const [activeFilter, setActiveFilter] = useState(currentType === 'series' ? 'tv' : 'theatres'); // 'theatres', 'ott', 'tv', 'all'
   const scrollRef = useRef(null);
 
   // Pool of movies and series (fall back to imported JSON data if props are empty)
@@ -51,8 +52,8 @@ export default function RecentReleasesSection({
 
   const currentNormalized = (currentId || '').toLowerCase().replace(/[^a-z0-9]/g, '');
 
-  // Extract released movies (newest first, excluding current item)
-  const releasedMovies = useMemo(() => {
+  // 1. Last 10 released in theatres
+  const theatrical10 = useMemo(() => {
     const now = Date.now();
     const seen = new Set();
     const list = [];
@@ -69,19 +70,62 @@ export default function RecentReleasesSection({
       const timestamp = parseItemReleaseDate(m);
       if (timestamp <= 0 || timestamp > now) continue;
 
+      const hasOtt = m.watchOnline && Array.isArray(m.watchOnline) && m.watchOnline.some(w => w.url && w.url.trim() && w.url !== '#');
+      // Must be a theatrical release (has box office or no direct OTT exclusivity)
+      if (hasOtt && !m.boxOffice) continue;
+
       seen.add(normKey);
       list.push({
         ...m,
         mediaType: 'movie',
+        categoryTag: 'theatrical',
         releaseTimestamp: timestamp
       });
     }
 
-    return list.sort((a, b) => b.releaseTimestamp - a.releaseTimestamp);
+    return list.sort((a, b) => b.releaseTimestamp - a.releaseTimestamp).slice(0, 10);
   }, [moviesPool, currentNormalized]);
 
-  // Extract released series (newest first, excluding current item)
-  const releasedSeries = useMemo(() => {
+  // 2. Last 10 released on OTT
+  const ott10 = useMemo(() => {
+    const now = Date.now();
+    const seen = new Set();
+    const list = [];
+
+    for (const m of moviesPool) {
+      if (!m || !m.title) continue;
+      const status = (m.status || '').toLowerCase().trim();
+      if (status === 'upcoming' || status.includes('postponed')) continue;
+
+      const normKey = (m.id || m.slug || m.title).toLowerCase().replace(/[^a-z0-9]/g, '');
+      if (currentNormalized && (normKey === currentNormalized || currentNormalized.includes(normKey))) continue;
+      if (seen.has(normKey)) continue;
+
+      const timestamp = parseItemReleaseDate(m);
+      if (timestamp <= 0 || timestamp > now) continue;
+
+      const hasOtt = m.watchOnline && Array.isArray(m.watchOnline) && m.watchOnline.some(w => w.url && w.url.trim() && w.url !== '#');
+      const isOttCat = (m.category || '').toLowerCase() === 'ott';
+      if (!hasOtt && !isOttCat) continue;
+
+      // Extract primary streaming platform name if available
+      const primaryProvider = m.watchOnline?.find(w => w.platform && w.platform.trim())?.platform || 'OTT';
+
+      seen.add(normKey);
+      list.push({
+        ...m,
+        mediaType: 'movie',
+        categoryTag: 'ott',
+        ottPlatform: primaryProvider,
+        releaseTimestamp: timestamp
+      });
+    }
+
+    return list.sort((a, b) => b.releaseTimestamp - a.releaseTimestamp).slice(0, 10);
+  }, [moviesPool, currentNormalized]);
+
+  // 3. Last 10 released TV shows / web series
+  const tv10 = useMemo(() => {
     const now = Date.now();
     const seen = new Set();
     const list = [];
@@ -102,28 +146,27 @@ export default function RecentReleasesSection({
       list.push({
         ...s,
         mediaType: 'series',
+        categoryTag: 'tv',
         releaseTimestamp: timestamp
       });
     }
 
-    return list.sort((a, b) => b.releaseTimestamp - a.releaseTimestamp);
+    return list.sort((a, b) => b.releaseTimestamp - a.releaseTimestamp).slice(0, 10);
   }, [seriesPool, currentNormalized]);
 
-  // Combined recently released items
-  const itemsToDisplay = useMemo(() => {
-    if (activeFilter === 'movies') {
-      return releasedMovies.slice(0, 16);
-    }
-    if (activeFilter === 'series') {
-      return releasedSeries.slice(0, 16);
-    }
+  // Combined all 30 (10 in Theatres + 10 in OTT + 10 TV Shows)
+  const all30 = useMemo(() => {
+    const combined = [...theatrical10, ...ott10, ...tv10];
+    return combined.sort((a, b) => b.releaseTimestamp - a.releaseTimestamp);
+  }, [theatrical10, ott10, tv10]);
 
-    // In 'all' mode: interleave top recent movies & top recent series so users see both
-    const topMovies = releasedMovies.slice(0, 10);
-    const topSeries = releasedSeries.slice(0, 6);
-    const combined = [...topMovies, ...topSeries].sort((a, b) => b.releaseTimestamp - a.releaseTimestamp);
-    return combined.slice(0, 16);
-  }, [activeFilter, releasedMovies, releasedSeries]);
+  // Active items based on selected tab
+  const itemsToDisplay = useMemo(() => {
+    if (activeFilter === 'theatres') return theatrical10;
+    if (activeFilter === 'ott') return ott10;
+    if (activeFilter === 'tv') return tv10;
+    return all30;
+  }, [activeFilter, theatrical10, ott10, tv10, all30]);
 
   const handleScroll = (direction) => {
     if (scrollRef.current) {
@@ -144,7 +187,7 @@ export default function RecentReleasesSection({
     }
   };
 
-  if (itemsToDisplay.length === 0) return null;
+  if (theatrical10.length === 0 && ott10.length === 0 && tv10.length === 0) return null;
 
   return (
     <section className="recent-releases-section section-block">
@@ -153,35 +196,48 @@ export default function RecentReleasesSection({
           <Sparkles size={22} className="text-gold" />
           <div>
             <h2 className="rr-title">Recently Released Movies & Shows</h2>
-            <span className="rr-subtitle">Fresh in theatres, streaming on OTT, and on demand</span>
+            <span className="rr-subtitle">
+              {activeFilter === 'theatres' && 'Last 10 blockbusters released in theatres'}
+              {activeFilter === 'ott' && 'Last 10 movies released on OTT streaming platforms'}
+              {activeFilter === 'tv' && 'Last 10 web series & TV shows released'}
+              {activeFilter === 'all' && 'Last 10 in theatres, 10 on OTT, and 10 released TV shows'}
+            </span>
           </div>
         </div>
 
         <div className="rr-header-actions">
-          {/* Filter Pills */}
+          {/* Exactly 10 In Theatres, 10 in OTT, 10 in TV Shows filter tabs */}
           <div className="rr-filter-tabs">
+            <button
+              type="button"
+              className={`rr-tab-btn ${activeFilter === 'theatres' ? 'active' : ''}`}
+              onClick={() => setActiveFilter('theatres')}
+            >
+              <Ticket size={13} />
+              In Theatres ({theatrical10.length})
+            </button>
+            <button
+              type="button"
+              className={`rr-tab-btn ${activeFilter === 'ott' ? 'active' : ''}`}
+              onClick={() => setActiveFilter('ott')}
+            >
+              <MonitorPlay size={13} />
+              On OTT ({ott10.length})
+            </button>
+            <button
+              type="button"
+              className={`rr-tab-btn ${activeFilter === 'tv' ? 'active' : ''}`}
+              onClick={() => setActiveFilter('tv')}
+            >
+              <Tv size={13} />
+              TV Shows ({tv10.length})
+            </button>
             <button
               type="button"
               className={`rr-tab-btn ${activeFilter === 'all' ? 'active' : ''}`}
               onClick={() => setActiveFilter('all')}
             >
-              All ({releasedMovies.length + releasedSeries.length})
-            </button>
-            <button
-              type="button"
-              className={`rr-tab-btn ${activeFilter === 'movies' ? 'active' : ''}`}
-              onClick={() => setActiveFilter('movies')}
-            >
-              <Film size={13} />
-              Movies ({releasedMovies.length})
-            </button>
-            <button
-              type="button"
-              className={`rr-tab-btn ${activeFilter === 'series' ? 'active' : ''}`}
-              onClick={() => setActiveFilter('series')}
-            >
-              <Tv size={13} />
-              Shows ({releasedSeries.length})
+              All ({all30.length})
             </button>
           </div>
 
@@ -227,7 +283,6 @@ export default function RecentReleasesSection({
           const oakRating = item.ratings?.find(r => r.source === 'OakShow')?.score;
           const imdbRating = item.ratings?.find(r => r.source === 'IMDb')?.score;
           const displayScore = oakRating || imdbRating;
-          const oakRemark = oakRating ? getOakShowRemark(oakRating) : null;
           const formattedDate = formatDisplayDate(item);
           const targetUrl = item.filename
             ? (item.filename.startsWith('/') ? item.filename : `/${item.filename}`)
@@ -255,15 +310,19 @@ export default function RecentReleasesSection({
                   </div>
                 )}
 
-                {/* Media Type Chip */}
+                {/* Media Type & Platform Badge */}
                 <div className="rr-type-badge-wrap">
-                  {item.mediaType === 'series' ? (
+                  {item.categoryTag === 'tv' || item.mediaType === 'series' ? (
                     <span className="badge badge-red rr-media-badge">
-                      <Tv size={10} /> Series
+                      <Tv size={10} /> TV Series
+                    </span>
+                  ) : item.categoryTag === 'ott' ? (
+                    <span className="badge badge-cyan rr-media-badge">
+                      <MonitorPlay size={10} /> {item.ottPlatform || 'OTT'}
                     </span>
                   ) : (
-                    <span className="badge badge-cyan rr-media-badge">
-                      <Film size={10} /> Movie
+                    <span className="badge badge-gold rr-media-badge">
+                      <Ticket size={10} /> Theatres
                     </span>
                   )}
                 </div>
