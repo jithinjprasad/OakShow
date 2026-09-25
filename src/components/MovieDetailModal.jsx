@@ -449,7 +449,20 @@ export default function MovieDetailModal({
         .detail-hero-gradient {
           position: absolute;
           inset: 0;
-          background: linear-gradient(to top, var(--bg-surface) 0%, rgba(13, 17, 23, 0.75) 50%, rgba(7, 9, 14, 0.85) 100%);
+          background: linear-gradient(to top, var(--bg-surface) 0%, rgba(6, 18, 36, 0.58) 50%, rgba(3, 8, 19, 0.35) 100%);
+        }
+        [data-theme="light"] .detail-hero-gradient {
+          background: linear-gradient(to top, var(--bg-surface) 0%, rgba(241, 245, 249, 0.85) 50%, rgba(226, 232, 240, 0.55) 100%);
+        }
+        [data-theme="light"] .detail-hero-banner {
+          filter: brightness(0.92) contrast(1.02);
+        }
+        [data-theme="light"] .detail-title {
+          color: #0f172a !important;
+          text-shadow: none !important;
+        }
+        [data-theme="light"] .detail-subtitle {
+          color: #475569 !important;
         }
         .detail-close-btn {
           position: absolute;

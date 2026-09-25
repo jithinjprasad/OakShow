@@ -748,8 +748,8 @@ export default function UpcomingMoviesView({
           transition: border-color 0.3s ease, box-shadow 0.3s ease;
         }
         [data-theme="light"] .upcoming-spotlight-card {
-          background: linear-gradient(140deg, #ffffff 0%, #f8fafc 100%);
-          border: 1px solid rgba(245, 158, 11, 0.45);
+          background: linear-gradient(140deg, #f1f5f9 0%, #e2e8f0 100%);
+          border: 1px solid rgba(245, 158, 11, 0.35);
           box-shadow: 0 12px 36px rgba(15, 23, 42, 0.08), 0 0 24px rgba(245, 158, 11, 0.12);
         }
         .upcoming-spotlight-bg {
@@ -757,13 +757,13 @@ export default function UpcomingMoviesView({
           inset: 0;
           background-size: cover;
           background-position: center 25%;
-          opacity: 0.22;
-          filter: blur(1px);
+          opacity: 0.55;
           transform: scale(1.02);
           transition: transform 0.6s ease;
         }
         [data-theme="light"] .upcoming-spotlight-bg {
-          opacity: 0.12;
+          opacity: 0.35;
+          filter: brightness(0.90) contrast(1.02);
         }
         .upcoming-spotlight-card:hover .upcoming-spotlight-bg {
           transform: scale(1.05);
@@ -771,10 +771,10 @@ export default function UpcomingMoviesView({
         .upcoming-spotlight-overlay {
           position: absolute;
           inset: 0;
-          background: linear-gradient(135deg, rgba(15, 23, 42, 0.96) 0%, rgba(15, 23, 42, 0.88) 55%, rgba(15, 23, 42, 0.72) 100%);
+          background: linear-gradient(135deg, rgba(15, 23, 42, 0.82) 0%, rgba(15, 23, 42, 0.60) 55%, rgba(15, 23, 42, 0.28) 100%);
         }
         [data-theme="light"] .upcoming-spotlight-overlay {
-          background: linear-gradient(135deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.88) 55%, rgba(248, 250, 252, 0.75) 100%);
+          background: linear-gradient(135deg, rgba(241, 245, 249, 0.90) 0%, rgba(241, 245, 249, 0.72) 55%, rgba(241, 245, 249, 0.38) 100%);
         }
         .upcoming-spotlight-inner {
           position: relative;
@@ -866,6 +866,12 @@ export default function UpcomingMoviesView({
           border: 1px solid rgba(245, 158, 11, 0.4);
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
         }
+        [data-theme="light"] .upcoming-spotlight-countdown-chip {
+          background: rgba(241, 245, 249, 0.95);
+          color: #92400e;
+          border: 1px solid rgba(217, 119, 6, 0.35);
+          box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+        }
         .upcoming-spotlight-info {
           display: flex;
           flex-direction: column;
@@ -937,6 +943,15 @@ export default function UpcomingMoviesView({
           gap: 16px;
           font-size: 0.88rem;
           color: var(--text-secondary, #cbd5e1);
+        }
+        [data-theme="light"] .upcoming-spotlight-title {
+          color: #0f172a !important;
+        }
+        [data-theme="light"] .upcoming-spotlight-credits {
+          color: #334155 !important;
+        }
+        [data-theme="light"] .upcoming-credit-item strong {
+          color: #64748b !important;
         }
         .upcoming-credit-item strong {
           color: var(--text-muted, #94a3b8);

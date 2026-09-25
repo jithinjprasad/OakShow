@@ -11,8 +11,8 @@ html[data-theme="light"] {
   --border-focus: rgba(2, 132, 199, 0.55);
   --border-glow: rgba(2, 132, 199, 0.35);
 
-  --hero-overlay-top: rgba(248, 250, 252, 0.90);
-  --hero-overlay-mid: rgba(241, 245, 249, 0.97);
+  --hero-overlay-top: rgba(241, 245, 249, 0.76);
+  --hero-overlay-mid: rgba(226, 232, 240, 0.88);
 
   --badge-dark-bg: #e2e8f0;
   --badge-dark-color: #0f172a;
@@ -78,8 +78,8 @@ html[data-theme="dark"] {
   --border-focus: rgba(56, 189, 248, 0.55);
   --border-glow: rgba(2, 132, 199, 0.45);
 
-  --hero-overlay-top: rgba(3, 8, 19, 0.82);
-  --hero-overlay-mid: rgba(6, 18, 36, 0.95);
+  --hero-overlay-top: rgba(3, 8, 19, 0.45);
+  --hero-overlay-mid: rgba(6, 18, 36, 0.72);
 
   --badge-dark-bg: rgba(255, 255, 255, 0.08);
   --badge-dark-color: #ffffff;
@@ -1140,8 +1140,8 @@ html[data-theme="dark"] .navbar-scrolled {
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, var(--hero-overlay-top) 0%, var(--hero-overlay-mid) 75%, var(--bg-dark) 100%);
-  backdrop-filter: blur(28px);
-  -webkit-backdrop-filter: blur(28px);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 .movie-hero-content {
   position: relative;
@@ -2610,8 +2610,8 @@ html[data-theme="dark"] .navbar-scrolled {
     padding: 14px 0 16px;
   }
   .movie-hero-overlay {
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
   }
   
   /* Mobile Hero Stage Layout: Row 1 = Poster (left) + Right Header Info, Row 2 = Description below */
@@ -2753,6 +2753,17 @@ html[data-theme="dark"] .navbar-scrolled {
     padding: 12px 14px;
     border-radius: var(--radius-md);
     border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  [data-theme="light"] .movie-synopsis-wrap,
+  [data-theme="light"] .movie-hero-details > .movie-synopsis {
+    background: rgba(241, 245, 249, 0.85);
+    border: 1px solid rgba(15, 23, 42, 0.1);
+    color: #334155;
+  }
+  [data-theme="light"] .mobile-hero-quick-nav .mh-nav-pill {
+    background: rgba(241, 245, 249, 0.92);
+    border-color: rgba(15, 23, 42, 0.15);
+    color: #1e293b;
   }
   .movie-synopsis {
     font-size: 0.88rem;
@@ -6159,6 +6170,30 @@ html[data-theme="dark"] .navbar-scrolled {
 .verdict-risk {
   background: rgba(255, 77, 88, 0.95);
   color: #ffffff;
+}
+
+[data-theme="light"] .verdict-must-watch {
+  background: #fef3c7 !important;
+  color: #92400e !important;
+  border: 1px solid #fcd34d !important;
+}
+
+[data-theme="light"] .verdict-safe {
+  background: #dcfce7 !important;
+  color: #166534 !important;
+  border: 1px solid #86efac !important;
+}
+
+[data-theme="light"] .verdict-above {
+  background: #e0f2fe !important;
+  color: #0369a1 !important;
+  border: 1px solid #7dd3fc !important;
+}
+
+[data-theme="light"] .verdict-risk {
+  background: #ffe4e6 !important;
+  color: #9f1239 !important;
+  border: 1px solid #fecdd3 !important;
 }
 
 .ribbon-must {
