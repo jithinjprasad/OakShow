@@ -46,7 +46,11 @@ export default function SportsDetailPage({
       </div>
 
       {/* Hero */}
-      <section className="movie-hero-stage" style={{ backgroundImage: `url(${posterSrc || '/favicon.png'})` }}>
+      <section className="movie-hero-stage">
+        <div 
+          className="movie-hero-backdrop" 
+          style={{ backgroundImage: `url(${posterSrc || '/favicon.png'})` }} 
+        />
         <div className="movie-hero-overlay" />
         <div className="container">
           <div className="movie-hero-content">

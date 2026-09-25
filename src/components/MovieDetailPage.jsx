@@ -667,7 +667,11 @@ export default function MovieDetailPage({
       </div>
 
       {/* Cinematic Hero Backdrop Stage (2.jpg / banner) */}
-      <section className="movie-hero-stage" style={{ backgroundImage: `url(${bannerSrc || posterSrc || '/favicon.png'})` }}>
+      <section className="movie-hero-stage">
+        <div 
+          className="movie-hero-backdrop" 
+          style={{ backgroundImage: `url(${bannerSrc || posterSrc || '/favicon.png'})` }} 
+        />
         <div className="movie-hero-overlay" />
         <div className="container">
           <div className="movie-hero-content">

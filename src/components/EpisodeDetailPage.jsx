@@ -135,7 +135,11 @@ export default function EpisodeDetailPage({
       </div>
 
       {/* Standard Clean Hero Stage */}
-      <section className="movie-hero-stage" style={{ backgroundImage: `url(${thumbUrl || seriesShareImg})` }}>
+      <section className="movie-hero-stage">
+        <div 
+          className="movie-hero-backdrop" 
+          style={{ backgroundImage: `url(${thumbUrl || seriesShareImg})` }} 
+        />
         <div className="movie-hero-overlay" />
         <div className="container">
           <div className="movie-hero-content">
