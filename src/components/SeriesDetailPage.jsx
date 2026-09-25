@@ -36,6 +36,7 @@ import {
 } from 'lucide-react';
 import ShareBar from './ShareBar';
 import VideoPlayerModal from './VideoPlayerModal';
+import RecentReleasesSection from './RecentReleasesSection';
 import reviewsData from '../../data/reviews.json';
 import criticsData from '../../data/critics.json';
 import galleriesData from '../../data/galleries.json';
@@ -2365,6 +2366,106 @@ export default function SeriesDetailPage({
                 </div>
               </div>
             </div>
+          </div>
+        )}
+
+        {/* ========================================================================= */}
+        {/* SIMILAR SERIES ("MORE LIKE THIS")                                         */}
+        {/* ========================================================================= */}
+        {similarSeries.length > 0 && (
+          <section className="similar-movies-section section-block">
+            <div className="section-header-row">
+              <div className="section-title-wrap">
+                <Flame size={20} className="text-red" />
+                <h2>More Like This</h2>
+              </div>
+            </div>
+            <div className="similar-carousel-grid">
+              {similarSeries.map(sim => (
+                <a 
+                  key={sim.id} 
+                  href={sim.filename ? (sim.filename.startsWith('/') ? sim.filename : `/${sim.filename}`) : `/series/${sim.id}`}
+                  className="similar-card glass-panel"
+                  style={{ textDecoration: 'none', color: 'inherit' }}
+                  onClick={(e) => {
+                    if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
+                    e.preventDefault();
+                    onNavigate(`series/${sim.id}`);
+                  }}
+                >
+                  <div className="similar-poster-wrap">
+                    {sim.poster ? (
+                      <img 
+                        src={sim.poster.startsWith('/') ? sim.poster : `/${sim.poster}`} 
+                        alt={sim.title} 
+                        className="similar-poster-img"
+                        onError={(e) => handlePosterError(e, sim.poster)}
+                      />
+                    ) : (
+                      <div className="similar-fallback"><Tv size={24} /></div>
+                    )}
+                  </div>
+                  <h4 className="similar-title">{sim.title}</h4>
+                  <span className="similar-meta">{sim.year || sim.language}</span>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* ========================================================================= */}
+        {/* RECENTLY RELEASED MOVIES & SHOWS SECTION                                  */}
+        {/* ========================================================================= */}
+        <RecentReleasesSection
+          currentId={series?.id || series?.slug || series?.title}
+          currentType="series"
+          allMovies={allMovies}
+          allSeries={allSeries}
+          onNavigate={onNavigate}
+        />
+
+        {/* ========================================================================= */}
+        {/* PROMINENT BOTTOM SHARE SECTION                                            */}
+        {/* ========================================================================= */}
+        <ShareBar
+          title={activeTitle}
+          type="series"
+          rating={allRatings.length > 0 ? allRatings[0].score : (series.score ? `${series.score}/10` : null)}
+          poster={shareImageSrc}
+          description={activePlot}
+          customUrl={canonicalUrl}
+          year={activeYear}
+          language={series.language}
+        />
+
+        {/* Next / Previous Series Bottom Bar */}
+        {(prevSeries || nextSeries) && (
+          <div className="movie-page-bottom-nav glass-panel">
+            {prevSeries ? (
+              <button 
+                className="bottom-nav-btn prev"
+                onClick={() => onNavigate(`series/${prevSeries.id}`)}
+              >
+                <ChevronLeft size={20} />
+                <div className="btn-text-wrap">
+                  <span className="nav-sub">Previous Series</span>
+                  <span className="nav-title">{prevSeries.title}</span>
+                </div>
+              </button>
+            ) : <div />}
+
+            {nextSeries && (
+              <button 
+                className="bottom-nav-btn next"
+                onClick={() => onNavigate(`series/${nextSeries.id}`)}
+              >
+                <div className="btn-text-wrap text-right">
+                  <span className="nav-sub">Next Series</span>
+                  <span className="nav-title">{nextSeries.title}</span>
+                </div>
+                <ChevronRight size={20} />
+              </button>
+            )}
           </div>
         )}
       </div>

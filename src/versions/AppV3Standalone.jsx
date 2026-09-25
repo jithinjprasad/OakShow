@@ -1232,6 +1232,7 @@ export default function App() {
         <MovieDetailPage
           movie={targetMovie}
           allMovies={cleanMoviesData}
+          allSeries={seriesData}
           onNavigate={navigate}
           isBookmarked={bookmarks.some(b => b.id === targetMovie.id)}
           onToggleBookmark={toggleBookmark}

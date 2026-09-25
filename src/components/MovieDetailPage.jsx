@@ -38,6 +38,7 @@ import {
 } from 'lucide-react';
 import ShareBar, { XTwitterIcon, FacebookIcon } from './ShareBar';
 import VideoPlayerModal from './VideoPlayerModal';
+import RecentReleasesSection from './RecentReleasesSection';
 import reviewsData from '../../data/reviews.json';
 import criticsData from '../../data/critics.json';
 import galleriesData from '../../data/galleries.json';
@@ -72,6 +73,7 @@ function parseScorePercentage(scoreStr) {
 export default function MovieDetailPage({ 
   movie, 
   allMovies = [], 
+  allSeries = [],
   onNavigate, 
   isBookmarked, 
   onToggleBookmark 
@@ -2152,6 +2154,17 @@ export default function MovieDetailPage({
             </div>
           </section>
         )}
+
+        {/* ========================================================================= */}
+        {/* RECENTLY RELEASED MOVIES & SHOWS SECTION                                  */}
+        {/* ========================================================================= */}
+        <RecentReleasesSection
+          currentId={movie?.id || movie?.slug || movie?.title}
+          currentType="movie"
+          allMovies={allMovies}
+          allSeries={allSeries}
+          onNavigate={onNavigate}
+        />
 
         {/* ========================================================================= */}
         {/* PROMINENT BOTTOM SHARE SECTION (USER'S EXPLICIT REQUIREMENT)              */}
