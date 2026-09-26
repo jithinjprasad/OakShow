@@ -3137,6 +3137,426 @@
     "imdb": "https://www.imdb.com/title/tt34564059/"
   },
   {
+    "id": "TheEndofOakStreet",
+    "slug": "theendofoakstreet",
+    "type": "movie",
+    "category": "Hollywood",
+    "score": 7,
+    "filename": "TheEndofOakStreet.html",
+    "aliases": [
+      "the-end-of-oak-street",
+      "theendofoakstreet"
+    ],
+    "title": "The End of Oak Street",
+    "metaTitle": "The End of Oak Street (2026) All Ratings, Reviews, Songs, Videos, Bookings and News — OakShow",
+    "description": "The End of Oak Street is a 2026 American science fiction survival film written, co-produced, and directed by David Robert Mitchell. It stars Anne Hathaway, Ewan McGregor, Maisy Stella and Christian Convery as a suburban Michigan family transported from 1982 into the age of dinosaurs.",
+    "plot": "On July 10, 1982, aspiring novelist Denise Platt lives with her husband Greg, children Audrey and Brian, and dog Starbuck on Oak Street in the suburban town of Flowervale, Michigan. During a violent electrical storm accompanied by an eerie solar flare and a blinding flash of white light, an entire suburban neighborhood block is ripped through a cosmic spacetime anomaly and transported millions of years into the past into a dangerous prehistoric landscape.\n\nWhen apex predators—including vicious Coelophysis, Pterodactyls, a massive Allosaurus, and a giant Titanoboa—emerge from the primordial jungle to hunt the stranded residents, Denise, Greg, and their children must board up their home, navigate family secrets, and fight through deadly creature attacks. Racing across the prehistoric wasteland to rescue neighbor Jeannette and find an unstable, cycling spacetime wormhole before the temporal rift collapses forever, the family confronts the ultimate test of survival and sacrifice to return to 1982.",
+    "language": "English",
+    "releaseDate": "August 14, 2026",
+    "year": "2026",
+    "genre": "Sci-Fi, Survival, Creature Feature, Thriller, Adventure",
+    "duration": "1hr 58mins",
+    "director": "David Robert Mitchell",
+    "basedOn": "Original story and screenplay by David Robert Mitchell",
+    "boxOffice": {
+      "budget": "$80–92 Million",
+      "worldwideGross": "$121 Million",
+      "openingDay": "$7.9 Million (incl. $2.0M previews)",
+      "openingWeekend": "$21 Million",
+      "domesticGross": "$54 Million",
+      "overseasGross": "$67 Million",
+      "indiaGross": "$1.8 Million",
+      "verdict": "Hit / Box Office Success",
+      "source": "Box Office Mojo & Deadline",
+      "lastUpdated": "September 2026"
+    },
+    "poster": "pics/Films/TheEndofOakStreet/1.jpg",
+    "banner": "pics/Films/TheEndofOakStreet/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/TheEndofOakStreet/1.jpg",
+        "alt": "The End of Oak Street Official Theatrical Poster"
+      },
+      {
+        "src": "pics/Films/TheEndofOakStreet/2.jpg",
+        "alt": "The End of Oak Street Dinosaur Survival Banner"
+      },
+      {
+        "src": "pics/Films/TheEndofOakStreet/3.jpg",
+        "alt": "The End of Oak Street Suburban Prehistoric Stills"
+      },
+      {
+        "src": "pics/Films/TheEndofOakStreet/4.jpg",
+        "alt": "The End of Oak Street Anne Hathaway Stills"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "7/10",
+        "url": "https://oakshow.in/TheEndofOakStreet.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "6.3/10",
+        "url": "https://www.imdb.com/title/tt27165187/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "86%",
+        "url": "https://www.rottentomatoes.com/m/the_end_of_oak_street",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "69/100",
+        "url": "https://www.metacritic.com/movie/the-end-of-oak-street/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      },
+      {
+        "source": "RogerEbert",
+        "score": "4/4",
+        "url": "https://www.rogerebert.com/reviews/the-end-of-oak-street-anne-hathaway-ewan-mcgregor-film-review-2026",
+        "icon": "pics/RatingSiteLogos/rogerebert.ico"
+      },
+      {
+        "source": "Telegraph",
+        "score": "4/5",
+        "url": "https://www.telegraph.co.uk/films/2026/08/12/the-end-of-oak-street-review-anne-hathaway/",
+        "icon": "pics/RatingSiteLogos/telegraph.png"
+      },
+      {
+        "source": "Den of Geek",
+        "score": "4/5",
+        "url": "https://www.denofgeek.com/movies/the-end-of-oak-street-review-dinosaur-movie/",
+        "icon": "pics/RatingSiteLogos/denofgeek.ico"
+      },
+      {
+        "source": "Times Now",
+        "score": "4/5",
+        "url": "https://www.timesnownews.com/entertainment-news/reviews/the-end-of-oak-street-movie-review-anne-hathaway-leads-a-brutal-dinosaur-thriller-with-a-human-heart-review-155612225",
+        "icon": "pics/RatingSiteLogos/times-now.ico"
+      },
+      {
+        "source": "Times of India",
+        "score": "3.5/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/english/movie-reviews/the-end-of-oak-street/movie-review/133230386.cms",
+        "icon": "pics/RatingSiteLogos/timesofindia.ico"
+      },
+      {
+        "source": "IGN",
+        "score": "7/10",
+        "url": "https://www.ign.com/articles/the-end-of-oak-street-review",
+        "icon": "pics/RatingSiteLogos/ign.png"
+      },
+      {
+        "source": "Rolling Stone",
+        "score": "3.5/5",
+        "url": "https://www.rollingstone.com/tv-movies/tv-movie-reviews/end-of-oak-street-review-ewan-mcgregor-anne-hathaway-1235600059/",
+        "icon": "pics/RatingSiteLogos/rollingstone.png"
+      },
+      {
+        "source": "Hindustan Times",
+        "score": "3/5",
+        "url": "https://www.hindustantimes.com/entertainment/hollywood/the-end-of-oak-street-review-anne-hathaway-leads-this-fun-throwback-to-the-creature-features-of-yore-101786775763637.html",
+        "icon": "pics/RatingSiteLogos/hindustan-times.png"
+      },
+      {
+        "source": "India Today",
+        "score": "3/5",
+        "url": "https://www.indiatoday.in/movies/reviews/story/the-end-of-oak-street-review-anne-hathaway-dinosaur-thriller-2971026-2026-08-14",
+        "icon": "pics/RatingSiteLogos/india-today.ico"
+      },
+      {
+        "source": "Rediff",
+        "score": "3/5",
+        "url": "https://www.rediff.com/movies/review/the-end-of-oak-street-review-enjoyable-romp/20260814.htm",
+        "icon": "pics/RatingSiteLogos/rediff.png"
+      },
+      {
+        "source": "Common Sense Media",
+        "score": "2/5",
+        "url": "https://www.commonsensemedia.org/movie-reviews/the-end-of-oak-street",
+        "icon": "pics/RatingSiteLogos/common-sense-media.png"
+      },
+      {
+        "source": "The Guardian",
+        "score": "2/5",
+        "url": "https://www.theguardian.com/film/2026/aug/12/the-end-of-oak-street-review-suburban-dino-survival-romp-is-more-turkey-than-t-rex",
+        "icon": "pics/RatingSiteLogos/the-guardian.png"
+      },
+      {
+        "source": "Indian Express",
+        "score": "2/5",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/the-end-of-oak-street-review-anne-hathaway-ewan-mcgregor-10833106/",
+        "icon": "pics/RatingSiteLogos/indian-express.png"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Anne Hathaway",
+        "role": "Denise Platt",
+        "description": "Aspiring novelist & mother who leads the fight to save her family and neighborhood"
+      },
+      {
+        "actor": "Ewan McGregor",
+        "role": "Greg Platt",
+        "description": "Pizza delivery driver & husband navigating family tensions while protecting his kids"
+      },
+      {
+        "actor": "Maisy Stella",
+        "role": "Audrey Platt",
+        "description": "Denise & Greg's resourceful teenage daughter who deduces the spacetime wormholes"
+      },
+      {
+        "actor": "Christian Convery",
+        "role": "Brian Platt",
+        "description": "Denise & Greg's son whose pet dog Starbuck leads to critical discoveries"
+      },
+      {
+        "actor": "Jordan Alexa Davis",
+        "role": "Jeannette Christiansen",
+        "description": "Brian's neighborhood crush who joins the family after tragic losses"
+      },
+      {
+        "actor": "P. J. Byrne",
+        "role": "Mel Jacobs",
+        "description": "Irate suburban neighbor caught in the initial dinosaur onslaught"
+      },
+      {
+        "actor": "Emily Kuroda",
+        "role": "Mrs. Valcourt",
+        "description": "Local librarian with deep prehistoric botanical knowledge"
+      },
+      {
+        "actor": "Hudson Meek",
+        "role": "Kaden Tucker",
+        "description": "Neighborhood kid"
+      },
+      {
+        "actor": "Anne Gee Byrd",
+        "role": "Mrs. Huddleston",
+        "description": "Kind, elderly suburban neighbor"
+      }
+    ],
+    "bookings": [
+      {
+        "provider": "BookMyShow",
+        "url": "https://in.bookmyshow.com/movies/the-end-of-oak-street/ET00493026",
+        "icon": "pics/BookngWebSiteLogos/book-my-show.png",
+        "label": "Book on BookMyShow",
+        "rank": 1
+      },
+      {
+        "provider": "District",
+        "url": "https://www.district.in/movies/the-end-of-oak-street-movie-tickets-MV216978?srsltid=AU7gw4UdaK4QRIaPPumOQm_7e8ae9kxSY590LslDBykgxdElL6V9161r",
+        "icon": "pics/BookngWebSiteLogos/district.png",
+        "label": "Book on District",
+        "rank": 2
+      },
+      {
+        "provider": "Fandango",
+        "url": "https://www.fandango.com/the-end-of-oak-street-2026-245149/movie-overview",
+        "icon": "pics/BookngWebSiteLogos/fandango.png",
+        "label": "Book on Fandango",
+        "rank": 3
+      },
+      {
+        "provider": "TicketNew",
+        "url": "https://ticketnew.com/movies/the-end-of-oak-street-movie-detail-216978",
+        "icon": "pics/BookngWebSiteLogos/ticket-new.png",
+        "label": "Book on TicketNew",
+        "rank": 4
+      }
+    ],
+    "watchOnline": [
+      {
+        "provider": "Amazon Prime Video",
+        "platform": "Amazon Prime Video",
+        "url": "https://www.primevideo.com/detail/0J84ZMEJL8WVBN0E26ZRJEMDE7",
+        "icon": "pics/WatchOnline/amazon-prime.png",
+        "label": "Watch on Prime Video"
+      }
+    ],
+    "music": [
+      {
+        "provider": "Spotify",
+        "url": "https://open.spotify.com/album/0AGCqluYJegkyAFndF7wvA",
+        "icon": "pics/MusicWebsiteLogos/spotify.png",
+        "label": "Listen on Spotify"
+      },
+      {
+        "provider": "Apple Music",
+        "url": "https://music.apple.com/in/album/the-end-of-oak-street-original-motion-picture-soundtrack/6788569642",
+        "icon": "pics/MusicWebsiteLogos/itunes.png",
+        "label": "Listen on Apple Music"
+      }
+    ],
+    "officialWebsite": null,
+    "socials": [],
+    "similar": [
+      {
+        "title": "Jurassic World: Fallen Kingdom",
+        "link": "JurassicWorldFallenKingdom.html",
+        "poster": "pics/Films/JurassicWorldFallenKingdom/2.jpg"
+      },
+      {
+        "title": "Godzilla vs. Kong",
+        "link": "GodzillavsKong.html",
+        "poster": "pics/Films/GodzillavsKong/2.jpg"
+      },
+      {
+        "title": "Godzilla: King of the Monsters",
+        "link": "GodzillaKingoftheMonsters.html",
+        "poster": "pics/Films/GodzillaKingoftheMonsters/2.jpg"
+      },
+      {
+        "title": "Rampage",
+        "link": "Rampage.html",
+        "poster": "pics/Films/Rampage/2.jpg"
+      },
+      {
+        "title": "Resident Evil",
+        "link": "ResidentEvil2026.html",
+        "poster": "pics/Films/ResidentEvil2026/2.jpg"
+      },
+      {
+        "title": "A Quiet Place",
+        "link": "AQuietPlace.html",
+        "poster": "pics/Films/AQuietPlace/2.jpg"
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=3oB9AxspVow",
+        "youtubeId": "3oB9AxspVow",
+        "title": "Official Main Trailer",
+        "type": "Trailer"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=IoHWPAN6FPg",
+        "youtubeId": "IoHWPAN6FPg",
+        "title": "Official Teaser",
+        "type": "Teaser"
+      }
+    ],
+    "trailers": [
+      {
+        "title": "Official Main Trailer",
+        "url": "https://www.youtube.com/watch?v=3oB9AxspVow",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/3oB9AxspVow",
+        "youtubeId": "3oB9AxspVow",
+        "type": "Trailer"
+      },
+      {
+        "title": "Official Teaser",
+        "url": "https://www.youtube.com/watch?v=IoHWPAN6FPg",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/IoHWPAN6FPg",
+        "youtubeId": "IoHWPAN6FPg",
+        "type": "Teaser"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "The End of Oak Street Review: Anne Hathaway Leads a Brutal Dinosaur Thriller with a Human Heart",
+        "url": "https://www.timesnownews.com/entertainment-news/reviews/the-end-of-oak-street-movie-review-anne-hathaway-leads-a-brutal-dinosaur-thriller-with-a-human-heart-review-155612225",
+        "author": "Times Now",
+        "date": "August 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "The End of Oak Street Review: A Thrilling Dinosaur Survival Romp with 80s Nostalgia",
+        "url": "https://www.denofgeek.com/movies/the-end-of-oak-street-review-dinosaur-movie/",
+        "author": "Den of Geek",
+        "date": "August 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "The End of Oak Street Movie Review by Zachary Lee",
+        "url": "https://www.rogerebert.com/reviews/the-end-of-oak-street-anne-hathaway-ewan-mcgregor-film-review-2026",
+        "author": "RogerEbert",
+        "date": "August 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "The End of Oak Street Review: Anne Hathaway Leads This Fun Throwback to Creature Features of Yore",
+        "url": "https://www.hindustantimes.com/entertainment/hollywood/the-end-of-oak-street-review-anne-hathaway-leads-this-fun-throwback-to-the-creature-features-of-yore-101786775763637.html",
+        "author": "Hindustan Times",
+        "date": "August 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "The End of Oak Street Film Review: Anne Hathaway Shines in Terrifying Prehistoric Adventure",
+        "url": "https://www.telegraph.co.uk/films/2026/08/12/the-end-of-oak-street-review-anne-hathaway/",
+        "author": "The Telegraph",
+        "date": "August 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "The End of Oak Street (2026) Movie Review",
+        "url": "https://www.ign.com/articles/the-end-of-oak-street-review",
+        "author": "IGN",
+        "date": "August 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "The End of Oak Street Review: Anne Hathaway Delivers in High-Stakes Dino Thriller",
+        "url": "https://www.indiatoday.in/movies/reviews/story/the-end-of-oak-street-review-anne-hathaway-dinosaur-thriller-2971026-2026-08-14",
+        "author": "India Today",
+        "date": "August 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "The End of Oak Street Review: Ewan McGregor and Anne Hathaway Face Prehistoric Terror",
+        "url": "https://www.rollingstone.com/tv-movies/tv-movie-reviews/end-of-oak-street-review-ewan-mcgregor-anne-hathaway-1235600059/",
+        "author": "Rolling Stone",
+        "date": "August 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "The End of Oak Street Review: An Enjoyable Creature Romp",
+        "url": "https://www.rediff.com/movies/review/the-end-of-oak-street-review-enjoyable-romp/20260814.htm",
+        "author": "Rediff",
+        "date": "August 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "The End of Oak Street Ending & Time Travel Wormholes Explained",
+        "url": "https://www.digitalspy.com/movies/a73435300/end-of-oak-street-ending-time-travel-explained/",
+        "author": "Digital Spy",
+        "date": "August 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "The End of Oak Street Movie Review: Suburban Dino Survival Romp Is More Turkey Than T-Rex",
+        "url": "https://www.theguardian.com/film/2026/aug/12/the-end-of-oak-street-review-suburban-dino-survival-romp-is-more-turkey-than-t-rex",
+        "author": "The Guardian",
+        "date": "August 2026",
+        "section": "Reviews"
+      },
+      {
+        "headline": "The End of Oak Street Movie Review: Anne Hathaway and Ewan McGregor in Spielbergian Dino Adventure",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/the-end-of-oak-street-review-anne-hathaway-ewan-mcgregor-10833106/",
+        "author": "The Indian Express",
+        "date": "August 2026",
+        "section": "Reviews"
+      }
+    ],
+    "filePath": "E:/OakShow/TheEndofOakStreet.html",
+    "status": "released",
+    "genres": [
+      "Sci-Fi",
+      "Survival",
+      "Creature Feature",
+      "Adventure",
+      "Thriller"
+    ],
+    "wikipedia": "https://en.wikipedia.org/wiki/The_End_of_Oak_Street",
+    "imdb": "https://www.imdb.com/title/tt27165187/"
+  },
+  {
     "id": "Runner",
     "slug": "runner",
     "type": "movie",

@@ -81,7 +81,7 @@ if ($Target) {
         "ImGame.html", "im-game.html", "TheWhisperMan.html", "Careers.html", "OneNightOnly.html", 
         "Mandaadi.html", "Sardar2.html", "BethlehemKudumbaUnit.html", "DCTamilMovie.html", 
         "KhalifaTheRuler.html", "AvatarTheWayofWater.html",
-        "ResidentEvil2026.html", "Runner.html", "TheRunner.html", "Irumudi.html", "LustStories3.html",
+        "TheEndofOakStreet.html", "ResidentEvil2026.html", "Runner.html", "TheRunner.html", "Irumudi.html", "LustStories3.html",
         "ForgottenIsland.html", "TheParadise.html", "Jailer.html", "Jailer2.html", "HeartoftheBeast.html", "Dhoomakethu.html"
     )
     foreach ($rf in $rootHtmls) {
@@ -152,6 +152,7 @@ if ($Target) {
         @{ Src = "$srcDir\pics\Films\OneNightOnly"; Dest = "$workDir\dist\pics\Films\OneNightOnly" },
         @{ Src = "$srcDir\pics\Films\Mandaadi"; Dest = "$workDir\dist\pics\Films\Mandaadi" },
         @{ Src = "$srcDir\pics\Films\Sardar2"; Dest = "$workDir\dist\pics\Films\Sardar2" },
+        @{ Src = "$srcDir\pics\Films\TheEndofOakStreet"; Dest = "$workDir\dist\pics\Films\TheEndofOakStreet" },
         @{ Src = "$srcDir\pics\Films\ResidentEvil2026"; Dest = "$workDir\dist\pics\Films\ResidentEvil2026" },
         @{ Src = "$srcDir\pics\Films\Runner"; Dest = "$workDir\dist\pics\Films\Runner" },
         @{ Src = "$srcDir\pics\Films\The Runner"; Dest = "$workDir\dist\pics\Films\The Runner" },

@@ -107,7 +107,11 @@ function generatePrerenderHtml(baseHtml, {
   // Inject crawler-friendly semantic fallback into root if present
   if (bodyContent) {
     const noscriptContent = `<noscript>\n<div class="oakshow-crawler-fallback" style="padding:24px;font-family:sans-serif;color:#fff;background:#0d1117;">\n${bodyContent}\n</div>\n</noscript>`;
-    html = html.replace('<div id="root"></div>', `<div id="root"></div>\n${noscriptContent}`);
+    if (html.includes('<div id="root"></div>')) {
+      html = html.replace('<div id="root"></div>', `<div id="root"></div>\n${noscriptContent}`);
+    } else {
+      html = html.replace('</body>', `${noscriptContent}\n</body>`);
+    }
   }
 
   return html;
@@ -194,10 +198,16 @@ async function run() {
       } : {})
     };
 
+    let watchOnlineLinks = '';
+    if (Array.isArray(m.watchOnline) && m.watchOnline.length > 0) {
+      watchOnlineLinks = `<p><strong>Watch Online:</strong> ` + m.watchOnline.map(w => `<a href="${escapeHtml(w.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(w.label || w.provider || 'Watch Online')}</a>`).join(' | ') + `</p>`;
+    }
+
     const bodyContent = `
       <h1>${escapeHtml(m.title)} ${m.year ? `(${escapeHtml(m.year)})` : ''}</h1>
       <p>${m.director ? `<strong>Director:</strong> ${escapeHtml(m.director)} | ` : ''}${m.releaseDate ? `<strong>Release Date:</strong> ${escapeHtml(m.releaseDate)} | ` : ''}<strong>Genre:</strong> ${escapeHtml(m.genre || 'Cinema')} | <strong>Language:</strong> ${escapeHtml(m.language || 'All')}</p>
       <p>${escapeHtml(desc)}</p>
+      ${watchOnlineLinks}
       <p><a href="${DOMAIN}/">Explore OakShow Entertainment</a></p>
     `;
 

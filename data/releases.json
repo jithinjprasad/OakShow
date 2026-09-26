@@ -377,6 +377,54 @@
     ]
   },
   {
+    "id": "HollywoodReleases2026August",
+    "title": "Hollywood Movies Released On August 2026",
+    "year": "2026",
+    "month": "August",
+    "category": "Hollywood",
+    "filename": "HollywoodReleases2026August.html",
+    "totalItems": 1,
+    "items": [
+      {
+        "title": "The End of Oak Street",
+        "poster": "pics/Films/TheEndofOakStreet/1.jpg",
+        "alt": "The End of Oak Street",
+        "language": "English",
+        "category": "Hollywood",
+        "releaseDate": "August 14, 2026",
+        "genre": "Sci-Fi, Survival, Creature Feature",
+        "moreLink": "TheEndofOakStreet.html",
+        "trailerLink": "https://www.youtube.com/watch?v=3oB9AxspVow",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "7/10",
+            "url": "https://oakshow.in/TheEndofOakStreet.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "6.3/10",
+            "url": "https://www.imdb.com/title/tt27165187/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "86%",
+            "url": "https://www.rottentomatoes.com/m/the_end_of_oak_street",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+          },
+          {
+            "source": "Metacritic",
+            "score": "69/100",
+            "url": "https://www.metacritic.com/movie/the-end-of-oak-street/",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "HollywoodReleases2016April",
     "title": "Hollywood Movies Released On April 2016",
     "year": "2016",
