@@ -34,6 +34,8 @@ import {
   ArrowRight,
   BookOpen,
   TrendingUp,
+  Trophy,
+  ChevronUp,
   X
 } from 'lucide-react';
 import ShareBar, { XTwitterIcon, FacebookIcon } from './ShareBar';
@@ -87,6 +89,40 @@ export default function MovieDetailPage({
   const [reviewSubmitted, setReviewSubmitted] = useState(false);
   const [activeLightboxIndex, setActiveLightboxIndex] = useState(null);
   const [synopsisExpanded, setSynopsisExpanded] = useState(false);
+  const [selectedAwardFilter, setSelectedAwardFilter] = useState('ALL');
+  const [expandedNominationsMap, setExpandedNominationsMap] = useState({});
+
+  const toggleNominationsExpand = (orgKey) => {
+    setExpandedNominationsMap(prev => ({
+      ...prev,
+      [orgKey]: !prev[orgKey]
+    }));
+  };
+
+  const awardsStats = useMemo(() => {
+    if (!movie?.awards || !Array.isArray(movie.awards)) {
+      return { totalWins: 0, totalNominations: 0, oscarWins: 0, oscarNoms: 0 };
+    }
+    let totalWins = 0;
+    let totalNominations = 0;
+    let oscarWins = 0;
+    let oscarNoms = 0;
+
+    movie.awards.forEach(a => {
+      const winsCount = a.wins?.length || 0;
+      const nomsCount = a.nominations?.length || 0;
+      totalWins += winsCount;
+      totalNominations += nomsCount;
+
+      const name = (a.organization || a.name || '').toLowerCase();
+      if (name.includes('oscar') || name.includes('academy')) {
+        oscarWins += winsCount;
+        oscarNoms += nomsCount;
+      }
+    });
+
+    return { totalWins, totalNominations, oscarWins, oscarNoms };
+  }, [movie?.awards]);
 
   // Automatically scroll to top whenever movie page loads or changes
   useEffect(() => {
@@ -728,6 +764,10 @@ export default function MovieDetailPage({
                   {movie.genre && <span className="badge badge-gold">{movie.genre}</span>}
                   {movie.year && <span className="badge badge-dark">Year {movie.year}</span>}
                   {movie.duration && movie.duration !== 'N/A' && <span className="badge badge-dark">{movie.duration}</span>}
+                  {movie.tag && <span className="badge badge-emerald">🏆 {movie.tag}</span>}
+                  {movie.tags && movie.tags.map((t, idx) => (
+                    t !== movie.tag && <span key={idx} className="badge badge-emerald">🏆 {t}</span>
+                  ))}
                 </div>
 
                 <h1 className="movie-main-title">{movie.title}</h1>
@@ -791,6 +831,23 @@ export default function MovieDetailPage({
                   <Newspaper size={12} className="mh-nav-icon text-cyan" />
                   <span>News</span>
                 </button>
+
+                {movie.awards && movie.awards.length > 0 && (
+                  <button 
+                    type="button"
+                    className="mh-nav-pill mh-nav-pill-gold"
+                    onClick={() => {
+                      handleTabSelect('overview');
+                      setTimeout(() => {
+                        const el = document.getElementById('awards-showcase-section');
+                        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                      }, 60);
+                    }}
+                  >
+                    <Trophy size={12} className="mh-nav-icon text-gold" />
+                    <span>Awards ({awardsStats.totalWins}W)</span>
+                  </button>
+                )}
               </div>
 
               {/* Dynamic Quick Ratings Summary Bar */}
@@ -969,6 +1026,21 @@ export default function MovieDetailPage({
           >
             <span>All Ratings & Overview ({allRatings.length})</span>
           </button>
+
+          {movie.awards && movie.awards.length > 0 && (
+            <button 
+              className="movie-tab-btn"
+              onClick={() => {
+                handleTabSelect('overview');
+                setTimeout(() => {
+                  const el = document.getElementById('awards-showcase-section');
+                  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 60);
+              }}
+            >
+              <span>Awards & Accolades ({awardsStats.totalWins} Won)</span>
+            </button>
+          )}
 
           {internalReviews.length > 0 && (
             <button 
@@ -1209,6 +1281,205 @@ export default function MovieDetailPage({
                         {bo.source && <span> • Source: {bo.source}</span>}
                       </div>
                     )}
+                  </div>
+                </div>
+              );
+            })()}
+
+            {/* Awards & Prestigious Honors Showcase */}
+            {movie.awards && movie.awards.length > 0 && (() => {
+              const filteredAwards = selectedAwardFilter === 'ALL'
+                ? movie.awards
+                : movie.awards.filter(a => (a.organization || a.name) === selectedAwardFilter);
+
+              return (
+                <div id="awards-showcase-section" className="section-block awards-section">
+                  <div className="section-header-row">
+                    <div className="section-title-wrap">
+                      <Trophy size={22} className="text-gold" />
+                      <h2>Awards &amp; Prestigious Accolades</h2>
+                    </div>
+                    <div className="awards-header-badges">
+                      {awardsStats.oscarWins > 0 && (
+                        <span className="badge badge-gold">🏆 {awardsStats.oscarWins}x Academy Award Winner</span>
+                      )}
+                      <span className="badge badge-emerald">⭐ {awardsStats.totalWins} Total Wins</span>
+                    </div>
+                  </div>
+
+                  <div className="awards-card glass-panel">
+                    {/* 1. Dynamic Summary Metric Ribbon */}
+                    <div className="awards-summary-bar">
+                      <div className="awards-stat-box">
+                        <div className="awards-stat-val text-gold">
+                          <Trophy size={22} className="awards-stat-icon text-gold" />
+                          <span>{awardsStats.totalWins}</span>
+                        </div>
+                        <span className="awards-stat-lbl">Major Industry Wins</span>
+                      </div>
+
+                      {awardsStats.oscarWins > 0 && (
+                        <div className="awards-stat-box crown-stat-box">
+                          <div className="awards-stat-val text-amber">
+                            <Award size={22} className="awards-stat-icon text-amber" />
+                            <span>{awardsStats.oscarWins}</span>
+                          </div>
+                          <span className="awards-stat-lbl">Oscars (Academy Awards)</span>
+                        </div>
+                      )}
+
+                      <div className="awards-stat-box">
+                        <div className="awards-stat-val text-cyan">
+                          <Star size={20} className="awards-stat-icon text-cyan" />
+                          <span>{awardsStats.totalNominations}+</span>
+                        </div>
+                        <span className="awards-stat-lbl">Global Nominations</span>
+                      </div>
+
+                      <div className="awards-stat-box">
+                        <div className="awards-stat-val text-emerald">
+                          <Sparkles size={20} className="awards-stat-icon text-emerald" />
+                          <span>{movie.awards.length}</span>
+                        </div>
+                        <span className="awards-stat-lbl">Ceremonies</span>
+                      </div>
+                    </div>
+
+                    {/* 2. Interactive Organization Filter Bar (Horizontal scroll on mobile, wrap pills on desktop) */}
+                    <div className="awards-filter-bar">
+                      <span className="awards-filter-heading">Filter Ceremony:</span>
+                      <div className="awards-filter-scroll">
+                        <button
+                          type="button"
+                          className={`award-filter-pill ${selectedAwardFilter === 'ALL' ? 'active' : ''}`}
+                          onClick={() => setSelectedAwardFilter('ALL')}
+                        >
+                          All Ceremonies ({movie.awards.length})
+                        </button>
+                        {movie.awards.map((a, i) => {
+                          const orgName = a.organization || a.name;
+                          const isOsc = orgName.toLowerCase().includes('oscar') || orgName.toLowerCase().includes('academy');
+                          const isActive = selectedAwardFilter === orgName;
+                          return (
+                            <button
+                              key={i}
+                              type="button"
+                              className={`award-filter-pill ${isOsc ? 'pill-oscar' : ''} ${isActive ? 'active' : ''}`}
+                              onClick={() => setSelectedAwardFilter(orgName)}
+                            >
+                              {isOsc ? '🏆 ' : ''}{orgName}
+                              {a.wins?.length > 0 && <span className="pill-count">{a.wins.length}W</span>}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+
+                    {/* 3. Cards Grid */}
+                    <div className="awards-cards-grid">
+                      {filteredAwards.map((awd, idx) => {
+                        const orgName = awd.organization || awd.name;
+                        const isOsc = orgName.toLowerCase().includes('oscar') || orgName.toLowerCase().includes('academy');
+                        const isExpanded = !!expandedNominationsMap[orgName] || selectedAwardFilter !== 'ALL';
+                        const noms = awd.nominations || [];
+                        const visibleNoms = isExpanded ? noms : noms.slice(0, 3);
+
+                        return (
+                          <div 
+                            key={idx} 
+                            className={`award-card-item ${isOsc ? 'award-card-crown' : ''}`}
+                          >
+                            <div className="award-card-top">
+                              <div className="award-card-title-group">
+                                {isOsc && (
+                                  <div className="award-crown-tag">
+                                    <Trophy size={14} />
+                                    <span>ACADEMY AWARD WINNER</span>
+                                  </div>
+                                )}
+                                <h3 className="award-org-title">{orgName}</h3>
+                              </div>
+                              {awd.year && (
+                                <span className="award-year-badge">{awd.year}</span>
+                              )}
+                            </div>
+
+                            {/* Wins Sub-Group */}
+                            {awd.wins && awd.wins.length > 0 && (
+                              <div className="award-section-group wins-group">
+                                <div className="award-sub-header">
+                                  <span className="award-badge-pill-gold">🏆 {awd.wins.length} WON</span>
+                                  <span className="award-sub-caption">Won by {movie.title}</span>
+                                </div>
+
+                                <div className="award-wins-list">
+                                  {awd.wins.map((w, wIdx) => {
+                                    const cat = typeof w === 'string' ? w : w.category;
+                                    const rec = typeof w === 'string' ? null : w.recipient;
+                                    return (
+                                      <div key={wIdx} className="award-win-row">
+                                        <div className="award-win-icon-bullet">🏆</div>
+                                        <div className="award-win-info">
+                                          <strong className="award-win-cat">{cat}</strong>
+                                          {rec && <span className="award-win-rec">{rec}</span>}
+                                        </div>
+                                      </div>
+                                    );
+                                  })}
+                                </div>
+                              </div>
+                            )}
+
+                            {/* Nominations Sub-Group */}
+                            {noms.length > 0 && (
+                              <div className="award-section-group noms-group">
+                                <div className="award-sub-header">
+                                  <span className="award-badge-pill-nom">⭐ {noms.length} NOMINATED</span>
+                                  <span className="award-sub-caption">Official Nominations</span>
+                                </div>
+
+                                <div className="award-noms-list">
+                                  {visibleNoms.map((n, nIdx) => {
+                                    const cat = typeof n === 'string' ? n : n.category;
+                                    const rec = typeof n === 'string' ? null : n.recipient;
+                                    return (
+                                      <div key={nIdx} className="award-nom-row">
+                                        <span className="award-nom-bullet">•</span>
+                                        <div className="award-nom-info">
+                                          <span className="award-nom-cat">{cat}</span>
+                                          {rec && <span className="award-nom-rec">{rec}</span>}
+                                        </div>
+                                      </div>
+                                    );
+                                  })}
+                                </div>
+
+                                {/* Expand/Collapse Button for Nominations on Mobile/Desktop */}
+                                {noms.length > 3 && selectedAwardFilter === 'ALL' && (
+                                  <button 
+                                    type="button"
+                                    className="award-toggle-noms-btn"
+                                    onClick={() => toggleNominationsExpand(orgName)}
+                                  >
+                                    {isExpanded ? (
+                                      <>
+                                        <span>Hide Extra Nominations</span>
+                                        <ChevronUp size={14} />
+                                      </>
+                                    ) : (
+                                      <>
+                                        <span>Show {noms.length - 3} More Nominations</span>
+                                        <ChevronDown size={14} />
+                                      </>
+                                    )}
+                                  </button>
+                                )}
+                              </div>
+                            )}
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
                 </div>
               );

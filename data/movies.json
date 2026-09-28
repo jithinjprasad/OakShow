@@ -1,5 +1,655 @@
 [
   {
+    "id": "Avatar",
+    "slug": "avatar",
+    "type": "movie",
+    "category": "Hollywood",
+    "score": 9.5,
+    "filename": "Avatar.html",
+    "title": "Avatar",
+    "metaTitle": "Avatar All Ratings, Reviews, Songs, Videos, Bookings and News — OakShow",
+    "tag": "Highest Grossing Movie in History",
+    "tags": [
+      "Highest Grossing Movie in History",
+      "3x Oscar Winner",
+      "All-Time Box Office #1"
+    ],
+    "description": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home. Directed by James Cameron, Avatar is the highest-grossing film in cinema history.",
+    "plot": "In 2154, humans have depleted Earth's natural resources, leading to a severe energy crisis. The Resources Development Administration (RDA) mines the valuable mineral unobtanium on Pandora, a densely forested habitable moon orbiting the gas giant Polyphemus in the Alpha Centauri star system. Pandora is inhabited by the Na'vi, 10-foot-tall, blue-skinned, sapient humanoids. Jake Sully, a paraplegic former Marine, replaces his deceased twin brother as an operator of an avatar—a genetically engineered Na'vi-human hybrid body operated via mental link. As Jake integrates with the Omatikaya clan and falls in love with Neytiri, he faces a fateful conflict between the RDA's destructive military campaign and the indigenous Na'vi fighting for their survival.",
+    "language": "English",
+    "releaseDate": "December 18, 2009",
+    "year": "2009",
+    "status": "released",
+    "genre": "Sci-Fi, Action, Adventure, Fantasy",
+    "duration": "2hr 42mins",
+    "director": "James Cameron",
+    "basedOn": "Written & Created by James Cameron",
+    "boxOffice": {
+      "worldwideGross": "$2.923 Billion ($2,923,706,026) — #1 All-Time Highest Grossing Film in History",
+      "indiaGross": "$23.7 Million (₹145+ Crore All-Time Indian Gross)",
+      "overseasGross": "$2.138 Billion",
+      "openingDay": "$26.7 Million Domestic (USA)",
+      "openingWeekend": "$77.0 Million Domestic / $241.6 Million Worldwide",
+      "budget": "$237 Million",
+      "verdict": "All-Time #1 Highest-Grossing Film in World Cinema History",
+      "lastUpdated": "September 2026",
+      "source": "Box Office Mojo, The Numbers & Guinness World Records"
+    },
+    "poster": "pics/Films/Avatar/1.jpg",
+    "banner": "pics/Films/Avatar/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/Avatar/1.jpg",
+        "alt": "Avatar Theatrical Poster"
+      },
+      {
+        "src": "pics/Films/Avatar/2.jpg",
+        "alt": "Avatar Neytiri Hero Landscape"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "9.5/10",
+        "url": "https://oakshow.in/Avatar.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates"
+      },
+      {
+        "source": "IMDb",
+        "score": "7.9/10",
+        "url": "https://www.imdb.com/title/tt0499549/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "81%",
+        "url": "https://www.rottentomatoes.com/m/avatar",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "83/100",
+        "url": "https://www.metacritic.com/movie/avatar/",
+        "icon": "pics/RatingSiteLogos/metacritic-must-see.png"
+      },
+      {
+        "source": "Common Sense Media",
+        "score": "4/5",
+        "url": "https://www.commonsensemedia.org/movie-reviews/avatar",
+        "icon": "pics/RatingSiteLogos/common-sense-media.png"
+      },
+      {
+        "source": "IGN",
+        "score": "9/10",
+        "url": "https://www.ign.com/articles/2009/12/12/avatar-review",
+        "icon": "pics/RatingSiteLogos/ign.png"
+      },
+      {
+        "source": "The Times of India",
+        "score": "5/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/english/movie-reviews/avatar/movie-review/5348868.cms",
+        "icon": "pics/RatingSiteLogos/timesofindia.ico"
+      },
+      {
+        "source": "Rediff",
+        "score": "4.5/5",
+        "url": "https://www.rediff.com/movies/review/review-avatar/20091215.htm",
+        "icon": "pics/RatingSiteLogos/rediff.png"
+      },
+      {
+        "source": "NDTV",
+        "score": "4.2/5",
+        "url": "https://www.ndtv.com/entertainment/avatar-the-way-of-water-review-what-cinematic-sorcery-looks-like-at-its-best-4-stars-3612401",
+        "icon": "pics/RatingSiteLogos/ndtv.ico"
+      },
+      {
+        "source": "India Today",
+        "score": "4.1/5",
+        "url": "https://www.indiatoday.in/movies/reviews/story/be-born-again-watch-avatar-63205-2009-12-16",
+        "icon": "pics/RatingSiteLogos/india-today.ico"
+      },
+      {
+        "source": "Roger Ebert",
+        "score": "4/4",
+        "url": "https://www.rogerebert.com/reviews/avatar-2009",
+        "icon": "pics/RatingSiteLogos/rogerebert.ico"
+      },
+      {
+        "source": "Rolling Stone",
+        "score": "3.5/4",
+        "url": "https://www.rollingstone.com/tv-movies/tv-movie-reviews/avatar-251996/",
+        "icon": "pics/RatingSiteLogos/rollingstone.png"
+      },
+      {
+        "source": "The Indian Express",
+        "score": "3/5",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/avatar-2/",
+        "icon": "pics/RatingSiteLogos/indian-express.png"
+      },
+      {
+        "source": "The Guardian",
+        "score": "2/5",
+        "url": "https://www.theguardian.com/film/2009/dec/11/avatar-james-cameron-film-review",
+        "icon": "pics/RatingSiteLogos/the-guardian.png"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Sam Worthington",
+        "role": "Jake Sully",
+        "description": ""
+      },
+      {
+        "actor": "Zoe Saldaña",
+        "role": "Neytiri",
+        "description": ""
+      },
+      {
+        "actor": "Sigourney Weaver",
+        "role": "Dr. Grace Augustine",
+        "description": ""
+      },
+      {
+        "actor": "Stephen Lang",
+        "role": "Colonel Miles Quaritch",
+        "description": ""
+      },
+      {
+        "actor": "Michelle Rodriguez",
+        "role": "Trudy Chacón",
+        "description": ""
+      },
+      {
+        "actor": "Giovanni Ribisi",
+        "role": "Parker Selfridge",
+        "description": ""
+      },
+      {
+        "actor": "Joel David Moore",
+        "role": "Dr. Norm Spellman",
+        "description": ""
+      },
+      {
+        "actor": "CCH Pounder",
+        "role": "Mo'at",
+        "description": ""
+      },
+      {
+        "actor": "Wes Studi",
+        "role": "Eytukan",
+        "description": ""
+      },
+      {
+        "actor": "Laz Alonso",
+        "role": "Tsu'tey",
+        "description": ""
+      }
+    ],
+    "awards": [
+      {
+        "organization": "Academy Awards (Oscars)",
+        "year": "2010 (82nd)",
+        "wins": [
+          {
+            "category": "Best Art Direction",
+            "recipient": "Rick Carter, Robert Stromberg, Kim Sinclair"
+          },
+          {
+            "category": "Best Cinematography",
+            "recipient": "Mauro Fiore"
+          },
+          {
+            "category": "Best Visual Effects",
+            "recipient": "Joe Letteri, Stephen Rosenbaum, Richard Baneham, Andrew R. Jones"
+          }
+        ],
+        "nominations": [
+          {
+            "category": "Best Picture",
+            "recipient": "James Cameron, Jon Landau"
+          },
+          {
+            "category": "Best Director",
+            "recipient": "James Cameron"
+          },
+          {
+            "category": "Best Original Score",
+            "recipient": "James Horner"
+          },
+          {
+            "category": "Best Film Editing",
+            "recipient": "James Cameron, Stephen E. Rivkin, John Refoua"
+          },
+          {
+            "category": "Best Sound Editing",
+            "recipient": "Christopher Boyes, Gwendolyn Yates Whittle"
+          },
+          {
+            "category": "Best Sound Mixing",
+            "recipient": "Christopher Boyes, Gary Summers, Andy Nelson, Tony Johnson"
+          }
+        ]
+      },
+      {
+        "organization": "Golden Globe Awards",
+        "year": "2010 (67th)",
+        "wins": [
+          {
+            "category": "Best Motion Picture – Drama",
+            "recipient": "James Cameron, Jon Landau"
+          },
+          {
+            "category": "Best Director",
+            "recipient": "James Cameron"
+          }
+        ],
+        "nominations": [
+          {
+            "category": "Best Original Score",
+            "recipient": "James Horner"
+          },
+          {
+            "category": "Best Original Song (\"I See You\")",
+            "recipient": "James Horner, Kuk Harrell, Simon Franglen"
+          }
+        ]
+      },
+      {
+        "organization": "BAFTA Film Awards",
+        "year": "2010 (63rd)",
+        "wins": [
+          {
+            "category": "Best Production Design",
+            "recipient": "Rick Carter, Robert Stromberg, Kim Sinclair"
+          },
+          {
+            "category": "Best Special Visual Effects",
+            "recipient": "Joe Letteri, Stephen Rosenbaum, Richard Baneham, Andrew R. Jones"
+          }
+        ],
+        "nominations": [
+          {
+            "category": "Best Film",
+            "recipient": "James Cameron, Jon Landau"
+          },
+          {
+            "category": "Best Director",
+            "recipient": "James Cameron"
+          },
+          {
+            "category": "Best Cinematography",
+            "recipient": "Mauro Fiore"
+          },
+          {
+            "category": "Best Editing",
+            "recipient": "James Cameron, Stephen E. Rivkin, John Refoua"
+          },
+          {
+            "category": "Best Original Music",
+            "recipient": "James Horner"
+          },
+          {
+            "category": "Best Sound",
+            "recipient": "Christopher Boyes, Gary Summers, Andy Nelson, Tony Johnson, Addison Teague"
+          }
+        ]
+      },
+      {
+        "organization": "Saturn Awards",
+        "year": "2010 (36th)",
+        "wins": [
+          {
+            "category": "Best Science Fiction Film",
+            "recipient": "Avatar"
+          },
+          {
+            "category": "Best Director",
+            "recipient": "James Cameron"
+          },
+          {
+            "category": "Best Writing",
+            "recipient": "James Cameron"
+          },
+          {
+            "category": "Best Actor",
+            "recipient": "Sam Worthington"
+          },
+          {
+            "category": "Best Actress",
+            "recipient": "Zoe Saldaña"
+          },
+          {
+            "category": "Best Supporting Actor",
+            "recipient": "Stephen Lang"
+          },
+          {
+            "category": "Best Supporting Actress",
+            "recipient": "Sigourney Weaver"
+          },
+          {
+            "category": "Best Music",
+            "recipient": "James Horner"
+          },
+          {
+            "category": "Best Production Design",
+            "recipient": "Rick Carter, Robert Stromberg"
+          },
+          {
+            "category": "Best Special Effects",
+            "recipient": "Joe Letteri, Stephen Rosenbaum, Richard Baneham, Andrew R. Jones"
+          }
+        ],
+        "nominations": []
+      },
+      {
+        "organization": "Critics' Choice Movie Awards",
+        "year": "2010 (15th)",
+        "wins": [
+          {
+            "category": "Best Action Movie",
+            "recipient": "Avatar"
+          },
+          {
+            "category": "Best Art Direction",
+            "recipient": "Rick Carter, Robert Stromberg"
+          },
+          {
+            "category": "Best Cinematography",
+            "recipient": "Mauro Fiore"
+          },
+          {
+            "category": "Best Visual Effects",
+            "recipient": "Avatar Visual Effects Team"
+          },
+          {
+            "category": "Best Sound",
+            "recipient": "Avatar Sound Team"
+          },
+          {
+            "category": "Best Editing",
+            "recipient": "James Cameron, Stephen E. Rivkin, John Refoua"
+          }
+        ],
+        "nominations": [
+          {
+            "category": "Best Picture",
+            "recipient": "James Cameron, Jon Landau"
+          },
+          {
+            "category": "Best Director",
+            "recipient": "James Cameron"
+          },
+          {
+            "category": "Best Makeup",
+            "recipient": "Avatar Makeup Team"
+          }
+        ]
+      }
+    ],
+    "bookings": [
+      {
+        "provider": "BookMyShow",
+        "url": "https://in.bookmyshow.com/movies/nask/avatar/ET00004000",
+        "icon": "pics/BookngWebSiteLogos/book-my-show.png",
+        "label": "Book Now",
+        "rank": 1
+      },
+      {
+        "provider": "District",
+        "url": "https://www.district.in/movies/avatar-2009-movie-tickets-in-chipurupalle-MV155761?srsltid=AU7gw4XcHqyIFlbnA5hCCTIrENwjH3JLgwRrq2NhxqCGdAjcdq6tp2qz",
+        "icon": "pics/BookngWebSiteLogos/district.png",
+        "label": "Book Now",
+        "rank": 2
+      },
+      {
+        "provider": "Fandango",
+        "url": "https://www.fandango.com/avatar-2009-103067/movie-overview",
+        "icon": "pics/BookngWebSiteLogos/fandango.png",
+        "label": "Book Now",
+        "rank": 3
+      },
+      {
+        "provider": "TicketNew",
+        "url": "https://ticketnew.com/movies/avatar-2009-movie-detail-155761",
+        "icon": "pics/BookngWebSiteLogos/ticket-new.png",
+        "label": "Book Now",
+        "rank": 4
+      }
+    ],
+    "watchOnline": [
+      {
+        "provider": "JioHotstar",
+        "platform": "JioHotstar",
+        "url": "https://www.hotstar.com/in/movies/avatar/1770000948?utm_source=gwa",
+        "icon": "pics/WatchOnline/JioHotstar.png",
+        "lang": "English, Hindi, Tamil, Telugu"
+      },
+      {
+        "provider": "Amazon Prime Video",
+        "platform": "Amazon Prime Video",
+        "url": "https://www.primevideo.com/detail/0LCOF5S7YR0UEA8EYW31TA7OF7",
+        "icon": "pics/WatchOnline/amazon-prime.png",
+        "lang": "English, Hindi"
+      }
+    ],
+    "music": [
+      {
+        "provider": "Spotify",
+        "url": "https://open.spotify.com/album/1H81jGoWeLI8ufq42GfDPn",
+        "icon": "pics/MusicWebsiteLogos/spotify.png",
+        "label": "Listen on Spotify"
+      },
+      {
+        "provider": "Apple Music",
+        "url": "https://music.apple.com/us/album/avatar-music-from-the-motion-picture/342383762",
+        "icon": "pics/MusicWebsiteLogos/itunes.png",
+        "label": "Listen on Apple Music"
+      }
+    ],
+    "officialWebsite": {
+      "url": "https://www.avatar.com/",
+      "label": "Visit The Official Website For This Movie"
+    },
+    "socials": [
+      {
+        "platform": "Facebook",
+        "url": "https://www.facebook.com/Avatar",
+        "icon": "pics/SocialWebsiteLogos/facebook.png",
+        "language": "",
+        "label": "Connect Now"
+      },
+      {
+        "platform": "Twitter / X",
+        "url": "https://twitter.com/officialavatar",
+        "icon": "pics/SocialWebsiteLogos/twitter.png",
+        "language": "",
+        "label": "Connect Now"
+      },
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/avatar/",
+        "icon": "pics/SocialWebsiteLogos/instagram.png",
+        "language": "",
+        "label": "Connect Now"
+      },
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/officialavatar",
+        "icon": "pics/SocialWebsiteLogos/youtube.png",
+        "language": "",
+        "label": "Connect Now"
+      }
+    ],
+    "similar": [
+      {
+        "title": "Avengers: Endgame",
+        "link": "AvengersEndgame.html",
+        "poster": "pics/Films/AvengersEndgame/2.jpg"
+      },
+      {
+        "title": "Avatar: The Way of Water",
+        "link": "AvatarTheWayofWater.html",
+        "poster": "pics/Films/AvatarTheWayofWater/2.jpg"
+      },
+      {
+        "title": "Alita: Battle Angel",
+        "link": "AlitaBattleAngel.html",
+        "poster": "pics/Films/AlitaBattleAngel/2.jpg"
+      },
+      {
+        "title": "Avengers: Infinity War",
+        "link": "AvengersInfinityWar.html",
+        "poster": "pics/Films/AvengersInfinityWar/1.jpg"
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=5PSNL1qE6VY",
+        "youtubeId": "5PSNL1qE6VY",
+        "title": "Avatar | Official Trailer (HD) | 20th Century FOX"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=aVdO-cx-McA",
+        "youtubeId": "aVdO-cx-McA",
+        "title": "Avatar | Official Teaser Trailer (HD) | 20th Century FOX"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=jm2sNLIPPvA",
+        "youtubeId": "jm2sNLIPPvA",
+        "title": "Avatar | Back In Theaters Official Promo"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=vzzVsOdumqg",
+        "youtubeId": "vzzVsOdumqg",
+        "title": "Avatar Featurette: Planet Pandora"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=qdV9LUYrEqs",
+        "youtubeId": "qdV9LUYrEqs",
+        "title": "Avatar Featurette: James Cameron's Vision"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=197Qfoy-xME",
+        "youtubeId": "197Qfoy-xME",
+        "title": "Avatar Featurette: Scorpion"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=7VxJW-XJkro",
+        "youtubeId": "7VxJW-XJkro",
+        "title": "Avatar Featurette: Navi"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=4plftv4aCSc",
+        "youtubeId": "4plftv4aCSc",
+        "title": "Avatar Featurette: DireHorse"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=aw60Ma4c2bw",
+        "youtubeId": "aw60Ma4c2bw",
+        "title": "Avatar Featurette: AMP Suit"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=EoHZcf_lkMA",
+        "youtubeId": "EoHZcf_lkMA",
+        "title": "Avatar Featurette: Banshee"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "Profits Of The First Avatar Movie Exceeded Profits Of The Second And Third Combined",
+        "url": "https://www.forbes.com/sites/carolinereid/2026/09/27/profits-of-the-first-avatar-movie-exceeded-profits-of-the-second-and-third-combined/",
+        "author": "Caroline Reid (Forbes)",
+        "date": "27 September, 2026",
+        "section": "More Reviews and News"
+      },
+      {
+        "headline": "Avengers: Endgame Encore Scores USD 8.6 Million Debut Weekend, Still Short Of Beating Avatar As Highest-Grossing Film Of All Time",
+        "url": "https://timesofindia.indiatimes.com/entertainment/english/hollywood/box-office/avengers-endgame-encore-scores-usd-86-million-debut-weekend-marvel-film-usd-40-million-short-of-beating-avatar-to-become-highest-grossing-film-of-all-time/articleshow/134526210.cms",
+        "author": "Times of India",
+        "date": "26 September, 2026",
+        "section": "More Reviews and News"
+      },
+      {
+        "headline": "Avengers: Endgame Encore is back in theatres and its closing in on Avatar's all-time box office record",
+        "url": "https://www.thestatesman.com/entertainment/hollywood/avengers-endgame-encore-is-back-in-theatres-and-its-closing-in-on-avatars-all-time-box-office-record-1503643439.html",
+        "author": "The Statesman",
+        "date": "25 September, 2026",
+        "section": "More Reviews and News"
+      },
+      {
+        "headline": "Avatar 3 made $1.49 billion and Cameron says it might not be enough for Avatar 4",
+        "url": "https://3dvf.com/en/avatar-3-made-1-49-billion-and-cameron-says-it-might-not-be-enough-for-avatar-4/",
+        "author": "3DVF News",
+        "date": "2026",
+        "section": "More Reviews and News"
+      },
+      {
+        "headline": "James Cameron on future of Avatar trilogy and directing legacy",
+        "url": "https://www.theguardian.com/film/2026/aug/07/james-cameron-avatar-trilogy-quit-as-director",
+        "author": "The Guardian",
+        "date": "07 August, 2026",
+        "section": "More Reviews and News"
+      },
+      {
+        "headline": "Review: Avatar is an extraordinary sensory experience",
+        "url": "https://www.rediff.com/movies/review/review-avatar/20091215.htm",
+        "author": "Rediff",
+        "date": "15 December, 2009",
+        "section": "More Reviews and News"
+      },
+      {
+        "headline": "Avatar review: James Cameron creates a miraculous world",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/avatar-2/",
+        "author": "Indian Express",
+        "date": "16 December, 2009",
+        "section": "More Reviews and News"
+      },
+      {
+        "headline": "Avatar review: What cinematic sorcery looks like at its best",
+        "url": "https://www.ndtv.com/entertainment/avatar-the-way-of-water-review-what-cinematic-sorcery-looks-like-at-its-best-4-stars-3612401",
+        "author": "NDTV",
+        "date": "16 December, 2009",
+        "section": "More Reviews and News"
+      },
+      {
+        "headline": "Be born again, watch Avatar: India Today Review",
+        "url": "https://www.indiatoday.in/movies/reviews/story/be-born-again-watch-avatar-63205-2009-12-16",
+        "author": "India Today",
+        "date": "16 December, 2009",
+        "section": "More Reviews and News"
+      },
+      {
+        "headline": "Avatar Review — James Cameron proves why he is king of cinema",
+        "url": "https://www.ign.com/articles/2009/12/12/avatar-review",
+        "author": "IGN",
+        "date": "12 December, 2009",
+        "section": "More Reviews and News"
+      },
+      {
+        "headline": "Avatar Movie Review & Film Summary (2009)",
+        "url": "https://www.rogerebert.com/reviews/avatar-2009",
+        "author": "Roger Ebert",
+        "date": "11 December, 2009",
+        "section": "More Reviews and News"
+      },
+      {
+        "headline": "Avatar, full review: James Cameron's groundbreaking spectacle",
+        "url": "https://www.telegraph.co.uk/culture/film/filmreviews/6832593/Avatar-full-review.html",
+        "author": "The Telegraph",
+        "date": "15 December, 2009",
+        "section": "More Reviews and News"
+      },
+      {
+        "headline": "Avatar review: Visually astonishing 3D sci-fi adventure",
+        "url": "https://www.theguardian.com/film/2009/dec/11/avatar-james-cameron-film-review",
+        "author": "The Guardian",
+        "date": "11 December, 2009",
+        "section": "More Reviews and News"
+      }
+    ],
+    "filePath": "E:/OakShow/Avatar.html"
+  },
+  {
     "id": "Dhoomakethu",
     "slug": "dhoomakethu",
     "type": "movie",
@@ -3555,6 +4205,414 @@
     ],
     "wikipedia": "https://en.wikipedia.org/wiki/The_End_of_Oak_Street",
     "imdb": "https://www.imdb.com/title/tt27165187/"
+  },
+  {
+    "id": "Verity",
+    "slug": "verity",
+    "type": "movie",
+    "category": "Hollywood",
+    "score": null,
+    "filename": "Verity.html",
+    "aliases": [
+      "verity",
+      "verity-film",
+      "verity-movie"
+    ],
+    "title": "Verity",
+    "metaTitle": "Verity (2026) All Ratings, Reviews, Songs, Videos, Bookings and News — OakShow",
+    "description": "Verity is an upcoming 2026 American psychological and erotic thriller directed by Michael Showalter, starring Anne Hathaway, Dakota Johnson, and Josh Hartnett, based on Colleen Hoover's bestselling novel.",
+    "plot": "Lowen Ashleigh, a struggling author on the brink of financial collapse, receives a life-changing proposal when Jeremy Crawford—the devoted husband of bestselling suspense novelist Verity Crawford—hires her to complete the remaining books of a blockbuster series after Verity is catastrophically injured in a car crash.\n\nMoving into the Crawford family's secluded lakeside estate to sort through Verity's extensive notes and research, Lowen stumbles upon an unpublished, secret autobiography titled 'So Be It'. As Lowen reads page after page of bone-chilling confessions detailing sinister family tragedy, infidelity, and the disturbing circumstances surrounding the deaths of the couple's twin daughters, Lowen becomes deeply infatuated with Jeremy while questioning whether Verity's comatose state is real or a terrifying game of psychological manipulation.",
+    "language": "English",
+    "releaseDate": "October 2, 2026",
+    "year": "2026",
+    "genre": "Psychological Thriller, Erotic Thriller, Mystery, Romance, Drama",
+    "duration": "2hr 05mins",
+    "director": "Michael Showalter",
+    "basedOn": "Verity by Colleen Hoover (Novel) | Screenplay by Nick Antosca",
+    "cast": [
+      "Anne Hathaway",
+      "Dakota Johnson",
+      "Josh Hartnett",
+      "Ismael Cruz Córdova",
+      "Brady Wagner"
+    ],
+    "boxOffice": {
+      "budget": "$40–50 Million (Estimated)",
+      "worldwideGross": "Upcoming / Theatrical Release October 2, 2026",
+      "openingDay": "TBD",
+      "openingWeekend": "TBD",
+      "domesticGross": "TBD",
+      "overseasGross": "TBD",
+      "indiaGross": "TBD",
+      "verdict": "Upcoming Theatrical Release",
+      "source": "Amazon MGM Studios & Sony Pictures",
+      "lastUpdated": "September 2026"
+    },
+    "poster": "pics/Films/Verity/1.jpg",
+    "banner": "pics/Films/Verity/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/Verity/1.jpg",
+        "alt": "Verity Official Key Art Poster"
+      },
+      {
+        "src": "pics/Films/Verity/2.jpg",
+        "alt": "Verity Official Theatrical Banner"
+      }
+    ],
+    "ratings": [],
+    "bookingTickets": [
+      {
+        "provider": "BookMyShow",
+        "url": "https://in.bookmyshow.com/movies/mumbai/verity/ET00497246",
+        "icon": "pics/BookngWebSiteLogos/book-my-show.png",
+        "label": "Book on BookMyShow",
+        "rank": 1
+      },
+      {
+        "provider": "District",
+        "url": "https://www.district.in/movies/verity-movie-tickets-MV220590?srsltid=AU7gw4U-zdjHpzjdY9g2lULONXCeBhWvguoWtZ-vOtlkH-HcRx8HHhWj",
+        "icon": "pics/BookngWebSiteLogos/district.png",
+        "label": "Book on District",
+        "rank": 2
+      },
+      {
+        "provider": "Fandango",
+        "url": "https://www.fandango.com/verity-2026-240033/movie-overview",
+        "icon": "pics/BookngWebSiteLogos/fandango.png",
+        "label": "Book on Fandango",
+        "rank": 3
+      },
+      {
+        "provider": "Cineworld",
+        "url": "https://www.cineworld.co.uk/films/1000015739-verity/",
+        "icon": "pics/BookngWebSiteLogos/cineworld.png",
+        "label": "Book on Cineworld",
+        "rank": 4
+      }
+    ],
+    "watchOnline": [],
+    "music": [
+      {
+        "provider": "Spotify",
+        "url": "https://open.spotify.com/album/3h7o3OEjUgp7yBZ0xZEIu2",
+        "icon": "pics/MusicWebsiteLogos/spotify.png",
+        "label": "Listen on Spotify"
+      }
+    ],
+    "officialWebsite": null,
+    "socials": [],
+    "similar": [
+      {
+        "title": "A Simple Favor",
+        "link": "ASimpleFavor.html",
+        "poster": "pics/Films/ASimpleFavor/2.jpg"
+      },
+      {
+        "title": "Nocturnal Animals",
+        "link": "NocturnalAnimals.html",
+        "poster": "pics/Films/NocturnalAnimals/2.jpg"
+      },
+      {
+        "title": "The End of Oak Street",
+        "link": "TheEndofOakStreet.html",
+        "poster": "pics/Films/TheEndofOakStreet/2.jpg"
+      },
+      {
+        "title": "A Quiet Place",
+        "link": "AQuietPlace.html",
+        "poster": "pics/Films/AQuietPlace/2.jpg"
+      },
+      {
+        "title": "Before I Fall",
+        "link": "BeforeIFall.html",
+        "poster": "pics/Films/BeforeIFall/2.jpg"
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=xdPMKhjMSFs",
+        "youtubeId": "xdPMKhjMSFs",
+        "title": "Official Main Trailer",
+        "type": "Trailer"
+      }
+    ],
+    "trailers": [
+      {
+        "title": "Official Main Trailer",
+        "url": "https://www.youtube.com/watch?v=xdPMKhjMSFs",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/xdPMKhjMSFs",
+        "youtubeId": "xdPMKhjMSFs",
+        "type": "Trailer"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "Colleen Hoover Opens Up About Anne Hathaway's Casting and Performance in Verity: 'She Nailed It'",
+        "url": "https://www.deccanchronicle.com/entertainment/colleen-hoover-opens-up-about-anne-hathaways-casting-and-performance-in-verity-she-nailed-it-1991244",
+        "author": "Deccan Chronicle",
+        "date": "September 2026",
+        "section": "News"
+      },
+      {
+        "headline": "Colleen Hoover Calls Anne Hathaway Casting in Verity a 'Pinch-Me Moment'",
+        "url": "https://www.indiatoday.in/movies/hollywood/story/colleen-hoover-calls-anne-hathaway-casting-in-verity-a-pinch-me-moment-3004575-2026-09-28",
+        "author": "India Today",
+        "date": "September 2026",
+        "section": "News"
+      },
+      {
+        "headline": "Inside 'Verity': Colleen Hoover, Anne Hathaway and Dakota Johnson on Reviving the Erotic Thriller",
+        "url": "https://variety.com/2026/film/features/verity-colleen-hoover-anne-hathaway-dakota-johnson-erotic-1236872986/",
+        "author": "Variety",
+        "date": "September 2026",
+        "section": "News"
+      },
+      {
+        "headline": "Anne Hathaway Reveals Why She Hasn't Done 'Hot Ones' Despite Her Verity Character Taking the Challenge",
+        "url": "https://www.wionews.com/entertainment/hollywood/anne-hathaway-reveals-why-she-hasn-t-done-hot-ones-despite-her-verity-character-taking-the-challenge-1790592074439",
+        "author": "WION",
+        "date": "September 2026",
+        "section": "News"
+      },
+      {
+        "headline": "12 of the Best Films to Watch This October: Verity, Dracula and More",
+        "url": "https://www.bbc.com/culture/article/20260923-12-of-the-best-films-to-watch-this-october",
+        "author": "BBC",
+        "date": "September 2026",
+        "section": "News"
+      },
+      {
+        "headline": "Dakota Johnson on Verity: Why Truth and Trust Are Never What They Seem",
+        "url": "https://moderndiplomacy.eu/2026/09/26/dakota-johnson-on-verity-why-truth-and-trust-are-never-what-they-seem/",
+        "author": "Modern Diplomacy",
+        "date": "September 2026",
+        "section": "News"
+      }
+    ],
+    "filePath": "E:/OakShow/Verity.html",
+    "status": "upcoming",
+    "genres": [
+      "Psychological Thriller",
+      "Erotic Thriller",
+      "Mystery",
+      "Romance",
+      "Drama"
+    ],
+    "wikipedia": "https://en.wikipedia.org/wiki/Verity_(film)",
+    "imdb": "https://www.imdb.com/title/tt32261958/"
+  },
+  {
+    "id": "AvarachanandSons",
+    "slug": "avarachanandsons",
+    "type": "movie",
+    "category": "Indian",
+    "score": null,
+    "filename": "AvarachanandSons.html",
+    "aliases": [
+      "avarachan-and-sons",
+      "avarachan-sons",
+      "avaraachan-and-sons",
+      "avaraachan-sons",
+      "avarachanandsons"
+    ],
+    "title": "Avarachan & Sons",
+    "metaTitle": "Avarachan & Sons (2026) All Ratings, Reviews, Songs, Videos, Bookings and News — OakShow",
+    "description": "Avarachan & Sons is an upcoming 2026 Indian Malayalam-language family comedy-drama film directed by Amal Sheela Thamby, starring Biju Menon, Sreenath Bhasi, Ganapathi, Vinay Forrt, and Grace Antony.",
+    "plot": "Avarachan is a carefree widower living with his two grown sons in the coastal town of Chellanam. Known for their eccentric lifestyle and occasional neighborhood squabbles, the family's routine is turned upside down following an escalating feud with a local gang that forces them into a temporary self-imposed exile.\n\nWhile attempting to settle into a new, unfamiliar community, Avarachan and his sons get tangled in comical misadventures, unexpected romances, and longstanding family secrets, ultimately discovering the true depth of father-son bonds amidst laughter and chaos.",
+    "language": "Malayalam",
+    "releaseDate": "October 2, 2026",
+    "year": "2026",
+    "genre": "Family, Comedy, Drama",
+    "duration": "2hr 15mins",
+    "director": "Amal Sheela Thamby",
+    "writer": "Santhosh Krishnan & Naveen P Thomas",
+    "cast": [
+      "Biju Menon",
+      "Sreenath Bhasi",
+      "Ganapathi",
+      "Vinay Forrt",
+      "Johny Antony",
+      "Grace Antony",
+      "Akhila Bhargavan",
+      "Pauly Valsan",
+      "Sabumon Abdusamad",
+      "Kottayam Nazeer"
+    ],
+    "boxOffice": {
+      "budget": "₹8–10 Crore (Estimated)",
+      "worldwideGross": "Upcoming / In Theatres October 2, 2026",
+      "openingDay": "TBD",
+      "openingWeekend": "TBD",
+      "domesticGross": "TBD",
+      "overseasGross": "TBD",
+      "indiaGross": "TBD",
+      "verdict": "Upcoming Theatrical Release",
+      "source": "Magic Frames",
+      "lastUpdated": "September 2026"
+    },
+    "poster": "pics/Films/AvarachanandSons/1.jpg",
+    "banner": "pics/Films/AvarachanandSons/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/AvarachanandSons/1.jpg",
+        "alt": "Avarachan & Sons Official Theatrical Poster"
+      },
+      {
+        "src": "pics/Films/AvarachanandSons/2.jpg",
+        "alt": "Avarachan & Sons Second Look Banner"
+      }
+    ],
+    "ratings": [],
+    "bookingTickets": [
+      {
+        "provider": "BookMyShow",
+        "url": "https://in.bookmyshow.com/movies/kochi/avaraachan-sons/ET00507359",
+        "icon": "pics/BookngWebSiteLogos/book-my-show.png",
+        "label": "Book on BookMyShow",
+        "rank": 1
+      },
+      {
+        "provider": "District",
+        "url": "https://www.district.in/movies/avarachan-sons-movie-tickets-in-dandeli-MV234167?srsltid=AU7gw4W6EjzKJwhROmyk-qzHyM__2r_dSUc0bK_bR7s54l0hPEOHLnMG",
+        "icon": "pics/BookngWebSiteLogos/district.png",
+        "label": "Book on District",
+        "rank": 2
+      },
+      {
+        "provider": "Fandango",
+        "url": "https://www.fandango.com/avaraachan-and-sons-2026-247662/movie-overview",
+        "icon": "pics/BookngWebSiteLogos/fandango.png",
+        "label": "Book on Fandango",
+        "rank": 3
+      }
+    ],
+    "watchOnline": [],
+    "music": [
+      {
+        "provider": "Spotify",
+        "url": "https://open.spotify.com/album/6lXrxHGMqVBY5OjhPJVFAS",
+        "icon": "pics/MusicWebsiteLogos/spotify.png",
+        "label": "Listen on Spotify"
+      },
+      {
+        "provider": "JioSaavn",
+        "url": "https://www.jiosaavn.com/song/quarter-song-from-avaraachan-sons/QSw6QT9vTgU",
+        "icon": "pics/MusicWebsiteLogos/saavn.png",
+        "label": "Listen on JioSaavn"
+      }
+    ],
+    "officialWebsite": null,
+    "socials": [],
+    "similar": [
+      {
+        "title": "Kumbalangi Nights",
+        "link": "KumbalangiNights.html",
+        "poster": "pics/Films/KumbalangiNights/2.jpg"
+      },
+      {
+        "title": "Njandukalude Nattil Oridavela",
+        "link": "NjandukaludeNattilOridavela.html",
+        "poster": "pics/Films/NjandukaludeNattilOridavela/1.jpg"
+      },
+      {
+        "title": "Munthirivallikal Thalirkkumbol",
+        "link": "MunthirivallikalThalirkkumbol.html",
+        "poster": "pics/Films/Munthirivallikal%20Thalirkkumbol/1.jpg"
+      },
+      {
+        "title": "Jomonte Suvisheshangal",
+        "link": "Jomonte_Suvisheshangal.html",
+        "poster": "pics/Films/Jomonte%20Suvisheshangal/1.jpg"
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=uVu0mM-Fnvc",
+        "youtubeId": "uVu0mM-Fnvc",
+        "title": "Official Main Trailer",
+        "type": "Trailer"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=RYe6aOfmChs",
+        "youtubeId": "RYe6aOfmChs",
+        "title": "Official Teaser",
+        "type": "Teaser"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=wLQosbLn6-8",
+        "youtubeId": "wLQosbLn6-8",
+        "title": "Quarter Song",
+        "type": "Song"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=R0UCvGOq2hw",
+        "youtubeId": "R0UCvGOq2hw",
+        "title": "Official Video Song",
+        "type": "Song"
+      }
+    ],
+    "trailers": [
+      {
+        "title": "Official Main Trailer",
+        "url": "https://www.youtube.com/watch?v=uVu0mM-Fnvc",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/uVu0mM-Fnvc",
+        "youtubeId": "uVu0mM-Fnvc",
+        "type": "Trailer"
+      },
+      {
+        "title": "Official Teaser",
+        "url": "https://www.youtube.com/watch?v=RYe6aOfmChs",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/RYe6aOfmChs",
+        "youtubeId": "RYe6aOfmChs",
+        "type": "Teaser"
+      },
+      {
+        "title": "Quarter Song",
+        "url": "https://www.youtube.com/watch?v=wLQosbLn6-8",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/wLQosbLn6-8",
+        "youtubeId": "wLQosbLn6-8",
+        "type": "Song"
+      },
+      {
+        "title": "Official Video Song",
+        "url": "https://www.youtube.com/watch?v=R0UCvGOq2hw",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/R0UCvGOq2hw",
+        "youtubeId": "R0UCvGOq2hw",
+        "type": "Song"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "Avarachan & Sons Director Amal Sheela Thamby Speaks on Film's Five-Year Journey to Theatres",
+        "url": "https://www.etvbharat.com/en/entertainment/avarachan-and-sons-director-amal-sheela-thamby-speaks-on-films-five-year-journey-to-theatres-enn26092302087",
+        "author": "ETV Bharat",
+        "date": "September 2026",
+        "section": "News"
+      },
+      {
+        "headline": "Biju Menon Starrer 'Avarachan & Sons' Drops High-Energy Trailer",
+        "url": "https://www.outlookindia.com/art-entertainment/south-cinema/biju-menon-starrer-avarachan-sons-drops-trailer",
+        "author": "Outlook India",
+        "date": "September 2026",
+        "section": "News"
+      },
+      {
+        "headline": "First Look of Biju Menon Starrer 'Avarachan & Sons' Unveiled",
+        "url": "https://www.newindianexpress.com/entertainment/entertainment-news/2026/May/27/malayalamnews2026may27first-look-of-biju-menon-starrer-avarachan-sons-unveiled",
+        "author": "The New Indian Express",
+        "date": "May 2026",
+        "section": "News"
+      }
+    ],
+    "filePath": "E:/OakShow/AvarachanandSons.html",
+    "status": "upcoming",
+    "genres": [
+      "Family",
+      "Comedy",
+      "Drama"
+    ],
+    "imdb": "https://www.imdb.com/title/tt34792531/"
   },
   {
     "id": "Runner",
@@ -57203,7 +58261,17 @@
     "duration": "3hr 1Min",
     "director": "Anthony Russo,Joe Russo",
     "basedOn": "The Avengers by Stan Lee & Jack Kirby",
-    "boxOffice": null,
+    "boxOffice": {
+      "worldwideGross": "$2.799 Billion ($2,799,439,100) — #2 All-Time Highest Grossing Film in History",
+      "indiaGross": "₹446 Crore ($53.4M / ₹373.2 Crore Nett)",
+      "overseasGross": "$1.941 Billion",
+      "openingDay": "$156.7 Million Domestic / ₹53.6 Crore in India",
+      "openingWeekend": "$1.223 Billion Worldwide ($357.1 Million Domestic / ₹187 Crore in India)",
+      "budget": "Estimated $356–400 Million",
+      "verdict": "All-Time Historic Blockbuster (#2 Highest-Grossing Film in Cinema History)",
+      "lastUpdated": "September 2026",
+      "source": "Box Office Mojo, The Numbers & Sacnilk"
+    },
     "poster": "pics/Films/AvengersEndgame/2.jpg",
     "gallery": [
       {
@@ -57473,6 +58541,21 @@
     ],
     "similar": [
       {
+        "title": "Avatar",
+        "link": "Avatar.html",
+        "poster": "pics/Films/Avatar/1.jpg"
+      },
+      {
+        "title": "Avatar: The Way of Water",
+        "link": "AvatarTheWayofWater.html",
+        "poster": "pics/Films/AvatarTheWayofWater/2.jpg"
+      },
+      {
+        "title": "Avengers Infinity War",
+        "link": "AvengersInfinityWar.html",
+        "poster": "pics/Films/AvengersInfinityWar/1.jpg"
+      },
+      {
         "title": "Captain Marvel",
         "link": "CaptainMarvel.html",
         "poster": "pics/Films/CaptainMarvel/1.jpg"
@@ -57481,11 +58564,6 @@
         "title": "Ant Man and the Wasp",
         "link": "AntManandtheWasp.html",
         "poster": "pics/Films/AntManandtheWasp/1.jpg"
-      },
-      {
-        "title": "Avengers Infinity War",
-        "link": "AvengersInfinityWar.html",
-        "poster": "pics/Films/AvengersInfinityWar/1.jpg"
       },
       {
         "title": "Black Panther",
@@ -57717,7 +58795,13 @@
         "section": "News(Before Release)"
       }
     ],
-    "filePath": "E:/OakShow/AvengersEndgame.html"
+    "filePath": "E:/OakShow/AvengersEndgame.html",
+    "tag": "All Time 2nd Highest grossing Movie in History",
+    "tags": [
+      "All Time 2nd Highest grossing Movie in History",
+      "Marvel Cinematic Universe",
+      "All-Time #2 Box Office"
+    ]
   },
   {
     "id": "Cabaret",
@@ -73667,7 +74751,17 @@
     "duration": "N/A",
     "director": "Anthony Russo and Joe Russo",
     "basedOn": "The Avengers by Stan Lee Jack Kirby",
-    "boxOffice": null,
+    "boxOffice": {
+      "worldwideGross": "$2.052 Billion ($2,052,415,039) — #6 All-Time Highest Grossing Film in History",
+      "indiaGross": "₹294.07 Crore ($43.5M / ₹227.4 Crore Nett)",
+      "overseasGross": "$1.373 Billion",
+      "openingDay": "$106.3 Million Domestic / ₹31.3 Crore in India",
+      "openingWeekend": "$640.5 Million Worldwide ($257.7 Million Domestic)",
+      "budget": "Estimated $325–400 Million",
+      "verdict": "All-Time Historic Blockbuster",
+      "lastUpdated": "September 2026",
+      "source": "Box Office Mojo, The Numbers & Sacnilk"
+    },
     "poster": "pics/Films/AvengersInfinityWar/1.jpg",
     "gallery": [
       {
@@ -73800,7 +74894,38 @@
         "label": "Connect on Twitter / X"
       }
     ],
-    "similar": [],
+    "similar": [
+      {
+        "title": "Avatar",
+        "link": "Avatar.html",
+        "poster": "pics/Films/Avatar/1.jpg"
+      },
+      {
+        "title": "Avatar: The Way of Water",
+        "link": "AvatarTheWayofWater.html",
+        "poster": "pics/Films/AvatarTheWayofWater/2.jpg"
+      },
+      {
+        "title": "Avengers: Endgame",
+        "link": "AvengersEndgame.html",
+        "poster": "pics/Films/AvengersEndgame/2.jpg"
+      },
+      {
+        "title": "Captain America: Civil War",
+        "link": "cap_civilwar.html",
+        "poster": "pics/Films/cap_civilwar/1.jpg"
+      },
+      {
+        "title": "Thor Ragnarok",
+        "link": "ThorRagnarok.html",
+        "poster": "pics/Films/ThorRagnarok/1.jpg"
+      },
+      {
+        "title": "Black Panther",
+        "link": "BlackPanther.html",
+        "poster": "pics/Films/BlackPanther/1.jpg"
+      }
+    ],
     "videos": [
       {
         "url": "https://www.youtube.com/watch?v=6ZfuNTqbHE8",

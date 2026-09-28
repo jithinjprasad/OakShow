@@ -82,7 +82,8 @@ if ($Target) {
         "Mandaadi.html", "Sardar2.html", "BethlehemKudumbaUnit.html", "DCTamilMovie.html", 
         "KhalifaTheRuler.html", "AvatarTheWayofWater.html",
         "TheEndofOakStreet.html", "ResidentEvil2026.html", "Runner.html", "TheRunner.html", "Irumudi.html", "LustStories3.html",
-        "ForgottenIsland.html", "TheParadise.html", "Jailer.html", "Jailer2.html", "HeartoftheBeast.html", "Dhoomakethu.html"
+        "ForgottenIsland.html", "TheParadise.html", "Jailer.html", "Jailer2.html", "HeartoftheBeast.html", "Dhoomakethu.html",
+        "Avatar.html", "Verity.html", "AvarachanandSons.html", "AvengersEndgame.html", "AvengersInfinityWar.html"
     )
     foreach ($rf in $rootHtmls) {
         if (Test-Path "$srcDir\$rf") {
@@ -166,6 +167,11 @@ if ($Target) {
         @{ Src = "$srcDir\pics\Films\HeartoftheBeast"; Dest = "$workDir\dist\pics\Films\HeartoftheBeast" },
         @{ Src = "$srcDir\pics\Films\Dhoomakethu"; Dest = "$workDir\dist\pics\Films\Dhoomakethu" },
         @{ Src = "$srcDir\pics\Dhoomakethu"; Dest = "$workDir\dist\pics\Dhoomakethu" },
+        @{ Src = "$srcDir\pics\Films\Avatar"; Dest = "$workDir\dist\pics\Films\Avatar" },
+        @{ Src = "$srcDir\pics\Films\Verity"; Dest = "$workDir\dist\pics\Films\Verity" },
+        @{ Src = "$srcDir\pics\Films\AvarachanandSons"; Dest = "$workDir\dist\pics\Films\AvarachanandSons" },
+        @{ Src = "$srcDir\pics\Films\AvengersEndgame"; Dest = "$workDir\dist\pics\Films\AvengersEndgame" },
+        @{ Src = "$srcDir\pics\Films\AvengersInfinityWar"; Dest = "$workDir\dist\pics\Films\AvengersInfinityWar" },
         @{ Src = "$srcDir\pics\Serieses\Lanterns"; Dest = "$workDir\dist\pics\Serieses\Lanterns" },
         @{ Src = "$srcDir\pics\Serieses\Supergirl"; Dest = "$workDir\dist\pics\Serieses\Supergirl" },
         @{ Src = "$srcDir\pics\Serieses\The Flash"; Dest = "$workDir\dist\pics\Serieses\The Flash" },
@@ -184,7 +190,10 @@ if ($Target) {
         if (Test-Path $m.Src) {
             New-Item -ItemType Directory -Force -Path $m.Dest | Out-Null
             Copy-Item -Path "$($m.Src)\*" -Destination "$($m.Dest)\" -Recurse -Force
-            Write-Host "Copied local media: $($m.Src) -> $($m.Dest)"
+            $rootDest = $m.Dest.Replace("\dist\pics\", "\pics\")
+            if (-not (Test-Path $rootDest)) { New-Item -ItemType Directory -Force -Path $rootDest | Out-Null }
+            Copy-Item -Path "$($m.Src)\*" -Destination "$rootDest\" -Recurse -Force
+            Write-Host "Copied local media: $($m.Src) -> $($m.Dest) and $rootDest"
         }
     }
 }

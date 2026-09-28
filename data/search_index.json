@@ -1,5 +1,15 @@
 [
   {
+    "id": "Avatar",
+    "title": "Avatar",
+    "type": "movie",
+    "category": "Hollywood",
+    "genre": "Sci-Fi, Action, Adventure, Fantasy",
+    "language": "English",
+    "year": "2009",
+    "poster": "pics/Films/Avatar/1.jpg"
+  },
+  {
     "id": "Dhoomakethu",
     "title": "Dhoomakethu",
     "type": "movie",
@@ -96,6 +106,30 @@
     "score": 7,
     "poster": "pics/Films/TheEndofOakStreet/1.jpg",
     "status": "released"
+  },
+  {
+    "id": "Verity",
+    "title": "Verity",
+    "type": "movie",
+    "category": "Hollywood",
+    "year": "2026",
+    "genre": "Psychological Thriller, Erotic Thriller, Mystery, Romance",
+    "language": "English",
+    "score": null,
+    "poster": "pics/Films/Verity/1.jpg",
+    "status": "upcoming"
+  },
+  {
+    "id": "AvarachanandSons",
+    "title": "Avarachan & Sons",
+    "type": "movie",
+    "category": "Indian",
+    "year": "2026",
+    "genre": "Family, Comedy, Drama",
+    "language": "Malayalam",
+    "score": null,
+    "poster": "pics/Films/AvarachanandSons/1.jpg",
+    "status": "upcoming"
   },
   {
     "id": "TheRunner",
