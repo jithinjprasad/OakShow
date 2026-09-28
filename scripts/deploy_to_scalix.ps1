@@ -149,14 +149,12 @@ if ($Target) {
         @{ Src = "$srcDir\pics\Films\GDN"; Dest = "$workDir\dist\pics\Films\GDN" },
         @{ Src = "$srcDir\pics\Films\RamayanaPart1"; Dest = "$workDir\dist\pics\Films\RamayanaPart1" },
         @{ Src = "$srcDir\pics\Films\VishwanathandSons"; Dest = "$workDir\dist\pics\Films\VishwanathandSons" },
-        @{ Src = "$srcDir\pics\Films\ViswanathandSons"; Dest = "$workDir\dist\pics\Films\ViswanathandSons" },
         @{ Src = "$srcDir\pics\Films\OneNightOnly"; Dest = "$workDir\dist\pics\Films\OneNightOnly" },
         @{ Src = "$srcDir\pics\Films\Mandaadi"; Dest = "$workDir\dist\pics\Films\Mandaadi" },
         @{ Src = "$srcDir\pics\Films\Sardar2"; Dest = "$workDir\dist\pics\Films\Sardar2" },
         @{ Src = "$srcDir\pics\Films\TheEndofOakStreet"; Dest = "$workDir\dist\pics\Films\TheEndofOakStreet" },
         @{ Src = "$srcDir\pics\Films\ResidentEvil2026"; Dest = "$workDir\dist\pics\Films\ResidentEvil2026" },
         @{ Src = "$srcDir\pics\Films\Runner"; Dest = "$workDir\dist\pics\Films\Runner" },
-        @{ Src = "$srcDir\pics\Films\The Runner"; Dest = "$workDir\dist\pics\Films\The Runner" },
         @{ Src = "$srcDir\pics\Films\TheRunner"; Dest = "$workDir\dist\pics\Films\TheRunner" },
         @{ Src = "$srcDir\pics\Films\Irumudi"; Dest = "$workDir\dist\pics\Films\Irumudi" },
         @{ Src = "$srcDir\pics\Films\LustStories3"; Dest = "$workDir\dist\pics\Films\LustStories3" },
@@ -166,34 +164,36 @@ if ($Target) {
         @{ Src = "$srcDir\pics\Films\Jailer2"; Dest = "$workDir\dist\pics\Films\Jailer2" },
         @{ Src = "$srcDir\pics\Films\HeartoftheBeast"; Dest = "$workDir\dist\pics\Films\HeartoftheBeast" },
         @{ Src = "$srcDir\pics\Films\Dhoomakethu"; Dest = "$workDir\dist\pics\Films\Dhoomakethu" },
-        @{ Src = "$srcDir\pics\Dhoomakethu"; Dest = "$workDir\dist\pics\Dhoomakethu" },
         @{ Src = "$srcDir\pics\Films\Avatar"; Dest = "$workDir\dist\pics\Films\Avatar" },
         @{ Src = "$srcDir\pics\Films\Verity"; Dest = "$workDir\dist\pics\Films\Verity" },
         @{ Src = "$srcDir\pics\Films\AvarachanandSons"; Dest = "$workDir\dist\pics\Films\AvarachanandSons" },
         @{ Src = "$srcDir\pics\Films\AvengersEndgame"; Dest = "$workDir\dist\pics\Films\AvengersEndgame" },
         @{ Src = "$srcDir\pics\Films\AvengersInfinityWar"; Dest = "$workDir\dist\pics\Films\AvengersInfinityWar" },
-        @{ Src = "$srcDir\pics\Serieses\Lanterns"; Dest = "$workDir\dist\pics\Serieses\Lanterns" },
-        @{ Src = "$srcDir\pics\Serieses\Supergirl"; Dest = "$workDir\dist\pics\Serieses\Supergirl" },
-        @{ Src = "$srcDir\pics\Serieses\The Flash"; Dest = "$workDir\dist\pics\Serieses\The Flash" },
-        @{ Src = "$srcDir\pics\Serieses\Harley and the Davidsons"; Dest = "$workDir\dist\pics\Serieses\Harley and the Davidsons" },
-        @{ Src = "$srcDir\pics\Serieses\Scam1992"; Dest = "$workDir\dist\pics\Serieses\Scam1992" },
-        @{ Src = "$srcDir\pics\Serieses\Aashram"; Dest = "$workDir\dist\pics\Serieses\Aashram" },
-        @{ Src = "$srcDir\pics\Serieses\Mugilan"; Dest = "$workDir\dist\pics\Serieses\Mugilan" },
-        @{ Src = "$srcDir\pics\Serieses\TheBoys"; Dest = "$workDir\dist\pics\Serieses\TheBoys" },
         @{ Src = "$srcDir\pics\RatingSiteLogos"; Dest = "$workDir\dist\pics\RatingSiteLogos" },
         @{ Src = "$srcDir\pics\SocialWebsiteLogos"; Dest = "$workDir\dist\pics\SocialWebsiteLogos" },
         @{ Src = "$srcDir\pics\BookngWebSiteLogos"; Dest = "$workDir\dist\pics\BookngWebSiteLogos" },
         @{ Src = "$srcDir\pics\WatchOnline"; Dest = "$workDir\dist\pics\WatchOnline" }
     )
 
+    # Clean up any legacy root pics directory and heavy series media in dist to ensure build context stays < 45 MB
+    if (Test-Path "$workDir\pics") {
+        Remove-Item -Recurse -Force "$workDir\pics"
+    }
+    if (Test-Path "$workDir\dist\pics\Serieses") {
+        Remove-Item -Recurse -Force "$workDir\dist\pics\Serieses"
+    }
+    if (Test-Path "$workDir\dist\pics\Dhoomakethu") {
+        Remove-Item -Recurse -Force "$workDir\dist\pics\Dhoomakethu"
+    }
+    if (Test-Path "$workDir\dist\pics\Films\ViswanathandSons") {
+        Remove-Item -Recurse -Force "$workDir\dist\pics\Films\ViswanathandSons"
+    }
+
     foreach ($m in $mediaDirs) {
         if (Test-Path $m.Src) {
             New-Item -ItemType Directory -Force -Path $m.Dest | Out-Null
             Copy-Item -Path "$($m.Src)\*" -Destination "$($m.Dest)\" -Recurse -Force
-            $rootDest = $m.Dest.Replace("\dist\pics\", "\pics\")
-            if (-not (Test-Path $rootDest)) { New-Item -ItemType Directory -Force -Path $rootDest | Out-Null }
-            Copy-Item -Path "$($m.Src)\*" -Destination "$rootDest\" -Recurse -Force
-            Write-Host "Copied local media: $($m.Src) -> $($m.Dest) and $rootDest"
+            Write-Host "Copied local media: $($m.Src) -> $($m.Dest)"
         }
     }
 }
@@ -220,6 +220,8 @@ $dockerignoreContent = @'
 .git
 .gitignore
 *.md
+/pics
+/pics/**
 '@
 Set-Content -Path "$workDir\.dockerignore" -Value $dockerignoreContent
 
@@ -229,8 +231,8 @@ $totalBytes = ($nonGitFiles | Measure-Object -Property Length -Sum).Sum
 $totalMB = [math]::Round($totalBytes / 1MB, 2)
 Write-Host "Build context size (excluding .git): $totalMB MB"
 
-if ($totalMB -gt 60) {
-    Write-Error "Build context size too large: $totalMB MB > 60 MB"
+if ($totalMB -gt 45) {
+    Write-Error "Build context size too large: $totalMB MB > 45 MB"
     exit 1
 }
 
