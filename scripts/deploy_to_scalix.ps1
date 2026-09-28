@@ -282,6 +282,14 @@ if ($LASTEXITCODE -ne 0) {
     exit 1
 }
 
+Write-Host "Pushing source repo (OakShow) to GitHub..."
+try {
+    & $git -C $srcDir push "https://$token@github.com/jithinjprasad/OakShow.git" main
+    Write-Host "Source repo push succeeded!"
+} catch {
+    Write-Host "Notice pushing source repo: $_"
+}
+
 Write-Host "Git push succeeded! Triggering Scalix build..."
 
 # 10. Trigger Scalix build
