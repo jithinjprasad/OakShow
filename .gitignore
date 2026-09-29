@@ -12,3 +12,4 @@ oakshow-prod-clean/
 .backups/
 *.backup*
 screenshot*.png
+.kilo/
