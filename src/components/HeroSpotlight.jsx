@@ -8,7 +8,7 @@ export default function HeroSpotlight({ movies, onSelectMovie, onPlayTrailer }) 
   const spotlightCandidates = React.useMemo(() => {
     if (!movies || movies.length === 0) return [];
     
-    const priorityUpcomingIds = ['Jailer2', 'ForgottenIsland'];
+    const priorityUpcomingIds = ['Jailer2'];
     const priorityMovies = priorityUpcomingIds
       .map(id => movies.find(m => m.id === id))
       .filter(Boolean);

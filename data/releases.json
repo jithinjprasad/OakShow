@@ -74,6 +74,29 @@
     ]
   },
   {
+    "id": "IndianReleases2026October",
+    "title": "Indian Movies Released On October 2026",
+    "year": "2026",
+    "month": "October",
+    "category": "Indian",
+    "filename": "IndianReleases2026October.html",
+    "totalItems": 1,
+    "items": [
+      {
+        "title": "Avarachan & Sons",
+        "poster": "pics/Films/AvarachanandSons/1.jpg",
+        "alt": "Avarachan & Sons",
+        "language": "Malayalam",
+        "category": "Indian",
+        "releaseDate": "October 2, 2026",
+        "genre": "Family, Comedy, Drama",
+        "moreLink": "AvarachanandSons.html",
+        "trailerLink": "https://www.youtube.com/watch?v=uVu0mM-Fnvc",
+        "ratings": []
+      }
+    ]
+  },
+  {
     "id": "HollywoodReleases2026September",
     "title": "Hollywood Movies Released On September 2026",
     "year": "2026",
@@ -421,6 +444,29 @@
             "icon": "pics/RatingSiteLogos/metacritic.png"
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "HollywoodReleases2026October",
+    "title": "Hollywood Movies Released On October 2026",
+    "year": "2026",
+    "month": "October",
+    "category": "Hollywood",
+    "filename": "HollywoodReleases2026October.html",
+    "totalItems": 1,
+    "items": [
+      {
+        "title": "Verity",
+        "poster": "pics/Films/Verity/1.jpg",
+        "alt": "Verity",
+        "language": "English",
+        "category": "Hollywood",
+        "releaseDate": "October 2, 2026",
+        "genre": "Psychological Thriller, Erotic Thriller, Mystery, Romance",
+        "moreLink": "Verity.html",
+        "trailerLink": "https://www.youtube.com/watch?v=xdPMKhjMSFs",
+        "ratings": []
       }
     ]
   },
@@ -4701,13 +4747,13 @@
         "ratings": [
           {
             "source": "Avengers: Endgame OakShow",
-            "score": "6/10",
-            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png",
+            "score": "8/10",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png",
             "url": "#"
           },
           {
             "source": "Avengers: Endgame IMDB",
-            "score": "9.4/10",
+            "score": "8.4/10",
             "icon": "pics/RatingSiteLogos/imdb.png",
             "url": "https://www.imdb.com/title/tt4154796/"
           },
@@ -23459,13 +23505,13 @@
         "ratings": [
           {
             "source": "Avengers: Endgame OakShow",
-            "score": "6/10",
-            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png",
+            "score": "8/10",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png",
             "url": "#"
           },
           {
             "source": "Avengers: Endgame IMDB",
-            "score": "9.4/10",
+            "score": "8.4/10",
             "icon": "pics/RatingSiteLogos/imdb.png",
             "url": "https://www.imdb.com/title/tt4154796/"
           },

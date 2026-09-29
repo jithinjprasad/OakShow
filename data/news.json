@@ -1,5 +1,55 @@
 [
   {
+    "id": "forgotten-island-news-1",
+    "movieId": "ForgottenIsland",
+    "movieTitle": "Forgotten Island",
+    "title": "Director Januel P Mercado: Forgotten Island is set in a time when friendships felt more fragile",
+    "source": "Cinema Express",
+    "date": "September 17, 2026",
+    "url": "https://www.cinemaexpress.com/english/news/2026/Sep/17/director-januel-p-mercado-forgotten-island-is-set-in-a-time-when-friendships-felt-more-fragile",
+    "category": "Hollywood"
+  },
+  {
+    "id": "project-hail-mary-news-2",
+    "movieId": "ProjectHailMary",
+    "movieTitle": "Project Hail Mary",
+    "title": "Sandra Hüller Movies 2026: Project Hail Mary, Digger, Rose, Fatherland",
+    "source": "Decider",
+    "date": "September 29, 2026",
+    "url": "https://decider.com/2026/09/29/sandra-huller-movies-2026-project-hail-mary-digger-rose-fatherland/",
+    "category": "Hollywood"
+  },
+  {
+    "id": "project-hail-mary-news-1",
+    "movieId": "ProjectHailMary",
+    "movieTitle": "Project Hail Mary",
+    "title": "Project Hail Mary is the film the world needs right now",
+    "source": "FSU Gatepost",
+    "date": "September 2026",
+    "url": "https://www.fsugatepost.com/post/project-hail-mary-is-the-film-the-world-needs-right-now",
+    "category": "Hollywood"
+  },
+  {
+    "id": "top-gun-maverick-news-2",
+    "movieId": "TopGunMaverick",
+    "movieTitle": "Top Gun: Maverick",
+    "title": "Maverick Viñales Comeback at Motegi: Thrills in MotoGP Racing",
+    "source": "Speedweek",
+    "date": "September 2026",
+    "url": "https://www.speedweek.com/en/a/motogp/maverick-vinales-comeback-motegi-japan",
+    "category": "Hollywood"
+  },
+  {
+    "id": "top-gun-maverick-news-1",
+    "movieId": "TopGunMaverick",
+    "movieTitle": "Top Gun: Maverick",
+    "title": "Tom Cruise opens up on reuniting with Kate and William three years after Top Gun: Maverick, calls it amazing",
+    "source": "WION News",
+    "date": "September 2026",
+    "url": "https://www.wionews.com/entertainment/hollywood/tom-cruise-opens-up-on-reuniting-with-kate-and-william-three-years-after-top-gun-maverick-calls-it-amazing-1790343595854",
+    "category": "Hollywood"
+  },
+  {
     "id": "dhoomakethu-news-7",
     "movieId": "Dhoomakethu",
     "movieTitle": "Dhoomakethu",

@@ -1,5 +1,18 @@
 [
   {
+    "id": "ProjectHailMary",
+    "title": "Project Hail Mary",
+    "type": "movie",
+    "category": "Hollywood",
+    "genre": "Sci-Fi, Adventure, Drama",
+    "language": "English",
+    "year": "2026",
+    "score": 9,
+    "poster": "pics/Films/ProjectHailMary/1.jpg",
+    "url": "ProjectHailMary.html",
+    "keywords": "Ryan Gosling, Sandra Hüller, Phil Lord, Christopher Miller, Drew Goddard, Andy Weir, Ryland Grace, Rocky, Astrophage, Tau Ceti, Sci-Fi"
+  },
+  {
     "id": "TopGunMaverick",
     "title": "Top Gun: Maverick",
     "type": "movie",
@@ -7,10 +20,10 @@
     "genre": "Action, Drama, Thriller, Adventure",
     "language": "English",
     "year": "2022",
-    "score": 10,
+    "score": 9.8,
     "poster": "pics/Films/TopGunMaverick/1.jpg",
     "url": "TopGunMaverick.html",
-    "keywords": "Tom Cruise, Miles Teller, Jennifer Connelly, Jon Hamm, Glen Powell, Joseph Kosinski, Pete Mitchell, Rooster, Maverick, TOPGUN"
+    "keywords": "Tom Cruise, Miles Teller, Jennifer Connelly, Jon Hamm, Glen Powell, Joseph Kosinski, Pete Mitchell, Rooster, Maverick, TOPGUN, 17th highest grossing, Oscar winner"
   },
   {
     "id": "Irumudi",
@@ -102,12 +115,13 @@
     "title": "Forgotten Island",
     "type": "movie",
     "category": "Hollywood",
-    "year": "2026",
     "genre": "Animation, Adventure, Comedy, Fantasy",
     "language": "English",
-    "score": 8.8,
+    "year": "2026",
+    "score": 8,
     "poster": "pics/Films/ForgottenIsland/1.jpg",
-    "status": "upcoming"
+    "url": "ForgottenIsland.html",
+    "keywords": "H.E.R., Liza Soberano, Dave Franco, Lea Salonga, Januel P. Mercado, DreamWorks Animation, Universal Pictures, Nakali, Filipino Folklore"
   },
   {
     "id": "ResidentEvil2026",

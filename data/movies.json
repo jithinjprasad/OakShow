@@ -1,5 +1,507 @@
 [
   {
+    "id": "ProjectHailMary",
+    "slug": "project-hail-mary",
+    "type": "movie",
+    "category": "Hollywood",
+    "score": 9,
+    "filename": "ProjectHailMary.html",
+    "title": "Project Hail Mary",
+    "metaTitle": "Project Hail Mary (2026) All Ratings, Reviews, Songs, Videos, Bookings and News — OakShow",
+    "tag": "Blockbuster Sci-Fi Epic",
+    "tags": [
+      "Sci-Fi Epic",
+      "Space Exploration",
+      "Ryan Gosling",
+      "Andy Weir",
+      "Phil Lord & Christopher Miller",
+      "Global Blockbuster"
+    ],
+    "description": "Ryland Grace, a middle school science teacher turned solitary astronaut, awakens from a coma aboard the starship Hail Mary with amnesia. Tasked as humanity's last hope to solve an extinction-level solar crisis caused by an energy-devouring microbe called Astrophage, Grace must piece together his memories, decipher alien biology, and form an unexpected bond with an extraterrestrial engineer to save both Earth and another civilized world 12 light-years away.",
+    "plot": "When the Sun and neighboring stars begin dimming rapidly due to 'Astrophage'—an extraterrestrial microscopic organism that consumes stellar radiation and threatens Earth with catastrophic global cooling and human extinction—world governments unite under the ruthless command of Eva Stratt to orchestrate Project Hail Mary, a desperate interstellar suicide mission to Tau Ceti, the only nearby star inexplicably immune to the infestation.\n\nRyland Grace (Ryan Gosling), a molecular biologist who left academia to teach middle school science, is recruited to analyze Astrophage. After the primary science team is killed in an explosion, Grace is thrust into the three-person crew. Put into an induced coma for the decades-long journey powered by Astrophage spin-drives, Grace wakes up light-years from Earth with total amnesia, discovering that his two crewmates died en route.\n\nAs his memory returns through flashbacks, Grace discovers an alien vessel in orbit around Tau Ceti. The ship belongs to 'Rocky', an intelligent, five-legged, carapace-armored engineer from the 40 Eridani star system whose planet faces identical extinction from Astrophage. Communicating through musical chords and synthesized frequencies, Grace and Rocky form an extraordinary friendship rooted in scientific deduction, mutual compassion, and shared survival. Together, they discover 'Taumoeba', a predatory microbe that hunts Astrophage. But when lethal complications arise, Grace faces the ultimate moral dilemma: return to Earth as a celebrated savior or sacrifice his own return to rescue his beloved alien companion and save both worlds.",
+    "language": "English",
+    "releaseDate": "March 20, 2026",
+    "year": "2026",
+    "status": "released",
+    "genre": "Sci-Fi, Adventure, Drama",
+    "duration": "2hr 36mins",
+    "director": "Phil Lord, Christopher Miller",
+    "writer": "Drew Goddard",
+    "basedOn": "Project Hail Mary by Andy Weir",
+    "boxOffice": {
+      "worldwideGross": "$685 Million ($685,000,000)",
+      "openingWeekend": "$85.5 Million Domestic / $142.0 Million Worldwide",
+      "openingDay": "$34.2 Million Domestic (USA)",
+      "domesticGross": "$265.0 Million ($265,000,000)",
+      "overseasGross": "$420.0 Million ($420,000,000)",
+      "budget": "$200 Million",
+      "verdict": "Global Sci-Fi Blockbuster & Major Critical Triumph",
+      "rank": "Top-Grossing Sci-Fi Film of 2026",
+      "lastUpdated": "September 2026",
+      "source": "Box Office Mojo, The Numbers & Deadline"
+    },
+    "poster": "pics/Films/ProjectHailMary/1.jpg",
+    "banner": "pics/Films/ProjectHailMary/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/ProjectHailMary/1.jpg",
+        "alt": "Project Hail Mary Theatrical Poster"
+      },
+      {
+        "src": "pics/Films/ProjectHailMary/2.jpg",
+        "alt": "Project Hail Mary Deep Space Key Art"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "9/10",
+        "url": "https://oakshow.in/ProjectHailMary.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "95%",
+        "url": "https://www.rottentomatoes.com/m/project_hail_mary",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "8.2/10",
+        "url": "https://www.imdb.com/title/tt12042730/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Digital Spy",
+        "score": "5/5",
+        "url": "https://www.digitalspy.com/movies/a70677848/project-hail-mary-review/",
+        "icon": "pics/RatingSiteLogos/digital-spy.png"
+      },
+      {
+        "source": "Den of Geek",
+        "score": "4.5/5",
+        "url": "https://www.denofgeek.com/movies/project-hail-mary-review-sci-fi-that-goes-down-easy/",
+        "icon": "pics/RatingSiteLogos/denofgeek.ico"
+      },
+      {
+        "source": "Common Sense Media",
+        "score": "4/5",
+        "url": "https://www.commonsensemedia.org/movie-reviews/project-hail-mary",
+        "icon": "pics/RatingSiteLogos/common-sense-media.png"
+      },
+      {
+        "source": "The Telegraph",
+        "score": "4/5",
+        "url": "https://www.telegraph.co.uk/films/0/project-hail-mary-review-ryan-gosling/",
+        "icon": "pics/RatingSiteLogos/telegraph.png"
+      },
+      {
+        "source": "IGN",
+        "score": "8/10",
+        "url": "https://www.ign.com/articles/project-hail-mary-review-ryan-gosling",
+        "icon": "pics/RatingSiteLogos/ign.png"
+      },
+      {
+        "source": "India Today",
+        "score": "4/5",
+        "url": "https://www.indiatoday.in/movies/reviews/story/project-hail-mary-review-ryan-gosling-film-science-heart-optimism-2886762-2026-03-25",
+        "icon": "pics/RatingSiteLogos/india-today.ico"
+      },
+      {
+        "source": "The Times of India",
+        "score": "4/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/english/project-hail-mary/movie-review/129749007.cms",
+        "icon": "pics/RatingSiteLogos/timesofindia.ico"
+      },
+      {
+        "source": "Metacritic",
+        "score": "77/100",
+        "url": "https://www.metacritic.com/movie/project-hail-mary/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      },
+      {
+        "source": "Hindustan Times",
+        "score": "3.5/5",
+        "url": "https://www.hindustantimes.com/entertainment/hollywood/project-hail-mary-review-ryan-gosling-emotionally-binds-unmatched-big-screen-experience-that-makes-you-overlook-flaws-101774501254527.html",
+        "icon": "pics/RatingSiteLogos/hindustan-times.png"
+      },
+      {
+        "source": "The Indian Express",
+        "score": "3.5/5",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/project-hail-mary-movie-review-ryan-gosling-finds-an-unlikely-buddy-in-deep-space-delivers-the-feel-good-sci-fi-we-needed-10602588/",
+        "icon": "pics/RatingSiteLogos/indian-express.png"
+      },
+      {
+        "source": "The Guardian",
+        "score": "3/5",
+        "url": "https://www.theguardian.com/film/2026/mar/10/project-hail-mary-review-ryan-goslings-charm-carries-unserious-last-ditch-space-mission",
+        "icon": "pics/RatingSiteLogos/the-guardian.png"
+      },
+      {
+        "source": "Roger Ebert",
+        "score": "2.5/4",
+        "url": "https://www.rogerebert.com/reviews/project-hail-mary-ryan-gosling-movie-review-2026",
+        "icon": "pics/RatingSiteLogos/rogerebert.ico"
+      }
+    ],
+    "awards": [
+      {
+        "organization": "Saturn Awards",
+        "year": "2026",
+        "wins": [
+          {
+            "category": "Best Special Effects",
+            "recipient": "Industrial Light & Magic (ILM) & VFX Team"
+          }
+        ],
+        "nominations": [
+          {
+            "category": "Best Science Fiction Film",
+            "recipient": "Project Hail Mary"
+          },
+          {
+            "category": "Best Actor",
+            "recipient": "Ryan Gosling"
+          },
+          {
+            "category": "Best Director",
+            "recipient": "Phil Lord, Christopher Miller"
+          },
+          {
+            "category": "Best Production Design",
+            "recipient": "Nathan Crowley"
+          }
+        ]
+      },
+      {
+        "organization": "Critics' Choice Super Awards",
+        "year": "2026",
+        "wins": [
+          {
+            "category": "Best Actor in a Science Fiction / Fantasy Movie",
+            "recipient": "Ryan Gosling"
+          }
+        ],
+        "nominations": [
+          {
+            "category": "Best Science Fiction / Fantasy Movie",
+            "recipient": "Project Hail Mary"
+          },
+          {
+            "category": "Best Visual Effects",
+            "recipient": "Project Hail Mary VFX Team"
+          }
+        ]
+      },
+      {
+        "organization": "Astra Film Awards",
+        "year": "2026",
+        "wins": [
+          {
+            "category": "Best Sound Design & Mixing",
+            "recipient": "Sound Production Team"
+          }
+        ],
+        "nominations": [
+          {
+            "category": "Best Visual Effects",
+            "recipient": "Project Hail Mary"
+          }
+        ]
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Ryan Gosling",
+        "role": "Dr. Ryland Grace",
+        "description": "Former molecular biologist and junior high school science teacher turned solitary astronaut"
+      },
+      {
+        "actor": "Sandra Hüller",
+        "role": "Eva Stratt",
+        "description": "Administrator of the UN task force running Project Hail Mary"
+      },
+      {
+        "actor": "James Ortiz",
+        "role": "Rocky (Physical Performance & Puppetry)",
+        "description": "Extraterrestrial engineer from 40 Eridani aboard the alien vessel Blip-A"
+      },
+      {
+        "actor": "Milana Vayntrub",
+        "role": "Dr. Olesya Ilyukhina",
+        "description": "Russian cosmonaut and Hail Mary primary mission specialist"
+      },
+      {
+        "actor": "Ken Leung",
+        "role": "Dr. Lokken",
+        "description": "Norwegian scientist and centrifuge gravitational engineer"
+      },
+      {
+        "actor": "Lionel Boyce",
+        "role": "Dr. Yáo Li-Jie",
+        "description": "Mission commander of the Hail Mary"
+      }
+    ],
+    "bookings": [
+      {
+        "provider": "BookMyShow",
+        "url": "https://in.bookmyshow.com/movies/project-hail-mary/ET00451760",
+        "icon": "pics/BookngWebSiteLogos/book-my-show.png",
+        "label": "Book on BookMyShow",
+        "rank": 1
+      },
+      {
+        "provider": "District",
+        "url": "https://www.district.in/movies/project-hail-mary-movie-tickets-MV200953?srsltid=AU7gw4WGDwV8pLvJwc9OCZkGHtxbRsU8JG7GONSWFQm8uIkIUKyC4RIC",
+        "icon": "pics/BookngWebSiteLogos/district.png",
+        "label": "Book on District",
+        "rank": 2
+      },
+      {
+        "provider": "Fandango",
+        "url": "https://www.fandango.com/project-hail-mary-2026-243816/movie-overview",
+        "icon": "pics/BookngWebSiteLogos/fandango.png",
+        "label": "Book on Fandango",
+        "rank": 3
+      },
+      {
+        "provider": "TicketNew",
+        "url": "https://ticketnew.com/movies/project-hail-mary-movie-detail-200953",
+        "icon": "pics/BookngWebSiteLogos/ticket-new.png",
+        "label": "Book on TicketNew",
+        "rank": 4
+      },
+      {
+        "provider": "Cineworld",
+        "url": "https://www.cineworld.co.uk/films/282076-project-hail-mary/",
+        "icon": "pics/BookngWebSiteLogos/cineworld.png",
+        "label": "Book on Cineworld",
+        "rank": 5
+      }
+    ],
+    "watchOnline": [
+      {
+        "provider": "Amazon Prime Video",
+        "platform": "Amazon Prime Video",
+        "url": "https://www.primevideo.com/dp/amzn1.dv.gti.414eb1af-ee27-476c-bc46-bedd48595f59?autoplay=0&ref_=atv_cf_strg_wb",
+        "icon": "pics/WatchOnline/amazon-prime.png",
+        "lang": "English, Hindi, Tamil, Telugu"
+      },
+      {
+        "provider": "Apple TV",
+        "platform": "Apple TV",
+        "url": "https://tv.apple.com/in/movie/project-hail-mary/umc.cmc.7jxdlxvz304lj3iwhtrhbe8fv",
+        "icon": "pics/WatchOnline/apple.png",
+        "lang": "English, Hindi"
+      }
+    ],
+    "music": [
+      {
+        "provider": "Spotify",
+        "url": "https://open.spotify.com/album/47Kmv7voPLipz2zbyD8v84",
+        "icon": "pics/MusicWebsiteLogos/spotify.png",
+        "label": "Listen on Spotify"
+      },
+      {
+        "provider": "Apple Music",
+        "url": "https://music.apple.com/in/album/project-hail-mary-original-motion-picture-score/1884144779",
+        "icon": "pics/MusicWebsiteLogos/itunes.png",
+        "label": "Listen on Apple Music"
+      },
+      {
+        "provider": "JioSaavn",
+        "url": "https://www.jiosaavn.com/album/project-hail-mary-original-motion-picture-score/0UGjT27xTco_",
+        "icon": "pics/MusicWebsiteLogos/saavn.png",
+        "label": "Listen on JioSaavn"
+      }
+    ],
+    "officialWebsite": {
+      "url": "https://www.mgmstudios.com/project-hail-mary",
+      "label": "Official MGM Studios Project Hail Mary Showcase"
+    },
+    "socials": [
+      {
+        "platform": "Facebook",
+        "url": "https://www.facebook.com/ProjectHailMaryMovie",
+        "icon": "pics/SocialWebsiteLogos/facebook.png",
+        "language": "",
+        "label": "Connect Now"
+      },
+      {
+        "platform": "Twitter / X",
+        "url": "https://twitter.com/ProjectHailMary",
+        "icon": "pics/SocialWebsiteLogos/x.png",
+        "language": "",
+        "label": "Connect Now"
+      },
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/projecthailmarymovie/",
+        "icon": "pics/SocialWebsiteLogos/instagram.png",
+        "language": "",
+        "label": "Connect Now"
+      }
+    ],
+    "similar": [
+      {
+        "title": "First Man",
+        "link": "FirstMan.html",
+        "poster": "pics/Films/FirstMan/1.jpg"
+      },
+      {
+        "title": "Arrival",
+        "link": "Arrival.html",
+        "poster": "pics/Films/Arrival/1.jpg"
+      },
+      {
+        "title": "Blade Runner 2049",
+        "link": "BladeRunner2049film.html",
+        "poster": "pics/Films/BladeRunner2049film/1.jpg"
+      },
+      {
+        "title": "Avatar: The Way of Water",
+        "link": "AvatarTheWayofWater.html",
+        "poster": "pics/Films/AvatarTheWayofWater/2.jpg"
+      },
+      {
+        "title": "Top Gun: Maverick",
+        "link": "TopGunMaverick.html",
+        "poster": "pics/Films/TopGunMaverick/1.jpg"
+      }
+    ],
+    "trailers": [
+      {
+        "title": "Project Hail Mary | Official Main Trailer - Amazon MGM Studios",
+        "url": "https://www.youtube.com/watch?v=m08TxIsFTRI",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/m08TxIsFTRI",
+        "youtubeId": "m08TxIsFTRI",
+        "type": "Main Trailer"
+      },
+      {
+        "title": "Project Hail Mary | Official Trailer 2 - Ryan Gosling",
+        "url": "https://www.youtube.com/watch?v=P0XN3-n-2Lo",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/P0XN3-n-2Lo",
+        "youtubeId": "P0XN3-n-2Lo",
+        "type": "Trailer 2"
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=m08TxIsFTRI",
+        "youtubeId": "m08TxIsFTRI",
+        "title": "Project Hail Mary | Official Main Trailer - Amazon MGM Studios"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=P0XN3-n-2Lo",
+        "youtubeId": "P0XN3-n-2Lo",
+        "title": "Project Hail Mary | Official Trailer 2 - Ryan Gosling"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "Project Hail Mary Review — Sci-Fi That Goes Down Easy With Big Heart",
+        "url": "https://www.denofgeek.com/movies/project-hail-mary-review-sci-fi-that-goes-down-easy/",
+        "author": "Den of Geek",
+        "date": "March 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Project Hail Mary review: Ryan Gosling's space adventure is an absolute triumph",
+        "url": "https://www.digitalspy.com/movies/a70677848/project-hail-mary-review/",
+        "author": "Digital Spy",
+        "date": "March 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Project Hail Mary review: Ryan Gosling emotionally binds unmatched big-screen experience that makes you overlook flaws",
+        "url": "https://www.hindustantimes.com/entertainment/hollywood/project-hail-mary-review-ryan-gosling-emotionally-binds-unmatched-big-screen-experience-that-makes-you-overlook-flaws-101774501254527.html",
+        "author": "Hindustan Times",
+        "date": "March 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Project Hail Mary Review: Ryan Gosling and Rocky make an unforgettable interstellar duo",
+        "url": "https://www.ign.com/articles/project-hail-mary-review-ryan-gosling",
+        "author": "IGN",
+        "date": "March 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Project Hail Mary movie review: Ryan Gosling finds an unlikely buddy in deep space, delivers the feel-good sci-fi we needed",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/project-hail-mary-movie-review-ryan-gosling-finds-an-unlikely-buddy-in-deep-space-delivers-the-feel-good-sci-fi-we-needed-10602588/",
+        "author": "The Indian Express",
+        "date": "March 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Project Hail Mary review: Ryan Gosling film is full of science, heart, and optimism",
+        "url": "https://www.indiatoday.in/movies/reviews/story/project-hail-mary-review-ryan-gosling-film-science-heart-optimism-2886762-2026-03-25",
+        "author": "India Today",
+        "date": "March 25, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Project Hail Mary: How Rocky became the most expressive faceless character in sci-fi",
+        "url": "https://www.ndtv.com/entertainment/project-hail-mary-how-rocky-became-the-most-expressive-faceless-character-in-sci-fi-11318586",
+        "author": "NDTV",
+        "date": "March 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Project Hail Mary review: Ryan Gosling delivers a witty, grounded space epic",
+        "url": "https://www.telegraph.co.uk/films/0/project-hail-mary-review-ryan-gosling/",
+        "author": "The Telegraph",
+        "date": "March 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Project Hail Mary review – Ryan Gosling's charm carries unserious last-ditch space mission",
+        "url": "https://www.theguardian.com/film/2026/mar/10/project-hail-mary-review-ryan-goslings-charm-carries-unserious-last-ditch-space-mission",
+        "author": "The Guardian",
+        "date": "March 10, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Project Hail Mary movie review & film summary (2026)",
+        "url": "https://www.rogerebert.com/reviews/project-hail-mary-ryan-gosling-movie-review-2026",
+        "author": "Roger Ebert",
+        "date": "March 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Project Hail Mary Movie Review: Ryan Gosling anchors magnificent hard science-fiction thrill",
+        "url": "https://timesofindia.indiatimes.com/entertainment/english/project-hail-mary/movie-review/129749007.cms",
+        "author": "The Times of India",
+        "date": "March 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Project Hail Mary Movie Review for Parents",
+        "url": "https://www.commonsensemedia.org/movie-reviews/project-hail-mary",
+        "author": "Common Sense Media",
+        "date": "March 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Project Hail Mary is the film the world needs right now",
+        "url": "https://www.fsugatepost.com/post/project-hail-mary-is-the-film-the-world-needs-right-now",
+        "author": "FSU Gatepost",
+        "date": "September 2026",
+        "section": "News"
+      },
+      {
+        "headline": "Sandra Hüller Movies 2026: Project Hail Mary, Digger, Rose, Fatherland",
+        "url": "https://decider.com/2026/09/29/sandra-huller-movies-2026-project-hail-mary-digger-rose-fatherland/",
+        "author": "Decider",
+        "date": "September 29, 2026",
+        "section": "News"
+      }
+    ],
+    "wikipedia": "https://en.wikipedia.org/wiki/Project_Hail_Mary_(film)",
+    "imdb": "https://www.imdb.com/title/tt12042730/",
+    "filePath": "E:/OakShow/ProjectHailMary.html"
+  },
+  {
     "id": "Avatar",
     "slug": "avatar",
     "type": "movie",
@@ -651,10 +1153,10 @@
   },
   {
     "id": "TopGunMaverick",
-    "slug": "topgunmaverick",
+    "slug": "top-gun-maverick",
     "type": "movie",
     "category": "Hollywood",
-    "score": 10,
+    "score": 9.8,
     "filename": "TopGunMaverick.html",
     "title": "Top Gun: Maverick",
     "metaTitle": "Top Gun: Maverick (2022) All Ratings, Reviews, Songs, Videos, Bookings and News — OakShow",
@@ -663,7 +1165,9 @@
       "17th Highest Grossing Movie in History",
       "Academy Award Winner",
       "Global Blockbuster",
-      "Tom Cruise"
+      "Tom Cruise",
+      "Joseph Kosinski",
+      "TOPGUN"
     ],
     "description": "After more than thirty years of service as one of the Navy's top aviators, Pete 'Maverick' Mitchell is where he belongs, pushing the envelope as a courageous test pilot and dodging the advancement in rank that would ground him. Training a detachment of Top Gun graduates for a specialized and perilous mission, Maverick is forced to confront the ghosts of his past and his deepest fears, culminating in a mission that demands the ultimate sacrifice from those who will be chosen to fly it.",
     "plot": "More than thirty years after graduating from TOPGUN, United States Navy Captain Pete 'Maverick' Mitchell serves as a test pilot. Despite his legendary combat records and accolades, his repeated insubordination has kept him at the rank of Captain. Rear Admiral Chester 'Hammer' Cain intends to shut down the hypersonic 'Darkstar' scramjet program to redirect funds to unmanned drones, but Maverick pushes the prototype to Mach 10 and beyond before destroying it. Instead of facing a court-martial, Maverick is protected by his former rival and dear friend, Admiral Tom 'Iceman' Kazansky, Commander of the U.S. Pacific Fleet, who orders him back to NAS North Island to instruct an elite group of recent Top Gun graduates. The pilots are tasked with an extraordinarily perilous strike on an unsanctioned uranium enrichment facility buried in an underground bunker at the end of a heavily fortified canyon protected by surface-to-air missiles and fifth-generation Su-57 fighters.\n\nAmong the candidates is Lieutenant Bradley 'Rooster' Bradshaw, the son of Maverick's late best friend and radar intercept officer Nick 'Goose' Bradshaw. Rooster deeply resents Maverick for having previously delayed his naval academy application and for his father's death. Maverick rigorously trains the squad through extreme low-altitude, high-G flying drills. When Iceman passes away from throat cancer, Maverick loses his protector and is initially grounded by Vice Admiral Beau 'Cyclone' Simpson. Refusing to let his pilots undertake what would be a suicide mission, Maverick flies an unauthorized run through the practice course in record time, proving the mission can succeed. Acknowledging Maverick's unmatched skill, Cyclone appoints him flight leader alongside Rooster, Phoenix, and Bob. Flying in under radar cover, Maverick's strike team hits their targets, but an intense dogfight ensues against enemy interceptors where Maverick and Rooster must rely on courage, loyalty, and sheer piloting instinct to survive and return home.",
@@ -674,15 +1178,18 @@
     "genre": "Action, Drama, Thriller, Adventure",
     "duration": "2hr 10mins",
     "director": "Joseph Kosinski",
+    "writer": "Ehren Kruger, Eric Warren Singer, Christopher McQuarrie",
     "basedOn": "Characters created by Jim Cash & Jack Epps Jr. | Story by Peter Craig and Justin Marks",
     "boxOffice": {
       "worldwideGross": "$1.496 Billion ($1,495,696,292) — 17th Highest Grossing Movie in History",
-      "indiaGross": "$6.8 Million (₹54+ Crore)",
-      "overseasGross": "$777.0 Million ($776,963,471)",
-      "openingDay": "$52.0 Million Domestic (USA)",
       "openingWeekend": "$126.7 Million Domestic (3-Day) / $160.5 Million (4-Day Memorial Day Weekend) / $256.4 Million Worldwide",
-      "budget": "$170 - $177 Million",
-      "verdict": "All-Time Global Blockbuster & 17th Highest Grossing Movie in World Cinema History",
+      "openingDay": "$52.0 Million Domestic (USA)",
+      "domesticGross": "$718.7 Million ($718,732,821)",
+      "overseasGross": "$777.0 Million ($776,963,471)",
+      "indiaGross": "$6.8 Million (₹54+ Crore)",
+      "budget": "$170–177 Million",
+      "verdict": "All-Time Historic Blockbuster & 17th Highest Grossing Movie in World Cinema History",
+      "rank": "17th Highest Grossing Film in History ($1.496B)",
       "lastUpdated": "September 2026",
       "source": "Box Office Mojo, The Numbers & Deadline Hollywood"
     },
@@ -701,7 +1208,7 @@
     "ratings": [
       {
         "source": "OakShow",
-        "score": "10/10",
+        "score": "9.8/10",
         "url": "https://oakshow.in/TopGunMaverick.html",
         "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
       },
@@ -788,78 +1295,6 @@
         "score": "2.5/5",
         "url": "https://www.rediff.com/movies/review/top-gun-maverick-review/20220521.htm",
         "icon": "pics/RatingSiteLogos/rediff.png"
-      }
-    ],
-    "cast": [
-      {
-        "actor": "Tom Cruise",
-        "role": "Capt. Pete 'Maverick' Mitchell",
-        "description": "Legendary naval aviator and TOPGUN flight instructor"
-      },
-      {
-        "actor": "Miles Teller",
-        "role": "Lt. Bradley 'Rooster' Bradshaw",
-        "description": "F/A-18 pilot, son of late RIO Nick 'Goose' Bradshaw"
-      },
-      {
-        "actor": "Jennifer Connelly",
-        "role": "Penny Benjamin",
-        "description": "Bar owner, single mother, and Maverick's love interest"
-      },
-      {
-        "actor": "Jon Hamm",
-        "role": "Vice Adm. Beau 'Cyclone' Simpson",
-        "description": "Commander of Naval Air Forces"
-      },
-      {
-        "actor": "Glen Powell",
-        "role": "Lt. Jake 'Hangman' Seresin",
-        "description": "Skilled and cocky F/A-18 pilot"
-      },
-      {
-        "actor": "Ed Harris",
-        "role": "Rear Adm. Chester 'Hammer' Cain",
-        "description": "Supervisor of the hypersonic Darkstar scramjet program"
-      },
-      {
-        "actor": "Val Kilmer",
-        "role": "Adm. Tom 'Iceman' Kazansky",
-        "description": "Commander of the U.S. Pacific Fleet and Maverick's close friend"
-      },
-      {
-        "actor": "Monica Barbaro",
-        "role": "Lt. Natasha 'Phoenix' Trace",
-        "description": "Skilled TOPGUN strike pilot"
-      },
-      {
-        "actor": "Lewis Pullman",
-        "role": "Lt. Robert 'Bob' Floyd",
-        "description": "Phoenix's Weapon Systems Officer"
-      },
-      {
-        "actor": "Charles Parnell",
-        "role": "Rear Adm. Solomon 'Warlock' Bates",
-        "description": "Commander of the Naval Strike and Air Warfare Center"
-      },
-      {
-        "actor": "Jay Ellis",
-        "role": "Lt. Reuben 'Payback' Fitch",
-        "description": "TOPGUN strike pilot"
-      },
-      {
-        "actor": "Danny Ramirez",
-        "role": "Lt. Mickey 'Fanboy' Garcia",
-        "description": "Payback's Weapon Systems Officer"
-      },
-      {
-        "actor": "Greg Tarzan Davis",
-        "role": "Lt. Javy 'Coyote' Machado",
-        "description": "TOPGUN strike pilot"
-      },
-      {
-        "actor": "Bashir Salahuddin",
-        "role": "CWO4 Bernie 'Hondo' Coleman",
-        "description": "Chief Warrant Officer and Maverick's trusted crew chief"
       }
     ],
     "awards": [
@@ -1028,6 +1463,78 @@
         ]
       }
     ],
+    "cast": [
+      {
+        "actor": "Tom Cruise",
+        "role": "Capt. Pete 'Maverick' Mitchell",
+        "description": "Legendary naval aviator and TOPGUN flight instructor"
+      },
+      {
+        "actor": "Miles Teller",
+        "role": "Lt. Bradley 'Rooster' Bradshaw",
+        "description": "F/A-18 pilot, son of late RIO Nick 'Goose' Bradshaw"
+      },
+      {
+        "actor": "Jennifer Connelly",
+        "role": "Penny Benjamin",
+        "description": "Bar owner, single mother, and Maverick's love interest"
+      },
+      {
+        "actor": "Jon Hamm",
+        "role": "Vice Adm. Beau 'Cyclone' Simpson",
+        "description": "Commander of Naval Air Forces"
+      },
+      {
+        "actor": "Glen Powell",
+        "role": "Lt. Jake 'Hangman' Seresin",
+        "description": "Skilled and cocky F/A-18 pilot"
+      },
+      {
+        "actor": "Ed Harris",
+        "role": "Rear Adm. Chester 'Hammer' Cain",
+        "description": "Supervisor of the hypersonic Darkstar scramjet program"
+      },
+      {
+        "actor": "Val Kilmer",
+        "role": "Adm. Tom 'Iceman' Kazansky",
+        "description": "Commander of the U.S. Pacific Fleet and Maverick's close friend"
+      },
+      {
+        "actor": "Monica Barbaro",
+        "role": "Lt. Natasha 'Phoenix' Trace",
+        "description": "Skilled TOPGUN strike pilot"
+      },
+      {
+        "actor": "Lewis Pullman",
+        "role": "Lt. Robert 'Bob' Floyd",
+        "description": "Phoenix's Weapon Systems Officer"
+      },
+      {
+        "actor": "Charles Parnell",
+        "role": "Rear Adm. Solomon 'Warlock' Bates",
+        "description": "Commander of the Naval Strike and Air Warfare Center"
+      },
+      {
+        "actor": "Jay Ellis",
+        "role": "Lt. Reuben 'Payback' Fitch",
+        "description": "TOPGUN strike pilot"
+      },
+      {
+        "actor": "Danny Ramirez",
+        "role": "Lt. Mickey 'Fanboy' Garcia",
+        "description": "Payback's Weapon Systems Officer"
+      },
+      {
+        "actor": "Greg Tarzan Davis",
+        "role": "Lt. Javy 'Coyote' Machado",
+        "description": "TOPGUN strike pilot"
+      },
+      {
+        "actor": "Bashir Salahuddin",
+        "role": "CWO4 Bernie 'Hondo' Coleman",
+        "description": "Chief Warrant Officer and Maverick's trusted crew chief"
+      }
+    ],
     "bookings": [
       {
         "provider": "BookMyShow",
@@ -1151,24 +1658,64 @@
     ],
     "similar": [
       {
-        "title": "Mission: Impossible - Fallout",
-        "link": "MissionImpossibleFallout.html",
+        "title": "Mission: Impossible – Fallout",
+        "link": "MissionImpossible6.html",
         "poster": "pics/Films/MissionImpossibleFallout/2.jpg"
+      },
+      {
+        "title": "Mission: Impossible – Dead Reckoning",
+        "link": "DeadReckoning.html",
+        "poster": "pics/Films/DeadReckoning/2.jpg"
       },
       {
         "title": "Dunkirk",
         "link": "Dunkirk.html",
-        "poster": "pics/Films/Dunkirk/2.jpg"
+        "poster": "pics/Films/Dunkirk/1.jpg"
       },
       {
         "title": "First Man",
         "link": "FirstMan.html",
-        "poster": "pics/Films/FirstMan/2.jpg"
+        "poster": "pics/Films/FirstMan/1.jpg"
+      },
+      {
+        "title": "American Made",
+        "link": "AmericanMade.html",
+        "poster": "pics/Films/AmericanMade/1.jpg"
       },
       {
         "title": "Avatar: The Way of Water",
         "link": "AvatarTheWayofWater.html",
         "poster": "pics/Films/AvatarTheWayofWater/2.jpg"
+      }
+    ],
+    "trailers": [
+      {
+        "title": "Top Gun: Maverick | Official Trailer (2022 Movie) - Tom Cruise",
+        "url": "https://www.youtube.com/watch?v=qSqVVswa420",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/qSqVVswa420",
+        "youtubeId": "qSqVVswa420",
+        "type": "Main Trailer"
+      },
+      {
+        "title": "Top Gun: Maverick | Official Trailer 2 - Paramount Pictures",
+        "url": "https://www.youtube.com/watch?v=giXco2jaZ_4",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/giXco2jaZ_4",
+        "youtubeId": "giXco2jaZ_4",
+        "type": "Trailer 2"
+      },
+      {
+        "title": "Lady Gaga - Hold My Hand (From 'Top Gun: Maverick') [Official Music Video]",
+        "url": "https://www.youtube.com/watch?v=mNEUkkoUoIA",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/mNEUkkoUoIA",
+        "youtubeId": "mNEUkkoUoIA",
+        "type": "Song 1"
+      },
+      {
+        "title": "OneRepublic - I Ain't Worried (From 'Top Gun: Maverick') [Official Music Video]",
+        "url": "https://www.youtube.com/watch?v=mNEW4JqH4Z4",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/mNEW4JqH4Z4",
+        "youtubeId": "mNEW4JqH4Z4",
+        "type": "Song 2"
       }
     ],
     "videos": [
@@ -1180,12 +1727,17 @@
       {
         "url": "https://www.youtube.com/watch?v=giXco2jaZ_4",
         "youtubeId": "giXco2jaZ_4",
-        "title": "Top Gun: Maverick | New Official Trailer - Paramount Pictures"
+        "title": "Top Gun: Maverick | Official Trailer 2 - Paramount Pictures"
       },
       {
         "url": "https://www.youtube.com/watch?v=mNEUkkoUoIA",
         "youtubeId": "mNEUkkoUoIA",
         "title": "Lady Gaga - Hold My Hand (From 'Top Gun: Maverick') [Official Music Video]"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=mNEW4JqH4Z4",
+        "youtubeId": "mNEW4JqH4Z4",
+        "title": "OneRepublic - I Ain't Worried (From 'Top Gun: Maverick') [Official Music Video]"
       }
     ],
     "articles": [
@@ -1193,101 +1745,117 @@
         "headline": "Top Gun: Maverick Review — Tom Cruise Flies High in Perfect Blockbuster",
         "url": "https://www.denofgeek.com/movies/top-gun-maverick-review-tom-cruise/",
         "author": "Den of Geek",
-        "date": "26 May, 2022",
-        "section": "More Reviews and News"
+        "date": "May 26, 2022",
+        "section": "Critic Reviews"
       },
       {
         "headline": "Top Gun: Maverick Movie Review: Supersonic Sequel Expands The Myth of Tom Cruise",
         "url": "https://www.firstpost.com/entertainment/top-gun-maverick-movie-review-supersonic-sequel-expands-the-myth-of-tom-cruise-10722091.html",
         "author": "Firstpost",
-        "date": "27 May, 2022",
-        "section": "More Reviews and News"
+        "date": "May 27, 2022",
+        "section": "Critic Reviews"
       },
       {
         "headline": "Top Gun Maverick Early Reviews: Critics Hail Tom Cruise Starrer As A Great Film That Improves On The Original",
         "url": "https://www.hindustantimes.com/entertainment/hollywood/top-gun-maverick-early-reviews-critics-hail-tom-cruise-starrer-as-a-great-film-that-improves-on-the-orginal-101652435079400.html",
         "author": "Hindustan Times",
-        "date": "13 May, 2022",
-        "section": "More Reviews and News"
+        "date": "May 13, 2022",
+        "section": "Critic Reviews"
       },
       {
         "headline": "Top Gun: Maverick Review — A Rare Legacy Sequel That Hits Every High Note",
         "url": "https://www.ign.com/articles/top-gun-maverick-review",
         "author": "IGN",
-        "date": "12 May, 2022",
-        "section": "More Reviews and News"
+        "date": "May 12, 2022",
+        "section": "Critic Reviews"
       },
       {
         "headline": "Top Gun Maverick Movie Review: Tom Cruise Starrer Aces The Skies, Burns The Roads",
         "url": "https://indianexpress.com/article/entertainment/movie-review/top-gun-maverick-movie-review-tom-cruise-starrer-aces-the-skies-burns-the-roads-7936771/",
         "author": "The Indian Express",
-        "date": "26 May, 2022",
-        "section": "More Reviews and News"
+        "date": "May 26, 2022",
+        "section": "Critic Reviews"
       },
       {
         "headline": "Top Gun Maverick Review: Tom Cruise Takes You On A Breathtaking Joyride In Fighter Jet",
         "url": "https://www.indiatoday.in/movies/hollywood/story/top-gun-maverick-review-tom-cruise-us-navy-fighter-jet-1954458-2022-05-26",
         "author": "India Today",
-        "date": "26 May, 2022",
-        "section": "More Reviews and News"
+        "date": "May 26, 2022",
+        "section": "Critic Reviews"
       },
       {
         "headline": "Top Gun: Maverick Review — Tom Cruise Back In The Cockpit After 36 Years Doesn't Miss The Target",
         "url": "https://www.ndtv.com/entertainment/top-gun-maverick-review-tom-cruise-back-in-the-cockpit-after-36-years-doesnt-miss-the-target-3-stars-3014063",
         "author": "NDTV",
-        "date": "27 May, 2022",
-        "section": "More Reviews and News"
+        "date": "May 27, 2022",
+        "section": "Critic Reviews"
       },
       {
         "headline": "Top Gun: Maverick Review — Pure Adrenaline And Nostalgia",
         "url": "https://www.rediff.com/movies/review/top-gun-maverick-review/20220521.htm",
         "author": "Rediff",
-        "date": "21 May, 2022",
-        "section": "More Reviews and News"
+        "date": "May 21, 2022",
+        "section": "Critic Reviews"
       },
       {
         "headline": "Top Gun: Maverick Review — Tom Cruise's Aerial Spectacle Outdoes The Original In Every Way",
         "url": "https://www.rollingstone.com/tv-movies/tv-movie-reviews/top-gun-maverick-review-1350586/",
         "author": "Rolling Stone",
-        "date": "12 May, 2022",
-        "section": "More Reviews and News"
+        "date": "May 12, 2022",
+        "section": "Critic Reviews"
       },
       {
         "headline": "Top Gun: Maverick Review — Tom Cruise Soars in Riveting, Grippingly Directed Sequel",
         "url": "https://www.theguardian.com/film/2022/may/29/top-gun-maverick-review-tom-cruise-joseph-kosinski",
         "author": "The Guardian",
-        "date": "29 May, 2022",
-        "section": "More Reviews and News"
+        "date": "May 29, 2022",
+        "section": "Critic Reviews"
       },
       {
         "headline": "Top Gun: Maverick Movie Review & Film Summary (2022)",
         "url": "https://www.rogerebert.com/reviews/top-gun-maverick-movie-review-2022",
         "author": "Roger Ebert",
-        "date": "27 May, 2022",
-        "section": "More Reviews and News"
+        "date": "May 27, 2022",
+        "section": "Critic Reviews"
       },
       {
         "headline": "Top Gun: Maverick Review — Tom Cruise Makes Absurdly Exciting Return",
         "url": "https://www.telegraph.co.uk/films/0/top-gun-maverick-review-tom-cruise-makes-absurdly-exciting-return/",
         "author": "The Telegraph",
-        "date": "26 May, 2022",
-        "section": "More Reviews and News"
+        "date": "May 26, 2022",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Top Gun: Maverick Movie Review: Tom Cruise Soars In High-Octane Action Blockbuster",
+        "url": "https://timesofindia.indiatimes.com/entertainment/english/movie-reviews/top-gun-maverick/movie-review/91772508.cms",
+        "author": "Times of India",
+        "date": "May 27, 2022",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Top Gun: Maverick Movie Review for Parents",
+        "url": "https://www.commonsensemedia.org/movie-reviews/top-gun-maverick",
+        "author": "Common Sense Media",
+        "date": "May 2022",
+        "section": "Critic Reviews"
       },
       {
         "headline": "Tom Cruise Opens Up On Reuniting With Kate And William Three Years After Top Gun: Maverick, Calls It Amazing",
         "url": "https://www.wionews.com/entertainment/hollywood/tom-cruise-opens-up-on-reuniting-with-kate-and-william-three-years-after-top-gun-maverick-calls-it-amazing-1790343595854",
         "author": "WION News",
-        "date": "2026",
-        "section": "More Reviews and News"
+        "date": "September 2026",
+        "section": "News"
       },
       {
         "headline": "Maverick Viñales Comeback at Motegi: Thrills in MotoGP Racing",
         "url": "https://www.speedweek.com/en/a/motogp/maverick-vinales-comeback-motegi-japan",
         "author": "Speedweek",
-        "date": "2026",
-        "section": "More Reviews and News"
+        "date": "September 2026",
+        "section": "News"
       }
     ],
+    "wikipedia": "https://en.wikipedia.org/wiki/Top_Gun:_Maverick",
+    "imdb": "https://www.imdb.com/title/tt1745960/",
     "filePath": "E:/OakShow/TopGunMaverick.html"
   },
   {
@@ -3047,35 +3615,53 @@
     "slug": "forgotten-island",
     "type": "movie",
     "category": "Hollywood",
-    "score": 8.8,
+    "score": 8,
     "filename": "ForgottenIsland.html",
     "aliases": [
-      "Forgotten Island (2026)",
-      "Forgotten Island"
+      "forgotten-island",
+      "ForgottenIsland.html"
     ],
     "title": "Forgotten Island",
-    "metaTitle": "Forgotten Island (2026) All Ratings, Reviews, Songs, Videos, Bookings and News",
-    "description": "Forgotten Island is a 2026 American computer-animated fantasy-comedy adventure film produced by DreamWorks Animation and distributed by Universal Pictures. Directed by Joel Crawford and Januel Mercado, the film follows two lifelong best friends in 1990s Philippines who stumble into the mystical world of Nakali, where the price of returning home is the memory of their friendship.",
-    "plot": "Set in the Philippines during the 1990s, the story follows two lifelong best friends, Jo and Raissa. As they prepare to embark on separate life paths after high school graduation, they celebrate their last night together and stumble upon a mysterious portal. This transports them to the fantastical world of Nakali, an island filled with magical creatures and figures from Filipino folklore. The island, however, has a dangerous secret: it gradually feeds on the memories of those within. Jo and Raissa soon discover that the price of returning home is the memory of their entire friendship. They must race against time to find a way to escape before they forget each other forever.",
+    "metaTitle": "Forgotten Island (2026) All Ratings, Reviews, Songs, Videos, Bookings and News — OakShow",
+    "tag": "DreamWorks Animation Adventure",
+    "tags": [
+      "DreamWorks Animation",
+      "Universal Pictures",
+      "Adventure",
+      "Fantasy",
+      "Animation",
+      "Family"
+    ],
+    "description": "High school graduate Jo and her best friend Raissa find themselves swept away to Nakali, a mystical and forgotten island where creatures from Filipino mythology reside. As they struggle to navigate the perils of this hidden realm and find their way home, their lifelong friendship is tested against ancient forces and an encroaching dark mystery.",
+    "plot": "On the verge of adulthood and impending separation, longtime friends Jo (H.E.R.) and Raissa (Liza Soberano) are mysteriously transported to Nakali, an uncharted paradise veiled from the modern world where mythical beings and spirits of Filipino folklore dwell. Guided by an eccentric weredog named Raww (Dave Franco) and facing the terrifying shadow of the dread Manananggal (Lea Salonga), the girls must rely on courage, loyalty, and their unbreakable bond to overcome enchanting trials, unravel the island's timeless secrets, and discover that the greatest adventure of all is holding on to friendship when the world threatens to pull them apart.",
     "language": "English",
     "releaseDate": "September 25, 2026",
     "year": "2026",
-    "genre": "Animation, Adventure, Comedy, Fantasy",
+    "status": "released",
+    "genre": "Animation, Adventure, Comedy, Fantasy, Family",
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Comedy",
+      "Fantasy",
+      "Family"
+    ],
     "duration": "1hr 42mins",
-    "director": "Joel Crawford, Januel Mercado",
-    "basedOn": "Original story inspired by Filipino folklore and mythology",
+    "director": "Januel P. Mercado",
+    "writer": "Januel P. Mercado, H.E.R.",
+    "basedOn": "Original story inspired by Filipino folklore",
     "wikipedia": "https://en.wikipedia.org/wiki/Forgotten_Island",
     "imdb": "https://www.imdb.com/title/tt36583977/",
     "boxOffice": {
-      "budget": "$90 Million",
-      "worldwideGross": "Upcoming (Releasing September 25, 2026)",
-      "openingDay": "TBD",
-      "openingWeekend": "Tracking $35–45 Million (Projected)",
-      "indiaGross": "TBD (Releasing Sept 25, 2026)",
-      "overseasGross": "TBD",
-      "verdict": "Awaiting Theatrical Release",
-      "source": "Deadline & Box Office Mojo",
-      "lastUpdated": "September 19, 2026"
+      "budget": "$80 Million",
+      "worldwideGross": "$25–30 Million ($20.6 Million Opening Weekend)",
+      "openingWeekend": "$20.6 Million Worldwide ($12.5 Million Domestic / $8.1 Million Overseas)",
+      "openingDay": "$4.8 Million Domestic",
+      "domesticGross": "$14.5 Million",
+      "overseasGross": "$9.5 Million",
+      "verdict": "Theatrical Run in Progress (Universal / DreamWorks)",
+      "source": "Box Office Mojo, The Numbers & TheWrap",
+      "lastUpdated": "September 2026"
     },
     "poster": "pics/Films/ForgottenIsland/1.jpg",
     "banner": "pics/Films/ForgottenIsland/2.jpg",
@@ -3092,13 +3678,19 @@
     "ratings": [
       {
         "source": "OakShow",
-        "score": "After Release",
-        "url": "",
+        "score": "8/10",
+        "url": "https://oakshow.in/ForgottenIsland.html",
         "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
       },
       {
+        "source": "Rotten Tomatoes",
+        "score": "95%",
+        "url": "https://www.rottentomatoes.com/m/forgotten_island",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+      },
+      {
         "source": "IMDb",
-        "score": "TBD",
+        "score": "7.8/10",
         "url": "https://www.imdb.com/title/tt36583977/",
         "icon": "pics/RatingSiteLogos/imdb.png"
       },
@@ -3107,6 +3699,12 @@
         "score": "9/10",
         "url": "https://www.ign.com/articles/forgotten-island-review",
         "icon": "pics/RatingSiteLogos/ign.png"
+      },
+      {
+        "source": "Roger Ebert",
+        "score": "3.5/4",
+        "url": "https://www.rogerebert.com/reviews/forgotten-island-animated-film-review-2026",
+        "icon": "pics/RatingSiteLogos/rogerebert.ico"
       },
       {
         "source": "Common Sense Media",
@@ -3119,6 +3717,43 @@
         "score": "3.8/5",
         "url": "https://letterboxd.com/film/forgotten-island-2026/",
         "icon": "pics/RatingSiteLogos/letterboxd.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "73/100",
+        "url": "https://www.metacritic.com/movie/forgotten-island/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      },
+      {
+        "source": "The Telegraph",
+        "score": "4/5",
+        "url": "https://www.thetelegraph.com/entertainment/article/movie-review-forgotten-island-is-a-trippy-ode-22445442.php",
+        "icon": "pics/RatingSiteLogos/telegraph.png"
+      },
+      {
+        "source": "The Hindu",
+        "score": "4/5",
+        "url": "https://www.thehindu.com/entertainment/movies/forgotten-island-movie-review-folklore-and-friendship-power-a-visually-dazzling-adventure/article71512543.ece",
+        "icon": "pics/RatingSiteLogos/the-guardian.png"
+      },
+      {
+        "source": "The Times of India",
+        "score": "3.5/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/english/movie-reviews/forgotten-island/movie-review/134454247.cms",
+        "icon": "pics/RatingSiteLogos/timesofindia.ico"
+      }
+    ],
+    "awards": [
+      {
+        "organization": "CinemaCon Showcase",
+        "year": "2026",
+        "wins": [
+          {
+            "category": "Special Animation Presentation",
+            "recipient": "DreamWorks Animation & Director Januel P. Mercado"
+          }
+        ],
+        "nominations": []
       }
     ],
     "cast": [
@@ -3235,6 +3870,21 @@
         "title": "Kubo and the Two Strings",
         "link": "KuboandtheTwoStrings.html",
         "poster": "pics/Films/KuboandtheTwoStrings/1.jpg"
+      },
+      {
+        "title": "Incredibles 2",
+        "link": "Incredibles2.html",
+        "poster": "pics/Films/Incredibles2/1.jpg"
+      },
+      {
+        "title": "Hotel Transylvania 3: Summer Vacation",
+        "link": "HotelTransylvania3SummerVacation.html",
+        "poster": "pics/Films/HotelTransylvania3SummerVacation/1.jpg"
+      },
+      {
+        "title": "Coyote vs. Acme",
+        "link": "CoyotevsAcme.html",
+        "poster": "pics/Films/CoyotevsAcme/2.jpg"
       }
     ],
     "videos": [
@@ -3286,35 +3936,63 @@
         "url": "https://scottmendelson.substack.com/p/review-forgotten-island-one-of-dreamworks-animation-best-movies",
         "author": "Scott Mendelson",
         "date": "September 2026",
-        "section": "Reviews"
+        "section": "Critic Reviews"
       },
       {
         "headline": "Forgotten Island Review: A Vibrant, Heartfelt DreamWorks Masterpiece",
         "url": "https://www.ign.com/articles/forgotten-island-review",
         "author": "IGN",
         "date": "September 2026",
-        "section": "Reviews"
+        "section": "Critic Reviews"
       },
       {
-        "headline": "Forgotten Island Movie Review",
+        "headline": "Forgotten Island Movie Review for Parents",
         "url": "https://www.commonsensemedia.org/movie-reviews/forgotten-island",
         "author": "Common Sense Media",
         "date": "September 2026",
-        "section": "Reviews"
+        "section": "Critic Reviews"
       },
       {
         "headline": "Forgotten Island Review: A Stunning Celebration of Friendship and Folklore",
         "url": "https://butwhytho.net/2026/09/forgotten-island-review/",
         "author": "But Why Tho?",
         "date": "September 2026",
-        "section": "Reviews"
+        "section": "Critic Reviews"
       },
       {
         "headline": "Forgotten Island Review: DreamWorks Delivers a Visual and Emotional Wonder",
         "url": "https://comicbookclublive.com/2026/09/19/forgotten-island-review-dreamworks/",
         "author": "Comic Book Club Live",
         "date": "September 2026",
-        "section": "Reviews"
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Forgotten Island animated film review & movie summary (2026)",
+        "url": "https://www.rogerebert.com/reviews/forgotten-island-animated-film-review-2026",
+        "author": "Roger Ebert",
+        "date": "September 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Movie review: 'Forgotten Island' is a trippy ode to friendship and folklore",
+        "url": "https://www.thetelegraph.com/entertainment/article/movie-review-forgotten-island-is-a-trippy-ode-22445442.php",
+        "author": "The Telegraph",
+        "date": "September 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "'Forgotten Island' movie review: Folklore and friendship power a visually dazzling adventure",
+        "url": "https://www.thehindu.com/entertainment/movies/forgotten-island-movie-review-folklore-and-friendship-power-a-visually-dazzling-adventure/article71512543.ece",
+        "author": "The Hindu",
+        "date": "September 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Forgotten Island Movie Review: Januel P Mercado crafts a magical Philippine odyssey",
+        "url": "https://timesofindia.indiatimes.com/entertainment/english/movie-reviews/forgotten-island/movie-review/134454247.cms",
+        "author": "The Times of India",
+        "date": "September 2026",
+        "section": "Critic Reviews"
       },
       {
         "headline": "Director Januel P Mercado: Forgotten Island is set in a time when friendships felt more fragile",
@@ -3324,14 +4002,7 @@
         "section": "News"
       }
     ],
-    "filePath": "E:/OakShow/ForgottenIsland.html",
-    "status": "upcoming",
-    "genres": [
-      "Animation",
-      "Adventure",
-      "Comedy",
-      "Fantasy"
-    ]
+    "filePath": "E:/OakShow/ForgottenIsland.html"
   },
   {
     "id": "LustStories3",
