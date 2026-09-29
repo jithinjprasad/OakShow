@@ -1,5 +1,25 @@
 [
   {
+    "id": "michael-news-2",
+    "movieId": "Michael",
+    "movieTitle": "Michael",
+    "title": "Hated by Critics but Loved by Fans: How Michael Conquered the Global Box Office with Over $1 Billion",
+    "source": "Deadline",
+    "date": "May 2026",
+    "url": "https://deadline.com/2026/05/michael-box-office-billion-dollar-biopic-audience-embrace/",
+    "category": "Hollywood"
+  },
+  {
+    "id": "michael-news-1",
+    "movieId": "Michael",
+    "movieTitle": "Michael",
+    "title": "Michael Becomes the Highest-Grossing Biopic in Cinema History, Surpassing Bohemian Rhapsody and Oppenheimer",
+    "source": "Variety",
+    "date": "May 2026",
+    "url": "https://variety.com/2026/film/box-office/michael-biopic-box-office-highest-grossing-history/",
+    "category": "Hollywood"
+  },
+  {
     "id": "forgotten-island-news-1",
     "movieId": "ForgottenIsland",
     "movieTitle": "Forgotten Island",

@@ -85,7 +85,8 @@ if ($Target) {
         "ForgottenIsland.html", "TheParadise.html", "Jailer.html", "Jailer2.html", "HeartoftheBeast.html", "Dhoomakethu.html",
         "Avatar.html", "Verity.html", "AvarachanandSons.html", "AvengersEndgame.html", "AvengersInfinityWar.html", "JusticeLeague.html",
         "TopGunMaverick.html",
-        "ProjectHailMary.html"
+        "ProjectHailMary.html",
+        "Michael.html"
     )
     foreach ($rf in $rootHtmls) {
         if (Test-Path "$srcDir\$rf") {
@@ -173,6 +174,7 @@ if ($Target) {
         @{ Src = "$srcDir\pics\Films\AvengersInfinityWar"; Dest = "$workDir\dist\pics\Films\AvengersInfinityWar" },
         @{ Src = "$srcDir\pics\Films\TopGunMaverick"; Dest = "$workDir\dist\pics\Films\TopGunMaverick" },
         @{ Src = "$srcDir\pics\Films\ProjectHailMary"; Dest = "$workDir\dist\pics\Films\ProjectHailMary" },
+        @{ Src = "$srcDir\pics\Films\Michael"; Dest = "$workDir\dist\pics\Films\Michael" },
         @{ Src = "$srcDir\pics\RatingSiteLogos"; Dest = "$workDir\dist\pics\RatingSiteLogos" },
         @{ Src = "$srcDir\pics\SocialWebsiteLogos"; Dest = "$workDir\dist\pics\SocialWebsiteLogos" },
         @{ Src = "$srcDir\pics\BookngWebSiteLogos"; Dest = "$workDir\dist\pics\BookngWebSiteLogos" },

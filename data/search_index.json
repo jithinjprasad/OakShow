@@ -1,5 +1,18 @@
 [
   {
+    "id": "Michael",
+    "title": "Michael",
+    "type": "movie",
+    "category": "Hollywood",
+    "genre": "Biography, Drama, Music",
+    "language": "English",
+    "year": "2026",
+    "score": 8.5,
+    "poster": "pics/Films/Michael/1.jpg",
+    "url": "Michael.html",
+    "keywords": "Michael Jackson, King of Pop, Jaafar Jackson, Antoine Fuqua, John Logan, Graham King, Colman Domingo, Nia Long, Miles Teller, Highest Grossing Biopic, Loved by Audience"
+  },
+  {
     "id": "ProjectHailMary",
     "title": "Project Hail Mary",
     "type": "movie",
