@@ -352,7 +352,7 @@ $runServiceId = "6c2b26e5-121c-4291-8970-ed91b34c3efb"
 $servicePayload = @{
     image_ref             = $builtImageRef
     min_instances         = 0
-    max_instances         = 1
+    max_instances         = 2
     scale_down_delay_secs = 300
 } | ConvertTo-Json
 
