@@ -83,7 +83,7 @@ if ($Target) {
         "KhalifaTheRuler.html", "AvatarTheWayofWater.html",
         "TheEndofOakStreet.html", "ResidentEvil2026.html", "Runner.html", "TheRunner.html", "Irumudi.html", "LustStories3.html",
         "ForgottenIsland.html", "TheParadise.html", "Jailer.html", "Jailer2.html", "HeartoftheBeast.html", "Dhoomakethu.html",
-        "Avatar.html", "Verity.html", "AvarachanandSons.html", "AvengersEndgame.html", "AvengersInfinityWar.html"
+        "Avatar.html", "Verity.html", "AvarachanandSons.html", "AvengersEndgame.html", "AvengersInfinityWar.html", "JusticeLeague.html"
     )
     foreach ($rf in $rootHtmls) {
         if (Test-Path "$srcDir\$rf") {
@@ -333,7 +333,13 @@ if ($status -ne "succeeded" -and $status -ne "completed") {
 Write-Host "Build SUCCEEDED! Deploying serverless scale-to-zero revision to Scalix..."
 
 $builtImageRef = if ($check.build.image_ref) {
-    if ($check.build.image_ref -match ':[^/]+$') { $check.build.image_ref } else { "$($check.build.image_ref):latest" }
+    if ($check.build.logs -match 'pushing manifest for ([^ ]+@sha256:[a-f0-9]+)') {
+        $matches[1]
+    } elseif ($check.build.image_ref -match ':[^/]+$') {
+        $check.build.image_ref
+    } else {
+        "$($check.build.image_ref):latest"
+    }
 } else {
     "172.18.0.253:5000/408d193f-88ad-4b4c-bcea-587580f4f877/oakshow:latest"
 }
