@@ -83,7 +83,8 @@ if ($Target) {
         "KhalifaTheRuler.html", "AvatarTheWayofWater.html",
         "TheEndofOakStreet.html", "ResidentEvil2026.html", "Runner.html", "TheRunner.html", "Irumudi.html", "LustStories3.html",
         "ForgottenIsland.html", "TheParadise.html", "Jailer.html", "Jailer2.html", "HeartoftheBeast.html", "Dhoomakethu.html",
-        "Avatar.html", "Verity.html", "AvarachanandSons.html", "AvengersEndgame.html", "AvengersInfinityWar.html", "JusticeLeague.html"
+        "Avatar.html", "Verity.html", "AvarachanandSons.html", "AvengersEndgame.html", "AvengersInfinityWar.html", "JusticeLeague.html",
+        "TopGunMaverick.html"
     )
     foreach ($rf in $rootHtmls) {
         if (Test-Path "$srcDir\$rf") {
@@ -169,10 +170,12 @@ if ($Target) {
         @{ Src = "$srcDir\pics\Films\AvarachanandSons"; Dest = "$workDir\dist\pics\Films\AvarachanandSons" },
         @{ Src = "$srcDir\pics\Films\AvengersEndgame"; Dest = "$workDir\dist\pics\Films\AvengersEndgame" },
         @{ Src = "$srcDir\pics\Films\AvengersInfinityWar"; Dest = "$workDir\dist\pics\Films\AvengersInfinityWar" },
+        @{ Src = "$srcDir\pics\Films\TopGunMaverick"; Dest = "$workDir\dist\pics\Films\TopGunMaverick" },
         @{ Src = "$srcDir\pics\RatingSiteLogos"; Dest = "$workDir\dist\pics\RatingSiteLogos" },
         @{ Src = "$srcDir\pics\SocialWebsiteLogos"; Dest = "$workDir\dist\pics\SocialWebsiteLogos" },
         @{ Src = "$srcDir\pics\BookngWebSiteLogos"; Dest = "$workDir\dist\pics\BookngWebSiteLogos" },
-        @{ Src = "$srcDir\pics\WatchOnline"; Dest = "$workDir\dist\pics\WatchOnline" }
+        @{ Src = "$srcDir\pics\WatchOnline"; Dest = "$workDir\dist\pics\WatchOnline" },
+        @{ Src = "$srcDir\pics\MusicWebsiteLogos"; Dest = "$workDir\dist\pics\MusicWebsiteLogos" }
     )
 
     # Clean up any legacy root pics directory and heavy series media in dist to ensure build context stays < 45 MB

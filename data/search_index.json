@@ -1,5 +1,31 @@
 [
   {
+    "id": "TopGunMaverick",
+    "title": "Top Gun: Maverick",
+    "type": "movie",
+    "category": "Hollywood",
+    "genre": "Action, Drama, Thriller, Adventure",
+    "language": "English",
+    "year": "2022",
+    "score": 10,
+    "poster": "pics/Films/TopGunMaverick/1.jpg",
+    "url": "TopGunMaverick.html",
+    "keywords": "Tom Cruise, Miles Teller, Jennifer Connelly, Jon Hamm, Glen Powell, Joseph Kosinski, Pete Mitchell, Rooster, Maverick, TOPGUN"
+  },
+  {
+    "id": "Irumudi",
+    "title": "Irumudi",
+    "type": "movie",
+    "category": "Indian",
+    "year": "2026",
+    "genre": "Action, Thriller, Drama",
+    "language": "Telugu",
+    "score": 7.5,
+    "poster": "pics/Films/Irumudi/1.jpg",
+    "url": "Irumudi.html",
+    "keywords": "Ravi Teja, Shiva Nirvana, Priya Bhavani Shankar, Baby Nakshathra, Sai Kumar"
+  },
+  {
     "id": "Avatar",
     "title": "Avatar",
     "type": "movie",
@@ -54,7 +80,7 @@
     "year": "2023",
     "genre": "Action, Crime, Thriller, Comedy",
     "language": "Tamil",
-    "score": 9,
+    "score": 7.5,
     "poster": "pics/Films/Jailer/1.jpeg",
     "url": "Jailer.html"
   },
