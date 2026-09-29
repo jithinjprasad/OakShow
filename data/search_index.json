@@ -10,7 +10,11 @@
     "score": 8.5,
     "poster": "pics/Films/Michael/1.jpg",
     "url": "Michael.html",
-    "keywords": "Michael Jackson, King of Pop, Jaafar Jackson, Antoine Fuqua, John Logan, Graham King, Colman Domingo, Nia Long, Miles Teller, Highest Grossing Biopic, Loved by Audience"
+    "keywords": "Michael, Michael (2026 film), Michael (2026), Michael Jackson, King of Pop, Jaafar Jackson, Antoine Fuqua, John Logan, Graham King, Colman Domingo, Nia Long, Miles Teller, Highest Grossing Biopic, Loved by Audience, Motown, Thriller, Off the Wall, Bad",
+    "filename": "Michael.html",
+    "fileName": "Michael.html",
+    "cleanUrl": "/Michael.html",
+    "status": "released"
   },
   {
     "id": "ProjectHailMary",
@@ -23,7 +27,11 @@
     "score": 9,
     "poster": "pics/Films/ProjectHailMary/1.jpg",
     "url": "ProjectHailMary.html",
-    "keywords": "Ryan Gosling, Sandra Hüller, Phil Lord, Christopher Miller, Drew Goddard, Andy Weir, Ryland Grace, Rocky, Astrophage, Tau Ceti, Sci-Fi"
+    "keywords": "Project Hail Mary, Project Hail marry, Hail Mary, Ryan Gosling, Sandra Hüller, Phil Lord, Christopher Miller, Drew Goddard, Andy Weir, Ryland Grace, Rocky, Astrophage, Tau Ceti, Sci-Fi",
+    "filename": "ProjectHailMary.html",
+    "fileName": "ProjectHailMary.html",
+    "cleanUrl": "/ProjectHailMary.html",
+    "status": "released"
   },
   {
     "id": "TopGunMaverick",
@@ -36,7 +44,11 @@
     "score": 9.8,
     "poster": "pics/Films/TopGunMaverick/1.jpg",
     "url": "TopGunMaverick.html",
-    "keywords": "Tom Cruise, Miles Teller, Jennifer Connelly, Jon Hamm, Glen Powell, Joseph Kosinski, Pete Mitchell, Rooster, Maverick, TOPGUN, 17th highest grossing, Oscar winner"
+    "keywords": "Top Gun Maverick, Top Gun: Maverick, Top Gun, Top Gun 2, Maverick, Tom Cruise, Miles Teller, Jennifer Connelly, Jon Hamm, Glen Powell, Joseph Kosinski, Pete Mitchell, Rooster, TOPGUN, 17th highest grossing, Oscar winner",
+    "filename": "TopGunMaverick.html",
+    "fileName": "TopGunMaverick.html",
+    "cleanUrl": "/TopGunMaverick.html",
+    "status": "released"
   },
   {
     "id": "Irumudi",

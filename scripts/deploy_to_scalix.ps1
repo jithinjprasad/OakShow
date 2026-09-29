@@ -86,10 +86,17 @@ if ($Target) {
         "Avatar.html", "Verity.html", "AvarachanandSons.html", "AvengersEndgame.html", "AvengersInfinityWar.html", "JusticeLeague.html",
         "TopGunMaverick.html",
         "ProjectHailMary.html",
-        "Michael.html"
+        "Michael.html",
+        "HollywoodReleases2022May.html", "Releases2022May.html",
+        "HollywoodReleases2026March.html", "Releases2026March.html",
+        "HollywoodReleases2026April.html", "Releases2026April.html"
     )
     foreach ($rf in $rootHtmls) {
-        if (Test-Path "$srcDir\$rf") {
+        if (Test-Path "$srcDir\dist\$rf") {
+            Copy-Item -Path "$srcDir\dist\$rf" -Destination "$workDir\$rf" -Force
+            Copy-Item -Path "$srcDir\dist\$rf" -Destination "$workDir\dist\$rf" -Force
+            Copy-Item -Path "$srcDir\dist\$rf" -Destination "$srcDir\$rf" -Force
+        } elseif (Test-Path "$srcDir\$rf") {
             Copy-Item -Path "$srcDir\$rf" -Destination "$workDir\$rf" -Force
             Copy-Item -Path "$srcDir\$rf" -Destination "$workDir\dist\$rf" -Force
         }

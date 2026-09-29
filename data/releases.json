@@ -1,5 +1,683 @@
 [
   {
+    "id": "Releases2026April",
+    "title": "Movies Released On April 2026",
+    "year": "2026",
+    "month": "April",
+    "category": "All",
+    "filename": "Releases2026April.html",
+    "items": [
+      {
+        "title": "Michael",
+        "poster": "pics/Films/Michael/1.jpg",
+        "alt": "Michael Theatrical Poster",
+        "language": "English",
+        "category": "Hollywood",
+        "releaseDate": "April 24, 2026",
+        "genre": "Biography, Drama, Music",
+        "status": "released",
+        "moreLink": "Michael.html",
+        "trailerLink": "https://www.youtube.com/watch?v=3zOLzsbOleM",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "8.5/10",
+            "url": "https://oakshow.in/Michael.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "7.3/10",
+            "url": "https://www.imdb.com/title/tt11378946/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Hindustan Times",
+            "score": "4/5",
+            "url": "https://www.hindustantimes.com/entertainment/hollywood/michael-review-jaafar-jackson-michael-jackson-reincarnated-biopic-hits-all-the-right-notes-antoine-fuqua-colman-domingo-101776923387373.html",
+            "icon": "pics/RatingSiteLogos/hindustan-times.png"
+          },
+          {
+            "source": "India Today",
+            "score": "3.5/5",
+            "url": "https://www.indiatoday.in/movies/story/michael-jackson-biopic-highlights-musical-legacy-avoids-controversies-2900333-2026-04-23",
+            "icon": "pics/RatingSiteLogos/india-today.ico"
+          },
+          {
+            "source": "Common Sense Media",
+            "score": "3/5",
+            "url": "https://www.commonsensemedia.org/movie-reviews/michael-0",
+            "icon": "pics/RatingSiteLogos/common-sense-media.png"
+          },
+          {
+            "source": "The Indian Express",
+            "score": "2.5/5",
+            "url": "https://indianexpress.com/article/entertainment/movie-review/michael-movie-review-michael-jackson-biopic-never-takes-a-peek-at-the-dark-side-10652967/",
+            "icon": "pics/RatingSiteLogos/indian-express.png"
+          },
+          {
+            "source": "The Times of India",
+            "score": "2.5/5",
+            "url": "https://timesofindia.indiatimes.com/entertainment/english/movie-reviews/michael/movie-review/130462456.cms",
+            "icon": "pics/RatingSiteLogos/timesofindia.ico"
+          },
+          {
+            "source": "The Guardian",
+            "score": "2/5",
+            "url": "https://www.theguardian.com/film/2026/apr/21/michael-review-cliched-jackson-biopic-is-bland-bowdlerised-and-bad",
+            "icon": "pics/RatingSiteLogos/the-guardian.png"
+          },
+          {
+            "source": "Den of Geek",
+            "score": "2/5",
+            "url": "https://www.denofgeek.com/movies/michael-review-sanitized-michael-jackson/",
+            "icon": "pics/RatingSiteLogos/denofgeek.ico"
+          },
+          {
+            "source": "NDTV",
+            "score": "2/5",
+            "url": "https://www.ndtv.com/entertainment/michael-review-jaafar-jackson-is-electric-the-movie-is-not-2-stars-11403219",
+            "icon": "pics/RatingSiteLogos/ndtv.ico"
+          },
+          {
+            "source": "IGN",
+            "score": "3/10",
+            "url": "https://www.ign.com/articles/michael-jackson-movie-review",
+            "icon": "pics/RatingSiteLogos/ign.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "38%",
+            "url": "https://www.rottentomatoes.com/m/michael",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-rotten.png"
+          },
+          {
+            "source": "Metacritic",
+            "score": "39/100",
+            "url": "https://www.metacritic.com/movie/michael-2026/",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          },
+          {
+            "source": "Roger Ebert",
+            "score": "1/4",
+            "url": "https://www.rogerebert.com/reviews/michael-jackson-biopic-film-review-2026",
+            "icon": "pics/RatingSiteLogos/rogerebert.ico"
+          }
+        ]
+      }
+    ],
+    "totalItems": 1
+  },
+  {
+    "id": "HollywoodReleases2026April",
+    "title": "Hollywood Movies Released On April 2026",
+    "year": "2026",
+    "month": "April",
+    "category": "Hollywood",
+    "filename": "HollywoodReleases2026April.html",
+    "items": [
+      {
+        "title": "Michael",
+        "poster": "pics/Films/Michael/1.jpg",
+        "alt": "Michael Theatrical Poster",
+        "language": "English",
+        "category": "Hollywood",
+        "releaseDate": "April 24, 2026",
+        "genre": "Biography, Drama, Music",
+        "status": "released",
+        "moreLink": "Michael.html",
+        "trailerLink": "https://www.youtube.com/watch?v=3zOLzsbOleM",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "8.5/10",
+            "url": "https://oakshow.in/Michael.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "7.3/10",
+            "url": "https://www.imdb.com/title/tt11378946/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Hindustan Times",
+            "score": "4/5",
+            "url": "https://www.hindustantimes.com/entertainment/hollywood/michael-review-jaafar-jackson-michael-jackson-reincarnated-biopic-hits-all-the-right-notes-antoine-fuqua-colman-domingo-101776923387373.html",
+            "icon": "pics/RatingSiteLogos/hindustan-times.png"
+          },
+          {
+            "source": "India Today",
+            "score": "3.5/5",
+            "url": "https://www.indiatoday.in/movies/story/michael-jackson-biopic-highlights-musical-legacy-avoids-controversies-2900333-2026-04-23",
+            "icon": "pics/RatingSiteLogos/india-today.ico"
+          },
+          {
+            "source": "Common Sense Media",
+            "score": "3/5",
+            "url": "https://www.commonsensemedia.org/movie-reviews/michael-0",
+            "icon": "pics/RatingSiteLogos/common-sense-media.png"
+          },
+          {
+            "source": "The Indian Express",
+            "score": "2.5/5",
+            "url": "https://indianexpress.com/article/entertainment/movie-review/michael-movie-review-michael-jackson-biopic-never-takes-a-peek-at-the-dark-side-10652967/",
+            "icon": "pics/RatingSiteLogos/indian-express.png"
+          },
+          {
+            "source": "The Times of India",
+            "score": "2.5/5",
+            "url": "https://timesofindia.indiatimes.com/entertainment/english/movie-reviews/michael/movie-review/130462456.cms",
+            "icon": "pics/RatingSiteLogos/timesofindia.ico"
+          },
+          {
+            "source": "The Guardian",
+            "score": "2/5",
+            "url": "https://www.theguardian.com/film/2026/apr/21/michael-review-cliched-jackson-biopic-is-bland-bowdlerised-and-bad",
+            "icon": "pics/RatingSiteLogos/the-guardian.png"
+          },
+          {
+            "source": "Den of Geek",
+            "score": "2/5",
+            "url": "https://www.denofgeek.com/movies/michael-review-sanitized-michael-jackson/",
+            "icon": "pics/RatingSiteLogos/denofgeek.ico"
+          },
+          {
+            "source": "NDTV",
+            "score": "2/5",
+            "url": "https://www.ndtv.com/entertainment/michael-review-jaafar-jackson-is-electric-the-movie-is-not-2-stars-11403219",
+            "icon": "pics/RatingSiteLogos/ndtv.ico"
+          },
+          {
+            "source": "IGN",
+            "score": "3/10",
+            "url": "https://www.ign.com/articles/michael-jackson-movie-review",
+            "icon": "pics/RatingSiteLogos/ign.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "38%",
+            "url": "https://www.rottentomatoes.com/m/michael",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-rotten.png"
+          },
+          {
+            "source": "Metacritic",
+            "score": "39/100",
+            "url": "https://www.metacritic.com/movie/michael-2026/",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          },
+          {
+            "source": "Roger Ebert",
+            "score": "1/4",
+            "url": "https://www.rogerebert.com/reviews/michael-jackson-biopic-film-review-2026",
+            "icon": "pics/RatingSiteLogos/rogerebert.ico"
+          }
+        ]
+      }
+    ],
+    "totalItems": 1
+  },
+  {
+    "id": "Releases2026March",
+    "title": "Movies Released On March 2026",
+    "year": "2026",
+    "month": "March",
+    "category": "All",
+    "filename": "Releases2026March.html",
+    "items": [
+      {
+        "title": "Project Hail Mary",
+        "poster": "pics/Films/ProjectHailMary/1.jpg",
+        "alt": "Project Hail Mary Poster",
+        "language": "English",
+        "category": "Hollywood",
+        "releaseDate": "March 20, 2026",
+        "genre": "Sci-Fi, Adventure, Drama",
+        "status": "released",
+        "moreLink": "ProjectHailMary.html",
+        "trailerLink": "https://www.youtube.com/watch?v=m08TxIsFTRI",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "9/10",
+            "url": "https://oakshow.in/ProjectHailMary.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "95%",
+            "url": "https://www.rottentomatoes.com/m/project_hail_mary",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "8.2/10",
+            "url": "https://www.imdb.com/title/tt12042730/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Digital Spy",
+            "score": "5/5",
+            "url": "https://www.digitalspy.com/movies/a70677848/project-hail-mary-review/",
+            "icon": "pics/RatingSiteLogos/digital-spy.png"
+          },
+          {
+            "source": "Den of Geek",
+            "score": "4.5/5",
+            "url": "https://www.denofgeek.com/movies/project-hail-mary-review-sci-fi-that-goes-down-easy/",
+            "icon": "pics/RatingSiteLogos/denofgeek.ico"
+          },
+          {
+            "source": "Common Sense Media",
+            "score": "4/5",
+            "url": "https://www.commonsensemedia.org/movie-reviews/project-hail-mary",
+            "icon": "pics/RatingSiteLogos/common-sense-media.png"
+          },
+          {
+            "source": "The Telegraph",
+            "score": "4/5",
+            "url": "https://www.telegraph.co.uk/films/0/project-hail-mary-review-ryan-gosling/",
+            "icon": "pics/RatingSiteLogos/telegraph.png"
+          },
+          {
+            "source": "IGN",
+            "score": "8/10",
+            "url": "https://www.ign.com/articles/project-hail-mary-review-ryan-gosling",
+            "icon": "pics/RatingSiteLogos/ign.png"
+          },
+          {
+            "source": "India Today",
+            "score": "4/5",
+            "url": "https://www.indiatoday.in/movies/reviews/story/project-hail-mary-review-ryan-gosling-film-science-heart-optimism-2886762-2026-03-25",
+            "icon": "pics/RatingSiteLogos/india-today.ico"
+          },
+          {
+            "source": "The Times of India",
+            "score": "4/5",
+            "url": "https://timesofindia.indiatimes.com/entertainment/english/project-hail-mary/movie-review/129749007.cms",
+            "icon": "pics/RatingSiteLogos/timesofindia.ico"
+          },
+          {
+            "source": "Metacritic",
+            "score": "77/100",
+            "url": "https://www.metacritic.com/movie/project-hail-mary/",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          },
+          {
+            "source": "Hindustan Times",
+            "score": "3.5/5",
+            "url": "https://www.hindustantimes.com/entertainment/hollywood/project-hail-mary-review-ryan-gosling-emotionally-binds-unmatched-big-screen-experience-that-makes-you-overlook-flaws-101774501254527.html",
+            "icon": "pics/RatingSiteLogos/hindustan-times.png"
+          },
+          {
+            "source": "The Indian Express",
+            "score": "3.5/5",
+            "url": "https://indianexpress.com/article/entertainment/movie-review/project-hail-mary-movie-review-ryan-gosling-finds-an-unlikely-buddy-in-deep-space-delivers-the-feel-good-sci-fi-we-needed-10602588/",
+            "icon": "pics/RatingSiteLogos/indian-express.png"
+          },
+          {
+            "source": "The Guardian",
+            "score": "3/5",
+            "url": "https://www.theguardian.com/film/2026/mar/10/project-hail-mary-review-ryan-goslings-charm-carries-unserious-last-ditch-space-mission",
+            "icon": "pics/RatingSiteLogos/the-guardian.png"
+          },
+          {
+            "source": "Roger Ebert",
+            "score": "2.5/4",
+            "url": "https://www.rogerebert.com/reviews/project-hail-mary-ryan-gosling-movie-review-2026",
+            "icon": "pics/RatingSiteLogos/rogerebert.ico"
+          }
+        ]
+      }
+    ],
+    "totalItems": 1
+  },
+  {
+    "id": "HollywoodReleases2026March",
+    "title": "Hollywood Movies Released On March 2026",
+    "year": "2026",
+    "month": "March",
+    "category": "Hollywood",
+    "filename": "HollywoodReleases2026March.html",
+    "items": [
+      {
+        "title": "Project Hail Mary",
+        "poster": "pics/Films/ProjectHailMary/1.jpg",
+        "alt": "Project Hail Mary Poster",
+        "language": "English",
+        "category": "Hollywood",
+        "releaseDate": "March 20, 2026",
+        "genre": "Sci-Fi, Adventure, Drama",
+        "status": "released",
+        "moreLink": "ProjectHailMary.html",
+        "trailerLink": "https://www.youtube.com/watch?v=m08TxIsFTRI",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "9/10",
+            "url": "https://oakshow.in/ProjectHailMary.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "95%",
+            "url": "https://www.rottentomatoes.com/m/project_hail_mary",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "8.2/10",
+            "url": "https://www.imdb.com/title/tt12042730/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Digital Spy",
+            "score": "5/5",
+            "url": "https://www.digitalspy.com/movies/a70677848/project-hail-mary-review/",
+            "icon": "pics/RatingSiteLogos/digital-spy.png"
+          },
+          {
+            "source": "Den of Geek",
+            "score": "4.5/5",
+            "url": "https://www.denofgeek.com/movies/project-hail-mary-review-sci-fi-that-goes-down-easy/",
+            "icon": "pics/RatingSiteLogos/denofgeek.ico"
+          },
+          {
+            "source": "Common Sense Media",
+            "score": "4/5",
+            "url": "https://www.commonsensemedia.org/movie-reviews/project-hail-mary",
+            "icon": "pics/RatingSiteLogos/common-sense-media.png"
+          },
+          {
+            "source": "The Telegraph",
+            "score": "4/5",
+            "url": "https://www.telegraph.co.uk/films/0/project-hail-mary-review-ryan-gosling/",
+            "icon": "pics/RatingSiteLogos/telegraph.png"
+          },
+          {
+            "source": "IGN",
+            "score": "8/10",
+            "url": "https://www.ign.com/articles/project-hail-mary-review-ryan-gosling",
+            "icon": "pics/RatingSiteLogos/ign.png"
+          },
+          {
+            "source": "India Today",
+            "score": "4/5",
+            "url": "https://www.indiatoday.in/movies/reviews/story/project-hail-mary-review-ryan-gosling-film-science-heart-optimism-2886762-2026-03-25",
+            "icon": "pics/RatingSiteLogos/india-today.ico"
+          },
+          {
+            "source": "The Times of India",
+            "score": "4/5",
+            "url": "https://timesofindia.indiatimes.com/entertainment/english/project-hail-mary/movie-review/129749007.cms",
+            "icon": "pics/RatingSiteLogos/timesofindia.ico"
+          },
+          {
+            "source": "Metacritic",
+            "score": "77/100",
+            "url": "https://www.metacritic.com/movie/project-hail-mary/",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          },
+          {
+            "source": "Hindustan Times",
+            "score": "3.5/5",
+            "url": "https://www.hindustantimes.com/entertainment/hollywood/project-hail-mary-review-ryan-gosling-emotionally-binds-unmatched-big-screen-experience-that-makes-you-overlook-flaws-101774501254527.html",
+            "icon": "pics/RatingSiteLogos/hindustan-times.png"
+          },
+          {
+            "source": "The Indian Express",
+            "score": "3.5/5",
+            "url": "https://indianexpress.com/article/entertainment/movie-review/project-hail-mary-movie-review-ryan-gosling-finds-an-unlikely-buddy-in-deep-space-delivers-the-feel-good-sci-fi-we-needed-10602588/",
+            "icon": "pics/RatingSiteLogos/indian-express.png"
+          },
+          {
+            "source": "The Guardian",
+            "score": "3/5",
+            "url": "https://www.theguardian.com/film/2026/mar/10/project-hail-mary-review-ryan-goslings-charm-carries-unserious-last-ditch-space-mission",
+            "icon": "pics/RatingSiteLogos/the-guardian.png"
+          },
+          {
+            "source": "Roger Ebert",
+            "score": "2.5/4",
+            "url": "https://www.rogerebert.com/reviews/project-hail-mary-ryan-gosling-movie-review-2026",
+            "icon": "pics/RatingSiteLogos/rogerebert.ico"
+          }
+        ]
+      }
+    ],
+    "totalItems": 1
+  },
+  {
+    "id": "Releases2022May",
+    "title": "Movies Released On May 2022",
+    "year": "2022",
+    "month": "May",
+    "category": "All",
+    "filename": "Releases2022May.html",
+    "items": [
+      {
+        "title": "Top Gun: Maverick",
+        "poster": "pics/Films/TopGunMaverick/1.jpg",
+        "alt": "Top Gun: Maverick Poster",
+        "language": "English",
+        "category": "Hollywood",
+        "releaseDate": "May 27, 2022",
+        "genre": "Action, Drama, Thriller, Adventure",
+        "status": "released",
+        "moreLink": "TopGunMaverick.html",
+        "trailerLink": "https://www.youtube.com/watch?v=qSqVVswa420",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "9.8/10",
+            "url": "https://oakshow.in/TopGunMaverick.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "96%",
+            "url": "https://www.rottentomatoes.com/m/top_gun_maverick",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "8.2/10",
+            "url": "https://www.imdb.com/title/tt1745960/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Roger Ebert",
+            "score": "4/4",
+            "url": "https://www.rogerebert.com/reviews/top-gun-maverick-movie-review-2022",
+            "icon": "pics/RatingSiteLogos/rogerebert.ico"
+          },
+          {
+            "source": "The Telegraph",
+            "score": "5/5",
+            "url": "https://www.telegraph.co.uk/films/0/top-gun-maverick-review-tom-cruise-makes-absurdly-exciting-return/",
+            "icon": "pics/RatingSiteLogos/telegraph.png"
+          },
+          {
+            "source": "Metacritic",
+            "score": "78/100",
+            "url": "https://www.metacritic.com/movie/top-gun-maverick/",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          },
+          {
+            "source": "The Guardian",
+            "score": "4/5",
+            "url": "https://www.theguardian.com/film/2022/may/29/top-gun-maverick-review-tom-cruise-joseph-kosinski",
+            "icon": "pics/RatingSiteLogos/the-guardian.png"
+          },
+          {
+            "source": "Common Sense Media",
+            "score": "4/5",
+            "url": "https://www.commonsensemedia.org/movie-reviews/top-gun-maverick",
+            "icon": "pics/RatingSiteLogos/common-sense-media.png"
+          },
+          {
+            "source": "The Indian Express",
+            "score": "4/5",
+            "url": "https://indianexpress.com/article/entertainment/movie-review/top-gun-maverick-movie-review-tom-cruise-starrer-aces-the-skies-burns-the-roads-7936771/",
+            "icon": "pics/RatingSiteLogos/indian-express.png"
+          },
+          {
+            "source": "The Times of India",
+            "score": "4/5",
+            "url": "https://timesofindia.indiatimes.com/entertainment/english/movie-reviews/top-gun-maverick/movie-review/91772508.cms",
+            "icon": "pics/RatingSiteLogos/timesofindia.ico"
+          },
+          {
+            "source": "Den of Geek",
+            "score": "3.5/5",
+            "url": "https://www.denofgeek.com/movies/top-gun-maverick-review-tom-cruise/",
+            "icon": "pics/RatingSiteLogos/denofgeek.ico"
+          },
+          {
+            "source": "IGN",
+            "score": "7/10",
+            "url": "https://www.ign.com/articles/top-gun-maverick-review",
+            "icon": "pics/RatingSiteLogos/ign.png"
+          },
+          {
+            "source": "India Today",
+            "score": "3.5/5",
+            "url": "https://www.indiatoday.in/movies/hollywood/story/top-gun-maverick-review-tom-cruise-us-navy-fighter-jet-1954458-2022-05-26",
+            "icon": "pics/RatingSiteLogos/india-today.ico"
+          },
+          {
+            "source": "NDTV",
+            "score": "3/5",
+            "url": "https://www.ndtv.com/entertainment/top-gun-maverick-review-tom-cruise-back-in-the-cockpit-after-36-years-doesnt-miss-the-target-3-stars-3014063",
+            "icon": "pics/RatingSiteLogos/ndtv.ico"
+          },
+          {
+            "source": "Rediff",
+            "score": "2.5/5",
+            "url": "https://www.rediff.com/movies/review/top-gun-maverick-review/20220521.htm",
+            "icon": "pics/RatingSiteLogos/rediff.png"
+          }
+        ]
+      }
+    ],
+    "totalItems": 1
+  },
+  {
+    "id": "HollywoodReleases2022May",
+    "title": "Hollywood Movies Released On May 2022",
+    "year": "2022",
+    "month": "May",
+    "category": "Hollywood",
+    "filename": "HollywoodReleases2022May.html",
+    "items": [
+      {
+        "title": "Top Gun: Maverick",
+        "poster": "pics/Films/TopGunMaverick/1.jpg",
+        "alt": "Top Gun: Maverick Poster",
+        "language": "English",
+        "category": "Hollywood",
+        "releaseDate": "May 27, 2022",
+        "genre": "Action, Drama, Thriller, Adventure",
+        "status": "released",
+        "moreLink": "TopGunMaverick.html",
+        "trailerLink": "https://www.youtube.com/watch?v=qSqVVswa420",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "9.8/10",
+            "url": "https://oakshow.in/TopGunMaverick.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "96%",
+            "url": "https://www.rottentomatoes.com/m/top_gun_maverick",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "8.2/10",
+            "url": "https://www.imdb.com/title/tt1745960/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Roger Ebert",
+            "score": "4/4",
+            "url": "https://www.rogerebert.com/reviews/top-gun-maverick-movie-review-2022",
+            "icon": "pics/RatingSiteLogos/rogerebert.ico"
+          },
+          {
+            "source": "The Telegraph",
+            "score": "5/5",
+            "url": "https://www.telegraph.co.uk/films/0/top-gun-maverick-review-tom-cruise-makes-absurdly-exciting-return/",
+            "icon": "pics/RatingSiteLogos/telegraph.png"
+          },
+          {
+            "source": "Metacritic",
+            "score": "78/100",
+            "url": "https://www.metacritic.com/movie/top-gun-maverick/",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          },
+          {
+            "source": "The Guardian",
+            "score": "4/5",
+            "url": "https://www.theguardian.com/film/2022/may/29/top-gun-maverick-review-tom-cruise-joseph-kosinski",
+            "icon": "pics/RatingSiteLogos/the-guardian.png"
+          },
+          {
+            "source": "Common Sense Media",
+            "score": "4/5",
+            "url": "https://www.commonsensemedia.org/movie-reviews/top-gun-maverick",
+            "icon": "pics/RatingSiteLogos/common-sense-media.png"
+          },
+          {
+            "source": "The Indian Express",
+            "score": "4/5",
+            "url": "https://indianexpress.com/article/entertainment/movie-review/top-gun-maverick-movie-review-tom-cruise-starrer-aces-the-skies-burns-the-roads-7936771/",
+            "icon": "pics/RatingSiteLogos/indian-express.png"
+          },
+          {
+            "source": "The Times of India",
+            "score": "4/5",
+            "url": "https://timesofindia.indiatimes.com/entertainment/english/movie-reviews/top-gun-maverick/movie-review/91772508.cms",
+            "icon": "pics/RatingSiteLogos/timesofindia.ico"
+          },
+          {
+            "source": "Den of Geek",
+            "score": "3.5/5",
+            "url": "https://www.denofgeek.com/movies/top-gun-maverick-review-tom-cruise/",
+            "icon": "pics/RatingSiteLogos/denofgeek.ico"
+          },
+          {
+            "source": "IGN",
+            "score": "7/10",
+            "url": "https://www.ign.com/articles/top-gun-maverick-review",
+            "icon": "pics/RatingSiteLogos/ign.png"
+          },
+          {
+            "source": "India Today",
+            "score": "3.5/5",
+            "url": "https://www.indiatoday.in/movies/hollywood/story/top-gun-maverick-review-tom-cruise-us-navy-fighter-jet-1954458-2022-05-26",
+            "icon": "pics/RatingSiteLogos/india-today.ico"
+          },
+          {
+            "source": "NDTV",
+            "score": "3/5",
+            "url": "https://www.ndtv.com/entertainment/top-gun-maverick-review-tom-cruise-back-in-the-cockpit-after-36-years-doesnt-miss-the-target-3-stars-3014063",
+            "icon": "pics/RatingSiteLogos/ndtv.ico"
+          },
+          {
+            "source": "Rediff",
+            "score": "2.5/5",
+            "url": "https://www.rediff.com/movies/review/top-gun-maverick-review/20220521.htm",
+            "icon": "pics/RatingSiteLogos/rediff.png"
+          }
+        ]
+      }
+    ],
+    "totalItems": 1
+  },
+  {
     "id": "IndianReleases2026September",
     "title": "Indian Movies Released On September 2026",
     "year": "2026",

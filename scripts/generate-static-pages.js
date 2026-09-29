@@ -376,7 +376,13 @@ async function run() {
     { filename: 'blogs.html', title: 'OakShow Cinema Perspectives & Editorial Essays', desc: 'In-depth cinema features, retrospectives, and cultural commentary.' },
     { filename: 'OakShowEmergency.html', title: 'Public Emergencies, Helplines & Relief Portals — OakShow', desc: 'Official helplines, relief funds, and disaster management portals.' },
     { filename: 'Careers.html', title: 'Careers at OakShow | Now Become a Critic', desc: 'Be a critic with OakShow. Join the OakForce and publish your movie, series, and video game reviews with full credits.', ogImage: `${DOMAIN}/images/become-a-movie-critic.jpg` },
-    { filename: 'careers.html', title: 'Careers at OakShow | Now Become a Critic', desc: 'Be a critic with OakShow. Join the OakForce and publish your movie, series, and video game reviews with full credits.', ogImage: `${DOMAIN}/images/become-a-movie-critic.jpg` }
+    { filename: 'careers.html', title: 'Careers at OakShow | Now Become a Critic', desc: 'Be a critic with OakShow. Join the OakForce and publish your movie, series, and video game reviews with full credits.', ogImage: `${DOMAIN}/images/become-a-movie-critic.jpg` },
+    { filename: 'HollywoodReleases2022May.html', title: 'Hollywood Movies Released On May 2022 — OakShow', desc: 'Browse verified ratings, reviews, streaming providers and bookings for Hollywood movies released in May 2022 including Top Gun: Maverick.' },
+    { filename: 'Releases2022May.html', title: 'Movies Released On May 2022 — OakShow', desc: 'Browse verified ratings, reviews, streaming providers and bookings for all movies released in May 2022 including Top Gun: Maverick.' },
+    { filename: 'HollywoodReleases2026March.html', title: 'Hollywood Movies Released On March 2026 — OakShow', desc: 'Browse verified ratings, reviews, streaming providers and bookings for Hollywood movies released in March 2026 including Project Hail Mary.' },
+    { filename: 'Releases2026March.html', title: 'Movies Released On March 2026 — OakShow', desc: 'Browse verified ratings, reviews, streaming providers and bookings for all movies released in March 2026 including Project Hail Mary.' },
+    { filename: 'HollywoodReleases2026April.html', title: 'Hollywood Movies Released On April 2026 — OakShow', desc: 'Browse verified ratings, reviews, streaming providers and bookings for Hollywood movies released in April 2026 including Michael.' },
+    { filename: 'Releases2026April.html', title: 'Movies Released On April 2026 — OakShow', desc: 'Browse verified ratings, reviews, streaming providers and bookings for all movies released in April 2026 including Michael.' }
   ];
 
   const hubs = target
