@@ -38,7 +38,7 @@
         var rawSlug = path.replace(/^\/+|\.html$/gi, '').replace(/^(movies|series|films)\//i, '');
         if (rawSlug && rawSlug !== 'index' && rawSlug !== 'home' && rawSlug !== 'discover') {
           var readable = rawSlug.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/[-_]/g, ' ');
-          document.title = readable + ' All Ratings, Reviews and Watch Online — OakShow';
+          document.title = readable + ' — OakShow';
         }
       } catch(e) {}
     })();

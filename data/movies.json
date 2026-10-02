@@ -4,7 +4,7 @@
     "slug": "yezhu-kadal-yezhu-malai",
     "type": "movie",
     "category": "Indian",
-    "score": 6,
+    "score": 5.5,
     "filename": "YezhuKadalYezhuMalai.html",
     "title": "Yezhu Kadal Yezhu Malai",
     "metaTitle": "Yezhu Kadal Yezhu Malai All Ratings, Reviews, Songs, Videos, Bookings and News — OakShow",
@@ -35,15 +35,21 @@
     "ratings": [
       {
         "source": "OakShow",
-        "score": "6.0/10",
+        "score": "5.5/10",
         "url": "https://oakshow.in/YezhuKadalYezhuMalai.html",
-        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-an-average-movie.png"
       },
       {
         "source": "IMDb",
         "score": "9.0/10",
         "url": "https://www.imdb.com/title/tt22754948/",
         "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Times of India",
+        "score": "2.5/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movie-reviews/yezhu-kadal-yezhu-malai/movie-review/134624069.cms",
+        "icon": "pics/RatingSiteLogos/times-of-india.png"
       },
       {
         "source": "The Indian Express",
@@ -56,6 +62,12 @@
         "score": "1.5/5",
         "url": "https://www.indiatoday.in/movies/reviews/story/yezhu-kadal-yezhu-malai-review-ram-ai-heavy-philosophical-drama-tests-patience-nivin-pauly-soori-3007180-2026-10-01",
         "icon": "pics/RatingSiteLogos/india-today.ico"
+      },
+      {
+        "source": "Times Now",
+        "score": "Review",
+        "url": "https://tamil.timesnownews.com/entertainment/yezhu-kadal-yezhu-malai-movie-x-review-in-tamil-nivin-pauly-article-156257283",
+        "icon": "pics/RatingSiteLogos/times-now.png"
       }
     ],
     "cast": [
@@ -6184,7 +6196,7 @@
     "slug": "verity",
     "type": "movie",
     "category": "Hollywood",
-    "score": null,
+    "score": 6,
     "filename": "Verity.html",
     "aliases": [
       "verity",
@@ -6209,16 +6221,10 @@
       "Brady Wagner"
     ],
     "boxOffice": {
-      "budget": "$40–50 Million (Estimated)",
-      "worldwideGross": "Upcoming / Theatrical Release October 2, 2026",
-      "openingDay": "TBD",
-      "openingWeekend": "TBD",
-      "domesticGross": "TBD",
-      "overseasGross": "TBD",
-      "indiaGross": "TBD",
-      "verdict": "Upcoming Theatrical Release",
-      "source": "Amazon MGM Studios & Sony Pictures",
-      "lastUpdated": "September 2026"
+      "budget": "Reported Production Budget $40 Million",
+      "opening": "Projected Domestic Opening $25 - $35 Million",
+      "global": "Projected Global Opening Over $55 Million",
+      "lastUpdated": "October 2026"
     },
     "poster": "pics/Films/Verity/1.jpg",
     "banner": "pics/Films/Verity/2.jpg",
@@ -6232,7 +6238,86 @@
         "alt": "Verity Official Theatrical Banner"
       }
     ],
-    "ratings": [],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "6/10",
+        "url": "https://oakshow.in/Verity.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-an-average-movie.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "6.1/10",
+        "url": "https://www.imdb.com/title/tt32261958/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "40%",
+        "url": "https://www.rottentomatoes.com/m/verity",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "45/100",
+        "url": "https://www.metacritic.com/movie/verity/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      },
+      {
+        "source": "Times Now",
+        "score": "3.5/5",
+        "url": "https://www.timesnownews.com/entertainment-news/reviews/verity-movie-review-2026-dakota-johnson-and-anne-hathaway-romantic-thriller-film-release-date-cast-rating-and-story-review-156252282",
+        "icon": "pics/RatingSiteLogos/times-now.png"
+      },
+      {
+        "source": "Common Sense Media",
+        "score": "3/5",
+        "url": "https://www.commonsensemedia.org/book-reviews/verity",
+        "icon": "pics/RatingSiteLogos/common-sense-media.png"
+      },
+      {
+        "source": "India Today",
+        "score": "3/5",
+        "url": "https://www.indiatoday.in/movies/hollywood/story/verity-review-anne-hathaway-dakota-johnson-elevate-a-pulpy-twisted-thriller-3007145-2026-10-01",
+        "icon": "pics/RatingSiteLogos/india-today.ico"
+      },
+      {
+        "source": "Den of Geek",
+        "score": "2/5",
+        "url": "https://www.denofgeek.com/movies/verity-review-anne-hathaway-winning-streak-to-end/",
+        "icon": "pics/RatingSiteLogos/denofgeek.png"
+      },
+      {
+        "source": "Digital Spy",
+        "score": "2/5",
+        "url": "https://www.digitalspy.com/movies/a73940199/verity-review-anne-hathaway/",
+        "icon": "pics/RatingSiteLogos/digital-spy.png"
+      },
+      {
+        "source": "The Guardian",
+        "score": "2/5",
+        "url": "https://www.theguardian.com/film/2026/sep/30/verity-review-dakota-johnson-anne-hathaway-josh-hartnett",
+        "icon": "pics/RatingSiteLogos/guardian.png"
+      },
+      {
+        "source": "The Indian Express",
+        "score": "1.5/5",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/verity-movie-review-anne-hathaway-dakota-johnsons-thriller-fails-to-deliver-10903608/",
+        "icon": "pics/RatingSiteLogos/indian-express.png"
+      },
+      {
+        "source": "RogerEbert",
+        "score": "3/4",
+        "url": "https://www.rogerebert.com/reviews/verity-anne-hathaway-dakota-fanning-film-review-2026",
+        "icon": "pics/RatingSiteLogos/roger-ebert.png"
+      },
+      {
+        "source": "The Hindu",
+        "score": "Review",
+        "url": "https://www.thehindu.com/entertainment/movies/verity-movie-review-anne-hathaway-and-dakota-johnson-stumble-through-a-corny-thriller/article71527847.ece",
+        "icon": "pics/RatingSiteLogos/the-hindu.png"
+      }
+    ],
     "bookingTickets": [
       {
         "provider": "BookMyShow",
@@ -6363,7 +6448,7 @@
       }
     ],
     "filePath": "E:/OakShow/Verity.html",
-    "status": "upcoming",
+    "status": "Released",
     "genres": [
       "Psychological Thriller",
       "Erotic Thriller",
@@ -6372,14 +6457,39 @@
       "Drama"
     ],
     "wikipedia": "https://en.wikipedia.org/wiki/Verity_(film)",
-    "imdb": "https://www.imdb.com/title/tt32261958/"
+    "imdb": "https://www.imdb.com/title/tt32261958/",
+    "musicLinks": {
+      "spotify": "https://open.spotify.com/album/3h7o3OEjUgp7yBZ0xZEIu2"
+    },
+    "bookings": [
+      {
+        "platform": "BookMyShow",
+        "url": "https://in.bookmyshow.com/movies/mumbai/verity/ET00497246",
+        "icon": "pics/BookingSiteLogos/bookmyshow.png"
+      },
+      {
+        "platform": "District",
+        "url": "https://www.district.in/movies/verity-movie-tickets-MV220590?srsltid=AU7gw4U-zdjHpzjdY9g2lULONXCeBhWvguoWtZ-vOtlkH-HcRx8HHhWj",
+        "icon": "pics/BookingSiteLogos/district.png"
+      },
+      {
+        "platform": "Fandango",
+        "url": "https://www.fandango.com/verity-2026-240033/movie-overview",
+        "icon": "pics/BookingSiteLogos/fandango.png"
+      },
+      {
+        "platform": "Cineworld",
+        "url": "https://www.cineworld.co.uk/films/1000015739-verity/",
+        "icon": "pics/BookingSiteLogos/cineworld.png"
+      }
+    ]
   },
   {
     "id": "AvarachanandSons",
     "slug": "avarachanandsons",
     "type": "movie",
     "category": "Indian",
-    "score": null,
+    "score": 6,
     "filename": "AvarachanandSons.html",
     "aliases": [
       "avarachan-and-sons",
@@ -6434,7 +6544,20 @@
         "alt": "Avarachan & Sons Second Look Banner"
       }
     ],
-    "ratings": [],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "6/10",
+        "url": "https://oakshow.in/AvarachanandSons.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-an-average-movie.png"
+      },
+      {
+        "source": "The Hindu",
+        "score": "Review",
+        "url": "https://www.thehindu.com/entertainment/movies/avaraachan-and-sons-movie-review-biju-menon-makes-this-old-fashioned-family-entertainer-watchable/article71536772.ece",
+        "icon": "pics/RatingSiteLogos/the-hindu.png"
+      }
+    ],
     "bookingTickets": [
       {
         "provider": "BookMyShow",
@@ -6577,7 +6700,7 @@
       }
     ],
     "filePath": "E:/OakShow/AvarachanandSons.html",
-    "status": "upcoming",
+    "status": "Released",
     "genres": [
       "Family",
       "Comedy",
@@ -9733,7 +9856,7 @@
     "slug": "digger",
     "type": "movie",
     "category": "Hollywood",
-    "score": null,
+    "score": 7.5,
     "filename": "Digger.html",
     "title": "Digger",
     "description": "Explore Digger Hollywood satirical disaster comedy movie ratings, reviews, box office projections, trailers, bookings, and news. Directed by Alejandro G. Iñárritu, starring Tom Cruise, Riz Ahmed, John Goodman, and Sandra Hüller.",
@@ -9746,9 +9869,11 @@
     "director": "",
     "basedOn": "",
     "boxOffice": {
-      "budget": "Estimated Production $125 - $150 Million",
-      "lastUpdated": "September 2026",
-      "source": "Trade Reports / Sacnilk, Pinkvilla & Box Office Mojo"
+      "budget": "Estimated Production $160 - $180 Million",
+      "opening": "Projected $7.5 - $15 Million",
+      "breakEven": "Estimated $300 - $350 Million",
+      "lastUpdated": "October 2026",
+      "source": "Industry Reports / Forbes / Box Office Mojo"
     },
     "poster": "pics/Films/Digger/2.jpg",
     "gallery": [
@@ -9765,7 +9890,104 @@
         "alt": "Digger Movie Still"
       }
     ],
-    "ratings": [],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "7.5/10",
+        "url": "https://oakshow.in/Digger.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-good.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "7.3/10",
+        "url": "https://www.imdb.com/title/tt31450459/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "54%",
+        "url": "https://www.rottentomatoes.com/m/digger_2026",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "46/100",
+        "url": "https://www.metacritic.com/movie/digger-2026/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      },
+      {
+        "source": "The Telegraph",
+        "score": "4/5",
+        "url": "https://www.telegraph.co.uk/films/2026/09/29/digger-review-tom-cruise/",
+        "icon": "pics/RatingSiteLogos/telegraph.png"
+      },
+      {
+        "source": "The Indian Express",
+        "score": "4/5",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/digger-movie-review-tom-cruise-takes-biggest-career-leap-alejandro-inarritu-10901307/",
+        "icon": "pics/RatingSiteLogos/indian-express.png"
+      },
+      {
+        "source": "Times Now",
+        "score": "4/5",
+        "url": "https://www.timesnownews.com/entertainment-news/reviews/digger-movie-review-tom-cruise-starrer-alejandro-gonzelez-inarritu-film-imdb-review-ratings-public-reaction-review-156255158",
+        "icon": "pics/RatingSiteLogos/times-now.png"
+      },
+      {
+        "source": "Rediff",
+        "score": "4/5",
+        "url": "https://www.rediff.com/movies/review/digger-review-tom-cruise-goes-bonkers/20261002.htm",
+        "icon": "pics/RatingSiteLogos/rediff.png"
+      },
+      {
+        "source": "Times of India",
+        "score": "4/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/english/movie-reviews/digger/movie-review/134612136.cms",
+        "icon": "pics/RatingSiteLogos/times-of-india.png"
+      },
+      {
+        "source": "Common Sense Media",
+        "score": "3/5",
+        "url": "https://www.commonsensemedia.org/movie-reviews/digger",
+        "icon": "pics/RatingSiteLogos/common-sense-media.png"
+      },
+      {
+        "source": "Den of Geek",
+        "score": "2.5/5",
+        "url": "https://www.denofgeek.com/movies/digger-review-tom-cruise/",
+        "icon": "pics/RatingSiteLogos/denofgeek.png"
+      },
+      {
+        "source": "IGN",
+        "score": "6/10",
+        "url": "https://www.ign.com/movies/digger",
+        "icon": "pics/RatingSiteLogos/ign.png"
+      },
+      {
+        "source": "India Today",
+        "score": "3.5/5",
+        "url": "https://www.indiatoday.in/movies/hollywood/story/digger-review-tom-cruise-is-wonderfully-unhinged-in-this-wild-climate-satire-3007106-2026-10-01",
+        "icon": "pics/RatingSiteLogos/india-today.ico"
+      },
+      {
+        "source": "RogerEbert",
+        "score": "2/4",
+        "url": "https://www.rogerebert.com/reviews/digger-tom-cruise-alejandro-gonzalez-inarritu-film-review-2026",
+        "icon": "pics/RatingSiteLogos/roger-ebert.png"
+      },
+      {
+        "source": "The Guardian",
+        "score": "2/5",
+        "url": "https://www.theguardian.com/film/2026/sep/29/digger-review-tom-cruise-satire-alejandro-gonzalez-inarritu",
+        "icon": "pics/RatingSiteLogos/guardian.png"
+      },
+      {
+        "source": "The Hindu",
+        "score": "Review",
+        "url": "https://www.thehindu.com/entertainment/movies/digger-movie-review-alejandro-g-inarritu-tom-cruise-riz-ahmed/article71536688.ece",
+        "icon": "pics/RatingSiteLogos/the-hindu.png"
+      }
+    ],
     "cast": [
       {
         "actor": "Tom Cruise",
@@ -9891,7 +10113,7 @@
       }
     ],
     "filePath": "E:/OakShow/Digger.html",
-    "status": "upcoming"
+    "status": "Released"
   },
   {
     "id": "Mandaadi",

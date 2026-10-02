@@ -81,7 +81,7 @@ export default function UpcomingMoviesView({
     if (!movies || !Array.isArray(movies)) return [];
     const now = Date.now();
 
-    const priorityUpcomingIds = ['Jailer2', 'RamayanaPart1', 'Digger'];
+    const priorityUpcomingIds = ['Jailer2', 'RamayanaPart1'];
 
     return movies.filter((m) => {
       if (!m || !m.title) return false;

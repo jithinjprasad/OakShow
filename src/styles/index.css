@@ -463,12 +463,18 @@ html[data-theme="dark"] .navbar-scrolled {
   overflow: hidden;
   padding: 4px;
 }
+@keyframes film-roll-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 .brand-favicon-logo {
-  width: 100%;
-  height: 100%;
+  width: 120%;
+  height: 120%;
   object-fit: contain;
   border-radius: 6px;
   filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.5));
+  animation: film-roll-spin 12s linear infinite;
 }
 .brand-icon { width: 22px; height: 22px; }
 .brand-text { display: flex; flex-direction: column; }
@@ -1193,6 +1199,40 @@ html[data-theme="light"] .movie-hero-overlay,
       rgba(241, 245, 249, 0.40) 65%,
       rgba(241, 245, 249, 0.75) 100%
     ) !important;
+}
+.mobile-hero-quick-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0 8px;
+}
+.mh-nav-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  color: var(--text-heading);
+  font-size: 0.74rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+.mh-nav-pill:active,
+.mh-nav-pill.active {
+  background: linear-gradient(135deg, var(--logo-cerulean) 0%, var(--logo-navy-deep) 100%) !important;
+  color: #ffffff !important;
+  border-color: var(--logo-sky) !important;
+  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.45);
+}
+.mh-nav-pill.active .mh-nav-icon {
+  color: #ffffff !important;
+}
+[data-theme="light"] .mh-nav-pill {
+  background: #ffffff;
 }
 
 .movie-hero-content {
@@ -2855,8 +2895,8 @@ html[data-theme="light"] .movie-hero-overlay,
     height: 32px !important;
   }
   .navbar-container > .brand-group .brand-favicon-logo {
-    width: 20px !important;
-    height: 20px !important;
+    width: 120% !important;
+    height: 120% !important;
   }
   .navbar-container > .brand-group .brand-name {
     font-size: 1.18rem !important;
@@ -2884,8 +2924,8 @@ html[data-theme="light"] .movie-hero-overlay,
     height: 36px !important;
   }
   .mobile-nav-sheet-header .brand-favicon-logo {
-    width: 22px !important;
-    height: 22px !important;
+    width: 120% !important;
+    height: 120% !important;
   }
   .mobile-nav-sheet-header .brand-name {
     font-size: 1.25rem !important;

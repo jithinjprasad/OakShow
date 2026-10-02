@@ -304,7 +304,7 @@ export default function Navbar({
           {/* Brand (Centered on Mobile, Left on Desktop) */}
           <div className="brand-group" onClick={() => { setActiveTab('discover'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
             <div className="brand-icon-wrap">
-              <img src="/favicon.png" alt="OakShow Logo" className="brand-favicon-logo" />
+              <img src="/OakShowLogo.png" alt="OakShow Logo" className="brand-favicon-logo" />
             </div>
             <div className="brand-text">
               <span className="brand-name">OAK<span className="brand-accent">SHOW</span></span>
@@ -527,7 +527,7 @@ export default function Navbar({
               }}
             >
               <div className="brand-icon-wrap">
-                <img src="/favicon.png" alt="OakShow Logo" className="brand-favicon-logo" />
+                <img src="/OakShowLogo.png" alt="OakShow Logo" className="brand-favicon-logo" />
               </div>
               <div className="brand-text">
                 <span className="brand-name">OAK<span className="brand-accent">SHOW</span></span>
@@ -805,9 +805,10 @@ export default function Navbar({
           transition: transform var(--transition-bounce);
         }
         .brand-favicon-logo {
-          width: 26px;
-          height: 26px;
+          width: 120%;
+          height: 120%;
           object-fit: contain;
+          animation: film-roll-spin 12s linear infinite;
         }
         .brand-group:hover .brand-icon-wrap {
           transform: scale(1.08) rotate(-4deg);
@@ -1245,8 +1246,8 @@ export default function Navbar({
             height: 32px !important;
           }
           .navbar-container > .brand-group .brand-favicon-logo {
-            width: 20px !important;
-            height: 20px !important;
+            width: 120% !important;
+            height: 120% !important;
           }
           .navbar-container > .brand-group .brand-name {
             font-size: 1.18rem !important;
@@ -1274,8 +1275,8 @@ export default function Navbar({
             height: 36px !important;
           }
           .mobile-nav-sheet-header .brand-favicon-logo {
-            width: 22px !important;
-            height: 22px !important;
+            width: 120% !important;
+            height: 120% !important;
           }
           .mobile-nav-sheet-header .brand-name {
             font-size: 1.25rem !important;

@@ -174,7 +174,7 @@ async function run() {
       fs.mkdirSync(outDir, { recursive: true });
     }
 
-    const title = m.metaTitle || `${m.title}${m.year ? ` (${m.year})` : ''} All Ratings, Reviews, Songs, Videos, Bookings and News — OakShow`;
+    const title = m.metaTitle || `${m.title}${m.year ? ` (${m.year})` : ''} — OakShow`;
     const desc = m.description || m.plot || `Checkout verified ratings, reviews, streaming links, and tickets for ${m.title} on OakShow.`;
     const canonical = `${DOMAIN}/${filename}`;
     const ogImage = getShareImage(m, 'Films');
@@ -257,7 +257,7 @@ async function run() {
       fs.mkdirSync(outDir, { recursive: true });
     }
 
-    const title = s.metaTitle || `${s.title}${s.year ? ` (${s.year})` : ''} All Ratings, Episodes, Streaming & Reviews — OakShow`;
+    const title = s.metaTitle || `${s.title}${s.year ? ` (${s.year})` : ''} — OakShow`;
     const desc = s.description || s.plot || `Stream and check verified episode ratings for ${s.title} on OakShow.`;
     const canonical = `${DOMAIN}/${filename}`;
     const ogImage = getShareImage(s, 'Serieses');

@@ -1,5 +1,13 @@
 [
   {
+    "id": "YezhuKadalYezhuMalai",
+    "title": "Yezhu Kadal Yezhu Malai",
+    "type": "movie",
+    "slug": "yezhu-kadal-yezhu-malai",
+    "year": "2026",
+    "thumbnail": "pics/Films/YezhuKadalYezhuMalai/1.jpg"
+  },
+  {
     "id": "Michael",
     "title": "Michael",
     "type": "movie",

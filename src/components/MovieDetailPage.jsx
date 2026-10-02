@@ -181,6 +181,7 @@ export default function MovieDetailPage({
     return (galleriesData || []).find(g => {
       const gSlug = (g.movieSlug || '').toLowerCase().replace(/[^a-z0-9]/g, '');
       const gTitle = (g.movieTitle || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+      if (cleanId === 'michael' && gSlug === 'munnamichael') return false;
       return (gSlug && (gSlug === cleanId || cleanId.includes(gSlug) || gSlug.includes(cleanId))) ||
              (gTitle && (gTitle === cleanTitle || cleanTitle.includes(gTitle) || gTitle.includes(cleanTitle)));
     });
@@ -793,7 +794,7 @@ export default function MovieDetailPage({
                   onClick={() => handleTabSelect(oakshowStaffReviews.length > 0 ? 'in-house-reviews' : (internalReviews.length > 0 ? 'in-house-reviews' : (movie.articles && movie.articles.length > 0 ? 'articles' : 'community')))}
                 >
                   <Award size={12} className="mh-nav-icon text-accent" />
-                  <span>In-House Reviews {oakshowStaffReviews.length > 0 ? `(${oakshowStaffReviews.length})` : (internalReviews.length > 0 ? `(${internalReviews.length})` : '')}</span>
+                  <span>Reviews {oakshowStaffReviews.length > 0 ? `(${oakshowStaffReviews.length})` : (internalReviews.length > 0 ? `(${internalReviews.length})` : '')}</span>
                 </button>
 
                 <button 

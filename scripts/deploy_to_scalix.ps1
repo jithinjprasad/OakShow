@@ -30,6 +30,7 @@ Write-Host "Synced dist/assets."
 Copy-Item -Path "$srcDir\dist\index.html" -Destination "$workDir\dist\index.html" -Force
 if (Test-Path "$srcDir\public\favicon.ico") { Copy-Item -Path "$srcDir\public\favicon.ico" -Destination "$workDir\dist\favicon.ico" -Force }
 if (Test-Path "$srcDir\public\favicon.png") { Copy-Item -Path "$srcDir\public\favicon.png" -Destination "$workDir\dist\favicon.png" -Force }
+if (Test-Path "$srcDir\public\OakShowLogo.png") { Copy-Item -Path "$srcDir\public\OakShowLogo.png" -Destination "$workDir\dist\OakShowLogo.png" -Force }
 if (Test-Path "$srcDir\public\robots.txt") { Copy-Item -Path "$srcDir\public\robots.txt" -Destination "$workDir\dist\robots.txt" -Force }
 if (Test-Path "$srcDir\public\sitemap.xml") { Copy-Item -Path "$srcDir\public\sitemap.xml" -Destination "$workDir\dist\sitemap.xml" -Force }
 if (Test-Path "$srcDir\dist\header.txt") { Copy-Item -Path "$srcDir\dist\header.txt" -Destination "$workDir\dist\header.txt" -Force }
@@ -348,7 +349,8 @@ Write-Host "Build SUCCEEDED! Deploying serverless scale-to-zero revision to Scal
 
 $builtImageRef = if ($check.build.image_ref) {
     if ($check.build.logs -match 'pushing manifest for ([^ ]+@sha256:[a-f0-9]+)') {
-        $matches[1]
+        $rawRef = $matches[1]
+        $rawRef -replace ':[^/@]+(?=@sha256:)', ''
     } elseif ($check.build.image_ref -match ':[^/]+$') {
         $check.build.image_ref
     } else {

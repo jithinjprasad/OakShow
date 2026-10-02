@@ -575,7 +575,7 @@ export default function App() {
       return 0;
     };
 
-    const priorityUpcomingIds = ['Jailer2', 'RamayanaPart1', 'Digger'];
+    const priorityUpcomingIds = ['Jailer2', 'RamayanaPart1'];
 
     return cleanMoviesData.filter(m => {
       if (priorityUpcomingIds.includes(m.id)) return true;
