@@ -90,7 +90,9 @@ if ($Target) {
         "Michael.html",
         "HollywoodReleases2022May.html", "Releases2022May.html",
         "HollywoodReleases2026March.html", "Releases2026March.html",
-        "HollywoodReleases2026April.html", "Releases2026April.html"
+        "HollywoodReleases2026April.html", "Releases2026April.html",
+        "MatchboxTheMovie.html",
+        "HollywoodReleases2026October.html", "Releases2026October.html"
     )
     foreach ($rf in $rootHtmls) {
         if (Test-Path "$srcDir\dist\$rf") {
@@ -187,7 +189,15 @@ if ($Target) {
         @{ Src = "$srcDir\pics\SocialWebsiteLogos"; Dest = "$workDir\dist\pics\SocialWebsiteLogos" },
         @{ Src = "$srcDir\pics\BookngWebSiteLogos"; Dest = "$workDir\dist\pics\BookngWebSiteLogos" },
         @{ Src = "$srcDir\pics\WatchOnline"; Dest = "$workDir\dist\pics\WatchOnline" },
-        @{ Src = "$srcDir\pics\MusicWebsiteLogos"; Dest = "$workDir\dist\pics\MusicWebsiteLogos" }
+        @{ Src = "$srcDir\pics\MusicWebsiteLogos"; Dest = "$workDir\dist\pics\MusicWebsiteLogos" },
+        @{ Src = "$srcDir\pics\Films\Drishyam"; Dest = "$workDir\dist\pics\Films\Drishyam" },
+        @{ Src = "$srcDir\pics\Films\Drishyam2"; Dest = "$workDir\dist\pics\Films\Drishyam2" },
+        @{ Src = "$srcDir\pics\Films\Drishyam2HindiMovie"; Dest = "$workDir\dist\pics\Films\Drishyam2HindiMovie" },
+        @{ Src = "$srcDir\pics\Films\Drishyam3"; Dest = "$workDir\dist\pics\Films\Drishyam3" },
+        @{ Src = "$srcDir\pics\Films\DrishyamHindiMovie"; Dest = "$workDir\dist\pics\Films\DrishyamHindiMovie" },
+        @{ Src = "$srcDir\pics\Films\DrishyamTheConclusion"; Dest = "$workDir\dist\pics\Films\DrishyamTheConclusion" },
+        @{ Src = "$srcDir\pics\Films\YezhuKadalYezhuMalai"; Dest = "$workDir\dist\pics\Films\YezhuKadalYezhuMalai" },
+        @{ Src = "$srcDir\pics\Films\MatchboxTheMovie"; Dest = "$workDir\dist\pics\Films\MatchboxTheMovie" }
     )
 
     # Clean up any legacy root pics directory and heavy series media in dist to ensure build context stays < 45 MB

@@ -1,5 +1,1010 @@
 [
   {
+    "id": "MatchboxTheMovie",
+    "slug": "matchbox-the-movie",
+    "type": "movie",
+    "category": "Hollywood",
+    "score": 5.5,
+    "filename": "MatchboxTheMovie.html",
+    "fileName": "MatchboxTheMovie.html",
+    "title": "Matchbox: The Movie",
+    "metaTitle": "Matchbox: The Movie (2026) All Ratings, Reviews, Songs, Videos, Bookings and News — OakShow",
+    "description": "Spy and former soldier Sean Walker reunites with his childhood friends only to be drugged and kidnapped by an armed syndicate hunting a stolen nuclear warhead. Framed by the CIA for the theft, the crew must execute high-octane vehicular heists across international borders to recover the weapon and clear their names.",
+    "plot": "Sean Walker (John Cena), a seasoned operative and former special forces soldier, returns home seeking a semblance of normal life and a nostalgic reunion with his closest childhood companions: high school sweetheart Aimee (Jessica Biel), mechanic prodigy Crosby (Sam Richardson), quick-witted wheelman Ted (Arturo Castro), and logistics specialist Charmaine (Teyonah Parris).\n\nHowever, their long-overdue catch-up turns into an international nightmare when an elite black-market syndicate violently ambushes them, drugging and kidnapping the crew in a bid to locate a missing experimental nuclear warhead. Matters worsen when the CIA, misled by manufactured digital breadcrumbs, pins the disappearance of the weapon of mass destruction entirely on Walker and his unsuspecting friends.\n\nNow hunted across multiple continents by rogue mercenaries led by Falko (Daniel Bernhardt) and under heavy surveillance by hardline CIA officials Mosier (Corey Stoll) and Helen (Danai Gurira), Walker and his crew have only one choice: stage audacious, death-defying vehicular heists using custom Matchbox-engineered rides to re-steal the warhead, expose the real conspirators, and clear their names before global catastrophe strikes.",
+    "language": "English",
+    "releaseDate": "October 9, 2026",
+    "year": "2026",
+    "status": "released",
+    "genre": "Action, Comedy, Adventure",
+    "duration": "2hr 06mins",
+    "director": "Sam Hargrave",
+    "writer": "David Coggeshall, Jonathan Tropper",
+    "basedOn": "Matchbox by Mattel",
+    "producers": "David Ellison, Dana Goldberg, Don Granger, Robbie Brenner",
+    "cinematography": "Pedro Luque",
+    "editing": "Dirk Westervelt",
+    "musicDirector": "Alex Belcher",
+    "productionCompanies": "Apple Studios, Skydance Media, Mattel Studios",
+    "distributor": "Apple TV",
+    "boxOffice": {
+      "streamingPerformance": "#1 on Apple TV+ (US) & Top 10 in 23 Countries",
+      "domesticGross": "Streaming Premiere (Apple TV+)",
+      "worldwideGross": "Direct-to-Streaming Global Release (Apple TV+)",
+      "openingWeekend": "#1 Streaming Debut on Apple TV+",
+      "verdict": "Streaming Success on Apple TV+",
+      "lastUpdated": "October 2026",
+      "source": "Apple TV+ / ScreenRant / Deadline"
+    },
+    "awards": [],
+    "poster": "pics/Films/MatchboxTheMovie/1.jpg",
+    "banner": "pics/Films/MatchboxTheMovie/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/MatchboxTheMovie/1.jpg",
+        "alt": "Matchbox: The Movie Theatrical Poster"
+      },
+      {
+        "src": "pics/Films/MatchboxTheMovie/2.jpg",
+        "alt": "Matchbox: The Movie Key Art"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "5.5/10",
+        "url": "https://oakshow.in/MatchboxTheMovie.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-this-one-is-above-average.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "5.7/10",
+        "url": "https://www.imdb.com/title/tt28498219/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "25%",
+        "url": "https://www.rottentomatoes.com/m/matchbox_the_movie",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-rotten.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "46%",
+        "url": "https://www.metacritic.com/movie/matchbox-the-movie/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      },
+      {
+        "source": "Roger Ebert",
+        "score": "3/4",
+        "url": "https://www.rogerebert.com/reviews/matchbox-the-movie-john-cena-apple-tv-movie-review-2026",
+        "icon": "pics/RatingSiteLogos/rogerebert.ico"
+      },
+      {
+        "source": "Common Sense Media",
+        "score": "3/5",
+        "url": "https://www.commonsensemedia.org/movie-reviews/matchbox-the-movie",
+        "icon": "pics/RatingSiteLogos/common-sense-media.png"
+      },
+      {
+        "source": "IGN",
+        "score": "4/10",
+        "url": "https://www.ign.com/articles/matchbox-the-movie-review",
+        "icon": "pics/RatingSiteLogos/ign.png"
+      },
+      {
+        "source": "The Guardian",
+        "score": "1/5",
+        "url": "https://www.theguardian.com/film/2026/oct/08/matchbox-movie-review",
+        "icon": "pics/RatingSiteLogos/the-guardian.png"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "John Cena",
+        "role": "Sean Walker",
+        "description": "Former soldier and black-ops operative framed for warhead theft"
+      },
+      {
+        "actor": "Jessica Biel",
+        "role": "Aimee",
+        "description": "Sean's childhood friend and trusted co-pilot"
+      },
+      {
+        "actor": "Sam Richardson",
+        "role": "Crosby",
+        "description": "Childhood tech and engineering specialist"
+      },
+      {
+        "actor": "Arturo Castro",
+        "role": "Ted",
+        "description": "High-speed getaway driver and Sean's longtime buddy"
+      },
+      {
+        "actor": "Teyonah Parris",
+        "role": "Charmaine",
+        "description": "Tactical strategist and core childhood team member"
+      },
+      {
+        "actor": "Randeep Hooda",
+        "role": "Mustafa",
+        "description": "International ally navigating global underground routes"
+      },
+      {
+        "actor": "Danai Gurira",
+        "role": "Helen",
+        "description": "Senior intelligence official heading the government manhunt"
+      },
+      {
+        "actor": "Corey Stoll",
+        "role": "Mosier",
+        "description": "Hardline CIA division director"
+      },
+      {
+        "actor": "Bill Camp",
+        "role": "Smalley",
+        "description": "Veteran agency handler"
+      },
+      {
+        "actor": "Golshifteh Farahani",
+        "role": "Robbie",
+        "description": "Shadow operative embedded in the weapons syndicate"
+      },
+      {
+        "actor": "Kristofer Hivju",
+        "role": "Grigor",
+        "description": "Fierce mercenary commander tracking the missing warhead"
+      },
+      {
+        "actor": "Daniel Bernhardt",
+        "role": "Falko",
+        "description": "Elite syndicate enforcer and tactical fighter"
+      }
+    ],
+    "bookings": [],
+    "watchOnline": [
+      {
+        "provider": "Apple TV",
+        "platform": "Apple TV",
+        "url": "https://tv.apple.com/in/movie/matchbox-the-movie/umc.cmc.31qa8j1tn2cnpyk3fx43w928d",
+        "icon": "pics/WatchOnline/apple.png",
+        "lang": "English, Hindi"
+      }
+    ],
+    "music": [
+      {
+        "provider": "Spotify",
+        "url": "https://open.spotify.com/album/1ZC3TOKUZBuZS4HHw6vhsH",
+        "icon": "pics/MusicWebsiteLogos/spotify.png",
+        "label": "Listen on Spotify"
+      },
+      {
+        "provider": "Apple Music",
+        "url": "https://music.apple.com/ug/album/matchbox-the-movie-soundtrack-from-the-apple-original-film/6819374382",
+        "icon": "pics/MusicWebsiteLogos/itunes.png",
+        "label": "Listen on Apple Music"
+      }
+    ],
+    "socials": [],
+    "similar": [
+      {
+        "title": "Extraction",
+        "link": "Extraction.html",
+        "poster": "pics/Films/Extraction/1.jpg"
+      },
+      {
+        "title": "Fast & Furious: Hobbs & Shaw",
+        "link": "HobbsandShaw.html",
+        "poster": "pics/Films/HobbsandShaw/1.jpg"
+      },
+      {
+        "title": "Baby Driver",
+        "link": "BabyDriver.html",
+        "poster": "pics/Films/BabyDriver/1.jpg"
+      },
+      {
+        "title": "The Fate of the Furious",
+        "link": "Fast8.html",
+        "poster": "pics/Films/Fast 8/1.jpg"
+      }
+    ],
+    "trailers": [
+      {
+        "title": "Matchbox: The Movie | Official Trailer - Apple TV+",
+        "url": "https://www.youtube.com/watch?v=7xfqITrMDcI",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/7xfqITrMDcI",
+        "youtubeId": "7xfqITrMDcI",
+        "type": "Main Trailer"
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=7xfqITrMDcI",
+        "youtubeId": "7xfqITrMDcI",
+        "title": "Matchbox: The Movie | Official Trailer - Apple TV+"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "Matchbox The Movie Review: Live-Action Toy Film With John Cena",
+        "url": "https://www.ign.com/articles/matchbox-the-movie-review",
+        "author": "IGN",
+        "date": "October 8, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Full throttle: John Cena and Jessica Biel on Matchbox The Movie, death-defying stunts and the childhood toys that started it all",
+        "url": "https://www.telegraphindia.com/entertainment/full-throttle-john-cena-and-jessica-biel-on-matchbox-the-movie-death-defying-stunts-and-the-childhood-toys-that-started-it-all-prnt/cid/2183682",
+        "author": "Telegraph India",
+        "date": "October 2026",
+        "section": "Interviews & Features"
+      },
+      {
+        "headline": "Matchbox: the Movie review – as pointless as a film based on a toy car could be",
+        "url": "https://www.theguardian.com/film/2026/oct/08/matchbox-movie-review",
+        "author": "The Guardian",
+        "date": "October 8, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Matchbox: The Movie film review & streaming guide",
+        "url": "https://www.rogerebert.com/reviews/matchbox-the-movie-john-cena-apple-tv-movie-review-2026",
+        "author": "Roger Ebert",
+        "date": "October 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Matchbox: The Movie Review for Parents",
+        "url": "https://www.commonsensemedia.org/movie-reviews/matchbox-the-movie",
+        "author": "Common Sense Media",
+        "date": "October 2026",
+        "section": "Critic Reviews"
+      }
+    ],
+    "wikipedia": "https://en.wikipedia.org/wiki/Matchbox:_The_Movie",
+    "imdb": "https://www.imdb.com/title/tt28498219/",
+    "filePath": "E:/OakShow/MatchboxTheMovie.html"
+  },
+  {
+    "id": "DrishyamTheConclusion",
+    "slug": "drishyam-the-conclusion",
+    "type": "movie",
+    "category": "Indian",
+    "score": 8,
+    "filename": "DrishyamTheConclusion.html",
+    "title": "Drishyam: The Conclusion",
+    "metaTitle": "Drishyam: The Conclusion All Ratings, Reviews, Songs, Videos, Bookings and News — OakShow",
+    "description": "The gripping final chapter of the Drishyam saga.",
+    "plot": "The gripping final chapter of the Drishyam saga.",
+    "language": "Hindi",
+    "releaseDate": "October 2026",
+    "year": "2026",
+    "genre": "Crime, Drama, Thriller",
+    "duration": "150 min",
+    "director": "Abhishek Pathak",
+    "writer": "Aamil Keeyan Khan, Abhishek Pathak",
+    "basedOn": "",
+    "boxOffice": "TBD",
+    "budget": "TBD",
+    "poster": "pics/Films/DrishyamTheConclusion/1.jpg",
+    "banner": "pics/Films/DrishyamTheConclusion/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/DrishyamTheConclusion/1.jpg",
+        "alt": "Poster 1"
+      },
+      {
+        "src": "pics/Films/DrishyamTheConclusion/2.jpg",
+        "alt": "Poster 2"
+      }
+    ],
+    "awards": [],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "8.0/10",
+        "url": "https://oakshow.in/DrishyamTheConclusion.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "8.0/10",
+        "url": "https://www.imdb.com/title/tt27050858/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Times Now",
+        "score": "4.0/5",
+        "url": "https://www.timesnownews.com/entertainment-news/reviews/drishyam-3-the-conclusion-review-rating-ajay-devgn-jaideep-ahlawat-prakash-raj-crime-thriller-movie-cast-release-date-runtime-review-156261006",
+        "icon": "pics/RatingSiteLogos/times-now.png"
+      },
+      {
+        "source": "Pinkvilla",
+        "score": "4.0/5",
+        "url": "https://www.pinkvilla.com/entertainment/reviews/drishyam-the-conclusion-review-ajay-devgn-as-vijay-salgaonkar-owns-the-screen-in-a-gripping-finale-last-30-mins-deliver-mindblowing-climax-1405711",
+        "icon": "pics/RatingSiteLogos/pinkvilla.png"
+      },
+      {
+        "source": "Times of India",
+        "score": "3.5/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/hindi/movie-reviews/drishyam-the-conclusion/amp_movie_review/134629821.cms",
+        "icon": "pics/RatingSiteLogos/times-of-india.png"
+      },
+      {
+        "source": "Hindustan Times",
+        "score": "3.0/5",
+        "url": "https://www.hindustantimes.com/entertainment/bollywood/drishyam-the-conclusion-review-vijay-salgaonkar-last-trick-is-as-dramatic-as-ever-but-hardly-spellbinding-ajay-devgn-tabu-prakash-raj-jaideep-ahlawat-101790873247715.html",
+        "icon": "pics/RatingSiteLogos/hindustan-times.png"
+      },
+      {
+        "source": "The Indian Express",
+        "score": "3.0/5",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/drishyam-3-movie-review-terrific-ajay-devgn-tabu-give-drishyam-the-conclusion-it-deserved-10903384/",
+        "icon": "pics/RatingSiteLogos/indian-express.png"
+      },
+      {
+        "source": "India Today",
+        "score": "3.0/5",
+        "url": "https://www.indiatoday.in/movies/reviews/story/drishyam-the-conclusion-review-ajay-devgn-starrer-good-thriller-but-not-the-grand-farewell-it-deserved-3007677-2026-10-02",
+        "icon": "pics/RatingSiteLogos/india-today.ico"
+      },
+      {
+        "source": "NDTV",
+        "score": "3.0/5",
+        "url": "https://www.ndtv.com/entertainment/drishyam-3-review-come-for-ajay-devgn-stay-for-jaideep-ahlawat-3-stars-12129369",
+        "icon": "pics/RatingSiteLogos/ndtv.png"
+      },
+      {
+        "source": "Rediff",
+        "score": "2.5/5",
+        "url": "https://www.rediff.com/movies/review/review-drishyam-the-conclusion-goes-all-guns-blazing/20261002.htm",
+        "icon": "pics/RatingSiteLogos/rediff.png"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Ajay Devgn",
+        "role": "Vijay Salgaonkar"
+      },
+      {
+        "actor": "Tabu",
+        "role": "Meera Deshmukh"
+      },
+      {
+        "actor": "Jaideep Ahlawat",
+        "role": "Unknown"
+      },
+      {
+        "actor": "Prakash Raj",
+        "role": "Unknown"
+      }
+    ],
+    "trailer": "BSZZwBaNQAA",
+    "videos": [
+      {
+        "title": "Main Trailer",
+        "ytId": "BSZZwBaNQAA"
+      },
+      {
+        "title": "Teaser",
+        "ytId": "fneuVQ7uO_w"
+      }
+    ],
+    "musicLinks": {
+      "spotify": "https://open.spotify.com/album/4OWLuM8E8AhOxPLuXUq8oe",
+      "appleMusic": "https://music.apple.com/ci/album/drishyam-the-conclusion-original-motion-picture/6816946795",
+      "jiosaavn": "https://www.jiosaavn.com/album/drishyam-the-conclusion/BVOUUsu5MS0_",
+      "youtubeMusic": ""
+    },
+    "songs": [],
+    "streaming": {
+      "netflix": "",
+      "prime": "",
+      "hotstar": "",
+      "zee5": "",
+      "sonyliv": "",
+      "aha": "",
+      "youtube": ""
+    },
+    "watchOnline": [],
+    "bookings": [
+      {
+        "platform": "BookMyShow",
+        "url": "https://in.bookmyshow.com/movies/delhi/drishyam-the-conclusion/ET00520056",
+        "icon": "pics/BookingSiteLogos/bookmyshow.png"
+      },
+      {
+        "platform": "District",
+        "url": "https://www.district.in/movies/drishyam-the-conclusion-movie-tickets-MV207254?srsltid=AU7gw4XA2-SX64QdN86-3XFB-I6sEMyNljpnCVWgE3pJF3knXs5Ls5n4",
+        "icon": "pics/BookingSiteLogos/district.png"
+      },
+      {
+        "platform": "Fandango",
+        "url": "https://www.fandango.com/drishyam-the-conclusion-2026-247556/movie-overview",
+        "icon": "pics/BookingSiteLogos/fandango.png"
+      },
+      {
+        "platform": "TicketNew",
+        "url": "https://ticketnew.com/movies/drishyam-3-2026-movie-detail-200342",
+        "icon": "pics/BookingSiteLogos/ticketnew.png"
+      },
+      {
+        "platform": "Odeon",
+        "url": "https://www.odeon.co.uk/films/drishyam-the-conclusion/HO00009561/",
+        "icon": "pics/BookingSiteLogos/odeon.png"
+      },
+      {
+        "platform": "Cineworld",
+        "url": "https://www.cineworld.co.uk/films/1000037732-drishyam-the-conclusion/",
+        "icon": "pics/BookingSiteLogos/cineworld.png"
+      }
+    ]
+  },
+  {
+    "id": "Drishyam2HindiMovie",
+    "slug": "drishyam-2-hindi-movie",
+    "type": "movie",
+    "category": "Indian",
+    "score": 8,
+    "filename": "Drishyam2HindiMovie.html",
+    "title": "Drishyam 2 HindiMovie",
+    "metaTitle": "Drishyam 2 HindiMovie All Ratings, Reviews, Songs, Videos, Bookings and News — OakShow",
+    "description": "A gripping tale of an investigation and a family which is threatened by it. Will Vijay Salgaonkar be able to protect his family this time?",
+    "plot": "A gripping tale of an investigation and a family which is threatened by it. Will Vijay Salgaonkar be able to protect his family this time?",
+    "language": "Hindi",
+    "releaseDate": "November 18, 2022",
+    "year": "2022",
+    "genre": "Crime, Drama, Thriller",
+    "duration": "140 min",
+    "director": "Abhishek Pathak",
+    "writer": "Aamil Keeyan Khan, Abhishek Pathak",
+    "basedOn": "",
+    "boxOffice": "₹345 Crores",
+    "budget": "₹50 Crores",
+    "poster": "pics/Films/Drishyam2HindiMovie/1.jpg",
+    "banner": "pics/Films/Drishyam2HindiMovie/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/Drishyam2HindiMovie/1.jpg",
+        "alt": "Poster 1"
+      },
+      {
+        "src": "pics/Films/Drishyam2HindiMovie/2.jpg",
+        "alt": "Poster 2"
+      }
+    ],
+    "awards": [],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "8.0/10",
+        "url": "https://oakshow.in/Drishyam2HindiMovie.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "8.2/10",
+        "url": "https://www.imdb.com/title/tt15501640/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "70%",
+        "url": "https://www.rottentomatoes.com/m/drishyam_2_2022",
+        "icon": "pics/RatingSiteLogos/rottentomatoes.png"
+      },
+      {
+        "source": "Common Sense Media",
+        "score": "4.0/5",
+        "url": "https://www.commonsensemedia.org/movie-reviews/drishyam-2",
+        "icon": "pics/RatingSiteLogos/common-sense-media.png"
+      },
+      {
+        "source": "Times of India",
+        "score": "3.5/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/hindi/movie-reviews/drishyam-2/movie-review/95588434.cms",
+        "icon": "pics/RatingSiteLogos/times-of-india.png"
+      },
+      {
+        "source": "The Indian Express",
+        "score": "3.0/5",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/drishyam-2-movie-review-ajay-devgn-tabu-8275215/",
+        "icon": "pics/RatingSiteLogos/indian-express.png"
+      },
+      {
+        "source": "Pinkvilla",
+        "score": "3.0/5",
+        "url": "https://www.pinkvilla.com/entertainment/reviews/drishyam-2-review-ajay-devgn-akshaye-khanna-tabu-starrer-is-worth-a-watch-because-of-its-gripping-climax-1199436",
+        "icon": "pics/RatingSiteLogos/pinkvilla.png"
+      },
+      {
+        "source": "India Today",
+        "score": "2.5/5",
+        "url": "https://www.indiatoday.in/movies/bollywood/story/drishyam-2-movie-review-ajay-devgns-film-is-high-on-thrills-but-its-still-not-drishyam-2298618-2022-11-18",
+        "icon": "pics/RatingSiteLogos/india-today.ico"
+      },
+      {
+        "source": "Rediff",
+        "score": "2.5/5",
+        "url": "https://www.rediff.com/movies/review/drishyam-2-review/20221118.htm",
+        "icon": "pics/RatingSiteLogos/rediff.png"
+      },
+      {
+        "source": "NDTV",
+        "score": "2.0/5",
+        "url": "https://www.ndtv.com/entertainment/drishyam-2-review-ajay-devgns-sequel-is-a-dreary-if-steady-carbon-copy-2-stars-3531702",
+        "icon": "pics/RatingSiteLogos/ndtv.png"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Ajay Devgn",
+        "role": "Vijay Salgaonkar"
+      },
+      {
+        "actor": "Tabu",
+        "role": "Meera Deshmukh"
+      },
+      {
+        "actor": "Akshaye Khanna",
+        "role": "IG Tarun Ahlawat"
+      },
+      {
+        "actor": "Shriya Saran",
+        "role": "Nandini Salgaonkar"
+      },
+      {
+        "actor": "Ishita Dutta",
+        "role": "Anju Salgaonkar"
+      }
+    ],
+    "trailer": "cxA2y9Tgl7o",
+    "videos": [
+      {
+        "title": "Main Trailer",
+        "ytId": "cxA2y9Tgl7o"
+      }
+    ],
+    "musicLinks": {
+      "spotify": "https://open.spotify.com/album/5Pu23tVAZU1341344jkR0t",
+      "appleMusic": "https://music.apple.com/in/album/drishyam-2-original-motion-picture-soundtrack-single/1655127375",
+      "jiosaavn": "https://www.jiosaavn.com/album/drishyam-2/ZZ7UZbObNQw_",
+      "youtubeMusic": ""
+    },
+    "songs": [],
+    "streaming": {
+      "netflix": "",
+      "prime": "https://www.primevideo.com/detail/0HNZIYOI76383DKI61QMTROL4K?ref_=atv_dp_share_cu_r",
+      "hotstar": "",
+      "zee5": "",
+      "sonyliv": "",
+      "aha": "",
+      "youtube": ""
+    },
+    "watchOnline": [
+      {
+        "platform": "Prime Video",
+        "url": "https://www.primevideo.com/detail/0HNZIYOI76383DKI61QMTROL4K?ref_=atv_dp_share_cu_r",
+        "icon": "pics/StreamingSiteLogos/prime.png"
+      }
+    ],
+    "bookings": []
+  },
+  {
+    "id": "DrishyamHindiMovie",
+    "slug": "drishyam-hindi-movie",
+    "type": "movie",
+    "category": "Indian",
+    "score": 7,
+    "filename": "DrishyamHindiMovie.html",
+    "title": "Drishyam Hindi Movie",
+    "metaTitle": "Drishyam Hindi Movie All Ratings, Reviews, Songs, Videos, Bookings and News — OakShow",
+    "description": "Desperate measures are taken by a man who tries to save his family from the dark side of the law, after they commit an unexpected crime.",
+    "plot": "Desperate measures are taken by a man who tries to save his family from the dark side of the law, after they commit an unexpected crime.",
+    "language": "Hindi",
+    "releaseDate": "July 31, 2015",
+    "year": "2015",
+    "genre": "Crime, Drama, Mystery",
+    "duration": "163 min",
+    "director": "Nishikant Kamat",
+    "writer": "Jeethu Joseph, Upendra Sidhaye",
+    "basedOn": "",
+    "boxOffice": "₹147 Crores",
+    "budget": "₹38 Crores",
+    "poster": "pics/Films/DrishyamHindiMovie/1.jpg",
+    "banner": "pics/Films/DrishyamHindiMovie/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/DrishyamHindiMovie/1.jpg",
+        "alt": "Poster 1"
+      },
+      {
+        "src": "pics/Films/DrishyamHindiMovie/2.jpg",
+        "alt": "Poster 2"
+      }
+    ],
+    "awards": [],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "7.0/10",
+        "url": "https://oakshow.in/DrishyamHindiMovie.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "8.2/10",
+        "url": "https://www.imdb.com/title/tt4430212/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "64%",
+        "url": "https://www.rottentomatoes.com/m/drishyam_2015",
+        "icon": "pics/RatingSiteLogos/rottentomatoes.png"
+      },
+      {
+        "source": "Times of India",
+        "score": "4.0/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/hindi/movie-reviews/drishyam/movie-review/48279405.cms",
+        "icon": "pics/RatingSiteLogos/times-of-india.png"
+      },
+      {
+        "source": "Hindustan Times",
+        "score": "3.5/5",
+        "url": "https://www.hindustantimes.com/movie-reviews/drishyam-review-it-s-a-high-voltage-thriller/story-kP801lfTVElpI8i0kJ4AJK.html",
+        "icon": "pics/RatingSiteLogos/hindustan-times.png"
+      },
+      {
+        "source": "Common Sense Media",
+        "score": "3.0/5",
+        "url": "https://www.commonsensemedia.org/movie-reviews/drishyam",
+        "icon": "pics/RatingSiteLogos/common-sense-media.png"
+      },
+      {
+        "source": "The Guardian",
+        "score": "3.0/5",
+        "url": "https://www.theguardian.com/film/2015/aug/03/drishyam-review-remake-ajay-devgn-shriya-saran",
+        "icon": "pics/RatingSiteLogos/the-guardian.png"
+      },
+      {
+        "source": "The Indian Express",
+        "score": "2.5/5",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/drishyam-movie-review-ajay-devgn-tabu/",
+        "icon": "pics/RatingSiteLogos/indian-express.png"
+      },
+      {
+        "source": "Rediff",
+        "score": "2.5/5",
+        "url": "https://www.rediff.com/movies/review/review-drishyam-is-a-depressingly-ordinary-film/20150731.htm",
+        "icon": "pics/RatingSiteLogos/rediff.png"
+      },
+      {
+        "source": "India Today",
+        "score": "2.0/5",
+        "url": "https://www.indiatoday.in/movies/reviews/story/drishyam-review-you-will-be-better-off-watching-the-malayalam-original-ajay-devgn-shriya-saran-tabu-nishikant-kamat-jeethu-285670-2015-07-31",
+        "icon": "pics/RatingSiteLogos/india-today.ico"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Ajay Devgn",
+        "role": "Vijay Salgaonkar"
+      },
+      {
+        "actor": "Tabu",
+        "role": "Meera Deshmukh"
+      },
+      {
+        "actor": "Shriya Saran",
+        "role": "Nandini Salgaonkar"
+      },
+      {
+        "actor": "Ishita Dutta",
+        "role": "Anju Salgaonkar"
+      }
+    ],
+    "trailer": "64xJLmcA2K8",
+    "videos": [
+      {
+        "title": "Main Trailer",
+        "ytId": "64xJLmcA2K8"
+      }
+    ],
+    "musicLinks": {
+      "spotify": "https://open.spotify.com/album/2Wa40rTnDPxI2r5PZhwO1i",
+      "appleMusic": "https://music.apple.com/in/album/drishyam-original-motion-picture-soundtrack-ep/1529555461",
+      "jiosaavn": "https://www.jiosaavn.com/album/drishyam/Tgdgow-LzYM_",
+      "youtubeMusic": ""
+    },
+    "songs": [],
+    "streaming": {
+      "netflix": "",
+      "prime": "https://www.primevideo.com/detail/0SC4JKC5LC5G7C55J0DJK0OV7Z?ref_=atv_dp_share_cu_r",
+      "hotstar": "https://www.hotstar.com/in/movies/drishyam/1271629726?utm_source=gwa",
+      "zee5": "",
+      "sonyliv": "",
+      "aha": "",
+      "youtube": ""
+    },
+    "watchOnline": [
+      {
+        "platform": "Prime Video",
+        "url": "https://www.primevideo.com/detail/0SC4JKC5LC5G7C55J0DJK0OV7Z?ref_=atv_dp_share_cu_r",
+        "icon": "pics/StreamingSiteLogos/prime.png"
+      },
+      {
+        "platform": "JioHotstar",
+        "url": "https://www.hotstar.com/in/movies/drishyam/1271629726?utm_source=gwa",
+        "icon": "pics/StreamingSiteLogos/hotstar.png"
+      }
+    ],
+    "bookings": []
+  },
+  {
+    "id": "Drishyam3",
+    "slug": "drishyam3",
+    "type": "movie",
+    "category": "Indian",
+    "score": 7,
+    "filename": "Drishyam3.html",
+    "title": "Drishyam 3: The Past Never Stays Silent",
+    "metaTitle": "Drishyam 3: The Past Never Stays Silent All Ratings, Reviews, Songs, Videos, Bookings and News — OakShow",
+    "description": "Georgekutty faces his biggest challenge yet as the ghosts of his past return to threaten his family's peaceful existence.",
+    "plot": "Georgekutty faces his biggest challenge yet as the ghosts of his past return to threaten his family's peaceful existence.",
+    "language": "Malayalam",
+    "releaseDate": "May 2026",
+    "year": "2026",
+    "genre": "Crime, Thriller, Drama",
+    "duration": "155 min",
+    "director": "Jeethu Joseph",
+    "writer": "Jeethu Joseph",
+    "basedOn": "",
+    "boxOffice": "TBD",
+    "budget": "TBD",
+    "poster": "pics/Films/Drishyam3/1.jpg",
+    "banner": "pics/Films/Drishyam3/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/Drishyam3/1.jpg",
+        "alt": "Poster 1"
+      },
+      {
+        "src": "pics/Films/Drishyam3/2.jpg",
+        "alt": "Poster 2"
+      }
+    ],
+    "awards": [],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "7.0/10",
+        "url": "https://oakshow.in/Drishyam3.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "6.6/10",
+        "url": "https://www.imdb.com/title/tt14113634/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "NDTV",
+        "score": "4.0/5",
+        "url": "https://www.ndtv.com/entertainment/drishyam-3-x-review-fans-call-mohanlal-film-a-masterpiece-with-brilliant-twists-11527500",
+        "icon": "pics/RatingSiteLogos/ndtv.png"
+      },
+      {
+        "source": "Times of India",
+        "score": "3.0/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/malayalam/movie-reviews/drishyam-3/movie-review/131246724.cms",
+        "icon": "pics/RatingSiteLogos/times-of-india.png"
+      },
+      {
+        "source": "The Indian Express",
+        "score": "2.5/5",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/drishyam-3-movie-review-a-close-shave-for-mohanlal-jeethu-joseph-as-georgekutty-battles-himself-10700106/",
+        "icon": "pics/RatingSiteLogos/indian-express.png"
+      },
+      {
+        "source": "India Today",
+        "score": "2.5/5",
+        "url": "https://www.indiatoday.in/movies/reviews/story/drishyam-3-review-mohanlal-jeethu-josephs-sequel-is-less-clever-more-dramatic-2914929-2026-05-21",
+        "icon": "pics/RatingSiteLogos/india-today.ico"
+      },
+      {
+        "source": "Rediff",
+        "score": "2.5/5",
+        "url": "https://www.rediff.com/movies/review/drishyam-3-review-georgekutty-finally-runs-out-of-tricks/20260521.htm",
+        "icon": "pics/RatingSiteLogos/rediff.png"
+      },
+      {
+        "source": "Hindustan Times",
+        "score": "2.0/5",
+        "url": "https://www.hindustantimes.com/entertainment/others/drishyam-3-movie-review-how-long-can-georgekutty-and-mohanlal-keep-this-up-101779350101685.html",
+        "icon": "pics/RatingSiteLogos/hindustan-times.png"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Mohanlal",
+        "role": "Georgekutty"
+      },
+      {
+        "actor": "Meena",
+        "role": "Rani George"
+      },
+      {
+        "actor": "Ansiba Hassan",
+        "role": "Anju George"
+      },
+      {
+        "actor": "Esther Anil",
+        "role": "Anu George"
+      }
+    ],
+    "trailer": "07h9Y1XKBWI",
+    "videos": [
+      {
+        "title": "Main Trailer",
+        "ytId": "07h9Y1XKBWI"
+      },
+      {
+        "title": "Teaser",
+        "ytId": "IVH0umuNU-k"
+      }
+    ],
+    "musicLinks": {
+      "spotify": "https://open.spotify.com/playlist/7hzTDaVfCTlz2ed3aEQMm3",
+      "appleMusic": "https://music.apple.com/iq/album/drishyam-3-original-background-score/6775843884",
+      "jiosaavn": "https://www.jiosaavn.com/album/drishyam-3-original-background-score/FKe52UmMFn4_",
+      "youtubeMusic": ""
+    },
+    "songs": [],
+    "streaming": {
+      "netflix": "",
+      "prime": "https://www.primevideo.com/detail/0R9LD1VHGWBGMWFEQ9TQAO1ESE?ref_=atv_dp_share_cu_r",
+      "hotstar": "",
+      "zee5": "",
+      "sonyliv": "",
+      "aha": "",
+      "youtube": ""
+    },
+    "watchOnline": [
+      {
+        "platform": "Prime Video",
+        "url": "https://www.primevideo.com/detail/0R9LD1VHGWBGMWFEQ9TQAO1ESE?ref_=atv_dp_share_cu_r",
+        "icon": "pics/StreamingSiteLogos/prime.png"
+      }
+    ],
+    "bookings": [
+      {
+        "platform": "BookMyShow",
+        "url": "https://in.bookmyshow.com/movies/drishyam-3-malayalam/ET00487295",
+        "icon": "pics/BookingSiteLogos/bookmyshow.png"
+      },
+      {
+        "platform": "District",
+        "url": "https://www.district.in/movies/drishyam-3-malayalam-movie-tickets-MV200342?srsltid=AU7gw4Xx_XyFu-XJHldekiO1cE9TIXvBK8MgqLF0CUjBBiKsMJIvcZPC",
+        "icon": "pics/BookingSiteLogos/district.png"
+      },
+      {
+        "platform": "Fandango",
+        "url": "https://www.fandango.com/drishyam-3-2026-244690/movie-overview",
+        "icon": "pics/BookingSiteLogos/fandango.png"
+      }
+    ]
+  },
+  {
+    "id": "Drishyam",
+    "slug": "drishyam",
+    "type": "movie",
+    "category": "Indian",
+    "score": 9,
+    "filename": "Drishyam.html",
+    "title": "Drishyam",
+    "metaTitle": "Drishyam All Ratings, Reviews, Songs, Videos, Bookings and News — OakShow",
+    "description": "Georgekutty lives a happy life with his wife and daughters. However, things take a dark turn when his family commits an accidental crime, leaving him to protect them from the law.",
+    "plot": "Georgekutty lives a happy life with his wife and daughters. However, things take a dark turn when his family commits an accidental crime, leaving him to protect them from the law.",
+    "language": "Malayalam",
+    "releaseDate": "December 19, 2013",
+    "year": "2013",
+    "genre": "Crime, Thriller, Drama",
+    "duration": "160 min",
+    "director": "Jeethu Joseph",
+    "writer": "Jeethu Joseph",
+    "basedOn": "",
+    "boxOffice": "₹75 Crores",
+    "budget": "₹4.5 Crores",
+    "poster": "pics/Films/Drishyam/1.jpg",
+    "banner": "pics/Films/Drishyam/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/Drishyam/1.jpg",
+        "alt": "Poster 1"
+      },
+      {
+        "src": "pics/Films/Drishyam/2.jpg",
+        "alt": "Poster 2"
+      }
+    ],
+    "awards": [],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "9.0/10",
+        "url": "https://oakshow.in/Drishyam.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "8.4/10",
+        "url": "https://www.imdb.com/title/tt3417422/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Times of India",
+        "score": "4.5/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/malayalam/movie-reviews/drishyam/movie-review/27751094.cms",
+        "icon": "pics/RatingSiteLogos/times-of-india.png"
+      },
+      {
+        "source": "Rediff",
+        "score": "3.5/5",
+        "url": "https://www.rediff.com/movies/review/review-drishyam-is-mohanlals-film/20131220.htm",
+        "icon": "pics/RatingSiteLogos/rediff.png"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Mohanlal",
+        "role": "Georgekutty"
+      },
+      {
+        "actor": "Meena",
+        "role": "Rani George"
+      },
+      {
+        "actor": "Ansiba Hassan",
+        "role": "Anju George"
+      },
+      {
+        "actor": "Esther Anil",
+        "role": "Anu George"
+      }
+    ],
+    "trailer": "eMASubc1y_k",
+    "videos": [
+      {
+        "title": "Main Trailer",
+        "ytId": "eMASubc1y_k"
+      }
+    ],
+    "musicLinks": {
+      "spotify": "https://open.spotify.com/album/0Xnj3BmKrS9CSJm4ENLXGq",
+      "appleMusic": "https://music.apple.com/in/album/drishyam-original-motion-picture-soundtrack-single/892928355",
+      "jiosaavn": "",
+      "youtubeMusic": ""
+    },
+    "songs": [],
+    "streaming": {
+      "netflix": "",
+      "prime": "",
+      "hotstar": "https://www.hotstar.com/in/movies/drishyam/1000051783",
+      "zee5": "",
+      "sonyliv": "",
+      "aha": "",
+      "youtube": ""
+    },
+    "watchOnline": [
+      {
+        "platform": "JioHotstar",
+        "url": "https://www.hotstar.com/in/movies/drishyam/1000051783",
+        "icon": "pics/StreamingSiteLogos/hotstar.png"
+      }
+    ],
+    "bookings": []
+  },
+  {
     "id": "YezhuKadalYezhuMalai",
     "slug": "yezhu-kadal-yezhu-malai",
     "type": "movie",
@@ -1208,11 +2213,11 @@
     "score": 9.5,
     "filename": "Avatar.html",
     "title": "Avatar",
-    "tag": "Highest Grossing Movie in History",
+    "tag": "All Time 2nd Highest grossing Movie in History",
     "tags": [
-      "Highest Grossing Movie in History",
+      "All Time 2nd Highest grossing Movie in History",
       "3x Oscar Winner",
-      "All-Time Box Office #1"
+      "All-Time #2 Box Office"
     ],
     "description": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home. Directed by James Cameron, Avatar is the highest-grossing film in cinema history.",
     "plot": "In 2154, humans have depleted Earth's natural resources, leading to a severe energy crisis. The Resources Development Administration (RDA) mines the valuable mineral unobtanium on Pandora, a densely forested habitable moon orbiting the gas giant Polyphemus in the Alpha Centauri star system. Pandora is inhabited by the Na'vi, 10-foot-tall, blue-skinned, sapient humanoids. Jake Sully, a paraplegic former Marine, replaces his deceased twin brother as an operator of an avatar—a genetically engineered Na'vi-human hybrid body operated via mental link. As Jake integrates with the Omatikaya clan and falls in love with Neytiri, he faces a fateful conflict between the RDA's destructive military campaign and the indigenous Na'vi fighting for their survival.",
@@ -1225,14 +2230,14 @@
     "director": "James Cameron",
     "basedOn": "Written & Created by James Cameron",
     "boxOffice": {
-      "worldwideGross": "$2.923 Billion ($2,923,706,026) — #1 All-Time Highest Grossing Film in History",
+      "worldwideGross": ".924 Billion",
       "indiaGross": "$23.7 Million (₹145+ Crore All-Time Indian Gross)",
       "overseasGross": "$2.138 Billion",
       "openingDay": "$26.7 Million Domestic (USA)",
       "openingWeekend": "$77.0 Million Domestic / $241.6 Million Worldwide",
       "budget": "$237 Million",
-      "verdict": "All-Time #1 Highest-Grossing Film in World Cinema History",
-      "lastUpdated": "September 2026",
+      "verdict": "All-Time Historic Blockbuster (#2 Highest-Grossing Film in World Cinema History)",
+      "lastUpdated": "October 2026",
       "source": "Box Office Mojo, The Numbers & Guinness World Records"
     },
     "poster": "pics/Films/Avatar/1.jpg",
@@ -60223,14 +61228,14 @@
     "director": "Anthony Russo,Joe Russo",
     "basedOn": "The Avengers by Stan Lee & Jack Kirby",
     "boxOffice": {
-      "worldwideGross": "$2.799 Billion ($2,799,439,100) — #2 All-Time Highest Grossing Film in History",
+      "worldwideGross": ".925 Billion",
       "indiaGross": "₹446 Crore ($53.4M / ₹373.2 Crore Nett)",
       "overseasGross": "$1.941 Billion",
       "openingDay": "$156.7 Million Domestic / ₹53.6 Crore in India",
       "openingWeekend": "$1.223 Billion Worldwide ($357.1 Million Domestic / ₹187 Crore in India)",
       "budget": "Estimated $356–400 Million",
-      "verdict": "All-Time Historic Blockbuster (#2 Highest-Grossing Film in Cinema History)",
-      "lastUpdated": "September 2026",
+      "verdict": "All-Time Historic Blockbuster (#1 Highest-Grossing Film in Cinema History)",
+      "lastUpdated": "October 2026",
       "source": "Box Office Mojo, The Numbers & Sacnilk"
     },
     "poster": "pics/Films/AvengersEndgame/2.jpg",
@@ -60757,11 +61762,11 @@
       }
     ],
     "filePath": "E:/OakShow/AvengersEndgame.html",
-    "tag": "All Time 2nd Highest grossing Movie in History",
+    "tag": "Highest Grossing Movie in History",
     "tags": [
-      "All Time 2nd Highest grossing Movie in History",
+      "Highest Grossing Movie in History",
       "Marvel Cinematic Universe",
-      "All-Time #2 Box Office"
+      "All-Time Box Office #1"
     ]
   },
   {

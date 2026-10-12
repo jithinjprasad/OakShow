@@ -382,7 +382,9 @@ async function run() {
     { filename: 'HollywoodReleases2026March.html', title: 'Hollywood Movies Released On March 2026 — OakShow', desc: 'Browse verified ratings, reviews, streaming providers and bookings for Hollywood movies released in March 2026 including Project Hail Mary.' },
     { filename: 'Releases2026March.html', title: 'Movies Released On March 2026 — OakShow', desc: 'Browse verified ratings, reviews, streaming providers and bookings for all movies released in March 2026 including Project Hail Mary.' },
     { filename: 'HollywoodReleases2026April.html', title: 'Hollywood Movies Released On April 2026 — OakShow', desc: 'Browse verified ratings, reviews, streaming providers and bookings for Hollywood movies released in April 2026 including Michael.' },
-    { filename: 'Releases2026April.html', title: 'Movies Released On April 2026 — OakShow', desc: 'Browse verified ratings, reviews, streaming providers and bookings for all movies released in April 2026 including Michael.' }
+    { filename: 'Releases2026April.html', title: 'Movies Released On April 2026 — OakShow', desc: 'Browse verified ratings, reviews, streaming providers and bookings for all movies released in April 2026 including Michael.' },
+    { filename: 'HollywoodReleases2026October.html', title: 'Hollywood Movies Released On October 2026 — OakShow', desc: 'Browse verified ratings, reviews, streaming providers and bookings for Hollywood movies released in October 2026 including Matchbox: The Movie and Verity.' },
+    { filename: 'Releases2026October.html', title: 'Movies Released On October 2026 — OakShow', desc: 'Browse verified ratings, reviews, streaming providers and bookings for all movies released in October 2026 including Matchbox: The Movie and Verity.' }
   ];
 
   const hubs = target

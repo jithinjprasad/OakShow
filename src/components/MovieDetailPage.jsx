@@ -833,7 +833,7 @@ export default function MovieDetailPage({
                   <span>News</span>
                 </button>
 
-                {movie.awards && movie.awards.length > 0 && (
+                {Array.isArray(movie.awards) && movie.awards.length > 0 && (
                   <button 
                     type="button"
                     className="mh-nav-pill mh-nav-pill-gold"
@@ -1028,7 +1028,7 @@ export default function MovieDetailPage({
             <span>All Ratings & Overview ({allRatings.length})</span>
           </button>
 
-          {movie.awards && movie.awards.length > 0 && (
+          {Array.isArray(movie.awards) && movie.awards.length > 0 && (
             <button 
               className="movie-tab-btn"
               onClick={() => {
@@ -1288,7 +1288,7 @@ export default function MovieDetailPage({
             })()}
 
             {/* Awards & Prestigious Honors Showcase */}
-            {movie.awards && movie.awards.length > 0 && (() => {
+            {Array.isArray(movie.awards) && movie.awards.length > 0 && (() => {
               const filteredAwards = selectedAwardFilter === 'ALL'
                 ? movie.awards
                 : movie.awards.filter(a => (a.organization || a.name) === selectedAwardFilter);

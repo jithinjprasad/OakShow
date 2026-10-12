@@ -1,0 +1,107 @@
+{{Use American English|date=November 2024}}
+{{no plot|date=October 2026}}
+{{Use mdy dates|date=November 2024}}
+{{Infobox film
+| image          = Matchbox- The Movie poster.jpg
+| caption        = Release poster
+| director       = [[Sam Hargrave]]
+| writer         = David Coggeshall
+| based_on       = {{Based on|[[Matchbox (brand)|Matchbox]]|[[Mattel]]}}
+| producer       = {{Plainlist|
+* [[David Ellison]]
+* [[Dana Goldberg (producer)|Dana Goldberg]]
+* [[Don Granger]]
+* [[Robbie Brenner]]
+}}
+| starring       = {{Plainlist|
+* [[John Cena]]
+* [[Jessica Biel]]
+* [[Sam Richardson (actor)|Sam Richardson]]
+* [[Arturo Castro (Guatemalan actor)|Arturo Castro]]
+* [[Teyonah Parris]]
+}}
+| cinematography = Pedro Luque
+| editing        = Dirk Westervelt<ref>{{Cite web|url=https://www.soapcentral.com/entertainment/apple-tv-locks-october-release-mattel-s-matchbox-the-movie-starring-john-cena-everything-know|title=Apple TV locks October release for Mattel's Matchbox The Movie starring John Cena, here's everything to know|first=Yash|last=Singh|date=February 4, 2026|website=[[Soap Central]]}}</ref>
+| music          = Alex Belcher
+| production_companies = {{Plainlist|
+* [[Apple Studios]]
+* [[Skydance Media]]
+* [[Mattel Films|Mattel Studios]]
+}}
+| distributor    = [[Apple TV (streaming service)|Apple TV]]
+| released       = {{film date|2026|10|5|[[AMC Lincoln Square]]|2026|10|9|Apple TV}}
+| runtime        = 126 minutes<ref>{{Cite AV media |url=https://tv.apple.com/us/movie/matchbox-the-movie/umc.cmc.31qa8j1tn2cnpyk3fx43w928d |title=Watch Matchbox The Movie - Apple TV |language=en-US |access-date=February 15, 2026 |via=[[Apple TV (streaming service)|Apple TV]]}}</ref>
+| country        = United States
+| language       = English
+| budget         = 
+| gross          = 
+}}
+'''''Matchbox: The Movie''''' is a 2026 American [[action comedy film]] directed by [[Sam Hargrave]] and written by David Coggeshall, based on the toy brand [[Matchbox (brand)|Matchbox]] by [[Mattel]]. It stars [[John Cena]], [[Jessica Biel]], [[Sam Richardson (actor)|Sam Richardson]], [[Arturo Castro (Guatemalan actor)|Arturo Castro]], and [[Teyonah Parris]].
+
+''Matchbox: The Movie'' was released in the United States on [[Apple TV (streaming service)|Apple TV]] on October 9, 2026. It received mixed-to-negative reviews from critics.
+
+==Plot==
+Spy and former soldier Sean Walker reunites with childhood friends only to be drugged and kidnapped by a group looking for a [[Nuclear weapon|nuclear warhead]]. The [[CIA]] believes Walker and his friends stole the nuclear weapon, so the group decides to re-steal the bomb and clear their names.<ref name=":0">{{Cite web |last=Ouellette |first=Jennifer |date=2026-07-26 |title=First teaser for Apple TV's Neuromancer debuts at SDCC |url=https://arstechnica.com/culture/2026/07/first-teaser-for-apple-tvs-neuromancer-debuts-at-sdcc/ |access-date=2026-07-29 |website=Ars Technica |language=en}}</ref>
+
+==Cast==
+* [[John Cena]] as Sean Walker<ref name=":0" />
+**Graham Harvey as young Sean Walker
+* [[Jessica Biel]]<ref name=":0" /> as Aimee
+**Reagan Marum as young Aimee
+* [[Sam Richardson (actor)|Sam Richardson]]<ref name=":0" /> as Crosby
+**Aiden Stoxx as young Crosby
+* [[Arturo Castro (Guatemalan actor)|Arturo Castro]]<ref name=":0" /> as Ted
+**Max Fox as young Ted
+* [[Teyonah Parris]]<ref name=":0" /> as Charmaine
+**Braxton Paul as young Charmaine
+* [[Randeep Hooda]]<ref name="Hooda" />  as Mustafa
+* [[Danai Gurira]]<ref name="Gurira" /> as Helen
+* [[Kristofer Hivju|Kristoffer Hivju]] as Grigor
+* [[Corey Stoll]]<ref name="Stoll" /> as Mosier
+* [[Bill Camp]]<ref name="Release" /> as Smalley
+* [[Golshifteh Farahani]]<ref name="Release" /> as Robbie
+* Tornike Gogrichiani as Eastbrook
+* [[Daniel Bernhardt]] as Falko
+
+==Production==
+In May 2024, [[Skydance Media]] and [[Mattel Films]] were developing a live-action film based on the toy brand [[Matchbox (brand)|Matchbox]]. [[Sam Hargrave]] had been hired to direct the film, and David Coggeshall and [[Jonathan Tropper]] were writing the screenplay.<ref>{{cite web |last=Kroll |first=Justin |title='Matchbox' Movie From Mattel Films And Skydance Lands 'Extraction's Sam Hargrave As Director |url=https://deadline.com/2024/05/matchbox-movie-mattel-films-skydance-extraction-sam-hargrave-director-1235906150/ |website=[[Deadline Hollywood]] |access-date=November 21, 2024 |date=May 7, 2024}}</ref> In September, [[John Cena]] joined the cast in the lead role.<ref>{{cite web |last=Kroll |first=Justin |title=John Cena To Star In 'Matchbox' Movie From Sam Hargrave, Skydance, Mattel Films And Apple |url=https://deadline.com/2024/09/john-cena-matchbox-movie-sam-hargrave-apple-original-films-1236091721/ |website=[[Deadline Hollywood]] |access-date=November 21, 2024 |date=September 17, 2024}}</ref> In November, [[Jessica Biel]] joined the cast in an undisclosed role.<ref>{{cite web |last=Kroll |first=Justin |title=Jessica Biel In Talks To Co-Star Opposite John Cena In 'Matchbox' Movie From Apple, Skydance And Mattel |url=https://deadline.com/2024/11/jessica-biel-john-cena-matchbox-movie-1236184490/ |website=[[Deadline Hollywood]] |access-date=November 21, 2024 |date=November 21, 2024}}</ref> In December, [[Sam Richardson (actor)|Sam Richardson]], [[Arturo Castro (Guatemalan actor)|Arturo Castro]], and [[Teyonah Parris]] joined the cast in undisclosed roles.<ref name="Richardson">{{cite web |last=Grobar |first=Matt |title=Sam Richardson Latest To Join Apple's Live-Action 'Matchbox' Movie |url=https://deadline.com/2024/12/matchbox-sam-richardson-latest-join-apple-movie-1236194344/ |website=[[Deadline Hollywood]] |date=December 4, 2024}}</ref><ref name="Castro">{{cite web |last=Grobar |first=Matt |date=December 5, 2024 |title=Arturo Castro Joins Apple's Live-Action 'Matchbox' |url=https://deadline.com/2024/12/matchbox-arturo-castro-joins-apple-movie-starring-john-cena-1236195375/ |website=[[Deadline Hollywood]]}}</ref><ref name="Parris">{{cite web |last=Kit |first=Borys |date=December 6, 2024 |title=Teyonah Parris Joins John Cena's 'Matchbox' Movie (Exclusive) |url=https://www.hollywoodreporter.com/movies/movie-news/teyonah-parris-joins-john-cena-matchbox-movie-1236079824/ |website=[[The Hollywood Reporter]]}}</ref> [[Randeep Hooda]], [[Danai Gurira]], [[Corey Stoll]], [[Bill Camp]], and [[Golshifteh Farahani]] would later be added to the cast.<ref name="Hooda">{{cite web |last1=Ramachandran |first1=Naman |title=Bollywood Star Randeep Hooda Joins John Cena in ''Matchbox'' (EXCLUSIVE) |url=https://variety.com/2025/film/news/randeep-hooda-matchbox-john-cena-1236282925/ |website=[[Variety (magazine)|Variety]] |access-date=24 January 2025 |date=January 23, 2025}}</ref><ref name="Gurira">{{Cite web |last=Kit |first=Borys |date=2025-01-31 |title=Danai Gurira Joins John Cena in 'Matchbox' Movie (Exclusive) |url=https://www.hollywoodreporter.com/movies/movie-news/danai-gurira-joins-john-cena-in-matchbox-movie-1236123234/ |access-date=2025-01-31 |website=The Hollywood Reporter |language=en-US}}</ref><ref name="Stoll">{{cite web |last=Grobar |first=Matt |date=February 3, 2025 |title=Corey Stoll Latest To Join Apple's 'Matchbox' |url=https://deadline.com/2025/02/matchbox-movie-adds-corey-stoll-apple-1236277044/ |website=Deadline Hollywood |access-date=February 3, 2025}}</ref><ref name="Release"/>
+
+Filming began in [[Budapest]] in January 2025, with additional filming taking place in [[Casablanca]] in March, as evidenced by social media posts showing lead actor John Cena filming action car scenes on location.<ref>{{Cite Instagram |title=John Cena, star du catch et du cinéma américain, est actuellement au Maroc pour le tournage du film d'action « Matchbox ». |postid=DHLg4BpMLI3 |access-date=2025-03-15 |language=fr |trans-title=American wrestling and film star John Cena is currently in Morocco filming the action movie "Matchbox." |date=14 March 2025 |user=le360fr}}</ref> Scenes were also filmed in [[Erfoud]] and [[Merzouga]].<ref>{{Cite web |first=Labchir |last=Youssef |date=March 13, 2025 |title=John Cena and Jessica Biel Shoot Action Film Inspired by Matchbox Cars in Morocco |url=https://2m.ma/fr/news/John-Cena-and-Jessica-Biel-Shoot-Action-Film-Inspired-by-Matchbox-Cars-in-Morocco-20250313 |access-date=2025-03-15 |website=2M.ma |language=fr}}</ref> Production occurred in [[Slovakia]] (Filming wrapped on April 7, 2025<ref>{{Cite web |last=o |first=mediak, s r |date=2025-04-06 |title=VIDEO: Z diaľnice pri Žiline odišli filmári, opäť je prejazdná. Unikli blízke zábery z natáčania |url=https://www.zilinak.sk/clanky/33777/video-z-dialnice-pri-ziline-odisli-filmari-opat-je-prejazdna-unikli-blizke-zabery-z-natacania?fbclid=PAY2xjawJgMftleHRuA2FlbQIxMAABp5CMWcTlEuCVbUFmwLxmuOexEqnxSUHgEnm1YBCTGQabGcmPM_kqKpYcuq8o_aem_LAN9YhLpjfMcqeEefNlHmQ |access-date=2025-04-07 |website=Žilinak.sk |language=sk}}</ref>) and [[Los Angeles]].<ref>{{cite web |title=Matchbox Feature Film to Shoot in Budapest, Slovakia, Morocco and Los Angeles |url=https://www.budapestreporter.com/matchbox-feature-film-to-shoot-in-budapest-slovakia-and-los-angeles/ |website=Budapest Reporter |access-date=24 January 2025 |date=December 6, 2024}}</ref>
+
+==Release==
+''Matchbox: The Movie'' had its world premiere at the AMC Lincoln Square Theater in New York on October 5, 2026, and was released to [[Apple TV (streaming service)|Apple TV]] on October 9.<ref>{{Cite web |last=Tinoco |first=Armando |date=October 5, 2026 |title='Matchbox: The Movie' Red Carpet Premiere Photos: John Cena, Jessica Biel, Teyonah Parris & More |url=https://deadline.com/gallery/matchbox-the-movie-red-carpet-premiere-photos-apple-tv/ |access-date=October 6, 2026 |website=[[Deadline Hollywood]] |language=en-US}}</ref><ref name="Release">{{Cite web |last=D'Alessandro |first=Anthony |date=February 3, 2026 |title=Mattel’s ‘Matchbox The Movie’ To Vroom On Apple TV This October |url=https://deadline.com/2026/02/matchbox-movie-premiere-date-apple-1236707240/ |access-date=February 3, 2026 |website=[[Deadline Hollywood]]}}</ref><ref>{{cite web |last1=Stephan |first1=Katcy |title=Whac-A-Mole Film in Development From Mattel and TriStar Pictures |url=https://variety.com/2025/film/news/whac-a-mole-movie-mattel-tristar-1236404020/ |website=[[Variety (magazine)|Variety]] |date=May 20, 2025 |access-date=July 12, 2025}}</ref>
+
+==Reception==
+On the [[review aggregator]] website [[Rotten Tomatoes]], 22% of 27 critics' reviews are positive, with an average rating of 3.8/10.<ref name="Rotten Tomatoes">{{cite web |title=''Matchbox'' |url=https://www.rottentomatoes.com/m/matchbox_the_movie |website=[[Rotten Tomatoes]] |publisher=[[Fandango Media]] |access-date=2026-10-09 |archive-url= |archive-date= |url-status=}} {{#if:{{wikidata|property|P444}}|{{Edit at Wikidata|qid={{wikidata|label|raw}}|pid=P444}}}}{{cbignore}}</ref> [[Metacritic]], which uses a [[Weighted arithmetic mean|weighted average]], assigned the film a score of 46 out of 100, based on 12 critics, indicating "mixed or average" reviews.<ref name="Metacritic">{{cite web |title=''Matchbox'' |url=https://www.metacritic.com/movie/matchbox-the-movie |website=[[Metacritic]] |publisher=[[Fandom (website)#Fandom, Inc.|Fandom, Inc.]] |access-date=October 9, 2026 |archive-url= |archive-date= |url-status=}}</ref>
+
+Matchbox the movie is ranked number 1 in the U.S within the first 24 hours on the platform surpassing Mayday and F1 and is currently in the top 10 in 23 countries.<ref>{{Cite web |last=Rangel |first=Felipe |date=2026-10-09 |title=Apple TV’s New Fast & Furious Replacement Is Officially The Biggest Movie On Streaming |url=https://screenrant.com/matchbox-movie-fast-furious-replacement-apple-tv-streaming-success-october-2026/ |access-date=2026-10-12 |website=ScreenRant |language=en}}</ref>
+
+== References ==
+{{reflist}}
+
+==External links==
+* {{IMDb title|tt28498219}}
+
+{{Sam Hargrave}}
+{{Apple TV+}}
+{{Skydance Media}}
+
+{{Subject bar|Film|Toys}}
+
+[[Category:2026 American films]]
+[[Category:2026 English-language films]]
+[[Category:2026 action comedy films]]
+[[Category:American action comedy films]]
+[[Category:Apple TV (streaming service) original films]]
+[[Category:English-language action comedy films]]
+[[Category:Films about nuclear war and weapons]]
+[[Category:Films based on Mattel toys]]
+[[Category:Films directed by Sam Hargrave]]
+[[Category:Films produced by Dana Goldberg (producer)]]
+[[Category:Films produced by David Ellison]]
+[[Category:Films produced by Don Granger]]
+[[Category:Films shot in Budapest]]
+[[Category:Films shot in Los Angeles]]
+[[Category:Films shot in Morocco]]
+[[Category:Films shot in Slovakia]]
+[[Category:Skydance Media films]]
