@@ -35,7 +35,8 @@ const MIME_TYPES = {
   '.otf': 'font/otf',
 };
 
-const CDN_MEDIA_BASE = 'https://cdn.jsdelivr.net/gh/jithinjprasad/OakShow@main/public';
+const CDN_MEDIA_BASE = 'https://cdn.jsdelivr.net/gh/jithinjprasad/OakShow@main';
+const GITHUB_RAW_BASE = 'https://raw.githubusercontent.com/jithinjprasad/OakShow/main';
 
 function resolveFilePath(pathname) {
   let cleanPath = pathname;
@@ -120,15 +121,70 @@ async function handler(req) {
 
     if (pathname.startsWith('/pics/')) {
       const localFile = resolveFilePath(pathname);
-      if (!localFile) {
-        return new Response(null, {
-          status: 302,
-          headers: {
-            'Location': CDN_MEDIA_BASE + pathname,
-            'Cache-Control': 'public, max-age=2592000, immutable'
-          }
-        });
+      if (localFile) {
+        const ext = path.extname(localFile).toLowerCase();
+        const contentType = MIME_TYPES[ext] || 'application/octet-stream';
+        const headers = {
+          'Content-Type': contentType,
+          'Cache-Control': 'public, max-age=2592000, immutable',
+          'Access-Control-Allow-Origin': '*'
+        };
+        if (method === 'HEAD') {
+          const stat = fs.statSync(localFile);
+          headers['Content-Length'] = String(stat.size);
+          return new Response(null, { status: 200, headers });
+        }
+        const fileBuffer = fs.readFileSync(localFile);
+        headers['Content-Length'] = String(fileBuffer.length);
+        return new Response(fileBuffer, { status: 200, headers });
       }
+
+      // Transparent proxy from CDN (jsDelivr / GitHub Raw)
+      const encodedPath = encodeURI(pathname);
+      const cdnUrl = CDN_MEDIA_BASE + encodedPath;
+      const rawUrl = GITHUB_RAW_BASE + encodedPath;
+
+      try {
+        let upstream = await fetch(cdnUrl);
+        if (!upstream.ok) {
+          upstream = await fetch(rawUrl);
+        }
+        if (!upstream.ok) {
+          let altPath = null;
+          if (pathname.endsWith('.jpg')) altPath = pathname.replace(/\.jpg$/, '.jpeg');
+          else if (pathname.endsWith('.jpeg')) altPath = pathname.replace(/\.jpeg$/, '.jpg');
+          else if (pathname.endsWith('.JPG')) altPath = pathname.replace(/\.JPG$/, '.jpg');
+          if (altPath) {
+            upstream = await fetch(CDN_MEDIA_BASE + encodeURI(altPath));
+            if (!upstream.ok) upstream = await fetch(GITHUB_RAW_BASE + encodeURI(altPath));
+          }
+        }
+        if (upstream.ok) {
+          const ext = path.extname(pathname).toLowerCase();
+          const contentType = upstream.headers.get('content-type') || MIME_TYPES[ext] || 'application/octet-stream';
+          const buf = await upstream.arrayBuffer();
+          const headers = {
+            'Content-Type': contentType,
+            'Content-Length': String(buf.byteLength),
+            'Cache-Control': 'public, max-age=2592000, immutable',
+            'Access-Control-Allow-Origin': '*'
+          };
+          if (method === 'HEAD') {
+            return new Response(null, { status: 200, headers });
+          }
+          return new Response(buf, { status: 200, headers });
+        }
+      } catch (proxyErr) {
+        console.error('Media proxy error for', pathname, proxyErr);
+      }
+
+      return new Response(null, {
+        status: 302,
+        headers: {
+          'Location': cdnUrl,
+          'Cache-Control': 'public, max-age=86400'
+        }
+      });
     }
 
     const matchedFile = resolveFilePath(pathname);
