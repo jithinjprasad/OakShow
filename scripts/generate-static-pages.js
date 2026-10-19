@@ -203,11 +203,17 @@ async function run() {
       watchOnlineLinks = `<p><strong>Watch Online:</strong> ` + m.watchOnline.map(w => `<a href="${escapeHtml(w.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(w.label || w.provider || 'Watch Online')}</a>`).join(' | ') + `</p>`;
     }
 
+    let bookingLinks = '';
+    if (Array.isArray(m.bookings) && m.bookings.length > 0) {
+      bookingLinks = `<p><strong>Book Tickets:</strong> ` + m.bookings.map(b => `<a href="${escapeHtml(b.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(b.label || b.provider || 'Book Tickets')}</a>`).join(' | ') + `</p>`;
+    }
+
     const bodyContent = `
       <h1>${escapeHtml(m.title)} ${m.year ? `(${escapeHtml(m.year)})` : ''}</h1>
       <p>${m.director ? `<strong>Director:</strong> ${escapeHtml(m.director)} | ` : ''}${m.releaseDate ? `<strong>Release Date:</strong> ${escapeHtml(m.releaseDate)} | ` : ''}<strong>Genre:</strong> ${escapeHtml(m.genre || 'Cinema')} | <strong>Language:</strong> ${escapeHtml(m.language || 'All')}</p>
       <p>${escapeHtml(desc)}</p>
       ${watchOnlineLinks}
+      ${bookingLinks}
       <p><a href="${DOMAIN}/">Explore OakShow Entertainment</a></p>
     `;
 

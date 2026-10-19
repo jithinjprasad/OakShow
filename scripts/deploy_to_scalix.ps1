@@ -93,7 +93,7 @@ if ($Target) {
         "HollywoodReleases2026April.html", "Releases2026April.html",
         "MatchboxTheMovie.html",
         "HollywoodReleases2026October.html", "Releases2026October.html",
-        "Hope2026.html", "StreetFighter2026.html", "TheSocialReckoning.html"
+        "Hope2026.html", "StreetFighter2026.html", "TheSocialReckoning.html", "Whalefall.html"
     )
     foreach ($rf in $rootHtmls) {
         if (Test-Path "$srcDir\dist\$rf") {
@@ -202,6 +202,7 @@ if ($Target) {
         @{ Src = "$srcDir\pics\Films\Hope2026"; Dest = "$workDir\dist\pics\Films\Hope2026" },
         @{ Src = "$srcDir\pics\Films\StreetFighter2026"; Dest = "$workDir\dist\pics\Films\StreetFighter2026" },
         @{ Src = "$srcDir\pics\Films\TheSocialReckoning"; Dest = "$workDir\dist\pics\Films\TheSocialReckoning" },
+        @{ Src = "$srcDir\pics\Films\Whalefall"; Dest = "$workDir\dist\pics\Films\Whalefall" },
         @{ Src = "$srcDir\pics\Serieses\Lanterns"; Dest = "$workDir\dist\pics\Serieses\Lanterns" }
     )
 

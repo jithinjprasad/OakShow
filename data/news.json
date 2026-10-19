@@ -1,5 +1,65 @@
 [
   {
+    "id": "whalefall-news-6",
+    "movieId": "Whalefall",
+    "movieTitle": "Whalefall",
+    "title": "Whalefall Review: Swallowed Alive in the Deep Pacific",
+    "source": "The New York Times",
+    "date": "October 15, 2026",
+    "url": "https://www.nytimes.com/2026/10/15/movies/whalefall-review.html",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "whalefall-news-5",
+    "movieId": "Whalefall",
+    "movieTitle": "Whalefall",
+    "title": "Whalefall review – Austin Abrams in a high-concept whale-stomach survival thriller",
+    "source": "The Guardian",
+    "date": "October 15, 2026",
+    "url": "https://www.theguardian.com/film/2026/oct/15/whalefall-review-movie",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "whalefall-news-4",
+    "movieId": "Whalefall",
+    "movieTitle": "Whalefall",
+    "title": "Whalefall movie review & film summary (2026) — Austin Abrams battles inside a sperm whale",
+    "source": "Roger Ebert",
+    "date": "October 16, 2026",
+    "url": "https://www.rogerebert.com/reviews/whalefall-austin-abrams-movie-review-2026",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "whalefall-news-3",
+    "movieId": "Whalefall",
+    "movieTitle": "Whalefall",
+    "title": "Whalefall movie review: Austin Abrams' Jonah act survival thriller and heartwarming father-son tale",
+    "source": "Hindustan Times",
+    "date": "October 16, 2026",
+    "url": "https://www.hindustantimes.com/entertainment/hollywood/whalefall-movie-review-austin-abrams-jonah-act-survival-thriller-and-heartwarming-father-son-tale-josh-brolin-brian-duffield-101792144402751.html",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "whalefall-news-2",
+    "movieId": "Whalefall",
+    "movieTitle": "Whalefall",
+    "title": "Whalefall Review: Austin Abrams is swallowed whole in Brian Duffield's gut-wrenching survival thriller",
+    "source": "IGN",
+    "date": "October 16, 2026",
+    "url": "https://www.ign.com/articles/whalefall-review",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "whalefall-news-1",
+    "movieId": "Whalefall",
+    "movieTitle": "Whalefall",
+    "title": "Whalefall movie review: Austin Abrams is a fiercely modern Jonah in this whale of a tale",
+    "source": "The Hindu",
+    "date": "October 16, 2026",
+    "url": "https://www.thehindu.com/entertainment/movies/whalefall-movie-review-austin-abrams-is-a-fiercely-modern-jonah-in-this-whale-of-a-tale/article71592880.ece",
+    "category": "Critic Reviews"
+  },
+  {
     "id": "mandaadi-news-7",
     "movieId": "Mandaadi",
     "movieTitle": "Mandaadi",

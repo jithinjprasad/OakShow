@@ -1,5 +1,304 @@
 [
   {
+    "id": "Whalefall",
+    "slug": "whalefall",
+    "type": "movie",
+    "category": "Hollywood",
+    "score": 6.8,
+    "filename": "Whalefall.html",
+    "fileName": "Whalefall.html",
+    "title": "Whalefall",
+    "metaTitle": "Whalefall (2026) All Ratings, Reviews, Songs, Videos, Bookings and News — OakShow",
+    "description": "A scuba diver searching for his late father's remains off the coast of Monterey is swallowed alive by an eighty-foot, sixty-ton sperm whale. Trapped inside its stomach in pitch darkness with only an hour of oxygen left, he must fight for survival while confronting the unresolved trauma of his past.",
+    "plot": "Jay Gardiner (Austin Abrams) is a grief-stricken scuba diver burdened with guilt following the suicide of his estranged, legendary diver father Mitt (Josh Brolin). Determined to find redemption and closure, Jay embarks on a solo dive off the rugged coast of Monterey, California, aiming to recover his father's weighted scuba belt and sunken remains from the depths of the Pacific Ocean.\n\nHowever, what was meant to be a quiet pilgrimage turns into an unimaginable nightmare when Jay is struck by a feeding sperm whale and pulled directly into its colossal, pitch-black maw. Trapped within the whale's first stomach compartment with a crushed dive suit, rapidly failing equipment, and less than sixty minutes of breathable air, Jay faces suffocating pressures, caustic digestive enzymes, and sheer darkness.\n\nAs the massive beast dives deeper into the oceanic abyss, Jay must use his practical diving ingenuity, makeshift survival tools, and the indelible survival wisdom drilled into him by his father to endure the belly of the beast, find a lethal way out, and finally make peace with his father's memory before his oxygen runs out.",
+    "language": "English",
+    "releaseDate": "October 16, 2026",
+    "year": "2026",
+    "status": "released",
+    "genre": "Survival, Thriller, Drama, Adventure",
+    "duration": "1hr 46min",
+    "certificate": "PG-13",
+    "director": "Brian Duffield",
+    "writer": "Brian Duffield, Daniel Kraus",
+    "basedOn": "Whalefall by Daniel Kraus",
+    "producers": "Brian Grazer, Ron Howard, Allan Mandelbaum, Brian Duffield",
+    "cinematography": "Aaron Morton",
+    "editing": "Noah Harnden",
+    "musicDirector": "Joseph Trapanese",
+    "productionCompanies": "20th Century Studios, Imagine Entertainment",
+    "distributor": "20th Century Studios",
+    "boxOffice": {
+      "budget": "$60 Million",
+      "domesticGross": "$7.8 Million",
+      "overseasGross": "$9.7 Million",
+      "worldwideGross": "$17.5 Million",
+      "openingWeekend": "$7.8 Million (Domestic) / $17.5 Million (Worldwide)",
+      "verdict": "Moderate Theatrical Debut / Resilient Word-of-Mouth",
+      "lastUpdated": "October 2026",
+      "source": "Box Office Mojo, The Numbers & Deadline"
+    },
+    "budget": "$60 Million",
+    "awards": [],
+    "poster": "pics/Films/Whalefall/1.jpg",
+    "banner": "pics/Films/Whalefall/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/Whalefall/1.jpg",
+        "alt": "Whalefall Official Theatrical Poster"
+      },
+      {
+        "src": "pics/Films/Whalefall/2.jpg",
+        "alt": "Whalefall Key Art Banner"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "IMDb",
+        "score": "6.8/10",
+        "url": "https://www.imdb.com/title/tt28535715/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "70%",
+        "url": "https://www.rottentomatoes.com/m/whalefall",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-fresh.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "59/100",
+        "url": "https://www.metacritic.com/movie/whalefall/critic-reviews/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      },
+      {
+        "source": "Roger Ebert",
+        "score": "3.5/4",
+        "url": "https://www.rogerebert.com/reviews/whalefall-austin-abrams-movie-review-2026",
+        "icon": "pics/RatingSiteLogos/rogerebert.ico"
+      },
+      {
+        "source": "Hindustan Times",
+        "score": "4/5",
+        "url": "https://www.hindustantimes.com/entertainment/hollywood/whalefall-movie-review-austin-abrams-jonah-act-survival-thriller-and-heartwarming-father-son-tale-josh-brolin-brian-duffield-101792144402751.html",
+        "icon": "pics/RatingSiteLogos/hindustan-times.png"
+      },
+      {
+        "source": "IGN",
+        "score": "8/10",
+        "url": "https://www.ign.com/articles/whalefall-review",
+        "icon": "pics/RatingSiteLogos/ign.png"
+      },
+      {
+        "source": "Times of India",
+        "score": "3/5",
+        "url": "https://timesofindia.indiatimes.com/hollywood/whalefall/movie-review/134984027.cms",
+        "icon": "pics/RatingSiteLogos/times-of-india.ico"
+      },
+      {
+        "source": "Indian Express",
+        "score": "2.5/5",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/whalefall-movie-review-austin-abrams-josh-brolin-film-fails-to-make-a-splash-10924770/",
+        "icon": "pics/RatingSiteLogos/indian-express.png"
+      },
+      {
+        "source": "Rediff",
+        "score": "2.5/5",
+        "url": "https://www.rediff.com/movies/review/review-whalefall-leaves-you-gasping/20261016.htm",
+        "icon": "pics/RatingSiteLogos/rediff.png"
+      },
+      {
+        "source": "The Guardian",
+        "score": "2/5",
+        "url": "https://www.theguardian.com/film/2026/oct/15/whalefall-review-movie",
+        "icon": "pics/RatingSiteLogos/the-guardian.png"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Austin Abrams",
+        "role": "Jay Gardiner",
+        "description": "A grief-stricken scuba diver swallowed alive by a sperm whale off the coast of Monterey"
+      },
+      {
+        "actor": "Josh Brolin",
+        "role": "Mitt Gardiner",
+        "description": "Jay's demanding, legendary diver father whose survival teachings guide Jay through the dark"
+      },
+      {
+        "actor": "Elisabeth Shue",
+        "role": "Zara Gardiner",
+        "description": "Jay's compassionate mother striving to keep her family grounded after tragedy"
+      },
+      {
+        "actor": "Jane Levy",
+        "role": "Eva Gardiner",
+        "description": "Jay's elder sister who tries to help Jay navigate grief and estrangement"
+      },
+      {
+        "actor": "Emily Rudd",
+        "role": "Nan Gardiner",
+        "description": "Jay's younger sister who encourages him to seek peace"
+      },
+      {
+        "actor": "John Ortiz",
+        "role": "Hewey",
+        "description": "The veteran Monterey harbor master and long-time diver friend of Mitt"
+      }
+    ],
+    "trailers": [
+      {
+        "title": "Whalefall | Official Trailer | 20th Century Studios",
+        "url": "https://www.youtube.com/watch?v=rN9F6-tbySY",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/rN9F6-tbySY",
+        "youtubeId": "rN9F6-tbySY",
+        "type": "Main Trailer"
+      },
+      {
+        "title": "Whalefall | Official Teaser | 20th Century Studios",
+        "url": "https://www.youtube.com/watch?v=67ho3OxCmmM",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/67ho3OxCmmM",
+        "youtubeId": "67ho3OxCmmM",
+        "type": "Teaser"
+      }
+    ],
+    "videos": [
+      {
+        "title": "Whalefall | Official Trailer | 20th Century Studios",
+        "url": "https://www.youtube.com/watch?v=rN9F6-tbySY",
+        "youtubeId": "rN9F6-tbySY"
+      },
+      {
+        "title": "Whalefall | Official Teaser | 20th Century Studios",
+        "url": "https://www.youtube.com/watch?v=67ho3OxCmmM",
+        "youtubeId": "67ho3OxCmmM"
+      }
+    ],
+    "music": [
+      {
+        "provider": "Spotify",
+        "url": "https://open.spotify.com/album/4pAhiOGLLxY946GmkpOinN",
+        "icon": "pics/MusicWebsiteLogos/spotify.png",
+        "label": "Listen to Whalefall Soundtrack on Spotify"
+      }
+    ],
+    "watchOnline": [],
+    "bookings": [
+      {
+        "provider": "BookMyShow",
+        "url": "https://in.bookmyshow.com/movies/whalefall/ET00506502",
+        "icon": "pics/BookngWebSiteLogos/book-my-show.png",
+        "label": "Book on BookMyShow"
+      },
+      {
+        "provider": "District",
+        "url": "https://www.district.in/movies/whalefall-movie-tickets-MV218658?srsltid=AU7gw4WCmlPunN0PU5rnfZUhKPe-UgB-JB1kOyemB4V6wmB_60voh9j6",
+        "icon": "pics/BookngWebSiteLogos/district.png",
+        "label": "Book on District"
+      },
+      {
+        "provider": "Fandango",
+        "url": "https://www.fandango.com/whalefall-2026-246280/movie-overview",
+        "icon": "pics/BookngWebSiteLogos/fandango.png",
+        "label": "Book on Fandango"
+      },
+      {
+        "provider": "ODEON",
+        "url": "https://www.odeon.co.uk/films/whalefall/HO00009117/",
+        "icon": "pics/BookngWebSiteLogos/odeon.png",
+        "label": "Book on ODEON Cinemas"
+      }
+    ],
+    "articles": [
+      {
+        "headline": "Whalefall movie review: Austin Abrams is a fiercely modern Jonah in this whale of a tale",
+        "url": "https://www.thehindu.com/entertainment/movies/whalefall-movie-review-austin-abrams-is-a-fiercely-modern-jonah-in-this-whale-of-a-tale/article71592880.ece",
+        "author": "The Hindu",
+        "date": "October 16, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Whalefall movie review: Austin Abrams, Josh Brolin film fails to make a splash",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/whalefall-movie-review-austin-abrams-josh-brolin-film-fails-to-make-a-splash-10924770/",
+        "author": "The Indian Express",
+        "date": "October 16, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Whalefall Review: Austin Abrams is swallowed whole in Brian Duffield's survival thriller",
+        "url": "https://www.ign.com/articles/whalefall-review",
+        "author": "IGN",
+        "date": "October 16, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Whalefall movie review: Austin Abrams' Jonah act survival thriller and heartwarming father-son tale",
+        "url": "https://www.hindustantimes.com/entertainment/hollywood/whalefall-movie-review-austin-abrams-jonah-act-survival-thriller-and-heartwarming-father-son-tale-josh-brolin-brian-duffield-101792144402751.html",
+        "author": "Hindustan Times",
+        "date": "October 16, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Whalefall Review: Leaves you gasping for air",
+        "url": "https://www.rediff.com/movies/review/review-whalefall-leaves-you-gasping/20261016.htm",
+        "author": "Rediff",
+        "date": "October 16, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Whalefall movie review & film summary (2026)",
+        "url": "https://www.rogerebert.com/reviews/whalefall-austin-abrams-movie-review-2026",
+        "author": "Roger Ebert",
+        "date": "October 16, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Whalefall review – Austin Abrams in a high-concept whale-stomach survival thriller",
+        "url": "https://www.theguardian.com/film/2026/oct/15/whalefall-review-movie",
+        "author": "The Guardian",
+        "date": "October 15, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Whalefall Review: Swallowed Alive in the Deep Pacific",
+        "url": "https://www.nytimes.com/2026/10/15/movies/whalefall-review.html",
+        "author": "The New York Times",
+        "date": "October 15, 2026",
+        "section": "Critic Reviews"
+      }
+    ],
+    "socials": [],
+    "similar": [
+      {
+        "title": "Adrift",
+        "link": "Adrift.html",
+        "poster": "pics/Films/Adrift/1.jpg"
+      },
+      {
+        "title": "The Meg",
+        "link": "Meg.html",
+        "poster": "pics/Films/Meg/1.jpg"
+      },
+      {
+        "title": "Oxygen",
+        "link": "Oxygen.html",
+        "poster": "pics/Films/Oxygen/4.jpg"
+      },
+      {
+        "title": "A Quiet Place",
+        "link": "AQuietPlace.html",
+        "poster": "pics/Films/AQuietPlace/1.jpg"
+      },
+      {
+        "title": "Life",
+        "link": "Life.html",
+        "poster": "pics/Films/Life/1.jpg"
+      }
+    ],
+    "wikipedia": "https://en.wikipedia.org/wiki/Whalefall_(film)",
+    "imdb": "https://www.imdb.com/title/tt28535715/",
+    "filePath": "E:/OakShow/Whalefall.html"
+  },
+  {
     "id": "Hope2026",
     "slug": "hope-2026",
     "type": "movie",

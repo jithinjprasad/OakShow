@@ -8,6 +8,38 @@
     "filename": "Releases2026October.html",
     "items": [
       {
+        "title": "Whalefall",
+        "poster": "pics/Films/Whalefall/1.jpg",
+        "alt": "Whalefall (2026) Theatrical Poster",
+        "language": "English",
+        "category": "Hollywood",
+        "releaseDate": "October 16, 2026",
+        "genre": "Survival, Thriller, Drama, Adventure",
+        "status": "released",
+        "moreLink": "Whalefall.html",
+        "trailerLink": "https://www.youtube.com/watch?v=rN9F6-tbySY",
+        "ratings": [
+          {
+            "source": "IMDb",
+            "score": "6.8/10",
+            "url": "https://www.imdb.com/title/tt28535715/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "70%",
+            "url": "https://www.rottentomatoes.com/m/whalefall",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-fresh.png"
+          },
+          {
+            "source": "Metacritic",
+            "score": "59/100",
+            "url": "https://www.metacritic.com/movie/whalefall/critic-reviews/",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          }
+        ]
+      },
+      {
         "title": "Hope",
         "poster": "pics/Films/Hope2026/1.jpg",
         "alt": "Hope (2026)",
@@ -222,7 +254,7 @@
         "ratings": []
       }
     ],
-    "totalItems": 6
+    "totalItems": 7
   },
   {
     "id": "Releases2026April",
@@ -1421,8 +1453,40 @@
     "month": "October",
     "category": "Hollywood",
     "filename": "HollywoodReleases2026October.html",
-    "totalItems": 5,
+    "totalItems": 6,
     "items": [
+      {
+        "title": "Whalefall",
+        "poster": "pics/Films/Whalefall/1.jpg",
+        "alt": "Whalefall (2026) Theatrical Poster",
+        "language": "English",
+        "category": "Hollywood",
+        "releaseDate": "October 16, 2026",
+        "genre": "Survival, Thriller, Drama, Adventure",
+        "status": "released",
+        "moreLink": "Whalefall.html",
+        "trailerLink": "https://www.youtube.com/watch?v=rN9F6-tbySY",
+        "ratings": [
+          {
+            "source": "IMDb",
+            "score": "6.8/10",
+            "url": "https://www.imdb.com/title/tt28535715/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "70%",
+            "url": "https://www.rottentomatoes.com/m/whalefall",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-fresh.png"
+          },
+          {
+            "source": "Metacritic",
+            "score": "59/100",
+            "url": "https://www.metacritic.com/movie/whalefall/critic-reviews/",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          }
+        ]
+      },
       {
         "title": "Hope",
         "poster": "pics/Films/Hope2026/1.jpg",

@@ -1,5 +1,87 @@
 [
   {
+    "id": "Whalefall",
+    "slug": "whalefall",
+    "title": "Whalefall",
+    "type": "movie",
+    "category": "Hollywood",
+    "genre": "Survival, Thriller, Drama, Adventure",
+    "language": "English",
+    "year": "2026",
+    "score": 6.8,
+    "poster": "pics/Films/Whalefall/1.jpg",
+    "filename": "Whalefall.html",
+    "fileName": "Whalefall.html",
+    "url": "Whalefall.html",
+    "cleanUrl": "/Whalefall.html",
+    "releaseDate": "October 16, 2026",
+    "status": "released",
+    "director": "Brian Duffield",
+    "ratings": [
+      {
+        "source": "IMDb",
+        "score": "6.8/10",
+        "url": "https://www.imdb.com/title/tt28535715/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "70%",
+        "url": "https://www.rottentomatoes.com/m/whalefall",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-fresh.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "59/100",
+        "url": "https://www.metacritic.com/movie/whalefall/critic-reviews/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      },
+      {
+        "source": "Roger Ebert",
+        "score": "3.5/4",
+        "url": "https://www.rogerebert.com/reviews/whalefall-austin-abrams-movie-review-2026",
+        "icon": "pics/RatingSiteLogos/rogerebert.ico"
+      },
+      {
+        "source": "Hindustan Times",
+        "score": "4/5",
+        "url": "https://www.hindustantimes.com/entertainment/hollywood/whalefall-movie-review-austin-abrams-jonah-act-survival-thriller-and-heartwarming-father-son-tale-josh-brolin-brian-duffield-101792144402751.html",
+        "icon": "pics/RatingSiteLogos/hindustan-times.png"
+      },
+      {
+        "source": "IGN",
+        "score": "8/10",
+        "url": "https://www.ign.com/articles/whalefall-review",
+        "icon": "pics/RatingSiteLogos/ign.png"
+      },
+      {
+        "source": "Times of India",
+        "score": "3/5",
+        "url": "https://timesofindia.indiatimes.com/hollywood/whalefall/movie-review/134984027.cms",
+        "icon": "pics/RatingSiteLogos/times-of-india.ico"
+      },
+      {
+        "source": "Indian Express",
+        "score": "2.5/5",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/whalefall-movie-review-austin-abrams-josh-brolin-film-fails-to-make-a-splash-10924770/",
+        "icon": "pics/RatingSiteLogos/indian-express.png"
+      },
+      {
+        "source": "Rediff",
+        "score": "2.5/5",
+        "url": "https://www.rediff.com/movies/review/review-whalefall-leaves-you-gasping/20261016.htm",
+        "icon": "pics/RatingSiteLogos/rediff.png"
+      },
+      {
+        "source": "The Guardian",
+        "score": "2/5",
+        "url": "https://www.theguardian.com/film/2026/oct/15/whalefall-review-movie",
+        "icon": "pics/RatingSiteLogos/the-guardian.png"
+      }
+    ],
+    "keywords": "Whalefall, Whalefall (2026), Austin Abrams, Josh Brolin, Brian Duffield, Elisabeth Shue, Jane Levy, Daniel Kraus, Imagine Entertainment, 20th Century Studios, survival, whale, Monterey, thriller"
+  },
+  {
     "id": "Hope2026",
     "slug": "hope-2026",
     "title": "Hope (2026 film)",
