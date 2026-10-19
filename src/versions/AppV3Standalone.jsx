@@ -575,7 +575,7 @@ export default function App() {
       return 0;
     };
 
-    const priorityUpcomingIds = ['Jailer2', 'RamayanaPart1'];
+    const priorityUpcomingIds = ['RamayanaPart1'];
 
     return cleanMoviesData.filter(m => {
       if (priorityUpcomingIds.includes(m.id)) return true;
@@ -589,9 +589,8 @@ export default function App() {
     }).sort((a, b) => {
       const getPriority = (item) => {
         if (!item || !item.id) return 999;
-        if (item.id === 'Jailer2') return 1;
-        if (item.id === 'RamayanaPart1') return 2;
-        if (item.id === 'Digger') return 3;
+        if (item.id === 'RamayanaPart1') return 1;
+        if (item.id === 'Digger') return 2;
         return 999;
       };
       const pA = getPriority(a);

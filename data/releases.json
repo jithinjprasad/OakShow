@@ -8,6 +8,146 @@
     "filename": "Releases2026October.html",
     "items": [
       {
+        "title": "Hope",
+        "poster": "pics/Films/Hope2026/1.jpg",
+        "alt": "Hope (2026)",
+        "language": "Korean, English",
+        "category": "International",
+        "releaseDate": "October 23, 2026",
+        "genre": "Sci-Fi, Action, Thriller, Creature Feature, Monster",
+        "status": "released",
+        "moreLink": "Hope2026.html",
+        "trailerLink": "https://www.youtube.com/results?search_query=Hope+Na+Hong-jin+trailer",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "8/10",
+            "url": "https://oakshow.in/Hope2026.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "6.7/10",
+            "url": "https://www.imdb.com/title/tt27369017/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "79%",
+            "url": "https://www.rottentomatoes.com/m/hope_2026",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+          }
+        ]
+      },
+      {
+        "title": "The Social Reckoning",
+        "poster": "pics/Films/TheSocialReckoning/1.jpg",
+        "alt": "The Social Reckoning (2026) Theatrical Poster",
+        "language": "English",
+        "category": "Hollywood",
+        "releaseDate": "October 9, 2026",
+        "genre": "Drama, Thriller, Biography, History",
+        "status": "released",
+        "moreLink": "TheSocialReckoning.html",
+        "trailerLink": "https://www.youtube.com/watch?v=MfHEZw7Xw_c",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "7.5/10",
+            "url": "https://oakshow.in/TheSocialReckoning.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "6.7/10",
+            "url": "https://www.imdb.com/title/tt37510326/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "54%",
+            "url": "https://www.rottentomatoes.com/m/the_social_reckoning",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-rotten.png"
+          },
+          {
+            "source": "Metacritic",
+            "score": "51%",
+            "url": "https://www.metacritic.com/movie/the-social-reckoning/",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          }
+        ]
+      },
+      {
+        "title": "Street Fighter",
+        "poster": "pics/Films/StreetFighter2026/1.jpg",
+        "alt": "Street Fighter (2026 film) Theatrical Poster",
+        "language": "English",
+        "category": "Hollywood",
+        "releaseDate": "October 16, 2026",
+        "genre": "Action, Martial Arts, Comedy, Adventure",
+        "status": "released",
+        "moreLink": "StreetFighter2026.html",
+        "trailerLink": "https://www.youtube.com/watch?v=U6sbm1OaJb8",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "7/10",
+            "url": "https://oakshow.in/StreetFighter2026.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "6.3/10",
+            "url": "https://www.imdb.com/title/tt27419420/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "42%",
+            "url": "https://www.rottentomatoes.com/m/street_fighter_2026",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-rotten.png"
+          },
+          {
+            "source": "Metacritic",
+            "score": "44%",
+            "url": "https://www.metacritic.com/movie/street-fighter-2026/",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          }
+        ]
+      },
+      {
+        "title": "Jailer 2",
+        "poster": "pics/Films/Jailer2/1.jpeg",
+        "alt": "Jailer 2",
+        "language": "Tamil",
+        "category": "Indian",
+        "releaseDate": "October 15, 2026",
+        "genre": "Action, Crime, Thriller, Comedy",
+        "status": "released",
+        "moreLink": "Jailer2.html",
+        "trailerLink": "https://www.youtube.com/watch?v=aaNq2NL6D4A",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "7.2/10",
+            "url": "https://oakshow.in/Jailer2.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-this-one-is-above-average.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "8.1/10",
+            "url": "https://www.imdb.com/title/tt33318732/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "91%",
+            "url": "https://www.rottentomatoes.com/m/jailer_2",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+          }
+        ]
+      },
+      {
         "title": "Matchbox: The Movie",
         "poster": "pics/Films/MatchboxTheMovie/1.jpg",
         "alt": "Matchbox: The Movie Theatrical Poster",
@@ -82,7 +222,7 @@
         "ratings": []
       }
     ],
-    "totalItems": 2
+    "totalItems": 6
   },
   {
     "id": "Releases2026April",
@@ -769,8 +909,40 @@
     "month": "September",
     "category": "Indian",
     "filename": "IndianReleases2026September.html",
-    "totalItems": 2,
+    "totalItems": 3,
     "items": [
+      {
+        "title": "Mandaadi",
+        "poster": "pics/Films/Mandaadi/1.jpeg",
+        "alt": "Mandaadi",
+        "language": "Tamil",
+        "category": "Indian",
+        "releaseDate": "September 10, 2026",
+        "genre": "Action, Drama, Sport",
+        "status": "released",
+        "moreLink": "Mandaadi.html",
+        "trailerLink": "https://www.youtube.com/watch?v=VOHaf-0DV-U",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "7.5/10",
+            "url": "https://oakshow.in/Mandaadi.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "8.2/10",
+            "url": "https://www.imdb.com/title/tt36596965/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "NDTV",
+            "score": "3.5/5",
+            "url": "https://www.ndtv.com/entertainment/mandaadi-review-soori-shines-in-mathimaran-pugazhendhis-engaging-coastal-sports-drama-3-5-stars-12028873",
+            "icon": "pics/RatingSiteLogos/ndtv.ico"
+          }
+        ]
+      },
       {
         "title": "The Paradise",
         "poster": "pics/Films/TheParadise/1.jpg",
@@ -843,8 +1015,40 @@
     "month": "October",
     "category": "Indian",
     "filename": "IndianReleases2026October.html",
-    "totalItems": 1,
+    "totalItems": 2,
     "items": [
+      {
+        "title": "Jailer 2",
+        "poster": "pics/Films/Jailer2/1.jpeg",
+        "alt": "Jailer 2",
+        "language": "Tamil",
+        "category": "Indian",
+        "releaseDate": "October 15, 2026",
+        "genre": "Action, Crime, Thriller, Comedy",
+        "status": "released",
+        "moreLink": "Jailer2.html",
+        "trailerLink": "https://www.youtube.com/watch?v=aaNq2NL6D4A",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "7.2/10",
+            "url": "https://oakshow.in/Jailer2.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-this-one-is-above-average.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "8.1/10",
+            "url": "https://www.imdb.com/title/tt33318732/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "91%",
+            "url": "https://www.rottentomatoes.com/m/jailer_2",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+          }
+        ]
+      },
       {
         "title": "Avarachan & Sons",
         "poster": "pics/Films/AvarachanandSons/1.jpg",
@@ -1217,8 +1421,116 @@
     "month": "October",
     "category": "Hollywood",
     "filename": "HollywoodReleases2026October.html",
-    "totalItems": 2,
+    "totalItems": 5,
     "items": [
+      {
+        "title": "Hope",
+        "poster": "pics/Films/Hope2026/1.jpg",
+        "alt": "Hope (2026)",
+        "language": "Korean, English",
+        "category": "International",
+        "releaseDate": "October 23, 2026",
+        "genre": "Sci-Fi, Action, Thriller, Creature Feature, Monster",
+        "status": "released",
+        "moreLink": "Hope2026.html",
+        "trailerLink": "https://www.youtube.com/results?search_query=Hope+Na+Hong-jin+trailer",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "8/10",
+            "url": "https://oakshow.in/Hope2026.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "6.7/10",
+            "url": "https://www.imdb.com/title/tt27369017/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "79%",
+            "url": "https://www.rottentomatoes.com/m/hope_2026",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+          }
+        ]
+      },
+      {
+        "title": "The Social Reckoning",
+        "poster": "pics/Films/TheSocialReckoning/1.jpg",
+        "alt": "The Social Reckoning (2026) Theatrical Poster",
+        "language": "English",
+        "category": "Hollywood",
+        "releaseDate": "October 9, 2026",
+        "genre": "Drama, Thriller, Biography, History",
+        "status": "released",
+        "moreLink": "TheSocialReckoning.html",
+        "trailerLink": "https://www.youtube.com/watch?v=MfHEZw7Xw_c",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "7.5/10",
+            "url": "https://oakshow.in/TheSocialReckoning.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "6.7/10",
+            "url": "https://www.imdb.com/title/tt37510326/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "54%",
+            "url": "https://www.rottentomatoes.com/m/the_social_reckoning",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-rotten.png"
+          },
+          {
+            "source": "Metacritic",
+            "score": "51%",
+            "url": "https://www.metacritic.com/movie/the-social-reckoning/",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          }
+        ]
+      },
+      {
+        "title": "Street Fighter",
+        "poster": "pics/Films/StreetFighter2026/1.jpg",
+        "alt": "Street Fighter (2026 film) Theatrical Poster",
+        "language": "English",
+        "category": "Hollywood",
+        "releaseDate": "October 16, 2026",
+        "genre": "Action, Martial Arts, Comedy, Adventure",
+        "status": "released",
+        "moreLink": "StreetFighter2026.html",
+        "trailerLink": "https://www.youtube.com/watch?v=U6sbm1OaJb8",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "7/10",
+            "url": "https://oakshow.in/StreetFighter2026.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "6.3/10",
+            "url": "https://www.imdb.com/title/tt27419420/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "42%",
+            "url": "https://www.rottentomatoes.com/m/street_fighter_2026",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-rotten.png"
+          },
+          {
+            "source": "Metacritic",
+            "score": "44%",
+            "url": "https://www.metacritic.com/movie/street-fighter-2026/",
+            "icon": "pics/RatingSiteLogos/metacritic.png"
+          }
+        ]
+      },
       {
         "title": "Matchbox: The Movie",
         "poster": "pics/Films/MatchboxTheMovie/1.jpg",

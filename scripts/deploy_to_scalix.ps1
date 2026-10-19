@@ -92,7 +92,8 @@ if ($Target) {
         "HollywoodReleases2026March.html", "Releases2026March.html",
         "HollywoodReleases2026April.html", "Releases2026April.html",
         "MatchboxTheMovie.html",
-        "HollywoodReleases2026October.html", "Releases2026October.html"
+        "HollywoodReleases2026October.html", "Releases2026October.html",
+        "Hope2026.html"
     )
     foreach ($rf in $rootHtmls) {
         if (Test-Path "$srcDir\dist\$rf") {

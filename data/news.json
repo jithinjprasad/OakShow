@@ -1,5 +1,215 @@
 [
   {
+    "id": "mandaadi-news-7",
+    "movieId": "Mandaadi",
+    "movieTitle": "Mandaadi",
+    "title": "Mandaadi Movie Review: Soori delivers strong performance in engaging sports drama",
+    "source": "Rediff",
+    "date": "September 13, 2026",
+    "url": "https://www.rediff.com/movies/review/mandaadi-movie-review-soori-delivers-strong-performance-in-engaging-sports-drama/20260913.htm",
+    "category": "Kollywood"
+  },
+  {
+    "id": "mandaadi-news-6",
+    "movieId": "Mandaadi",
+    "movieTitle": "Mandaadi",
+    "title": "Mandaadi Review: Mandaadi charts an uneven course to a strong finish",
+    "source": "Times of India",
+    "date": "September 10, 2026",
+    "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movie-reviews/mandaadi/movie-review/134001460.cms",
+    "category": "Kollywood"
+  },
+  {
+    "id": "mandaadi-news-5",
+    "movieId": "Mandaadi",
+    "movieTitle": "Mandaadi",
+    "title": "Mandaadi Movie Review and Rating: Soori, Suhas boat-racing drama makes visual splash but writing holds back its peak",
+    "source": "Times Now",
+    "date": "September 10, 2026",
+    "url": "https://www.timesnownews.com/entertainment-news/reviews/mandaadi-movie-review-and-rating-soori-suhas-boat-racing-drama-makes-visual-splash-but-writing-holds-back-its-peak-review-156133146",
+    "category": "Kollywood"
+  },
+  {
+    "id": "mandaadi-news-4",
+    "movieId": "Mandaadi",
+    "movieTitle": "Mandaadi",
+    "title": "Mandaadi movie review: Soori, Suhas are extraordinary on water, the film drifts when on land",
+    "source": "The Indian Express",
+    "date": "September 10, 2026",
+    "url": "https://indianexpress.com/article/entertainment/movie-review/mandaadi-movie-review-soori-suhas-are-extraordinary-on-water-the-film-is-not-on-land-10871944/",
+    "category": "Kollywood"
+  },
+  {
+    "id": "mandaadi-news-3",
+    "movieId": "Mandaadi",
+    "movieTitle": "Mandaadi",
+    "title": "Mandaadi Review: Soori steals the show in Mathimaran Pugazhendhi's gripping coastal sports drama",
+    "source": "CNBC-TV18",
+    "date": "September 11, 2026",
+    "url": "https://www.cnbctv18.com/entertainment/mandaadi-review-soori-steals-the-show-in-mathimaran-pugazhendhis-gripping-coastal-sports-drama-19989061.htm",
+    "category": "Kollywood"
+  },
+  {
+    "id": "mandaadi-news-2",
+    "movieId": "Mandaadi",
+    "movieTitle": "Mandaadi",
+    "title": "Mandaadi Review: Soori Shines In Mathimaran Pugazhendhi's Engaging Coastal Sports Drama",
+    "source": "NDTV",
+    "date": "September 10, 2026",
+    "url": "https://www.ndtv.com/entertainment/mandaadi-review-soori-shines-in-mathimaran-pugazhendhis-engaging-coastal-sports-drama-3-5-stars-12028873",
+    "category": "Kollywood"
+  },
+  {
+    "id": "mandaadi-news-1",
+    "movieId": "Mandaadi",
+    "movieTitle": "Mandaadi",
+    "title": "Mandaadi Movie Review: Scintillating sail despite some turbulence",
+    "source": "The New Indian Express",
+    "date": "September 12, 2026",
+    "url": "https://www.newindianexpress.com/entertainment/review/2026/Sep/12/tamilreview2026sep10mandaadi-movie-review-scintillating-sail-despite-some-turbulence",
+    "category": "Kollywood"
+  },
+  {
+    "id": "hope2026-news-5",
+    "movieId": "Hope2026",
+    "movieTitle": "Hope",
+    "title": "Hope movie review & film summary (2026) — Bonkers Korean monster movie destroys the hero narrative",
+    "source": "Roger Ebert",
+    "date": "May 18, 2026",
+    "url": "https://www.rogerebert.com/reviews/hope-na-jong-hin-movie-review-2026",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "hope2026-news-4",
+    "movieId": "Hope2026",
+    "movieTitle": "Hope",
+    "title": "Hope Review — Na Hong-jin delivers a rip-roaring Korean creature feature made with gonzo skill",
+    "source": "IGN",
+    "date": "May 18, 2026",
+    "url": "https://www.ign.com/articles/hope-review-na-hong-jin",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "hope2026-news-3",
+    "movieId": "Hope2026",
+    "movieTitle": "Hope",
+    "title": "Hope review: Non-stop gonzo alien battling is top-quality entertainment",
+    "source": "The Guardian",
+    "date": "May 18, 2026",
+    "url": "https://www.theguardian.com/film/2026/may/18/hope-review-non-stop-gonzo-alien-battling-is-top-quality-entertainment",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "hope2026-news-2",
+    "movieId": "Hope2026",
+    "movieTitle": "Hope",
+    "title": "The Most Intense Sci-Fi Movie of the Year Began with a Fishing Trip Near the Korean DMZ",
+    "source": "Den of Geek",
+    "date": "2026",
+    "url": "https://www.denofgeek.com/movies/most-intense-sci-fi-movie-of-the-year-began-fishing-trip-near-korean-dmz/",
+    "category": "Sci-Fi & Thriller"
+  },
+  {
+    "id": "hope2026-news-1",
+    "movieId": "Hope2026",
+    "movieTitle": "Hope",
+    "title": "Na Hong-jin's Korean sci-fi thriller Hope to release in India on October 23",
+    "source": "The Telegraph",
+    "date": "October 2026",
+    "url": "https://www.telegraphindia.com/entertainment/na-hong-jins-korean-sci-fi-thriller-hope-to-release-in-india-on-october-23/cid/2182234",
+    "category": "International Cinema"
+  },
+  {
+    "id": "jailer2-news-9",
+    "movieId": "Jailer2",
+    "movieTitle": "Jailer 2",
+    "title": "Jailer 2 movie review: Superstar Rajinikanth and Nelson team up for an electrifying commercial sequel",
+    "source": "The Hindu",
+    "date": "October 15, 2026",
+    "url": "https://www.thehindu.com/entertainment/movies/jailer-2-movie-review-superstar-rajinikanth-nelson-shivarajkumar-mohanlal-anirudh-ravichander/article71587540.ece",
+    "category": "Kollywood"
+  },
+  {
+    "id": "jailer2-news-8",
+    "movieId": "Jailer2",
+    "movieTitle": "Jailer 2",
+    "title": "Jailer 2 movie review: Rajinikanth swagger and Nelson's humour strike gold again",
+    "source": "India Today",
+    "date": "October 15, 2026",
+    "url": "https://www.indiatoday.in/movies/reviews/story/jailer-2-movie-review-rajinikanth-swagger-and-nelsons-humour-strike-gold-again-3017726-2026-10-15",
+    "category": "Kollywood"
+  },
+  {
+    "id": "jailer2-news-7",
+    "movieId": "Jailer2",
+    "movieTitle": "Jailer 2",
+    "title": "Jailer 2 movie review: Rajinikanth’s supreme aura carries Nelson’s uneven action thriller",
+    "source": "The Indian Express",
+    "date": "October 15, 2026",
+    "url": "https://indianexpress.com/article/entertainment/movie-review/jailer-2-movie-review-rajinikanth-supreme-aura-carries-nelsons-uneven-action-thriller-10922256/",
+    "category": "Kollywood"
+  },
+  {
+    "id": "jailer2-news-6",
+    "movieId": "Jailer2",
+    "movieTitle": "Jailer 2",
+    "title": "Jailer 2 movie review: 75-year-old Rajinikanth aura farms for 3 hours in a Nelson Dilipkumar film and it is all fans need sometimes",
+    "source": "Hindustan Times",
+    "date": "October 15, 2026",
+    "url": "https://www.hindustantimes.com/entertainment/tamil-cinema/jailer-2-movie-review-75-year-old-rajinikanth-aura-farms-for-3-hours-in-a-nelson-dilipkumar-film-and-it-is-all-fans-need-sometimes-101792042345652.html",
+    "category": "Kollywood"
+  },
+  {
+    "id": "jailer2-news-5",
+    "movieId": "Jailer2",
+    "movieTitle": "Jailer 2",
+    "title": "Jailer 2 review: Rajinikanth is the main attraction in Nelson Dilipkumar's entertaining sequel",
+    "source": "The Telegraph",
+    "date": "October 16, 2026",
+    "url": "https://www.telegraphindia.com/entertainment/jailer-2-review-rajinikanth-is-the-main-attraction-in-nelson-dilipkumars-entertaining-sequel/cid/2185010",
+    "category": "Kollywood"
+  },
+  {
+    "id": "jailer2-news-4",
+    "movieId": "Jailer2",
+    "movieTitle": "Jailer 2",
+    "title": "Jailer 2 box office collection day 2: Rajinikanth film earns Rs 209 crore worldwide",
+    "source": "The Indian Express",
+    "date": "October 17, 2026",
+    "url": "https://indianexpress.com/article/entertainment/tamil/jailer-2-box-office-collection-day-2-live-updates-rajinikanth-film-earns-rs-209-crore-10925037/",
+    "category": "Kollywood"
+  },
+  {
+    "id": "jailer2-news-3",
+    "movieId": "Jailer2",
+    "movieTitle": "Jailer 2",
+    "title": "Jailer 2 box office collection day 4: Rajinikanth, Mohanlal, Nelson Dilipkumar film sees Sunday jump, earns Rs 55.85 cr in India; worldwide gross hits Rs 424.25 cr",
+    "source": "Times of India",
+    "date": "October 19, 2026",
+    "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movies/news/jailer-2-box-office-collection-day-4-rajinikanth-mohanlal-nelson-dilipkumar-film-sees-sunday-jump-earns-rs-55-85-cr-in-india-worldwide-gross-hits-rs-424-25-cr/articleshow/135037059.cms",
+    "category": "Kollywood"
+  },
+  {
+    "id": "jailer2-news-2",
+    "movieId": "Jailer2",
+    "movieTitle": "Jailer 2",
+    "title": "Jailer 2 box office collection day 4: Rajinikanth film is at Rs 425 crore, all set to cross Rs 500 crore mark worldwide",
+    "source": "NDTV",
+    "date": "October 19, 2026",
+    "url": "https://www.ndtv.com/entertainment/jailer-2-box-office-collection-day-4-rajinikanth-film-is-at-rs-425-crore-all-set-to-cross-rs-500-crore-mark-worldwide-12204495",
+    "category": "Kollywood"
+  },
+  {
+    "id": "jailer2-news-1",
+    "movieId": "Jailer2",
+    "movieTitle": "Jailer 2",
+    "title": "Jailer 2 crosses Rs 400 crore mark globally in four days; emerges highest grossing Tamil film of 2026",
+    "source": "The Telegraph",
+    "date": "October 19, 2026",
+    "url": "https://www.telegraphindia.com/entertainment/jailer-2-crosses-rs-400-crore-mark-globally-in-four-days-emerges-highest-grossing-tamil-film-of-2026/cid/2185372",
+    "category": "Kollywood"
+  },
+  {
     "id": "drishyam-conclusion-news-1",
     "movieId": "DrishyamTheConclusion",
     "movieTitle": "Drishyam: The Conclusion",
@@ -330,7 +540,7 @@
     "category": "Tollywood"
   },
   {
-    "id": "jailer2-news-6",
+    "id": "jailer2-news-15",
     "movieId": "Jailer2",
     "movieTitle": "Jailer 2",
     "title": "Jailer 2 new promo: Suraj Venjaramoodu makes an intense appearance as Dileep in Rajinikanth and Nelson Dilipkumar's action sequel",
@@ -340,7 +550,7 @@
     "category": "Indian Cinema"
   },
   {
-    "id": "jailer2-news-5",
+    "id": "jailer2-news-14",
     "movieId": "Jailer2",
     "movieTitle": "Jailer 2",
     "title": "Jailer 2 1st look reveals Venjaramoodu as stylish villain in Nelson Dilipkumar film",
@@ -350,7 +560,7 @@
     "category": "Indian Cinema"
   },
   {
-    "id": "jailer2-news-4",
+    "id": "jailer2-news-13",
     "movieId": "Jailer2",
     "movieTitle": "Jailer 2",
     "title": "Jailer 2: Suraj Venjaramoodu introduced as mysterious gangster Dileep in intense first look",
@@ -360,7 +570,7 @@
     "category": "Indian Cinema"
   },
   {
-    "id": "jailer2-news-3",
+    "id": "jailer2-news-12",
     "movieId": "Jailer2",
     "movieTitle": "Jailer 2",
     "title": "Jailer 2: Suraj Venjaramoodu introduced as mysterious gangster Dileep in new character glimpse",
@@ -370,7 +580,7 @@
     "category": "Indian Cinema"
   },
   {
-    "id": "jailer2-news-2",
+    "id": "jailer2-news-11",
     "movieId": "Jailer2",
     "movieTitle": "Jailer 2",
     "title": "Baththa actor Vijay Sethupathi reveals how Rajinikanth inspired him on Jailer 2: 'I didn't expect that because he's a big superstar'",
@@ -380,7 +590,7 @@
     "category": "Indian Cinema"
   },
   {
-    "id": "jailer2-news-1",
+    "id": "jailer2-news-10",
     "movieId": "Jailer2",
     "movieTitle": "Jailer 2",
     "title": "Vijay Sethupathi recalls Rajinikanth's dedication on Jailer 2 sets",

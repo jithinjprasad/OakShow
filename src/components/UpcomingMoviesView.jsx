@@ -81,7 +81,7 @@ export default function UpcomingMoviesView({
     if (!movies || !Array.isArray(movies)) return [];
     const now = Date.now();
 
-    const priorityUpcomingIds = ['Jailer2', 'RamayanaPart1'];
+    const priorityUpcomingIds = ['RamayanaPart1'];
 
     return movies.filter((m) => {
       if (!m || !m.title) return false;
@@ -110,8 +110,6 @@ export default function UpcomingMoviesView({
   // Featured spotlight movie (most anticipated / soonest upcoming release)
   const spotlightMovie = useMemo(() => {
     if (!allUpcomingMovies || allUpcomingMovies.length === 0) return null;
-    const jailer2 = allUpcomingMovies.find(m => m.id === 'Jailer2');
-    if (jailer2) return jailer2;
     const digger = allUpcomingMovies.find(m => m.id === 'Digger' || (m.title && m.title.toLowerCase() === 'digger'));
     if (digger) return digger;
     return [...allUpcomingMovies].sort((a, b) => {
@@ -198,9 +196,8 @@ export default function UpcomingMoviesView({
 
       const getPriority = (item) => {
         if (!item || !item.id) return 999;
-        if (item.id === 'Jailer2') return 1;
-        if (item.id === 'RamayanaPart1') return 2;
-        if (item.id === 'Digger') return 3;
+        if (item.id === 'RamayanaPart1') return 1;
+        if (item.id === 'Digger') return 2;
         return 999;
       };
 

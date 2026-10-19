@@ -1,5 +1,142 @@
 [
   {
+    "id": "Hope2026",
+    "slug": "hope-2026",
+    "title": "Hope (2026 film)",
+    "type": "movie",
+    "category": "International",
+    "year": "2026",
+    "genre": "Sci-Fi, Action, Thriller, Creature Feature, Monster",
+    "language": "Korean, English",
+    "poster": "pics/Films/Hope2026/1.jpg",
+    "score": 8,
+    "filename": "Hope2026.html",
+    "fileName": "Hope2026.html",
+    "releaseDate": "July 15, 2026",
+    "status": "released",
+    "director": "Na Hong-jin",
+    "url": "Hope2026.html",
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "8/10",
+        "url": "https://oakshow.in/Hope2026.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "6.7/10",
+        "url": "https://www.imdb.com/title/tt27369017/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "79%",
+        "url": "https://www.rottentomatoes.com/m/hope_2026",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+      },
+      {
+        "source": "IGN",
+        "score": "9/10",
+        "url": "https://www.ign.com/articles/hope-review-na-hong-jin",
+        "icon": "pics/RatingSiteLogos/ign.png"
+      },
+      {
+        "source": "Roger Ebert",
+        "score": "3.5/4",
+        "url": "https://www.rogerebert.com/reviews/hope-na-jong-hin-movie-review-2026",
+        "icon": "pics/RatingSiteLogos/rogerebert.ico"
+      },
+      {
+        "source": "The Guardian",
+        "score": "4/5",
+        "url": "https://www.theguardian.com/film/2026/may/18/hope-review-non-stop-gonzo-alien-battling-is-top-quality-entertainment",
+        "icon": "pics/RatingSiteLogos/the-guardian.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "67/100",
+        "url": "https://www.metacritic.com/movie/hope-2026/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      },
+      {
+        "source": "Common Sense Media",
+        "score": "3/5",
+        "url": "https://www.commonsensemedia.org/movie-reviews/hope",
+        "icon": "pics/RatingSiteLogos/common-sense-media.png"
+      }
+    ]
+  },
+  {
+    "id": "TheSocialReckoning",
+    "slug": "the-social-reckoning",
+    "title": "The Social Reckoning",
+    "type": "movie",
+    "category": "Hollywood",
+    "year": "2026",
+    "genre": "Drama, Thriller, Biography, History",
+    "language": "English",
+    "poster": "pics/Films/TheSocialReckoning/1.jpg",
+    "score": 7.5,
+    "filename": "TheSocialReckoning.html",
+    "fileName": "TheSocialReckoning.html",
+    "releaseDate": "October 9, 2026",
+    "status": "released",
+    "director": "Aaron Sorkin",
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "7.5/10",
+        "url": "https://oakshow.in/TheSocialReckoning.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "6.7/10",
+        "url": "https://www.imdb.com/title/tt37510326/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "54%",
+        "url": "https://www.rottentomatoes.com/m/the_social_reckoning",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-rotten.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "51%",
+        "url": "https://www.metacritic.com/movie/the-social-reckoning/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      }
+    ]
+  },
+  {
+    "id": "StreetFighter2026",
+    "title": "Street Fighter (2026 film)",
+    "type": "movie",
+    "category": "Hollywood",
+    "year": "2026",
+    "genre": "Action, Martial Arts, Comedy, Adventure",
+    "language": "English",
+    "score": 7,
+    "poster": "pics/Films/StreetFighter2026/1.jpg",
+    "status": "released",
+    "url": "StreetFighter2026.html"
+  },
+  {
+    "id": "Jailer2",
+    "title": "Jailer 2",
+    "type": "movie",
+    "category": "Indian",
+    "year": "2026",
+    "genre": "Action, Crime, Thriller, Comedy",
+    "language": "Tamil",
+    "score": 7.2,
+    "poster": "pics/Films/Jailer2/1.jpeg",
+    "status": "released",
+    "url": "Jailer2.html"
+  },
+  {
     "id": "MatchboxTheMovie",
     "title": "Matchbox: The Movie",
     "type": "movie",
@@ -177,18 +314,6 @@
     "score": 9,
     "poster": "pics/Films/HeartoftheBeast/1.jpeg",
     "url": "HeartoftheBeast.html"
-  },
-  {
-    "id": "Jailer2",
-    "title": "Jailer 2",
-    "type": "movie",
-    "category": "Indian",
-    "year": "2026",
-    "genre": "Action, Crime, Thriller",
-    "language": "Tamil",
-    "score": null,
-    "poster": "pics/Films/Jailer2/1.jpeg",
-    "url": "Jailer2.html"
   },
   {
     "id": "Jailer",
@@ -428,13 +553,65 @@
   },
   {
     "id": "Mandaadi",
+    "slug": "mandaadi",
     "title": "Mandaadi",
     "type": "movie",
     "category": "Indian",
+    "year": "2026",
     "genre": "Action, Drama, Sport",
     "language": "Tamil",
-    "year": "2026",
-    "poster": "pics/Films/Mandaadi/2.jpeg"
+    "poster": "pics/Films/Mandaadi/1.jpeg",
+    "score": 7.5,
+    "filename": "Mandaadi.html",
+    "fileName": "Mandaadi.html",
+    "releaseDate": "September 10, 2026",
+    "status": "released",
+    "director": "Mathimaran Pugazhendhi",
+    "url": "Mandaadi.html",
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "7.5/10",
+        "url": "https://oakshow.in/Mandaadi.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "8.2/10",
+        "url": "https://www.imdb.com/title/tt36596965/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "NDTV",
+        "score": "3.5/5",
+        "url": "https://www.ndtv.com/entertainment/mandaadi-review-soori-shines-in-mathimaran-pugazhendhis-engaging-coastal-sports-drama-3-5-stars-12028873",
+        "icon": "pics/RatingSiteLogos/ndtv.ico"
+      },
+      {
+        "source": "Rediff",
+        "score": "3.5/5",
+        "url": "https://www.rediff.com/movies/review/mandaadi-movie-review-soori-delivers-strong-performance-in-engaging-sports-drama/20260913.htm",
+        "icon": "pics/RatingSiteLogos/rediff.png"
+      },
+      {
+        "source": "Times of India",
+        "score": "3/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movie-reviews/mandaadi/movie-review/134001460.cms",
+        "icon": "pics/RatingSiteLogos/times-of-india.ico"
+      },
+      {
+        "source": "Times Now",
+        "score": "3/5",
+        "url": "https://www.timesnownews.com/entertainment-news/reviews/mandaadi-movie-review-and-rating-soori-suhas-boat-racing-drama-makes-visual-splash-but-writing-holds-back-its-peak-review-156133146",
+        "icon": "pics/RatingSiteLogos/times-now.ico"
+      },
+      {
+        "source": "The Indian Express",
+        "score": "2.5/5",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/mandaadi-movie-review-soori-suhas-are-extraordinary-on-water-the-film-is-not-on-land-10871944/",
+        "icon": "pics/RatingSiteLogos/indian-express.png"
+      }
+    ]
   },
   {
     "id": "KhalifaTheRuler",

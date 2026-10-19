@@ -1,5 +1,1664 @@
 [
   {
+    "id": "Hope2026",
+    "slug": "hope-2026",
+    "type": "movie",
+    "category": "International",
+    "score": 8,
+    "filename": "Hope2026.html",
+    "fileName": "Hope2026.html",
+    "title": "Hope",
+    "metaTitle": "Hope (2026) All Ratings, Reviews, Songs, Videos, Bookings and News — OakShow",
+    "description": "In the remote border village of Hope Harbor near the Korean DMZ, a seasoned police chief and his rookie deputy face an unimaginable cosmic crisis when terrifying, unearthly beings appear and a local hunting party finds itself hunted in Na Hong-jin's visionary sci-fi epic.",
+    "plot": "Ko Bum-seok (Hwang Jung-min) is the world-weary police chief of Hope Harbor, a quiet, isolated village near the Korean Demilitarized Zone largely inhabited by elderly residents. When cattle turn up dead with horrific, impossible wounds, Bum-seok's second cousin Ko Sung-ki (Zo In-sung) and local hunters assume a stray predator is responsible. But panic swiftly consumes the village as a towering, intelligent, and seemingly indestructible extraterrestrial humanoid rampages through town, massacring villagers. With regional emergency services tied up combating wildfires, Bum-seok teams up with retired colonel Ahn Nak-yeon to track down the intruder, only to discover it is searching for its captured infant. Meanwhile, deep in the Carpathian and Korean mountain ridges, Sung-ki stumbles into a crashed alien starship where he encounters the extraterrestrial Empress J'aur (Alicia Vikander) and her lethal warrior Ma'veyyo (Michael Fassbender), escalating the local survival struggle into a high-octane cosmic confrontation for humanity's survival.",
+    "language": "Korean, English",
+    "releaseDate": "July 15, 2026",
+    "year": "2026",
+    "status": "released",
+    "genre": "Sci-Fi, Action, Thriller, Creature Feature, Monster",
+    "duration": "2hr 36min",
+    "certificate": "15+ / R",
+    "director": "Na Hong-jin",
+    "writer": "Na Hong-jin",
+    "basedOn": "",
+    "producers": "Na Hong-jin, Kim Sae-mi, Kim Sae-rom",
+    "productionCompanies": "Forged Films, Plus M Entertainment",
+    "musicDirector": "Michael Abels",
+    "cinematography": "Hong Kyung-pyo",
+    "editing": "Kim Sun-min",
+    "distributors": "Plus M Entertainment, Neon, Focus Features, Sony Pictures Worldwide Acquisitions, Star Entertainment",
+    "boxOffice": {
+      "budget": "$46 Million",
+      "worldwideGross": "$47 Million",
+      "domesticGross": "$36.0 Million (South Korea - 4.5M admissions)",
+      "overseasGross": "$11.0 Million (International & North America)",
+      "openingWeekend": "$11.3 Million (South Korea) / $3.2 Million (North America)",
+      "openingDay": "$1.1 Million (North America)",
+      "verdict": "Critically Acclaimed Hit / Major International Pre-Sales Record",
+      "source": "Box Office Mojo, The Numbers, Variety & Screen Daily",
+      "lastUpdated": "October 2026"
+    },
+    "budget": "$46 Million",
+    "awards": [
+      {
+        "organization": "Cannes Film Festival",
+        "year": "2026",
+        "wins": [],
+        "nominations": [
+          {
+            "category": "Palme d'Or",
+            "recipient": "Na Hong-jin"
+          }
+        ]
+      },
+      {
+        "organization": "Buil Film Awards",
+        "year": "2026",
+        "wins": [
+          {
+            "category": "Best Director",
+            "recipient": "Na Hong-jin"
+          },
+          {
+            "category": "Best New Actress",
+            "recipient": "Jung Ho-yeon"
+          },
+          {
+            "category": "Best Supporting Actor",
+            "recipient": "Eum Moon-suk"
+          },
+          {
+            "category": "Best Cinematography",
+            "recipient": "Hong Kyung-pyo"
+          },
+          {
+            "category": "Art and Technical Award",
+            "recipient": "Lee Hoo-kyung"
+          }
+        ],
+        "nominations": [
+          {
+            "category": "Best Film",
+            "recipient": "Hope"
+          }
+        ]
+      },
+      {
+        "organization": "New York Asian Film Festival",
+        "year": "2026",
+        "wins": [
+          {
+            "category": "Daniel A. Craft Award for Excellence in Action Cinema",
+            "recipient": "Na Hong-jin"
+          }
+        ],
+        "nominations": []
+      },
+      {
+        "organization": "Marie Claire Asia Star Awards",
+        "year": "2026",
+        "wins": [
+          {
+            "category": "Director of the Year Award",
+            "recipient": "Na Hong-jin"
+          },
+          {
+            "category": "Actor of the Year Award",
+            "recipient": "Zo In-sung"
+          }
+        ],
+        "nominations": []
+      }
+    ],
+    "poster": "pics/Films/Hope2026/1.jpg",
+    "banner": "pics/Films/Hope2026/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/Hope2026/1.jpg",
+        "alt": "Hope (2026) Official Theatrical Poster"
+      },
+      {
+        "src": "pics/Films/Hope2026/2.jpg",
+        "alt": "Hope (2026) Official Banner & Key Art"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "8/10",
+        "url": "https://oakshow.in/Hope2026.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "6.7/10",
+        "url": "https://www.imdb.com/title/tt27369017/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "79%",
+        "url": "https://www.rottentomatoes.com/m/hope_2026",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+      },
+      {
+        "source": "IGN",
+        "score": "9/10",
+        "url": "https://www.ign.com/articles/hope-review-na-hong-jin",
+        "icon": "pics/RatingSiteLogos/ign.png"
+      },
+      {
+        "source": "Roger Ebert",
+        "score": "3.5/4",
+        "url": "https://www.rogerebert.com/reviews/hope-na-jong-hin-movie-review-2026",
+        "icon": "pics/RatingSiteLogos/rogerebert.ico"
+      },
+      {
+        "source": "The Guardian",
+        "score": "4/5",
+        "url": "https://www.theguardian.com/film/2026/may/18/hope-review-non-stop-gonzo-alien-battling-is-top-quality-entertainment",
+        "icon": "pics/RatingSiteLogos/the-guardian.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "67/100",
+        "url": "https://www.metacritic.com/movie/hope-2026/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      },
+      {
+        "source": "Common Sense Media",
+        "score": "3/5",
+        "url": "https://www.commonsensemedia.org/movie-reviews/hope",
+        "icon": "pics/RatingSiteLogos/common-sense-media.png"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Hwang Jung-min",
+        "role": "Ko Bum-seok",
+        "description": "The world-weary police chief of Hope Harbor defending his town from an extraterrestrial menace"
+      },
+      {
+        "actor": "Zo In-sung",
+        "role": "Ko Sung-ki",
+        "description": "A headstrong local hunter and cousin to Bum-seok who tracks the creature into the mountains"
+      },
+      {
+        "actor": "Jung Ho-yeon",
+        "role": "Im Sung-ae",
+        "description": "A determined rookie police officer in Hope Harbor who aids in the town's defence"
+      },
+      {
+        "actor": "Michael Fassbender",
+        "role": "Ma'veyyo",
+        "description": "A formidable extraterrestrial warrior and royal bodyguard sworn to protect the alien Empress"
+      },
+      {
+        "actor": "Alicia Vikander",
+        "role": "J'aur",
+        "description": "The calculating alien Empress commanding the extraterrestrial survivors"
+      },
+      {
+        "actor": "Taylor Russell",
+        "role": "Ai'dovor",
+        "description": "A lethal alien creature and subordinate to Empress J'aur"
+      },
+      {
+        "actor": "Cameron Britton",
+        "role": "Va'migere",
+        "description": "The initial rampaging creature searching desperately for its lost offspring"
+      },
+      {
+        "actor": "Eum Moon-suk",
+        "role": "Yang-bae",
+        "description": "An eccentric local hunter and carpenter who inadvertently sparks the conflict"
+      },
+      {
+        "actor": "Lee Sang-hee",
+        "role": "Ahn Nak-yeon",
+        "description": "A seasoned, retired military colonel who assists Chief Bum-seok"
+      },
+      {
+        "actor": "Im Hyun-sik",
+        "role": "Mr. Hae-sul",
+        "description": "An elderly resident and respected voice among the Hope Harbor villagers"
+      }
+    ],
+    "trailers": [
+      {
+        "title": "Hope (2026) Official Theatrical Trailer - Plus M Entertainment & Neon",
+        "url": "https://www.youtube.com/results?search_query=Hope+Na+Hong-jin+trailer",
+        "embedUrl": "",
+        "youtubeId": "",
+        "type": "Official Trailer"
+      }
+    ],
+    "videos": [
+      {
+        "title": "Hope (2026) Official Trailer - Na Hong-jin",
+        "url": "https://www.youtube.com/results?search_query=Hope+Na+Hong-jin+trailer",
+        "youtubeId": ""
+      }
+    ],
+    "music": [],
+    "watchOnline": [],
+    "bookings": [],
+    "articles": [
+      {
+        "headline": "Hope review: Non-stop gonzo alien battling is top-quality entertainment",
+        "url": "https://www.theguardian.com/film/2026/may/18/hope-review-non-stop-gonzo-alien-battling-is-top-quality-entertainment",
+        "author": "The Guardian",
+        "date": "May 18, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Hope Review — Na Hong-jin delivers a rip-roaring Korean creature feature made with gonzo skill",
+        "url": "https://www.ign.com/articles/hope-review-na-hong-jin",
+        "author": "IGN",
+        "date": "May 18, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Hope movie review & film summary (2026) — Bonkers Korean monster movie destroys the hero narrative",
+        "url": "https://www.rogerebert.com/reviews/hope-na-jong-hin-movie-review-2026",
+        "author": "Roger Ebert",
+        "date": "May 18, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Hope Movie Review for Parents",
+        "url": "https://www.commonsensemedia.org/movie-reviews/hope",
+        "author": "Common Sense Media",
+        "date": "2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "The Most Intense Sci-Fi Movie of the Year Began with a Fishing Trip Near the Korean DMZ",
+        "url": "https://www.denofgeek.com/movies/most-intense-sci-fi-movie-of-the-year-began-fishing-trip-near-korean-dmz/",
+        "author": "Den of Geek",
+        "date": "2026",
+        "section": "News"
+      },
+      {
+        "headline": "Na Hong-jin's Korean sci-fi thriller Hope to release in India on October 23",
+        "url": "https://www.telegraphindia.com/entertainment/na-hong-jins-korean-sci-fi-thriller-hope-to-release-in-india-on-october-23/cid/2182234",
+        "author": "The Telegraph",
+        "date": "October 2026",
+        "section": "News"
+      }
+    ],
+    "similar": [
+      {
+        "title": "Project Hail Mary",
+        "link": "ProjectHailMary.html",
+        "poster": "pics/Films/ProjectHailMary/2.jpg"
+      },
+      {
+        "title": "The End of Oak Street",
+        "link": "TheEndofOakStreet.html",
+        "poster": "pics/Films/TheEndofOakStreet/1.jpg"
+      },
+      {
+        "title": "A Quiet Place",
+        "link": "AQuietPlace.html",
+        "poster": "pics/Films/AQuietPlace/1.jpg"
+      },
+      {
+        "title": "Alien: Covenant",
+        "link": "AlienCovenant2017.html",
+        "poster": "pics/Films/AlienCovenant2017/1.jpg"
+      },
+      {
+        "title": "Godzilla vs. Kong",
+        "link": "GodzillavsKong.html",
+        "poster": "pics/Films/GodzillavsKong/1.jpg"
+      },
+      {
+        "title": "The Predator",
+        "link": "ThePredator.html",
+        "poster": "pics/Films/ThePredator/1.jpg"
+      }
+    ],
+    "wikipedia": "https://en.wikipedia.org/wiki/Hope_(2026_film)",
+    "imdb": "https://www.imdb.com/title/tt27369017/"
+  },
+  {
+    "id": "TheSocialReckoning",
+    "slug": "the-social-reckoning",
+    "type": "movie",
+    "category": "Hollywood",
+    "score": 7.5,
+    "filename": "TheSocialReckoning.html",
+    "fileName": "TheSocialReckoning.html",
+    "title": "The Social Reckoning",
+    "metaTitle": "The Social Reckoning (2026) All Ratings, Reviews, Songs, Videos, Bookings and News — OakShow",
+    "description": "A data engineer uncovers damning internal evidence of algorithmic harm inside Facebook and risks everything alongside an investigative reporter to publish The Facebook Files.",
+    "plot": "Set between 2019 and 2021, The Social Reckoning tracks Frances Haugen (Mikey Madison), a conscientious data engineer and product manager recruited to Facebook with the belief of making human connection safer and more transparent. As she embeds into the company's integrity and civic moderation teams, Haugen discovers that executive leadership—guided by a calculating Mark Zuckerberg (Jeremy Strong)—repeatedly dismantled safeguards, prioritized engagement algorithms that amplify rage and divisiveness for ad revenue, concealed internal research regarding Instagram's toxic psychological toll on teenagers, and neglected human-trafficking networks across vulnerable global regions.\n\nDisillusioned and fearing irreparable societal erosion, Haugen begins methodically downloading tens of thousands of confidential internal presentations and research memoranda. She covertly contacts Jeff Horwitz (Jeremy Allen White), an intrepid Wall Street Journal investigative reporter. Over frantic months of coded communications and clandestine hotel debriefings, Horwitz unravels the engineering jargon while Haugen risks prison under the Espionage Act. Their explosive collaboration culminates in 'The Facebook Files' series and Haugen unmasking herself before a global Senate judiciary hearing, igniting a historic confrontation between Silicon Valley's titan and the public interest.",
+    "language": "English",
+    "releaseDate": "October 9, 2026",
+    "year": "2026",
+    "status": "released",
+    "genre": "Drama, Thriller, Biography, History",
+    "duration": "1hr 52min",
+    "certificate": "R",
+    "director": "Aaron Sorkin",
+    "writer": "Aaron Sorkin",
+    "basedOn": "The Facebook Files reporting by Jeff Horwitz and The Wall Street Journal, and disclosures by Frances Haugen",
+    "producers": "Todd Black, Peter Rice, Aaron Sorkin, Tony A. Grier, Stuart M. Besser",
+    "productionCompanies": "Columbia Pictures, Alcon Entertainment, Escape Artists",
+    "distributor": "Sony Pictures Releasing",
+    "musicDirector": "Alexandre Desplat",
+    "cinematography": "Jeff Cronenweth",
+    "editing": "Alan Baumgarten",
+    "boxOffice": {
+      "budget": "$35 million",
+      "worldwideGross": "$14.3 million",
+      "domesticGross": "$8.5 million",
+      "openingWeekend": "$5.2 million (Domestic)",
+      "internationalGross": "$5.8 million",
+      "verdict": "In Theatres / Global Theatrical Debut",
+      "source": "Box Office Mojo / The Numbers / Deadline",
+      "lastUpdated": "October 19, 2026"
+    },
+    "budget": "$35 million",
+    "awards": [],
+    "poster": "pics/Films/TheSocialReckoning/1.jpg",
+    "banner": "pics/Films/TheSocialReckoning/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/TheSocialReckoning/1.jpg",
+        "alt": "The Social Reckoning Theatrical Poster"
+      },
+      {
+        "src": "pics/Films/TheSocialReckoning/2.jpg",
+        "alt": "The Social Reckoning Key Art Banner"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "7.5/10",
+        "url": "https://oakshow.in/TheSocialReckoning.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "6.7/10",
+        "url": "https://www.imdb.com/title/tt37510326/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "54%",
+        "url": "https://www.rottentomatoes.com/m/the_social_reckoning",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-rotten.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "51%",
+        "url": "https://www.metacritic.com/movie/the-social-reckoning/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      },
+      {
+        "source": "IGN",
+        "score": "7/10",
+        "url": "https://www.ign.com/articles/the-social-reckoning-review",
+        "icon": "pics/RatingSiteLogos/ign.png"
+      },
+      {
+        "source": "Times of India",
+        "score": "4/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/english/the-social-reckoning/movie-review/134779142.cms",
+        "icon": "pics/RatingSiteLogos/times-of-india.ico"
+      },
+      {
+        "source": "Indian Express",
+        "score": "3.5/5",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/the-social-reckoning-movie-review-aaron-sorkin-film-looks-beyond-zuckerberg-to-the-leak-that-shook-meta-10914028/",
+        "icon": "pics/RatingSiteLogos/indian-express.png"
+      },
+      {
+        "source": "India Today",
+        "score": "3/5",
+        "url": "https://www.indiatoday.in/movies/reviews/story/the-social-reckoning-review-a-sharp-and-occasionally-stirring-journalism-thriller-3013204-2026-10-09",
+        "icon": "pics/RatingSiteLogos/india-today.ico"
+      },
+      {
+        "source": "Roger Ebert",
+        "score": "3/4",
+        "url": "https://www.rogerebert.com/reviews/the-social-reckoning-film-review-2026",
+        "icon": "pics/RatingSiteLogos/rogerebert.ico"
+      },
+      {
+        "source": "Den of Geek",
+        "score": "3/5",
+        "url": "https://www.denofgeek.com/movies/the-social-reckoning-review-aaron-sorkin-mark-zuckerberg/",
+        "icon": "pics/RatingSiteLogos/denofgeek.ico"
+      },
+      {
+        "source": "The Guardian",
+        "score": "3/5",
+        "url": "https://www.theguardian.com/film/2026/oct/13/the-social-reckoning-aaron-sorkin",
+        "icon": "pics/RatingSiteLogos/the-guardian.png"
+      },
+      {
+        "source": "Common Sense Media",
+        "score": "3/5",
+        "url": "https://www.commonsensemedia.org/movie-reviews/the-social-reckoning",
+        "icon": "pics/RatingSiteLogos/common-sense-media.png"
+      },
+      {
+        "source": "NDTV",
+        "score": "2.5/5",
+        "url": "https://www.ndtv.com/entertainment/the-social-reckoning-review-aaron-sorkins-sequel-falls-short-of-the-social-network-12161253",
+        "icon": "pics/RatingSiteLogos/ndtv.ico"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Mikey Madison",
+        "role": "Frances Haugen",
+        "description": "Former Facebook product manager who made the momentous decision to blow the whistle on the company's internal research"
+      },
+      {
+        "actor": "Jeremy Allen White",
+        "role": "Jeff Horwitz",
+        "description": "Wall Street Journal tech reporter who broke 'The Facebook Files' series based on leaked documents"
+      },
+      {
+        "actor": "Jeremy Strong",
+        "role": "Mark Zuckerberg",
+        "description": "Facebook CEO and co-founder grappling with scrutiny and defending his platform's corporate imperatives"
+      },
+      {
+        "actor": "Wunmi Mosaku",
+        "role": "Raya",
+        "description": "Haugen's trusted confidante and fellow civic integrity advocate"
+      },
+      {
+        "actor": "Betty Gilpin",
+        "role": "Christina",
+        "description": "Corporate communications director navigating the media fallout"
+      },
+      {
+        "actor": "Billy Magnussen",
+        "role": "Teddy",
+        "description": "A senior product executive prioritizing engagement metrics"
+      },
+      {
+        "actor": "Bill Burr",
+        "role": "Charlie",
+        "description": "An outspoken veteran engineer critical of executive priorities"
+      }
+    ],
+    "trailers": [
+      {
+        "title": "The Social Reckoning Official Main Trailer",
+        "url": "https://www.youtube.com/watch?v=MfHEZw7Xw_c",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/MfHEZw7Xw_c",
+        "youtubeId": "MfHEZw7Xw_c",
+        "type": "Main Trailer"
+      },
+      {
+        "title": "The Social Reckoning Official Teaser Trailer",
+        "url": "https://www.youtube.com/watch?v=gM4LkaXwGuY",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/gM4LkaXwGuY",
+        "youtubeId": "gM4LkaXwGuY",
+        "type": "Teaser Trailer"
+      }
+    ],
+    "videos": [
+      {
+        "title": "The Social Reckoning Official Main Trailer",
+        "url": "https://www.youtube.com/watch?v=MfHEZw7Xw_c",
+        "youtubeId": "MfHEZw7Xw_c"
+      },
+      {
+        "title": "The Social Reckoning Official Teaser Trailer",
+        "url": "https://www.youtube.com/watch?v=gM4LkaXwGuY",
+        "youtubeId": "gM4LkaXwGuY"
+      }
+    ],
+    "music": [
+      {
+        "provider": "Spotify",
+        "url": "https://open.spotify.com/episode/3GHkKusCckc3eonncQMQsk",
+        "icon": "pics/MusicWebsiteLogos/spotify.png",
+        "label": "Listen on Spotify"
+      },
+      {
+        "provider": "Apple Music",
+        "url": "https://music.apple.com/us/album/the-social-reckoning-original-motion-picture-soundtrack/6816234712",
+        "icon": "pics/MusicWebsiteLogos/itunes.png",
+        "label": "Listen on Apple Music"
+      }
+    ],
+    "bookings": [
+      {
+        "provider": "BookMyShow",
+        "url": "https://in.bookmyshow.com/movies/mumbai/the-social-reckoning/ET00506449",
+        "icon": "pics/BookngWebSiteLogos/book-my-show.png",
+        "label": "Book on BookMyShow",
+        "rank": 1
+      },
+      {
+        "provider": "District",
+        "url": "https://www.district.in/movies/the-social-reckoning-movie-tickets-MV207694?srsltid=AU7gw4UEA5_-lCy1tuZDJk0LbS-G6_qJ5TPMEgpERs50sdKTn8yCOo1U",
+        "icon": "pics/BookngWebSiteLogos/district.png",
+        "label": "Book on District",
+        "rank": 2
+      },
+      {
+        "provider": "Fandango",
+        "url": "https://www.fandango.com/the-social-reckoning-2026-246392/movie-overview",
+        "icon": "pics/BookngWebSiteLogos/fandango.png",
+        "label": "Book on Fandango",
+        "rank": 3
+      },
+      {
+        "provider": "Cineworld",
+        "url": "https://www.cineworld.co.uk/films/1000026649-the-social-reckoning/",
+        "icon": "pics/BookngWebSiteLogos/cineworld.png",
+        "label": "Book on Cineworld",
+        "rank": 4
+      }
+    ],
+    "watchOnline": [],
+    "articles": [
+      {
+        "headline": "The Social Reckoning Review: Aaron Sorkin Explores the Cost of Facebook's Unchecked Influence",
+        "url": "https://www.denofgeek.com/movies/the-social-reckoning-review-aaron-sorkin-mark-zuckerberg/",
+        "author": "Den of Geek",
+        "date": "October 8, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "The Social Reckoning Review — Aaron Sorkin Returns to the Facebook Saga",
+        "url": "https://www.ign.com/articles/the-social-reckoning-review",
+        "author": "IGN",
+        "date": "October 9, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "The Social Reckoning Review: Jeremy Strong's Perma-Clenched Tech Titan Watches Aghast as Facebook Tears Society Apart",
+        "url": "https://www.independent.ie/entertainment/movies/movie-reviews/the-social-reckoning-jeremy-strongs-perma-clenched-villain-watches-aghast-as-facebook-tears-his-country-apart/a/162638115.html",
+        "author": "Independent.ie",
+        "date": "October 9, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "The Social Reckoning Review: Aaron Sorkin Film Looks Beyond Zuckerberg to the Leak That Shook Meta",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/the-social-reckoning-movie-review-aaron-sorkin-film-looks-beyond-zuckerberg-to-the-leak-that-shook-meta-10914028/",
+        "author": "The Indian Express",
+        "date": "October 10, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "The Social Reckoning Review: A Sharp and Occasionally Stirring Journalism Thriller",
+        "url": "https://www.indiatoday.in/movies/reviews/story/the-social-reckoning-review-a-sharp-and-occasionally-stirring-journalism-thriller-3013204-2026-10-09",
+        "author": "India Today",
+        "date": "October 9, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "The Social Reckoning Movie Review: Aaron Sorkin Tackles Silicon Valley Whistleblower Drama",
+        "url": "https://www.rogerebert.com/reviews/the-social-reckoning-film-review-2026",
+        "author": "RogerEbert.com",
+        "date": "October 8, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "The Social Reckoning Review: Aaron Sorkin's Fast-Talking Tech Exposé",
+        "url": "https://www.theguardian.com/film/2026/oct/13/the-social-reckoning-aaron-sorkin",
+        "author": "The Guardian",
+        "date": "October 13, 2026",
+        "section": "Critic Reviews"
+      }
+    ],
+    "similarMovies": [
+      {
+        "id": "SheSaid",
+        "title": "She Said (film)",
+        "filename": "SheSaid.html",
+        "score": 7.3,
+        "poster": "pics/Films/SheSaid/1.jpg"
+      },
+      {
+        "id": "Mank",
+        "title": "Mank (film)",
+        "filename": "Mank.html",
+        "score": 7.2,
+        "poster": "pics/Films/Mank/1.jpg"
+      },
+      {
+        "id": "BillionaireBoysClub",
+        "title": "Billionaire Boys Club (2018 film)",
+        "filename": "BillionaireBoysClub.html",
+        "score": 5.6,
+        "poster": "pics/Films/BillionaireBoysClub/1.jpg"
+      },
+      {
+        "id": "ViceroysHouse",
+        "title": "Viceroy's House (film)",
+        "filename": "ViceroysHouse.html",
+        "score": 6.7,
+        "poster": "pics/Films/ViceroysHouse/1.jpg"
+      },
+      {
+        "id": "PiecesofaWoman",
+        "title": "Pieces of a Woman",
+        "filename": "PiecesofaWoman.html",
+        "score": 7,
+        "poster": "pics/Films/PiecesofaWoman/1.jpg"
+      },
+      {
+        "id": "NewsoftheWorld",
+        "title": "News of the World",
+        "filename": "NewsoftheWorld.html",
+        "score": 6.8,
+        "poster": "pics/Films/NewsoftheWorld/1.jpg"
+      },
+      {
+        "id": "TheRunner",
+        "title": "The Runner",
+        "filename": "TheRunner.html",
+        "score": 6.5,
+        "poster": "pics/Films/TheRunner/1.jpg"
+      },
+      {
+        "id": "TopGunMaverick",
+        "title": "Top Gun: Maverick",
+        "filename": "TopGunMaverick.html",
+        "score": 8.3,
+        "poster": "pics/Films/TopGunMaverick/1.jpg"
+      },
+      {
+        "id": "Tenet",
+        "title": "TENET (film)",
+        "filename": "Tenet.html",
+        "score": 7.4,
+        "poster": "pics/Films/Tenet/1.jpg"
+      }
+    ]
+  },
+  {
+    "id": "StreetFighter2026",
+    "slug": "street-fighter-2026",
+    "type": "movie",
+    "category": "Hollywood",
+    "score": 7,
+    "filename": "StreetFighter2026.html",
+    "fileName": "StreetFighter2026.html",
+    "title": "Street Fighter (2026 film)",
+    "metaTitle": "Street Fighter (2026 film) All Ratings, Reviews, Songs, Videos, Bookings and News — OakShow",
+    "description": "Estranged martial arts rivals Ryu and Ken Masters are thrust into the perilous underground World Warrior Tournament orchestrated by Chun-Li, battling lethal fighters across the globe to bring down the ruthless syndicate of M. Bison.",
+    "plot": "Set in 1993, the film follows former friends and martial arts prodigies Ryu (Andrew Koji) and Ken Masters (Noah Centineo), whose brotherhood disintegrated following a bitter, unspoken falling out during their youth. When the mysterious and resolute Chun-Li (Callina Liang) tracks them down, she recruits the estranged fighters into the legendary, high-stakes World Warrior Tournament.\n\nWhat begins as a test of strength against extraordinary global competitors—including the feral Blanka (Jason Momoa), unyielding military operative Guile (Cody Rhodes), heavy-hitting pugilist Balrog (Curtis '50 Cent' Jackson), lethal masked matador Vega (Orville Peck), mystic warrior Dhalsim (Vidyut Jammwal), and monstrous combatant Zangief (Olivier Richters)—soon exposes a far darker geopolitical conspiracy. Reunited against overwhelming odds, Ryu and Ken must conquer their lingering rivalry, unlock their ultimate inner fighting techniques, and confront the malevolent megalomaniac dictator M. Bison (David Dastmalchian) and the demonic entity Akuma (Joe 'Roman Reigns' Anoa'i) before their syndicate plunges the world into chaos.",
+    "language": "English",
+    "releaseDate": "October 16, 2026",
+    "year": "2026",
+    "status": "released",
+    "genre": "Action, Martial Arts, Comedy, Adventure",
+    "duration": "2hr 00min",
+    "certificate": "PG-13",
+    "director": "Kitao Sakurai",
+    "writer": "T. J. Fixman, Kitao Sakurai (Screenplay); Dalan Musson, Gary Dauberman (Story)",
+    "basedOn": "Street Fighter by Capcom",
+    "producers": "Mary Parent, Cale Boyter, Jason Momoa, Takayuki Nakayama, Stefan Makhoul",
+    "productionCompanies": "Legendary Pictures, Capcom",
+    "distributor": "Paramount Pictures",
+    "musicDirector": "Leo Birenberg, Zach Robinson",
+    "cinematography": "Ken Seng",
+    "editing": "James Thomas, Delaney Del Vecchio",
+    "boxOffice": {
+      "budget": "$82 million",
+      "worldwideGross": "$51 million",
+      "domesticGross": "$31 million",
+      "openingWeekend": "$31 million (Domestic)",
+      "internationalGross": "$20 million",
+      "verdict": "In Theatres / Global Theatrical Debut",
+      "source": "Box Office Mojo / The Numbers / Deadline",
+      "lastUpdated": "October 19, 2026"
+    },
+    "budget": "$82 million",
+    "awards": [],
+    "poster": "pics/Films/StreetFighter2026/1.jpg",
+    "banner": "pics/Films/StreetFighter2026/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/StreetFighter2026/1.jpg",
+        "alt": "Street Fighter Theatrical Poster"
+      },
+      {
+        "src": "pics/Films/StreetFighter2026/2.jpg",
+        "alt": "Street Fighter Key Art & Banner"
+      },
+      {
+        "src": "pics/Films/StreetFighter2026/3.jpg",
+        "alt": "Street Fighter Cinematic Action Still"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "7/10",
+        "url": "https://oakshow.in/StreetFighter2026.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "6.3/10",
+        "url": "https://www.imdb.com/title/tt27419420/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "42%",
+        "url": "https://www.rottentomatoes.com/m/street_fighter_2026",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-rotten.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "44%",
+        "url": "https://www.metacritic.com/movie/street-fighter-2026/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      },
+      {
+        "source": "IGN",
+        "score": "6/10",
+        "url": "https://www.ign.com/movies/street-fighter-2026",
+        "icon": "pics/RatingSiteLogos/ign.png"
+      },
+      {
+        "source": "Den of Geek",
+        "score": "3/5",
+        "url": "https://www.denofgeek.com/movies/street-fighter-review/",
+        "icon": "pics/RatingSiteLogos/denofgeek.ico"
+      },
+      {
+        "source": "Hindustan Times",
+        "score": "3/5",
+        "url": "https://www.hindustantimes.com/entertainment/hollywood/street-fighter-movie-review-arcade-come-to-life-in-kitao-sakurai-fun-zany-reboot-vidyut-jammwal-hollywood-debut-andrew-koji-noah-centineo-101792138283963.html",
+        "icon": "pics/RatingSiteLogos/hindustan-times.png"
+      },
+      {
+        "source": "Times of India",
+        "score": "3/5",
+        "url": "https://timesofindia.indiatimes.com/movie-review/134980809.cms",
+        "icon": "pics/RatingSiteLogos/times-of-india.ico"
+      },
+      {
+        "source": "India Today",
+        "score": "3/5",
+        "url": "https://www.indiatoday.in/movies/reviews/story/street-fighter-review-noah-centineo-vidyut-jammwal-action-film-unapologetically-silly-testosterone-fuelled-3018543-2026-10-16",
+        "icon": "pics/RatingSiteLogos/india-today.ico"
+      },
+      {
+        "source": "The Guardian",
+        "score": "2/5",
+        "url": "https://www.theguardian.com/film/2026/oct/15/street-fighter-movie-review",
+        "icon": "pics/RatingSiteLogos/the-guardian.png"
+      },
+      {
+        "source": "Common Sense Media",
+        "score": "2/5",
+        "url": "https://www.commonsensemedia.org/movie-reviews/street-fighter-0",
+        "icon": "pics/RatingSiteLogos/common-sense-media.png"
+      },
+      {
+        "source": "Roger Ebert",
+        "score": "1.5/4",
+        "url": "https://www.rogerebert.com/reviews/street-fighter-video-game-movie-review-2026",
+        "icon": "pics/RatingSiteLogos/rogerebert.ico"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Andrew Koji",
+        "role": "Ryu",
+        "description": "A dedicated wandering martial artist seeking inner balance and mastery of the Ansatsuken style"
+      },
+      {
+        "actor": "Noah Centineo",
+        "role": "Ken Masters",
+        "description": "Ryu's fiery estranged sparring partner and wealthy American martial arts champion"
+      },
+      {
+        "actor": "Callina Liang",
+        "role": "Chun-Li",
+        "description": "An investigative martial artist seeking vengeance and justice against M. Bison"
+      },
+      {
+        "actor": "David Dastmalchian",
+        "role": "M. Bison",
+        "description": "The tyrannical mastermind behind Shadaloo and the deadly World Warrior Tournament"
+      },
+      {
+        "actor": "Jason Momoa",
+        "role": "Blanka",
+        "description": "A feral jungle warrior endowed with ferocious strength and bio-electric power"
+      },
+      {
+        "actor": "Joe 'Roman Reigns' Anoa'i",
+        "role": "Akuma",
+        "description": "The fearsome master of the Dark Hado who challenges the tournament's greatest combatants"
+      },
+      {
+        "actor": "Cody Rhodes",
+        "role": "Guile",
+        "description": "A decorated U.S. military officer on a personal mission to dismantle Shadaloo"
+      },
+      {
+        "actor": "Curtis '50 Cent' Jackson",
+        "role": "Balrog",
+        "description": "A brutal heavyweight prizefighter enforcer working for M. Bison"
+      },
+      {
+        "actor": "Orville Peck",
+        "role": "Vega",
+        "description": "A masked, clawed assassin obsessed with lethal combat and aesthetics"
+      },
+      {
+        "actor": "Mel Jarnson",
+        "role": "Cammy White",
+        "description": "An agile operative caught between her mysterious past and the tournament"
+      },
+      {
+        "actor": "Vidyut Jammwal",
+        "role": "Dhalsim",
+        "description": "A calm Yoga master who wields transcendent pyrotechnic abilities in battle"
+      },
+      {
+        "actor": "Olivier Richters",
+        "role": "Zangief",
+        "description": "The towering Red Cyclone and powerhouse wrestler from the Russian tundra"
+      },
+      {
+        "actor": "Hirooki Goto",
+        "role": "E. Honda",
+        "description": "A world-class sumo wrestler representing traditional Japanese fighting arts"
+      },
+      {
+        "actor": "Andrew Schulz",
+        "role": "Dan Hibiki",
+        "description": "An overconfident, flamboyant fighter bringing comic relief to the arena"
+      },
+      {
+        "actor": "Eric André",
+        "role": "Don Sauvage",
+        "description": "An eccentric tournament promoter and high-energy underground host"
+      },
+      {
+        "actor": "Alexander Volkanovski",
+        "role": "Joe",
+        "description": "A relentless kickboxer competing in the opening tournament rounds"
+      },
+      {
+        "actor": "Rayna Vallandingham",
+        "role": "Juli",
+        "description": "An elite assassin loyal to Bison's inner circle"
+      }
+    ],
+    "trailers": [
+      {
+        "title": "Street Fighter Official Main Trailer",
+        "url": "https://www.youtube.com/watch?v=U6sbm1OaJb8",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/U6sbm1OaJb8",
+        "youtubeId": "U6sbm1OaJb8",
+        "type": "Main Trailer"
+      },
+      {
+        "title": "Street Fighter Official Teaser Trailer",
+        "url": "https://www.youtube.com/watch?v=Xt4X4FvXk2A",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/Xt4X4FvXk2A",
+        "youtubeId": "Xt4X4FvXk2A",
+        "type": "Teaser Trailer"
+      }
+    ],
+    "videos": [
+      {
+        "title": "Street Fighter Official Main Trailer",
+        "url": "https://www.youtube.com/watch?v=U6sbm1OaJb8",
+        "youtubeId": "U6sbm1OaJb8"
+      },
+      {
+        "title": "Street Fighter Official Teaser Trailer",
+        "url": "https://www.youtube.com/watch?v=Xt4X4FvXk2A",
+        "youtubeId": "Xt4X4FvXk2A"
+      }
+    ],
+    "music": [
+      {
+        "provider": "Spotify",
+        "url": "https://open.spotify.com/album/1gcwXZHiC8sdIxch3TGiuq",
+        "icon": "pics/MusicWebsiteLogos/spotify.png",
+        "label": "Listen on Spotify"
+      },
+      {
+        "provider": "Apple Music",
+        "url": "https://music.apple.com/us/album/street-fighter-original-motion-picture-soundtrack/6816831537",
+        "icon": "pics/MusicWebsiteLogos/itunes.png",
+        "label": "Listen on Apple Music"
+      }
+    ],
+    "bookings": [
+      {
+        "provider": "BookMyShow",
+        "url": "https://in.bookmyshow.com/movies/street-fighter/ET00481645",
+        "icon": "pics/BookngWebSiteLogos/book-my-show.png",
+        "label": "Book on BookMyShow",
+        "rank": 1
+      },
+      {
+        "provider": "District",
+        "url": "https://www.district.in/movies/street-fighter-movie-tickets-MV204027?srsltid=AU7gw4UMztm7aTTw5sBX3OdVJHKm8uYvPk6uoJnyOli7UBA8b_Rmjm48",
+        "icon": "pics/BookngWebSiteLogos/district.png",
+        "label": "Book on District",
+        "rank": 2
+      },
+      {
+        "provider": "TicketNew",
+        "url": "https://ticketnew.com/movies/street-fighter-movie-detail-204027",
+        "icon": "pics/BookngWebSiteLogos/ticket-new.png",
+        "label": "Book on TicketNew",
+        "rank": 3
+      },
+      {
+        "provider": "Fandango",
+        "url": "https://www.fandango.com/street-fighter-2026-246472/movie-overview",
+        "icon": "pics/BookngWebSiteLogos/fandango.png",
+        "label": "Book on Fandango",
+        "rank": 4
+      }
+    ],
+    "watchOnline": [],
+    "articles": [
+      {
+        "headline": "Street Fighter Review: A Wildly Entertaining Video Game Adaptation That Doesn't Take Itself Too Seriously",
+        "url": "https://www.denofgeek.com/movies/street-fighter-review/",
+        "author": "Den of Geek",
+        "date": "October 15, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Street Fighter movie review: Arcade comes to life in Kitao Sakurai's fun, zany reboot with Vidyut Jammwal, Andrew Koji and Noah Centineo",
+        "url": "https://www.hindustantimes.com/entertainment/hollywood/street-fighter-movie-review-arcade-come-to-life-in-kitao-sakurai-fun-zany-reboot-vidyut-jammwal-hollywood-debut-andrew-koji-noah-centineo-101792138283963.html",
+        "author": "Hindustan Times",
+        "date": "October 16, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Street Fighter (2026) Review: Kitao Sakurai delivers energetic martial arts nostalgia",
+        "url": "https://www.ign.com/movies/street-fighter-2026",
+        "author": "IGN",
+        "date": "October 15, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Street Fighter movie review: Bland fights and a few good laughs",
+        "url": "https://www.newindianexpress.com/entertainment/review/2026/Oct/16/englishreview2026oct16street-fighter-movie-review-bland-fights-and-a-few-good-laughs",
+        "author": "The New Indian Express",
+        "date": "October 16, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Street Fighter movie review: Star-studded cast delivers campy martial arts fun",
+        "url": "https://www.thehindu.com/entertainment/movies/street-fighter-movie-review-noah-centineo-andrew-schulz-vidyut-jammwal-cody-rhodes-roman-reigns-jason-momoa-50-cent/article71592175.ece",
+        "author": "The Hindu",
+        "date": "October 16, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Street Fighter review – garish video game reboot never finds its footing",
+        "url": "https://www.theguardian.com/film/2026/oct/15/street-fighter-movie-review",
+        "author": "The Guardian",
+        "date": "October 15, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Street Fighter Movie Review: A nostalgic, popcorn-action reboot for gaming fans",
+        "url": "https://timesofindia.indiatimes.com/movie-review/134980809.cms",
+        "author": "Times of India",
+        "date": "October 16, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Street Fighter review: Noah Centineo, Vidyut Jammwal action film is unapologetically silly and testosterone-fuelled",
+        "url": "https://www.indiatoday.in/movies/reviews/story/street-fighter-review-noah-centineo-vidyut-jammwal-action-film-unapologetically-silly-testosterone-fuelled-3018543-2026-10-16",
+        "author": "India Today",
+        "date": "October 16, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Street Fighter Movie Review: Uneven video game adaptation struggles despite lively ensemble",
+        "url": "https://www.rogerebert.com/reviews/street-fighter-video-game-movie-review-2026",
+        "author": "Roger Ebert",
+        "date": "October 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Street Fighter Review: Heavy martial arts violence in video game reboot",
+        "url": "https://www.commonsensemedia.org/movie-reviews/street-fighter-0",
+        "author": "Common Sense Media",
+        "date": "October 2026",
+        "section": "Critic Reviews"
+      }
+    ],
+    "similar": [
+      {
+        "title": "Matchbox: The Movie",
+        "link": "MatchboxTheMovie.html",
+        "poster": "pics/Films/MatchboxTheMovie/1.jpg"
+      },
+      {
+        "title": "Pokémon Detective Pikachu",
+        "link": "PokemonDetectivePikachu.html",
+        "poster": "pics/Films/PokemonDetectivePikachu/2.jpg"
+      },
+      {
+        "title": "Assassin's Creed",
+        "link": "AssassinsCreed.html",
+        "poster": "pics/Films/Assassins Creed/4.jpg"
+      },
+      {
+        "title": "Alita: Battle Angel",
+        "link": "AlitaBattleAngel.html",
+        "poster": "pics/Films/AlitaBattleAngel/2.jpg"
+      },
+      {
+        "title": "Kickboxer: Vengeance",
+        "link": "KickboxerVengeance.html",
+        "poster": "pics/Films/Kickboxer Vengeance/4.jpg"
+      },
+      {
+        "title": "Fast & Furious Presents: Hobbs & Shaw",
+        "link": "HobbsandShaw.html",
+        "poster": "pics/Films/HobbsandShaw/2.jpg"
+      },
+      {
+        "title": "Pacific Rim Uprising",
+        "link": "PacificRimUprising.html",
+        "poster": "pics/Films/PacificRimUprising/1.jpg"
+      },
+      {
+        "title": "Bumblebee",
+        "link": "Bumblebee.html",
+        "poster": "pics/Films/Bumblebee/2.jpg"
+      },
+      {
+        "title": "John Wick: Chapter 2",
+        "link": "JohnWickChapter2.html",
+        "poster": "pics/Films/John%20Wick%20Chapter%202/1.jpg"
+      }
+    ],
+    "wikipedia": "https://en.wikipedia.org/wiki/Street_Fighter_(2026_film)",
+    "imdb": "https://www.imdb.com/title/tt27419420/"
+  },
+  {
+    "id": "Jailer2",
+    "slug": "jailer-2",
+    "type": "movie",
+    "category": "Indian",
+    "score": 7.2,
+    "filename": "Jailer2.html",
+    "fileName": "Jailer2.html",
+    "title": "Jailer 2",
+    "metaTitle": "Jailer 2 (2026) All Ratings, Reviews, Songs, Videos, Bookings and News — OakShow",
+    "description": "Tiger Muthuvel Pandian returns to confront an all-new criminal underworld and the formidable Kalpak family syndicate led by Bodhi and Chakri, in Nelson Dilipkumar's explosive high-octane action thriller sequel.",
+    "plot": "Three months after dismantling Varman's idol-smuggling syndicate, retired jailer Tiger Muthuvel Pandian (Rajinikanth) is living quietly near the Kerala-Tamil Nadu border. However, Varman's ruthless associate Dileep (Suraj Venjaramoodu) and an investigator named Mukund track him down to avenge Varman. As danger closes in on Muthuvel's family, they are protected by his trusted pan-Indian allies Mathew (Mohanlal), Narasimha (Shiva Rajkumar), and Kamdev (Jackie Shroff). Soon, Muthuvel is pulled into an all-out war against the formidable Kalpak crime family operating from Goa, led by the calculating Bodhi Kalpak (S. J. Suryah), his patriarch father Chakri (Mithun Chakraborty), and sister Kantha (Vidya Balan). Armed with tactical brilliance, formidable undercover allies, and lethal explosive retribution, Muthuvel wages a relentless battle to safeguard his loved ones and obliterate the syndicate once and for all.",
+    "language": "Tamil",
+    "releaseDate": "October 15, 2026",
+    "year": "2026",
+    "status": "released",
+    "genre": "Action, Crime, Thriller, Comedy",
+    "duration": "2hr 45min",
+    "certificate": "UA 16+",
+    "director": "Nelson Dilipkumar",
+    "writer": "Nelson Dilipkumar",
+    "basedOn": "",
+    "producers": "Kalanithi Maran",
+    "productionCompanies": "Sun Pictures",
+    "musicDirector": "Anirudh Ravichander",
+    "cinematography": "Vijay Kartik Kannan",
+    "editing": "R. Nirmal",
+    "boxOffice": {
+      "budget": "₹250–350 crore",
+      "worldwideGross": "₹424.25 crore ($51 million in 4 Days)",
+      "openingDay": "₹120 crore (Worldwide Opening Day)",
+      "openingWeekend": "₹424.25 crore (4-Day Opening Weekend)",
+      "indiaGross": "₹260+ crore",
+      "overseasGross": "₹164+ crore ($19.7M)",
+      "verdict": "Blockbuster Opening / Highest-Grossing Tamil Film of 2026",
+      "source": "Sacnilk / Trade Estimates / NDTV / The Telegraph",
+      "lastUpdated": "October 19, 2026 (Day 4)"
+    },
+    "budget": "₹250–350 crore",
+    "awards": [],
+    "poster": "pics/Films/Jailer2/1.jpeg",
+    "banner": "pics/Films/Jailer2/2.jpeg",
+    "gallery": [
+      {
+        "src": "pics/Films/Jailer2/1.jpeg",
+        "alt": "Jailer 2 Official Theatrical Poster"
+      },
+      {
+        "src": "pics/Films/Jailer2/2.jpeg",
+        "alt": "Jailer 2 Banner & Key Art"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "7.2/10",
+        "url": "https://oakshow.in/Jailer2.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-this-one-is-above-average.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "8.1/10",
+        "url": "https://www.imdb.com/title/tt33318732/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "91%",
+        "url": "https://www.rottentomatoes.com/m/jailer_2",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+      },
+      {
+        "source": "NDTV",
+        "score": "3.5/5",
+        "url": "https://www.ndtv.com/entertainment/jailer-2-review-a-solid-commercial-entertainer-thanks-to-superstar-rajinikanth-3-5-stars-12188670",
+        "icon": "pics/RatingSiteLogos/ndtv.ico"
+      },
+      {
+        "source": "Times of India",
+        "score": "3.0/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movie-reviews/jailer-2/movie-review/134961587.cms",
+        "icon": "pics/RatingSiteLogos/times-of-india.ico"
+      },
+      {
+        "source": "India Today",
+        "score": "3.0/5",
+        "url": "https://www.indiatoday.in/movies/reviews/story/jailer-2-movie-review-rajinikanth-swagger-and-nelsons-humour-strike-gold-again-3017726-2026-10-15",
+        "icon": "pics/RatingSiteLogos/india-today.ico"
+      },
+      {
+        "source": "Hindustan Times",
+        "score": "3.0/5",
+        "url": "https://www.hindustantimes.com/entertainment/tamil-cinema/jailer-2-movie-review-75-year-old-rajinikanth-aura-farms-for-3-hours-in-a-nelson-dilipkumar-film-and-it-is-all-fans-need-sometimes-101792042345652.html",
+        "icon": "pics/RatingSiteLogos/hindustan-times.png"
+      },
+      {
+        "source": "Roger Ebert",
+        "score": "2.5/4",
+        "url": "https://www.rogerebert.com/reviews/jailer-2-rajinikanth-movie-review-2026",
+        "icon": "pics/RatingSiteLogos/rogerebert.ico"
+      },
+      {
+        "source": "The Indian Express",
+        "score": "2.5/5",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/jailer-2-movie-review-rajinikanth-supreme-aura-carries-nelsons-uneven-action-thriller-10922256/",
+        "icon": "pics/RatingSiteLogos/indian-express.png"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Rajinikanth",
+        "role": "Tiger Muthuvel Pandian IPS"
+      },
+      {
+        "actor": "S. J. Suryah",
+        "role": "Bodhi Kalpak"
+      },
+      {
+        "actor": "Mithun Chakraborty",
+        "role": "Chakri Kalpak"
+      },
+      {
+        "actor": "Suraj Venjaramoodu",
+        "role": "Dileep"
+      },
+      {
+        "actor": "Vidya Balan",
+        "role": "Kantha Kalpak"
+      },
+      {
+        "actor": "Ramya Krishnan",
+        "role": "Vijaya 'Viji' Pandian"
+      },
+      {
+        "actor": "Yogi Babu",
+        "role": "Taxi Driver Vimal"
+      },
+      {
+        "actor": "Mirnaa",
+        "role": "Swetha Pandian"
+      },
+      {
+        "actor": "Rithvik",
+        "role": "Rithvik 'Rithu' Pandian"
+      },
+      {
+        "actor": "Jatin Sarna",
+        "role": "Ved Kalpak"
+      },
+      {
+        "actor": "Hakim Shahjahan",
+        "role": "Sharva Kalpak"
+      },
+      {
+        "actor": "Anna Rajan",
+        "role": "Dileep's Wife"
+      },
+      {
+        "actor": "Meghana Raj",
+        "role": "Narasimha's Wife"
+      },
+      {
+        "actor": "Namo Narayana",
+        "role": "Moorthi"
+      },
+      {
+        "actor": "Bagavathi Perumal",
+        "role": "Bhaskar"
+      },
+      {
+        "actor": "Kottayam Nazeer",
+        "role": "Ameer"
+      },
+      {
+        "actor": "Sunil Sukhada",
+        "role": "Benjamin"
+      },
+      {
+        "actor": "Sujith Shankar",
+        "role": "Mukund"
+      },
+      {
+        "actor": "Bjorn Surrao",
+        "role": "Kohli"
+      },
+      {
+        "actor": "Jaffer Sadiq",
+        "role": "Debnath"
+      },
+      {
+        "actor": "Mohanlal",
+        "role": "Mathew (Cameo Appearance)"
+      },
+      {
+        "actor": "Shiva Rajkumar",
+        "role": "Narasimha (Cameo Appearance)"
+      },
+      {
+        "actor": "Hrithik Roshan",
+        "role": "Roddy (Cameo Appearance)"
+      },
+      {
+        "actor": "Jackie Shroff",
+        "role": "Kamdev (Cameo Appearance)"
+      },
+      {
+        "actor": "Vijay Sethupathi",
+        "role": "Police Officer / Informer (Cameo Appearance)"
+      },
+      {
+        "actor": "Vinayakan",
+        "role": "Varman (Special Appearance)"
+      },
+      {
+        "actor": "Vasanth Ravi",
+        "role": "ACP Arjun Pandian IPS (Cameo Appearance)"
+      },
+      {
+        "actor": "Nora Fatehi",
+        "role": "Special Appearance in Song 'Bindaas'"
+      }
+    ],
+    "trailers": [
+      {
+        "title": "Jailer 2 Official Announcement Teaser",
+        "url": "https://www.youtube.com/watch?v=aaNq2NL6D4A",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/aaNq2NL6D4A",
+        "youtubeId": "aaNq2NL6D4A",
+        "type": "Teaser"
+      },
+      {
+        "title": "Release Date Announcement",
+        "url": "https://www.youtube.com/watch?v=ugzPkXEqff4",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/ugzPkXEqff4",
+        "youtubeId": "ugzPkXEqff4",
+        "type": "Announcement"
+      },
+      {
+        "title": "Suraj Venjaramoodu As Dileep (Character Glimpse)",
+        "url": "https://www.youtube.com/watch?v=V1Qir5w7so4",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/V1Qir5w7so4",
+        "youtubeId": "V1Qir5w7so4",
+        "type": "Character Promo"
+      },
+      {
+        "title": "SJ Suryah As Bodhi (Character Glimpse)",
+        "url": "https://www.youtube.com/watch?v=lzar-5xGA3o",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/lzar-5xGA3o",
+        "youtubeId": "lzar-5xGA3o",
+        "type": "Character Promo"
+      },
+      {
+        "title": "Hukum Reloaded from Jailer 2 (Song)",
+        "url": "https://www.youtube.com/watch?v=hIHUeuw2yj8",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/hIHUeuw2yj8",
+        "youtubeId": "hIHUeuw2yj8",
+        "type": "Song"
+      }
+    ],
+    "videos": [
+      {
+        "title": "Jailer 2 Official Announcement Teaser",
+        "url": "https://www.youtube.com/watch?v=aaNq2NL6D4A",
+        "youtubeId": "aaNq2NL6D4A"
+      },
+      {
+        "title": "Release Date Announcement",
+        "url": "https://www.youtube.com/watch?v=ugzPkXEqff4",
+        "youtubeId": "ugzPkXEqff4"
+      },
+      {
+        "title": "Suraj Venjaramoodu As Dileep",
+        "url": "https://www.youtube.com/watch?v=V1Qir5w7so4",
+        "youtubeId": "V1Qir5w7so4"
+      },
+      {
+        "title": "SJ Suryah As Bodhi",
+        "url": "https://www.youtube.com/watch?v=lzar-5xGA3o",
+        "youtubeId": "lzar-5xGA3o"
+      },
+      {
+        "title": "Song: Hukum Reloaded",
+        "url": "https://www.youtube.com/watch?v=hIHUeuw2yj8",
+        "youtubeId": "hIHUeuw2yj8"
+      }
+    ],
+    "music": [
+      {
+        "provider": "Spotify",
+        "url": "https://open.spotify.com/album/1uwOU5ZjczJJozQkhzrGJr",
+        "icon": "pics/MusicWebsiteLogos/spotify.png",
+        "label": "Listen to Jailer 2 Soundtrack on Spotify"
+      },
+      {
+        "provider": "Apple Music",
+        "url": "https://music.apple.com/in/album/jailer-2-original-motion-picture-soundtrack/6817733404",
+        "icon": "pics/MusicWebsiteLogos/itunes.png",
+        "label": "Listen on Apple Music"
+      },
+      {
+        "provider": "JioSaavn",
+        "url": "https://www.jiosaavn.com/album/jailer-2-original-motion-picture-soundtrack/zg-RfbPQuWM_",
+        "icon": "pics/MusicWebsiteLogos/saavn.png",
+        "label": "Listen on JioSaavn"
+      },
+      {
+        "provider": "Spotify",
+        "url": "https://open.spotify.com/album/3fehKTRZv5h2otLpjVOJq6",
+        "icon": "pics/MusicWebsiteLogos/spotify.png",
+        "label": "Listen to Hukum Reloaded Single on Spotify"
+      },
+      {
+        "provider": "Apple Music",
+        "url": "https://music.apple.com/in/album/hukum-reloaded-from-jailer-2-single/1790376515",
+        "icon": "pics/MusicWebsiteLogos/itunes.png",
+        "label": "Hukum Reloaded Single on Apple Music"
+      },
+      {
+        "provider": "JioSaavn",
+        "url": "https://www.jiosaavn.com/album/hukum-reloaded-tamil-from-jailer-2/HFN9QrK4GNE_",
+        "icon": "pics/MusicWebsiteLogos/saavn.png",
+        "label": "Hukum Reloaded Single on JioSaavn"
+      }
+    ],
+    "watchOnline": [],
+    "bookings": [
+      {
+        "provider": "BookMyShow",
+        "url": "https://in.bookmyshow.com/movies/kochi/jailer-2/ET00522227",
+        "icon": "pics/BookngWebSiteLogos/book-my-show.png",
+        "label": "Book on BookMyShow",
+        "rank": 1
+      },
+      {
+        "provider": "District",
+        "url": "https://www.district.in/movies/jailer-2-movie-tickets-MV187766?srsltid=AU7gw4VPNcGisJHqvjDUYHWkmNCIbfKSWlk6tBrvh0d1dbhAZB1AfTRH",
+        "icon": "pics/BookngWebSiteLogos/district.png",
+        "label": "Book on District",
+        "rank": 2
+      },
+      {
+        "provider": "TicketNew",
+        "url": "https://ticketnew.com/movies/jailer-2-movie-detail-187766",
+        "icon": "pics/BookngWebSiteLogos/ticket-new.png",
+        "label": "Book on TicketNew",
+        "rank": 3
+      },
+      {
+        "provider": "Fandango",
+        "url": "https://www.fandango.com/jailer-2-247862/movie-overview",
+        "icon": "pics/BookngWebSiteLogos/fandango.png",
+        "label": "Book on Fandango",
+        "rank": 4
+      },
+      {
+        "provider": "Cineworld",
+        "url": "https://www.cineworld.co.uk/films/1000018264-jailer-2/",
+        "icon": "pics/BookngWebSiteLogos/cineworld.png",
+        "label": "Book on Cineworld",
+        "rank": 5
+      }
+    ],
+    "articles": [
+      {
+        "headline": "Jailer 2 movie review: 75-year-old Rajinikanth aura farms for 3 hours in a Nelson Dilipkumar film and it is all fans need sometimes",
+        "url": "https://www.hindustantimes.com/entertainment/tamil-cinema/jailer-2-movie-review-75-year-old-rajinikanth-aura-farms-for-3-hours-in-a-nelson-dilipkumar-film-and-it-is-all-fans-need-sometimes-101792042345652.html",
+        "author": "Hindustan Times",
+        "date": "October 15, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Jailer 2 movie review: Rajinikanth’s supreme aura carries Nelson’s uneven action thriller",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/jailer-2-movie-review-rajinikanth-supreme-aura-carries-nelsons-uneven-action-thriller-10922256/",
+        "author": "The Indian Express",
+        "date": "October 15, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Jailer 2 movie review: Rajinikanth swagger and Nelson's humour strike gold again",
+        "url": "https://www.indiatoday.in/movies/reviews/story/jailer-2-movie-review-rajinikanth-swagger-and-nelsons-humour-strike-gold-again-3017726-2026-10-15",
+        "author": "India Today",
+        "date": "October 15, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Jailer 2 review: Rajinikanth is the main attraction in Nelson Dilipkumar's entertaining sequel",
+        "url": "https://www.telegraphindia.com/entertainment/jailer-2-review-rajinikanth-is-the-main-attraction-in-nelson-dilipkumars-entertaining-sequel/cid/2185010",
+        "author": "The Telegraph",
+        "date": "October 16, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Jailer 2 movie review: Superstar Rajinikanth and Nelson team up for an electrifying commercial sequel",
+        "url": "https://www.thehindu.com/entertainment/movies/jailer-2-movie-review-superstar-rajinikanth-nelson-shivarajkumar-mohanlal-anirudh-ravichander/article71587540.ece",
+        "author": "The Hindu",
+        "date": "October 15, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Jailer 2 Movie Review: Rajinikanth and Nelson Deliver High-Octane Spectacle",
+        "url": "https://www.rogerebert.com/reviews/jailer-2-rajinikanth-movie-review-2026",
+        "author": "Roger Ebert",
+        "date": "October 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Jailer 2 Review: A Solid Commercial Entertainer Thanks To Superstar Rajinikanth",
+        "url": "https://www.ndtv.com/entertainment/jailer-2-review-a-solid-commercial-entertainer-thanks-to-superstar-rajinikanth-3-5-stars-12188670",
+        "author": "NDTV",
+        "date": "October 15, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Jailer 2 Movie Review: Rajinikanth's mass power and Nelson's quirky style create a box office feast",
+        "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movie-reviews/jailer-2/movie-review/134961587.cms",
+        "author": "Times of India",
+        "date": "October 15, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Jailer 2 box office collection day 2: Rajinikanth film earns Rs 209 crore worldwide",
+        "url": "https://indianexpress.com/article/entertainment/tamil/jailer-2-box-office-collection-day-2-live-updates-rajinikanth-film-earns-rs-209-crore-10925037/",
+        "author": "The Indian Express",
+        "date": "October 17, 2026",
+        "section": "News"
+      },
+      {
+        "headline": "Jailer 2 crosses Rs 400 crore mark globally in four days; emerges highest grossing Tamil film of 2026",
+        "url": "https://www.telegraphindia.com/entertainment/jailer-2-crosses-rs-400-crore-mark-globally-in-four-days-emerges-highest-grossing-tamil-film-of-2026/cid/2185372",
+        "author": "The Telegraph",
+        "date": "October 19, 2026",
+        "section": "News"
+      },
+      {
+        "headline": "Jailer 2 box office collection day 4: Rajinikanth film is at Rs 425 crore, all set to cross Rs 500 crore mark worldwide",
+        "url": "https://www.ndtv.com/entertainment/jailer-2-box-office-collection-day-4-rajinikanth-film-is-at-rs-425-crore-all-set-to-cross-rs-500-crore-mark-worldwide-12204495",
+        "author": "NDTV",
+        "date": "October 19, 2026",
+        "section": "News"
+      },
+      {
+        "headline": "Jailer 2 box office collection day 4: Rajinikanth, Mohanlal, Nelson Dilipkumar film sees Sunday jump, earns Rs 55.85 cr in India; worldwide gross hits Rs 424.25 cr",
+        "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movies/news/jailer-2-box-office-collection-day-4-rajinikanth-mohanlal-nelson-dilipkumar-film-sees-sunday-jump-earns-rs-55-85-cr-in-india-worldwide-gross-hits-rs-424-25-cr/articleshow/135037059.cms",
+        "author": "Times of India",
+        "date": "October 19, 2026",
+        "section": "News"
+      },
+      {
+        "headline": "Vijay Sethupathi recalls Rajinikanth's dedication on Jailer 2 sets",
+        "url": "https://telanganatoday.com/vijay-sethupathi-recalls-rajinikanths-dedication-on-jailer-2-sets",
+        "author": "Telangana Today",
+        "date": "September 2026",
+        "section": "News"
+      },
+      {
+        "headline": "Baththa actor Vijay Sethupathi calls Thalapathy Vijay cute fellow amid controversy; reveals how Rajinikanth inspired him on Jailer 2: 'I didn't expect that because he's a big superstar'",
+        "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movies/news/baththa-actor-vijay-sethupathi-calls-thalapathy-vijay-cute-fellow-amid-bigg-boss-tamil-controversy-reveals-how-rajinikanth-inspired-him-on-jailer-2-i-didnt-expect-that-because-hes-a-big-superstar/articleshow/134348274.cms",
+        "author": "Times of India",
+        "date": "September 2026",
+        "section": "News"
+      },
+      {
+        "headline": "Jailer 2: Suraj Venjaramoodu introduced as mysterious gangster Dileep in new character glimpse",
+        "url": "https://www.ndtv.com/entertainment/jailer-2-suraj-venjaramoodu-introduced-as-mysterious-gangster-dileep-in-new-character-glimpse-12068844",
+        "author": "NDTV",
+        "date": "September 2026",
+        "section": "News"
+      },
+      {
+        "headline": "Jailer 2: Suraj Venjaramoodu introduced as mysterious gangster Dileep in intense character first look",
+        "url": "https://www.filmfare.com/news/south/jailer-2-suraj-venjaramoodu-introduced-as-mysterious-gangster-dileep-in-new-character-glimpse-86081.html",
+        "author": "Filmfare",
+        "date": "September 2026",
+        "section": "News"
+      },
+      {
+        "headline": "Jailer 2 1st look reveals Venjaramoodu as stylish villain in Nelson Dilipkumar film",
+        "url": "https://www.newsbytesapp.com/news/entertainment/jailer-2-1st-look-reveals-venjaramoodu-as-stylish-villain/tldr",
+        "author": "NewsBytes",
+        "date": "September 2026",
+        "section": "News"
+      },
+      {
+        "headline": "Jailer 2 new promo: Suraj Venjaramoodu makes an intense appearance as Dileep in Rajinikanth and Nelson Dilipkumar's action sequel",
+        "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movies/news/jailer-2-new-promo-suraj-venjaramoodu-makes-an-intense-appearance-as-dileep-in-rajinikanth-and-nelson-dilipkumars-action-sequel/articleshow/134335967.cms",
+        "author": "Times of India",
+        "date": "September 2026",
+        "section": "News"
+      }
+    ],
+    "similar": [
+      {
+        "title": "Jailer (2023 Tamil film)",
+        "link": "Jailer.html",
+        "poster": "pics/Films/Jailer/1.jpeg"
+      },
+      {
+        "title": "Petta",
+        "link": "Petta.html",
+        "poster": "pics/Films/Petta/2.jpg"
+      },
+      {
+        "title": "Darbar",
+        "link": "Darbar.html",
+        "poster": "pics/Films/Darbar/2.jpg"
+      },
+      {
+        "title": "Kaala",
+        "link": "Kaala.html",
+        "poster": "pics/Films/Kaala/1.jpg"
+      },
+      {
+        "title": "Kabali",
+        "link": "Kabali.html",
+        "poster": "pics/Films/Kabali/4.jpg"
+      },
+      {
+        "title": "2.0",
+        "link": "2point0.html",
+        "poster": "pics/Films/2.0/2.jpg"
+      },
+      {
+        "title": "Bigil",
+        "link": "Bigil.html",
+        "poster": "pics/Films/Bigil/2.jpg"
+      },
+      {
+        "title": "Mersal",
+        "link": "Mersal.html",
+        "poster": "pics/Films/Mersal/1.jpg"
+      },
+      {
+        "title": "Sarkar",
+        "link": "Sarkar.html",
+        "poster": "pics/Films/Sarkar/2.jpg"
+      },
+      {
+        "title": "Theri",
+        "link": "Theri.html",
+        "poster": "pics/Films/Theri/1.jpg"
+      },
+      {
+        "title": "Bairavaa",
+        "link": "Bairavaa.html",
+        "poster": "pics/Films/Bairavaa/1.jpg"
+      },
+      {
+        "title": "Viswasam",
+        "link": "Viswasam.html",
+        "poster": "pics/Films/Viswasam/2.jpg"
+      },
+      {
+        "title": "Vivegam",
+        "link": "Vivegam.html",
+        "poster": "pics/Films/Vivegam/1.jpg"
+      },
+      {
+        "title": "Nerkonda Paarvai",
+        "link": "NerkondaPaarvai.html",
+        "poster": "pics/Films/NerkondaPaarvai/1.jpg"
+      }
+    ],
+    "wikipedia": "https://en.wikipedia.org/wiki/Jailer_2",
+    "imdb": "https://www.imdb.com/title/tt33318732/"
+  },
+  {
     "id": "MatchboxTheMovie",
     "slug": "matchbox-the-movie",
     "type": "movie",
@@ -2047,6 +3706,11 @@
       }
     ],
     "similar": [
+      {
+        "title": "Hope (2026)",
+        "link": "Hope2026.html",
+        "poster": "pics/Films/Hope2026/1.jpg"
+      },
       {
         "title": "First Man",
         "link": "FirstMan.html",
@@ -4174,255 +5838,6 @@
     "imdb": "https://www.imdb.com/title/tt7526136/"
   },
   {
-    "id": "Jailer2",
-    "slug": "jailer-2",
-    "type": "movie",
-    "category": "Indian",
-    "score": null,
-    "filename": "Jailer2.html",
-    "title": "Jailer 2",
-    "description": "The high-octane action sequel to the blockbuster Jailer, following Tiger Muthuvel Pandian as he faces formidable new underworld adversaries and a grander confrontation orchestrated by director Nelson Dilipkumar.",
-    "plot": "Following the explosive events of Jailer, Tiger Muthuvel Pandian (Rajinikanth) finds himself drawn into an even deeper international conspiracy. Facing dangerous new syndicates fronted by the menacing Dileep (Suraj Venjaramoodu) and Bodhi (S. J. Suryah), along with intense encounters with key underworld figures, Muthuvel must once again summon allies across borders to protect what remains dearest to him.",
-    "language": "Tamil",
-    "releaseDate": "Upcoming (2026)",
-    "year": "2026",
-    "genre": "Action, Crime, Thriller",
-    "duration": "TBA",
-    "director": "Nelson Dilipkumar",
-    "writer": "Nelson Dilipkumar",
-    "basedOn": "",
-    "boxOffice": "Upcoming",
-    "budget": "TBA",
-    "poster": "pics/Films/Jailer2/1.jpeg",
-    "banner": "pics/Films/Jailer2/2.jpeg",
-    "gallery": [
-      {
-        "src": "pics/Films/Jailer2/1.jpeg",
-        "alt": "Jailer 2 Official Announcement Poster"
-      },
-      {
-        "src": "pics/Films/Jailer2/2.jpeg",
-        "alt": "Jailer 2 Key Art & Banner"
-      }
-    ],
-    "ratings": [],
-    "cast": [
-      {
-        "actor": "Rajinikanth",
-        "role": "Tiger Muthuvel Pandian"
-      },
-      {
-        "actor": "Suraj Venjaramoodu",
-        "role": "Dileep"
-      },
-      {
-        "actor": "S. J. Suryah",
-        "role": "Bodhi"
-      },
-      {
-        "actor": "Vijay Sethupathi",
-        "role": "Key Role"
-      },
-      {
-        "actor": "Ramya Krishnan",
-        "role": "Vijaya Muthuvel Pandian"
-      },
-      {
-        "actor": "Vasanth Ravi",
-        "role": "Arjun Muthuvel Pandian"
-      },
-      {
-        "actor": "Yogi Babu",
-        "role": "Taxi Driver Vimal"
-      }
-    ],
-    "trailers": [
-      {
-        "title": "Jailer 2 Official Announcement Teaser",
-        "url": "https://www.youtube.com/watch?v=aaNq2NL6D4A",
-        "embedUrl": "https://www.youtube-nocookie.com/embed/aaNq2NL6D4A",
-        "youtubeId": "aaNq2NL6D4A",
-        "type": "Teaser"
-      },
-      {
-        "title": "Release Date Announcement",
-        "url": "https://www.youtube.com/watch?v=ugzPkXEqff4",
-        "embedUrl": "https://www.youtube-nocookie.com/embed/ugzPkXEqff4",
-        "youtubeId": "ugzPkXEqff4",
-        "type": "Announcement"
-      },
-      {
-        "title": "Suraj Venjaramoodu As Dileep (Character Glimpse)",
-        "url": "https://www.youtube.com/watch?v=V1Qir5w7so4",
-        "embedUrl": "https://www.youtube-nocookie.com/embed/V1Qir5w7so4",
-        "youtubeId": "V1Qir5w7so4",
-        "type": "Character Promo"
-      },
-      {
-        "title": "SJ Suryah As Bodhi (Character Glimpse)",
-        "url": "https://www.youtube.com/watch?v=lzar-5xGA3o",
-        "embedUrl": "https://www.youtube-nocookie.com/embed/lzar-5xGA3o",
-        "youtubeId": "lzar-5xGA3o",
-        "type": "Character Promo"
-      },
-      {
-        "title": "Song: Hukum Reloaded from Jailer 2",
-        "url": "https://www.youtube.com/watch?v=hIHUeuw2yj8",
-        "embedUrl": "https://www.youtube-nocookie.com/embed/hIHUeuw2yj8",
-        "youtubeId": "hIHUeuw2yj8",
-        "type": "Song"
-      }
-    ],
-    "videos": [
-      {
-        "title": "Jailer 2 Official Announcement Teaser",
-        "url": "https://www.youtube.com/watch?v=aaNq2NL6D4A",
-        "youtubeId": "aaNq2NL6D4A"
-      },
-      {
-        "title": "Release Date Announcement",
-        "url": "https://www.youtube.com/watch?v=ugzPkXEqff4",
-        "youtubeId": "ugzPkXEqff4"
-      },
-      {
-        "title": "Suraj Venjaramoodu As Dileep",
-        "url": "https://www.youtube.com/watch?v=V1Qir5w7so4",
-        "youtubeId": "V1Qir5w7so4"
-      },
-      {
-        "title": "SJ Suryah As Bodhi",
-        "url": "https://www.youtube.com/watch?v=lzar-5xGA3o",
-        "youtubeId": "lzar-5xGA3o"
-      },
-      {
-        "title": "Song: Hukum Reloaded",
-        "url": "https://www.youtube.com/watch?v=hIHUeuw2yj8",
-        "youtubeId": "hIHUeuw2yj8"
-      }
-    ],
-    "music": [
-      {
-        "provider": "Spotify",
-        "url": "https://open.spotify.com/album/3fehKTRZv5h2otLpjVOJq6",
-        "icon": "pics/MusicWebsiteLogos/spotify.png",
-        "label": "Listen on Spotify"
-      },
-      {
-        "provider": "Apple Music",
-        "url": "https://music.apple.com/in/album/hukum-reloaded-from-jailer-2-single/1790376515",
-        "icon": "pics/MusicWebsiteLogos/itunes.png",
-        "label": "Listen on Apple Music"
-      },
-      {
-        "provider": "JioSaavn",
-        "url": "https://www.jiosaavn.com/album/hukum-reloaded-tamil-from-jailer-2/HFN9QrK4GNE_",
-        "icon": "pics/MusicWebsiteLogos/saavn.png",
-        "label": "Listen on JioSaavn"
-      }
-    ],
-    "watchOnline": [],
-    "bookings": [],
-    "articles": [
-      {
-        "headline": "Vijay Sethupathi recalls Rajinikanth's dedication on Jailer 2 sets",
-        "url": "https://telanganatoday.com/vijay-sethupathi-recalls-rajinikanths-dedication-on-jailer-2-sets",
-        "author": "Telangana Today",
-        "date": "September 2026",
-        "section": "News(Before Release)"
-      },
-      {
-        "headline": "Baththa actor Vijay Sethupathi calls Thalapathy Vijay cute fellow amid controversy; reveals how Rajinikanth inspired him on Jailer 2",
-        "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movies/news/baththa-actor-vijay-sethupathi-calls-thalapathy-vijay-cute-fellow-amid-bigg-boss-tamil-controversy-reveals-how-rajinikanth-inspired-him-on-jailer-2-i-didnt-expect-that-because-hes-a-big-superstar/articleshow/134348274.cms",
-        "author": "Times of India",
-        "date": "September 2026",
-        "section": "News(Before Release)"
-      },
-      {
-        "headline": "Jailer 2: Suraj Venjaramoodu introduced as mysterious gangster Dileep in new character glimpse",
-        "url": "https://www.ndtv.com/entertainment/jailer-2-suraj-venjaramoodu-introduced-as-mysterious-gangster-dileep-in-new-character-glimpse-12068844",
-        "author": "NDTV",
-        "date": "September 2026",
-        "section": "News(Before Release)"
-      },
-      {
-        "headline": "Jailer 2: Suraj Venjaramoodu introduced as mysterious gangster Dileep in intense first look",
-        "url": "https://www.filmfare.com/news/south/jailer-2-suraj-venjaramoodu-introduced-as-mysterious-gangster-dileep-in-new-character-glimpse-86081.html",
-        "author": "Filmfare",
-        "date": "September 2026",
-        "section": "News(Before Release)"
-      },
-      {
-        "headline": "Jailer 2 1st look reveals Venjaramoodu as stylish villain in Nelson Dilipkumar film",
-        "url": "https://www.newsbytesapp.com/news/entertainment/jailer-2-1st-look-reveals-venjaramoodu-as-stylish-villain/tldr",
-        "author": "NewsBytes",
-        "date": "September 2026",
-        "section": "News(Before Release)"
-      },
-      {
-        "headline": "Jailer 2 new promo: Suraj Venjaramoodu makes an intense appearance as Dileep in Rajinikanth and Nelson Dilipkumar's action sequel",
-        "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movies/news/jailer-2-new-promo-suraj-venjaramoodu-makes-an-intense-appearance-as-dileep-in-rajinikanth-and-nelson-dilipkumars-action-sequel/articleshow/134335967.cms",
-        "author": "Times of India",
-        "date": "September 2026",
-        "section": "News(Before Release)"
-      }
-    ],
-    "similar": [
-      {
-        "title": "Jailer (2023 Tamil film)",
-        "link": "Jailer.html",
-        "poster": "pics/Films/Jailer/1.jpeg"
-      },
-      {
-        "title": "Petta",
-        "link": "Petta.html",
-        "poster": "pics/Films/Petta/2.jpg"
-      },
-      {
-        "title": "Darbar",
-        "link": "Darbar.html",
-        "poster": "pics/Films/Darbar/2.jpg"
-      },
-      {
-        "title": "Kaala",
-        "link": "Kaala.html",
-        "poster": "pics/Films/Kaala/1.jpg"
-      },
-      {
-        "title": "Kabali",
-        "link": "Kabali.html",
-        "poster": "pics/Films/Kabali/4.jpg"
-      },
-      {
-        "title": "2.0",
-        "link": "2point0.html",
-        "poster": "pics/Films/2.0/2.jpg"
-      },
-      {
-        "title": "Bigil",
-        "link": "Bigil.html",
-        "poster": "pics/Films/Bigil/2.jpg"
-      },
-      {
-        "title": "Mersal",
-        "link": "Mersal.html",
-        "poster": "pics/Films/Mersal/1.jpg"
-      },
-      {
-        "title": "Viswasam",
-        "link": "Viswasam.html",
-        "poster": "pics/Films/Viswasam/2.jpg"
-      },
-      {
-        "title": "Vivegam",
-        "link": "Vivegam.html",
-        "poster": "pics/Films/Vivegam/1.jpg"
-      }
-    ],
-    "wikipedia": "https://en.wikipedia.org/wiki/Jailer_2",
-    "imdb": "https://www.imdb.com/title/tt33318732/",
-    "status": "upcoming"
-  },
-  {
     "id": "Jailer",
     "slug": "jailer",
     "type": "movie",
@@ -4881,6 +6296,21 @@
         "poster": "pics/Films/Mersal/1.jpg"
       },
       {
+        "title": "Sarkar",
+        "link": "Sarkar.html",
+        "poster": "pics/Films/Sarkar/2.jpg"
+      },
+      {
+        "title": "Theri",
+        "link": "Theri.html",
+        "poster": "pics/Films/Theri/1.jpg"
+      },
+      {
+        "title": "Bairavaa",
+        "link": "Bairavaa.html",
+        "poster": "pics/Films/Bairavaa/1.jpg"
+      },
+      {
         "title": "Viswasam",
         "link": "Viswasam.html",
         "poster": "pics/Films/Viswasam/2.jpg"
@@ -4889,6 +6319,11 @@
         "title": "Vivegam",
         "link": "Vivegam.html",
         "poster": "pics/Films/Vivegam/1.jpg"
+      },
+      {
+        "title": "Nerkonda Paarvai",
+        "link": "NerkondaPaarvai.html",
+        "poster": "pics/Films/NerkondaPaarvai/1.jpg"
       }
     ],
     "wikipedia": "https://en.wikipedia.org/wiki/Jailer_(2023_Tamil_film)",
@@ -7037,6 +8472,11 @@
     "officialWebsite": null,
     "socials": [],
     "similar": [
+      {
+        "title": "Hope (2026)",
+        "link": "Hope2026.html",
+        "poster": "pics/Films/Hope2026/1.jpg"
+      },
       {
         "title": "Jurassic World: Fallen Kingdom",
         "link": "JurassicWorldFallenKingdom.html",
@@ -11127,60 +12567,70 @@
     "category": "Indian",
     "score": 7.5,
     "filename": "Mandaadi.html",
+    "fileName": "Mandaadi.html",
     "title": "Mandaadi",
-    "description": "Explore Mandaadi Tamil sports action drama movie ratings, reviews, box office collections, songs, and showtimes. Starring Soori, Suhas, Mahima Nambiar, Sathyaraj, directed by Mathimaran Pugazhendhi.",
-    "plot": "Muthukaali, a legendary traditional sailboat racer belonging to the \"Mugavai Maindhans\" crew in coastal Ramanathapuram, had exiled himself to work as a lifeguard on the shores of Chennai following a devastating tragedy that tore his life and community apart. In Muthukaali's absence, the ruthless and fiercely ambitious Sattapuli—once Muthukaali's trusted companion turned bitter adversary—takes command of the local seas with his formidable \"Tsunami Riders\" team, establishing complete supremacy and fanning fierce hostilities across neighboring fishing settlements. When an emotional plea from his beleaguered home community reaches him, Muthukaali makes his fateful return to the coastline. Confronted by fractured loyalties and a raw, inexperienced crew of local fishermen, Muthukaali must rebuild the underdog squad from scratch, overcome deep psychological trauma, and brave raging ocean squalls to compete in the grand, high-stakes festival boat regatta that will decide the fate and pride of his people. Source:IMDb",
+    "metaTitle": "Mandaadi (2026) All Ratings, Reviews, Songs, Videos, Bookings and News — OakShow",
+    "description": "A high-stakes Tamil coastal sports action drama following Muthukaali, a legendary boat racer who returns to train an underdog village crew to conquer treacherous sea regattas and defeat a ruthless rival team.",
+    "plot": "In the coastal village of Mugavaipattinam in Ramanathapuram, traditional annual sailboat racing during the Mariamman temple festival is an age-old arena of honour, community pride, and heated rivalry. When Maari (Mithun Jai Sankar), the spirited son of Angel Rakkamma (Mahima Nambiar) and Singaram (Ravindra Vijay), forms a fresh crew of underdog fishermen named 'Mugavai Mainthans', they clash violently with the arrogant Kittan and his ruthless father Sattapuli (Suhas), owner of the invincible 'Tsunami Riders'. After a festival brawl leaves Maari marked for death, he flees to Chennai into the protection of Muthukaali 'Kaali' (Soori), an exiled legendary boat racing hero working as a theme-park lifeguard. Driven by duty and old loyalties, Kaali returns to Mugavaipattinam with Maari, boldly declaring in front of the village council that he will train the underdog Mugavai Mainthans. Facing deadly sea sabotage, deep-seated family grievances, a devastating whirlpool vortex, and the lethal machinations of Sattapuli, Kaali must harness the raw spirit of the sea to reclaim dignity, brotherhood, and triumph on the high waters.",
     "language": "Tamil",
     "releaseDate": "September 10, 2026",
     "year": "2026",
+    "status": "released",
     "genre": "Action, Drama, Sport",
-    "duration": "2hr 34mins",
-    "director": "",
+    "duration": "2hr 34min",
+    "certificate": "UA",
+    "director": "Mathimaran Pugazhendhi",
+    "writer": "Mathimaran Pugazhendhi",
+    "screenplay": "Mathimaran Pugazhendhi, Elred Kumar, R. Mohanavasanthan, Thiral Sankar",
     "basedOn": "",
+    "producers": "Elred Kumar",
+    "productionCompanies": "RS Infotainment",
+    "musicDirector": "G. V. Prakash Kumar",
+    "cinematography": "S. R. Kathir",
+    "editing": "Pradeep E. Ragav",
+    "narrator": "Vetrimaaran",
+    "distributors": "Red Giant Movies, Mythri Movie Distributors",
     "boxOffice": {
-      "worldwideGross": "₹62.38 Crore",
-      "indiaGross": "₹53.63 Crore",
-      "overseasGross": "₹8.75 Crore ($1.05M)",
-      "openingDay": "₹11.50 Crore",
-      "openingWeekend": "₹43.80 Crore",
-      "budget": "Estimated ₹75 Crore",
-      "verdict": "Hit / Strong Theatrical Run",
-      "lastUpdated": "September 2026",
-      "source": "Sacnilk, Pinkvilla & Trade Reports"
+      "budget": "₹75 crore",
+      "worldwideGross": "₹150 crore",
+      "indiaGross": "₹110+ crore (₹100 crore in Tamil Nadu alone)",
+      "overseasGross": "₹50 crore ($6.0M)",
+      "openingDay": "₹6.55 crore worldwide (₹5.55 crore India)",
+      "openingWeekend": "₹43.80 crore",
+      "verdict": "Super Hit / Blockbuster (4th Highest-Grossing Tamil Film of 2026)",
+      "source": "Dina Thanthi, Times of India, Sacnilk & Trade Reports",
+      "lastUpdated": "October 2026"
     },
-    "poster": "pics/Films/Mandaadi/2.jpeg",
+    "budget": "₹75 crore",
+    "awards": [],
+    "poster": "pics/Films/Mandaadi/1.jpeg",
+    "banner": "pics/Films/Mandaadi/2.jpeg",
     "gallery": [
       {
         "src": "pics/Films/Mandaadi/1.jpeg",
-        "alt": "Mandaadi Poster"
+        "alt": "Mandaadi Official Poster"
       },
       {
         "src": "pics/Films/Mandaadi/2.jpeg",
-        "alt": "Mandaadi Banner"
+        "alt": "Mandaadi Official Banner"
       },
       {
         "src": "pics/Films/Mandaadi/3.jpeg",
-        "alt": "Mandaadi Boat Racing Still"
+        "alt": "Mandaadi High-Seas Boat Racing Still"
       }
     ],
     "ratings": [
       {
         "source": "OakShow",
         "score": "7.5/10",
-        "url": "",
-        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-good-movie.png"
+        "url": "https://oakshow.in/Mandaadi.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
       },
       {
         "source": "IMDb",
-        "score": "7.2/10",
+        "score": "8.2/10",
         "url": "https://www.imdb.com/title/tt36596965/",
         "icon": "pics/RatingSiteLogos/imdb.png"
-      },
-      {
-        "source": "Times of India",
-        "score": "3/5",
-        "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movie-reviews/mandaadi/movie-review/134001460.cms",
-        "icon": "pics/RatingSiteLogos/timesofindia.ico"
       },
       {
         "source": "NDTV",
@@ -11193,6 +12643,12 @@
         "score": "3.5/5",
         "url": "https://www.rediff.com/movies/review/mandaadi-movie-review-soori-delivers-strong-performance-in-engaging-sports-drama/20260913.htm",
         "icon": "pics/RatingSiteLogos/rediff.png"
+      },
+      {
+        "source": "Times of India",
+        "score": "3/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movie-reviews/mandaadi/movie-review/134001460.cms",
+        "icon": "pics/RatingSiteLogos/times-of-india.ico"
       },
       {
         "source": "Times Now",
@@ -11210,58 +12666,133 @@
     "cast": [
       {
         "actor": "Soori",
-        "role": "Muthukaali (A legendary boat racer fighting for his community's dignity)",
-        "description": ""
+        "role": "Muthukaali 'Kaali' / Mandaadi",
+        "description": "A legendary boat racing champion fighting for his community's dignity and redemption"
       },
       {
         "actor": "Suhas",
-        "role": "Sattapuli (Leader of the rival Tsunami Riders racing crew, voice dubbed by Vetrimaaran)",
-        "description": ""
+        "role": "Sattapuli",
+        "description": "Ruthless leader of the rival Tsunami Riders racing team (Voice dubbed by Mathimaran Pugazhendhi)"
       },
       {
         "actor": "Mahima Nambiar",
         "role": "Angel Rakkamma",
-        "description": ""
+        "description": "Kaali's former love, daughter of mentor Machamuni, and mother of Maari"
       },
       {
         "actor": "Sathyaraj",
-        "role": "Machamuni (Veteran boat racing mentor)",
-        "description": ""
-      },
-      {
-        "actor": "Krish Hassan",
-        "role": "Kittaan",
-        "description": ""
-      },
-      {
-        "actor": "Mithun Jai Sankar",
-        "role": "Maari (Angel's son)",
-        "description": ""
+        "role": "Machamuni",
+        "description": "Veteran boat racing mentor to Kaali and Sattapuli"
       },
       {
         "actor": "Ravindra Vijay",
         "role": "Singaram",
-        "description": ""
+        "description": "Angel's husband and trusted friend who brings Kaali back to save his son"
+      },
+      {
+        "actor": "Krish Hassan",
+        "role": "Kittaan",
+        "description": "Sattapuli's hot-headed son"
+      },
+      {
+        "actor": "Mithun Jai Sankar",
+        "role": "Maari",
+        "description": "Angel and Singaram's passionate boat racer son, grandson of Machamuni"
       },
       {
         "actor": "Bala Saravanan",
-        "role": "Muthukaali's friend",
-        "description": ""
+        "role": "Qatar Ravi",
+        "description": "Loyal friend and confidant of Muthukaali"
       },
       {
-        "actor": "B. Krithika Iyer",
-        "role": "Muthukaali's niece",
-        "description": ""
+        "actor": "Stun Siva",
+        "role": "Sattapuli's father",
+        "description": "Veteran family patriarch of Sattapuli"
       },
       {
         "actor": "Ramachandran Durairaj",
-        "role": "Cast",
-        "description": ""
+        "role": "Theekoluthi",
+        "description": "Member of the coastal boat racing community"
       },
       {
         "actor": "Aadukalam Murugadoss",
-        "role": "Cast",
-        "description": ""
+        "role": "Kathir",
+        "description": "Allied local villager"
+      },
+      {
+        "actor": "B. Krithika Balasubramaniam",
+        "role": "Baagam Priyazh",
+        "description": "Muthukaali's niece and Maari's lover"
+      }
+    ],
+    "trailers": [
+      {
+        "title": "Mandaadi Official Trailer",
+        "url": "https://www.youtube.com/watch?v=VOHaf-0DV-U",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/VOHaf-0DV-U",
+        "youtubeId": "VOHaf-0DV-U",
+        "type": "Main Trailer"
+      },
+      {
+        "title": "Usure Needhan Pulla - Song Video",
+        "url": "https://www.youtube.com/watch?v=Q2qaFiD4XNM",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/Q2qaFiD4XNM",
+        "youtubeId": "Q2qaFiD4XNM",
+        "type": "Song"
+      },
+      {
+        "title": "Mandaadi Mandaadi - Song Video",
+        "url": "https://www.youtube.com/watch?v=gDGQoSxWeEI",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/gDGQoSxWeEI",
+        "youtubeId": "gDGQoSxWeEI",
+        "type": "Song"
+      }
+    ],
+    "videos": [
+      {
+        "title": "Mandaadi Official Trailer",
+        "url": "https://www.youtube.com/watch?v=VOHaf-0DV-U",
+        "youtubeId": "VOHaf-0DV-U"
+      },
+      {
+        "title": "Song: Usure Needhan Pulla",
+        "url": "https://www.youtube.com/watch?v=Q2qaFiD4XNM",
+        "youtubeId": "Q2qaFiD4XNM"
+      },
+      {
+        "title": "Song: Mandaadi Mandaadi",
+        "url": "https://www.youtube.com/watch?v=gDGQoSxWeEI",
+        "youtubeId": "gDGQoSxWeEI"
+      }
+    ],
+    "watchOnline": [
+      {
+        "provider": "Netflix",
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/in/title/82787383?source=35&fromWatch=true",
+        "icon": "pics/WatchOnline/netflix.png",
+        "lang": "Tamil, Telugu, Hindi, Malayalam, Kannada",
+        "label": "Watch Mandaadi on Netflix"
+      }
+    ],
+    "music": [
+      {
+        "provider": "Spotify",
+        "url": "https://open.spotify.com/album/13VCDOxNdiF8Ouw82WtHS0",
+        "icon": "pics/MusicWebsiteLogos/spotify.png",
+        "label": "Listen to Mandaadi Soundtrack on Spotify"
+      },
+      {
+        "provider": "Apple Music",
+        "url": "https://music.apple.com/in/album/mandaadi-original-motion-picture-soundtrack/6806199838",
+        "icon": "pics/MusicWebsiteLogos/itunes.png",
+        "label": "Listen on Apple Music"
+      },
+      {
+        "provider": "JioSaavn",
+        "url": "https://www.jiosaavn.com/album/mandaadi/yI1DJ7XnZn8_",
+        "icon": "pics/MusicWebsiteLogos/saavn.png",
+        "label": "Listen on JioSaavn"
       }
     ],
     "bookings": [
@@ -11269,60 +12800,94 @@
         "provider": "BookMyShow",
         "url": "https://in.bookmyshow.com/movies/kozhikode/mandaadi/ET00442702",
         "icon": "pics/BookngWebSiteLogos/book-my-show.png",
-        "label": "Book Tickets",
-        "rank": 2
+        "label": "Book on BookMyShow",
+        "rank": 1
       },
       {
         "provider": "District",
         "url": "https://www.district.in/movies/mandaadi-movie-tickets-MV196092?srsltid=AfmBOoozB9eGDWlHe3wYiHHYlvrCiT7RjEDcYlfR5thJXq8mqJ-Lf_CY",
         "icon": "pics/BookngWebSiteLogos/district.png",
-        "label": "Book Tickets",
-        "rank": 3
+        "label": "Book on District",
+        "rank": 2
       },
       {
         "provider": "TicketNew",
         "url": "https://ticketnew.com/movies/mandaadi-movie-detail-196092",
         "icon": "pics/BookngWebSiteLogos/ticket-new.png",
-        "label": "Book Tickets",
-        "rank": 4
+        "label": "Book on TicketNew",
+        "rank": 3
       },
       {
         "provider": "PVR",
         "url": "https://www.pvrcinemas.com/m.movie-details/37733/ns",
         "icon": "pics/BookngWebSiteLogos/pvr.png",
-        "label": "Book Tickets",
-        "rank": 5
+        "label": "Book on PVR Cinemas",
+        "rank": 4
       },
       {
         "provider": "Fandango",
         "url": "https://www.fandango.com/mandaadi-2026-247228/movie-overview",
         "icon": "pics/BookngWebSiteLogos/fandango.png",
-        "label": "Book Tickets",
-        "rank": 7
+        "label": "Book on Fandango",
+        "rank": 5
       }
     ],
-    "watchOnline": [],
-    "music": [],
-    "officialWebsite": null,
-    "socials": [
+    "articles": [
       {
-        "platform": "Twitter / X",
-        "url": "https://twitter.com/share?url=https://oakshow.in/Mandaadi.html",
-        "icon": "images/twitter.png",
-        "language": "",
-        "label": "Connect on Twitter / X"
+        "headline": "Mandaadi Movie Review: Scintillating sail despite some turbulence",
+        "url": "https://www.newindianexpress.com/entertainment/review/2026/Sep/12/tamilreview2026sep10mandaadi-movie-review-scintillating-sail-despite-some-turbulence",
+        "author": "The New Indian Express",
+        "date": "September 12, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Mandaadi Review: Soori Shines In Mathimaran Pugazhendhi's Engaging Coastal Sports Drama",
+        "url": "https://www.ndtv.com/entertainment/mandaadi-review-soori-shines-in-mathimaran-pugazhendhis-engaging-coastal-sports-drama-3-5-stars-12028873",
+        "author": "NDTV",
+        "date": "September 10, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Mandaadi Review: Soori steals the show in Mathimaran Pugazhendhi's gripping coastal sports drama",
+        "url": "https://www.cnbctv18.com/entertainment/mandaadi-review-soori-steals-the-show-in-mathimaran-pugazhendhis-gripping-coastal-sports-drama-19989061.htm",
+        "author": "CNBC-TV18",
+        "date": "September 11, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Mandaadi movie review: Soori, Suhas are extraordinary on water, the film drifts when on land",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/mandaadi-movie-review-soori-suhas-are-extraordinary-on-water-the-film-is-not-on-land-10871944/",
+        "author": "The Indian Express",
+        "date": "September 10, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Mandaadi Movie Review and Rating: Soori, Suhas boat-racing drama makes visual splash but writing holds back its peak",
+        "url": "https://www.timesnownews.com/entertainment-news/reviews/mandaadi-movie-review-and-rating-soori-suhas-boat-racing-drama-makes-visual-splash-but-writing-holds-back-its-peak-review-156133146",
+        "author": "Times Now",
+        "date": "September 10, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Mandaadi Review: Mandaadi charts an uneven course to a strong finish",
+        "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movie-reviews/mandaadi/movie-review/134001460.cms",
+        "author": "Times of India",
+        "date": "September 10, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Mandaadi Movie Review: Soori delivers strong performance in engaging sports drama",
+        "url": "https://www.rediff.com/movies/review/mandaadi-movie-review-soori-delivers-strong-performance-in-engaging-sports-drama/20260913.htm",
+        "author": "Rediff",
+        "date": "September 13, 2026",
+        "section": "Critic Reviews"
       }
     ],
     "similar": [
       {
         "title": "Irudhi Suttru",
         "link": "IrudhiSuttru.html",
-        "poster": "pics/Films/IrudhiSuttru/1.jpg"
-      },
-      {
-        "title": "Bigil",
-        "link": "Bigil.html",
-        "poster": "pics/Films/Bigil/1.jpg"
+        "poster": "pics/Films/IrudhiSuttru/2.jpg"
       },
       {
         "title": "Dangal",
@@ -11330,14 +12895,19 @@
         "poster": "pics/Films/Dangal/1.jpg"
       },
       {
-        "title": "MS Dhoni The Untold Story",
+        "title": "M.S. Dhoni: The Untold Story",
         "link": "MSDhoniTheUntoldStory.html",
-        "poster": "pics/Films/M.S. Dhoni The Untold Story/1.jpg"
+        "poster": "pics/Films/M.S. Dhoni The Untold Story/4.jpg"
+      },
+      {
+        "title": "Bigil",
+        "link": "Bigil.html",
+        "poster": "pics/Films/Bigil/2.jpg"
       },
       {
         "title": "Creed II",
         "link": "CreedII.html",
-        "poster": "pics/Films/CreedII/1.jpg"
+        "poster": "pics/Films/CreedII/2.jpg"
       },
       {
         "title": "Godha",
@@ -11345,49 +12915,8 @@
         "poster": "pics/Films/Godha/1.jpg"
       }
     ],
-    "videos": [
-      {
-        "url": "https://www.youtube.com/watch?v=3FuuZU21S80",
-        "youtubeId": "3FuuZU21S80",
-        "title": "Mandaadi"
-      },
-      {
-        "url": "https://www.youtube.com/watch?v=AHYvLk9QR9I",
-        "youtubeId": "AHYvLk9QR9I",
-        "title": "Official Trailer / Teaser"
-      }
-    ],
-    "articles": [
-      {
-        "headline": "Mandaadi movie review: Soori, Suhas are extraordinary on water; the film is not on land",
-        "url": "https://indianexpress.com/article/entertainment/movie-review/mandaadi-movie-review-soori-suhas-are-extraordinary-on-water-the-film-is-not-on-land-10871944/",
-        "author": "The Indian Express",
-        "date": "September 10, 2026",
-        "section": "More Reviews and News"
-      },
-      {
-        "headline": "Mandaadi Movie Review and Rating: Soori, Suhas boat-racing drama makes visual splash",
-        "url": "https://www.timesnownews.com/entertainment-news/reviews/mandaadi-movie-review-and-rating-soori-suhas-boat-racing-drama-makes-visual-splash-but-writing-holds-back-its-peak-review-156133146",
-        "author": "Times Now",
-        "date": "September 10, 2026",
-        "section": "More Reviews and News"
-      },
-      {
-        "headline": "Mandaadi Movie Review: Thrilling coastal regatta sequences anchor a sincere sports drama",
-        "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movie-reviews/mandaadi/movie-review/134001460.cms",
-        "author": "Times of India",
-        "date": "September 10, 2026",
-        "section": "More Reviews and News"
-      },
-      {
-        "headline": "Mandaadi Review: Soori steals the show in Mathimaran Pugazhendhi's gripping coastal sports drama",
-        "url": "https://www.cnbctv18.com/entertainment/mandaadi-review-soori-steals-the-show-in-mathimaran-pugazhendhis-gripping-coastal-sports-drama-19989061.htm",
-        "author": "CNBC",
-        "date": "TV18 - September 11, 2026",
-        "section": "More Reviews and News"
-      }
-    ],
-    "filePath": "E:/OakShow/Mandaadi.html"
+    "wikipedia": "https://en.wikipedia.org/wiki/Mandaadi",
+    "imdb": "https://www.imdb.com/title/tt36596965/"
   },
   {
     "id": "KhalifaTheRuler",
@@ -59831,6 +61360,11 @@
       }
     ],
     "similar": [
+      {
+        "title": "Mandaadi",
+        "link": "Mandaadi.html",
+        "poster": "pics/Films/Mandaadi/1.jpeg"
+      },
       {
         "title": "Irudhi Suttru",
         "link": "IrudhiSuttru.html",
@@ -155464,6 +156998,11 @@
       }
     ],
     "similar": [
+      {
+        "title": "Mandaadi",
+        "link": "Mandaadi.html",
+        "poster": "pics/Films/Mandaadi/1.jpeg"
+      },
       {
         "title": "Guru",
         "link": "Guru.html",
