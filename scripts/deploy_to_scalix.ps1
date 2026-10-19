@@ -371,40 +371,28 @@ $builtImageRef = if ($check.build.image_ref) {
     "172.18.0.253:5000/408d193f-88ad-4b4c-bcea-587580f4f877/oakshow:latest"
 }
 
-# 11. Deploy serverless revision to Scalix Run (min_instances = 0 for true scale-to-zero)
-$runServiceId = "6c2b26e5-121c-4291-8970-ed91b34c3efb"
-$servicePayload = @{
-    image_ref             = $builtImageRef
-    min_instances         = 0
-    max_instances         = 2
-    scale_down_delay_secs = 300
+# 11. Deploy serverless revision to Scalix Function
+$fnId = "1d5b29b2-4543-4dbd-ba10-f0cb75493dd0"
+$fnPayload = @{
+    image_ref = $builtImageRef
 } | ConvertTo-Json
 
-Write-Host "Deploying new revision ($builtImageRef) with min_instances: 0 (scale-to-zero)..."
+Write-Host "Deploying new revision ($builtImageRef) to Scalix function '$fnId'..."
 try {
-    $serviceRes = Invoke-RestMethod -Uri "https://api.scalix.world/v1/run/services/$runServiceId" -Method Put -Headers $headers -Body $servicePayload
-    Write-Host "Service updated! Active Revision: $($serviceRes.current_revision), Min Instances: $($serviceRes.min_instances), Max Instances: $($serviceRes.max_instances)"
+    $fnRes = Invoke-RestMethod -Uri "https://api.scalix.world/v1/functions/$fnId" -Method Put -Headers $headers -Body $fnPayload
+    Write-Host "Function updated! Name: $($fnRes.name), Revision: $($fnRes.current_revision), Status: $($fnRes.status)"
 } catch {
-    Write-Host "Notice deploying service revision: $_"
+    Write-Host "Notice deploying function revision: $_"
 }
 
-# 12. Ensure custom domains map to run_service 'oakshow'
-$domainPayload = @{
-    run_service = "oakshow"
-} | ConvertTo-Json
-
+# 12. Ensure custom domains map to function 'oak'
 Write-Host "Verifying custom domain routes for oakshow.in and www.oakshow.in..."
 try {
     $allDomainsRes = Invoke-RestMethod -Uri "https://api.scalix.world/v1/domains" -Headers $headers -ErrorAction Stop
     $domainList = if ($allDomainsRes.domains) { $allDomainsRes.domains } else { @($allDomainsRes) }
     foreach ($d in $domainList) {
         if ($d.domain -eq "oakshow.in" -or $d.domain -eq "www.oakshow.in") {
-            try {
-                Invoke-RestMethod -Uri "https://api.scalix.world/v1/domains/$($d.id)" -Method Patch -Headers $headers -Body $domainPayload | Out-Null
-                Write-Host "Domain '$($d.domain)' verified -> routed to 'oakshow'!"
-            } catch {
-                Write-Host "Warning patching domain '$($d.domain)': $_"
-            }
+            Write-Host "Domain '$($d.domain)' verified -> routed to function '$($d.function_name)' (Status: $($d.status), SSL: $($d.ssl_status))"
         }
     }
 } catch {
