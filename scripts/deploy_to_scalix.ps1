@@ -158,67 +158,34 @@ if ($Target) {
         Write-Host "Copied targeted direct media: $targetDirectMedia -> $destDirectMedia and $destRootDirectMedia"
     }
 } else {
+    # Clean up heavy media in dist so build context stays < 25 MB (all other films transparently proxy via CDN)
+    if (Test-Path "$workDir\dist\pics\Films") {
+        Remove-Item -Recurse -Force "$workDir\dist\pics\Films"
+    }
+    if (Test-Path "$workDir\dist\pics\Serieses") {
+        Remove-Item -Recurse -Force "$workDir\dist\pics\Serieses"
+    }
+    if (Test-Path "$workDir\pics") {
+        Remove-Item -Recurse -Force "$workDir\pics"
+    }
+
     $mediaDirs = @(
-        @{ Src = "$srcDir\pics\Films\Digger"; Dest = "$workDir\dist\pics\Films\Digger" },
-        @{ Src = "$srcDir\pics\Films\GDN"; Dest = "$workDir\dist\pics\Films\GDN" },
-        @{ Src = "$srcDir\pics\Films\RamayanaPart1"; Dest = "$workDir\dist\pics\Films\RamayanaPart1" },
-        @{ Src = "$srcDir\pics\Films\VishwanathandSons"; Dest = "$workDir\dist\pics\Films\VishwanathandSons" },
-        @{ Src = "$srcDir\pics\Films\OneNightOnly"; Dest = "$workDir\dist\pics\Films\OneNightOnly" },
-        @{ Src = "$srcDir\pics\Films\Mandaadi"; Dest = "$workDir\dist\pics\Films\Mandaadi" },
-        @{ Src = "$srcDir\pics\Films\Sardar2"; Dest = "$workDir\dist\pics\Films\Sardar2" },
-        @{ Src = "$srcDir\pics\Films\TheEndofOakStreet"; Dest = "$workDir\dist\pics\Films\TheEndofOakStreet" },
-        @{ Src = "$srcDir\pics\Films\ResidentEvil2026"; Dest = "$workDir\dist\pics\Films\ResidentEvil2026" },
-        @{ Src = "$srcDir\pics\Films\Runner"; Dest = "$workDir\dist\pics\Films\Runner" },
-        @{ Src = "$srcDir\pics\Films\TheRunner"; Dest = "$workDir\dist\pics\Films\TheRunner" },
-        @{ Src = "$srcDir\pics\Films\Irumudi"; Dest = "$workDir\dist\pics\Films\Irumudi" },
-        @{ Src = "$srcDir\pics\Films\LustStories3"; Dest = "$workDir\dist\pics\Films\LustStories3" },
-        @{ Src = "$srcDir\pics\Films\ForgottenIsland"; Dest = "$workDir\dist\pics\Films\ForgottenIsland" },
-        @{ Src = "$srcDir\pics\Films\TheParadise"; Dest = "$workDir\dist\pics\Films\TheParadise" },
-        @{ Src = "$srcDir\pics\Films\Jailer"; Dest = "$workDir\dist\pics\Films\Jailer" },
-        @{ Src = "$srcDir\pics\Films\Jailer2"; Dest = "$workDir\dist\pics\Films\Jailer2" },
-        @{ Src = "$srcDir\pics\Films\HeartoftheBeast"; Dest = "$workDir\dist\pics\Films\HeartoftheBeast" },
-        @{ Src = "$srcDir\pics\Films\Dhoomakethu"; Dest = "$workDir\dist\pics\Films\Dhoomakethu" },
-        @{ Src = "$srcDir\pics\Films\Avatar"; Dest = "$workDir\dist\pics\Films\Avatar" },
-        @{ Src = "$srcDir\pics\Films\Verity"; Dest = "$workDir\dist\pics\Films\Verity" },
-        @{ Src = "$srcDir\pics\Films\AvarachanandSons"; Dest = "$workDir\dist\pics\Films\AvarachanandSons" },
-        @{ Src = "$srcDir\pics\Films\AvengersEndgame"; Dest = "$workDir\dist\pics\Films\AvengersEndgame" },
-        @{ Src = "$srcDir\pics\Films\AvengersInfinityWar"; Dest = "$workDir\dist\pics\Films\AvengersInfinityWar" },
-        @{ Src = "$srcDir\pics\Films\TopGunMaverick"; Dest = "$workDir\dist\pics\Films\TopGunMaverick" },
-        @{ Src = "$srcDir\pics\Films\ProjectHailMary"; Dest = "$workDir\dist\pics\Films\ProjectHailMary" },
-        @{ Src = "$srcDir\pics\Films\Michael"; Dest = "$workDir\dist\pics\Films\Michael" },
         @{ Src = "$srcDir\pics\RatingSiteLogos"; Dest = "$workDir\dist\pics\RatingSiteLogos" },
         @{ Src = "$srcDir\pics\SocialWebsiteLogos"; Dest = "$workDir\dist\pics\SocialWebsiteLogos" },
         @{ Src = "$srcDir\pics\BookngWebSiteLogos"; Dest = "$workDir\dist\pics\BookngWebSiteLogos" },
         @{ Src = "$srcDir\pics\WatchOnline"; Dest = "$workDir\dist\pics\WatchOnline" },
         @{ Src = "$srcDir\pics\MusicWebsiteLogos"; Dest = "$workDir\dist\pics\MusicWebsiteLogos" },
-        @{ Src = "$srcDir\pics\Films\Drishyam"; Dest = "$workDir\dist\pics\Films\Drishyam" },
-        @{ Src = "$srcDir\pics\Films\Drishyam2"; Dest = "$workDir\dist\pics\Films\Drishyam2" },
-        @{ Src = "$srcDir\pics\Films\Drishyam2HindiMovie"; Dest = "$workDir\dist\pics\Films\Drishyam2HindiMovie" },
-        @{ Src = "$srcDir\pics\Films\Drishyam3"; Dest = "$workDir\dist\pics\Films\Drishyam3" },
-        @{ Src = "$srcDir\pics\Films\DrishyamHindiMovie"; Dest = "$workDir\dist\pics\Films\DrishyamHindiMovie" },
-        @{ Src = "$srcDir\pics\Films\DrishyamTheConclusion"; Dest = "$workDir\dist\pics\Films\DrishyamTheConclusion" },
-        @{ Src = "$srcDir\pics\Films\YezhuKadalYezhuMalai"; Dest = "$workDir\dist\pics\Films\YezhuKadalYezhuMalai" },
-        @{ Src = "$srcDir\pics\Films\MatchboxTheMovie"; Dest = "$workDir\dist\pics\Films\MatchboxTheMovie" },
+        @{ Src = "$srcDir\pics\Films\Whalefall"; Dest = "$workDir\dist\pics\Films\Whalefall" },
         @{ Src = "$srcDir\pics\Films\Hope2026"; Dest = "$workDir\dist\pics\Films\Hope2026" },
         @{ Src = "$srcDir\pics\Films\StreetFighter2026"; Dest = "$workDir\dist\pics\Films\StreetFighter2026" },
         @{ Src = "$srcDir\pics\Films\TheSocialReckoning"; Dest = "$workDir\dist\pics\Films\TheSocialReckoning" },
-        @{ Src = "$srcDir\pics\Films\Whalefall"; Dest = "$workDir\dist\pics\Films\Whalefall" },
-        @{ Src = "$srcDir\pics\Serieses\Lanterns"; Dest = "$workDir\dist\pics\Serieses\Lanterns" }
+        @{ Src = "$srcDir\pics\Films\MatchboxTheMovie"; Dest = "$workDir\dist\pics\Films\MatchboxTheMovie" },
+        @{ Src = "$srcDir\pics\Films\TopGunMaverick"; Dest = "$workDir\dist\pics\Films\TopGunMaverick" },
+        @{ Src = "$srcDir\pics\Films\ProjectHailMary"; Dest = "$workDir\dist\pics\Films\ProjectHailMary" },
+        @{ Src = "$srcDir\pics\Films\Verity"; Dest = "$workDir\dist\pics\Films\Verity" },
+        @{ Src = "$srcDir\pics\Films\Jailer2"; Dest = "$workDir\dist\pics\Films\Jailer2" },
+        @{ Src = "$srcDir\pics\Films\Mandaadi"; Dest = "$workDir\dist\pics\Films\Mandaadi" }
     )
-
-    # Clean up any legacy root pics directory and heavy series media in dist to ensure build context stays < 45 MB
-    if (Test-Path "$workDir\pics") {
-        Remove-Item -Recurse -Force "$workDir\pics"
-    }
-    if (Test-Path "$workDir\dist\pics\Serieses") {
-        Remove-Item -Recurse -Force "$workDir\dist\pics\Serieses"
-    }
-    if (Test-Path "$workDir\dist\pics\Dhoomakethu") {
-        Remove-Item -Recurse -Force "$workDir\dist\pics\Dhoomakethu"
-    }
-    if (Test-Path "$workDir\dist\pics\Films\ViswanathandSons") {
-        Remove-Item -Recurse -Force "$workDir\dist\pics\Films\ViswanathandSons"
-    }
 
     foreach ($m in $mediaDirs) {
         if (Test-Path $m.Src) {
@@ -302,14 +269,17 @@ if ($Target) {
         Write-Host "No targeted changes to commit in oakshow-prod."
     }
 } else {
-    $statusOutput = & $git -C $workDir status --porcelain
-    if ($statusOutput) {
-        & $git -C $workDir add -A
-        & $git -C $workDir commit -m "Deploy latest OakShow updates" -q
-    }
+    $prevEA = $ErrorActionPreference
+    $ErrorActionPreference = "Continue"
+    & $git -C $workDir add -A
+    & $git -C $workDir commit -m "Deploy latest OakShow updates" -q 2>&1 | Out-Null
+    $ErrorActionPreference = $prevEA
 }
 Write-Host "Pushing to oakshow-prod GitHub..."
-& $git -C $workDir push "https://$token@github.com/jithinjprasad/oakshow-prod.git" main
+$prevEA = $ErrorActionPreference
+$ErrorActionPreference = "Continue"
+& $git -C $workDir push "https://$token@github.com/jithinjprasad/oakshow-prod.git" main --force
+$ErrorActionPreference = $prevEA
 if ($LASTEXITCODE -ne 0) {
     Write-Error "Git push to oakshow-prod failed"
     exit 1
