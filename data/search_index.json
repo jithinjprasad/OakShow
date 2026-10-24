@@ -1,5 +1,43 @@
 [
   {
+    "id": "Clayface2026",
+    "slug": "clayface-2026",
+    "title": "Clayface (2026 film)",
+    "type": "movie",
+    "category": "Hollywood",
+    "year": "2026",
+    "genre": "Body Horror, Psychological Thriller, Superhero, Sci-Fi",
+    "language": "English",
+    "poster": "pics/Films/Clayface2026/1.jpg",
+    "score": 8,
+    "filename": "Clayface2026.html",
+    "fileName": "Clayface2026.html",
+    "releaseDate": "October 23, 2026",
+    "status": "released",
+    "director": "James Watkins",
+    "url": "Clayface2026.html",
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "8/10",
+        "url": "https://oakshow.in/Clayface2026.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "7.6/10",
+        "url": "https://www.imdb.com/title/tt34890576/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "75%",
+        "url": "https://www.rottentomatoes.com/m/clayface",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-fresh.png"
+      }
+    ]
+  },
+  {
     "id": "UdtaTeer",
     "slug": "udta-teer",
     "title": "Udta Teer (2026 film)",

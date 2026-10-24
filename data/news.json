@@ -1,5 +1,105 @@
 [
   {
+    "id": "clayface2026-news-10",
+    "movieId": "Clayface2026",
+    "movieTitle": "Clayface",
+    "title": "Clayface Review: DC Studios Explores Unflinching Horror",
+    "source": "IGN",
+    "date": "October 2026",
+    "url": "https://in.ign.com/clayface",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "clayface2026-news-9",
+    "movieId": "Clayface2026",
+    "movieTitle": "Clayface",
+    "title": "Clayface Review: Bloody Good Fun",
+    "source": "Rediff",
+    "date": "October 23, 2026",
+    "url": "https://www.rediff.com/movies/review/clayface-review-bloody-good-fun/20261023.htm",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "clayface2026-news-8",
+    "movieId": "Clayface2026",
+    "movieTitle": "Clayface",
+    "title": "Clayface Movie Review: A Dark And Visceral Descent Into Madness",
+    "source": "Times of India",
+    "date": "October 2026",
+    "url": "https://timesofindia.indiatimes.com/entertainment/english/movie-reviews/clayface/movie-review/135114891.cms",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "clayface2026-news-7",
+    "movieId": "Clayface2026",
+    "movieTitle": "Clayface",
+    "title": "Clayface Movie Review: DC Film Is A Surprisingly Winsome Outing",
+    "source": "The Indian Express",
+    "date": "October 2026",
+    "url": "https://indianexpress.com/article/entertainment/movie-review/clayface-movie-review-dc-film-is-a-surprisingly-winsome-outing-10933641/lite/",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "clayface2026-news-6",
+    "movieId": "Clayface2026",
+    "movieTitle": "Clayface",
+    "title": "Clayface Review: DC Villain Origin Goes Full Body Horror",
+    "source": "The Guardian",
+    "date": "October 21, 2026",
+    "url": "https://www.theguardian.com/film/2026/oct/21/clayface-movie-review-body-horror",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "clayface2026-news-5",
+    "movieId": "Clayface2026",
+    "movieTitle": "Clayface",
+    "title": "Clayface Movie Review & Film Summary (2026)",
+    "source": "Roger Ebert",
+    "date": "October 2026",
+    "url": "https://www.rogerebert.com/reviews/clayface-dc-movie-review-2026",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "clayface2026-news-4",
+    "movieId": "Clayface2026",
+    "movieTitle": "Clayface",
+    "title": "Clayface Review: Tom Rhys Harries Shines in Dark, Grotesque DC Body Horror",
+    "source": "India Today",
+    "date": "October 23, 2026",
+    "url": "https://www.indiatoday.in/movies/reviews/story/clayface-review-tom-rhys-harries-dc-body-horror-3022996-2026-10-23",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "clayface2026-news-3",
+    "movieId": "Clayface2026",
+    "movieTitle": "Clayface",
+    "title": "Clayface: DC's Shape-Shifting Monster Makes A Terrifying Big-Screen Debut",
+    "source": "The Print",
+    "date": "October 2026",
+    "url": "https://theprint.in/entertainment/clayface-dc-shape-shifting-monster-big-screen-debut/3080336/",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "clayface2026-news-2",
+    "movieId": "Clayface2026",
+    "movieTitle": "Clayface",
+    "title": "Clayface Review: James Watkins' Masterful Body Horror Is DC's Best Since Joker; Tom Rhys Harries Is Sublime",
+    "source": "Hindustan Times",
+    "date": "October 2026",
+    "url": "https://www.hindustantimes.com/entertainment/hollywood/clayface-review-james-watkins-masterful-body-horror-is-dc-best-since-joker-tom-rhys-harries-is-sublime-james-gunn-mike-flanagan-101792736785119.html",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "clayface2026-news-1",
+    "movieId": "Clayface2026",
+    "movieTitle": "Clayface",
+    "title": "Clayface Review: A Tremendous Body-Horror Triumph for DC Studios",
+    "source": "Den of Geek",
+    "date": "October 2026",
+    "url": "https://www.denofgeek.com/movies/clayface-review-horror-triumph-dc-studios/",
+    "category": "Critic Reviews"
+  },
+  {
     "id": "udtateer-news-7",
     "movieId": "UdtaTeer",
     "movieTitle": "Udta Teer",

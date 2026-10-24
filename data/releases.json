@@ -8,6 +8,38 @@
     "filename": "Releases2026October.html",
     "items": [
       {
+        "title": "Clayface",
+        "poster": "pics/Films/Clayface2026/1.jpg",
+        "alt": "Clayface (2026)",
+        "language": "English",
+        "category": "Hollywood",
+        "releaseDate": "October 23, 2026",
+        "genre": "Body Horror, Psychological Thriller, Superhero, Sci-Fi",
+        "status": "released",
+        "moreLink": "Clayface2026.html",
+        "trailerLink": "https://www.youtube.com/watch?v=OGO4Mqvo3jI",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "8/10",
+            "url": "https://oakshow.in/Clayface2026.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "7.6/10",
+            "url": "https://www.imdb.com/title/tt34890576/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "75%",
+            "url": "https://www.rottentomatoes.com/m/clayface",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-fresh.png"
+          }
+        ]
+      },
+      {
         "title": "Udta Teer",
         "poster": "pics/Films/UdtaTeer/1.jpg",
         "alt": "Udta Teer (2026)",
@@ -338,7 +370,7 @@
         "ratings": []
       }
     ],
-    "totalItems": 10
+    "totalItems": 11
   },
   {
     "id": "Releases2026April",
@@ -1589,8 +1621,40 @@
     "month": "October",
     "category": "Hollywood",
     "filename": "HollywoodReleases2026October.html",
-    "totalItems": 7,
+    "totalItems": 8,
     "items": [
+      {
+        "title": "Clayface",
+        "poster": "pics/Films/Clayface2026/1.jpg",
+        "alt": "Clayface (2026)",
+        "language": "English",
+        "category": "Hollywood",
+        "releaseDate": "October 23, 2026",
+        "genre": "Body Horror, Psychological Thriller, Superhero, Sci-Fi",
+        "status": "released",
+        "moreLink": "Clayface2026.html",
+        "trailerLink": "https://www.youtube.com/watch?v=OGO4Mqvo3jI",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "8/10",
+            "url": "https://oakshow.in/Clayface2026.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-a-must-watch.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "7.6/10",
+            "url": "https://www.imdb.com/title/tt34890576/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "75%",
+            "url": "https://www.rottentomatoes.com/m/clayface",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-fresh.png"
+          }
+        ]
+      },
       {
         "title": "Whalefall",
         "poster": "pics/Films/Whalefall/1.jpg",
