@@ -8,6 +8,32 @@
     "filename": "Releases2026October.html",
     "items": [
       {
+        "title": "Udta Teer",
+        "poster": "pics/Films/UdtaTeer/1.jpg",
+        "alt": "Udta Teer (2026)",
+        "language": "Hindi",
+        "category": "Bollywood",
+        "releaseDate": "October 23, 2026",
+        "genre": "Spy, Comedy, Action, Thriller",
+        "status": "released",
+        "moreLink": "UdtaTeer.html",
+        "trailerLink": "https://www.youtube.com/watch?v=hN_ZUElLH44",
+        "ratings": [
+          {
+            "source": "IMDb",
+            "score": "6.7/10",
+            "url": "https://www.imdb.com/title/tt31806773/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Pinkvilla",
+            "score": "3.5/5",
+            "url": "https://www.pinkvilla.com/entertainment/reviews/udta-teer-review-ayushmann-khurranas-spy-comedy-serves-a-major-laugh-riot-late-mukul-dev-gets-memorable-swansong-1406059",
+            "icon": "pics/RatingSiteLogos/pinkvilla.png"
+          }
+        ]
+      },
+      {
         "title": "Titans",
         "poster": "pics/Films/TitansMalayalamMovie/1.jpg",
         "alt": "Titans (2026)",
@@ -312,7 +338,7 @@
         "ratings": []
       }
     ],
-    "totalItems": 9
+    "totalItems": 10
   },
   {
     "id": "Releases2026April",
@@ -1105,8 +1131,34 @@
     "month": "October",
     "category": "Indian",
     "filename": "IndianReleases2026October.html",
-    "totalItems": 3,
+    "totalItems": 4,
     "items": [
+      {
+        "title": "Udta Teer",
+        "poster": "pics/Films/UdtaTeer/1.jpg",
+        "alt": "Udta Teer (2026)",
+        "language": "Hindi",
+        "category": "Bollywood",
+        "releaseDate": "October 23, 2026",
+        "genre": "Spy, Comedy, Action, Thriller",
+        "status": "released",
+        "moreLink": "UdtaTeer.html",
+        "trailerLink": "https://www.youtube.com/watch?v=hN_ZUElLH44",
+        "ratings": [
+          {
+            "source": "IMDb",
+            "score": "6.7/10",
+            "url": "https://www.imdb.com/title/tt31806773/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Pinkvilla",
+            "score": "3.5/5",
+            "url": "https://www.pinkvilla.com/entertainment/reviews/udta-teer-review-ayushmann-khurranas-spy-comedy-serves-a-major-laugh-riot-late-mukul-dev-gets-memorable-swansong-1406059",
+            "icon": "pics/RatingSiteLogos/pinkvilla.png"
+          }
+        ]
+      },
       {
         "title": "Titans",
         "poster": "pics/Films/TitansMalayalamMovie/1.jpg",

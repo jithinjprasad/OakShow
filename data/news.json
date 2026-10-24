@@ -1,5 +1,75 @@
 [
   {
+    "id": "udtateer-news-7",
+    "movieId": "UdtaTeer",
+    "movieTitle": "Udta Teer",
+    "title": "Udta Teer movie review: Ayushmann Khurrana film is a tedious mix of spoof and sentiment",
+    "source": "The Indian Express",
+    "date": "October 23, 2026",
+    "url": "https://indianexpress.com/article/entertainment/movie-review/udta-teer-movie-review-ayushmann-khurrana-film-tedious-mix-spoof-and-sentiment-10933188/",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "udtateer-news-6",
+    "movieId": "UdtaTeer",
+    "movieTitle": "Udta Teer",
+    "title": "Udta Teer review: Misses the bullseye",
+    "source": "Rediff",
+    "date": "October 23, 2026",
+    "url": "https://www.rediff.com/movies/review/udta-teer-review-misses-the-bullseye/20261023.htm",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "udtateer-news-5",
+    "movieId": "UdtaTeer",
+    "movieTitle": "Udta Teer",
+    "title": "Udta Teer Review: In The Era Of 'Dhurandhar', This Ayushmann Khurrana Film Aspires To Be 'Austin Powers'",
+    "source": "NDTV",
+    "date": "October 23, 2026",
+    "url": "https://www.ndtv.com/entertainment/udta-teer-review-in-the-era-of-dhurandhar-this-ayushmann-khurrana-film-aspires-to-be-austin-powers-2-5-stars-12224832",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "udtateer-news-4",
+    "movieId": "UdtaTeer",
+    "movieTitle": "Udta Teer",
+    "title": "Udta Teer review: Dhurandhar meets comedy of errors in Ayushmann's spy caper",
+    "source": "India Today",
+    "date": "October 23, 2026",
+    "url": "https://www.indiatoday.in/movies/reviews/story/udta-teer-review-ayushmann-khurrana-sara-ali-khan-spy-comedy-3023186-2026-10-23",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "udtateer-news-3",
+    "movieId": "UdtaTeer",
+    "movieTitle": "Udta Teer",
+    "title": "Udta Teer Review: Ayushmann Khurrana's spy comedy serves a major laugh riot; late Mukul Dev gets memorable swansong",
+    "source": "Pinkvilla",
+    "date": "October 23, 2026",
+    "url": "https://www.pinkvilla.com/entertainment/reviews/udta-teer-review-ayushmann-khurranas-spy-comedy-serves-a-major-laugh-riot-late-mukul-dev-gets-memorable-swansong-1406059",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "udtateer-news-2",
+    "movieId": "UdtaTeer",
+    "movieTitle": "Udta Teer",
+    "title": "‘Udta Teer’ movie review: Ayushmann Khurrana is on target in this spy misadventure",
+    "source": "The Hindu",
+    "date": "October 23, 2026",
+    "url": "https://www.thehindu.com/entertainment/movies/udta-teer-movie-review-ayushmann-khurrana-is-on-target-in-this-spy-misadventure/article71615236.ece",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "udtateer-news-1",
+    "movieId": "UdtaTeer",
+    "movieTitle": "Udta Teer",
+    "title": "Udta Teer review: This Ayushmann Khurrana spy comedy rarely misses a chance to make you laugh",
+    "source": "Hindustan Times",
+    "date": "October 23, 2026",
+    "url": "https://www.hindustantimes.com/entertainment/bollywood/udta-teer-review-this-ayushmann-khurrana-spy-comedy-rarely-misses-a-chance-to-make-you-laugh-101792732070865.html",
+    "category": "Critic Reviews"
+  },
+  {
     "id": "titans-news-5",
     "movieId": "TitansMalayalamMovie",
     "movieTitle": "Titans",
