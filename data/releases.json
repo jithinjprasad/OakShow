@@ -8,6 +8,32 @@
     "filename": "Releases2026October.html",
     "items": [
       {
+        "title": "Titans",
+        "poster": "pics/Films/TitansMalayalamMovie/1.jpg",
+        "alt": "Titans (2026)",
+        "language": "Malayalam",
+        "category": "Mollywood",
+        "releaseDate": "October 22, 2026",
+        "genre": "Fantasy, Comedy, Action, Thriller",
+        "status": "released",
+        "moreLink": "TitansMalayalamMovie.html",
+        "trailerLink": "https://www.youtube.com/watch?v=fy-r1xjecLs",
+        "ratings": [
+          {
+            "source": "IMDb",
+            "score": "5.9/10",
+            "url": "https://www.imdb.com/title/tt37547793/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Indian Express",
+            "score": "1/5",
+            "url": "https://indianexpress.com/article/entertainment/movie-review/titans-movie-review-rating-jayasurya-vinayakan-fantasy-comedy-tiring-unfunny-disaster-10931574/",
+            "icon": "pics/RatingSiteLogos/indian-express.png"
+          }
+        ]
+      },
+      {
         "title": "Whalefall",
         "poster": "pics/Films/Whalefall/1.jpg",
         "alt": "Whalefall (2026) Theatrical Poster",
@@ -286,7 +312,7 @@
         "ratings": []
       }
     ],
-    "totalItems": 8
+    "totalItems": 9
   },
   {
     "id": "Releases2026April",
@@ -1079,8 +1105,34 @@
     "month": "October",
     "category": "Indian",
     "filename": "IndianReleases2026October.html",
-    "totalItems": 2,
+    "totalItems": 3,
     "items": [
+      {
+        "title": "Titans",
+        "poster": "pics/Films/TitansMalayalamMovie/1.jpg",
+        "alt": "Titans (2026)",
+        "language": "Malayalam",
+        "category": "Mollywood",
+        "releaseDate": "October 22, 2026",
+        "genre": "Fantasy, Comedy, Action, Thriller",
+        "status": "released",
+        "moreLink": "TitansMalayalamMovie.html",
+        "trailerLink": "https://www.youtube.com/watch?v=fy-r1xjecLs",
+        "ratings": [
+          {
+            "source": "IMDb",
+            "score": "5.9/10",
+            "url": "https://www.imdb.com/title/tt37547793/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Indian Express",
+            "score": "1/5",
+            "url": "https://indianexpress.com/article/entertainment/movie-review/titans-movie-review-rating-jayasurya-vinayakan-fantasy-comedy-tiring-unfunny-disaster-10931574/",
+            "icon": "pics/RatingSiteLogos/indian-express.png"
+          }
+        ]
+      },
       {
         "title": "Jailer 2",
         "poster": "pics/Films/Jailer2/1.jpeg",

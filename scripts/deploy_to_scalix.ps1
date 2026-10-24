@@ -93,7 +93,7 @@ if ($Target) {
         "HollywoodReleases2026April.html", "Releases2026April.html",
         "MatchboxTheMovie.html",
         "HollywoodReleases2026October.html", "Releases2026October.html",
-        "Hope2026.html", "StreetFighter2026.html", "TheSocialReckoning.html", "Whalefall.html", "Animals2026.html"
+        "Hope2026.html", "StreetFighter2026.html", "TheSocialReckoning.html", "Whalefall.html", "Animals2026.html", "TitansMalayalamMovie.html"
     )
     foreach ($rf in $rootHtmls) {
         if (Test-Path "$srcDir\dist\$rf") {
@@ -185,7 +185,8 @@ if ($Target) {
         @{ Src = "$srcDir\pics\Films\Verity"; Dest = "$workDir\dist\pics\Films\Verity" },
         @{ Src = "$srcDir\pics\Films\Jailer2"; Dest = "$workDir\dist\pics\Films\Jailer2" },
         @{ Src = "$srcDir\pics\Films\Mandaadi"; Dest = "$workDir\dist\pics\Films\Mandaadi" },
-        @{ Src = "$srcDir\pics\Films\Animals2026"; Dest = "$workDir\dist\pics\Films\Animals2026" }
+        @{ Src = "$srcDir\pics\Films\Animals2026"; Dest = "$workDir\dist\pics\Films\Animals2026" },
+        @{ Src = "$srcDir\pics\Films\TitansMalayalamMovie"; Dest = "$workDir\dist\pics\Films\TitansMalayalamMovie" }
     )
 
     foreach ($m in $mediaDirs) {

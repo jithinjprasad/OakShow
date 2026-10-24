@@ -1,5 +1,37 @@
 [
   {
+    "id": "TitansMalayalamMovie",
+    "slug": "titans-malayalam-movie",
+    "title": "Titans (2026 film)",
+    "type": "movie",
+    "category": "Mollywood",
+    "year": "2026",
+    "genre": "Fantasy, Comedy, Action, Thriller",
+    "language": "Malayalam",
+    "poster": "pics/Films/TitansMalayalamMovie/1.jpg",
+    "score": 5.9,
+    "filename": "TitansMalayalamMovie.html",
+    "fileName": "TitansMalayalamMovie.html",
+    "releaseDate": "October 22, 2026",
+    "status": "released",
+    "director": "Prince Joy",
+    "url": "TitansMalayalamMovie.html",
+    "ratings": [
+      {
+        "source": "IMDb",
+        "score": "5.9/10",
+        "url": "https://www.imdb.com/title/tt37547793/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Indian Express",
+        "score": "1/5",
+        "url": "https://indianexpress.com/article/entertainment/movie-review/titans-movie-review-rating-jayasurya-vinayakan-fantasy-comedy-tiring-unfunny-disaster-10931574/",
+        "icon": "pics/RatingSiteLogos/indian-express.png"
+      }
+    ]
+  },
+  {
     "id": "Animals2026",
     "slug": "animals-2026",
     "title": "Animals (2026 film)",

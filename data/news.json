@@ -1,5 +1,55 @@
 [
   {
+    "id": "titans-news-5",
+    "movieId": "TitansMalayalamMovie",
+    "movieTitle": "Titans",
+    "title": "Titans review: A fantasy entertainer powered by humor and visual style",
+    "source": "Malayala Manorama",
+    "date": "October 22, 2026",
+    "url": "https://www.manoramaonline.com/movies/movie-reviews/2026/10/22/titans-malayalam-movie-review-and-rating.html",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "titans-news-4",
+    "movieId": "TitansMalayalamMovie",
+    "movieTitle": "Titans",
+    "title": "‘Titans’ review: Jayasurya and Vinayakan shine in this mollywood fantasy comedy",
+    "source": "Mathrubhumi English",
+    "date": "October 22, 2026",
+    "url": "https://english.mathrubhumi.com/movies-music/review/titans-fdfs-movie-review-jayasurya-vinayakan-rating-without-spoilers-x0xqoqqg",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "titans-news-3",
+    "movieId": "TitansMalayalamMovie",
+    "movieTitle": "Titans",
+    "title": "Titans Movie Review: Occasionally fun, but lost in fantasy",
+    "source": "The New Indian Express",
+    "date": "October 23, 2026",
+    "url": "https://www.newindianexpress.com/entertainment/review/2026/Oct/23/malayalamreview2026oct23titans-movie-review-occasionally-fun-but-lost-in-fantasy",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "titans-news-2",
+    "movieId": "TitansMalayalamMovie",
+    "movieTitle": "Titans",
+    "title": "‘Titans’ movie review: Jayasurya starrer fails to utilise a promising concept blending humour and fantasy",
+    "source": "The Hindu",
+    "date": "October 22, 2026",
+    "url": "https://www.thehindu.com/entertainment/movies/titans-movie-review-jayasurya-starrer-fails-to-utilise-a-promising-concept-blending-humour-and-fantasy/article71612232.ece",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "titans-news-1",
+    "movieId": "TitansMalayalamMovie",
+    "movieTitle": "Titans",
+    "title": "Titans movie review: Jayasurya and Vinayakan’s fantasy comedy is a tiring, unfunny disaster",
+    "source": "The Indian Express",
+    "date": "October 22, 2026",
+    "url": "https://indianexpress.com/article/entertainment/movie-review/titans-movie-review-rating-jayasurya-vinayakan-fantasy-comedy-tiring-unfunny-disaster-10931574/",
+    "category": "Critic Reviews"
+  },
+  {
     "id": "animals2026-news-9",
     "movieId": "Animals2026",
     "movieTitle": "Animals",
