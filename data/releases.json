@@ -72,6 +72,38 @@
         ]
       },
       {
+        "title": "Animals",
+        "poster": "pics/Films/Animals2026/1.jpg",
+        "alt": "Animals (2026)",
+        "language": "English",
+        "category": "Hollywood",
+        "releaseDate": "October 9, 2026",
+        "genre": "Crime, Thriller, Mystery, Drama",
+        "status": "released",
+        "moreLink": "Animals2026.html",
+        "trailerLink": "https://www.youtube.com/watch?v=mlBfQJ8oxB0",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "5/10",
+            "url": "https://oakshow.in/Animals2026.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-this-one-is-above-average.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "5.7/10",
+            "url": "https://www.imdb.com/title/tt31049299/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "31%",
+            "url": "https://www.rottentomatoes.com/m/animals_2026",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-rotten.png"
+          }
+        ]
+      },
+      {
         "title": "The Social Reckoning",
         "poster": "pics/Films/TheSocialReckoning/1.jpg",
         "alt": "The Social Reckoning (2026) Theatrical Poster",
@@ -254,7 +286,7 @@
         "ratings": []
       }
     ],
-    "totalItems": 7
+    "totalItems": 8
   },
   {
     "id": "Releases2026April",
@@ -1453,7 +1485,7 @@
     "month": "October",
     "category": "Hollywood",
     "filename": "HollywoodReleases2026October.html",
-    "totalItems": 6,
+    "totalItems": 7,
     "items": [
       {
         "title": "Whalefall",
@@ -1516,6 +1548,38 @@
             "score": "79%",
             "url": "https://www.rottentomatoes.com/m/hope_2026",
             "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+          }
+        ]
+      },
+      {
+        "title": "Animals",
+        "poster": "pics/Films/Animals2026/1.jpg",
+        "alt": "Animals (2026)",
+        "language": "English",
+        "category": "Hollywood",
+        "releaseDate": "October 9, 2026",
+        "genre": "Crime, Thriller, Mystery, Drama",
+        "status": "released",
+        "moreLink": "Animals2026.html",
+        "trailerLink": "https://www.youtube.com/watch?v=mlBfQJ8oxB0",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "5/10",
+            "url": "https://oakshow.in/Animals2026.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-this-one-is-above-average.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "5.7/10",
+            "url": "https://www.imdb.com/title/tt31049299/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "31%",
+            "url": "https://www.rottentomatoes.com/m/animals_2026",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-rotten.png"
           }
         ]
       },

@@ -1,5 +1,95 @@
 [
   {
+    "id": "animals2026-news-9",
+    "movieId": "Animals2026",
+    "movieTitle": "Animals",
+    "title": "Ben Affleck's Crime Thriller Animals Debuts at #1 on Netflix Global Movie Charts",
+    "source": "Deadline",
+    "date": "October 2026",
+    "url": "https://deadline.com/2026/01/netflix-2026-film-slate-war-machine-enola-holmes-3-1236665458/",
+    "category": "Streaming News"
+  },
+  {
+    "id": "animals2026-news-8",
+    "movieId": "Animals2026",
+    "movieTitle": "Animals",
+    "title": "Ben Affleck Gets Candid on Writing, Directing, and Starring in Netflix Kidnapping Thriller Animals",
+    "source": "Entertainment Weekly",
+    "date": "October 2026",
+    "url": "https://ew.com/ben-affleck-candid-wild-story-behind-animals-12115370",
+    "category": "Hollywood News"
+  },
+  {
+    "id": "animals2026-news-7",
+    "movieId": "Animals2026",
+    "movieTitle": "Animals",
+    "title": "Animals movie review & film summary (2026)",
+    "source": "Roger Ebert",
+    "date": "October 9, 2026",
+    "url": "https://www.rogerebert.com/reviews/animals-ben-affleck-netflix-movie-review-2026",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "animals2026-news-6",
+    "movieId": "Animals2026",
+    "movieTitle": "Animals",
+    "title": "Animals Movie Review: Ben Affleck's Kidnapping Thriller Has Great Twists But Sluggish Pacing",
+    "source": "Screen Rant",
+    "date": "October 9, 2026",
+    "url": "https://screenrant.com/animals-movie-review/",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "animals2026-news-5",
+    "movieId": "Animals2026",
+    "movieTitle": "Animals",
+    "title": "Animals Movie Review: A tall leap which ends up stumbling on the ground",
+    "source": "The New Indian Express",
+    "date": "October 10, 2026",
+    "url": "https://www.newindianexpress.com/entertainment/review/2026/Oct/10/englishreview2026oct09animals-movie-review-a-tall-leap-which-ends-up-stumbling-on-the-ground",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "animals2026-news-4",
+    "movieId": "Animals2026",
+    "movieTitle": "Animals",
+    "title": "‘Animals’ movie review: Ben Affleck thriller squanders its premise and cast",
+    "source": "The Hindu",
+    "date": "October 9, 2026",
+    "url": "https://www.thehindu.com/entertainment/movies/animals-movie-review-ben-affleck-thriller-squanders-its-premise-and-cast/article71574207.ece",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "animals2026-news-3",
+    "movieId": "Animals2026",
+    "movieTitle": "Animals",
+    "title": "Animals Review: Ben Affleck's Netflix Thriller Delivers",
+    "source": "IGN",
+    "date": "October 9, 2026",
+    "url": "https://www.ign.com/articles/animals-review-netflix",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "animals2026-news-2",
+    "movieId": "Animals2026",
+    "movieTitle": "Animals",
+    "title": "Ben Affleck’s Animals gave me a dire sense of déjà vu",
+    "source": "The Telegraph",
+    "date": "October 9, 2026",
+    "url": "https://www.telegraph.co.uk/films/2026/10/09/ben-afflecks-animals-dire-sense-of-dj-vu/",
+    "category": "Critic Reviews"
+  },
+  {
+    "id": "animals2026-news-1",
+    "movieId": "Animals2026",
+    "movieTitle": "Animals",
+    "title": "Animals review – Ben Affleck’s dull Netflix thriller is lacking in bark and bite",
+    "source": "The Guardian",
+    "date": "October 8, 2026",
+    "url": "https://www.theguardian.com/film/2026/oct/08/animals-movie-review-ben-affleck",
+    "category": "Critic Reviews"
+  },
+  {
     "id": "whalefall-news-6",
     "movieId": "Whalefall",
     "movieTitle": "Whalefall",

@@ -1,5 +1,79 @@
 [
   {
+    "id": "Animals2026",
+    "slug": "animals-2026",
+    "title": "Animals (2026 film)",
+    "type": "movie",
+    "category": "Hollywood",
+    "year": "2026",
+    "genre": "Crime, Thriller, Mystery, Drama",
+    "language": "English",
+    "poster": "pics/Films/Animals2026/1.jpg",
+    "score": 5,
+    "filename": "Animals2026.html",
+    "fileName": "Animals2026.html",
+    "releaseDate": "October 9, 2026",
+    "status": "released",
+    "director": "Ben Affleck",
+    "url": "Animals2026.html",
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "5/10",
+        "url": "https://oakshow.in/Animals2026.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-this-one-is-above-average.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "5.7/10",
+        "url": "https://www.imdb.com/title/tt31049299/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "31%",
+        "url": "https://www.rottentomatoes.com/m/animals_2026",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-rotten.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "33/100",
+        "url": "https://www.metacritic.com/movie/animals-2026/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      },
+      {
+        "source": "IGN",
+        "score": "8/10",
+        "url": "https://www.ign.com/articles/animals-review-netflix",
+        "icon": "pics/RatingSiteLogos/ign.png"
+      },
+      {
+        "source": "Common Sense Media",
+        "score": "3/5",
+        "url": "https://www.commonsensemedia.org/movie-reviews/animals-2026",
+        "icon": "pics/RatingSiteLogos/common-sense-media.png"
+      },
+      {
+        "source": "The Guardian",
+        "score": "2/5",
+        "url": "https://www.theguardian.com/film/2026/oct/08/animals-movie-review-ben-affleck",
+        "icon": "pics/RatingSiteLogos/the-guardian.png"
+      },
+      {
+        "source": "The Telegraph",
+        "score": "2/5",
+        "url": "https://www.telegraph.co.uk/films/2026/10/09/ben-afflecks-animals-dire-sense-of-dj-vu/",
+        "icon": "pics/RatingSiteLogos/telegraph.png"
+      },
+      {
+        "source": "Roger Ebert",
+        "score": "1/4",
+        "url": "https://www.rogerebert.com/reviews/animals-ben-affleck-netflix-movie-review-2026",
+        "icon": "pics/RatingSiteLogos/rogerebert.ico"
+      }
+    ]
+  },
+  {
     "id": "Whalefall",
     "slug": "whalefall",
     "title": "Whalefall",
