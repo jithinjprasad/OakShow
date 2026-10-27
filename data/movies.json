@@ -1,5 +1,317 @@
 [
   {
+    "id": "LoveofYourLife",
+    "slug": "love-of-your-life",
+    "type": "movie",
+    "category": "Hollywood",
+    "score": 6,
+    "filename": "LoveofYourLife.html",
+    "fileName": "LoveofYourLife.html",
+    "aliases": [
+      "love-of-your-life.html",
+      "LoveofYourLife",
+      "love-of-your-life",
+      "loveofyourlife.html",
+      "loveofyourlife"
+    ],
+    "title": "Love of Your Life",
+    "metaTitle": "Love of Your Life (2026) All Ratings, Reviews, Songs, Videos, Bookings and News — OakShow",
+    "description": "After the sudden and tragic loss of her husband Charlie during the pandemic, a grief-stricken nurse embarks on a healing journey across Lisbon, London, and Tokyo, rediscovering love, vulnerability, and herself in Rachel Morrison's sweeping romantic drama.",
+    "plot": "At age twenty-six, Maya (Margaret Qualley) is a young nurse in Boston who is estranged from her single mother. She falls in love with Charlie (Gabriel Basso) after buying an antique drawer from him. Shortly after they begin dating, Maya introduces Charlie to Jason (Patrick Schwarzenegger), her best friend since college. Jason is good-natured, but flaky and irresponsible, and frequently spends time with the couple. A year into their relationship, Charlie introduces Maya to his family on Cape Cod, and she quickly befriends his mother Ruth (Catherine Keener). During a monsoon on Charlie's thirtieth birthday, the couple marry in a small ceremony at their home.\n\nAt the onset of the COVID-19 pandemic, Maya becomes overworked and exhausted due to long hours and hospital shortages. Charlie remains supportive of her, but soon contracts COVID himself. At a high risk due to his asthma, he slowly succumbs to the virus and gets sent to the hospital; Maya, unable to get into the building, can only console him through FaceTime as he dies. After Charlie's death, Maya shuts herself in their home and withdraws from Ruth.\n\nThree years later, Maya is thirty-one and living alone in Lisbon, where she and Charlie had wanted to travel together. Supporting herself through a telehealth job, she has grown despondent due to Charlie's death and spends her nights drinking and having one-night stands. She meets Felix (Aaron Pierre), a charming British divorcé with a young daughter, at a restaurant she frequents and they spend the night together. Encouraged by her therapist to find a new hobby unrelated to Charlie, Maya goes to a dance class and befriends a woman named Beatriz, who implores her not to stay unhappy. She seeks out Felix again and begins a relationship with him, accompanying him to a seaside trip and then back to London. While out on a date, Maya unexpectedly encounters Jason, but rejects his attempts to reconcile. She and Felix decide to commit to a serious relationship and she moves in with him, eventually meeting his daughter Noelle. At Noelle's sixth birthday party, Maya becomes uncomfortable with his closeness towards his family. Feeling like an intruder into his life, she breaks up with him and flees to Tokyo for several months.\n\nAt age thirty-two, Maya returns to London and meets Felix again at a cafe, where he informs that he has gotten back together with his ex-wife. She and Felix part on amicable terms. At age thirty-four, Maya now lives in Luxembourg. Travelling to New Orleans, she speaks at a public health conference and reconnects with Jason. She finds that he has matured significantly since she last saw him and they rekindle their friendship. Jason drops Maya off at the airport, but she changes her mind about going home and instead goes to the Cape, where she reconnects with Ruth. After reminiscing over her grief for Charlie and Maya's absence, Ruth tells her that she must love her life first and foremost. While in the car ride back to Boston, Maya breaks down into tears. Now back in Boston, Maya listens to an old cassette tape Charlie gave her as it fades into white noise. She takes her headphones off, looks over at the Longfellow Bridge, and smiles.",
+    "language": "English",
+    "releaseDate": "October 7, 2026",
+    "year": "2026",
+    "status": "released",
+    "genre": "Romantic Drama, Romance, Drama",
+    "duration": "1hr 46min",
+    "certificate": "R",
+    "director": "Rachel Morrison",
+    "writer": "Julia Cox",
+    "basedOn": "",
+    "producers": "Ryan Gosling, Jessie Henderson",
+    "productionCompanies": "Open Invite Entertainment, Amazon MGM Studios",
+    "distributor": "Amazon MGM Studios / Amazon Prime Video",
+    "musicDirector": "Dustin O'Halloran",
+    "cinematography": "Todd Banhazl",
+    "editing": "Jennifer Vecchiarello",
+    "boxOffice": {
+      "budget": "$25 Million (Estimated)",
+      "worldwideGross": "N/A (Direct-to-Streaming / Limited Theatrical)",
+      "domesticGross": "N/A (Select Theatres)",
+      "overseasGross": "N/A",
+      "verdict": "Streaming Success / Prime Video Global Top 10",
+      "source": "Amazon Prime Video / Deadline / Variety",
+      "lastUpdated": "October 2026"
+    },
+    "budget": "$25 Million",
+    "awards": [],
+    "poster": "pics/Films/LoveofYourLife/1.jpg",
+    "banner": "pics/Films/LoveofYourLife/2.jpg",
+    "gallery": [
+      {
+        "src": "pics/Films/LoveofYourLife/1.jpg",
+        "alt": "Love of Your Life (2026) Official Theatrical Poster"
+      },
+      {
+        "src": "pics/Films/LoveofYourLife/2.jpg",
+        "alt": "Love of Your Life (2026) Official Prime Video Wide Banner"
+      },
+      {
+        "src": "pics/Films/LoveofYourLife/images.jpg",
+        "alt": "Margaret Qualley as Maya in Love of Your Life"
+      },
+      {
+        "src": "pics/Films/LoveofYourLife/images (1).jpg",
+        "alt": "Love of Your Life Official Key Art Scene"
+      }
+    ],
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "6/10",
+        "url": "https://oakshow.in/LoveofYourLife.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "6.5/10",
+        "url": "https://www.imdb.com/title/tt34384900/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "81%",
+        "url": "https://www.rottentomatoes.com/m/love_of_your_life",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-fresh.png"
+      },
+      {
+        "source": "Metacritic",
+        "score": "62/100",
+        "url": "https://www.metacritic.com/movie/love-of-your-life/",
+        "icon": "pics/RatingSiteLogos/metacritic.png"
+      },
+      {
+        "source": "Common Sense Media",
+        "score": "4/5",
+        "url": "https://www.commonsensemedia.org/movie-reviews/love-of-your-life",
+        "icon": "pics/RatingSiteLogos/common-sense-media.png"
+      },
+      {
+        "source": "India Today",
+        "score": "3/5",
+        "url": "https://www.indiatoday.in/entertainment/ott/story/love-of-your-life-movie-review-a-comforting-handshake-for-a-heart-needing-a-hug-3019632-2026-10-17",
+        "icon": "pics/RatingSiteLogos/india-today.ico"
+      },
+      {
+        "source": "The Guardian",
+        "score": "3/5",
+        "url": "https://www.theguardian.com/film/2026/sep/13/love-of-your-life-review-toronto",
+        "icon": "pics/RatingSiteLogos/the-guardian.png"
+      },
+      {
+        "source": "Times of India",
+        "score": "3/5",
+        "url": "https://timesofindia.indiatimes.com/entertainment/english/movie-reviews/love-of-your-life/ottmoviereview/134948966.cms",
+        "icon": "pics/RatingSiteLogos/timesofindia.ico"
+      },
+      {
+        "source": "Roger Ebert",
+        "score": "1.5/4",
+        "url": "https://www.rogerebert.com/reviews/love-of-your-life-margaret-qualley-prime-video-film-review-2026",
+        "icon": "pics/RatingSiteLogos/rogerebert.ico"
+      }
+    ],
+    "cast": [
+      {
+        "actor": "Margaret Qualley",
+        "role": "Maya",
+        "description": "A grief-stricken Boston nurse who travels across Lisbon, London, and Tokyo on a bittersweet journey of emotional recovery and self-discovery following the death of her husband"
+      },
+      {
+        "actor": "Aaron Pierre",
+        "role": "Felix",
+        "description": "A charming British divorcé and father living in London who develops a tender, grounding connection with Maya in Lisbon"
+      },
+      {
+        "actor": "Patrick Schwarzenegger",
+        "role": "Jason",
+        "description": "Maya's college best friend whose reckless youth matures into enduring emotional support"
+      },
+      {
+        "actor": "Gabriel Basso",
+        "role": "Charlie",
+        "description": "Maya's devoted husband whose untimely death during the pandemic shatters her world"
+      },
+      {
+        "actor": "Catherine Keener",
+        "role": "Ruth",
+        "description": "Charlie's loving and wise mother who helps Maya understand that life must go on"
+      },
+      {
+        "actor": "Tamara Lawrance",
+        "role": "Kali",
+        "description": "Maya's close associate and confidante navigating healthcare work"
+      },
+      {
+        "actor": "Corey Johnson",
+        "role": "Kerry",
+        "description": "A mentor figure offering guidance in Maya's medical circle"
+      }
+    ],
+    "trailers": [
+      {
+        "title": "Love of Your Life - Official Trailer | Prime Video",
+        "url": "https://www.youtube.com/watch?v=HzGx48E64Xg",
+        "embedUrl": "https://www.youtube.com/embed/HzGx48E64Xg",
+        "youtubeId": "HzGx48E64Xg",
+        "type": "Official Trailer"
+      },
+      {
+        "title": "Love of Your Life - Official Teaser | Prime Video",
+        "url": "https://www.youtube.com/watch?v=8Cf4fXicJiE",
+        "embedUrl": "https://www.youtube.com/embed/8Cf4fXicJiE",
+        "youtubeId": "8Cf4fXicJiE",
+        "type": "Official Teaser"
+      }
+    ],
+    "videos": [
+      {
+        "title": "Love of Your Life - Official Trailer | Prime Video",
+        "url": "https://www.youtube.com/watch?v=HzGx48E64Xg",
+        "youtubeId": "HzGx48E64Xg"
+      },
+      {
+        "title": "Love of Your Life - Official Teaser | Prime Video",
+        "url": "https://www.youtube.com/watch?v=8Cf4fXicJiE",
+        "youtubeId": "8Cf4fXicJiE"
+      }
+    ],
+    "music": [
+      {
+        "provider": "Spotify",
+        "url": "https://open.spotify.com/playlist/5DgDgZY8UfbHemEQ9lrwwZ",
+        "icon": "pics/MusicWebsiteLogos/spotify.png",
+        "label": "Listen to Love of Your Life Soundtrack on Spotify"
+      },
+      {
+        "provider": "Apple Music",
+        "url": "https://music.apple.com/us/album/love-of-your-life-original-motion-picture-soundtrack/6814348978",
+        "icon": "pics/MusicWebsiteLogos/itunes.png",
+        "label": "Listen to Love of Your Life Soundtrack on Apple Music"
+      }
+    ],
+    "watchOnline": [
+      {
+        "provider": "Amazon Prime Video",
+        "platform": "Amazon Prime Video",
+        "url": "https://www.primevideo.com/detail/0HM3DRN79M0E7QOBLMYTS41IG0?ref_=atv_dp_share_cu_r",
+        "icon": "pics/WatchOnline/amazon-prime.png",
+        "label": "Watch on Prime Video",
+        "lang": "English"
+      }
+    ],
+    "bookings": [],
+    "articles": [
+      {
+        "headline": "'Love of Your Life' Review: A Pretty but Surface-Level Healing Journey",
+        "url": "https://variety.com/2026/film/reviews/love-of-your-life-review-margaret-qualley-1236863581/",
+        "author": "Variety",
+        "date": "September 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Love of Your Life movie review: A comforting handshake for a heart needing a hug",
+        "url": "https://www.indiatoday.in/entertainment/ott/story/love-of-your-life-movie-review-a-comforting-handshake-for-a-heart-needing-a-hug-3019632-2026-10-17",
+        "author": "India Today",
+        "date": "October 17, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Love of Your Life movie review & film summary (2026)",
+        "url": "https://www.rogerebert.com/reviews/love-of-your-life-margaret-qualley-prime-video-film-review-2026",
+        "author": "Roger Ebert",
+        "date": "October 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Love of Your Life review – Margaret Qualley eats, grieves and loves in Amazon’s transporting saga",
+        "url": "https://www.theguardian.com/film/2026/sep/13/love-of-your-life-review-toronto",
+        "author": "The Guardian",
+        "date": "September 13, 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Love of Your Life Movie Review: A tender romantic drama anchored by Margaret Qualley",
+        "url": "https://timesofindia.indiatimes.com/entertainment/english/movie-reviews/love-of-your-life/ottmoviereview/134948966.cms",
+        "author": "Times of India",
+        "date": "October 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Love of Your Life Movie Review for Parents",
+        "url": "https://www.commonsensemedia.org/movie-reviews/love-of-your-life",
+        "author": "Common Sense Media",
+        "date": "October 2026",
+        "section": "Critic Reviews"
+      },
+      {
+        "headline": "Kelly chats with 'Love of Your Life' director Rachel Morrison",
+        "url": "https://www.9news.com/video/entertainment/television/programs/colorado-and-company/kelly-chats-with-love-of-your-life-director-rachel-morrison/73-69973329-f295-4a1c-ad95-b7967b21add4",
+        "author": "9News Colorado",
+        "date": "October 2026",
+        "section": "Hollywood News"
+      },
+      {
+        "headline": "Love of Your Life film brings emotional resonance to Prime Video",
+        "url": "https://vogueadria.com/love-of-your-life-film-prime-video/",
+        "author": "Vogue Adria",
+        "date": "October 2026",
+        "section": "Streaming News"
+      },
+      {
+        "headline": "Streaming Romance Love Of Your Life Has A Great Critics Score, But I Have A Warning For Viewers",
+        "url": "https://www.yahoo.com/entertainment/movies/articles/streaming-romance-love-life-great-003100499.html",
+        "author": "Yahoo Entertainment",
+        "date": "October 2026",
+        "section": "Streaming News"
+      }
+    ],
+    "similar": [
+      {
+        "title": "Chemical Hearts",
+        "link": "ChemicalHearts.html",
+        "poster": "pics/Films/ChemicalHearts/2.jpg"
+      },
+      {
+        "title": "Five Feet Apart",
+        "link": "FiveFeetApart.html",
+        "poster": "pics/Films/FiveFeetApart/2.jpg"
+      },
+      {
+        "title": "La La Land",
+        "link": "LaLaLand.html",
+        "poster": "pics/Films/La%20La%20Land/1.jpg"
+      },
+      {
+        "title": "Call Me by Your Name",
+        "link": "CallMebyYourNameFilm.html",
+        "poster": "pics/Films/CallMebyYourName/1.jpg"
+      },
+      {
+        "title": "Verity",
+        "link": "Verity.html",
+        "poster": "pics/Films/Verity/1.jpg"
+      },
+      {
+        "title": "Animals (2026)",
+        "link": "Animals2026.html",
+        "poster": "pics/Films/Animals2026/1.jpg"
+      }
+    ],
+    "wikipedia": "https://en.wikipedia.org/wiki/Love_of_Your_Life_(film)",
+    "imdb": "https://www.imdb.com/title/tt34384900/"
+  },
+  {
     "id": "Clayface2026",
     "slug": "clayface-2026",
     "type": "movie",
@@ -418,7 +730,7 @@
     "slug": "udta-teer",
     "type": "movie",
     "category": "Bollywood",
-    "score": 6.7,
+    "score": 6,
     "filename": "UdtaTeer.html",
     "fileName": "UdtaTeer.html",
     "aliases": [
@@ -448,12 +760,13 @@
     "editing": "Prerna Saigal",
     "boxOffice": {
       "budget": "₹50 Crore (Estimated)",
-      "worldwideGross": "₹13.23 Crore",
-      "domesticGross": "₹12 Crore",
-      "overseasGross": "₹1.23 Crore",
+      "worldwideGross": "₹33.5 Crore",
+      "domesticGross": "₹28.5 Crore (Net: ₹23.8 Crore)",
+      "overseasGross": "₹5.0 Crore",
       "openingDay": "₹3.89 Crore",
-      "verdict": "In Theatres / Opening Weekend Theatrical Run",
-      "source": "Bollywood Hungama & Sacnilk",
+      "openingWeekend": "₹24.0 Crore Gross (₹19.8 Crore Net)",
+      "verdict": "Average / Steady Weekday Momentum",
+      "source": "Bollywood Hungama, Sacnilk & Pinkvilla",
       "lastUpdated": "October 2026"
     },
     "budget": "₹50 Crore",
@@ -471,6 +784,12 @@
       }
     ],
     "ratings": [
+      {
+        "source": "OakShow",
+        "score": "6/10",
+        "url": "https://oakshow.in/UdtaTeer.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+      },
       {
         "source": "IMDb",
         "score": "6.7/10",
@@ -748,7 +1067,7 @@
     "slug": "titans-malayalam-movie",
     "type": "movie",
     "category": "Mollywood",
-    "score": 5.9,
+    "score": 6,
     "filename": "TitansMalayalamMovie.html",
     "fileName": "TitansMalayalamMovie.html",
     "aliases": [
@@ -777,10 +1096,12 @@
     "editing": "Shameer Muhammed",
     "boxOffice": {
       "budget": "₹8 Crore (Estimated)",
-      "worldwideGross": "₹1.45 Crore",
-      "domesticGross": "₹1.23 Crore (Kerala)",
-      "openingDay": "₹75 Lakhs",
-      "verdict": "In Theatres / Opening Weekend Theatrical Run",
+      "worldwideGross": "₹2.26 Crore",
+      "domesticGross": "₹2.05 Crore (India) / ₹1.85 Crore Net",
+      "overseasGross": "₹21 Lakhs",
+      "openingDay": "₹75 Lakhs (Gross) / ₹65 Lakhs (Net)",
+      "openingWeekend": "₹1.65 Crore",
+      "verdict": "Disaster / Steep First Monday Crash",
       "source": "Sacnilk, Koimoi & The Times of India",
       "lastUpdated": "October 2026"
     },
@@ -799,6 +1120,12 @@
       }
     ],
     "ratings": [
+      {
+        "source": "OakShow",
+        "score": "6/10",
+        "url": "https://oakshow.in/TitansMalayalamMovie.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+      },
       {
         "source": "IMDb",
         "score": "5.9/10",
@@ -1260,6 +1587,11 @@
     ],
     "similar": [
       {
+        "title": "Love of Your Life (2026)",
+        "link": "LoveofYourLife.html",
+        "poster": "pics/Films/LoveofYourLife/1.jpg"
+      },
+      {
         "title": "Clayface (2026)",
         "link": "Clayface2026.html",
         "poster": "pics/Films/Clayface2026/1.jpg"
@@ -1303,7 +1635,7 @@
     "slug": "whalefall",
     "type": "movie",
     "category": "Hollywood",
-    "score": 6.8,
+    "score": 6,
     "filename": "Whalefall.html",
     "fileName": "Whalefall.html",
     "title": "Whalefall",
@@ -1328,11 +1660,11 @@
     "distributor": "20th Century Studios",
     "boxOffice": {
       "budget": "$60 Million",
-      "domesticGross": "$7.8 Million",
-      "overseasGross": "$9.7 Million",
-      "worldwideGross": "$17.5 Million",
-      "openingWeekend": "$7.8 Million (Domestic) / $17.5 Million (Worldwide)",
-      "verdict": "Moderate Theatrical Debut / Resilient Word-of-Mouth",
+      "domesticGross": "$14.0 Million",
+      "overseasGross": "$17.2 Million",
+      "worldwideGross": "$31.2 Million",
+      "openingWeekend": "$7.84 Million (Domestic) / $17 Million (Worldwide)",
+      "verdict": "Below Expectations / High-Concept Creature Feature Struggling against $60M Budget",
       "lastUpdated": "October 2026",
       "source": "Box Office Mojo, The Numbers & Deadline"
     },
@@ -1351,6 +1683,12 @@
       }
     ],
     "ratings": [
+      {
+        "source": "OakShow",
+        "score": "6/10",
+        "url": "https://oakshow.in/Whalefall.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+      },
       {
         "source": "IMDb",
         "score": "6.8/10",
@@ -10423,6 +10761,11 @@
     "officialWebsite": null,
     "socials": [],
     "similar": [
+      {
+        "title": "Love of Your Life (2026)",
+        "link": "LoveofYourLife.html",
+        "poster": "pics/Films/LoveofYourLife/1.jpg"
+      },
       {
         "title": "A Simple Favor",
         "link": "ASimpleFavor.html",
@@ -29286,6 +29629,11 @@
       }
     ],
     "similar": [
+      {
+        "title": "Love of Your Life (2026)",
+        "link": "LoveofYourLife.html",
+        "poster": "pics/Films/LoveofYourLife/1.jpg"
+      },
       {
         "title": "Disobedience",
         "link": "Disobedience.html",
@@ -61931,6 +62279,11 @@
       }
     ],
     "similar": [
+      {
+        "title": "Love of Your Life (2026)",
+        "link": "LoveofYourLife.html",
+        "poster": "pics/Films/LoveofYourLife/1.jpg"
+      },
       {
         "title": "Dil Bechara",
         "link": "DilBechara.html",
@@ -160136,7 +160489,13 @@
         "label": "Connect on Twitter / X"
       }
     ],
-    "similar": [],
+    "similar": [
+      {
+        "title": "Love of Your Life (2026)",
+        "link": "LoveofYourLife.html",
+        "poster": "pics/Films/LoveofYourLife/1.jpg"
+      }
+    ],
     "videos": [
       {
         "url": "https://www.youtube.com/watch?v=VDMf9m7FXd4",

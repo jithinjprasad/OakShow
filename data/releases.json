@@ -52,6 +52,12 @@
         "trailerLink": "https://www.youtube.com/watch?v=hN_ZUElLH44",
         "ratings": [
           {
+            "source": "OakShow",
+            "score": "6/10",
+            "url": "https://oakshow.in/UdtaTeer.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+          },
+          {
             "source": "IMDb",
             "score": "6.7/10",
             "url": "https://www.imdb.com/title/tt31806773/",
@@ -78,6 +84,12 @@
         "trailerLink": "https://www.youtube.com/watch?v=fy-r1xjecLs",
         "ratings": [
           {
+            "source": "OakShow",
+            "score": "6/10",
+            "url": "https://oakshow.in/TitansMalayalamMovie.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+          },
+          {
             "source": "IMDb",
             "score": "5.9/10",
             "url": "https://www.imdb.com/title/tt37547793/",
@@ -103,6 +115,12 @@
         "moreLink": "Whalefall.html",
         "trailerLink": "https://www.youtube.com/watch?v=rN9F6-tbySY",
         "ratings": [
+          {
+            "source": "OakShow",
+            "score": "6/10",
+            "url": "https://oakshow.in/Whalefall.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+          },
           {
             "source": "IMDb",
             "score": "6.8/10",
@@ -152,6 +170,38 @@
             "score": "79%",
             "url": "https://www.rottentomatoes.com/m/hope_2026",
             "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+          }
+        ]
+      },
+      {
+        "title": "Love of Your Life",
+        "poster": "pics/Films/LoveofYourLife/1.jpg",
+        "alt": "Love of Your Life (2026)",
+        "language": "English",
+        "category": "Hollywood",
+        "releaseDate": "October 7, 2026",
+        "genre": "Romantic Drama, Romance, Drama",
+        "status": "released",
+        "moreLink": "LoveofYourLife.html",
+        "trailerLink": "https://www.youtube.com/watch?v=HzGx48E64Xg",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "6/10",
+            "url": "https://oakshow.in/LoveofYourLife.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "6.5/10",
+            "url": "https://www.imdb.com/title/tt34384900/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "81%",
+            "url": "https://www.rottentomatoes.com/m/love_of_your_life",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-fresh.png"
           }
         ]
       },
@@ -370,7 +420,7 @@
         "ratings": []
       }
     ],
-    "totalItems": 11
+    "totalItems": 12
   },
   {
     "id": "Releases2026April",
@@ -1178,6 +1228,12 @@
         "trailerLink": "https://www.youtube.com/watch?v=hN_ZUElLH44",
         "ratings": [
           {
+            "source": "OakShow",
+            "score": "6/10",
+            "url": "https://oakshow.in/UdtaTeer.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+          },
+          {
             "source": "IMDb",
             "score": "6.7/10",
             "url": "https://www.imdb.com/title/tt31806773/",
@@ -1203,6 +1259,12 @@
         "moreLink": "TitansMalayalamMovie.html",
         "trailerLink": "https://www.youtube.com/watch?v=fy-r1xjecLs",
         "ratings": [
+          {
+            "source": "OakShow",
+            "score": "6/10",
+            "url": "https://oakshow.in/TitansMalayalamMovie.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+          },
           {
             "source": "IMDb",
             "score": "5.9/10",
@@ -1621,7 +1683,7 @@
     "month": "October",
     "category": "Hollywood",
     "filename": "HollywoodReleases2026October.html",
-    "totalItems": 8,
+    "totalItems": 9,
     "items": [
       {
         "title": "Clayface",
@@ -1667,6 +1729,12 @@
         "moreLink": "Whalefall.html",
         "trailerLink": "https://www.youtube.com/watch?v=rN9F6-tbySY",
         "ratings": [
+          {
+            "source": "OakShow",
+            "score": "6/10",
+            "url": "https://oakshow.in/Whalefall.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+          },
           {
             "source": "IMDb",
             "score": "6.8/10",
@@ -1716,6 +1784,38 @@
             "score": "79%",
             "url": "https://www.rottentomatoes.com/m/hope_2026",
             "icon": "pics/RatingSiteLogos/rotten-tomatoes-certified-fresh.png"
+          }
+        ]
+      },
+      {
+        "title": "Love of Your Life",
+        "poster": "pics/Films/LoveofYourLife/1.jpg",
+        "alt": "Love of Your Life (2026)",
+        "language": "English",
+        "category": "Hollywood",
+        "releaseDate": "October 7, 2026",
+        "genre": "Romantic Drama, Romance, Drama",
+        "status": "released",
+        "moreLink": "LoveofYourLife.html",
+        "trailerLink": "https://www.youtube.com/watch?v=HzGx48E64Xg",
+        "ratings": [
+          {
+            "source": "OakShow",
+            "score": "6/10",
+            "url": "https://oakshow.in/LoveofYourLife.html",
+            "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+          },
+          {
+            "source": "IMDb",
+            "score": "6.5/10",
+            "url": "https://www.imdb.com/title/tt34384900/",
+            "icon": "pics/RatingSiteLogos/imdb.png"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "81%",
+            "url": "https://www.rottentomatoes.com/m/love_of_your_life",
+            "icon": "pics/RatingSiteLogos/rotten-tomatoes-fresh.png"
           }
         ]
       },

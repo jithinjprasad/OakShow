@@ -1,5 +1,43 @@
 [
   {
+    "id": "LoveofYourLife",
+    "slug": "love-of-your-life",
+    "title": "Love of Your Life (2026 film)",
+    "type": "movie",
+    "category": "Hollywood",
+    "year": "2026",
+    "genre": "Romantic Drama, Romance, Drama",
+    "language": "English",
+    "poster": "pics/Films/LoveofYourLife/1.jpg",
+    "score": 6,
+    "filename": "LoveofYourLife.html",
+    "fileName": "LoveofYourLife.html",
+    "releaseDate": "October 7, 2026",
+    "status": "released",
+    "director": "Rachel Morrison",
+    "url": "LoveofYourLife.html",
+    "ratings": [
+      {
+        "source": "OakShow",
+        "score": "6/10",
+        "url": "https://oakshow.in/LoveofYourLife.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+      },
+      {
+        "source": "IMDb",
+        "score": "6.5/10",
+        "url": "https://www.imdb.com/title/tt34384900/",
+        "icon": "pics/RatingSiteLogos/imdb.png"
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "score": "81%",
+        "url": "https://www.rottentomatoes.com/m/love_of_your_life",
+        "icon": "pics/RatingSiteLogos/rotten-tomatoes-fresh.png"
+      }
+    ]
+  },
+  {
     "id": "Clayface2026",
     "slug": "clayface-2026",
     "title": "Clayface (2026 film)",
@@ -47,7 +85,7 @@
     "genre": "Spy, Comedy, Action, Thriller",
     "language": "Hindi",
     "poster": "pics/Films/UdtaTeer/1.jpg",
-    "score": 6.7,
+    "score": 6,
     "filename": "UdtaTeer.html",
     "fileName": "UdtaTeer.html",
     "releaseDate": "October 23, 2026",
@@ -55,6 +93,12 @@
     "director": "Aakash Kaushik",
     "url": "UdtaTeer.html",
     "ratings": [
+      {
+        "source": "OakShow",
+        "score": "6/10",
+        "url": "https://oakshow.in/UdtaTeer.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+      },
       {
         "source": "IMDb",
         "score": "6.7/10",
@@ -109,7 +153,7 @@
     "genre": "Fantasy, Comedy, Action, Thriller",
     "language": "Malayalam",
     "poster": "pics/Films/TitansMalayalamMovie/1.jpg",
-    "score": 5.9,
+    "score": 6,
     "filename": "TitansMalayalamMovie.html",
     "fileName": "TitansMalayalamMovie.html",
     "releaseDate": "October 22, 2026",
@@ -117,6 +161,12 @@
     "director": "Prince Joy",
     "url": "TitansMalayalamMovie.html",
     "ratings": [
+      {
+        "source": "OakShow",
+        "score": "6/10",
+        "url": "https://oakshow.in/TitansMalayalamMovie.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+      },
       {
         "source": "IMDb",
         "score": "5.9/10",
@@ -214,7 +264,7 @@
     "genre": "Survival, Thriller, Drama, Adventure",
     "language": "English",
     "year": "2026",
-    "score": 6.8,
+    "score": 6,
     "poster": "pics/Films/Whalefall/1.jpg",
     "filename": "Whalefall.html",
     "fileName": "Whalefall.html",
@@ -224,6 +274,12 @@
     "status": "released",
     "director": "Brian Duffield",
     "ratings": [
+      {
+        "source": "OakShow",
+        "score": "6/10",
+        "url": "https://oakshow.in/Whalefall.html",
+        "icon": "pics/RatingSiteLogos/OakShowCertificates/oakshow-says-it-is-safe.png"
+      },
       {
         "source": "IMDb",
         "score": "6.8/10",
